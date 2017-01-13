@@ -15,18 +15,18 @@ limitations under the License.
 -->
 
 {{#related-section}}
-<section class="ampstart-related-section my1">
+<section class="ampstart-related-section my2">
   {{#heading}}
     {{#level}}
-      <h{{.}} class="{{classes}}">{{text}}</h{{.}}>
+      <h{{.}} class="{{classes}} m0">{{text}}</h{{.}}>
     {{/level}}
     {{^level}}
-      <header class="{{classes}}">{{text}}</header>
+      <header class="{{classes}} m0">{{text}}</header>
     {{/level}}
   {{/heading}}
-  <ul class="ampstart-related-section-items list-reset flex flex-wrap">
+  <ul class="ampstart-related-section-items list-reset flex flex-wrap m0">
     {{#images-with-caption}}
-      <li class="col-12 md-col-4 lg-col-4 border-box px2">
+      <li class="col-12 md-col-4 lg-col-4 border-box pr2">
         {{> ../images/images.snip.html}}
       </li>
     {{/images-with-caption}}
