@@ -65,6 +65,10 @@ a.scenic-article-readmore {
   letter-spacing: 0;
 }
 
+.ampstart-image-with-caption figcaption {
+  padding: 0 var(--space-3);
+}
+
 :root {
   --color-primary: #9013fe;
   --color-font-primary: #fff;

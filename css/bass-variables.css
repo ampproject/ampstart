@@ -22,13 +22,12 @@
   --h5: .875rem;
   --h6: .75rem;
 
-/*
-  --bold-font-weight: bold;
-
   --space-1: .5rem;
   --space-2: 1rem;
-  --space-3: 2rem;
-  --space-4: 4rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+/*
+  --bold-font-weight: bold;
 
   --width-1: 24rem;
   --width-2: 32rem;
