@@ -33,6 +33,7 @@
 */
 body {
   line-height: var(--line-height-3);
+  max-width: 750px;
 }
 
 #content h1 {
