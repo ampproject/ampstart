@@ -89,21 +89,14 @@ limitations under the License.
             Liquorice brownie biscuit powder jelly-o candy toffee. Oat cake tootsie roll toffee cake gummi bears sweet roll candy chocolate. Jelly beans jelly chocolate bar gingerbread bear claw cake. Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes. Carrot cake tart jelly beans bonbon muffin. Sesame snaps tart soufflé bear claw cotton candy jujubes pudding cookie powder.
           </p>
         </section>
-
-        <section class="scenic-related-article">
-          <h2 class="h5 caps my2 px3">Related article</h2>
-          <article>
-            <amp-img src="../img/blog-thescenic/carousel3.jpg" width="360" height="242" layout="responsive" alt="Photo showing a road and mouintains in alaska"></amp-img>
-            <h3 class="h4 my2 px3">The Best Road Trips in Alaska</h3>
-            <p class="line-height-4 my2 px3">
-              Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.
-            </p>
-            <a href="#" class="scenic-article-readmore text-decoration-none caps h5 my2 px3">Read More</a>
-          </article>
-        </section>
+        {{#related-article}}
+          {{> ../components/related-article/related-article.snip.html}}
+        {{/related-article}}
 
         <div class="px3">
-          {{> ../components/related-section/related-section.snip.html}}
+          {{#related-section}}
+            {{> ../components/related-section/related-section.snip.html}}
+          {{/related-section}}
         </div>
 
       </article>

@@ -18,6 +18,7 @@
 @import '../../components/images/images';
 @import '../../components/navbar/navbar';
 @import '../../components/images/fullpage-hero';
+@import '../../components/related-article/related-article';
 @import '../../components/related-section/related-section';
 @import '../../components/byline/byline';
 @import '../../components/footer/footer';
@@ -51,17 +52,6 @@ body {
 
 .scenic-article-subtitle {
   font-size: 1rem;
-}
-
-.scenic-related-article h2,
-.scenic-related-article h3 {
-  color: var(--color-font-default);
-  font-weight: normal;
-}
-
-a.scenic-article-readmore {
-  color: var(--color-font-secondary);
-  letter-spacing: 0;
 }
 
 .ampstart-image-with-caption figcaption {

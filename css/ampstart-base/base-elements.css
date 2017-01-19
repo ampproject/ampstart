@@ -66,7 +66,7 @@ a, a:active, a:visited {
   margin-top: var(--space-3);
 }
 
-.ampstart-dropcap:first-child:first-letter {
+.ampstart-dropcap:first-letter {
   border-top: solid var(--border-width) var(--color-primary);
   color: var(--color-font-secondary);
   font-size: var(--h1);
@@ -116,7 +116,6 @@ a, a:active, a:visited {
 
   --color-border: var(--color-black);
 
-  --zindex-sidebar: 9999;
   --zindex-highest: 999;
 
 }
