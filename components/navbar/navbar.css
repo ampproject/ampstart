@@ -32,15 +32,12 @@
   box-sizing: border-box;
   padding: 0 var(--space-2);
   opacity: 0.9;
-  border: solid var(--border-width) var(--color-primary);
 }
 
 .ampstart-nav-item:focus,
 .ampstart-nav-item:hover,
 .ampstart-nav-item:active {
   opacity: 1;
-  border: solid var(--border-width) var(--color-secondary);
-  outline: none;
 }
 
 .ampstart-nav-item > * {
@@ -63,12 +60,6 @@
   flex: 1;
 }
 
-.ampstart-nav-search:focus,
-.ampstart-nav-search:hover,
-.ampstart-nav-search:active {
-  border: solid var(--border-width) var(--color-primary);
-}
-
 .ampstart-nav-search input {
   border: none;
   border-radius: var(--border-radius);
@@ -76,6 +67,16 @@
 
 .ampstart-nav-dropdown {
   flex: 0.5;
+}
+
+.ampstart-nav-dropdown section > header::after {
+  display: inline-block;
+  content: '+';
+}
+
+.ampstart-nav-dropdown [expanded] > header::after {
+  display: inline;
+  content: '-';
 }
 
 .ampstart-nav-dropdown amp-accordion header {
