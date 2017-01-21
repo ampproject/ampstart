@@ -87,16 +87,6 @@ a, a:active, a:visited {
   padding-left: var(--space-3);
 }
 
-/* Social box*/
-
-.ampstart-social-box {
-  display: flex;
-}
-
-.ampstart-social-box > amp-social-share {
-  background-color: var(--color-primary);
-}
-
 :root {
   --color-white: #fff;
   --color-grey: #4a4a4a;

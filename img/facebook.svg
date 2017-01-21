@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="56px" height="55px" viewBox="0 0 56 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Baseline---helvetica_spacing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sidebar_centered-copy-" transform="translate(-171.000000, -1109.000000)" fill="#0250AA">
+            <g id="sidebar_open_centered" filter="url(#filter-2)" transform="translate(1.000000, 0.000000)">
+                <g id="social-icons*" transform="translate(69.300000, 1115.100000)">
+                    <path d="M148.234481,36.8802532 C148.234481,38.0700759 147.270076,39.034481 146.080253,39.034481 L136.133165,39.034481 L136.133165,23.9187342 L141.20719,23.9187342 L141.967443,18.027038 L136.133165,18.027038 L136.133165,14.2661772 C136.133165,12.5606582 136.607392,11.398481 139.052962,11.398481 L142.172658,11.3963544 L142.172658,6.12774684 C141.63357,6.05544304 139.781316,5.89594937 137.627089,5.89594937 C133.129367,5.89594937 130.050076,8.64136709 130.050076,13.6824304 L130.050076,18.027038 L124.963291,18.027038 L124.963291,23.9187342 L130.050076,23.9187342 L130.050076,39.034481 L111.354228,39.034481 C110.164405,39.034481 109.2,38.0700759 109.2,36.8802532 L109.2,2.15422785 C109.2,0.964405063 110.164405,0 111.354228,0 L146.080253,0 C147.270076,0 148.234481,0.964405063 148.234481,2.15422785 L148.234481,36.8802532" id="Facebook"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

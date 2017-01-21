@@ -344,6 +344,55 @@
       },
       "content-text": "Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.",
       "article-link": {"text": "Read more", "url": "#"}
+    },
+    "related-section": {
+      "heading": {
+        "level": "2",
+        "classes": "h3",
+        "text": "Latest Articles"
+      },
+      "images-with-caption": [
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../img/blog-photo-gallery/bird_cropped.png",
+            "caption": "Bullseye view: Bird Watching 101"
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../img/blog-photo-gallery/cheetah_cropped.png",
+            "caption": "The Worlds fastest animal"
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../img/blog-photo-gallery/cow_cropped.png",
+            "caption": "Cattle Ranch roundup"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "social": [
+        {"type": "twitter", "url": "#", "img": ""},
+        {"type": "facebook", "url": "#", "img": ""},
+        {"type": "pinterest", "url": "#", "img": ""},
+        {"type": "email", "url": "#", "img": ""}
+      ],
+      "links": [
+        {"text": "About", "url": "#"},
+        {"text": "Contact", "url": "#"},
+        {"text": "Terms", "url": "#"}
+      ],
+      "copyright": {
+        "text": "© Your Company, 2016"
+      }
     }
   }
 }

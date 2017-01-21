@@ -16,14 +16,9 @@ limitations under the License.
 
 {{#footer}}
   <footer class="ampstart-footer flex flex-column items-center border-box p3 pb4 mt2">
-    <div class="ampstart-social-box mb3">
+    <div class="ampstart-footer-social-icons mb3">
       {{#social}}
-        <amp-social-share type="{{type}}"
-          {{#params}}
-            data-param-{{attr}}="{{value}}"
-          {{/params}}
-        >
-        </amp-social-share>
+        <amp-img src="../img/{{type}}.svg" width="25" height="25" class="ampstart-footer-social-icon my2"></amp-img>
       {{/social}}
     </div>
 
