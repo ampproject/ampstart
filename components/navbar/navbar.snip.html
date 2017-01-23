@@ -21,9 +21,9 @@ limitations under the License.
       <amp-img src="{{logo}}" width="147" height="44" layout="fixed" class="" alt="{{name}}"></amp-img>
     {{/logo}}
     {{^sidebaronly}}
-      <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
-        <ul class="list-reset center m0 p0 flex justify-around">
-          {{#nav}}
+      {{#nav}}
+        <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
+          <ul class="list-reset center m0 p0 flex justify-around">
             {{#link}}
               <li class="ampstart-nav-item"><a href="{{url}}">{{text}}</a></li>
             {{/link}}
@@ -46,9 +46,9 @@ limitations under the License.
                 <input type="text" placeholder="{{text}}"></input>
               </li>
             {{/search}}
-          {{/nav}}
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+      {{/nav}}
     {{/sidebaronly}}
   </header>
   <amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar pl2 pr4 pt2 border-box flex flex-column" layout="nodisplay">
@@ -58,9 +58,9 @@ limitations under the License.
       <amp-img src="{{logo}}" width="147" height="44" layout="fixed" class="" alt="{{name}}"></amp-img>
     {{/logo}}
   </div>
-  <nav class="ampstart-sidebar-nav ampstart-nav">
-    <ul class="list-reset m0 p0">
-      {{#nav}}
+  {{#nav}}
+    <nav class="ampstart-sidebar-nav ampstart-nav">
+      <ul class="list-reset m0 p0">
         {{#link}}
           <li class="ampstart-nav-item"><a href="{{url}}">{{text}}</a></li>
         {{/link}}
@@ -83,8 +83,11 @@ limitations under the License.
             <input type="text" placeholder="{{text}}"></input>
           </li>
         {{/search}}
-      {{/nav}}
-    </ul>
-  </nav>
+      </ul>
+    </nav>
+  {{/nav}}
+  {{#publisher-social-links}}
+
+  {{/publisher-social-links}}
 </amp-sidebar>
 {{/navbar}}
