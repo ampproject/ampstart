@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="43" viewBox="0 0 56 43">
+  <title>
+      email
+  </title>
+  <desc>
+      Created with Sketch.
+  </desc>
+  <defs>
+    <filter x="-50" y="-50" width="200" height="200" filterUnits="objectBoundingBox">
+      <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter x="-50" y="-50" width="200" height="200" filterUnits="objectBoundingBox" id="filter-2">
+      <feGaussianBlur stdDeviation="0" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g fill="none">
+    <g fill="#0250AA">
+      <g filter="url(#filter-2)">
+        <path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9L8 30.2C8 31.5 9.1 32.7 10.5 32.7L45.4 32.7C46.8 32.7 47.9 31.5 47.9 30.2L47.9 8.9C47.9 7.5 46.8 6.4 45.4 6.4L10.5 6.4 10.5 6.4ZM12.6 8.9L43.3 8.9 27.9 22.3 12.6 8.9 12.6 8.9ZM10.5 10.3L27.1 24.9C27.6 25.3 28.3 25.3 28.8 24.9L45.4 10.3 45.4 30.2 10.5 30.2 10.5 10.3 10.5 10.3Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
