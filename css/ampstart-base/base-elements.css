@@ -32,7 +32,6 @@ a, a:active, a:visited {
 
 /* Buttons */
 .ampstart-btn {
-  box-sizing: border-box;
   font-size: var(--h5);
   height: 1.5rem;
   padding: var(--space-1) var(--space-2);
@@ -85,6 +84,11 @@ a, a:active, a:visited {
   border-left: solid 4px var(--color-primary);
   font-size: var(--h3);
   padding-left: var(--space-3);
+}
+
+/* Social links */
+.ampstart-icon {
+  fill: var(--color-font-primary);
 }
 
 :root {

@@ -28,6 +28,7 @@ function getData() {
 const config = {
   src: {
     templates: '{templates,components}/**/*.html',
+    templates_css: '{templates,components}/**/*.css',
     css: 'css/**/*.css',
     data: 'data.json',
     img: 'img/**',
@@ -53,7 +54,11 @@ gulp.task('img', function() {
 });
 
 gulp.task('watch', 'watch stuff', ['build'], function() {
-  return gulp.watch([config.src.templates, config.src.css, config.src.data],
+  return gulp.watch([
+    config.src.templates,
+    config.src.templates_css,
+    config.src.css,
+    config.src.data],
       ['build']);
 });
 

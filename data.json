@@ -241,22 +241,15 @@
               }
             ]
           }
-        },
-        {
-        },
-        {
-          "link": {"url": "#", "text": "About"}
-        },
-        {
-          "link": {"url": "#", "text": "Contact"}
         }
       ],
       "publisher-social-links":[
-        {"type": "twitter", "url": "#"},
-        {"type": "facebook", "url": "#"},
-        {"type": "instagram", "url": "#"},
-        {"type": "pinterest", "url": "#"},
-        {"type": "mail", "url": "#"}
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"instagram": "#"},
+        {"gplus": "#"},
+        {"pinterest": "#"},
+        {"mail": "#"}
       ],
       "faq": {
         "links": [

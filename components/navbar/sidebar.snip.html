@@ -1,0 +1,87 @@
+<!---
+Copyright 2017 The AMPStart Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+
+<amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar p3 flex flex-column" layout="nodisplay">
+  <div class="flex justify-start items-center">
+    <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger py2">✕</a>
+    {{#logo}}
+      <amp-img src="{{logo}}" width="147" height="44" layout="fixed" class="" alt="{{name}}"></amp-img>
+    {{/logo}}
+  </div>
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 caps h5">
+      {{#nav}}
+        {{#link}}
+          <li class="ampstart-nav-item"><a href="{{url}}">{{text}}</a></li>
+        {{/link}}
+        {{#dropdown}}
+          <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+            <amp-accordion layout="container">
+              <section>
+                <header  class="">{{heading}}</header>
+                <ul class="list-reset m0 p0">
+                  {{#options}}
+                    <li class="ampstart-nav-item"><a href="{{link.url}}">{{link.text}}</a></li>
+                  {{/options}}
+                </ul>
+              </section>
+            </amp-accordion>
+          </li>
+        {{/dropdown}}
+        {{#search}}
+          <li  class="ampstart-nav-item ampstart-nav-search">
+            <input type="text" placeholder="{{text}}"></input>
+          </li>
+        {{/search}}
+      {{/nav}}
+    </ul>
+  </nav>
+  <ul class="ampstart-sidebar-social list-reset flex justify-around items-center">
+    {{#publisher-social-links}}
+      <li>
+        {{#twitter}}
+          <a href="{{.}}">{{> ../../img/icons/twitter.svg}}</a>
+        {{/twitter}}
+        {{#facebook}}
+          <a href="{{.}}">{{> ../../img/icons/facebook.svg}}</a>
+        {{/facebook}}
+        {{#instagram}}
+          <a href="{{.}}">{{> ../../img/icons/instagram.svg}}</a>
+        {{/instagram}}
+        {{#pinterest}}
+          <a href="{{.}}">{{> ../../img/icons/pinterest.svg}}</a>
+        {{/pinterest}}
+        {{#email}}
+          <a href="{{.}}">{{> ../../img/icons/email.svg}}</a>
+        {{/email}}
+        {{#gplus}}
+          <a href="{{.}}">{{> ../../img/icons/gplus.svg}}</a>
+        {{/gplus}}
+      </li>
+    {{/publisher-social-links}}
+  </ul>
+
+  {{#faq}}
+    <ul class="ampstart-sidebar-faq list-reset m0">
+      {{#links}}
+        <li class="ampstart-faq-item"><a href="{{link.url}}">{{link.text}}</a></li>
+      {{/links}}
+    </ul>
+  {{/faq}}
+
+  </ul>
+</amp-sidebar>
