@@ -15,9 +15,9 @@ limitations under the License.
 -->
 
 
-<amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar p3 flex flex-column" layout="nodisplay">
-  <div class="flex justify-start items-center">
-    <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger py2">✕</a>
+<amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar px3 flex flex-column" layout="nodisplay">
+  <div class="flex justify-start items-center ampstart-sidebar-header">
+    <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger items-start">✕</a>
     {{#logo}}
       <amp-img src="{{logo}}" width="147" height="44" layout="fixed" class="" alt="{{name}}"></amp-img>
     {{/logo}}
@@ -50,7 +50,7 @@ limitations under the License.
       {{/nav}}
     </ul>
   </nav>
-  <ul class="ampstart-sidebar-social list-reset flex justify-around items-center">
+  <ul class="ampstart-sidebar-social list-reset flex justify-around items-center flex-wrap">
     {{#publisher-social-links}}
       <li>
         {{#twitter}}

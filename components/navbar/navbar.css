@@ -94,9 +94,10 @@ ampstart-nav-item:hover amp-accordion ul,
   opacity: 0.9;
 }
 
-
 /* Sidebar */
-
+.ampstart-sidebar-header {
+  line-height: var(--navbar-height);
+}
 
 .ampstart-sidebar .ampstart-nav-item,
 .ampstart-sidebar .ampstart-nav-dropdown header,
@@ -109,7 +110,11 @@ ampstart-nav-item:hover amp-accordion ul,
   margin: 0;
 }
 
+.ampstart-sidebar .ampstart-navbar-trigger {
+  line-height: inherit;
+}
+
 
 :root {
-  --navbar-height: 2.75rem;;
+  --navbar-height: 3.5rem;;
 }
