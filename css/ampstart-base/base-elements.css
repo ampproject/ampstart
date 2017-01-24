@@ -32,7 +32,6 @@ a, a:active, a:visited {
 
 /* Buttons */
 .ampstart-btn {
-  box-sizing: border-box;
   font-size: var(--h5);
   height: 1.5rem;
   padding: var(--space-1) var(--space-2);
@@ -66,7 +65,7 @@ a, a:active, a:visited {
   margin-top: var(--space-3);
 }
 
-.ampstart-dropcap:first-child:first-letter {
+.ampstart-dropcap:first-letter {
   border-top: solid var(--border-width) var(--color-primary);
   color: var(--color-font-secondary);
   font-size: var(--h1);
@@ -87,14 +86,9 @@ a, a:active, a:visited {
   padding-left: var(--space-3);
 }
 
-/* Social box*/
-
-.ampstart-social-box {
-  display: flex;
-}
-
-.ampstart-social-box > amp-social-share {
-  background-color: var(--color-primary);
+/* Social links */
+.ampstart-icon {
+  fill: var(--color-font-primary);
 }
 
 :root {
@@ -116,7 +110,6 @@ a, a:active, a:visited {
 
   --color-border: var(--color-black);
 
-  --zindex-sidebar: 9999;
   --zindex-highest: 999;
 
 }

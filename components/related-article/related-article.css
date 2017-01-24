@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,20 +14,12 @@
  * limitations under the License.
  */
 
-.ampstart-footer {
-  background-color: var(--color-footer-background);
-  color: var(--color-font-footer);
-  font-size: var(--h6);
+.ampstart-related-article-section .ampstart-heading {
+  color: var(--color-font-default);
+  font-weight: normal;
 }
 
-.ampstart-footer-social .ampstart-icon {
-  fill: var(--color-font-footer);
-}
-
-.ampstart-footer-social > li {
-}
-
-:root {
-  --color-footer-background: var(--color-black);
-  --color-font-footer: var(--color-white);
+.ampstart-related-article-readmore {
+  color: var(--color-font-secondary);
+  letter-spacing: 0;
 }

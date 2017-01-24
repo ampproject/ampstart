@@ -24,7 +24,6 @@
 .ampstart-related-section-items .ampstart-image-with-caption > amp-img,
 .ampstart-related-section-items .ampstart-image-with-caption > figcaption  {
   flex: 1;
-  box-sizing: border-box;
 }
 
 .ampstart-related-section-items .ampstart-image-with-caption > figcaption {

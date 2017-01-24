@@ -22,7 +22,7 @@
         },
         {
           "dropdown": {
-            "heading": "Dropdown ↓",
+            "heading": "Dropdown",
             "options": [
               {
                 "link": {"url": "#", "text": "Link5"}
@@ -127,6 +127,24 @@
         }
       }
     ],
+    "related-article": {
+      "section-heading": {
+        "level": "2",
+        "text": "Related article"
+      },
+      "hero-img": {
+        "width": "",
+        "height": "",
+        "url": "../img/blog-thescenic/carousel3.jpg",
+        "alt": "deserted road"
+      },
+      "article-heading": {
+        "level": "3",
+        "text": "The Best Road Trips in Alaska"
+      },
+      "content-text": "Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.",
+      "article-link": {"text": "Read more", "url": "#"}
+    },
     "related-section": {
       "heading": {
         "level": "2",
@@ -161,25 +179,198 @@
       ]
     },
     "footer": {
-      "social": [
-        {"type": "twitter"},
+      "publisher-social-links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
+      ],
+      "links": [
+        {"text": "About", "url": "#"},
+        {"text": "Contact", "url": "#"},
+        {"text": "Terms", "url": "#"}
+      ],
+      "copyright": {
+        "text": "© Your Company, 2016"
+      }
+    }
+  },
+  "blog-photogallery": {
+    "navbar": {
+      "name": "Scenic Times",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "nav": [
         {
-          "type": "facebook",
-          "params": [
-            {"attr": "text", "value": "Hello world"},
-            {"attr": "href", "value": "https://example.com/?ref=URL"},
-            {"attr": "app_id", "value": "145634995501895"}
-          ]
+          "dropdown": {
+            "heading": "Photography",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Animals"}
+              },
+              {
+                "link": {"url": "#", "text": "Photo of the day"}
+              }
+            ]
+          }
         },
-        {"type": "gplus"},
-        {"type": "pinterest"},
+
         {
-          "type": "email",
-          "params": [
-            {"attr": "subject", "value": "Hello world"},
-            {"attr": "body", "value": "What's up?"}
-          ]
+          "dropdown": {
+            "heading": "Travel",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Urban"}
+              },
+              {
+                "link": {"url": "#", "text": "Tropical"}
+              }
+            ]
+          }
         }
+      ],
+      "publisher-social-links":[
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"instagram": "#"},
+        {"gplus": "#"},
+        {"pinterest": "#"},
+        {"mail": "#"}
+      ],
+      "faq": {
+        "links": [
+          {
+            "link": {"url": "#", "text": "About"}
+          },
+          {
+            "link": {"url": "#", "text": "Contact"}
+          }
+        ]
+      }
+    },
+    "fullpage-hero": {
+      "heading": "<span class=\"photo-hero-heading-text\">Most Beautiful<br> Photos of 2016<span>",
+      "narrow-img": "../img/blog-photo-gallery/elephants_narrow.png",
+      "wide-img": "../img/blog-photo-gallery/elephant_wide.jpg",
+      "readmore": {
+        "text": "Read more",
+        "content-id": "content"
+      }
+    },
+    "monkey-img": {
+      "image-with-caption": {
+        "width": "756",
+        "height": "520",
+        "url": "../img/blog-photo-gallery/gorilla_cropped.png",
+        "caption": "Description of the photograph. ",
+        "credit": {
+          "credit-prefix": "Taken by ",
+          "author": {"text": "James Victore", "url": "#"}
+        }
+      }
+    },
+    "carousel": {
+      "type": "slides",
+      "layout": "responsive",
+      "width": "756",
+      "height": "638",
+      "caption": "Marshmallow pudding chupa chups gummies cake chocolate bar cake jelly-o. Pie ice cream halvah.",
+      "images": [
+        {
+          "image-with-caption": {
+            "width": "756",
+            "height": "520",
+            "url": "../img/blog-photo-gallery/flower_cropped.png",
+            "caption": "Bright red flower. ",
+            "credit": {
+              "credit-prefix": "Taken by ",
+              "author": {"text": "James Victore", "url": "#"}
+            }
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "756",
+            "height": "520",
+            "url": "../img/blog-photo-gallery/flower_cropped.png",
+            "caption": "Bright red flower. ",
+            "credit": {
+              "credit-prefix": "Taken by ",
+              "author": {"text": "James Victore", "url": "#"}
+            }
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "756",
+            "height": "520",
+            "url": "../img/blog-photo-gallery/flower_cropped.png",
+            "caption": "Bright red flower. ",
+            "credit": {
+              "credit-prefix": "Taken by ",
+              "author": {"text": "James Victore", "url": "#"}
+            }
+          }
+        }
+      ]
+    },
+    "related-article": {
+      "section-heading": {
+        "level": "2",
+        "text": "Related article"
+      },
+      "hero-img": {
+        "width": "656",
+        "height": "248",
+        "url": "../img/blog-photo-gallery/sloth_cropped.png",
+        "alt": "this is a sloth"
+      },
+      "article-heading": {
+        "level": "3",
+        "text": "Article title here"
+      },
+      "content-text": "Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.",
+      "article-link": {"text": "Read more", "url": "#"}
+    },
+    "related-section": {
+      "heading": {
+        "level": "2",
+        "classes": "h3",
+        "text": "Latest Articles"
+      },
+      "images-with-caption": [
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../img/blog-photo-gallery/bird_cropped.png",
+            "caption": "Bullseye view: Bird Watching 101"
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../img/blog-photo-gallery/cheetah_cropped.png",
+            "caption": "The Worlds fastest animal"
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../img/blog-photo-gallery/cow_cropped.png",
+            "caption": "Cattle Ranch roundup"
+          }
+        }
+      ]
+    },
+    "footer": {
+      "publisher-social-links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
       ],
       "links": [
         {"text": "About", "url": "#"},

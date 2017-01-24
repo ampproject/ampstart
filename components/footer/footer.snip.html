@@ -15,16 +15,32 @@ limitations under the License.
 -->
 
 {{#footer}}
-  <footer class="ampstart-footer flex flex-column items-center border-box p3 pb4 mt2">
-    <div class="ampstart-social-box mb3">
-      {{#social}}
-        <amp-social-share type="{{type}}"
-          {{#params}}
-            data-param-{{attr}}="{{value}}"
-          {{/params}}
-        >
-        </amp-social-share>
-      {{/social}}
+  <footer class="ampstart-footer flex flex-column items-center p3 pb4 mt2">
+    <div class="ampstart-footer-social-icons mb3">
+      <ul class="ampstart-footer-social list-reset flex justify-around items-center flex-wrap">
+        {{#publisher-social-links}}
+          <li class="mr2">
+            {{#twitter}}
+              <a href="{{.}}">{{> ../../img/icons/twitter.svg}}</a>
+            {{/twitter}}
+            {{#facebook}}
+              <a href="{{.}}">{{> ../../img/icons/facebook.svg}}</a>
+            {{/facebook}}
+            {{#instagram}}
+              <a href="{{.}}">{{> ../../img/icons/instagram.svg}}</a>
+            {{/instagram}}
+            {{#pinterest}}
+              <a href="{{.}}">{{> ../../img/icons/pinterest.svg}}</a>
+            {{/pinterest}}
+            {{#email}}
+              <a href="{{.}}">{{> ../../img/icons/email.svg}}</a>
+            {{/email}}
+            {{#gplus}}
+              <a href="{{.}}">{{> ../../img/icons/gplus.svg}}</a>
+            {{/gplus}}
+          </li>
+        {{/publisher-social-links}}
+      </ul>
     </div>
 
     <nav class="ampstart-footer-nav">
