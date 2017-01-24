@@ -22,7 +22,7 @@
         },
         {
           "dropdown": {
-            "heading": "Dropdown ↓",
+            "heading": "Dropdown",
             "options": [
               {
                 "link": {"url": "#", "text": "Link5"}
@@ -179,25 +179,11 @@
       ]
     },
     "footer": {
-      "social": [
-        {"type": "twitter"},
-        {
-          "type": "facebook",
-          "params": [
-            {"attr": "text", "value": "Hello world"},
-            {"attr": "href", "value": "https://example.com/?ref=URL"},
-            {"attr": "app_id", "value": "145634995501895"}
-          ]
-        },
-        {"type": "gplus"},
-        {"type": "pinterest"},
-        {
-          "type": "email",
-          "params": [
-            {"attr": "subject", "value": "Hello world"},
-            {"attr": "body", "value": "What's up?"}
-          ]
-        }
+      "publisher-social-links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
       ],
       "links": [
         {"text": "About", "url": "#"},
@@ -380,11 +366,11 @@
       ]
     },
     "footer": {
-      "social": [
-        {"type": "twitter", "url": "#", "img": ""},
-        {"type": "facebook", "url": "#", "img": ""},
-        {"type": "pinterest", "url": "#", "img": ""},
-        {"type": "email", "url": "#", "img": ""}
+      "publisher-social-links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
       ],
       "links": [
         {"text": "About", "url": "#"},

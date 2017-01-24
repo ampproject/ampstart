@@ -20,14 +20,12 @@
   font-size: var(--h6);
 }
 
-.ampstart-footer-social-icon {
-  color: var(--color-font-primary);
+.ampstart-footer-social .ampstart-icon {
+  fill: var(--color-font-footer);
 }
 
-.ampstart-footer-social-icons {
-  display: flex;
+.ampstart-footer-social > li {
 }
-
 
 :root {
   --color-footer-background: var(--color-black);

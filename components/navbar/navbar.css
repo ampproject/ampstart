@@ -114,6 +114,9 @@ ampstart-nav-item:hover amp-accordion ul,
   line-height: inherit;
 }
 
+.ampstart-sidebar-social {
+
+}
 
 :root {
   --navbar-height: 3.5rem;;
