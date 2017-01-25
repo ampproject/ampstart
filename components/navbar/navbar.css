@@ -72,11 +72,10 @@
 .ampstart-nav-dropdown section > header::after {
   display: inline-block;
   content: '+';
-  padding: 0 var(--space-3);
+  padding: 0 0 0 var(--space-3);
 }
 
 .ampstart-nav-dropdown [expanded] > header::after {
-  display: inline;
   content: '-';
 }
 

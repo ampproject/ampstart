@@ -24,12 +24,6 @@
 @import '../../components/byline/byline';
 @import '../../components/footer/footer';
 
-.photo-hero-heading-text {
-  box-decoration-break: clone;
-  background: linear-gradient(to bottom, transparent 50%,var(--color-primary) 50%);
-  padding: 0 var(--space-2);
-}
-
 :root {
   --color-primary: #000;
   --color-font-primary: #fff;

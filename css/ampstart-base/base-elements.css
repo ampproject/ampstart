@@ -80,6 +80,7 @@ p {
   color: var(--color-font-secondary);
   font-size: var(--h1);
   font-weight: bold;
+  margin-left: -2px;
 }
 
 /* Subtitle */
