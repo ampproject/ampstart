@@ -25,9 +25,19 @@ body {
   color: var(--color-font-default);
 }
 
+main {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
 /* Anchors */
 a, a:active, a:visited {
   color: inherit;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 /* Buttons */

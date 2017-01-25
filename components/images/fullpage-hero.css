@@ -21,14 +21,18 @@
   color: var(--color-font-primary);
 }
 
+.ampstart-image-fullpage-hero > amp-img {
+  max-height: calc(100vh - var(--navbar-height));
+}
+
 .ampstart-fullpage-hero-heading {
-  line-height: 2.5rem;
+  line-height: var(--space-5);
 }
 
 .ampstart-readmore {
   background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
   color: var(--color-font-primary);
-  display: block;
+  margin-top: var(--space-7);
 }
 
 .ampstart-readmore::after {

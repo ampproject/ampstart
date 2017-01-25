@@ -15,13 +15,23 @@ limitations under the License.
 -->
 
 {{#fullpage-hero}}
-  <figure class="ampstart-image-fullpage-hero m0 relative">
+  <figure class="ampstart-image-fullpage-hero m0 relative mb4">
     <amp-img src="{{narrow-img}}" srcset="{{wide-img}} 416w,  {{narrow-img}} 360w" width="640" height="960" layout="responsive" heights="(max-width:415px) 150%, 67%"></amp-img>
-    <figcaption class="absolute right-0 bottom-0 left-0">
-      <h1 class="ampstart-fullpage-hero-heading h2 mb4 pl2 pb2">{{{heading}}}</h1>
-      {{#readmore}}
-        <a class="ampstart-readmore py3 caps h5 line-height-2 text-decoration-none center" href="#{{content-id}}">{{text}}</a>
-      {{/readmore}}
+    <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+      <h1 class="ampstart-fullpage-hero-heading h2 m0 p3">{{{heading}}}</h1>
+      <footer class="absolute left-0 right-0 bottom-0">
+        {{#credit}}
+          <span class="ampstart-image-credit block h4 px3">
+            {{credit-prefix}}
+            {{#author}}
+              <a href="{{url}}" role="author" class="text-decoration-none">{{text}}</a>
+            {{/author}}
+          </span>
+        {{/credit}}
+        {{#readmore}}
+          <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#{{content-id}}">{{text}}</a>
+        {{/readmore}}
+      </footer>
     </figcaption>
   </figure>
 {{/fullpage-hero}}

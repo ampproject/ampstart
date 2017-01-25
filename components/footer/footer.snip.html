@@ -15,43 +15,41 @@ limitations under the License.
 -->
 
 {{#footer}}
-  <footer class="ampstart-footer flex flex-column items-center p3 pb4 mt2">
-    <div class="ampstart-footer-social-icons mb3">
-      <ul class="ampstart-footer-social list-reset flex justify-around items-center flex-wrap">
-        {{#publisher-social-links}}
-          <li class="mr2">
-            {{#twitter}}
-              <a href="{{.}}">{{> ../../img/icons/twitter.svg}}</a>
-            {{/twitter}}
-            {{#facebook}}
-              <a href="{{.}}">{{> ../../img/icons/facebook.svg}}</a>
-            {{/facebook}}
-            {{#instagram}}
-              <a href="{{.}}">{{> ../../img/icons/instagram.svg}}</a>
-            {{/instagram}}
-            {{#pinterest}}
-              <a href="{{.}}">{{> ../../img/icons/pinterest.svg}}</a>
-            {{/pinterest}}
-            {{#email}}
-              <a href="{{.}}">{{> ../../img/icons/email.svg}}</a>
-            {{/email}}
-            {{#gplus}}
-              <a href="{{.}}">{{> ../../img/icons/gplus.svg}}</a>
-            {{/gplus}}
-          </li>
-        {{/publisher-social-links}}
-      </ul>
-    </div>
+  <footer class="ampstart-footer flex flex-column items-center p3">
+    <ul class="ampstart-footer-social list-reset flex justify-around items-center flex-wrap m0 mb3">
+      {{#publisher-social-links}}
+        <li class="mr2">
+          {{#twitter}}
+            <a href="{{.}}">{{> ../../img/icons/twitter.svg}}</a>
+          {{/twitter}}
+          {{#facebook}}
+            <a href="{{.}}">{{> ../../img/icons/facebook.svg}}</a>
+          {{/facebook}}
+          {{#instagram}}
+            <a href="{{.}}">{{> ../../img/icons/instagram.svg}}</a>
+          {{/instagram}}
+          {{#pinterest}}
+            <a href="{{.}}">{{> ../../img/icons/pinterest.svg}}</a>
+          {{/pinterest}}
+          {{#email}}
+            <a href="{{.}}">{{> ../../img/icons/email.svg}}</a>
+          {{/email}}
+          {{#gplus}}
+            <a href="{{.}}">{{> ../../img/icons/gplus.svg}}</a>
+          {{/gplus}}
+        </li>
+      {{/publisher-social-links}}
+    </ul>
 
     <nav class="ampstart-footer-nav">
-      <ul class="list-reset flex flex-wrap">
+      <ul class="list-reset flex flex-wrap mb3">
         {{#links}}
-          <li class="px1"><a class="text-decoration-none caps" href="{{url}}">{{text}}</a></li>
+          <li class="px1"><a class="text-decoration-none caps h5" href="{{url}}">{{text}}</a></li>
         {{/links}}
       </ul>
     </nav>
     {{#copyright}}
-      <small class="my1">{{text}}</small>
+      <small>{{text}}</small>
     {{/copyright}}
   </footer>
 {{/footer}}

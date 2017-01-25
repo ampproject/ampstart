@@ -15,34 +15,34 @@ limitations under the License.
 -->
 
 
-<section class="ampstart-related-article-section px3 border-top border-bottom">
+<section class="ampstart-related-article-section p3 mb4 border-top border-bottom">
   {{#section-heading}}
     {{#level}}
-      <h{{.}} class="ampstart-heading h5 caps my2">{{text}}</h{{.}}>
+      <h{{.}} class="ampstart-heading h5 caps m0 mb3">{{text}}</h{{.}}>
     {{/level}}
     {{^level}}
-      <header class="ampstart-heading h5 caps my2">{{text}}</header>
+      <header class="ampstart-heading h5 caps m0 mb3">{{text}}</header>
     {{/level}}
   {{/section-heading}}
   <article class="ampstart-related-article">
     {{#hero-img}}
-      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" alt="" class="my2"></amp-img>
+      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" alt="" class="mb3"></amp-img>
     {{/hero-img}}
     {{#article-heading}}
       {{#level}}
-        <h{{.}} class="ampstart-heading h4 my2">{{text}}</h{{.}}>
+        <h{{.}} class="ampstart-heading h4 m0 mb3">{{text}}</h{{.}}>
       {{/level}}
       {{^level}}
-        <header class="ampstart-heading h4 my2">{{text}}</header>
+        <header class="ampstart-heading h4 m0 mb3">{{text}}</header>
       {{/level}}
     {{/article-heading}}
     {{#content-text}}
-      <p class="line-height-4 my2">
+      <p class="line-height-4 mb3">
         {{.}}
       </p>
     {{/content-text}}
     {{#article-link}}
-      <a href="{{url}}" class="ampstart-rekated-article-readmore block text-decoration-none caps h5 my2">{{text}}</a>
+      <a href="{{url}}" class="ampstart-rekated-article-readmore block text-decoration-none caps h5">{{text}}</a>
     {{/article-link}}
   </article>
 </section>
