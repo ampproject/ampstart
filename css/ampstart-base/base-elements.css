@@ -43,31 +43,7 @@ p {
   margin: 0;
 }
 
-/* Buttons */
-.ampstart-btn {
-  font-size: var(--h5);
-  height: 1.5rem;
-  padding: var(--space-1) var(--space-2);
-}
-
-.ampstart-btn:active {
-  opacity: 0.8;
-}
-
-.ampstart-btn[disabled] {
-  opacity: 0.5;
-}
-
-.ampstart-btn-primary {
-  background-color: var(--color-primary);
-  color: var(--color-font-secondary);
-}
-
-.ampstart-btn-secondary {
-  background-color: var(--color-white);
-  color: var(--color-font-primary);
-  border: solid var(--border-width) var(--color-border);
-}
+@import '../elements/buttons';
 
 /* Dropcap */
 .ampstart-dropcap {
