@@ -118,5 +118,5 @@ ampstart-nav-item:hover amp-accordion ul,
 }
 
 :root {
-  --navbar-height: var(--space-6);
+  --navbar-height: var(--line-height-6);
 }

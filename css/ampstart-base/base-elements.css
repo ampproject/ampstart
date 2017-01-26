@@ -15,6 +15,7 @@
  */
 
 @import '../bass-variables';
+@import 'spacing';
 
 * {
   box-sizing: border-box;
@@ -23,6 +24,8 @@
 /* Body */
 body {
   color: var(--color-font-default);
+  line-height: 1.75rem;
+  font-family: var(--font-family);
 }
 
 main {
@@ -69,9 +72,6 @@ p {
 /* Dropcap */
 .ampstart-dropcap {
   padding-top: var(--space-2);
-  /** Adding rem just in this place as, not having the rem gives a weird gap
-      between the first and second line*/
-  line-height: var(--line-height-3)rem;
   margin-top: var(--space-3);
 }
 
@@ -120,6 +120,8 @@ p {
   --color-disabled: #9b9b9b;
 
   --color-border: var(--color-black);
+
+  --font-family: Helvetica, Arial, sans-serif;
 
   --zindex-highest: 999;
 

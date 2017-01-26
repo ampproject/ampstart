@@ -35,5 +35,7 @@
   --color-font-footer: var(--color-font-secondary);
 
   --color-border: var(--color-grey);
+
+  --color-font-default: var(--color-grey);
   /*--color-disabled: #9b9b9b;*/
 }

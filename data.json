@@ -133,8 +133,8 @@
         "text": "Related article"
       },
       "hero-img": {
-        "width": "",
-        "height": "",
+        "width": "1280",
+        "height": "720",
         "url": "../img/blog-thescenic/carousel3.jpg",
         "alt": "deserted road"
       },
@@ -249,12 +249,13 @@
       }
     },
     "fullpage-hero": {
-      "heading": "Most Beautiful<br> Photos of 2016",
+      "heading": "Most Beautiful<br> Photos",
       "narrow-img": "../img/blog-photo-gallery/elephants_narrow.png",
       "wide-img": "../img/blog-photo-gallery/elephant_wide.jpg",
       "credit": {
         "credit-prefix": "Taken by ",
-        "author": {"text": "James Victore", "url": "#"}
+        "author": {"text": "James Victore", "url": "#"},
+        "credit-suffix": "Posted 1 hour ago"
       },
       "readmore": {
         "text": "Read more",

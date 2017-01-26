@@ -31,7 +31,7 @@ amp-carousel .ampstart-image-with-heading {
 /* Image with caption and credit */
 .ampstart-image-with-caption figcaption {
   color: var(--color-font-subtitle);
-  line-height: var(--line-height-2)rem;
+  line-height: var(--line-height-2);
 }
 
 amp-carousel .ampstart-image-with-caption {

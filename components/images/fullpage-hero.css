@@ -21,7 +21,8 @@
   color: var(--color-font-primary);
 }
 
-.ampstart-fullpage-hero-heading-text {
+.ampstart-fullpage-hero-heading-text,
+.ampstart-image-fullpage-hero .ampstart-image-credit {
   box-decoration-break: clone;
   background: var(--color-primary);
   padding: 0 var(--space-2) 0.2rem;
@@ -32,7 +33,7 @@
 }
 
 .ampstart-fullpage-hero-heading {
-  line-height: var(--space-5);
+  line-height: var(--space-6);
 }
 
 .ampstart-readmore {
