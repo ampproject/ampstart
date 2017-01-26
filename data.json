@@ -43,7 +43,7 @@
       ]
     },
     "fullpage-hero": {
-      "heading": "<span class=\"scenic-hero-heading-text\">Most Beautiful<br> Hikes in Alaska<span>",
+      "heading": "Most Beautiful<br> Hikes in Alaska",
       "narrow-img": "../img/blog-thescenic/cropped_hero.jpg",
       "wide-img": "../img/blog-thescenic/hero.jpg",
       "readmore": {
@@ -133,8 +133,8 @@
         "text": "Related article"
       },
       "hero-img": {
-        "width": "",
-        "height": "",
+        "width": "1280",
+        "height": "720",
         "url": "../img/blog-thescenic/carousel3.jpg",
         "alt": "deserted road"
       },
@@ -249,9 +249,14 @@
       }
     },
     "fullpage-hero": {
-      "heading": "<span class=\"photo-hero-heading-text\">Most Beautiful<br> Photos of 2016<span>",
+      "heading": "Most Beautiful<br> Photos",
       "narrow-img": "../img/blog-photo-gallery/elephants_narrow.png",
       "wide-img": "../img/blog-photo-gallery/elephant_wide.jpg",
+      "credit": {
+        "credit-prefix": "Taken by ",
+        "author": {"text": "James Victore", "url": "#"},
+        "credit-suffix": "Posted 1 hour ago"
+      },
       "readmore": {
         "text": "Read more",
         "content-id": "content"

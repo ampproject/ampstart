@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+.ampstart-related-article-section {
+  border-color: var(--color-border);
+}
+
 .ampstart-related-article-section .ampstart-heading {
   color: var(--color-font-default);
   font-weight: normal;

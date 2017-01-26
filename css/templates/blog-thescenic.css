@@ -32,18 +32,9 @@
   * Styles for individual elements should be done in HTML-bass.
   * If we end up writing css , try and use bass-variables as much as possible.
 */
-body {
-  line-height: var(--line-height-3);
-}
 
 #content h1 {
   color: var(--color-black);
-}
-
-.scenic-hero-heading-text {
-  box-decoration-break: clone;
-  background: linear-gradient(to bottom, transparent 50%,var(--color-primary) 50%);
-  padding: 0 var(--space-2);
 }
 
 .scenic-article-category {
@@ -53,10 +44,6 @@ body {
 
 .scenic-article-subtitle {
   font-size: 1rem;
-}
-
-.ampstart-image-with-caption figcaption {
-  padding: 0 var(--space-3);
 }
 
 :root {

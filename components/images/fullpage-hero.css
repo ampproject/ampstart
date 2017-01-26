@@ -21,14 +21,25 @@
   color: var(--color-font-primary);
 }
 
+.ampstart-fullpage-hero-heading-text,
+.ampstart-image-fullpage-hero .ampstart-image-credit {
+  box-decoration-break: clone;
+  background: var(--color-primary);
+  padding: 0 var(--space-2) 0.2rem;
+}
+
+.ampstart-image-fullpage-hero > amp-img {
+  max-height: calc(100vh - var(--navbar-height));
+}
+
 .ampstart-fullpage-hero-heading {
-  line-height: 2.5rem;
+  line-height: var(--space-6);
 }
 
 .ampstart-readmore {
   background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
   color: var(--color-font-primary);
-  display: block;
+  margin-top: var(--space-7);
 }
 
 .ampstart-readmore::after {

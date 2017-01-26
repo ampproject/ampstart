@@ -17,8 +17,3 @@
 .ampstart-byline {
   color: var(--color-grey);
 }
-
-.ampstart-byline-author,
-.ampstart-byline-pubdate {
-  display: block;
-}

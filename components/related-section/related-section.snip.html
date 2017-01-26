@@ -14,18 +14,18 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<section class="ampstart-related-section my2">
+<section class="ampstart-related-section mb4 px3">
   {{#heading}}
     {{#level}}
-      <h{{.}} class="{{classes}} m0">{{text}}</h{{.}}>
+      <h{{.}} class="{{classes}} mb1">{{text}}</h{{.}}>
     {{/level}}
     {{^level}}
-      <header class="{{classes}} m0">{{text}}</header>
+      <header class="{{classes}} mb1">{{text}}</header>
     {{/level}}
   {{/heading}}
   <ul class="ampstart-related-section-items list-reset flex flex-wrap m0">
     {{#images-with-caption}}
-      <li class="col-12 md-col-4 lg-col-4 pr2">
+      <li class="col-12 md-col-4 lg-col-4 pr2 py2">
         {{> ../images/images.snip.html}}
       </li>
     {{/images-with-caption}}

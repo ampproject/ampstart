@@ -14,11 +14,19 @@
  * limitations under the License.
  */
 
+.ampstart-related-section-items > li {
+  border-bottom: solid var(--border-width) var(--color-border);
+}
+
+.ampstart-related-section-items > li:last-child {
+  border: none;
+}
+
 .ampstart-related-section-items .ampstart-image-with-caption {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  border-bottom: solid var(--border-width) var(--color-border);
+  margin-bottom: 0;
 }
 
 .ampstart-related-section-items .ampstart-image-with-caption > amp-img,
@@ -27,12 +35,12 @@
 }
 
 .ampstart-related-section-items .ampstart-image-with-caption > figcaption {
-  padding: var(--space-2);
+  padding-left: var(--space-2);
 }
 
 
 @media (--breakpoint-md) {
-  .ampstart-related-section-items .ampstart-image-with-caption {
+  .ampstart-related-section-items > li {
     border: none;
   }
 
@@ -48,7 +56,7 @@
 
 
 @media (--breakpoint-lg) {
-  .ampstart-related-section-items .ampstart-image-with-caption {
+  .ampstart-related-section-items > li {
     border: none;
   }
 
