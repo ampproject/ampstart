@@ -43,8 +43,6 @@ p {
   margin: 0;
 }
 
-@import '../elements/buttons';
-
 /* Dropcap */
 .ampstart-dropcap {
   padding-top: var(--space-2);
@@ -86,8 +84,8 @@ p {
   --color-primary: #000;
   --color-font-secondary: #000;
 
-  --color-secondary: #4a4a4a;
-  --color-font-primary: #4a4a4a;
+  --color-secondary: #fff;
+  --color-font-primary: #fff;
 
   --color-font-default: #000;
 
