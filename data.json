@@ -386,5 +386,18 @@
         "text": "© Your Company, 2016"
       }
     }
+  },
+  "test-all-amp": {
+    "inputs": [
+      {
+        "input": {
+          "type": "text",
+          "value": "",
+          "placeholder": "This is a placeholder",
+          "id": "first_ip",
+          "name": "name1"
+        }
+      }
+    ]
   }
 }

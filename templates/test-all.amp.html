@@ -30,38 +30,35 @@ limitations under the License.
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 </head>
 <body>
-  <button class="ampstart-btn">
-    Primary button
-  </button>
+  {{#test-all-amp}}
+    <button class="ampstart-btn">
+      Primary button
+    </button>
 
-  <button class="ampstart-btn">
-    Really looooooong Button
-  </button>
+    <button class="ampstart-btn">
+      Really looooooong Button
+    </button>
 
-  <button class="ampstart-btn" disabled>
-    Disabled Button
-  </button>
+    <button class="ampstart-btn" disabled>
+      Disabled Button
+    </button>
 
-  <button class="ampstart-btn ampstart-btn-secondary">
-    Secondary button
-  </button>
+    <button class="ampstart-btn ampstart-btn-secondary">
+      Secondary button
+    </button>
 
-  <button class="ampstart-btn ampstart-btn-secondary">
-    Really looooooong Secondary Button
-  </button>
+    <button class="ampstart-btn ampstart-btn-secondary">
+      Really looooooong Secondary Button
+    </button>
 
-  <button class="ampstart-btn ampstart-btn-secondary" disabled>
-    Disabled Secondary button
-  </button>
+    <button class="ampstart-btn ampstart-btn-secondary" disabled>
+      Disabled Secondary button
+    </button>
 
-  <a href="#" class="ampstart-btn"> Link styled like a button </a>
-
-  <a href="#" class="ampstart-btn" disabled> Link styled like a button and Disabled </a>
-
-  <a href="#" class="ampstart-btn ampstart-btn-secondary"> Link styled like a secondary button </a>
-
-
-  <a href="#" class="ampstart-btn ampstart-btn-secondary" disabled> Link styled like a secondary button and Disabled </a>
-
+    <input type="text" placeholder="Hello i am a Placeholder" class="ampstart-input"></input>
+    {{#inputs}}
+      {{> ../components/inputs/inputs.snip.html}}
+    {{/inputs}}
+  {{/test-all-amp}}
 </body>
 </html>

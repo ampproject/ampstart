@@ -1,0 +1,94 @@
+/**
+ * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.ampstart-input {
+  max-width: 100%;
+  width: 300px;
+  font-size: 1rem;
+  line-height: var(--line-height-3);
+}
+
+.ampstart-input > input {
+  width: 100%;
+  border-bottom: var(--border-width) solid var(--color-primary);
+  background: none;
+  color: var(--color-dark-grey);
+  line-height: var(--line-height-3);
+  outline: 0;
+}
+
+.ampstart-input > label {
+  color: var(--color-grey);
+  pointer-events: none;
+  line-height: var(--line-height-3);
+}
+
+.ampstart-input > label::after {
+  content: '';
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+  background: var(--color-primary);
+  transition: .2s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  visibility: hidden;
+  width: 10px;
+}
+
+.ampstart-input > input:focus {
+  outline: 0;
+  padding-top: var(--line-height-1);
+}
+
+.ampstart-input > input:focus + label {
+  font-size: var(--h5);
+  line-height: var(--line-height-1);
+}
+
+.ampstart-input > input:focus + label::after {
+  left: 0;
+  width: 100%;
+  visibility: visible;
+}
+
+.ampstart-input:active {
+  color: var(--color-grey);
+}
+
+.ampstart-input[type="text"] {
+}
+.ampstart-input[type="email"] {}
+.ampstart-input[type="search"] {}
+.ampstart-input[type="date"] {}
+.ampstart-input[type="month"] {}
+.ampstart-input[type="week"] {}
+.ampstart-input[type="datetime-local"] {}
+.ampstart-input[type="time"] {}
+.ampstart-input[type="url"] {}
+.ampstart-input[type="tel"] {}
+
+
+textarea.ampstart-input {}
+
+.ampstart-input[type="checkbox"] {}
+
+
+.ampstart-input[type="radio"] {}
+
+.ampstart-input[type="range"] {}
+
+select.ampstart-input {}

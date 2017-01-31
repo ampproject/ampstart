@@ -53,6 +53,6 @@
   --color-secondary: #fff;
   --color-font-secondary: #9013fe;
 
-  --color-font-default: var(--color-grey);
+  --color-font-default: var(--color-dark-grey);
   /*--color-disabled: #9b9b9b;*/
 }

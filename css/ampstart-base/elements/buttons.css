@@ -15,33 +15,29 @@
  */
 
 /* Buttons */
-.ampstart-btn,
-.ampstart-btn:active,
-.ampstart-btn:visited {
-  font-size: var(--h5);
-  line-height: 1.5rem;
-  padding: var(--space-1) var(--space-2);
+.ampstart-btn {
+  font-size: var(--h6);
+  line-height: var(--line-height-3);
+  padding: 0 var(--space-1);
+  display: inline-block;
   text-decoration: none;
   white-space: nowrap;
   word-wrap: normal;
-  line-height: normal;
   vertical-align: middle;
   cursor: pointer;
   background-color: var(--color-primary);
   color: var(--color-font-primary);
-  border: solid var(--border-width) var(--color-font-primary);
+  border: var(--border-width) solid var(--color-font-primary);
 }
 
-.ampstart-btn-secondary,
-.ampstart-btn-secondary:active,
-.ampstart-btn-secondary:visited  {
+.ampstart-btn-secondary {
   background-color: var(--color-secondary);
   color: var(--color-font-secondary);
-  border: solid var(--border-width) var(--color-font-secondary);
+  border: var(--border-width) solid var(--color-font-secondary);
 }
 
-.ampstart-btn:active,
-.ampstart-btn[disabled]:focus {
+.ampstart-btn:active
+.ampstart-btn:focus {
   opacity: 0.8;
 }
 
@@ -50,4 +46,5 @@
 .ampstart-btn[disabled]:active,
 .ampstart-btn[disabled]:focus {
   opacity: 0.5;
+  outline: 0;
 }
