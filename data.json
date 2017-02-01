@@ -500,35 +500,35 @@
         }
       },
       {
-        "input": {
-          "type": "checkbox",
-          "placeholder": "Item1",
+        "checkbox": {
+          "label": "Item1 is sooooo looong it wraps",
           "id": "ip14",
-          "name": "name14"
+          "name": "name14",
+          "value": "2"
         }
       },
       {
-        "input": {
-          "type": "checkbox",
-          "placeholder": "Item2",
+        "checkbox": {
+          "label": "Item2",
           "id": "ip15",
-          "name": "name15"
+          "name": "name15",
+          "value": "3"
         }
       },
       {
-        "input": {
-          "type": "radio",
-          "placeholder": "option1",
+        "radio": {
+          "label": "option1",
           "id": "ip16",
-          "name": "name16"
+          "name": "name16",
+          "value": "2"
         }
       },
       {
-        "input": {
-          "type": "radio",
-          "placeholder": "option2",
+        "radio": {
+          "label": "option2",
           "id": "ip17",
-          "name": "name17"
+          "name": "name17",
+          "value": "3"
         }
       }
     ]

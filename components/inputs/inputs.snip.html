@@ -38,3 +38,18 @@ limitations under the License.
   <label for="{{id}}" class="absolute top-0 right-0 bottom-0 left-0">{{placeholder}}</label>
 </div>
 {{/textarea}}
+
+{{#checkbox}}
+<div class="ampstart-input ampstart-input-chk inline-block relative m-0 p-0 mb4 {{classes}}">
+    <input type="checkbox" value="{{value}}" name="{{name}}" id="{{id}}" class=""/>
+    <label for="{{id}}" class="">{{label}}</label>
+</div>
+{{/checkbox}}
+
+
+{{#radio}}
+<div class="ampstart-input ampstart-input-radio inline-block relative m-0 p-0 mb4 {{classes}}">
+    <input type="radio" value="{{value}}" name="{{name}}" id="{{id}}" class=""/>
+    <label for="{{id}}" class="">{{label}}</label>
+</div>
+{{/radio}}
