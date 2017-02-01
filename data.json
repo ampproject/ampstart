@@ -394,8 +394,141 @@
           "type": "text",
           "value": "",
           "placeholder": "This is a placeholder",
-          "id": "first_ip",
+          "id": "ip1",
           "name": "name1"
+        }
+      },
+      {
+        "input": {
+          "type": "email",
+          "value": "",
+          "placeholder": "Enter your Email",
+          "id": "ip2",
+          "name": "name2"
+        }
+      },
+      {
+        "input": {
+          "type": "search",
+          "value": "",
+          "placeholder": "Search here",
+          "id": "ip3",
+          "name": "name3"
+        }
+      },
+      {
+        "input": {
+          "type": "date",
+          "value": "2020-10-10",
+          "placeholder": "Date of Expiry",
+          "id": "ip4",
+          "name": "name4"
+        }
+      },
+      {
+        "input": {
+          "type": "week",
+          "placeholder": "Conference week",
+          "id": "ip5",
+          "name": "name5"
+        }
+      },
+      {
+        "input": {
+          "type": "month",
+          "placeholder": "Month of Expiry",
+          "id": "ip6",
+          "name": "name6"
+        }
+      },
+      {
+        "input": {
+          "type": "datetime-local",
+          "placeholder": "Timestamp",
+          "id": "ip7",
+          "name": "name7"
+        }
+      },
+      {
+        "input": {
+          "type": "time",
+          "placeholder": "Alarm time",
+          "id": "ip8",
+          "name": "name8"
+        }
+      },
+      {
+        "input": {
+          "type": "url",
+          "placeholder": "Validate your webpage",
+          "id": "ip9",
+          "name": "name9"
+        }
+      },
+      {
+        "input": {
+          "type": "tel",
+          "placeholder": "Phone number",
+          "id": "ip10",
+          "name": "name10"
+        }
+      },
+      {
+        "input": {
+          "type": "range",
+          "placeholder": "Select a range",
+          "id": "ip11",
+          "name": "name11"
+        }
+      },
+      {
+        "select": {
+          "placeholder": "Select a fruit",
+          "options": [
+            "Apple", "Orange", "Lemon", "Grape"
+          ],
+          "id": "ip12",
+          "name": "name12"
+        }
+      },
+      {
+        "textarea": {
+          "rows": 5,
+          "placeholder": "Write your story",
+          "id": "ip13",
+          "name": "name13"
+        }
+      },
+      {
+        "input": {
+          "type": "checkbox",
+          "placeholder": "Item1",
+          "id": "ip14",
+          "name": "name14"
+        }
+      },
+      {
+        "input": {
+          "type": "checkbox",
+          "placeholder": "Item2",
+          "id": "ip15",
+          "name": "name15"
+        }
+      },
+      {
+        "input": {
+          "type": "radio",
+          "placeholder": "option1",
+          "id": "ip16",
+          "name": "name16"
+        }
+      },
+      {
+        "input": {
+          "type": "radio",
+          "placeholder": "option2",
+          "id": "ip17",
+          "name": "name17"
         }
       }
     ]

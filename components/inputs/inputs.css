@@ -21,14 +21,15 @@
   line-height: var(--line-height-3);
 }
 
-.ampstart-input:active {
-  color: var(--color-grey);
-}
-
+.ampstart-input > textarea,
+.ampstart-input > select,
 .ampstart-input > input {
   width: 100%;
-  padding-top: var(--line-height-1);
+  margin-top: var(--line-height-1);
   line-height: var(--line-height-3);
+  /* Doing this with border-none class does not set it to none*/
+  border: 0;
+  border-radius: 0;
   border-bottom: var(--border-width) solid var(--color-primary);
   background: none;
   color: var(--color-dark-grey);
@@ -41,26 +42,33 @@
   font-size: var(--h5);
   line-height: var(--line-height-1);
   opacity: 0;
-
   animation: .2s;
   animation-timing-function: cubic-bezier(.4,0,.2,1);
   animation-fill-mode: forwards;
 }
 
+.ampstart-input > textarea:focus,
+.ampstart-input > select:focus,
 .ampstart-input > input:focus {
   outline: 0;
 }
 
 
 /* Move placeholder above */
+.ampstart-input > textarea:focus::placeholder,
+.ampstart-input > select:focus::placeholder,
 .ampstart-input > input:focus::placeholder {
   color: transparent;
 }
 
+.ampstart-input > textarea:not(:placeholder-shown) + label,
+.ampstart-input > select:not(:placeholder-shown) + label,
 .ampstart-input > input:not(:placeholder-shown) + label {
   opacity: 1;
 }
 
+.ampstart-input > textarea:focus + label,
+.ampstart-input > select:focus + label,
 .ampstart-input > input:focus + label {
   animation-name: ampstart-move-input-label;
 }
@@ -70,7 +78,6 @@
     opacity: 1;
   }
 }
-
 
 /* Bottom animation */
 .ampstart-input > label::after {
@@ -86,6 +93,8 @@
   width: 10px;
 }
 
+.ampstart-input > textarea:focus + label::after,
+.ampstart-input > select:focus + label::after,
 .ampstart-input > input:focus + label::after {
   left: 0;
   width: 100%;
@@ -93,26 +102,31 @@
 }
 
 
-.ampstart-input[type="text"] {
+/* Range input */
+.ampstart-input > input[type="range"] + label::after {
+  display: none;
 }
-.ampstart-input[type="email"] {}
-.ampstart-input[type="search"] {}
-.ampstart-input[type="date"] {}
-.ampstart-input[type="month"] {}
-.ampstart-input[type="week"] {}
-.ampstart-input[type="datetime-local"] {}
-.ampstart-input[type="time"] {}
-.ampstart-input[type="url"] {}
-.ampstart-input[type="tel"] {}
+
+/* Select */
+.ampstart-input > select {
+  appearance: none;
+}
+
+.ampstart-input > select + label::before {
+  content: '⌄';
+  line-height: var(--line-height-3);
+  position: absolute;
+  right: 0;
+  bottom: 1px;
+  zoom: 3;
+}
 
 
-textarea.ampstart-input {}
 
 .ampstart-input[type="checkbox"] {}
 
 
 .ampstart-input[type="radio"] {}
 
-.ampstart-input[type="range"] {}
 
-select.ampstart-input {}
+
