@@ -21,21 +21,58 @@
   line-height: var(--line-height-3);
 }
 
+.ampstart-input:active {
+  color: var(--color-grey);
+}
+
 .ampstart-input > input {
   width: 100%;
+  padding-top: var(--line-height-1);
+  line-height: var(--line-height-3);
   border-bottom: var(--border-width) solid var(--color-primary);
   background: none;
   color: var(--color-dark-grey);
-  line-height: var(--line-height-3);
   outline: 0;
 }
 
 .ampstart-input > label {
   color: var(--color-grey);
   pointer-events: none;
-  line-height: var(--line-height-3);
+  font-size: var(--h5);
+  line-height: var(--line-height-1);
+  opacity: 0;
+
+  animation: .2s;
+  animation-timing-function: cubic-bezier(.4,0,.2,1);
+  animation-fill-mode: forwards;
 }
 
+.ampstart-input > input:focus {
+  outline: 0;
+}
+
+
+/* Move placeholder above */
+.ampstart-input > input:focus::placeholder {
+  color: transparent;
+}
+
+.ampstart-input > input:not(:placeholder-shown) + label {
+  opacity: 1;
+}
+
+.ampstart-input > input:focus + label {
+  animation-name: ampstart-move-input-label;
+}
+
+@keyframes ampstart-move-input-label {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Bottom animation */
 .ampstart-input > label::after {
   content: '';
   height: 2px;
@@ -49,25 +86,12 @@
   width: 10px;
 }
 
-.ampstart-input > input:focus {
-  outline: 0;
-  padding-top: var(--line-height-1);
-}
-
-.ampstart-input > input:focus + label {
-  font-size: var(--h5);
-  line-height: var(--line-height-1);
-}
-
 .ampstart-input > input:focus + label::after {
   left: 0;
   width: 100%;
   visibility: visible;
 }
 
-.ampstart-input:active {
-  color: var(--color-grey);
-}
 
 .ampstart-input[type="text"] {
 }
