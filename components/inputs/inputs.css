@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,14 @@
   min-width: 100px;
   font-size: 1rem;
   line-height: var(--line-height-3);
+}
+
+.ampstart-input [disabled] {
+  opacity: 0.5;
+}
+
+.ampstart-input [disabled]:focus {
+  outline: 0;
 }
 
 .ampstart-input > textarea,

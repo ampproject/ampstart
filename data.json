@@ -461,8 +461,9 @@
         "input": {
           "type": "url",
           "placeholder": "Validate your webpage",
-          "id": "ip9",
-          "name": "name9"
+          "id": "ip9a",
+          "name": "name9",
+          "disabled": true
         }
       },
       {
@@ -482,6 +483,15 @@
         }
       },
       {
+        "input": {
+          "type": "range",
+          "placeholder": "Select a range",
+          "id": "ip11a",
+          "name": "name11",
+          "disabled": true
+        }
+      },
+      {
         "select": {
           "placeholder": "Select a fruit",
           "options": [
@@ -492,11 +502,31 @@
         }
       },
       {
+        "select": {
+          "placeholder": "Select a fruit",
+          "options": [
+            "Apple", "Orange", "Lemon", "Grape"
+          ],
+          "id": "ip12a",
+          "name": "name12",
+          "disabled": true
+        }
+      },
+      {
         "textarea": {
           "rows": 5,
           "placeholder": "Write your story",
           "id": "ip13",
           "name": "name13"
+        }
+      },
+      {
+        "textarea": {
+          "rows": 5,
+          "placeholder": "Dont Write anything",
+          "id": "ip13a",
+          "name": "name13",
+          "disabled": true
         }
       },
       {
@@ -516,6 +546,15 @@
         }
       },
       {
+        "checkbox": {
+          "label": "Item1 is Disabled",
+          "id": "ip14a",
+          "name": "name14",
+          "value": "2",
+          "disabled": true
+        }
+      },
+      {
         "radio": {
           "label": "option1",
           "id": "ip16",
@@ -529,6 +568,15 @@
           "id": "ip17",
           "name": "name17",
           "value": "3"
+        }
+      },
+      {
+        "radio": {
+          "label": "option1",
+          "id": "ip16a",
+          "name": "name16",
+          "value": "2",
+          "disabled": true
         }
       }
     ]
