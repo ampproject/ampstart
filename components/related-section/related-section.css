@@ -15,7 +15,7 @@
  */
 
 .ampstart-related-section-items > li {
-  border-bottom: solid var(--border-width) var(--color-border);
+  border-bottom: var(--border-width) solid var(--color-border);
 }
 
 .ampstart-related-section-items > li:last-child {

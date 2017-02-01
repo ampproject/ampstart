@@ -65,7 +65,7 @@
 @import 'bass-variables';
 @import 'ampstart-base/spacing';
 
-/* Custom properties */
-
 @import 'ampstart-base/heading';
 @import 'ampstart-base/base-elements';
+@import 'ampstart-base/elements/anchors';
+@import 'ampstart-base/elements/buttons';

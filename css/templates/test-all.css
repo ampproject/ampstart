@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,6 +14,13 @@
  * limitations under the License.
  */
 
-.ampstart-byline {
-  color: var(--color-dark-grey);
-}
+@import '../core';
+@import '../../components/images/images';
+@import '../../components/navbar/navbar';
+@import '../../components/images/fullpage-hero';
+@import '../../components/socialbox/socialbox';
+@import '../../components/related-article/related-article';
+@import '../../components/related-section/related-section';
+@import '../../components/byline/byline';
+@import '../../components/footer/footer';
+@import '../../components/inputs/inputs';
