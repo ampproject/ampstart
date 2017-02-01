@@ -16,14 +16,14 @@ limitations under the License.
 
 {{#input}}
 <div class="ampstart-input inline-block relative m-0 p-0 mb4 {{classes}}">
-  <input type="{{type}}" value="{{value}}" name="{{name}}" id="{{id}}" class="block border-none" placeholder="{{placeholder}}" {{#disabled}}disabled{{/disabled}}/>
+  <input type="{{type}}" value="{{value}}" name="{{name}}" id="{{id}}" class="block border-none" placeholder="{{placeholder}}" {{disabled}}/>
   <label for="{{id}}" class="absolute top-0 right-0 bottom-0 left-0">{{placeholder}}</label>
 </div>
 {{/input}}
 
 {{#select}}
 <div class="ampstart-input inline-block relative m-0 p-0 mb4 {{classes}}">
-  <select value="{{value}}" name="{{name}}" id="{{id}}" class="block border-none" {{#disabled}}disabled{{/disabled}}>
+  <select value="{{value}}" name="{{name}}" id="{{id}}" class="block border-none" {{disabled}}>
     {{#options}}
       <option>{{.}}</option>
     {{/options}}
@@ -34,14 +34,14 @@ limitations under the License.
 
 {{#textarea}}
 <div class="ampstart-input inline-block relative m-0 p-0 mb4 {{classes}}">
-  <textarea name="{{name}}" id="{{id}}" class="block border-none" rows={{rows}} {{#disabled}}disabled{{/disabled}}></textarea>
+  <textarea name="{{name}}" id="{{id}}" class="block border-none" rows="{{rows}}" {{disabled}}></textarea>
   <label for="{{id}}" class="absolute top-0 right-0 bottom-0 left-0">{{placeholder}}</label>
 </div>
 {{/textarea}}
 
 {{#checkbox}}
 <div class="ampstart-input ampstart-input-chk inline-block relative m-0 p-0 mb4 {{classes}}">
-    <input type="checkbox" value="{{value}}" name="{{name}}" id="{{id}}" class="" {{#disabled}}disabled{{/disabled}}/>
+    <input type="checkbox" value="{{value}}" name="{{name}}" id="{{id}}" class="" {{disabled}}/>
     <label for="{{id}}" class="">{{label}}</label>
 </div>
 {{/checkbox}}
@@ -49,7 +49,7 @@ limitations under the License.
 
 {{#radio}}
 <div class="ampstart-input ampstart-input-radio inline-block relative m-0 p-0 mb4 {{classes}}">
-    <input type="radio" value="{{value}}" name="{{name}}" id="{{id}}" class="" {{#disabled}}disabled{{/disabled}}/>
+    <input type="radio" value="{{value}}" name="{{name}}" id="{{id}}" class="" {{disabled}}/>
     <label for="{{id}}" class="">{{label}}</label>
 </div>
 {{/radio}}
