@@ -463,7 +463,7 @@
           "placeholder": "Validate your webpage",
           "id": "ip9a",
           "name": "name9",
-          "disabled": true
+          "disabled": "disabled"
         }
       },
       {
@@ -488,7 +488,7 @@
           "placeholder": "Select a range",
           "id": "ip11a",
           "name": "name11",
-          "disabled": true
+          "disabled": "disabled"
         }
       },
       {
@@ -509,7 +509,7 @@
           ],
           "id": "ip12a",
           "name": "name12",
-          "disabled": true
+          "disabled": "disabled"
         }
       },
       {
@@ -526,7 +526,7 @@
           "placeholder": "Dont Write anything",
           "id": "ip13a",
           "name": "name13",
-          "disabled": true
+          "disabled": "disabled"
         }
       },
       {
@@ -551,7 +551,7 @@
           "id": "ip14a",
           "name": "name14",
           "value": "2",
-          "disabled": true
+          "disabled": "disabled"
         }
       },
       {
@@ -576,7 +576,7 @@
           "id": "ip16a",
           "name": "name16",
           "value": "2",
-          "disabled": true
+          "disabled": "disabled"
         }
       }
     ]
