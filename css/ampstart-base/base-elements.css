@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-@import '../variables/core-vars';
+@import '../core-vars';
 @import 'elements/heading';
 @import 'elements/anchors';
 @import 'elements/buttons';

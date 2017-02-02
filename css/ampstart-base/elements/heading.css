@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-@import '../../variables/core-vars';
+@import '../../core-vars';
 
 h1 {
  font-size: var(--h1);
