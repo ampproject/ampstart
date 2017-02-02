@@ -32,11 +32,6 @@ main {
   margin: 0 auto;
 }
 
-/* Anchors */
-a, a:active, a:visited {
-  color: inherit;
-}
-
 p {
   padding: 0;
   margin: 0;

@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,39 +30,12 @@
 @import 'basscss-hide';
 
 
-/* Optional Modules (not included in Basscss by default) */
-/*
-
-@import 'basscss-addons/modules/responsive-margin';
-@import 'basscss-addons/modules/responsive-padding';
-
-@import 'basscss-addons/modules/media-object';
-@import 'basscss-addons/modules/all';
-@import 'basscss-addons/modules/forms';
-@import 'basscss-addons/modules/input-range';
-@import 'basscss-addons/modules/progress';
-
-@import 'basscss-addons/modules/btn';
-@import 'basscss-addons/modules/btn-primary';
-@import 'basscss-addons/modules/btn-outline';
-@import 'basscss-addons/modules/btn-sizes';
-
-@import 'basscss-addons/modules/colors';
-@import 'basscss-addons/modules/background-colors';
-@import 'basscss-addons/modules/border-colors';
-@import 'basscss-addons/modules/darken';
-@import 'basscss-addons/modules/lighten';
-@import 'basscss-addons/modules/background-images';
-*/
-
 /* Custom media queries */
 /*
 @custom-media --breakpoint-sm (min-width: 40em);
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
 */
-
-@import 'variables/core-vars';
 
 @import 'ampstart-base/heading';
 @import 'ampstart-base/base-elements';

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-@import '../core';
+@import '../base-page';
 @import '../../components/images/images';
 @import '../../components/navbar/navbar';
 @import '../../components/images/fullpage-hero';
