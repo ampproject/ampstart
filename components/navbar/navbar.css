@@ -13,8 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-@import '../../css/ampstart-base/base-elements';
+@import '../../css/variables/core-vars';
 
 .ampstart-headerbar {
   background-color: var(--color-primary);
@@ -115,8 +114,4 @@ ampstart-nav-item:hover amp-accordion ul,
 
 .ampstart-sidebar-social {
 
-}
-
-:root {
-  --navbar-height: var(--line-height-6);
 }

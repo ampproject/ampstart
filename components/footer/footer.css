@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '../../css/variables/core-vars';
 
 .ampstart-footer {
   background-color: var(--color-footer-background);
@@ -24,9 +25,4 @@
 
 .ampstart-footer-social .ampstart-icon {
   fill: var(--color-font-footer);
-}
-
-:root {
-  --color-footer-background: var(--color-black);
-  --color-font-footer: var(--color-white);
 }

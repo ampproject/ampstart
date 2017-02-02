@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,8 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../css/variables/core-vars';
 
-.ampstart-byline {
-  color: var(--color-dark-grey);
+:root {
+  --color-white: #fff;
+  --color-dark-grey: #4a4a4a;
+  --color-grey: #6e6e6e;
+  --color-black: #000;
+
+  --color-primary: #000;
+  --color-font-secondary: #000;
+
+  --color-secondary: #fff;
+  --color-font-primary: #fff;
+
+  --color-font-default: #000;
+
+  --color-font-subtitle: #4f4f4f;
+
+  --color-disabled: #9b9b9b;
+
+  --color-border: var(--color-black);
+
+  --font-family: Helvetica, Arial, sans-serif;
+
+  --zindex-highest: 999;
 }

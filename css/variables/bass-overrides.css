@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,7 +33,7 @@
   --line-height-3: 1.5rem;
   --line-height-4: 2rem;
 
-/*
+
   --bold-font-weight: bold;
 
   --width-1: 24rem;
@@ -48,9 +48,8 @@
 
   --letter-spacing: 1;
   --caps-letter-spacing: .2em;
-  --bold-font-weight: bold;
 
   --border-width: 1px;
   --border-radius: 3px;
-*/
+
 }

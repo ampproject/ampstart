@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-@import '../bass-variables';
-@import 'spacing';
+@import '../variables/core-vars';
 
 h1 {
  font-size: var(--h1);
