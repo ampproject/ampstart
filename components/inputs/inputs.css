@@ -36,7 +36,6 @@
   width: 100%;
   margin-top: var(--line-height-1);
   line-height: var(--line-height-3);
-  /* Doing this with border-none class does not set it to none*/
   border: 0;
   border-radius: 0;
   border-bottom: var(--border-width) solid var(--color-primary);
@@ -110,8 +109,16 @@
   visibility: visible;
 }
 
+/* Search */
+.ampstart-input > input[type="search"] {
+  appearance: none;
+}
+
 
 /* Range */
+.ampstart-input > input[type="range"] {
+  border-bottom: 0;
+}
 .ampstart-input > input[type="range"] + label::after {
   display: none;
 }
@@ -125,9 +132,11 @@
   content: '⌄';
   line-height: var(--line-height-3);
   position: absolute;
-  right: 0;
-  bottom: 1px;
-  zoom: 3;
+  right: 5px;
+  zoom: 2;
+  top: 0;
+  bottom: 0;
+  color: var(--color-primary);
 }
 
 /* Checkbox & Radio */
@@ -140,9 +149,17 @@
 .ampstart-input input[type="checkbox"],
 .ampstart-input input[type="radio"] {
   margin-top: 0;
-  width: auto;
-  position: absolute;
-  visibility: hidden;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-primary);
+  vertical-align: middle;
+  margin-right: var(--space-1);
+  text-align: center;
+}
+
+.ampstart-input input[type="radio"] {
+  border-radius: 20px;
 }
 
 .ampstart-input input[type="checkbox"] + label,
@@ -150,47 +167,65 @@
   pointer-events: auto;
   animation: none;
   vertical-align: middle;
+  opacity: 1;
 }
+
 
 .ampstart-input input[type="checkbox"] + label::after,
 .ampstart-input input[type="radio"] + label::after {
   display: none;
 }
 
-/* Custom checkmark */
-.ampstart-input input[type="checkbox"] + label::before {
-  display: inline-block;
+
+/* Custom checkmark/disc */
+.ampstart-input input[type="checkbox"]::after,
+.ampstart-input input[type="radio"]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right : 0;
   content: " ";
-  width: 14px;
-  height: 14px;
-  border: 1px solid var(--color-primary);
+  line-height: 1.4rem;
   vertical-align: middle;
-  margin-right: var(--space-1);
   text-align: center;
+  background-color: var(--color-secondary);
 }
 
-.ampstart-input input[type="checkbox"]:checked + label::before {
-  content: "✔";
+.ampstart-input input[type="checkbox"]:checked::after {
   background-color: var(--color-primary);
   color: var(--color-font-primary);
 }
 
-/* Custom radio */
-.ampstart-input input[type="radio"] + label::before {
-  display: inline-block;
-  content: " ";
-  width: 14px;
-  height: 14px;
-  border: 1px solid var(--color-primary);
-  border-radius: 14px;
-  vertical-align: middle;
-  margin-right: var(--space-1);
-  text-align: center;
+.ampstart-input input[type="checkbox"]:checked::after {
+  content: "✓";
 }
 
-.ampstart-input input[type="radio"]:checked + label::before {
+/* Custom radio */
+.ampstart-input input[type="radio"]::after {
+  border-radius: 18px;
+}
+
+.ampstart-input input[type="radio"]:checked::after {
   content: "•";
-  font-size: var(--h2);
+  font-size: var(--h1);
   background-color: var(--color-secondary);
   color: var(--color-font-secondary);
+}
+
+/* Hacks for IE/Edge */
+_:-ms-lang(x), .ampstart-input > label {
+  opacity: 1;
+}
+
+_:-ms-lang(x), .ampstart-input > input::placeholder {
+  color: transparent;
+}
+
+_:-ms-lang(x), .ampstart-input > input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.ampstart-input > select::-ms-expand {
+  display: none;
 }
