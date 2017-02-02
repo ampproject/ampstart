@@ -36,7 +36,6 @@
   width: 100%;
   margin-top: var(--line-height-1);
   line-height: var(--line-height-3);
-  /* Doing this with border-none class does not set it to none*/
   border: 0;
   border-radius: 0;
   border-bottom: var(--border-width) solid var(--color-primary);
@@ -117,6 +116,9 @@
 
 
 /* Range */
+.ampstart-input > input[type="range"] {
+  border-bottom: 0;
+}
 .ampstart-input > input[type="range"] + label::after {
   display: none;
 }
@@ -130,9 +132,11 @@
   content: '⌄';
   line-height: var(--line-height-3);
   position: absolute;
-  right: 0;
-  bottom: 1px;
-  zoom: 3;
+  right: 5px;
+  zoom: 2;
+  top: 0;
+  bottom: 0;
+  color: var(--color-primary);
 }
 
 /* Checkbox & Radio */
@@ -163,6 +167,7 @@
   pointer-events: auto;
   animation: none;
   vertical-align: middle;
+  opacity: 1;
 }
 
 
@@ -206,4 +211,21 @@
   font-size: var(--h1);
   background-color: var(--color-secondary);
   color: var(--color-font-secondary);
+}
+
+/* Hacks for IE/Edge */
+_:-ms-lang(x), .ampstart-input > label {
+  opacity: 1;
+}
+
+_:-ms-lang(x), .ampstart-input > input::placeholder {
+  color: transparent;
+}
+
+_:-ms-lang(x), .ampstart-input > input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.ampstart-input > select::-ms-expand {
+  display: none;
 }
