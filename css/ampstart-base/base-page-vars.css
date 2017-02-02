@@ -13,12 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../css/core-vars';
 
-.ampstart-social-box {
-  display: flex;
-}
+:root {
+  --color-white: #fff;
+  --color-dark-grey: #4a4a4a;
+  --color-grey: #6e6e6e;
+  --color-black: #000;
 
-.ampstart-social-box > amp-social-share {
-  background-color: var(--color-primary);
+  --color-primary: #000;
+  --color-font-secondary: #000;
+
+  --color-secondary: #fff;
+  --color-font-primary: #fff;
+
+  --color-font-default: #000;
+
+  --color-font-subtitle: #4f4f4f;
+
+  --color-disabled: #9b9b9b;
+
+  --color-border: var(--color-black);
+
+  --font-family: Helvetica, Arial, sans-serif;
+
+  --zindex-highest: 999;
 }

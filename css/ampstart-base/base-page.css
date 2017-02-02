@@ -13,12 +13,37 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../css/core-vars';
+@import '../core-vars';
 
-.ampstart-social-box {
-  display: flex;
+* {
+  box-sizing: border-box;
 }
 
-.ampstart-social-box > amp-social-share {
-  background-color: var(--color-primary);
+/* Body */
+body {
+  color: var(--color-font-default);
+  line-height: 1.75rem;
+  font-family: var(--font-family);
+}
+
+main {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Subtitle */
+.ampstart-subtitle {
+  color: var(--color-font-subtitle);
+  font-size: var(--h5);
+}
+
+
+/* Social links */
+.ampstart-icon {
+  fill: var(--color-font-primary);
 }

@@ -13,12 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../css/core-vars';
 
-.ampstart-social-box {
-  display: flex;
-}
-
-.ampstart-social-box > amp-social-share {
-  background-color: var(--color-primary);
-}
+@import 'ampstart-base/bass-override-vars';
+@import 'ampstart-base/ampstart-spacing-vars';
+@import 'ampstart-base/base-page-vars';
+@import '../components/navbar/navbar-vars';
+@import '../components/footer/footer-vars';

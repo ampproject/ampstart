@@ -13,12 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../css/core-vars';
 
-.ampstart-social-box {
-  display: flex;
+@import '../../core-vars';
+
+/* Dropcap */
+.ampstart-dropcap {
+  padding-top: var(--space-2);
+  margin-top: var(--space-3);
 }
 
-.ampstart-social-box > amp-social-share {
-  background-color: var(--color-primary);
+.ampstart-dropcap:first-letter {
+  border-top: var(--border-width) solid var(--color-primary);
+  color: var(--color-font-secondary);
+  font-size: var(--h1);
+  font-weight: var(--bold-font-weight);
+  margin-left: -2px;
 }

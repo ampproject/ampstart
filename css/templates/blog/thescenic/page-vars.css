@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,28 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-@import '../core';
-@import '../../components/images/images';
-@import '../../components/navbar/navbar';
-@import '../../components/images/fullpage-hero';
-@import '../../components/socialbox/socialbox';
-@import '../../components/related-article/related-article';
-@import '../../components/related-section/related-section';
-@import '../../components/byline/byline';
-@import '../../components/footer/footer';
+@import '../../../core-vars';
 
 :root {
-  --color-primary: #000;
+  --color-primary: #9013fe;
   --color-font-primary: #fff;
 
   --color-secondary: #fff;
-  --color-font-secondary: #000;
-
-  --color-footer-background: var(--color-secondary);
-  --color-font-footer: var(--color-font-secondary);
-
-  --color-border: var(--color-dark-grey);
+  --color-font-secondary: #9013fe;
 
   --color-font-default: var(--color-dark-grey);
   /*--color-disabled: #9b9b9b;*/
