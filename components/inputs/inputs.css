@@ -46,7 +46,7 @@
 }
 
 .ampstart-input > label {
-  color: var(--color-grey);
+  color: var(--color-font-secondary);
   pointer-events: none;
   font-size: var(--h5);
   line-height: var(--line-height-1);
