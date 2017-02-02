@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,8 +14,18 @@
  * limitations under the License.
  */
 
-@import '../variables/core-vars';
-@import 'elements/heading';
-@import 'elements/anchors';
-@import 'elements/buttons';
-@import 'elements/dropcap';
+@import '../../variables/core-vars';
+
+/* Dropcap */
+.ampstart-dropcap {
+  padding-top: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.ampstart-dropcap:first-letter {
+  border-top: var(--border-width) solid var(--color-primary);
+  color: var(--color-font-secondary);
+  font-size: var(--h1);
+  font-weight: var(--bold-font-weight);
+  margin-left: -2px;
+}

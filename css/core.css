@@ -37,7 +37,5 @@
 @custom-media --breakpoint-lg (min-width: 64em);
 */
 
-@import 'ampstart-base/heading';
+@import 'ampstart-base/base-page';
 @import 'ampstart-base/base-elements';
-@import 'ampstart-base/elements/anchors';
-@import 'ampstart-base/elements/buttons';

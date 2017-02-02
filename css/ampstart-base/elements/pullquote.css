@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,8 +14,12 @@
  * limitations under the License.
  */
 
-@import '../variables/core-vars';
-@import 'elements/heading';
-@import 'elements/anchors';
-@import 'elements/buttons';
-@import 'elements/dropcap';
+@import '../../variables/core-vars';
+
+/* Pull quote*/
+.ampstart-pullquote {
+  border: none;
+  border-left: 4px solid var(--color-primary);
+  font-size: var(--h3);
+  padding-left: var(--space-3);
+}
