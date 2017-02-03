@@ -26,7 +26,6 @@ body {
   font-family: var(--font-family);
 }
 
-/*i edited this*/
 main {
   max-width: 700px;
   margin: 0 auto;
