@@ -22,7 +22,7 @@
 /* Body */
 body {
   color: var(--color-font-default);
-  line-height: var(--line-height-3) 1.5rem;
+  line-height: var(--line-height-3);
   font-family: var(--font-family);
 }
 
