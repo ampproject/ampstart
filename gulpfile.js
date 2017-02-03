@@ -76,8 +76,8 @@ gulp.task('posthtml', 'build kickstart files', function() {
   ];
   const options = {};
   return gulp.src(config.src.templates)
-    .pipe(posthtml(plugins, options))
     .pipe(mustache(getData()))
+    .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.templates))
 });
 

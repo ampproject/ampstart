@@ -18,16 +18,35 @@ limitations under the License.
 
 {{#input}}
 <!-- Start Input -->
-<div class="ampstart-input inline-block relative m-0 p-0 mb4 {{classes}}">
+<div class="ampstart-input inline-block relative m0 p0 mb3 {{classes}}">
   <input type="{{type}}" value="{{value}}" name="{{name}}" id="{{id}}" class="block border-none p0 m0" placeholder="{{placeholder}}" {{disabled}}/>
   <label for="{{id}}" class="absolute top-0 right-0 bottom-0 left-0">{{placeholder}}</label>
 </div>
 <!-- End Input-->
 {{/input}}
 
+{{#submit}}
+<!-- Start Submit -->
+<input type="submit" name="{{name}}" value="{{value}}" id="{{name}}" class="ampstart-btn mb3 {{classes}}"/>
+<!-- End Submit -->
+{{/submit}}
+
+{{#reset}}
+<!-- Start Reset -->
+<input type="reset" name="{{name}}" value="{{value}}" id="{{name}}" class="ampstart-btn mb3 {{classes}}"/>
+<!-- End Reset -->
+{{/reset}}
+
+{{#button}}
+<!-- Start Button -->
+<input type="button" name="{{name}}" value="{{value}}" id="{{name}}" class="ampstart-btn mb3 {{classes}}"/>
+<!-- End Button -->
+{{/button}}
+
+
 {{#select}}
 <!-- Start Select -->
-<div class="ampstart-input inline-block relative m-0 p-0 mb4 {{classes}}">
+<div class="ampstart-input inline-block relative m0 p0 mb3 {{classes}}">
   <select value="{{value}}" name="{{name}}" id="{{id}}" class="block border-none  p0 m0" {{disabled}}>
     {{#options}}
       <option>{{.}}</option>
@@ -40,7 +59,7 @@ limitations under the License.
 
 {{#textarea}}
 <!-- Start Textarea -->
-<div class="ampstart-input inline-block relative m-0 p-0 mb4 {{classes}}">
+<div class="ampstart-input inline-block relative m0 p0 mb3 {{classes}}">
   <textarea name="{{name}}" id="{{id}}" class="block border-none  p0 m0" rows="{{rows}}" {{disabled}}></textarea>
   <label for="{{id}}" class="absolute top-0 right-0 bottom-0 left-0">{{placeholder}}</label>
 </div>
@@ -49,7 +68,7 @@ limitations under the License.
 
 {{#checkbox}}
 <!-- Start Checkbox -->
-<div class="ampstart-input ampstart-input-chk inline-block relative m0 p0 mb4 {{classes}}">
+<div class="ampstart-input ampstart-input-chk inline-block relative m0 p0 mb3 {{classes}}">
     <input type="checkbox" value="{{value}}" name="{{name}}" id="{{id}}" class="p0 m0 relative" {{disabled}}/>
     <label for="{{id}}" class="">{{label}}</label>
 </div>
@@ -59,7 +78,7 @@ limitations under the License.
 
 {{#radio}}
 <!-- Start Radio -->
-<div class="ampstart-input ampstart-input-radio inline-block relative m0 p0 mb4 {{classes}}">
+<div class="ampstart-input ampstart-input-radio inline-block relative m0 p0 mb3 {{classes}}">
     <input type="radio" value="{{value}}" name="{{name}}" id="{{id}}" class="relative" {{disabled}}/>
     <label for="{{id}}" class="">{{label}}</label>
 </div>

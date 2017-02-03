@@ -21,3 +21,14 @@
 @import '../../../../components/socialbox/socialbox';
 @import '../../../../components/footer/footer';
 @import 'page-vars';
+
+main {
+  margin-top: var(--navbar-height);
+}
+.ampstart-input {
+  width: 100%;
+}
+
+.recipe-article-category {
+  color: var(--color-font-primary);
+}

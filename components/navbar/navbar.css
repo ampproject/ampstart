@@ -52,6 +52,7 @@
 
 .ampstart-navbar-trigger {
   line-height: var(--navbar-height);
+  zoom: 2;
 }
 
 .ampstart-headerbar-nav,

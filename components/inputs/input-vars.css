@@ -14,9 +14,10 @@
  * limitations under the License.
  */
 
-@import 'ampstart-base/bass-override-vars';
-@import 'ampstart-base/ampstart-spacing-vars';
-@import 'ampstart-base/base-page-vars';
-@import '../components/inputs/input-vars';
-@import '../components/navbar/navbar-vars';
-@import '../components/footer/footer-vars';
+:root {
+  --color-input-default: var(--color-dark-grey);
+  --color-input-primary: var(--color-primary);
+  --color-input-font-primary: var(--color-font-primary);
+  --color-input-secondary: var(--color-secondary);
+  --color-input-font-secondary: var(--color-font-secondary);
+}
