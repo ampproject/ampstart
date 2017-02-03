@@ -1,3 +1,4 @@
+{{!
 <!---
 Copyright 2016 The AMPStart Authors. All Rights Reserved.
 
@@ -13,8 +14,10 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+}}
 
 {{#navbar}}
+  <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
     <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</a>
     {{#logo}}
@@ -52,4 +55,5 @@ limitations under the License.
     {{/sidebaronly}}
   </header>
   {{> sidebar.snip.html}}
+  <!-- End Navbar -->
 {{/navbar}}
