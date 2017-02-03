@@ -33,6 +33,10 @@
   max-height: calc(100vh - var(--navbar-height));
 }
 
+.ampstart-image-fullpage-hero > amp-img img {
+  object-fit: cover;
+}
+
 .ampstart-fullpage-hero-heading {
   line-height: var(--space-6);
 }
@@ -47,4 +51,10 @@
 .ampstart-readmore::after {
   display: block;
   content: 'v';
+}
+
+@media (--breakpoint-md) {
+  .ampstart-image-fullpage-hero > amp-img {
+    height: 60vh;
+  }
 }
