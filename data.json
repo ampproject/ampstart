@@ -74,16 +74,16 @@
         {
           "image-with-heading": {
             "width": "1280",
-            "height": "857",
-            "url": "../img/blog-thescenic/carousel1.jpg",
+            "height": "853",
+            "url": "../img/blog-thescenic/carousel2.jpg",
             "heading-html": "<h2>Somewhere in Alaska</h2>"
           }
         },
         {
           "image-with-heading": {
             "width": "1280",
-            "height": "720",
-            "url": "../img/blog-thescenic/carousel3.jpg",
+            "height": "853",
+            "url": "../img/blog-thescenic/carousel2.jpg",
             "heading-html": "<h2>Somewhere in Alaska</h2>"
           }
         }
