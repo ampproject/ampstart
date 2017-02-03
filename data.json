@@ -1,7 +1,4 @@
 {
-  "index": {
-    "message": "hello world"
-  },
   "blog-thescenic": {
     "navbar": {
       "logo": "../img/blog-thescenic/header-logo.png",
@@ -385,6 +382,17 @@
       "copyright": {
         "text": "© Your Company, 2016"
       }
+    }
+  },
+  "blog-recipe": {
+    "head-tag": {
+      "title": "The Recipe Blog",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-social-share"
+      ],
+      "css-path": "blog/recipe"
     }
   },
   "test-all-amp": {
