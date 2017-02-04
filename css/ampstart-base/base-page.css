@@ -24,6 +24,7 @@ body {
   color: var(--color-font-default);
   line-height: 1.75rem;
   font-family: var(--font-family);
+  min-width: 315px;
 }
 
 main {

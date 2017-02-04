@@ -533,7 +533,17 @@
         }
       ]
     },
+    "social-follow": {
+      "links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"instagram": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
+      ]
+    },
     "footer": {
+      "social-follow": false,
       "copyright": {
         "text": "© 2017 The Blog"
       }
