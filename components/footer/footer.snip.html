@@ -19,32 +19,7 @@ limitations under the License.
 {{#footer}}
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center p3">
-    {{#publisher-social-links}}
-      <ul class="ampstart-footer-social list-reset flex justify-around items-center flex-wrap m0 mb3">
-        {{#links}}
-          <li class="mr2">
-            {{#twitter}}
-              <a href="{{.}}">{{> ../../img/icons/twitter.svg}}</a>
-            {{/twitter}}
-            {{#facebook}}
-              <a href="{{.}}">{{> ../../img/icons/facebook.svg}}</a>
-            {{/facebook}}
-            {{#instagram}}
-              <a href="{{.}}">{{> ../../img/icons/instagram.svg}}</a>
-            {{/instagram}}
-            {{#pinterest}}
-              <a href="{{.}}">{{> ../../img/icons/pinterest.svg}}</a>
-            {{/pinterest}}
-            {{#email}}
-              <a href="{{.}}">{{> ../../img/icons/email.svg}}</a>
-            {{/email}}
-            {{#gplus}}
-              <a href="{{.}}">{{> ../../img/icons/gplus.svg}}</a>
-            {{/gplus}}
-          </li>
-        {{/links}}
-      </ul>
-    {{/publisher-social-links}}
+    {{> ../social-follow/social-follow.snip.html}}
     {{#faq-links}}
       <nav class="ampstart-footer-nav">
         <ul class="list-reset flex flex-wrap mb3">

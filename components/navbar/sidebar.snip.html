@@ -52,30 +52,8 @@ limitations under the License.
       {{/nav}}
     </ul>
   </nav>
-  <ul class="ampstart-sidebar-social list-reset flex justify-around items-center flex-wrap">
-    {{#publisher-social-links}}
-      <li class="mr2">
-        {{#twitter}}
-          <a href="{{.}}">{{> ../../img/icons/twitter.svg}}</a>
-        {{/twitter}}
-        {{#facebook}}
-          <a href="{{.}}">{{> ../../img/icons/facebook.svg}}</a>
-        {{/facebook}}
-        {{#instagram}}
-          <a href="{{.}}">{{> ../../img/icons/instagram.svg}}</a>
-        {{/instagram}}
-        {{#pinterest}}
-          <a href="{{.}}">{{> ../../img/icons/pinterest.svg}}</a>
-        {{/pinterest}}
-        {{#email}}
-          <a href="{{.}}">{{> ../../img/icons/email.svg}}</a>
-        {{/email}}
-        {{#gplus}}
-          <a href="{{.}}">{{> ../../img/icons/gplus.svg}}</a>
-        {{/gplus}}
-      </li>
-    {{/publisher-social-links}}
-  </ul>
+
+  {{> ../social-follow/social-follow.snip.html}}
 
   {{#faq}}
     <ul class="ampstart-sidebar-faq list-reset m0">

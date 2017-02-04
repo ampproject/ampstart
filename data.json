@@ -180,7 +180,7 @@
       ]
     },
     "footer": {
-      "publisher-social-links": {
+      "social-follow": {
         "links": [
           {"twitter": "#"},
           {"facebook": "#"},
@@ -234,14 +234,16 @@
           }
         }
       ],
-      "publisher-social-links":[
-        {"twitter": "#"},
-        {"facebook": "#"},
-        {"instagram": "#"},
-        {"gplus": "#"},
-        {"pinterest": "#"},
-        {"mail": "#"}
-      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"instagram": "#"},
+          {"gplus": "#"},
+          {"pinterest": "#"},
+          {"email": "#"}
+        ]
+      },
       "faq": {
         "links": [
           {
@@ -376,7 +378,7 @@
       ]
     },
     "footer": {
-      "publisher-social-links": {
+      "social-follow": {
         "links": [
           {"twitter": "#"},
           {"facebook": "#"},
@@ -404,7 +406,8 @@
         "amp-sidebar",
         "amp-social-share",
         "amp-accordion",
-        "amp-form"
+        "amp-form",
+        "amp-instagram"
       ],
       "css-path": "blog/recipe"
     },
@@ -458,13 +461,15 @@
           "link": {"url": "#", "text": "Shop"}
         }
       ],
-      "publisher-social-links":[
-        {"twitter": "#"},
-        {"facebook": "#"},
-        {"instagram": "#"},
-        {"pinterest": "#"},
-        {"mail": "#"}
-      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"instagram": "#"},
+          {"pinterest": "#"},
+          {"email": "#"}
+        ]
+      },
       "faq": {
         "links": [
           {
