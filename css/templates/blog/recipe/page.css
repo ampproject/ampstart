@@ -13,38 +13,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../core-vars';
 
-* {
-  box-sizing: border-box;
-}
-
-/* Body */
-body {
-  color: var(--color-font-default);
-  line-height: 1.75rem;
-  font-family: var(--font-family);
-  min-width: 315px;
-}
+@import '../../../core';
+@import '../../../../components/images/images';
+@import '../../../../components/navbar/navbar';
+@import '../../../../components/inputs/inputs';
+@import '../../../../components/socialbox/socialbox';
+@import '../../../../components/footer/footer';
+@import 'page-vars';
 
 main {
-  max-width: 700px;
-  margin: 0 auto;
+  margin-top: var(--navbar-height);
+}
+.ampstart-input {
+  width: 100%;
 }
 
-p {
-  padding: 0;
-  margin: 0;
-}
-
-/* Subtitle */
-.ampstart-subtitle {
-  color: var(--color-font-subtitle);
-  font-size: var(--h5);
-}
-
-
-/* Social links */
-.ampstart-icon {
-  fill: var(--color-font-primary);
+.recipe-article-category {
+  color: var(--color-font-primary);
 }

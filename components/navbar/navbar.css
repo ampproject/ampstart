@@ -52,6 +52,7 @@
 
 .ampstart-navbar-trigger {
   line-height: var(--navbar-height);
+  zoom: 2;
 }
 
 .ampstart-headerbar-nav,
@@ -92,14 +93,18 @@ ampstart-nav-item:hover amp-accordion ul,
   opacity: 0.9;
 }
 
-/* Sidebar */
+.ampstart-sidebar {
+  min-width: 300px;
+  width: 300px;
+}
+
 .ampstart-sidebar-header {
   line-height: var(--navbar-height);
 }
 
 .ampstart-sidebar .ampstart-nav-item,
 .ampstart-sidebar .ampstart-nav-dropdown header,
-.ampstart-sidebar .ampstart-sidebar-social,
+.ampstart-sidebar .ampstart-social-follow,
 .ampstart-sidebar .ampstart-faq-item {
   margin: 0 0 var(--space-4);
 }
@@ -110,8 +115,4 @@ ampstart-nav-item:hover amp-accordion ul,
 
 .ampstart-sidebar .ampstart-navbar-trigger {
   line-height: inherit;
-}
-
-.ampstart-sidebar-social {
-
 }

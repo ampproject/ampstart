@@ -13,38 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../core-vars';
 
-* {
-  box-sizing: border-box;
-}
-
-/* Body */
-body {
-  color: var(--color-font-default);
-  line-height: 1.75rem;
-  font-family: var(--font-family);
-  min-width: 315px;
-}
-
-main {
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-p {
-  padding: 0;
-  margin: 0;
-}
-
-/* Subtitle */
-.ampstart-subtitle {
-  color: var(--color-font-subtitle);
-  font-size: var(--h5);
-}
-
-
-/* Social links */
-.ampstart-icon {
-  fill: var(--color-font-primary);
+:root {
+  --color-input-default: var(--color-dark-grey);
+  --color-input-primary: var(--color-primary);
+  --color-input-font-primary: var(--color-font-primary);
+  --color-input-secondary: var(--color-secondary);
+  --color-input-font-secondary: var(--color-font-secondary);
 }

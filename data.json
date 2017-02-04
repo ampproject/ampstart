@@ -1,10 +1,11 @@
 {
-  "index": {
-    "message": "hello world"
-  },
   "blog-thescenic": {
     "navbar": {
-      "logo": "../img/blog-thescenic/header-logo.png",
+      "logo": {
+        "url": "../img/blog-thescenic/header-logo.png",
+        "width": "147",
+        "height": "44"
+      },
       "name": "Scenic Times",
       "sidebar-id": "header-sidebar",
       "nav": [
@@ -43,7 +44,7 @@
       ]
     },
     "fullpage-hero": {
-      "heading": "Most Beautiful<br> Hikes in Alaska",
+      "heading": "Most Beautiful Hikes in Alaska",
       "narrow-img": "../img/blog-thescenic/cropped_hero.jpg",
       "wide-img": "../img/blog-thescenic/hero.jpg",
       "readmore": {
@@ -179,17 +180,21 @@
       ]
     },
     "footer": {
-      "publisher-social-links": [
-        {"twitter": "#"},
-        {"facebook": "#"},
-        {"pinterest": "#"},
-        {"email": "#"}
-      ],
-      "links": [
-        {"text": "About", "url": "#"},
-        {"text": "Contact", "url": "#"},
-        {"text": "Terms", "url": "#"}
-      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"pinterest": "#"},
+          {"email": "#"}
+        ]
+      },
+      "faq-links": {
+        "links": [
+          {"text": "About", "url": "#"},
+          {"text": "Contact", "url": "#"},
+          {"text": "Terms", "url": "#"}
+        ]
+      },
       "copyright": {
         "text": "© Your Company, 2016"
       }
@@ -229,14 +234,16 @@
           }
         }
       ],
-      "publisher-social-links":[
-        {"twitter": "#"},
-        {"facebook": "#"},
-        {"instagram": "#"},
-        {"gplus": "#"},
-        {"pinterest": "#"},
-        {"mail": "#"}
-      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"instagram": "#"},
+          {"gplus": "#"},
+          {"pinterest": "#"},
+          {"email": "#"}
+        ]
+      },
       "faq": {
         "links": [
           {
@@ -249,7 +256,7 @@
       }
     },
     "fullpage-hero": {
-      "heading": "Most Beautiful<br> Photos",
+      "heading": "Most Beautiful Photos",
       "narrow-img": "../img/blog-photo-gallery/elephants_narrow.png",
       "wide-img": "../img/blog-photo-gallery/elephant_wide.jpg",
       "credit": {
@@ -371,19 +378,174 @@
       ]
     },
     "footer": {
-      "publisher-social-links": [
-        {"twitter": "#"},
-        {"facebook": "#"},
-        {"pinterest": "#"},
-        {"email": "#"}
-      ],
-      "links": [
-        {"text": "About", "url": "#"},
-        {"text": "Contact", "url": "#"},
-        {"text": "Terms", "url": "#"}
-      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"pinterest": "#"},
+          {"email": "#"}
+        ]
+      },
+      "faq-links": {
+        "links": [
+          {"text": "About", "url": "#"},
+          {"text": "Contact", "url": "#"},
+          {"text": "Terms", "url": "#"}
+        ]
+      },
       "copyright": {
         "text": "© Your Company, 2016"
+      }
+    }
+  },
+  "blog-recipe": {
+    "head-tag": {
+      "title": "The Recipe Blog",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-social-share",
+        "amp-accordion",
+        "amp-form",
+        "amp-instagram"
+      ],
+      "css-path": "blog/recipe"
+    },
+    "navbar": {
+      "logo": {
+        "url": "../img/blog-recipe/logo.png",
+        "width": "73",
+        "height": "45"
+      },
+      "name": "The Blog",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "nav": [
+        {
+          "dropdown": {
+            "heading": "Fashion",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Styling Tips"}
+              },
+              {
+                "link": {"url": "#", "text": "Designers"}
+              }
+            ]
+          }
+        },
+
+        {
+          "link": {"url": "#", "text": "Travel"}
+        },
+
+        {
+          "dropdown": {
+            "heading": "Food",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Recipes"}
+              },
+              {
+                "link": {"url": "#", "text": "Hosting Tips"}
+              }
+            ]
+          }
+        },
+
+        {
+          "link": {"url": "#", "text": "Beauty"}
+        },
+
+        {
+          "link": {"url": "#", "text": "Shop"}
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"instagram": "#"},
+          {"pinterest": "#"},
+          {"email": "#"}
+        ]
+      },
+      "faq": {
+        "links": [
+          {
+            "link": {"url": "#", "text": "About"}
+          },
+          {
+            "link": {"url": "#", "text": "Contact"}
+          }
+        ]
+      }
+    },
+    "byline": {
+      "time": {"text": "December 13, 2016", "value":"2016-12-13"}
+    },
+    "form": {
+      "title": "Leave a reply",
+      "form-text": "Not to worry, your email will not be published.",
+      "inputs": [
+        {
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "Comment",
+            "id": "comment",
+            "name": "comment"
+          }
+        },
+        {
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "Name",
+            "id": "name",
+            "name": "name"
+          }
+        },
+        {
+          "input": {
+            "type": "email",
+            "value": "",
+            "placeholder": "Email",
+            "id": "emailid",
+            "name": "emailid"
+          }
+        },
+        {
+          "input": {
+            "type": "url",
+            "placeholder": "Webpage",
+            "id": "webpage",
+            "name": "webpage"
+          }
+        },
+        {
+          "submit": {
+            "id": "submit",
+            "name": "submit",
+            "value": "Submit",
+            "classes": "ampstart-btn-secondary"
+          }
+        }
+      ]
+    },
+    "social-follow": {
+      "links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"instagram": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
+      ]
+    },
+    "footer": {
+      "social-follow": false,
+      "copyright": {
+        "text": "© 2017 The Blog"
       }
     }
   },

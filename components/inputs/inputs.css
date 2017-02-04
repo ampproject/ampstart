@@ -39,14 +39,14 @@
   line-height: var(--line-height-3);
   border: 0;
   border-radius: 0;
-  border-bottom: var(--border-width) solid var(--color-primary);
+  border-bottom: var(--border-width) solid var(--color-input-default);
   background: none;
-  color: var(--color-dark-grey);
+  color: var(--color-input-default);
   outline: 0;
 }
 
 .ampstart-input > label {
-  color: var(--color-font-secondary);
+  color: var(--color-input-font-secondary);
   pointer-events: none;
   font-size: var(--h5);
   line-height: var(--line-height-1);
@@ -95,7 +95,7 @@
   position: absolute;
   bottom: 0;
   left: 45%;
-  background: var(--color-primary);
+  background: var(--color-input-primary);
   transition: .2s;
   transition-timing-function: cubic-bezier(.4,0,.2,1);
   visibility: hidden;
@@ -137,14 +137,14 @@
   zoom: 2;
   top: 0;
   bottom: 0;
-  color: var(--color-primary);
+  color: var(--color-input-primary);
 }
 
 /* Checkbox & Radio */
 .ampstart-input-chk,
 .ampstart-input-radio {
   width: auto;
-  color: var(--color-dark-grey);
+  color: var(--color-input-default);
 }
 
 .ampstart-input input[type="checkbox"],
@@ -153,7 +153,7 @@
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-input-primary);
   vertical-align: middle;
   margin-right: var(--space-1);
   text-align: center;
@@ -190,12 +190,12 @@
   line-height: 1.4rem;
   vertical-align: middle;
   text-align: center;
-  background-color: var(--color-secondary);
+  background-color: var(--color-input-secondary);
 }
 
 .ampstart-input input[type="checkbox"]:checked::after {
-  background-color: var(--color-primary);
-  color: var(--color-font-primary);
+  background-color: var(--color-input-primary);
+  color: var(--color-input-font-primary);
 }
 
 .ampstart-input input[type="checkbox"]:checked::after {
@@ -210,8 +210,8 @@
 .ampstart-input input[type="radio"]:checked::after {
   content: "•";
   font-size: var(--h1);
-  background-color: var(--color-secondary);
-  color: var(--color-font-secondary);
+  background-color: var(--color-input-secondary);
+  color: var(--color-input-font-secondary);
 }
 
 /* Hacks for IE/Edge */

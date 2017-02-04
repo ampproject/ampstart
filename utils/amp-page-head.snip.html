@@ -16,22 +16,18 @@ limitations under the License.
 -->
 }}
 
-{{#footer}}
-  <!-- Start Footer -->
-  <footer class="ampstart-footer flex flex-column items-center p3">
-    {{> ../social-follow/social-follow.snip.html}}
-    {{#faq-links}}
-      <nav class="ampstart-footer-nav">
-        <ul class="list-reset flex flex-wrap mb3">
-          {{#links}}
-            <li class="px1"><a class="text-decoration-none caps h5" href="{{url}}">{{text}}</a></li>
-          {{/links}}
-        </ul>
-      </nav>
-    {{/faq-links}}
-    {{#copyright}}
-      <small>{{text}}</small>
-    {{/copyright}}
-  </footer>
-  <!-- End Footer -->
-{{/footer}}
+{{#head-tag}}
+<head>
+  <meta charset="utf-8">
+  <title>{{title}}</title>
+  <link rel="canonical" href="www.ampstart.com" >
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  {{> amp-boilerplate-css.snip.html}}
+
+  {{> amp-extension-script.snip.html}}
+
+  <link href="dist/css/templates/{{{css-path}}}/page.css" rel="stylesheet" amp-custom>
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+</head>
+{{/head-tag}}

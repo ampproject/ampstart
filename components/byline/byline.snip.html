@@ -18,9 +18,15 @@ limitations under the License.
 {{#byline}}
   <!-- Start byline -->
   <address class="ampstart-byline clearfix mb4 px3 h5">
-    <amp-img class="ampstart-byline-photo mr3 left" src="{{image}}" layout="fixed" height="60" width="60"></amp-img>
-    <a class="ampstart-byline-author block text-decoration-none" href="{{author.url}}" role="author">{{author.text}}</a>
-    <time class="ampstart-byline-pubdate block bold" datetime="{{time.value}}">{{time.text}}</time>
+    {{#image}}
+    <amp-img class="ampstart-byline-photo mr3 left" src="{{.}}" layout="fixed" height="60" width="60"></amp-img>
+    {{/image}}
+    {{#author}}
+    <a class="ampstart-byline-author block text-decoration-none" href="{{url}}" role="author">{{text}}</a>
+    {{/author}}
+    {{#time}}
+    <time class="ampstart-byline-pubdate block bold" datetime="{{value}}">{{text}}</time>
+    {{/time}}
   </address>
   <!-- End byline -->
 {{/byline}}
