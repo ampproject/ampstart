@@ -14,13 +14,14 @@
  * limitations under the License.
  */
 
-@import '../core';
-@import '../../components/images/images';
-@import '../../components/navbar/navbar';
-@import '../../components/images/fullpage-hero';
-@import '../../components/socialbox/socialbox';
-@import '../../components/related-article/related-article';
-@import '../../components/related-section/related-section';
-@import '../../components/byline/byline';
-@import '../../components/footer/footer';
-@import '../../components/inputs/inputs';
+@import '../../core';
+@import '../../../components/dropdown/dropdown';
+@import '../../../components/images/images';
+@import '../../../components/navbar/navbar';
+@import '../../../components/images/fullpage-hero';
+@import '../../../components/socialbox/socialbox';
+@import '../../../components/related-article/related-article';
+@import '../../../components/related-section/related-section';
+@import '../../../components/byline/byline';
+@import '../../../components/footer/footer';
+@import '../../../components/inputs/inputs';

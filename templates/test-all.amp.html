@@ -13,51 +13,54 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-
+{{#test-all-amp}}
 <!doctype html>
 <html ⚡>
-<head>
-  <meta charset="utf-8">
-  <title>Test components</title>
-  <link rel="canonical" href="amps.html" >
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-
-
-  <link href="dist/css/templates/test-all.css" rel="stylesheet" amp-custom>
-
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-</head>
+{{> ../utils/amp-page-head.snip.html}}
 <body>
-  {{#test-all-amp}}
-    <button class="ampstart-btn">
-      Primary button
-    </button>
+  {{#dropdowns}}
+    {{#dropdown}}
+    <div class="relative center col-4 clearfix inline-block" style="height:1.5rem;">
+      {{> ../components/dropdown/dropdown.snip.html}}
+    </div>
 
-    <button class="ampstart-btn">
-      Really looooooong Button
-    </button>
+    <div class="relative col-4 clearfix inline-block" style="height:1.5rem;">
+      {{> ../components/dropdown/dropdown.snip.html}}
+    </div>
 
-    <button class="ampstart-btn" disabled>
-      Disabled Button
-    </button>
+    <div class="relative right-align col-4 clearfix inline-block" style="height:1.5rem;">
+      {{> ../components/dropdown/dropdown.snip.html}}
+    </div>
+    {{/dropdown}}
+  {{/dropdowns}}
 
-    <button class="ampstart-btn ampstart-btn-secondary">
-      Secondary button
-    </button>
+  <button class="ampstart-btn">
+    Primary button
+  </button>
 
-    <button class="ampstart-btn ampstart-btn-secondary">
-      Really looooooong Secondary Button
-    </button>
+  <button class="ampstart-btn">
+    Really looooooong Button
+  </button>
 
-    <button class="ampstart-btn ampstart-btn-secondary" disabled>
-      Disabled Secondary button
-    </button>
+  <button class="ampstart-btn" disabled>
+    Disabled Button
+  </button>
 
-    {{#inputs}}
-      {{> ../components/inputs/inputs.snip.html}}
-    {{/inputs}}
-  {{/test-all-amp}}
+  <button class="ampstart-btn ampstart-btn-secondary">
+    Secondary button
+  </button>
+
+  <button class="ampstart-btn ampstart-btn-secondary">
+    Really looooooong Secondary Button
+  </button>
+
+  <button class="ampstart-btn ampstart-btn-secondary" disabled>
+    Disabled Secondary button
+  </button>
+
+  {{#inputs}}
+    {{> ../components/inputs/inputs.snip.html}}
+  {{/inputs}}
 </body>
 </html>
+{{/test-all-amp}}

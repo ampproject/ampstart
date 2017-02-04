@@ -13,23 +13,41 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '../../css/core-vars';
 
-@import '../../../core';
-@import '../../../../components/dropdown/dropdown';
-@import '../../../../components/images/images';
-@import '../../../../components/navbar/navbar';
-@import '../../../../components/inputs/inputs';
-@import '../../../../components/socialbox/socialbox';
-@import '../../../../components/footer/footer';
-@import 'page-vars';
-
-main {
-  margin-top: var(--navbar-height);
-}
-.ampstart-input {
-  width: 100%;
+.ampstart-dropdown {
+  min-width: 200px;
+  z-index: 100;
 }
 
-.recipe-article-category {
+.ampstart-dropdown > section,
+.ampstart-dropdown > section > header {
+  height: 100%;
+}
+
+.ampstart-dropdown > section > header {
+  background-color: var(--color-primary);
+  border: 0;
   color: var(--color-font-primary);
+}
+
+.ampstart-dropdown > section > header::after {
+  display: inline-block;
+  content: '+';
+  padding: 0 0 0 var(--space-3);
+}
+
+.ampstart-dropdown > [expanded] > header::after {
+  content: '-';
+}
+
+.ampstart-dropdown-item {
+  background-color: var(--color-primary);
+  color: var(--color-font-primary);
+  opacity: 0.9;
+}
+
+.ampstart-dropdown-item:hover,
+.ampstart-dropdown-item:active {
+  opacity: 1;
 }
