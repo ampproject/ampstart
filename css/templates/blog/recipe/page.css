@@ -16,10 +16,10 @@
 
 @import '../../../core';
 @import '../../../../components/dropdown/dropdown';
-@import '../../../../components/images/images';
 @import '../../../../components/navbar/navbar';
 @import '../../../../components/inputs/inputs';
 @import '../../../../components/socialbox/socialbox';
+@import '../../../../components/byline/byline';
 @import '../../../../components/footer/footer';
 @import 'page-vars';
 
@@ -30,6 +30,40 @@ main {
   width: 100%;
 }
 
-.recipe-article-category {
-  color: var(--color-font-primary);
+.ampstart-icon {
+  fill: var(--color-theme);
+}
+
+.recipe-article-category,
+.ampstart-dropdown>section>header::after,
+.ampstart-dropdown-item {
+  color: var(--color-theme);
+}
+
+.ampstart-footer {
+  padding-top: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.ampstart-footer small {
+  font-size: var(--h4);
+}
+
+.recipe-comments h3 {
+  color: var(--color-theme);
+}
+
+main .ampstart-social-follow {
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--body-min-width);
+}
+
+main .ampstart-social-follow svg {
+  zoom: 1.8;
+}
+
+h1 + .ampstart-byline time {
+  font-size: var(--h3);
+  font-weight: normal;
 }

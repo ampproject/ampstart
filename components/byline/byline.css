@@ -18,3 +18,7 @@
 .ampstart-byline {
   color: var(--color-dark-grey);
 }
+
+.ampstart-byline time {
+  font-style: normal;
+}

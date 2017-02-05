@@ -37,4 +37,6 @@
   --font-family: Helvetica, Arial, sans-serif;
 
   --zindex-highest: 999;
+
+  --body-min-width: 315px;
 }
