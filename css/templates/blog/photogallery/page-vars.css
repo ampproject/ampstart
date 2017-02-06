@@ -29,4 +29,7 @@
 
   --color-font-default: var(--color-dark-grey);
   /*--color-disabled: #9b9b9b;*/
+
+  --color-navbar-primary: #fff;
+  --color-navbar-font-primary: #000;
 }

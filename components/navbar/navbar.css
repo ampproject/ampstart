@@ -16,8 +16,8 @@
 @import '../../css/core-vars';
 
 .ampstart-headerbar {
-  background-color: var(--color-primary);
-  color: var(--color-font-primary);
+  background-color: var(--color-navbar-primary);
+  color: var(--color-navbar-font-primary);
   z-index: var(--zindex-highest);
   box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.4);
 }
@@ -57,7 +57,7 @@
 
 .ampstart-navbar-trigger {
   line-height: var(--navbar-height);
-  zoom: 2;
+  font-size: var(--h2);
 }
 
 .ampstart-headerbar-nav {
@@ -87,21 +87,31 @@
 }
 
 .ampstart-nav-dropdown amp-accordion header {
-  background-color: var(--color-primary);
+  background-color: var(--color-navbar-primary);
   border: none;
 }
 
 .ampstart-nav-dropdown amp-accordion ul {
-  background-color: var(--color-primary);
+  background-color: var(--color-navbar-primary);
+}
+
+.ampstart-nav-dropdown .ampstart-dropdown > section > header,
+.ampstart-nav-dropdown .ampstart-dropdown-item {
+  background-color: var(--color-navbar-primary);
+  color: var(--color-navbar-font-primary);
 }
 
 /* Sidebar */
 
 .ampstart-sidebar {
-  background-color: var(--color-primary);
-  color: var(--color-font-primary);
+  background-color: var(--color-navbar-primary);
+  color: var(--color-navbar-font-primary);
   min-width: 300px;
   width: 300px;
+}
+
+.ampstart-sidebar .ampstart-icon {
+  fill: var(--color-navbar-font-primary);
 }
 
 .ampstart-sidebar-header {

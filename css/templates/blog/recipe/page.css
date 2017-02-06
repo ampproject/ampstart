@@ -36,8 +36,13 @@ main {
 
 .recipe-article-category,
 .ampstart-dropdown>section>header::after,
-.ampstart-dropdown-item {
+.ampstart-nav-dropdown .ampstart-dropdown-item,
+.recipe-comments h3 {
   color: var(--color-theme);
+}
+
+.ampstart-sidebar .ampstart-icon {
+  fill: var(--color-theme);
 }
 
 .ampstart-footer {
@@ -49,18 +54,14 @@ main {
   font-size: var(--h4);
 }
 
-.recipe-comments h3 {
-  color: var(--color-theme);
-}
-
 main .ampstart-social-follow {
   margin-left: auto;
   margin-right: auto;
   width: var(--body-min-width);
 }
 
-main .ampstart-social-follow svg {
-  zoom: 1.8;
+main .ampstart-social-follow li {
+  transform: scale(1.8);
 }
 
 h1 + .ampstart-byline time {

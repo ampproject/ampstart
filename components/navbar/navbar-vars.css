@@ -16,4 +16,8 @@
 
 :root {
   --navbar-height: var(--line-height-6);
+  --color-navbar-primary: var(--color-primary);
+  --color-navbar-font-primary: var(--color-font-primary);
+  --color-navbar-secondary: var(--color-secondary);
+  --color-navbar-font-secondary: var(--color-font-secondary);
 }
