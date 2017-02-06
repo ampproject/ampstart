@@ -20,29 +20,15 @@ const mustache = require('gulp-mustache');
 const posthtml = require('gulp-posthtml');
 const postcss = require('gulp-postcss');
 const runSequence = require('run-sequence');
+const config = require('./tasks/config');
+require('./tasks');
 
 function getData() {
   return JSON.parse(require('fs').readFileSync('data.json'));
 }
 
-const config = {
-  src: {
-    templates: '{templates,components}/**/*.html',
-    templates_css: '{templates,components}/**/*.css',
-    css: 'css/**/*.css',
-    data: 'data.json',
-    img: 'img/**',
-  },
-  dest: {
-    default: 'dist',
-    templates: 'dist',
-    css: 'dist/css/',
-    img: 'dist/img/',
-  },
-};
-
 gulp.task('build', 'build', function(cb) {
-  runSequence('clean', 'img', 'postcss', 'posthtml', cb);
+  runSequence('clean', 'img', 'postcss', 'posthtml', 'validate', cb);
 });
 
 gulp.task('clean', function() {

@@ -8,6 +8,7 @@
     "del": "^2.2.2",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
+    "gulp-amphtml-validator": "1.0.0",
     "gulp-help": "^1.6.1",
     "gulp-mustache": "^2.3.0",
     "gulp-postcss": "^6.2.0",
