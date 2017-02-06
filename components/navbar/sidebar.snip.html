@@ -21,7 +21,7 @@ limitations under the License.
   <div class="flex justify-start items-center ampstart-sidebar-header">
     <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger items-start">✕</a>
     {{#logo}}
-      <amp-img src="{{logo}}" width="147" height="44" layout="fixed" class="" alt="{{name}}"></amp-img>
+      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto" alt="{{name}}"></amp-img>
     {{/logo}}
   </div>
   <nav class="ampstart-sidebar-nav ampstart-nav">
@@ -32,16 +32,7 @@ limitations under the License.
         {{/link}}
         {{#dropdown}}
           <li class="ampstart-nav-item ampstart-nav-dropdown relative">
-            <amp-accordion layout="container">
-              <section>
-                <header  class="">{{heading}}</header>
-                <ul class="list-reset m0 p0">
-                  {{#options}}
-                    <li class="ampstart-nav-item"><a href="{{link.url}}">{{link.text}}</a></li>
-                  {{/options}}
-                </ul>
-              </section>
-            </amp-accordion>
+            {{> ../dropdown/dropdown-inline.snip.html}}
           </li>
         {{/dropdown}}
         {{#search}}
@@ -58,7 +49,7 @@ limitations under the License.
   {{#faq}}
     <ul class="ampstart-sidebar-faq list-reset m0">
       {{#links}}
-        <li class="ampstart-faq-item"><a href="{{link.url}}">{{link.text}}</a></li>
+        <li class="ampstart-faq-item"><a href="{{link.url}}" class="text-decoration-none">{{link.text}}</a></li>
       {{/links}}
     </ul>
   {{/faq}}

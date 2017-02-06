@@ -17,9 +17,9 @@
 
 :root {
   --color-primary: #fff;
-  --color-font-primary: #003f93;
+  --color-font-primary: #000;
 
-  --color-secondary: #003f93;
+  --color-secondary: #000;
   --color-font-secondary: #fff;
 
   --color-font-default: var(--color-dark-grey);
@@ -29,6 +29,8 @@
   --color-input-secondary: var(--color-secondary);
   --color-input-font-secondary: var(--color-font-primary);
 
-  --color-footer-background: var(--color-secondary);
+  --color-footer-background: var(--color-theme);
   --color-font-footer: var(--color-font-secondary);
+
+  --color-theme: #003f93;
 }

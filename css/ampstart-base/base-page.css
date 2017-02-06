@@ -24,7 +24,8 @@ body {
   color: var(--color-font-default);
   line-height: 1.75rem;
   font-family: var(--font-family);
-  min-width: 315px;
+  min-width: var(--body-min-width);
+  overflow-x: hidden;
 }
 
 main {

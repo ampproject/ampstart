@@ -414,8 +414,8 @@
     "navbar": {
       "logo": {
         "url": "../img/blog-recipe/logo.png",
-        "width": "73",
-        "height": "45"
+        "width": "100",
+        "height": "61.3"
       },
       "name": "The Blog",
       "sidebar-id": "header-sidebar",
@@ -550,6 +550,14 @@
     }
   },
   "test-all-amp": {
+    "head-tag": {
+      "title": "Test Page",
+      "extensions": [
+        "amp-accordion",
+        "amp-form"
+      ],
+      "css-path": "test"
+    },
     "inputs": [
       {
         "input": {
@@ -739,6 +747,24 @@
           "name": "name16",
           "value": "2",
           "disabled": "disabled"
+        }
+      }
+    ],
+    "dropdowns": [
+      {
+        "dropdown": {
+          "heading": "Dropdown",
+          "options": [
+            {
+              "link": {"url": "#", "text": "Link1"}
+            },
+            {
+              "link": {"url": "#", "text": "Link2"}
+            },
+            {
+              "link": {"url": "#", "text": "Link3"}
+            }
+          ]
         }
       }
     ]
