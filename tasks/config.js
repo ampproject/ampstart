@@ -26,7 +26,7 @@ module.exports = {
   dest: {
     default: 'dist',
     templates: 'dist',
-    www_pages: 'dist/www/',
+    www_pages: 'dist',
     css: 'dist/css/',
     img: 'dist/img/',
   },
