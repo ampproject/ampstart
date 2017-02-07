@@ -13,21 +13,4 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-module.exports = {
-  src: {
-    templates: '{templates,components}/**/*.html',
-    templates_css: '{templates,components}/**/*.css',
-    www_pages: 'www/**/*.html',
-    css: 'css/**/*.css',
-    data: 'data.json',
-    img: 'img/**',
-  },
-  dest: {
-    default: 'dist',
-    templates: 'dist',
-    www_pages: 'dist/www/',
-    css: 'dist/css/',
-    img: 'dist/img/',
-  },
-};
+@import '../../core-vars';

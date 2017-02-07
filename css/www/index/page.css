@@ -14,20 +14,6 @@
  * limitations under the License.
  */
 
-module.exports = {
-  src: {
-    templates: '{templates,components}/**/*.html',
-    templates_css: '{templates,components}/**/*.css',
-    www_pages: 'www/**/*.html',
-    css: 'css/**/*.css',
-    data: 'data.json',
-    img: 'img/**',
-  },
-  dest: {
-    default: 'dist',
-    templates: 'dist',
-    www_pages: 'dist/www/',
-    css: 'dist/css/',
-    img: 'dist/img/',
-  },
-};
+@import '../../core';
+/* Add components here */
+@import 'page-vars';
