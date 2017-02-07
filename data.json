@@ -404,7 +404,6 @@
       "extensions": [
         "amp-carousel",
         "amp-sidebar",
-        "amp-social-share",
         "amp-accordion",
         "amp-form",
         "amp-instagram"
@@ -486,6 +485,8 @@
     },
     "form": {
       "title": "Leave a reply",
+      "method": "GET",
+      "action": "/",
       "form-text": "Not to worry, your email will not be published.",
       "inputs": [
         {
