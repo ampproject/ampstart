@@ -14,18 +14,6 @@
  * limitations under the License.
  */
 
-const gulp = require('gulp-help')(require('gulp'));
-const validator = require('gulp-amphtml-validator');
-const config = require('./config');
-
-function validate() {
-  return gulp.src([
-        `${config.dest.templates}/**/*.html`,
-        `${config.dest.www_pages}/**/*.html`,
-        `!${config.dest.templates}/components/**/*.html`,
-      ])
-      .pipe(validator.validate())
-      .pipe(validator.format());
-}
-
-gulp.task('validate', validate);
+@import '../../core';
+/* Add components here */
+@import 'page-vars';

@@ -408,7 +408,7 @@
         "amp-form",
         "amp-instagram"
       ],
-      "css-path": "blog/recipe"
+      "css-path": "templates/blog/recipe"
     },
     "navbar": {
       "logo": {
@@ -557,7 +557,7 @@
         "amp-accordion",
         "amp-form"
       ],
-      "css-path": "test"
+      "css-path": "templates/test"
     },
     "inputs": [
       {
@@ -769,5 +769,13 @@
         }
       }
     ]
+  },
+  "www-index": {
+    "head-tag": {
+      "title": "AMPStart",
+      "extensions": [
+      ],
+      "css-path": "www/index"
+    }
   }
 }

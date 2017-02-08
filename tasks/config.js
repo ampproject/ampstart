@@ -18,6 +18,7 @@ module.exports = {
   src: {
     templates: '{templates,components}/**/*.html',
     templates_css: '{templates,components}/**/*.css',
+    www_pages: 'www/**/*.html',
     css: 'css/**/*.css',
     data: 'data.json',
     img: 'img/**',
@@ -25,6 +26,7 @@ module.exports = {
   dest: {
     default: 'dist',
     templates: 'dist',
+    www_pages: 'dist',
     css: 'dist/css/',
     img: 'dist/img/',
   },

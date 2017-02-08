@@ -16,18 +16,11 @@ limitations under the License.
 -->
 }}
 
-{{#head-tag}}
-<head>
-  <meta charset="utf-8">
-  <title>{{title}}</title>
-  <link rel="canonical" href="www.ampstart.com" >
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  {{> amp-boilerplate-css.snip.html}}
-
-  {{> amp-extension-script.snip.html}}
-
-  <link href="dist/css/{{{css-path}}}/page.css" rel="stylesheet" amp-custom>
-
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-</head>
-{{/head-tag}}
+<!doctype html>
+{{#www-index}}
+  <html ⚡>
+  {{> ../utils/amp-page-head.snip.html}}
+  <body>
+  </body>
+  </html>
+{{/www-index}}

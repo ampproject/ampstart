@@ -28,7 +28,7 @@ function getData() {
 }
 
 gulp.task('build', 'build', function(cb) {
-  runSequence('clean', 'img', 'postcss', 'posthtml', 'validate', cb);
+  runSequence('clean', 'img', 'postcss', 'posthtml', 'www', 'validate', cb);
 });
 
 gulp.task('clean', function() {
@@ -38,6 +38,25 @@ gulp.task('clean', function() {
 gulp.task('img', function() {
   return gulp.src(config.src.img).pipe(gulp.dest(config.dest.img));
 });
+
+
+gulp.task('www', function() {
+  const plugins = [
+    require('posthtml-inline-assets')({
+      from: config.dest.www_pages,
+      inline: {
+        script: { check: function() { return false; } },
+      }
+    }),
+    require('posthtml-include')(),
+  ];
+  const options = {};
+  return gulp.src(config.src.www_pages)
+    .pipe(mustache(getData()))
+    .pipe(posthtml(plugins, options))
+    .pipe(gulp.dest(config.dest.www_pages))
+});
+
 
 gulp.task('watch', 'watch stuff', ['build'], function() {
   return gulp.watch([
