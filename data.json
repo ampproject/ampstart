@@ -776,6 +776,14 @@
       "extensions": [
       ],
       "css-path": "www/index"
+    },
+    "navbar": {
+
+    },
+    "showcase": {
+      "carousel": {
+        "type": "carousel"
+      }
     }
   }
 }
