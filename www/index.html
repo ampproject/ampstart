@@ -21,11 +21,9 @@ limitations under the License.
   <html ⚡>
   {{> ../utils/amp-page-head.snip.html}}
   <body>
-    <header>
-    </header>
     <main>
-      <header>
-        <amp-img src="../img/www/amp_logo_white.svg"></amp-img>
+      <header class="wwww-header">
+        <amp-img src="../img/www/amp_logo_white.svg" width="80" height="80" layout="fixed"></amp-img>
         <h1>AMP Start</h1>
         <span>A collection of quick-start templates to build your AMP page quickly and easily.</span>
         <div class="www-index-header-action">
@@ -54,7 +52,7 @@ limitations under the License.
       <h2>Full Page Templates</h2>
       <ul class="list-reset">
         <li>
-          <amp-img src="" width="" height="" layout="responsive"></amp-img>
+          <amp-img src="../img/www/index/template1.png" width="361" height="545" layout="responsive"></amp-img>
           <h3>News Article</h3>
           <p>Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
           <div>
@@ -65,7 +63,7 @@ limitations under the License.
         </li>
 
         <li>
-          <amp-img src="" width="" height="" layout="responsive"></amp-img>
+          <amp-img src="../img/www/index/template2.png" width="361" height="545" layout="responsive"></amp-img>
           <h3>Blog Post</h3>
           <p>Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
           <div>
@@ -76,7 +74,7 @@ limitations under the License.
         </li>
 
         <li>
-          <amp-img src="" width="" height="" layout="responsive"></amp-img>
+          <amp-img src="../img/www/index/template3.png" width="361" height="545" layout="responsive"></amp-img>
           <h3>News Article</h3>
           <p>Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
           <div>
@@ -88,7 +86,15 @@ limitations under the License.
       </ul>
     </section>
 
-    <section class="www-index-showcase"></section>
+    <section class="www-index-showcase">
+      <amp-carousel type="carousel" layout="fixed-height" height="412" controls class="mb4">
+        <amp-img src="../img/www/index/showcase1.png" width="275" height="412" alt="Want1"></amp-img>
+        <amp-img src="../img/www/index/showcase1.png" width="275" height="412" alt="Want1"></amp-img>
+        <amp-img src="../img/www/index/showcase1.png" width="275" height="412" alt="Want1"></amp-img>
+        <amp-img src="../img/www/index/showcase1.png" width="275" height="412" alt="Want1"></amp-img>
+        <amp-img src="../img/www/index/showcase1.png" width="275" height="412" alt="Want1"></amp-img>
+      </amp-carousel>
+    </section>
     </main>
   </body>
   </html>

@@ -780,16 +780,12 @@
     "head-tag": {
       "title": "AMPStart",
       "extensions": [
+        "amp-carousel"
       ],
       "css-path": "www/index"
     },
     "navbar": {
 
-    },
-    "showcase": {
-      "carousel": {
-        "type": "carousel"
-      }
     }
   }
 }
