@@ -23,6 +23,14 @@
   --color-font-secondary: #fff;
   --content-max-width: 100%;
 
+  --space-1: 1rem; /* 16px */
+  --space-2: 1.5rem; /* 24px */
+  --space-3: 2rem; /* 32px */
+  --space-4: 2.5rem; /* 40px */
+  --space-5: 3.5rem; /* 56px */
+  --space-6: 5rem; /* 80px */
+  --space-7: 7rem; /* 112px */
+
 /*  --color-font-default: var(--color-dark-grey);
 
   --color-input-primary: var(--color-secondary);
