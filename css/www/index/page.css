@@ -38,3 +38,30 @@
   position: absolute;
   margin-top: var(--space-2);
 }
+
+.www-index-features {
+  margin-bottom: var(--space-7);
+}
+
+.www-index-features h2,
+.www-index-templates h3 {
+  letter-spacing: inherit;
+}
+
+.www-index-templates h2 {
+  margin-bottom: var(--space-5);
+}
+
+.www-index-templates li {
+  margin-bottom: var(--space-7);
+}
+
+.www-index-templates li > *:not(amp-img) {
+  background: #f9f7f7;
+}
+
+@media (--breakpoint-xs) {
+  .www-index-templates li amp-img {
+    margin: 0;
+  }
+}
