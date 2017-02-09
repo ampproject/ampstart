@@ -28,3 +28,13 @@
 .www-header .ampstart-btn {
   background-color: transparent;
 }
+
+.www-index-features h2::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: var(--space-5);
+  background: var(--color-font-default);
+  position: absolute;
+  margin-top: var(--space-2);
+}
