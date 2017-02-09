@@ -19,7 +19,6 @@
   font-size: var(--h6);
   line-height: var(--line-height-3);
   padding: 0 var(--space-1);
-  display: inline-block;
   text-decoration: none;
   white-space: nowrap;
   word-wrap: normal;

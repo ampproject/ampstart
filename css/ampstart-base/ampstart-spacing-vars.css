@@ -15,9 +15,9 @@
  */
 
 :root {
-  --space-5: 2.5rem;
-  --space-6: 3.5rem;
-  --space-7: 5rem;
+  --space-5: 2.5rem; /* 40px */
+  --space-6: 3.5rem; /* 56px */
+  --space-7: 5rem; /* 80px */
 
   --line-height-5: 2.5rem;
   --line-height-6: 3.5rem;

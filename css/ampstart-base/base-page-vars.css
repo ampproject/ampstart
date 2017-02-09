@@ -39,4 +39,5 @@
   --zindex-highest: 999;
 
   --body-min-width: 315px;
+  --content-max-width: 700px;
 }

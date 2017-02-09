@@ -25,3 +25,7 @@
 @import '../../../components/byline/byline';
 @import '../../../components/footer/footer';
 @import '../../../components/inputs/inputs';
+
+.test-dropdown-container {
+  min-height: 30px;
+}
