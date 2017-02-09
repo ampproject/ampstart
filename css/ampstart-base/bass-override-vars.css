@@ -22,10 +22,10 @@
   --h5: .875rem;
   --h6: .75rem;
 
-  --space-1: .5rem;
-  --space-2: 1rem;
-  --space-3: 1.5rem;
-  --space-4: 2rem;
+  --space-1: .5rem; /* 8px */
+  --space-2: 1rem; /* 16px */
+  --space-3: 1.5rem; /* 24px */
+  --space-4: 2rem; /* 32px */
 
 
   --line-height-1: 1rem;

@@ -17,3 +17,14 @@
 @import '../../core';
 /* Add components here */
 @import 'page-vars';
+
+.www-header {
+  background-image: linear-gradient(to right, #150573 0%, #68067B 100%);
+  padding: var(--space-7) 0;
+  color: var(--color-font-secondary);
+  clip-path: polygon(100% 100%,100% 0%,-400% 0%);
+}
+
+.www-header .ampstart-btn {
+  background-color: transparent;
+}
