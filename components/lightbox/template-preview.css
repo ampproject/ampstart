@@ -21,7 +21,7 @@
 
 .ampstart-iphone-frame {
   border: solid 18px #e5ebee;
-  box-shadow: 0px 0px 0px 7px #bfc8ca;
+  box-shadow: 0 0 0 7px #bfc8ca;
   border-radius: 15px;
   width: 360px;
   height: 630px;
