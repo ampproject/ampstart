@@ -16,6 +16,7 @@
 
 @import '../../core';
 @import '../../../components/footer/footer';
+@import '../../../components/navbar/navbar';
 @import 'page-vars';
 
 .www-header {
@@ -41,6 +42,7 @@
 }
 
 .www-index-features {
+  max-width: 800px;
   margin-bottom: var(--space-6);
 }
 
