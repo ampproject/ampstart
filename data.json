@@ -782,7 +782,8 @@
       "extensions": [
         "amp-carousel",
         "amp-sidebar",
-        "amp-lightbox"
+        "amp-lightbox",
+        "amp-iframe"
       ],
       "css-path": "www/index"
     },
@@ -833,6 +834,26 @@
       "copyright": {
         "text": "AMP start is a part of Accelarated Mobile Pages Project"
       }
-    }
+    },
+    "template-previews": [
+      {
+        "template-preview": {
+          "lightbox-id": "template-1",
+          "src": "templates/blog-recipe.amp.html"
+        }
+      },
+      {
+        "template-preview": {
+          "lightbox-id": "template-2",
+          "src": "templates/blog-thescenic.amp.html"
+        }
+      },
+      {
+        "template-preview": {
+          "lightbox-id": "template-3",
+          "src": "templates/blog-photogallery.amp.html"
+        }
+      }
+    ]
   }
 }

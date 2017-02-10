@@ -15,8 +15,9 @@
  */
 
 @import '../../core';
-@import '../../../components/footer/footer';
 @import '../../../components/navbar/navbar';
+@import '../../../components/lightbox/template-preview';
+@import '../../../components/footer/footer';
 @import 'page-vars';
 
 .www-header {

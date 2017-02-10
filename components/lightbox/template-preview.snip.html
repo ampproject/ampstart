@@ -16,4 +16,18 @@ limitations under the License.
 -->
 }}
 
-
+{{#template-preview}}
+<amp-lightbox id="{{lightbox-id}}" layout="nodisplay" class="relative">
+  <div class="ampstart-iphone-mask absolute top-0 right-0 left-0 bottom-0 {{classes}}" role="button" on="tap:{{lightbox-id}}.close" tabindex="0"></div>
+  <div class="ampstart-iphone-frame absolute">
+    <amp-iframe width="324"
+         height="494"
+         layout="responsive"
+         sandbox="allow-scripts allow-popups"
+         allowfullscreen
+         frameborder="0"
+         src="{{src}}">
+    </amp-iframe>
+  </div>
+</amp-lightbox>
+{{/template-preview}}
