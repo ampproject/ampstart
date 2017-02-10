@@ -26,3 +26,7 @@
 .ampstart-footer .ampstart-icon {
   fill: var(--color-font-footer);
 }
+
+.ampstart-footer .ampstart-social-follow li:last-child {
+  margin-right: 0;
+}

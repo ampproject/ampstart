@@ -785,7 +785,19 @@
       "css-path": "www/index"
     },
     "navbar": {
-
+    },
+    "footer": {
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"github": "#"},
+          {"slack": "#"},
+          {"wordpress": "#"}
+        ]
+      },
+      "copyright": {
+        "text": "AMP start is a part of Accelarated Mobile Pages Project"
+      }
     }
   }
 }

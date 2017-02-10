@@ -31,6 +31,9 @@
   --space-6: 5rem; /* 80px */
   --space-7: 7rem; /* 112px */
 
+  --color-footer-background: var(--color-primary);
+  --color-font-footer: var(--color-black);
+
 /*  --color-font-default: var(--color-dark-grey);
 
   --color-input-primary: var(--color-secondary);

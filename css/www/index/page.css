@@ -15,7 +15,7 @@
  */
 
 @import '../../core';
-/* Add components here */
+@import '../../../components/footer/footer';
 @import 'page-vars';
 
 .www-header {
@@ -66,4 +66,8 @@
     width: 86%;
     margin: 0 7% var(--space-4);
   }
+}
+
+.ampstart-footer small {
+  font-size: var(--h6);
 }
