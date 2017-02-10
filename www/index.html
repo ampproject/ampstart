@@ -19,6 +19,7 @@ limitations under the License.
   <html ⚡>
   {{> ../utils/amp-page-head.snip.html}}
   <body>
+    {{> ../components/navbar/navbar.snip.html}}
     <main>
       <header class="www-header center">
         <amp-img src="../img/www/amp_logo_white.svg" width="80" height="80" layout="fixed" class="mb4" alt="AMP logo"></amp-img>
@@ -29,7 +30,7 @@ limitations under the License.
           <button class="ampstart-btn ampstart-btn-secondary caps mb3 mx2">UI Components</button>
         </div>
     </header>
-    <section class="www-index-features px4">
+    <section class="www-index-features px4 mx-auto">
       <ul class="list-reset flex flex-wrap m0 p0">
         <li class="col col-12 md-col-4 pr4 mb4">
           <h2 class="pb2 caps mb3 h3 relative">Responsive</h2>
@@ -47,36 +48,36 @@ limitations under the License.
     </section>
 
     <section class="www-index-templates px4">
-      <h2>Full Page Templates</h2>
+      <h2 class="center mb4">Full Page Templates</h2>
       <ul class="list-reset">
         <li class="relative clearfix">
-          <amp-img src="../img/www/index/template1.png" width="361" height="545" layout="responsive" class="left col col-12 sm-col-5 lg-col-4 mx4"></amp-img>
-          <h3 class="caps mt4 py4">News Article</h3>
-          <p class="pb4">Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
-          <div class="pb4">
-            <button class="ampstart-btn caps xs-hide sm-hide">View Mobile</button>
+          <amp-img src="../img/www/index/template1.png" width="361" height="545" layout="responsive" role="button" tabindex="0" on="tap:template-1" class="left col col-12 sm-col-5 lg-col-4 mx4"></amp-img>
+          <h3 class="caps mt4 p4">News Article</h3>
+          <p class="px4 pb4">Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
+          <div class="px4 pb4 center">
+            <button class="ampstart-btn caps xs-hide sm-hide mr2" on="tap:template-1">View Mobile</button>
             <button class="ampstart-btn caps xs-hide sm-hide">View Desktop</button>
             <button class="ampstart-btn caps md-hide lg-hide">View Template</button>
           </div>
         </li>
 
         <li class="relative clearfix">
-          <amp-img src="../img/www/index/template2.png" width="361" height="545" layout="responsive" class="col-right col-12 sm-col-5 lg-col-4 mx4"></amp-img>
-          <h3 class="caps mt4 py4">Blog Post</h3>
-          <p class="pb4">Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
-          <div class="pb4">
-            <button class="ampstart-btn caps xs-hide sm-hide">View Mobile</button>
+          <amp-img src="../img/www/index/template2.png" width="361" height="545" on="tap:template-2" role="button" tabindex="0" layout="responsive" class="col-right col-12 sm-col-5 lg-col-4 mx4"></amp-img>
+          <h3 class="caps mt4 p4">Blog Post</h3>
+          <p class="px4 pb4">Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
+          <div class="px4 pb4 center">
+            <button class="ampstart-btn caps xs-hide sm-hide mr2" on="tap:template-2">View Mobile</button>
             <button class="ampstart-btn caps xs-hide sm-hide">View Desktop</button>
             <button class="ampstart-btn caps md-hide lg-hide">View Template</button>
           </div>
         </li>
 
         <li class="relative clearfix">
-          <amp-img src="../img/www/index/template3.png" width="361" height="545" layout="responsive" class="left col col-12 sm-col-5 lg-col-4 mx4"></amp-img>
-          <h3 class="caps mt4 py4">News Article</h3>
-          <p class="pb4">Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
-          <div class="pb4">
-            <button class="ampstart-btn caps xs-hide sm-hide">View Mobile</button>
+          <amp-img src="../img/www/index/template3.png" width="361" height="545" layout="responsive"  role="button" tabindex="0" on="tap:template-3" class="left col col-12 sm-col-5 lg-col-4 mx4"></amp-img>
+          <h3 class="caps mt4 p4">News Article</h3>
+          <p class="px4 pb4">Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.</p>
+          <div class="px4 pb4 center">
+            <button class="ampstart-btn caps xs-hide sm-hide mr2" on="tap:template-3">View Mobile</button>
             <button class="ampstart-btn caps xs-hide sm-hide">View Desktop</button>
             <button class="ampstart-btn caps md-hide lg-hide">View Template</button>
           </div>
@@ -85,6 +86,7 @@ limitations under the License.
     </section>
 
     <section class="www-index-showcase px4">
+      <h2 class="center mb4">Built with AMP Start</h2>
       <amp-carousel type="carousel" layout="fixed-height" height="412" controls class="mb4">
         <amp-img src="../img/www/index/showcase1.png" width="275" height="412" alt="Want1"></amp-img>
         <amp-img src="../img/www/index/showcase1.png" width="275" height="412" alt="Want1"></amp-img>
@@ -94,6 +96,10 @@ limitations under the License.
       </amp-carousel>
     </section>
     </main>
+    {{> ../components/footer/footer.snip.html}}
+    {{#template-previews}}
+      {{> ../components/lightbox/template-preview.snip.html}}
+    {{/template-previews}}
   </body>
   </html>
 {{/www-index}}

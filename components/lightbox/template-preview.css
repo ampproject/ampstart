@@ -15,18 +15,37 @@
  */
 @import '../../css/core-vars';
 
-.ampstart-footer {
-  background-color: var(--color-footer-background);
-  color: var(--color-font-footer);
-  font-size: var(--h6);
-  padding-top: var(--space-7);
-  padding-bottom: var(--space-7);
+.ampstart-iphone-mask {
+  background: var(--color-black);
 }
 
-.ampstart-footer .ampstart-icon {
-  fill: var(--color-font-footer);
+.ampstart-iphone-frame {
+  border: solid 18px #e5ebee;
+  box-shadow: 0 0 0 7px #bfc8ca;
+  border-radius: 15px;
+  width: 360px;
+  height: 630px;
+  padding: 50px 0;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  margin: -315px 0 0 -180px;
 }
 
-.ampstart-footer .ampstart-social-follow li:last-child {
-  margin-right: 0;
+.ampstart-iphone-frame::before,
+.ampstart-iphone-frame::after {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 100%;
+  background: #e5ebee;
+  position: absolute;
+}
+
+.ampstart-iphone-frame::before {
+  top: 0;
+}
+
+.ampstart-iphone-frame::after {
+  bottom: 0;
 }

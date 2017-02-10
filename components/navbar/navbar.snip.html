@@ -21,11 +21,11 @@ limitations under the License.
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
     <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</a>
     {{#logo}}
-      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto" alt="{{name}}"></amp-img>
+      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto {{classes}}" alt="{{name}}"></amp-img>
     {{/logo}}
     {{^sidebaronly}}
       <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
-        <ul class="list-reset center m0 p0 flex justify-around">
+        <ul class="list-reset center m0 p0 flex justify-center">
           {{#nav}}
             {{#link}}
               <li class="ampstart-nav-item"><a href="{{url}}" class="text-decoration-none">{{text}}</a></li>
