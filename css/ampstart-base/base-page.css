@@ -22,7 +22,7 @@
 /* Body */
 body {
   color: var(--color-font-default);
-  line-height: 1.75rem;
+  line-height: var(--line-height-3);
   font-family: var(--font-family);
   min-width: var(--body-min-width);
   overflow-x: hidden;
