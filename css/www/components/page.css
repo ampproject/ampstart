@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 @import '../../core';
 @import '../../../components/navbar/navbar';
 @import '../../../components/lightbox/template-preview';
@@ -21,36 +20,20 @@
 @import '../shared';
 @import '../page-vars';
 
-.www-index-templates .ampstart-btn,
-.www-header .ampstart-btn {
-  background-color: transparent;
+.www-components {
+  padding-left: var(--space-6);
 }
 
-.www-index-features {
-  max-width: 800px;
+.www-component-desc {
   margin-bottom: var(--space-6);
 }
 
-.www-index-templates h3 {
+.www-component-desc h3 {
   letter-spacing: inherit;
-  margin-top: var(--space-7);
-}
-
-.www-index-templates li {
-  margin-bottom: var(--space-6);
-}
-
-.www-index-templates li > *:not(amp-img) {
-  background: #f9f7f7;
 }
 
 @media (--breakpoint-xs) {
-  .www-index-templates li amp-img {
-    width: 86%;
-    margin: 0 7% var(--space-4);
+  .www-component-desc {
+    margin-bottom: var(--space-5);
   }
-}
-
-.ampstart-footer small {
-  font-size: var(--h6);
 }

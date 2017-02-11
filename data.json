@@ -408,7 +408,7 @@
         "amp-form",
         "amp-instagram"
       ],
-      "css-path": "templates/blog/recipe"
+      "css-path": "templates/blog/recipe/page.css"
     },
     "navbar": {
       "logo": {
@@ -557,7 +557,7 @@
         "amp-accordion",
         "amp-form"
       ],
-      "css-path": "templates/test"
+      "css-path": "templates/test/page.css"
     },
     "form": {
       "title": "Leave a reply",
@@ -785,7 +785,7 @@
         "amp-lightbox",
         "amp-iframe"
       ],
-      "css-path": "www/index"
+      "css-path": "www/index/page.css"
     },
     "navbar": {
       "logo": {
@@ -855,5 +855,61 @@
         }
       }
     ]
+  },
+  "www-components": {
+    "head-tag": {
+      "title": "AMPStart - UI Components",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-lightbox",
+        "amp-iframe"
+      ],
+      "css-path": "www/components/page.css"
+    },
+    "navbar": {
+      "logo": {
+        "url": "../img/www/amp_logo_black.svg",
+        "width": "24",
+        "height": "24",
+        "classes": "xs-hide sm-hide"
+      },
+      "name": "The Blog",
+      "sidebar-id": "header-sidebar",
+      "nav": [
+        {
+          "link": {"url": "#", "text": "What is AMP?"}
+        },
+        {
+          "link": {"url": "#", "text": "Templates"}
+        },
+        {
+          "link": {"url": "#", "text": "UI Components"}
+        },
+        {
+          "link": {"url": "#", "text": "Get Started"}
+        },
+        {
+          "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub"}
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"github": "https://github.com/ampproject/ampstart"},
+          {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
+          {"wordpress": "#"}
+        ]
+      }
+    }
+  },
+  "code": {
+    "buttons": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/index/code/baseline-page.css"
+      }
+    }
   }
 }
