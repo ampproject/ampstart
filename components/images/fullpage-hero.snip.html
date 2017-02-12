@@ -31,13 +31,7 @@ limitations under the License.
 
         {{#credit}}
           <span class="ampstart-image-credit h4">
-            {{credit-prefix}}
-            {{#author}}
-              <a href="{{url}}" role="author" class="text-decoration-none">{{text}}</a>
-            {{/author}}
-            {{#credit-suffix}}
-              , <br> {{.}}
-            {{/credit-suffix}}
+            {{credit-prefix}} {{#author}}<a href="{{url}}" role="author" class="text-decoration-none">{{text}}</a>{{/author}}{{#credit-suffix}},<br> {{.}}{{/credit-suffix}}
           </span>
         {{/credit}}
     </header>

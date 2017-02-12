@@ -1,5 +1,15 @@
 {
   "blog-thescenic": {
+    "head-tag": {
+      "title": "The Photo Blog",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-accordion",
+        "amp-social-share"
+      ],
+      "css-path": "templates/blog/thescenic/page.css"
+    },
     "navbar": {
       "logo": {
         "url": "../img/blog-thescenic/header-logo.png",
@@ -201,6 +211,18 @@
     }
   },
   "blog-photogallery": {
+    "head-tag": {
+      "title": "The Photo Blog",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-accordion",
+        "amp-instagram",
+        "amp-twitter",
+        "amp-social-share"
+      ],
+      "css-path": "templates/blog/photogallery/page.css"
+    },
     "navbar": {
       "name": "Scenic Times",
       "sidebar-id": "header-sidebar",
@@ -260,7 +282,7 @@
       "narrow-img": "../img/blog-photo-gallery/elephants_narrow.png",
       "wide-img": "../img/blog-photo-gallery/elephant_wide.jpg",
       "credit": {
-        "credit-prefix": "Taken by ",
+        "credit-prefix": "Taken by",
         "author": {"text": "James Victore", "url": "#"},
         "credit-suffix": "Posted 1 hour ago"
       },
@@ -908,7 +930,7 @@
       "head-tag": {
         "title": "AMPStart - UI Components - Buttons",
         "extensions": [],
-        "css-path": "www/index/code/baseline-page.css"
+        "css-path": "www/code/baseline-page.css"
       }
     }
   }

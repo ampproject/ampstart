@@ -16,3 +16,13 @@
 
 @import '../../core';
 @import 'page-vars';
+
+body {
+  max-height: 800px;
+}
+
+.www-code-html,
+.www-code-css {
+  max-height: 250px;
+  overflow-y: auto;
+}
