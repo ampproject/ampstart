@@ -18,28 +18,12 @@
 @import '../../../components/navbar/navbar';
 @import '../../../components/lightbox/template-preview';
 @import '../../../components/footer/footer';
-@import 'page-vars';
-
-.www-header {
-  background-image: linear-gradient(to right, #150573 0%, #68067B 100%);
-  padding: var(--space-7) 0;
-  color: var(--color-font-secondary);
-  clip-path: polygon(100% 100%,100% 0%,-400% 0%);
-}
+@import '../shared';
+@import '../page-vars';
 
 .www-index-templates .ampstart-btn,
 .www-header .ampstart-btn {
   background-color: transparent;
-}
-
-.www-index-features h2::after{
-  content: '';
-  display: block;
-  height: 2px;
-  width: var(--space-4);
-  background: var(--color-font-default);
-  position: absolute;
-  margin-top: var(--space-1);
 }
 
 .www-index-features {
@@ -47,12 +31,8 @@
   margin-bottom: var(--space-6);
 }
 
-.www-index-features h2,
 .www-index-templates h3 {
   letter-spacing: inherit;
-}
-
-.www-index-templates h3 {
   margin-top: var(--space-7);
 }
 

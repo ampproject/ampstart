@@ -14,41 +14,15 @@
  * limitations under the License.
  */
 
-@import '../../core-vars';
+@import '../../core';
+@import 'page-vars';
 
-h1, .h1 {
- font-size: var(--h1);
- line-height: var(--line-height-6);
+body {
+  max-height: 800px;
 }
 
-h2, .h2 {
- font-size: var(--h2);
- line-height: var(--line-height-5);
-}
-
-h3, .h3 {
- font-size: var(--h3);
- line-height: var(--line-height-4);
-}
-
-h4, .h4 {
- font-size: var(--h4);
- line-height: var(--line-height-3);
-}
-
-h5, .h5 {
- font-size: var(--h5);
- line-height: var(--line-height-2);
-}
-
-h6, .h6 {
- font-size: var(--h6);
- line-height: var(--line-height-1);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  letter-spacing: 0.06em;
+.www-code-html,
+.www-code-css {
+  max-height: 250px;
+  overflow-y: auto;
 }

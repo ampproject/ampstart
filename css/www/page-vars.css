@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../core-vars';
+@import '../core-vars';
 
 :root {
   --color-primary: #fff;
@@ -34,15 +34,5 @@
   --color-footer-background: var(--color-primary);
   --color-font-footer: var(--color-black);
 
-/*  --color-font-default: var(--color-dark-grey);
-
-  --color-input-primary: var(--color-secondary);
-  --color-input-font-primary: var(--color-font-primary);
-  --color-input-secondary: var(--color-secondary);
-  --color-input-font-secondary: var(--color-font-primary);
-
-  --color-footer-background: var(--color-theme);
-  --color-font-footer: var(--color-font-secondary);
-
-  --color-theme: #003f93;*/
+  --header-gradient: linear-gradient(to right, #150573 0%, #68067B 100%);;
 }

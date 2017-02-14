@@ -13,42 +13,25 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import 'page-vars';
 
-@import '../../core-vars';
-
-h1, .h1 {
- font-size: var(--h1);
- line-height: var(--line-height-6);
+.www-header {
+  background-image: var(--header-gradient);
+  padding: var(--space-7) 0;
+  color: var(--color-font-secondary);
+  clip-path: polygon(100% 100%,100% 0%,-400% 0%);
 }
 
-h2, .h2 {
- font-size: var(--h2);
- line-height: var(--line-height-5);
+.www-heading {
+  letter-spacing: inherit;
 }
 
-h3, .h3 {
- font-size: var(--h3);
- line-height: var(--line-height-4);
-}
-
-h4, .h4 {
- font-size: var(--h4);
- line-height: var(--line-height-3);
-}
-
-h5, .h5 {
- font-size: var(--h5);
- line-height: var(--line-height-2);
-}
-
-h6, .h6 {
- font-size: var(--h6);
- line-height: var(--line-height-1);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  letter-spacing: 0.06em;
+.www-heading::after{
+  content: '';
+  display: block;
+  height: 2px;
+  width: var(--space-4);
+  background: var(--color-font-default);
+  position: absolute;
+  bottom: 0;
 }
