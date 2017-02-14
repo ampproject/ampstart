@@ -28,7 +28,7 @@ function highlight() {
       }
       file.contents = new Buffer(highlighter(file.contents.toString(),
           'html'));
-      this.push(file);
+      cb(null, file);
     }))
     .pipe(gulp.dest(config.dest.www_code_pages));
 }
