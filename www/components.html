@@ -20,48 +20,128 @@ limitations under the License.
 <body>
   {{> ../components/navbar/navbar.snip.html}}
   <header class="www-header center">
-    <h1 class="mb4">UI Components</h1>
-    <span class="block mb4">Use our pre-build UI components to add on to your existing templates. Copy and paste only what you need. As always, customize anyways you like.</span>
+    <h1 class="px2 mb4">UI Components</h1>
+    <span class="block px2 mb4">Use our pre-build UI components to add on to your existing templates. Copy and paste only what you need. As always, customize anyways you like.</span>
   </header>
-  <main class="flex">
-    <aside class="col-2 xs-hide">
-      <ul class="list-reset m0 p0 px4">
-        <li><a href="#buttons">Buttons</a></li>
-        <li><a href="#pullquote">Pull Quote</a></li>
-        <li><a href="#dropcap">Dropcap</a></li>
-        <li><a href="#caption">Image with Caption</a></li>
-        <li><a href="#imgheading">Image with heading</a></li>
+  <amp-selector layout="container">
+  <main class="flex px2">
+    <aside class="www-components-sec-nav col-2 xs-hide sm-hide relative">
+      <ul class="www-component-anchors list-reset m0 p0 px1 caps">
+        <li class=""><a href="#buttons" class="www-component-anchor text-decoration-none left" option="">Buttons</a></li>
+        <li><a href="#selectors" class="www-component-anchor text-decoration-none left" option="">Selectors</a></li>
+        <li><a href="#navigation" class="www-component-anchor text-decoration-none left" option="">Navigation</a></li>
+        <li><a href="#lists" class="www-component-anchor text-decoration-none left" option="">Lists</a></li>
+        <li><a href="#typography" class="www-component-anchor text-decoration-none left" option="">Typography</a></li>
+        <li><a href="#media" class="www-component-anchor text-decoration-none left" option="">Media</a></li>
       </ul>
     </aside>
     <article class="www-components flex-auto">
       <section class="www-component-desc" id="buttons">
-        <h2 class="www-heading  pb4 caps mb2 relative">Button</h2>
+        <h2 class="www-heading  pb4 caps mb2 relative">Buttons</h2>
         <p class="">Here is my description, which can be too long sometimes.</p>
         <div>
           <!-- Rendered Output -->
         </div>
-        <amp-iframe height="500" layout="fixed-height" sandbox="allow-scripts" frameborder="0" src="code/buttons.amp.html">
         </amp-iframe>
         <div class="mb4">
-          <h3 class="caps h4">HTML</h3>
+          <h3 class="www-heading caps h4">HTML</h3>
           <pre>
             <code>
               <!-- HTML markup used to render the element/component -->
             </code>
           </pre>
         </div>
+      </section>
+
+      <section class="www-component-desc" id="selectors">
+        <h2 class="www-heading  pb4 caps mb2 relative">Selectors</h2>
+        <p class="">Here is my description, which can be too long sometimes.</p>
+        <div>
+          <!-- Rendered Output -->
+        </div>
+        </amp-iframe>
         <div class="mb4">
-          <h3 class="caps h4">CSS</h3>
+          <h3 class="www-heading caps h4">HTML</h3>
           <pre>
             <code>
-              <!-- CSS Code used to render the element/component -->
+              <!-- HTML markup used to render the element/component -->
             </code>
           </pre>
         </div>
       </section>
+
+      <section class="www-component-desc" id="navigation">
+        <h2 class="www-heading  pb4 caps mb2 relative">Navigation</h2>
+        <p class="">Here is my description, which can be too long sometimes.</p>
+        <div>
+          <!-- Rendered Output -->
+        </div>
+        </amp-iframe>
+        <div class="mb4">
+          <h3 class="www-heading caps h4">HTML</h3>
+          <pre>
+            <code>
+              <!-- HTML markup used to render the element/component -->
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <section class="www-component-desc" id="lists">
+        <h2 class="www-heading  pb4 caps mb2 relative">Lists</h2>
+        <p class="">Here is my description, which can be too long sometimes.</p>
+        <div>
+          <!-- Rendered Output -->
+        </div>
+        </amp-iframe>
+        <div class="mb4">
+          <h3 class="www-heading caps h4">HTML</h3>
+          <pre>
+            <code>
+              <!-- HTML markup used to render the element/component -->
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <section class="www-component-desc" id="typography">
+        <h2 class="www-heading  pb4 caps mb2 relative">Typography</h2>
+        <p class="">Here is my description, which can be too long sometimes.</p>
+        <div>
+          <!-- Rendered Output -->
+        </div>
+        </amp-iframe>
+        <div class="mb4">
+          <h3 class="www-heading caps h4">HTML</h3>
+          <pre>
+            <code>
+              <!-- HTML markup used to render the element/component -->
+            </code>
+          </pre>
+        </div>
+      </section>
+
+      <section class="www-component-desc" id="media">
+        <h2 class="www-heading  pb4 caps mb2 relative">Media</h2>
+        <p class="">Here is my description, which can be too long sometimes.</p>
+        <div>
+          <!-- Rendered Output -->
+        </div>
+        </amp-iframe>
+        <div class="mb4">
+          <h3 class="www-heading caps h4">HTML</h3>
+          <pre>
+            <code>
+              <!-- HTML markup used to render the element/component -->
+            </code>
+          </pre>
+        </div>
+      </section>
+
     </article>
     <aside class="col-2 xs-hide"></aside>
   </main>
+  </amp-selector>
 </body>
 </html>
 {{/www-components}}
