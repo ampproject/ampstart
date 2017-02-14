@@ -15,6 +15,7 @@
     "gulp-posthtml": "^2.0.0",
     "gulp-replace": "^0.5.4",
     "gulp-webserver": "^0.9.1",
+    "highlighter": "^0.1.0",
     "postcss": "5.0.14",
     "postcss-calc": "^5.3.1",
     "postcss-color-function": "^2.0.1",
@@ -25,7 +26,8 @@
     "posthtml-extend-attrs": "^1.0.0",
     "posthtml-include": "^1.1.0",
     "posthtml-inline-assets": "^2.0.0",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "through2": "^2.0.3"
   },
   "dependencies": {
     "basscss": "^8.0.3",

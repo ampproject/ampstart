@@ -14,5 +14,23 @@
  * limitations under the License.
  */
 
-require('./validate');
-require('./highlight');
+const gulp = require('gulp-help')(require('gulp'));
+const config = require('./config');
+const highlighter = require('highlighter')();
+const through = require('through2');
+
+function highlight() {
+  return gulp.src(config.src.www_code_pages)
+    .pipe(through.obj(function(file, enc, cb) {
+      if (file.isNull()) {
+        cb(null, file);
+        return;
+      }
+      file.contents = new Buffer(highlighter(file.contents.toString(),
+          'html'));
+      this.push(file);
+    }))
+    .pipe(gulp.dest(config.dest.www_code_pages));
+}
+
+gulp.task('highlight', highlight);
