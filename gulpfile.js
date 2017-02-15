@@ -43,13 +43,13 @@ gulp.task('img', function() {
 
 gulp.task('www', function() {
   const plugins = [
+    require('posthtml-include')({ encoding: 'utf-8' }),
     require('posthtml-inline-assets')({
       from: config.dest.www_pages,
       inline: {
         script: { check: function() { return false; } },
       }
     }),
-    require('posthtml-include')(),
   ];
   const options = {};
   return gulp.src(config.src.www_pages)
@@ -79,7 +79,7 @@ gulp.task('posthtml', 'build kickstart files', function() {
         script: { check: function() { return false; } },
       }
     }),
-    require('posthtml-include')(),
+    require('posthtml-include')({ encoding: 'utf-8' }),
   ];
   const options = {};
   return gulp.src(config.src.templates)

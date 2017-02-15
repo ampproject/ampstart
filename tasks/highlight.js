@@ -21,18 +21,19 @@ const highlighter = new Highlights();
 const through = require('through2');
 
 function highlight() {
-  return gulp.src(config.src.www_code_pages)
+  return gulp.src(config.src.hl_partials)
     .pipe(through.obj(function(file, enc, cb) {
       if (file.isNull()) {
         cb(null, file);
         return;
       }
       file.contents = new Buffer(highlighter.highlightSync({
-        fileContents: file.contents.toString()
+        fileContents: file.contents.toString(),
+        scopeName: 'text.html.basic'
       }));
       cb(null, file);
     }))
-    .pipe(gulp.dest(config.dest.www_code_pages));
+    .pipe(gulp.dest(config.dest.hl_partials));
 }
 
 gulp.task('highlight', highlight);
