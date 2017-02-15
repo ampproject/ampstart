@@ -16,7 +16,8 @@
 
 const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
-const highlighter = require('highlighter')();
+const Highlights = require('highlights');
+const highlighter = new Highlights();
 const through = require('through2');
 
 function highlight() {
@@ -26,8 +27,9 @@ function highlight() {
         cb(null, file);
         return;
       }
-      file.contents = new Buffer(highlighter(file.contents.toString(),
-          'html'));
+      file.contents = new Buffer(highlighter.highlightSync({
+        fileContents: file.contents.toString()
+      }));
       cb(null, file);
     }))
     .pipe(gulp.dest(config.dest.www_code_pages));
