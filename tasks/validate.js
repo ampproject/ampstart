@@ -23,7 +23,7 @@ function validate() {
         `${config.dest.templates}/**/*.html`,
         `${config.dest.www_pages}/**/*.html`,
         `!${config.dest.templates}/components/**/*.html`,
-        `!${config.dest.www_pages}/hl-partials/**/*.html`,
+        `!${config.dest.hl_partials}/**/*.html`,
       ])
       .pipe(validator.validate())
       .pipe(validator.format());

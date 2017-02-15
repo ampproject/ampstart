@@ -18,6 +18,7 @@
 @import '../../../components/lightbox/template-preview';
 @import '../../../components/footer/footer';
 @import '../shared';
+@import '../highlight-syntax/atom-light-syntac';
 @import '../page-vars';
 
 .www-components-sec-nav {
@@ -66,6 +67,12 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   content: '';
   display: block;
   height: var(--navbar-height);
+}
+
+pre {
+  font-family: monospace;
+  line-height: var(--space-1);
+  font-size: var(--h4);
 }
 
 @media (--breakpoint-xs) {
