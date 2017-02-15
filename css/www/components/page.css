@@ -69,10 +69,15 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   height: var(--navbar-height);
 }
 
-pre {
+.www-component-rendered {
+  margin-top: var(--space-5);
+}
+
+.www-component-desc pre {
   font-family: monospace;
   line-height: var(--space-1);
   font-size: var(--h4);
+  white-space: pre-wrap;
 }
 
 @media (--breakpoint-xs) {

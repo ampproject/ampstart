@@ -17,7 +17,7 @@ limitations under the License.
 }}
 
 <!-- Start Sidebar -->
-<amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar px3 flex flex-column" layout="nodisplay">
+<amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar px3 flex flex-column {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}}" layout="nodisplay">
   <div class="flex justify-start items-center ampstart-sidebar-header">
     <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger items-start">✕</a>
   </div>
