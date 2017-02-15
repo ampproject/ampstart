@@ -28,8 +28,8 @@ function getData() {
 }
 
 gulp.task('build', 'build', function(cb) {
-  runSequence('clean', 'img', 'postcss', 'posthtml', 'www', 'validate',
-      'highlight', cb);
+  runSequence('clean', 'highlight', 'img', 'postcss', 'posthtml', 'www',
+      'validate', cb);
 });
 
 gulp.task('clean', function() {
