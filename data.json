@@ -926,12 +926,12 @@
       }
     }
   },
-  "code": {
+  "www-render": {
     "buttons": {
       "head-tag": {
         "title": "AMPStart - UI Components - Buttons",
         "extensions": [],
-        "css-path": "www/code/baseline-page.css"
+        "css-path": "www/render/page.css"
       }
     }
   }

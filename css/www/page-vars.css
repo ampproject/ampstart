@@ -34,5 +34,5 @@
   --color-footer-background: var(--color-primary);
   --color-font-footer: var(--color-black);
 
-  --header-gradient: linear-gradient(to right, #150573 0%, #68067B 100%);;
+  --header-gradient: linear-gradient(to right, #150573 0%, #68067B 100%);
 }
