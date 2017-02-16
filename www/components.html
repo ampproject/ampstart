@@ -27,17 +27,39 @@ limitations under the License.
   <main class="flex px2">
     <aside class="www-components-sec-nav col-2 xs-hide sm-hide relative">
       <ul class="www-component-anchors list-reset m0 p0 px1 caps">
-        <li class=""><a href="#buttons" class="www-component-anchor text-decoration-none left" option="">Buttons</a></li>
-        <li><a href="#selectors" class="www-component-anchor text-decoration-none left" option="">Selectors</a></li>
-        <li><a href="#navigation" class="www-component-anchor text-decoration-none left" option="">Navigation</a></li>
-        <li><a href="#lists" class="www-component-anchor text-decoration-none left" option="">Lists</a></li>
-        <li><a href="#typography" class="www-component-anchor text-decoration-none left" option="">Typography</a></li>
-        <li><a href="#media" class="www-component-anchor text-decoration-none left" option="">Media</a></li>
+        {{#components}}
+          <li class="clearfix"><a href="#{{id}}" class="www-component-anchor text-decoration-none left" option="">{{name}}</a></li>
+        {{/components}}
       </ul>
     </aside>
     <article class="www-components flex-auto">
+
+      {{#components}}
+        <section class="www-component-desc" id="{{id}}">
+          <h2 class="www-heading  pb4 mb2 relative">{{name}}</h2>
+          {{#variants}}
+            {{#render.iframe}}
+            <!-- Rendered Output -->
+            <amp-iframe src="{{url}}" height="{{height}}" layout="{{layout}}" {{#width}}width="{{.}}"{{/width}} sandbox="allow-scripts" class="www-component-rendered mb2 center">
+              {{#placeholder}}
+              <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="{{layout}}" alt="{{alt}}" placeholder></amp-img>
+              {{/placeholder}}
+            </amp-iframe>
+            {{/render.iframe}}
+            {{#code-file}}
+            <div class="mb4">
+              <h3 class="caps h4">HTML</h3>
+              <!-- HTML markup used to render the element/component -->
+              <include src="dist/hl-partials/{{.}}.html"></include>
+            </div>
+            {{/code-file}}
+
+          {{/variants}}
+
+        </section>
+      {{/components}}
       <section class="www-component-desc" id="buttons">
-        <h2 class="www-heading  pb4 caps mb2 relative">Buttons</h2>
+        <h2 class="www-heading  pb4 mb2 relative">Buttons</h2>
 
         <!-- Rendered Output -->
         <amp-iframe src="/dist/render/buttons.amp.html" height="90" layout="fixed-height" sandbox="allow-scripts" class="www-component-rendered mb2 center">

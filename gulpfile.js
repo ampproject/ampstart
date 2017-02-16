@@ -43,7 +43,9 @@ gulp.task('img', function() {
 
 gulp.task('www', function() {
   const plugins = [
-    require('posthtml-include')({ encoding: 'utf-8' }),
+    require('posthtml-include')({
+      encoding: 'utf-8'
+    }),
     require('posthtml-inline-assets')({
       from: config.dest.www_pages,
       inline: {
@@ -57,7 +59,6 @@ gulp.task('www', function() {
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.www_pages))
 });
-
 
 gulp.task('watch', 'watch stuff', ['build'], function() {
   return gulp.watch([
