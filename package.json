@@ -10,7 +10,6 @@
     "gulp": "^3.9.1",
     "gulp-amphtml-validator": "1.0.0",
     "gulp-help": "^1.6.1",
-    "gulp-mustache": "^2.3.0",
     "gulp-postcss": "^6.2.0",
     "gulp-posthtml": "^2.0.0",
     "gulp-replace": "^0.5.4",
