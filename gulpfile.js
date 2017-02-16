@@ -55,7 +55,7 @@ gulp.task('www', function() {
   ];
   const options = {};
   return gulp.src(config.src.www_pages)
-    .pipe(mustache(getData()))
+    .pipe(mustacheStream())
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.www_pages))
 });
@@ -84,7 +84,7 @@ gulp.task('posthtml', 'build kickstart files', function() {
   ];
   const options = {};
   return gulp.src(config.src.templates)
-    .pipe(mustache(getData()))
+    .pipe(mustacheStream())
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.templates))
 });
