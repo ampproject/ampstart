@@ -41,7 +41,7 @@
 }
 
 .www-index-templates li > *:not(amp-img) {
-  background: #f9f7f7;
+  background: var(--color-highlight-background);
 }
 
 @media (--breakpoint-xs) {

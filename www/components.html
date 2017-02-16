@@ -27,114 +27,34 @@ limitations under the License.
   <main class="flex px2">
     <aside class="www-components-sec-nav col-2 xs-hide sm-hide relative">
       <ul class="www-component-anchors list-reset m0 p0 px1 caps">
-        <li class=""><a href="#buttons" class="www-component-anchor text-decoration-none left" option="">Buttons</a></li>
-        <li><a href="#selectors" class="www-component-anchor text-decoration-none left" option="">Selectors</a></li>
-        <li><a href="#navigation" class="www-component-anchor text-decoration-none left" option="">Navigation</a></li>
-        <li><a href="#lists" class="www-component-anchor text-decoration-none left" option="">Lists</a></li>
-        <li><a href="#typography" class="www-component-anchor text-decoration-none left" option="">Typography</a></li>
-        <li><a href="#media" class="www-component-anchor text-decoration-none left" option="">Media</a></li>
+        {{#components}}
+          <li class="clearfix"><a href="#{{id}}" class="www-component-anchor text-decoration-none left" option="">{{name}}</a></li>
+        {{/components}}
       </ul>
     </aside>
     <article class="www-components flex-auto">
-      <section class="www-component-desc" id="buttons">
-        <h2 class="www-heading  pb4 caps mb2 relative">Buttons</h2>
-        <p class="">Here is my description, which can be too long sometimes.</p>
-        <div>
-          <!-- Rendered Output -->
-        </div>
-        </amp-iframe>
-        <div class="mb4">
-          <h3 class="www-heading caps h4">HTML</h3>
-          <!-- HTML markup used to render the element/component -->
-          <include src="dist/hl-partials/buttons.html"></include>
-        </div>
-      </section>
 
-      <section class="www-component-desc" id="selectors">
-        <h2 class="www-heading  pb4 caps mb2 relative">Selectors</h2>
-        <p class="">Here is my description, which can be too long sometimes.</p>
-        <div>
-          <!-- Rendered Output -->
-        </div>
-        </amp-iframe>
-        <div class="mb4">
-          <h3 class="www-heading caps h4">HTML</h3>
-          <pre>
-            <code>
+      {{#components}}
+        <section class="www-component-desc" id="{{id}}">
+          <h2 class="www-heading  pb4 mb2 relative">{{name}}</h2>
+          <p class="mb4">{{desc-text}}</p>
+          {{#variants}}
+            {{#render.iframe}}
+            <!-- Rendered Output -->
+            <amp-iframe src="{{url}}" height="{{height}}" layout="{{layout}}" {{#width}}width="{{.}}"{{/width}} sandbox="allow-scripts" class="www-component-rendered mb2 center">
+              <div placeholder class="absolute top-0 left-0 bottom-0 right-0"></div>
+            </amp-iframe>
+            {{/render.iframe}}
+            {{#code-file}}
+            <div class="www-example-code mb4 py2">
+              <h3 class="caps h4">HTML</h3>
               <!-- HTML markup used to render the element/component -->
-            </code>
-          </pre>
-        </div>
-      </section>
-
-      <section class="www-component-desc" id="navigation">
-        <h2 class="www-heading  pb4 caps mb2 relative">Navigation</h2>
-        <p class="">Here is my description, which can be too long sometimes.</p>
-        <div>
-          <!-- Rendered Output -->
-        </div>
-        </amp-iframe>
-        <div class="mb4">
-          <h3 class="www-heading caps h4">HTML</h3>
-          <pre>
-            <code>
-              <!-- HTML markup used to render the element/component -->
-            </code>
-          </pre>
-        </div>
-      </section>
-
-      <section class="www-component-desc" id="lists">
-        <h2 class="www-heading  pb4 caps mb2 relative">Lists</h2>
-        <p class="">Here is my description, which can be too long sometimes.</p>
-        <div>
-          <!-- Rendered Output -->
-        </div>
-        </amp-iframe>
-        <div class="mb4">
-          <h3 class="www-heading caps h4">HTML</h3>
-          <pre>
-            <code>
-              <!-- HTML markup used to render the element/component -->
-            </code>
-          </pre>
-        </div>
-      </section>
-
-      <section class="www-component-desc" id="typography">
-        <h2 class="www-heading  pb4 caps mb2 relative">Typography</h2>
-        <p class="">Here is my description, which can be too long sometimes.</p>
-        <div>
-          <!-- Rendered Output -->
-        </div>
-        </amp-iframe>
-        <div class="mb4">
-          <h3 class="www-heading caps h4">HTML</h3>
-          <pre>
-            <code>
-              <!-- HTML markup used to render the element/component -->
-            </code>
-          </pre>
-        </div>
-      </section>
-
-      <section class="www-component-desc" id="media">
-        <h2 class="www-heading  pb4 caps mb2 relative">Media</h2>
-        <p class="">Here is my description, which can be too long sometimes.</p>
-        <div>
-          <!-- Rendered Output -->
-        </div>
-        </amp-iframe>
-        <div class="mb4">
-          <h3 class="www-heading caps h4">HTML</h3>
-          <pre>
-            <code>
-              <!-- HTML markup used to render the element/component -->
-            </code>
-          </pre>
-        </div>
-      </section>
-
+              <include src="dist/hl-partials/{{.}}.html"></include>
+            </div>
+            {{/code-file}}
+          {{/variants}}
+        </section>
+      {{/components}}
     </article>
     <aside class="col-2 xs-hide"></aside>
   </main>

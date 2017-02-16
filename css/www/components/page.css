@@ -18,13 +18,14 @@
 @import '../../../components/lightbox/template-preview';
 @import '../../../components/footer/footer';
 @import '../shared';
-@import '../highlight-syntax/atom-light-syntac';
+@import '../highlight-syntax/atom-light-syntax';
 @import '../page-vars';
 
 .www-components-sec-nav {
   padding-top: var(--space-7);
   margin-top: calc(-1 * var(--space-7));
   box-shadow: 5px 0 5px -5px rgba(0,0,0,0.4);
+  min-width: 160px;
 }
 
 .www-component-anchors {
@@ -51,7 +52,7 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   background: var(--header-gradient);
 }
 
-.www-components {
+.www-component-desc > * {
   padding-left: var(--space-6);
 }
 
@@ -69,14 +70,25 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   height: var(--navbar-height);
 }
 
-pre {
+.www-component-desc [placeholder] {
+  background: var(--color-primary);
+}
+
+.www-component-rendered {
+  margin-top: var(--space-5);
+}
+
+.www-component-desc pre {
   font-family: monospace;
   line-height: var(--space-1);
   font-size: var(--h4);
+  white-space: pre-line;
+  background: var(--color-highlight-background);
+  overflow-y: auto;
 }
 
 @media (--breakpoint-xs) {
-  .www-components {
+  .www-component-desc > * {
     padding-left: 0;
   }
   .www-component-desc {

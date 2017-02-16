@@ -34,5 +34,7 @@
   --color-footer-background: var(--color-primary);
   --color-font-footer: var(--color-black);
 
+  --color-highlight-background: #f9f7f7;
+
   --header-gradient: linear-gradient(to right, #150573 0%, #68067B 100%);
 }

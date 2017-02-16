@@ -924,12 +924,92 @@
           {"wordpress": "#"}
         ]
       }
-    }
+    },
+    "components": [
+      {
+        "name": "Buttons",
+        "id": "buttons",
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/buttons.amp.html",
+                "width": false,
+                "height": "90",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "buttons"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/buttons-sec.amp.html",
+                "width": false,
+                "height": "90",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "buttons-sec"
+          }
+        ]
+      },
+      {
+        "name": "Selectors",
+        "id": "selectors",
+        "variants": [
+          {
+            "desc": "Description of selectors. Our templates are designed to look great on mobile, desktop and tablet.",
+            "render": {
+              "iframe": {
+                "url": "/dist/render/checkbox.amp.html",
+                "width": false,
+                "height": "96",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "checkbox"
+          }
+        ]
+      },
+      {
+        "name": "Navigation",
+        "id": "navigation",
+        "desc": false
+      },
+      {
+        "name": "Lists",
+        "id": "lists",
+        "desc": false
+      },
+      {
+        "name": "Typography",
+        "id": "typography",
+        "desc": false
+      },
+      {
+        "name": "Media",
+        "id": "media",
+        "desc": false
+      },
+      {
+        "name": "Other",
+        "id": "other",
+        "desc": false
+      }
+    ]
   },
   "www-render": {
     "buttons": {
       "head-tag": {
         "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "inputs": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Inputs",
         "extensions": [],
         "css-path": "www/render/page.css"
       }

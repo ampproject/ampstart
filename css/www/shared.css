@@ -35,3 +35,7 @@
   position: absolute;
   bottom: 0;
 }
+
+.www-example-code {
+  background: var(--color-highlight-background);
+}
