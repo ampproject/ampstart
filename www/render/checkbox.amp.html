@@ -15,26 +15,28 @@ limitations under the License.
 -->
 
 <!doctype html>
-{{#www-render.buttons}}
+{{#www-render.inputs}}
 <html ⚡>
 {{> ../utils/amp-page-head.snip.html}}
 <body>
   <main class="flex flex-wrap justify-around align-item items-center">
 
-    <div class="flex flex-column mb2 items-center">
-      <label class="example-label bold mb3">Secondary</label>
-      <button class="ampstart-btn ampstart-btn-secondary">
-        Submit
-      </button>
+    <div class="flex flex-column">
+      <label class="example-label bold mb3">On</label>
+      <div class="ampstart-input ampstart-input-chk inline-block relative m0 p0 mb3 ">
+        <input type="checkbox" checked value="1" name="name" id="cb1" class="p0 m0 relative">
+        <label for="cb1">Checkbox 1</label>
+      </div>
     </div>
 
-    <div class="flex flex-column mb2  items-center">
-      <label class="example-label bold mb3">Disabled</label>
-      <button class="ampstart-btn ampstart-btn-secondary" disabled>
-        Submit
-      </button>
+    <div class="flex flex-column">
+      <label class="example-label bold mb3">Off</label>
+      <div class="ampstart-input ampstart-input-chk inline-block relative m0 p0 mb3 ">
+        <input type="checkbox" value="2" name="name" id="cb2" class="p0 m0 relative">
+        <label for="cb2">Checkbox 2</label>
+      </div>
     </div>
   </main>
 </body>
 </html>
-{{/www-render.buttons}}
+{{/www-render.inputs}}

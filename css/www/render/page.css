@@ -15,6 +15,7 @@
  */
 
 @import '../../core';
+@import '../../../components/inputs/inputs';
 @import 'page-vars';
 
 .example-label {color: var(--color-grey);}

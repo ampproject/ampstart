@@ -929,7 +929,6 @@
       {
         "name": "Buttons",
         "id": "buttons",
-        "desc-text": false,
         "variants": [
           {
             "render": {
@@ -937,14 +936,7 @@
                 "url": "/dist/render/buttons.amp.html",
                 "width": false,
                 "height": "90",
-                "layout": "fixed-height",
-                "placeholder": {
-                  "url": "../img/www/components/btn-primary.png",
-                  "width": "573",
-                  "height": "90",
-                  "layout": "fixed",
-                  "alt": "Primary Button"
-                }
+                "layout": "fixed-height"
               }
             },
             "code-file": "buttons"
@@ -953,16 +945,9 @@
             "render": {
               "iframe": {
                 "url": "/dist/render/buttons-sec.amp.html",
-                "width": "",
+                "width": false,
                 "height": "90",
-                "layout": "fixed-height",
-                "placeholder": {
-                  "url": "../img/www/components/btn-sec.png",
-                  "width": "573",
-                  "height": "90",
-                  "layout": "fixed",
-                  "alt": "Secondary Button"
-                }
+                "layout": "fixed-height"
               }
             },
             "code-file": "buttons-sec"
@@ -972,7 +957,20 @@
       {
         "name": "Selectors",
         "id": "selectors",
-        "desc": "Description of selectors. Our templates are designed to look great on mobile, desktop and tablet."
+        "variants": [
+          {
+            "desc": "Description of selectors. Our templates are designed to look great on mobile, desktop and tablet.",
+            "render": {
+              "iframe": {
+                "url": "/dist/render/checkbox.amp.html",
+                "width": false,
+                "height": "96",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "checkbox"
+          }
+        ]
       },
       {
         "name": "Navigation",
@@ -1005,6 +1003,13 @@
     "buttons": {
       "head-tag": {
         "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "inputs": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Inputs",
         "extensions": [],
         "css-path": "www/render/page.css"
       }
