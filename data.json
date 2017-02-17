@@ -933,7 +933,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/buttons.amp.html",
+                "url": "render/buttons.amp.html",
                 "width": false,
                 "height": "90",
                 "layout": "fixed-height"
@@ -944,7 +944,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/buttons-sec.amp.html",
+                "url": "render/buttons-sec.amp.html",
                 "width": false,
                 "height": "90",
                 "layout": "fixed-height"
@@ -962,7 +962,7 @@
             "heading": "Checkboxes",
             "render": {
               "iframe": {
-                "url": "/dist/render/checkbox.amp.html",
+                "url": "render/checkbox.amp.html",
                 "width": false,
                 "height": "96",
                 "layout": "fixed-height"
@@ -974,7 +974,7 @@
             "heading": "Radio Buttons",
             "render": {
               "iframe": {
-                "url": "/dist/render/radio.amp.html",
+                "url": "render/radio.amp.html",
                 "width": false,
                 "height": "96",
                 "layout": "fixed-height"
@@ -997,7 +997,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/list-ordered.amp.html",
+                "url": "render/list-ordered.amp.html",
                 "width": false,
                 "height": "144",
                 "layout": "fixed-height"
@@ -1008,7 +1008,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/list-unordered.amp.html",
+                "url": "render/list-unordered.amp.html",
                 "width": false,
                 "height": "168",
                 "layout": "fixed-height"
@@ -1026,7 +1026,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/headings.amp.html",
+                "url": "render/headings.amp.html",
                 "width": false,
                 "height": "234",
                 "layout": "fixed-height"
@@ -1037,7 +1037,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/sizes.amp.html",
+                "url": "render/sizes.amp.html",
                 "width": false,
                 "height": "307",
                 "layout": "fixed-height"
@@ -1048,7 +1048,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/pullquote.amp.html",
+                "url": "render/pullquote.amp.html",
                 "width": false,
                 "height": "192",
                 "layout": "fixed-height"
@@ -1059,7 +1059,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/dropcap.amp.html",
+                "url": "render/dropcap.amp.html",
                 "width": false,
                 "height": "171",
                 "layout": "fixed-height"
@@ -1070,7 +1070,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/bodycopy.amp.html",
+                "url": "render/bodycopy.amp.html",
                 "width": false,
                 "height": "500",
                 "layout": "fixed-height"
@@ -1088,7 +1088,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/fullpage-hero.amp.html",
+                "url": "render/fullpage-hero.amp.html",
                 "width": false,
                 "height": "800",
                 "layout": "fixed-height"
@@ -1099,7 +1099,7 @@
           {
             "render": {
               "iframe": {
-                "url": "/dist/render/image-with-heading.amp.html",
+                "url": "render/image-with-heading.amp.html",
                 "width": false,
                 "height": "546",
                 "layout": "fixed-height"
