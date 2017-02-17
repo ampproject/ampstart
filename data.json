@@ -959,7 +959,7 @@
         "id": "selectors",
         "variants": [
           {
-            "desc": "Description of selectors. Our templates are designed to look great on mobile, desktop and tablet.",
+            "heading": "Checkboxes",
             "render": {
               "iframe": {
                 "url": "/dist/render/checkbox.amp.html",
@@ -969,33 +969,150 @@
               }
             },
             "code-file": "checkbox"
+          },
+          {
+            "heading": "Radio Buttons",
+            "render": {
+              "iframe": {
+                "url": "/dist/render/radio.amp.html",
+                "width": false,
+                "height": "96",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "radio"
           }
         ]
       },
       {
         "name": "Navigation",
         "id": "navigation",
-        "desc": false
+        "desc-text": false
       },
       {
         "name": "Lists",
         "id": "lists",
-        "desc": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/list-ordered.amp.html",
+                "width": false,
+                "height": "144",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "list-ordered"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/list-unordered.amp.html",
+                "width": false,
+                "height": "168",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "list-unordered"
+          }
+        ]
       },
       {
         "name": "Typography",
         "id": "typography",
-        "desc": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/headings.amp.html",
+                "width": false,
+                "height": "234",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "headings"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/sizes.amp.html",
+                "width": false,
+                "height": "307",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "sizes"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/pullquote.amp.html",
+                "width": false,
+                "height": "192",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "pullquote"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/dropcap.amp.html",
+                "width": false,
+                "height": "171",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "dropcap"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/bodycopy.amp.html",
+                "width": false,
+                "height": "500",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "bodycopy"
+          }
+        ]
       },
       {
         "name": "Media",
         "id": "media",
-        "desc": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/fullpage-hero.amp.html",
+                "width": false,
+                "height": "800",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "fullpage-hero"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/image-with-heading.amp.html",
+                "width": false,
+                "height": "546",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "image-with-heading"
+          }
+        ]
       },
       {
         "name": "Other",
         "id": "other",
-        "desc": false
+        "desc-text": false
       }
     ]
   },
@@ -1007,11 +1124,114 @@
         "css-path": "www/render/page.css"
       }
     },
+    "lists": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Lists",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
     "inputs": {
       "head-tag": {
         "title": "AMPStart - UI Components - Inputs",
         "extensions": [],
         "css-path": "www/render/page.css"
+      },
+      "checkboxes": [
+        {
+          "label": "On",
+          "checkbox": {
+            "label": "Checkbox 1",
+            "id": "cb1",
+            "name": "cb",
+            "value": "1",
+            "checked": "checked"
+          }
+        },
+        {
+          "label": "Off",
+          "checkbox": {
+            "label": "Checkbox 2",
+            "id": "cb2",
+            "name": "cb",
+            "value": "2"
+          }
+        },
+        {
+          "label": "Disabled",
+          "checkbox": {
+            "label": "Checkbox 3",
+            "id": "cb3",
+            "name": "cb",
+            "value": "3",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "radios": [
+        {
+          "label": "On",
+          "radio": {
+            "label": "Radio 1",
+            "id": "rb1",
+            "name": "rb",
+            "value": "1",
+            "checked": "checked"
+          }
+        },
+        {
+          "label": "Off",
+          "radio": {
+            "label": "Radio 2",
+            "id": "rb2",
+            "name": "rb",
+            "value": "2"
+          }
+        },
+        {
+          "label": "Disabled",
+          "radio": {
+            "label": "Radio 3",
+            "id": "rb3",
+            "name": "rb",
+            "value": "3",
+            "disabled": "disabled"
+          }
+        }
+      ]
+    },
+    "typography": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "media": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "fullpage-hero": {
+        "heading": "Most Beautiful Hikes in the Pacific Northwest",
+        "narrow-img": "../../img/rectangle1.png",
+        "wide-img": "../../img/rectangle2.png",
+        "credit": {
+          "credit-prefix": "By",
+          "author": {"text": "Jamie Smith", "url": "#"},
+          "credit-suffix": "Posted today"
+        },
+        "readmore": {
+          "text": "Read more",
+          "content-id": "content"
+        }
+      },
+      "image-with-heading": {
+        "width": "1280",
+        "height": "853",
+        "url": "../../img/rectangle2.png",
+        "heading-html": "<h1>Somewhere in Alaska</h1>"
       }
     }
   }

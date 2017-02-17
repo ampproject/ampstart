@@ -69,7 +69,7 @@ limitations under the License.
 {{#checkbox}}
 <!-- Start Checkbox -->
 <div class="ampstart-input ampstart-input-chk inline-block relative m0 p0 mb3 {{classes}}">
-    <input type="checkbox" value="{{value}}" name="{{name}}" id="{{id}}" class="p0 m0 relative" {{disabled}}/>
+    <input type="checkbox" value="{{value}}" name="{{name}}" id="{{id}}" class="p0 m0 relative" {{checked}} {{disabled}}/>
     <label for="{{id}}" class="">{{label}}</label>
 </div>
 <!-- End Checkbox -->
@@ -79,7 +79,7 @@ limitations under the License.
 {{#radio}}
 <!-- Start Radio -->
 <div class="ampstart-input ampstart-input-radio inline-block relative m0 p0 mb3 {{classes}}">
-    <input type="radio" value="{{value}}" name="{{name}}" id="{{id}}" class="relative" {{disabled}}/>
+    <input type="radio" value="{{value}}" name="{{name}}" id="{{id}}" class="relative" {{checked}} {{disabled}}/>
     <label for="{{id}}" class="">{{label}}</label>
 </div>
 <!-- End Radio -->

@@ -15,18 +15,21 @@ limitations under the License.
 -->
 
 <!doctype html>
-{{#www-render.inputs}}
+{{#www-render.lists}}
 <html ⚡>
 {{> ../utils/amp-page-head.snip.html}}
 <body>
-  <main class="flex flex-wrap justify-around align-item items-center">
-    {{#checkboxes}}
-    <div class="flex flex-column items-center">
-      <label class="example-label bold mb3">{{label}}</label>
-      {{> ../../components/inputs/inputs.snip.html}}
-    </div>
-    {{/checkboxes}}
-  </main>
+<main class="flex flex-wrap justify-around align-item items-center">
+  <div class="flex flex-column items-center">
+    <label class="example-label bold mb3">Ordered List</label>
+    <ol class="m0 p0">
+      <li>Crush cardamom pods.</li>
+      <li>Add 2 cups of water plus sugar.</li>
+      <li>Fry in a large pan.</li>
+      <li>Let it dry.</li>
+    </ol>
+  </div>
+</main>
 </body>
 </html>
-{{/www-render.inputs}}
+{{/www-render.lists}}

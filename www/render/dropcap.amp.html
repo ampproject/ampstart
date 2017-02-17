@@ -15,18 +15,16 @@ limitations under the License.
 -->
 
 <!doctype html>
-{{#www-render.inputs}}
+{{#www-render.typography}}
 <html ⚡>
 {{> ../utils/amp-page-head.snip.html}}
 <body>
-  <main class="flex flex-wrap justify-around align-item items-center">
-    {{#checkboxes}}
-    <div class="flex flex-column items-center">
-      <label class="example-label bold mb3">{{label}}</label>
-      {{> ../../components/inputs/inputs.snip.html}}
-    </div>
-    {{/checkboxes}}
-  </main>
+<main class="flex flex-wrap justify-around align-item items-center">
+  <div class="flex flex-column items-center">
+    <label class="example-label bold mb3">Dropcap</label>
+    <p class="ampstart-dropcap">Donec porta orci eu tortor finibus, id facilisis metus aliquam. Pellentesque lobortis viverra odio ut eleifend. Integer elementum finibus magna, consequat fermentum dui ultrices sit amet.</p>
+  </div>
+</main>
 </body>
 </html>
-{{/www-render.inputs}}
+{{/www-render.typography}}
