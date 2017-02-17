@@ -987,27 +987,51 @@
       {
         "name": "Navigation",
         "id": "navigation",
-        "desc": false
+        "desc-text": false
       },
       {
         "name": "Lists",
         "id": "lists",
-        "desc": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/list-ordered.amp.html",
+                "width": false,
+                "height": "144",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "list-ordered"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/list-unordered.amp.html",
+                "width": false,
+                "height": "168",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "list-unordered"
+          }
+        ]
       },
       {
         "name": "Typography",
         "id": "typography",
-        "desc": false
+        "desc-text": false
       },
       {
         "name": "Media",
         "id": "media",
-        "desc": false
+        "desc-text": false
       },
       {
         "name": "Other",
         "id": "other",
-        "desc": false
+        "desc-text": false
       }
     ]
   },
@@ -1015,6 +1039,13 @@
     "buttons": {
       "head-tag": {
         "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "lists": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Lists",
         "extensions": [],
         "css-path": "www/render/page.css"
       }
