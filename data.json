@@ -1083,7 +1083,20 @@
       {
         "name": "Media",
         "id": "media",
-        "desc-text": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/fullpage-hero.amp.html",
+                "width": false,
+                "height": "800",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "fullpage-hero"
+          }
+        ]
       },
       {
         "name": "Other",
@@ -1181,6 +1194,27 @@
         "title": "AMPStart - UI Components - Buttons",
         "extensions": [],
         "css-path": "www/render/page.css"
+      }
+    },
+    "media": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "fullpage-hero": {
+        "heading": "Most Beautiful Hikes in the Pacific Northwest",
+        "narrow-img": "../../img/rectangle1.png",
+        "wide-img": "../../img/rectangle2.png",
+        "credit": {
+          "credit-prefix": "By",
+          "author": {"text": "Jamie Smith", "url": "#"},
+          "credit-suffix": "Posted today"
+        },
+        "readmore": {
+          "text": "Read more",
+          "content-id": "content"
+        }
       }
     }
   }
