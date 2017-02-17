@@ -83,7 +83,7 @@
 
 /* Sidebar drop down */
 .ampstart-nav-dropdown {
-  flex-grow: 0.5;
+  min-width: 200px;
 }
 
 .ampstart-nav-dropdown amp-accordion header {
@@ -101,6 +101,10 @@
   color: var(--color-navbar-font-primary);
 }
 
+.ampstart-nav-dropdown .ampstart-dropdown-item {
+  color: var(--color-font-theme);
+}
+
 /* Sidebar */
 
 .ampstart-sidebar {
@@ -111,7 +115,7 @@
 }
 
 .ampstart-sidebar .ampstart-icon {
-  fill: var(--color-navbar-font-primary);
+  fill: var(--color-font-theme);
 }
 
 .ampstart-sidebar-header {

@@ -25,10 +25,9 @@
 
   --color-secondary: #fff;
   --color-font-primary: #fff;
-
   --color-font-default: var(--color-dark-grey);
-
   --color-font-subtitle: #4f4f4f;
+  --color-font-theme: var(--color-font-primary);
 
   --color-disabled: #9b9b9b;
 
