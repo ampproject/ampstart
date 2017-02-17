@@ -185,6 +185,6 @@
 }
 
 /* custom edits */
-.editor .entity.name.tag.block {
+.editor .tag.block {
   display: inline;
 }

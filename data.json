@@ -1021,7 +1021,31 @@
       {
         "name": "Typography",
         "id": "typography",
-        "desc-text": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/headings.amp.html",
+                "width": false,
+                "height": "234",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "headings"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/sizes.amp.html",
+                "width": false,
+                "height": "307",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "sizes"
+          }
+        ]
       },
       {
         "name": "Media",
@@ -1118,6 +1142,13 @@
           }
         }
       ]
+    },
+    "headings": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
     }
   }
 }
