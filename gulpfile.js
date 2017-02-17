@@ -16,54 +16,15 @@
 
 const gulp = require('gulp-help')(require('gulp'));
 const del = require('del');
-const Mustache = require('mustache');
+const mustache = require('gulp-mustache');
 const posthtml = require('gulp-posthtml');
-const fs = require('fs');
 const postcss = require('gulp-postcss');
 const runSequence = require('run-sequence');
 const config = require('./tasks/config');
-const through = require('through2');
-const path = require('path');
 require('./tasks');
 
-function getData(opt_path) {
-  var path = 'data.json';
-  var jsonPath = (opt_path || '').replace(/(?:(?:amp|snip).)?html$/, 'json');
-  if (opt_path && jsonPath && fs.existsSync(jsonPath)) {
-    path = jsonPath;
-  }
-  return JSON.parse(fs.readFileSync(path));
-}
-
-function mustacheStream() {
-  return through.obj(function(file, enc, cb) {
-    if (file.isNull()) {
-      cb(null, file);
-      return;
-    }
-    var partialsMap = Object.create(null);
-    // TODO(erwinm, #47): only do this traverse once and cache all the paths
-    traverse(__dirname, path.dirname(file.path), partialsMap);
-    file.contents = new Buffer(Mustache.render(file.contents.toString(),
-        getData(file.path), partialsMap));
-    cb(null, file);
-  });
-}
-
-function traverse(dir, embedderDir, partialsMap) {
-  var files = fs.readdirSync(dir);
-  var filename = null;
-  var filepathOrDir = null;
-  for (var i = 0; i < files.length; i++) {
-    filename = files[i];
-    filepathOrDir = `${dir}/${filename}`;
-    if (fs.statSync(filepathOrDir).isDirectory()) {
-      traverse(filepathOrDir, embedderDir, partialsMap);
-    } else if (/snip.html$/.test(filepathOrDir)) {
-      partialsMap[path.relative(embedderDir, filepathOrDir)] =
-          fs.readFileSync(filepathOrDir).toString();
-    }
-  }
+function getData() {
+  return JSON.parse(require('fs').readFileSync('data.json'));
 }
 
 gulp.task('build', 'build', function(cb) {
@@ -94,7 +55,7 @@ gulp.task('www', function() {
   ];
   const options = {};
   return gulp.src(config.src.www_pages)
-    .pipe(mustacheStream())
+    .pipe(mustache(getData()))
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.www_pages))
 });
@@ -123,7 +84,7 @@ gulp.task('posthtml', 'build kickstart files', function() {
   ];
   const options = {};
   return gulp.src(config.src.templates)
-    .pipe(mustacheStream())
+    .pipe(mustache(getData()))
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.templates))
 });
