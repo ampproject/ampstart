@@ -1106,6 +1106,17 @@
               }
             },
             "code-file": "image-with-heading"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/image-with-caption.amp.html",
+                "width": false,
+                "height": "546",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "image-with-caption"
           }
         ]
       },
@@ -1227,11 +1238,25 @@
           "content-id": "content"
         }
       },
-      "image-with-heading": {
-        "width": "1280",
-        "height": "853",
-        "url": "../../img/rectangle2.png",
-        "heading-html": "<h1>Somewhere in Alaska</h1>"
+      "img-heading": {
+        "image-with-heading": {
+          "width": "1280",
+          "height": "853",
+          "url": "../../img/rectangle2.png",
+          "heading-html": "<h1>Somewhere in Alaska</h1>"
+        }
+      },
+      "img-caption": {
+        "image-with-caption": {
+          "width": "1280",
+          "height": "853",
+          "url": "../../img/rectangle2.png",
+          "caption": "Description of the photograph.",
+          "credit": {
+            "credit-prefix": "Taken by ",
+            "author": {"text": "James Victore", "url": "#"}
+          }
+        }
       }
     }
   }
