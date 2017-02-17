@@ -16,6 +16,8 @@
 
 @import '../../core';
 @import '../../../components/inputs/inputs';
+@import '../../../components/images/images';
+@import '../../../components/images/fullpage-hero';
 @import 'page-vars';
 
 .example-label {color: var(--color-grey);}

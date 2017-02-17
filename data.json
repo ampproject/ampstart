@@ -1095,6 +1095,17 @@
               }
             },
             "code-file": "fullpage-hero"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/image-with-heading.amp.html",
+                "width": false,
+                "height": "546",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "image-with-heading"
           }
         ]
       },
@@ -1215,6 +1226,12 @@
           "text": "Read more",
           "content-id": "content"
         }
+      },
+      "image-with-heading": {
+        "width": "1280",
+        "height": "853",
+        "url": "../../img/rectangle2.png",
+        "heading-html": "<h1>Somewhere in Alaska</h1>"
       }
     }
   }
