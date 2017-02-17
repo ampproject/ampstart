@@ -1044,6 +1044,28 @@
               }
             },
             "code-file": "sizes"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/pullquote.amp.html",
+                "width": false,
+                "height": "192",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "pullquote"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/dropcap.amp.html",
+                "width": false,
+                "height": "171",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "dropcap"
           }
         ]
       },
@@ -1143,7 +1165,7 @@
         }
       ]
     },
-    "headings": {
+    "typography": {
       "head-tag": {
         "title": "AMPStart - UI Components - Buttons",
         "extensions": [],
