@@ -14,10 +14,6 @@
  * limitations under the License.
  */
 
-@import 'ampstart-base/bass-override-vars';
-@import 'ampstart-base/ampstart-spacing-vars';
-@import 'ampstart-base/base-page-vars';
-@import '../components/inputs/input-vars';
-@import '../components/navbar/navbar-vars';
-@import '../components/footer/footer-vars';
-@import '../components/dropdown/dropdown-vars';
+:root {
+  --color-dropdown-content: var(--color-font-theme);
+}

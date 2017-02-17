@@ -38,6 +38,7 @@
   display: inline-block;
   content: '+';
   padding: 0 0 0 var(--space-3);
+  color: var(--color-dropdown-content);
 }
 
 .ampstart-dropdown > [expanded] > header::after {
@@ -50,7 +51,7 @@
 
 .ampstart-dropdown-item {
   background-color: var(--color-primary);
-  color: var(--color-font-primary);
+  color: var(--color-dropdown-content);
   opacity: 0.9;
 }
 

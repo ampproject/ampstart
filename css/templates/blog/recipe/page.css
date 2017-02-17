@@ -31,18 +31,12 @@ main {
 }
 
 .ampstart-icon {
-  fill: var(--color-theme);
+  fill: var(--color-font-theme);
 }
 
 .recipe-article-category,
-.ampstart-dropdown>section>header::after,
-.ampstart-nav-dropdown .ampstart-dropdown-item,
 .recipe-comments h3 {
-  color: var(--color-theme);
-}
-
-.ampstart-sidebar .ampstart-icon {
-  fill: var(--color-theme);
+  color: var(--color-font-theme);
 }
 
 .ampstart-footer {
