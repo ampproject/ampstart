@@ -1066,6 +1066,17 @@
               }
             },
             "code-file": "dropcap"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "/dist/render/bodycopy.amp.html",
+                "width": false,
+                "height": "500",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "bodycopy"
           }
         ]
       },
