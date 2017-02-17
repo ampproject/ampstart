@@ -959,7 +959,7 @@
         "id": "selectors",
         "variants": [
           {
-            "desc": "Description of selectors. Our templates are designed to look great on mobile, desktop and tablet.",
+            "heading": "Checkboxes",
             "render": {
               "iframe": {
                 "url": "/dist/render/checkbox.amp.html",
@@ -969,6 +969,18 @@
               }
             },
             "code-file": "checkbox"
+          },
+          {
+            "heading": "Radio Buttons",
+            "render": {
+              "iframe": {
+                "url": "/dist/render/radio.amp.html",
+                "width": false,
+                "height": "96",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "radio"
           }
         ]
       },
@@ -1012,7 +1024,69 @@
         "title": "AMPStart - UI Components - Inputs",
         "extensions": [],
         "css-path": "www/render/page.css"
-      }
+      },
+      "checkboxes": [
+        {
+          "label": "On",
+          "checkbox": {
+            "label": "Checkbox 1",
+            "id": "cb1",
+            "name": "cb",
+            "value": "1",
+            "checked": "checked"
+          }
+        },
+        {
+          "label": "Off",
+          "checkbox": {
+            "label": "Checkbox 2",
+            "id": "cb2",
+            "name": "cb",
+            "value": "2"
+          }
+        },
+        {
+          "label": "Disabled",
+          "checkbox": {
+            "label": "Checkbox 3",
+            "id": "cb3",
+            "name": "cb",
+            "value": "3",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "radios": [
+        {
+          "label": "On",
+          "radio": {
+            "label": "Radio 1",
+            "id": "rb1",
+            "name": "rb",
+            "value": "1",
+            "checked": "checked"
+          }
+        },
+        {
+          "label": "Off",
+          "radio": {
+            "label": "Radio 2",
+            "id": "rb2",
+            "name": "rb",
+            "value": "2"
+          }
+        },
+        {
+          "label": "Disabled",
+          "radio": {
+            "label": "Radio 3",
+            "id": "rb3",
+            "name": "rb",
+            "value": "3",
+            "disabled": "disabled"
+          }
+        }
+      ]
     }
   }
 }

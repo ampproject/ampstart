@@ -37,13 +37,23 @@ limitations under the License.
       {{#components}}
         <section class="www-component-desc" id="{{id}}">
           <h2 class="www-heading  pb4 mb2 relative">{{name}}</h2>
-          <p class="mb4">{{desc-text}}</p>
+          {{#desc-text}}
+          <p class="mb4">{{.}}</p>
+          {{/desc-text}}
           {{#variants}}
+            {{#heading}}
+            <h3 class="caps h4 mb2">{{.}}</h3>
+            {{/heading}}
+            {{#desc}}
+            <p class="mb4">{{.}}</p>
+            {{/desc}}
             {{#render.iframe}}
             <!-- Rendered Output -->
-            <amp-iframe src="{{url}}" height="{{height}}" layout="{{layout}}" {{#width}}width="{{.}}"{{/width}} sandbox="allow-scripts" class="www-component-rendered mb2 center">
-              <div placeholder class="absolute top-0 left-0 bottom-0 right-0"></div>
-            </amp-iframe>
+            <div>
+              <amp-iframe src="{{url}}" height="{{height}}" layout="{{layout}}" {{#width}}width="{{.}}"{{/width}} sandbox="allow-scripts" class="www-component-rendered mb2 center">
+                <div placeholder class="absolute top-0 left-0 bottom-0 right-0"></div>
+              </amp-iframe>
+            </div>
             {{/render.iframe}}
             {{#code-file}}
             <div class="www-example-code mb4 py2">
