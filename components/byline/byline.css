@@ -21,4 +21,5 @@
 
 .ampstart-byline time {
   font-style: normal;
+  white-space: nowrap;
 }

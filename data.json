@@ -1139,6 +1139,17 @@
               }
             },
             "code-file": "carousel-with-caption"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/byline.amp.html",
+                "width": false,
+                "height": "140",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "byline"
           }
         ]
       },
@@ -1279,6 +1290,11 @@
             "author": {"text": "James Victore", "url": "#"}
           }
         }
+      },
+      "byline": {
+        "image": "../../img/oval.png",
+        "author": {"text": "Jazz B", "url": "#"},
+        "time": {"text": "Sept 10, 2016 @12:15 pm", "value":"2016-09-18T12:15"}
       }
     },
     "media-carousel": {
