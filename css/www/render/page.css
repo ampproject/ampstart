@@ -19,6 +19,8 @@
 @import '../../../components/images/images';
 @import '../../../components/images/fullpage-hero';
 @import '../../../components/byline/byline';
+@import '../../../components/navbar/navbar';
+@import '../../../components/dropdown/dropdown';
 @import 'page-vars';
 
 .example-label {color: var(--color-grey);}

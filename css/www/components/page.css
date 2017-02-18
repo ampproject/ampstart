@@ -87,6 +87,13 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   overflow-y: auto;
 }
 
+.www-example-code {
+  background: var(--color-highlight-background);
+  max-height: 500px;
+  overflow: auto;
+}
+
+
 @media (--breakpoint-xs) {
   .www-component-desc > * {
     padding-left: 0;
