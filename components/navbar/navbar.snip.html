@@ -19,7 +19,7 @@ limitations under the License.
 {{#navbar}}
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-    <a href="#" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</a>
+    <a role="button" on="tap:{{sidebar-id}}.toggle"class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</a>
     {{#logo}}
       <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto {{classes}}" alt="{{name}}"></amp-img>
     {{/logo}}
