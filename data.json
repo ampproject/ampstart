@@ -1101,7 +1101,7 @@
               "iframe": {
                 "url": "render/image-with-heading.amp.html",
                 "width": false,
-                "height": "546",
+                "height": "547",
                 "layout": "fixed-height"
               }
             },
@@ -1112,12 +1112,24 @@
               "iframe": {
                 "url": "render/image-with-caption.amp.html",
                 "width": false,
-                "height": "546",
+                "height": "591",
                 "layout": "fixed-height"
               }
             },
             "code-file": "image-with-caption"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/carousel-with-heading.amp.html",
+                "width": false,
+                "height": "547",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "carousel-with-heading"
           }
+
         ]
       },
       {
@@ -1256,6 +1268,48 @@
             "credit-prefix": "Taken by ",
             "author": {"text": "James Victore", "url": "#"}
           }
+        }
+      }
+    },
+    "media-carousel": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": ["amp-carousel"],
+        "css-path": "www/render/page.css"
+      },
+      "img-heading-carousel": {
+        "carousel": {
+          "type": "slides",
+          "layout": "responsive",
+          "width": "1280",
+          "height": "853",
+          "images": [
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/rectangle2.png",
+                "heading-html": "<h1>Image 1</h1>"
+              }
+            },
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/rectangle1.png",
+                "caption": "Bright red flower. ",
+                "heading-html": "<h1>Image 2</h1>"
+              }
+            },
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/rectangle2.png",
+                "heading-html": "<h1>Image 3</h1>"
+              }
+            }
+          ]
         }
       }
     }
