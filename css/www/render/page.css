@@ -15,14 +15,15 @@
  */
 
 @import '../../core';
-@import '../../../components/inputs/inputs';
-@import '../../../components/images/images';
-@import '../../../components/images/fullpage-hero';
 @import '../../../components/byline/byline';
-@import '../../../components/navbar/navbar';
 @import '../../../components/dropdown/dropdown';
-@import '../../../components/social-follow/social-follow';
+@import '../../../components/images/fullpage-hero';
+@import '../../../components/images/images';
+@import '../../../components/inputs/inputs';
+@import '../../../components/navbar/navbar';
 @import '../../../components/related-section/related-section';
+@import '../../../components/socialbox/socialbox';
+@import '../../../components/social-follow/social-follow';
 @import 'page-vars';
 
 .example-label {color: var(--color-grey);}

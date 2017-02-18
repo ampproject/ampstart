@@ -1216,6 +1216,17 @@
               }
             },
             "code-file": "social-follow"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/social-share.amp.html",
+                "width": false,
+                "height": "124",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "social-share"
           }
         ]
       }
@@ -1653,7 +1664,9 @@
     "other": {
       "head-tag": {
         "title": "AMPStart - UI Components - Buttons",
-        "extensions": [],
+        "extensions": [
+          "amp-social-share"
+        ],
         "css-path": "www/render/page.css"
       },
       "social-follow": {
