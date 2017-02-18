@@ -1176,6 +1176,17 @@
               }
             },
             "code-file": "byline"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/related-section.amp.html",
+                "width": false,
+                "height": "555",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "related-section"
           }
         ]
       },
@@ -1321,6 +1332,39 @@
         "image": "../../img/oval.png",
         "author": {"text": "Jazz B", "url": "#"},
         "time": {"text": "Sept 10, 2016 @12:15 pm", "value":"2016-09-18T12:15"}
+      },
+      "related-section": {
+        "heading": {
+          "level": "2",
+          "classes": "h3",
+          "text": "Latest Articles"
+        },
+        "images-with-caption": [
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle1.png",
+              "caption": "Bullseye view: Bird Watching 101"
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle2.png",
+              "caption": "The Worlds fastest animal"
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle1.png",
+              "caption": "Cattle Ranch roundup"
+            }
+          }
+        ]
       }
     },
     "media-carousel": {

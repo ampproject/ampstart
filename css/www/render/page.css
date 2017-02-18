@@ -21,6 +21,7 @@
 @import '../../../components/byline/byline';
 @import '../../../components/navbar/navbar';
 @import '../../../components/dropdown/dropdown';
+@import '../../../components/related-section/related-section';
 @import 'page-vars';
 
 .example-label {color: var(--color-grey);}
