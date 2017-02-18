@@ -1,6 +1,5 @@
-{{!
 <!---
-Copyright 2016 The AMPStart Authors. All Rights Reserved.
+Copyright 2017 The AMPStart Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -14,19 +13,20 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-}}
 
-{{#carousel}}
-  <!-- Start carousel -->
-  <amp-carousel width="{{width}}" height="{{height}}" layout="{{layout}}" type="{{type}}" class="mb4">
-    {{#images}}
-      {{> ../images/images.snip.html}}
-    {{/images}}
-  </amp-carousel>
-  <!-- End carousel -->
-  {{#caption}}
-    <p class="ampstart-subtitle px3">
-      {{.}}
-    </p>
-  {{/caption}}
-{{/carousel}}
+<!doctype html>
+{{#www-render.media-carousel}}
+<html ⚡>
+{{> ../utils/amp-page-head.snip.html}}
+<body>
+  <main class="">
+  <div class="">
+    <label class="example-label bold block center mb3">Carousel with Captions</label>
+    {{#img-caption-carousel}}
+    {{> ../../components/carousel/carousel.snip.html}}
+    {{/img-caption-carousel}}
+  </div>
+  </main>
+</body>
+</html>
+{{/www-render.media-carousel}}

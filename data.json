@@ -826,7 +826,7 @@
           "link": {"url": "#", "text": "Templates"}
         },
         {
-          "link": {"url": "#", "text": "UI Components"}
+          "link": {"url": "components.html", "text": "UI Components"}
         },
         {
           "link": {"url": "#", "text": "Get Started"}
@@ -904,7 +904,7 @@
           "link": {"url": "#", "text": "What is AMP?"}
         },
         {
-          "link": {"url": "#", "text": "Templates"}
+          "link": {"url": "/", "text": "Templates"}
         },
         {
           "link": {"url": "#", "text": "UI Components"}
@@ -1128,8 +1128,18 @@
               }
             },
             "code-file": "carousel-with-heading"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/carousel-with-caption.amp.html",
+                "width": false,
+                "height": "547",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "carousel-with-caption"
           }
-
         ]
       },
       {
@@ -1307,6 +1317,52 @@
                 "height": "853",
                 "url": "../../img/rectangle2.png",
                 "heading-html": "<h1>Image 3</h1>"
+              }
+            }
+          ]
+        }
+      },
+      "img-caption-carousel": {
+        "carousel": {
+          "type": "slides",
+          "layout": "responsive",
+          "width": "1280",
+          "height": "853",
+          "images": [
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/rectangle2.png",
+                "caption": "Description of photograph 1.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "Solomon Grundy", "url": "#"}
+                }
+              }
+            },
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/rectangle1.png",
+                "caption": "Description of photograph 2.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "James Victore", "url": "#"}
+                }
+              }
+            },
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/rectangle2.png",
+                "caption": "Description of photograph 3.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "Solomon Grundy", "url": "#"}
+                }
               }
             }
           ]
