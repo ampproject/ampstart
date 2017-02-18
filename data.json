@@ -1281,7 +1281,7 @@
               "iframe": {
                 "url": "render/footer.amp.html",
                 "width": false,
-                "height": "252",
+                "height": "361",
                 "layout": "fixed-height"
               }
             },
