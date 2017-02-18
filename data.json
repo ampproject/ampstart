@@ -955,8 +955,8 @@
         ]
       },
       {
-        "name": "Selectors",
-        "id": "selectors",
+        "name": "Inputs",
+        "id": "inputs",
         "variants": [
           {
             "heading": "Checkboxes",
@@ -981,6 +981,54 @@
               }
             },
             "code-file": "radio"
+          },
+          {
+            "heading": "Textboxes",
+            "render": {
+              "iframe": {
+                "url": "render/textbox.amp.html",
+                "width": false,
+                "height": "230",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "textbox"
+          },
+          {
+            "heading": "Range Inputs",
+            "render": {
+              "iframe": {
+                "url": "render/rangeinputs.amp.html",
+                "width": false,
+                "height": "105",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "rangeinputs"
+          },
+          {
+            "heading": "Textarea",
+            "render": {
+              "iframe": {
+                "url": "render/textarea.amp.html",
+                "width": false,
+                "height": "210",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "textarea"
+          },
+          {
+            "heading": "Select",
+            "render": {
+              "iframe": {
+                "url": "render/select.amp.html",
+                "width": false,
+                "height": "115",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "select"
           }
         ]
       },
@@ -1261,7 +1309,9 @@
     "inputs": {
       "head-tag": {
         "title": "AMPStart - UI Components - Inputs",
-        "extensions": [],
+        "extensions": [
+          "amp-form"
+        ],
         "css-path": "www/render/page.css"
       },
       "checkboxes": [
@@ -1367,7 +1417,9 @@
             "id": "ip4",
             "name": "name4"
           }
-        },
+        }
+      ],
+      "rangeinputs": [
         {
           "label": "Range Input",
           "input": {
@@ -1386,7 +1438,30 @@
             "name": "name11",
             "disabled": "disabled"
           }
+        }
+      ],
+      "textareas": [
+        {
+          "label": "Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Write your story",
+            "id": "ip13",
+            "name": "name13"
+          }
         },
+        {
+          "label": "Disabled Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Dont Write anything",
+            "id": "ip13a",
+            "name": "name13",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "selects": [
         {
           "label": "Select",
           "select": {
@@ -1407,25 +1482,6 @@
             ],
             "id": "ip12a",
             "name": "name12",
-            "disabled": "disabled"
-          }
-        },
-        {
-          "label": "Textarea",
-          "textarea": {
-            "rows": 5,
-            "placeholder": "Write your story",
-            "id": "ip13",
-            "name": "name13"
-          }
-        },
-        {
-          "label": "Disabled Textarea",
-          "textarea": {
-            "rows": 5,
-            "placeholder": "Dont Write anything",
-            "id": "ip13a",
-            "name": "name13",
             "disabled": "disabled"
           }
         }
