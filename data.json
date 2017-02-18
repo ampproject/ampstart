@@ -1325,6 +1325,110 @@
             "disabled": "disabled"
           }
         }
+      ],
+      "textboxes": [
+        {
+          "label": "Textbox",
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "Enter your Name",
+            "id": "ip1",
+            "name": "name1"
+          }
+        },
+        {
+          "label": "Textbox Filled",
+          "input": {
+            "type": "text",
+            "value": "John Smith",
+            "placeholder": "Enter your Name",
+            "id": "ip1",
+            "name": "name1"
+          }
+        },
+        {
+          "label": "Disabled Textbox",
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "This input is Disabled",
+            "id": "ip1",
+            "name": "name1",
+            "disabled": "disabled"
+          }
+        },
+        {
+          "label": "Date Input",
+          "input": {
+            "type": "date",
+            "value": "2020-10-10",
+            "placeholder": "Date of Expiry",
+            "id": "ip4",
+            "name": "name4"
+          }
+        },
+        {
+          "label": "Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11",
+            "name": "name11"
+          }
+        },
+        {
+          "label": "Disabled Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11a",
+            "name": "name11",
+            "disabled": "disabled"
+          }
+        },
+        {
+          "label": "Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12",
+            "name": "name12"
+          }
+        },
+        {
+          "label": "Disabled Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12a",
+            "name": "name12",
+            "disabled": "disabled"
+          }
+        },
+        {
+          "label": "Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Write your story",
+            "id": "ip13",
+            "name": "name13"
+          }
+        },
+        {
+          "label": "Disabled Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Dont Write anything",
+            "id": "ip13a",
+            "name": "name13",
+            "disabled": "disabled"
+          }
+        }
       ]
     },
     "typography": {
