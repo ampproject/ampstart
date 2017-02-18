@@ -1187,6 +1187,17 @@
               }
             },
             "code-file": "related-section"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/related-article.amp.html",
+                "width": false,
+                "height": "730",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "related-article"
           }
         ]
       },
@@ -1365,6 +1376,24 @@
             }
           }
         ]
+      },
+      "related-article": {
+        "section-heading": {
+          "level": "2",
+          "text": "Related article"
+        },
+        "hero-img": {
+          "width": "1280",
+          "height": "720",
+          "url": "../../img/rectangle2.png",
+          "alt": "Grey box"
+        },
+        "article-heading": {
+          "level": "3",
+          "text": "The Best Road Trips in Alaska"
+        },
+        "content-text": "Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.",
+        "article-link": {"text": "Read more", "url": "#"}
       }
     },
     "media-carousel": {
