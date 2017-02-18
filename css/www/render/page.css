@@ -21,6 +21,7 @@
 @import '../../../components/byline/byline';
 @import '../../../components/navbar/navbar';
 @import '../../../components/dropdown/dropdown';
+@import '../../../components/social-follow/social-follow';
 @import '../../../components/related-section/related-section';
 @import 'page-vars';
 

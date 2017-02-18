@@ -22,6 +22,7 @@
 @import '../../../../components/socialbox/socialbox';
 @import '../../../../components/related-article/related-article';
 @import '../../../../components/related-section/related-section';
+@import '../../../../components/social-follow/social-follow';
 @import '../../../../components/byline/byline';
 @import '../../../../components/footer/footer';
 @import 'page-vars';

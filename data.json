@@ -1204,7 +1204,20 @@
       {
         "name": "Other",
         "id": "other",
-        "desc-text": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "render/social-follow.amp.html",
+                "width": false,
+                "height": "116",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "social-follow"
+          }
+        ]
       }
     ]
   },
@@ -1635,6 +1648,23 @@
             ]
           }
         }
+      }
+    },
+    "other": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"pinterest": "#"},
+          {"instagram": "#"},
+          {"gplus": "#"},
+          {"email": "#"}
+        ]
       }
     }
   }

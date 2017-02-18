@@ -38,5 +38,6 @@
 @import '../../../../components/related-article/related-article';
 @import '../../../../components/related-section/related-section';
 @import '../../../../components/byline/byline';
+@import '../../../../components/social-follow/social-follow';
 @import '../../../../components/footer/footer';
 @import 'page-vars';
