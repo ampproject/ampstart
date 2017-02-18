@@ -16,6 +16,7 @@
 @import '../../core';
 @import '../../../components/navbar/navbar';
 @import '../../../components/lightbox/template-preview';
+@import '../../../components/social-follow/social-follow';
 @import '../../../components/footer/footer';
 @import '../shared';
 @import '../highlight-syntax/atom-light-syntax';
@@ -84,8 +85,14 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   font-size: var(--h4);
   white-space: pre-line;
   background: var(--color-highlight-background);
-  overflow-y: auto;
 }
+
+.www-example-code {
+  background: var(--color-highlight-background);
+  max-height: 500px;
+  overflow: auto;
+}
+
 
 @media (--breakpoint-xs) {
   .www-component-desc > * {

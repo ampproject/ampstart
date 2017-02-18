@@ -18,6 +18,7 @@
 @import '../../../components/navbar/navbar';
 @import '../../../components/lightbox/template-preview';
 @import '../../../components/footer/footer';
+@import '../../../components/social-follow/social-follow';
 @import '../shared';
 @import '../page-vars';
 

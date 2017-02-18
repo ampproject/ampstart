@@ -955,8 +955,8 @@
         ]
       },
       {
-        "name": "Selectors",
-        "id": "selectors",
+        "name": "Inputs",
+        "id": "inputs",
         "variants": [
           {
             "heading": "Checkboxes",
@@ -981,13 +981,87 @@
               }
             },
             "code-file": "radio"
+          },
+          {
+            "heading": "Textboxes",
+            "render": {
+              "iframe": {
+                "url": "render/textbox.amp.html",
+                "width": false,
+                "height": "230",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "textbox"
+          },
+          {
+            "heading": "Range Inputs",
+            "render": {
+              "iframe": {
+                "url": "render/rangeinputs.amp.html",
+                "width": false,
+                "height": "105",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "rangeinputs"
+          },
+          {
+            "heading": "Textarea",
+            "render": {
+              "iframe": {
+                "url": "render/textarea.amp.html",
+                "width": false,
+                "height": "210",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "textarea"
+          },
+          {
+            "heading": "Select",
+            "render": {
+              "iframe": {
+                "url": "render/select.amp.html",
+                "width": false,
+                "height": "115",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "select"
           }
         ]
       },
       {
         "name": "Navigation",
         "id": "navigation",
-        "desc-text": false
+        "desc-text": false,
+        "variants": [
+          {
+            "heading": "Responsive Menubar",
+            "render": {
+              "iframe": {
+                "url": "render/navbar-with-sidebar.amp.html",
+                "width": false,
+                "height": "500px",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "navbar-with-sidebar"
+          },
+          {
+            "heading": "Header Bar with Sidebar",
+            "render": {
+              "iframe": {
+                "url": "render/navbar-sidebar-only.amp.html",
+                "width": false,
+                "height": "500px",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "navbar-sidebar-only"
+          }
+        ]
       },
       {
         "name": "Lists",
@@ -1139,13 +1213,81 @@
               }
             },
             "code-file": "carousel-with-caption"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/byline.amp.html",
+                "width": false,
+                "height": "140",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "byline"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/related-section.amp.html",
+                "width": false,
+                "height": "555",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "related-section"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/related-article.amp.html",
+                "width": false,
+                "height": "730",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "related-article"
           }
         ]
       },
       {
         "name": "Other",
         "id": "other",
-        "desc-text": false
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "render/social-follow.amp.html",
+                "width": false,
+                "height": "116",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "social-follow"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/social-share.amp.html",
+                "width": false,
+                "height": "124",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "social-share"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/footer.amp.html",
+                "width": false,
+                "height": "361",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "footer"
+          }
+        ]
       }
     ]
   },
@@ -1167,7 +1309,9 @@
     "inputs": {
       "head-tag": {
         "title": "AMPStart - UI Components - Inputs",
-        "extensions": [],
+        "extensions": [
+          "amp-form"
+        ],
         "css-path": "www/render/page.css"
       },
       "checkboxes": [
@@ -1231,6 +1375,116 @@
             "disabled": "disabled"
           }
         }
+      ],
+      "textboxes": [
+        {
+          "label": "Textbox",
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "Enter your Name",
+            "id": "ip1",
+            "name": "name1"
+          }
+        },
+        {
+          "label": "Textbox Filled",
+          "input": {
+            "type": "text",
+            "value": "John Smith",
+            "placeholder": "Enter your Name",
+            "id": "ip1",
+            "name": "name1"
+          }
+        },
+        {
+          "label": "Disabled Textbox",
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "This input is Disabled",
+            "id": "ip1",
+            "name": "name1",
+            "disabled": "disabled"
+          }
+        },
+        {
+          "label": "Date Input",
+          "input": {
+            "type": "date",
+            "value": "2020-10-10",
+            "placeholder": "Date of Expiry",
+            "id": "ip4",
+            "name": "name4"
+          }
+        }
+      ],
+      "rangeinputs": [
+        {
+          "label": "Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11",
+            "name": "name11"
+          }
+        },
+        {
+          "label": "Disabled Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11a",
+            "name": "name11",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "textareas": [
+        {
+          "label": "Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Write your story",
+            "id": "ip13",
+            "name": "name13"
+          }
+        },
+        {
+          "label": "Disabled Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Dont Write anything",
+            "id": "ip13a",
+            "name": "name13",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "selects": [
+        {
+          "label": "Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12",
+            "name": "name12"
+          }
+        },
+        {
+          "label": "Disabled Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12a",
+            "name": "name12",
+            "disabled": "disabled"
+          }
+        }
       ]
     },
     "typography": {
@@ -1279,6 +1533,62 @@
             "author": {"text": "James Victore", "url": "#"}
           }
         }
+      },
+      "byline": {
+        "image": "../../img/oval.png",
+        "author": {"text": "Jazz B", "url": "#"},
+        "time": {"text": "Sept 10, 2016 @12:15 pm", "value":"2016-09-18T12:15"}
+      },
+      "related-section": {
+        "heading": {
+          "level": "2",
+          "classes": "h3",
+          "text": "Latest Articles"
+        },
+        "images-with-caption": [
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle1.png",
+              "caption": "Bullseye view: Bird Watching 101"
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle2.png",
+              "caption": "The Worlds fastest animal"
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle1.png",
+              "caption": "Cattle Ranch roundup"
+            }
+          }
+        ]
+      },
+      "related-article": {
+        "section-heading": {
+          "level": "2",
+          "text": "Related article"
+        },
+        "hero-img": {
+          "width": "1280",
+          "height": "720",
+          "url": "../../img/rectangle2.png",
+          "alt": "Grey box"
+        },
+        "article-heading": {
+          "level": "3",
+          "text": "The Best Road Trips in Alaska"
+        },
+        "content-text": "Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.",
+        "article-link": {"text": "Read more", "url": "#"}
       }
     },
     "media-carousel": {
@@ -1366,6 +1676,198 @@
               }
             }
           ]
+        }
+      }
+    },
+    "navigation": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [
+          "amp-accordion",
+          "amp-sidebar"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "navbar-sidebar-only": {
+        "navbar": {
+          "logo": {
+            "url": "../img/blog-thescenic/header-logo.png",
+            "width": "110",
+            "height": "33"
+          },
+          "name": "The Blog",
+          "sidebar-id": "header-sidebar",
+          "sidebaronly": true,
+          "nav": [
+            {
+              "dropdown": {
+                "heading": "Fashion",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Styling Tips"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Designers"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Travel"}
+            },
+
+            {
+              "dropdown": {
+                "heading": "Food",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Recipes"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Hosting Tips"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Beauty"}
+            },
+
+            {
+              "link": {"url": "#", "text": "Shop"}
+            }
+          ],
+          "social-follow": {
+            "links": [
+              {"twitter": "#"},
+              {"facebook": "#"},
+              {"instagram": "#"},
+              {"pinterest": "#"},
+              {"email": "#"}
+            ]
+          },
+          "faq": {
+            "links": [
+              {
+                "link": {"url": "#", "text": "About"}
+              },
+              {
+                "link": {"url": "#", "text": "Contact"}
+              }
+            ]
+          }
+        }
+      },
+      "navbar-with-sidebar": {
+        "navbar": {
+          "logo": {
+            "url": "../img/blog-thescenic/header-logo.png",
+            "width": "110",
+            "height": "33"
+          },
+          "name": "The Blog",
+          "sidebar-id": "header-sidebar",
+          "nav": [
+            {
+              "dropdown": {
+                "heading": "Fashion",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Styling Tips"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Designers"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Travel"}
+            },
+
+            {
+              "dropdown": {
+                "heading": "Food",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Recipes"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Hosting Tips"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Beauty"}
+            },
+
+            {
+              "link": {"url": "#", "text": "Shop"}
+            }
+          ],
+          "social-follow": {
+            "links": [
+              {"twitter": "#"},
+              {"facebook": "#"},
+              {"instagram": "#"},
+              {"pinterest": "#"},
+              {"email": "#"}
+            ]
+          },
+          "faq": {
+            "links": [
+              {
+                "link": {"url": "#", "text": "About"}
+              },
+              {
+                "link": {"url": "#", "text": "Contact"}
+              }
+            ]
+          }
+        }
+      }
+    },
+    "other": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [
+          "amp-social-share"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"pinterest": "#"},
+          {"instagram": "#"},
+          {"gplus": "#"},
+          {"email": "#"}
+        ]
+      },
+      "footer": {
+        "social-follow": {
+          "links": [
+            {"twitter": "#"},
+            {"facebook": "#"},
+            {"pinterest": "#"},
+            {"email": "#"}
+          ]
+        },
+        "faq-links": {
+          "links": [
+            {"text": "About", "url": "#"},
+            {"text": "Contact", "url": "#"},
+            {"text": "Terms", "url": "#"}
+          ]
+        },
+        "copyright": {
+          "text": "© Your Company, 2016"
         }
       }
     }

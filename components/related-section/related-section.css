@@ -39,8 +39,7 @@
   padding-left: var(--space-2);
 }
 
-
-@media (--breakpoint-md) {
+@media (--breakpoint-sm) {
   .ampstart-related-section-items > li {
     border: none;
   }
@@ -49,21 +48,6 @@
     padding: var(--space-2) 0;
   }
 
-  .ampstart-related-section-items .ampstart-image-with-caption > amp-img,
-  .ampstart-related-section-items .ampstart-image-with-caption > figcaption  {
-    flex-basis: 100%;
-  }
-}
-
-
-@media (--breakpoint-lg) {
-  .ampstart-related-section-items > li {
-    border: none;
-  }
-
-  .ampstart-related-section-items .ampstart-image-with-caption > figcaption {
-    padding: var(--space-2) 0;
-  }
   .ampstart-related-section-items .ampstart-image-with-caption > amp-img,
   .ampstart-related-section-items .ampstart-image-with-caption > figcaption  {
     flex-basis: 100%;
