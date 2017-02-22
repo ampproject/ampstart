@@ -1,0 +1,154 @@
+{
+  "blog-recipe": {
+    "head-tag": {
+      "title": "The Recipe Blog",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-accordion",
+        "amp-form",
+        "amp-instagram"
+      ],
+      "css-path": "templates/blog/recipe/page.css"
+    },
+    "navbar": {
+      "logo": {
+        "url": "../img/blog-recipe/logo.png",
+        "width": "100",
+        "height": "61.3"
+      },
+      "name": "The Blog",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "nav": [
+        {
+          "dropdown": {
+            "heading": "Fashion",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Styling Tips"}
+              },
+              {
+                "link": {"url": "#", "text": "Designers"}
+              }
+            ]
+          }
+        },
+
+        {
+          "link": {"url": "#", "text": "Travel"}
+        },
+
+        {
+          "dropdown": {
+            "heading": "Food",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Recipes"}
+              },
+              {
+                "link": {"url": "#", "text": "Hosting Tips"}
+              }
+            ]
+          }
+        },
+
+        {
+          "link": {"url": "#", "text": "Beauty"}
+        },
+
+        {
+          "link": {"url": "#", "text": "Shop"}
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"instagram": "#"},
+          {"pinterest": "#"},
+          {"email": "#"}
+        ]
+      },
+      "faq": {
+        "links": [
+          {
+            "link": {"url": "#", "text": "About"}
+          },
+          {
+            "link": {"url": "#", "text": "Contact"}
+          }
+        ]
+      }
+    },
+    "byline": {
+      "time": {"text": "December 13, 2016", "value":"2016-12-13"}
+    },
+    "form": {
+      "title": "Leave a reply",
+      "method": "GET",
+      "action": "/",
+      "form-text": "Not to worry, your email will not be published.",
+      "inputs": [
+        {
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "Comment",
+            "id": "comment",
+            "name": "comment"
+          }
+        },
+        {
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "Name",
+            "id": "name",
+            "name": "name"
+          }
+        },
+        {
+          "input": {
+            "type": "email",
+            "value": "",
+            "placeholder": "Email",
+            "id": "emailid",
+            "name": "emailid"
+          }
+        },
+        {
+          "input": {
+            "type": "url",
+            "placeholder": "Webpage",
+            "id": "webpage",
+            "name": "webpage"
+          }
+        },
+        {
+          "submit": {
+            "id": "submit",
+            "name": "submit",
+            "value": "Submit",
+            "classes": "ampstart-btn-secondary"
+          }
+        }
+      ]
+    },
+    "social-follow": {
+      "links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"instagram": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
+      ]
+    },
+    "footer": {
+      "social-follow": false,
+      "copyright": {
+        "text": "© 2017 The Blog"
+      }
+    }
+  }
+}
