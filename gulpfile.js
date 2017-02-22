@@ -16,18 +16,21 @@
 
 const gulp = require('gulp-help')(require('gulp'));
 const del = require('del');
-const mustache = require('gulp-mustache');
+const Mustache = require('mustache');
 const posthtml = require('gulp-posthtml');
 const postcss = require('gulp-postcss');
 const runSequence = require('run-sequence');
+const through = require('through2');
+const fs = require('fs');
+const path = require('path');
 const config = require('./tasks/config');
 require('./tasks');
 
-function getData() {
-  return JSON.parse(require('fs').readFileSync('data.json'));
+const partialsMap = Object.create(null);
+
 function getData(opt_path) {
   var path = 'data.json';
-  var jsonPath = (opt_path || '').replace(/(?:(?:amp|snip).)?html$/, 'json');
+  var jsonPath = (opt_path || '').replace(/html$/, 'json');
   if (opt_path && jsonPath && fs.existsSync(jsonPath)) {
     path = jsonPath;
   }
@@ -40,64 +43,36 @@ function mustacheStream() {
       cb(null, file);
       return;
     }
-    var partialsMap = getPartials(partials,
+    var partials = getPartials(partialsMap,
         path.dirname(file.path), file.contents.toString());
-    // TODO(erwinm, #47): only do this traverse once and cache all the paths
     file.contents = new Buffer(Mustache.render(file.contents.toString(),
-        getData(file.path), partialsMap));
+        getData(file.path), partials));
     cb(null, file);
   });
 }
 
-// Assume {{}} as mustache start/end tags
-const partialRegexp = new RegExp('{{>\\s*(\\S+)\\s*}}', 'g');
-const partials = [];
-const partialsMap = Object.create(null);
-
-function collectSnippets(dir, partials) {
-  var files = fs.readdirSync(dir);
-  var filename = null;
-  var filepathOrDir = null;
-  var template = null;
-  for (var i = 0; i < files.length; i++) {
-    filename = files[i];
-    filepathOrDir = `${dir}/${filename}`;
-    if (fs.statSync(filepathOrDir).isDirectory()) {
-      collectSnippets(filepathOrDir, partials);
-    } else if (/snip.html$/.test(filepathOrDir)) {
-      template = fs.readFileSync(filepathOrDir).toString();
-      partials.push({ path: filepathOrDir, template: template });
-    }
-  }
-}
-
 function getPartials(acc, embedderDir, template) {
-  //console.log(partials);
+// Assume {{}} as mustache start/end tags
+  const partialRegexp = new RegExp('{{>\\s*(\\S+)\\s*}}', 'g');
   var partialMatch = null;
-  var partialName = null;
   var partialPath = null;
   var partialTemplate = null;
-  var relativeTrail = null;
   var absPathToTemplate = null;
   while ((partialMatch = partialRegexp.exec(template))) {
     partialPath = partialMatch[1];
-    console.log('embedderDir', embedderDir);
-    console.log('partialPath', partialPath);
-    relativeTrail = path.resolve(path.relative(embedderDir, partialPath));
-    console.log('relativeTrail', relativeTrail);
-    //partialName = partialMatch[1];
-    //partialPath = path.dirname(partialName);
-    //path.relative(embedderDir, partialName);
-    acc[partialName] = fs.readFileSync(relativeTrail).toString();
-    //getPartials(acc, partialPath, partialName);
+    absPathToTemplate = path.resolve(embedderDir, partialPath);
+    if (!acc[partialPath]) {
+      partialTemplate = fs.readFileSync(absPathToTemplate).toString();
+      acc[partialPath] = partialTemplate;
+    }
+    getPartials(acc, path.dirname(absPathToTemplate), partialTemplate);
   }
+  return acc;
 }
 
-collectSnippets(__dirname, partials);
-
-
 gulp.task('build', 'build', function(cb) {
-  runSequence('clean', 'highlight', 'img', 'postcss', 'posthtml', 'www', cb);
+  runSequence('clean', 'highlight', 'img', 'postcss', 'posthtml', 'www',
+      'validate', cb);
 });
 
 gulp.task('clean', function() {
@@ -123,7 +98,7 @@ gulp.task('www', function() {
   ];
   const options = {};
   return gulp.src(config.src.www_pages)
-    .pipe(mustache(getData()))
+    .pipe(mustacheStream())
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.www_pages))
 });
@@ -152,7 +127,7 @@ gulp.task('posthtml', 'build kickstart files', function() {
   ];
   const options = {};
   return gulp.src(config.src.templates)
-    .pipe(mustache(getData()))
+    .pipe(mustacheStream())
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.templates))
 });
