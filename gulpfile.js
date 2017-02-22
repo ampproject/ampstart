@@ -15,16 +15,64 @@
  */
 
 const gulp = require('gulp-help')(require('gulp'));
+const util = require('gulp-util');
 const del = require('del');
-const mustache = require('gulp-mustache');
+const Mustache = require('mustache');
 const posthtml = require('gulp-posthtml');
 const postcss = require('gulp-postcss');
 const runSequence = require('run-sequence');
+const through = require('through2');
+const fs = require('fs');
+const path = require('path');
 const config = require('./tasks/config');
 require('./tasks');
 
-function getData() {
-  return JSON.parse(require('fs').readFileSync('data.json'));
+const partialsMap = Object.create(null);
+
+function getData(opt_path) {
+  var path = 'data.json';
+  var jsonPath = (opt_path || '').replace(/html$/, 'json');
+  if (opt_path && jsonPath && fs.existsSync(jsonPath)) {
+    path = jsonPath;
+  }
+  return JSON.parse(fs.readFileSync(path));
+}
+
+function mustacheStream() {
+  return through.obj(function(file, enc, cb) {
+    if (file.isNull()) {
+      cb(null, file);
+      return;
+    }
+    var partials = getPartials(partialsMap,
+        path.dirname(file.path), file.contents.toString());
+    file.contents = new Buffer(Mustache.render(file.contents.toString(),
+        getData(file.path), partials));
+    cb(null, file);
+  });
+}
+
+function getPartials(acc, embedderDir, template) {
+// Assume {{}} as mustache start/end tags
+  const partialRegexp = new RegExp('{{>\\s*(\\S+)\\s*}}', 'g');
+  var partialMatch = null;
+  var partialPath = null;
+  var partialTemplate = null;
+  var absPathToTemplate = null;
+  while ((partialMatch = partialRegexp.exec(template))) {
+    partialPath = partialMatch[1];
+    absPathToTemplate = path.resolve(embedderDir, partialPath);
+    if (!acc[partialPath]) {
+      try {
+        partialTemplate = fs.readFileSync(absPathToTemplate).toString();
+      } catch (e) {
+        util.log(util.colors.red(e.message));
+      }
+      acc[partialPath] = partialTemplate;
+    }
+    getPartials(acc, path.dirname(absPathToTemplate), partialTemplate);
+  }
+  return acc;
 }
 
 gulp.task('build', 'build', function(cb) {
@@ -55,7 +103,7 @@ gulp.task('www', function() {
   ];
   const options = {};
   return gulp.src(config.src.www_pages)
-    .pipe(mustache(getData()))
+    .pipe(mustacheStream())
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.www_pages))
 });
@@ -84,7 +132,7 @@ gulp.task('posthtml', 'build kickstart files', function() {
   ];
   const options = {};
   return gulp.src(config.src.templates)
-    .pipe(mustache(getData()))
+    .pipe(mustacheStream())
     .pipe(posthtml(plugins, options))
     .pipe(gulp.dest(config.dest.templates))
 });
