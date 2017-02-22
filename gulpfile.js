@@ -25,11 +25,79 @@ require('./tasks');
 
 function getData() {
   return JSON.parse(require('fs').readFileSync('data.json'));
+function getData(opt_path) {
+  var path = 'data.json';
+  var jsonPath = (opt_path || '').replace(/(?:(?:amp|snip).)?html$/, 'json');
+  if (opt_path && jsonPath && fs.existsSync(jsonPath)) {
+    path = jsonPath;
+  }
+  return JSON.parse(fs.readFileSync(path));
 }
 
+function mustacheStream() {
+  return through.obj(function(file, enc, cb) {
+    if (file.isNull()) {
+      cb(null, file);
+      return;
+    }
+    var partialsMap = getPartials(partials,
+        path.dirname(file.path), file.contents.toString());
+    // TODO(erwinm, #47): only do this traverse once and cache all the paths
+    file.contents = new Buffer(Mustache.render(file.contents.toString(),
+        getData(file.path), partialsMap));
+    cb(null, file);
+  });
+}
+
+// Assume {{}} as mustache start/end tags
+const partialRegexp = new RegExp('{{>\\s*(\\S+)\\s*}}', 'g');
+const partials = [];
+const partialsMap = Object.create(null);
+
+function collectSnippets(dir, partials) {
+  var files = fs.readdirSync(dir);
+  var filename = null;
+  var filepathOrDir = null;
+  var template = null;
+  for (var i = 0; i < files.length; i++) {
+    filename = files[i];
+    filepathOrDir = `${dir}/${filename}`;
+    if (fs.statSync(filepathOrDir).isDirectory()) {
+      collectSnippets(filepathOrDir, partials);
+    } else if (/snip.html$/.test(filepathOrDir)) {
+      template = fs.readFileSync(filepathOrDir).toString();
+      partials.push({ path: filepathOrDir, template: template });
+    }
+  }
+}
+
+function getPartials(acc, embedderDir, template) {
+  //console.log(partials);
+  var partialMatch = null;
+  var partialName = null;
+  var partialPath = null;
+  var partialTemplate = null;
+  var relativeTrail = null;
+  var absPathToTemplate = null;
+  while ((partialMatch = partialRegexp.exec(template))) {
+    partialPath = partialMatch[1];
+    console.log('embedderDir', embedderDir);
+    console.log('partialPath', partialPath);
+    relativeTrail = path.resolve(path.relative(embedderDir, partialPath));
+    console.log('relativeTrail', relativeTrail);
+    //partialName = partialMatch[1];
+    //partialPath = path.dirname(partialName);
+    //path.relative(embedderDir, partialName);
+    acc[partialName] = fs.readFileSync(relativeTrail).toString();
+    //getPartials(acc, partialPath, partialName);
+  }
+}
+
+collectSnippets(__dirname, partials);
+
+
 gulp.task('build', 'build', function(cb) {
-  runSequence('clean', 'highlight', 'img', 'postcss', 'posthtml', 'www',
-      'validate', cb);
+  runSequence('clean', 'highlight', 'img', 'postcss', 'posthtml', 'www', cb);
 });
 
 gulp.task('clean', function() {
