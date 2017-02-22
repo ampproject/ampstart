@@ -15,6 +15,7 @@
  */
 
 const gulp = require('gulp-help')(require('gulp'));
+const util = require('gulp-util');
 const del = require('del');
 const Mustache = require('mustache');
 const posthtml = require('gulp-posthtml');
@@ -62,7 +63,11 @@ function getPartials(acc, embedderDir, template) {
     partialPath = partialMatch[1];
     absPathToTemplate = path.resolve(embedderDir, partialPath);
     if (!acc[partialPath]) {
-      partialTemplate = fs.readFileSync(absPathToTemplate).toString();
+      try {
+        partialTemplate = fs.readFileSync(absPathToTemplate).toString();
+      } catch (e) {
+        util.log(util.colors.red(e.message));
+      }
       acc[partialPath] = partialTemplate;
     }
     getPartials(acc, path.dirname(absPathToTemplate), partialTemplate);
