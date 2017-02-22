@@ -16,7 +16,8 @@
 @import '../../css/core-vars';
 
 .ampstart-iphone-mask {
-  background: var(--color-black);
+  background: var(--color-white);
+  opacity: 0.5;
 }
 
 .ampstart-iphone-frame {
