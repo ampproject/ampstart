@@ -26,6 +26,8 @@ body {
   font-family: var(--font-family);
   min-width: var(--body-min-width);
   overflow-x: hidden;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
 }
 
 main {
