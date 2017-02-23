@@ -17,45 +17,57 @@
 
 .ampstart-device-preview-mask {
   background: var(--color-white);
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-.ampstart-device-preview amp-selector {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+.ampstart-device-preview-select {
   height: 70px;
   background: var(--color-white);
 }
 
-.ampstart-iphone-frame {
-  border: solid 18px #e5ebee;
-  box-shadow: 0 0 0 7px #bfc8ca;
-  border-radius: 15px;
-  width: 360px;
-  height: 630px;
-  padding: 50px 0;
+.ampstart-mobile-frame,
+.ampstart-tablet-frame,
+.ampstart-desktop-frame {
+  visibility: hidden;
+}
+
+
+[option="mobile"][selected] + .ampstart-mobile-frame,
+[option="tablet"][selected] + .ampstart-tablet-frame,
+[option="desktop"][selected] + .ampstart-desktop-frame {
+  visibility: visible;
+}
+
+.ampstart-mobile-frame amp-iframe {
+  background: var(--color-white);
+  top: 83px;
+  bottom: 83px;
+  left: 26px;
+  right: 26px;
+}
+
+.ampstart-mobile-frame {
+  width: 412px;
+  height: 806px;
   background: #fff;
   top: 50%;
   left: 50%;
-  margin: -315px 0 0 -180px;
+  margin: 140px 0 0 -206px;
+  border-radius: 17px;
 }
 
-.ampstart-iphone-frame::before,
-.ampstart-iphone-frame::after {
-  content: '';
-  display: block;
-  height: 50px;
-  width: 100%;
-  background: #e5ebee;
-  position: absolute;
+.ampstart-tablet-frame {
+  width: 601px;
+  height: 850px;
+  top: 50%;
+  left: 50%;
+  margin: 100px 0 0 -300.5px;
 }
 
-.ampstart-iphone-frame::before {
-  top: 0;
-}
-
-.ampstart-iphone-frame::after {
-  bottom: 0;
+.ampstart-tablet-frame amp-iframe {
+  background: var(--color-white);
+  top: 76px;
+  bottom: 76px;
+  left: 39px;
+  right: 39px;
 }
