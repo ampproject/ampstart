@@ -6,7 +6,8 @@
         "amp-carousel",
         "amp-sidebar",
         "amp-lightbox",
-        "amp-iframe"
+        "amp-iframe",
+        "amp-selector"
       ],
       "css-path": "www/index/page.css"
     },

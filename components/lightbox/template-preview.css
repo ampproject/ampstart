@@ -15,9 +15,18 @@
  */
 @import '../../css/core-vars';
 
-.ampstart-iphone-mask {
+.ampstart-device-preview-mask {
   background: var(--color-white);
   opacity: 0.5;
+}
+
+.ampstart-device-preview amp-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: var(--color-white);
 }
 
 .ampstart-iphone-frame {
