@@ -6,7 +6,8 @@
         "amp-carousel",
         "amp-sidebar",
         "amp-lightbox",
-        "amp-iframe"
+        "amp-iframe",
+        "amp-selector"
       ],
       "css-path": "www/index/page.css"
     },
@@ -61,18 +62,43 @@
     "template-previews": [
       {
         "template-preview": {
+          "title": "Article",
+          "img": {
+            "width": "361",
+            "height": "545",
+            "url": "../img/www/index/template1.png",
+            "layout": "responsive"
+          },
+          "desc": "A responsive layout that features text, images, comments, and the ability to share and follow.",
           "lightbox-id": "template-1",
           "src": "templates/blog-recipe.amp.html"
         }
       },
       {
         "template-preview": {
+          "title": "Blog Post",
+          "img": {
+            "width": "361",
+            "height": "545",
+            "url": "../img/www/index/template2.png",
+            "layout": "responsive"
+          },
+          "desc": "A responsive layout that features text, images, comments, and the ability to share and follow.",
+          "right-aligned": true,
           "lightbox-id": "template-2",
           "src": "templates/blog-thescenic.amp.html"
         }
       },
       {
         "template-preview": {
+          "title": "News Article",
+          "img": {
+            "width": "361",
+            "height": "545",
+            "url": "../img/www/index/template3.png",
+            "layout": "responsive"
+          },
+          "desc": "Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.",
           "lightbox-id": "template-3",
           "src": "templates/blog-photogallery.amp.html"
         }
