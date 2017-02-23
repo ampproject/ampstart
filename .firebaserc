@@ -1,6 +1,6 @@
 {
   "projects": {
     "default": "ampstart-8dc53",
-    "staging": "thisistest-4d2b1"
+    "staging": "ampstart-staging"
   }
 }
