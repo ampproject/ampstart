@@ -15,6 +15,14 @@
  */
 @import '../../css/core-vars';
 
+.ampstart-device-preview [placeholder] {
+  background: var(--color-primary);
+}
+
+.ampstart-device-preview amp-iframe {
+  background: var(--color-white);
+}
+
 .ampstart-device-preview-mask {
   background: var(--color-white);
   opacity: 0.8;
@@ -23,6 +31,10 @@
 .ampstart-device-preview-select {
   height: 70px;
   background: var(--color-white);
+}
+
+.ampstart-device-preview-close {
+  cursor: pointer;
 }
 
 .ampstart-mobile-frame,
@@ -39,7 +51,6 @@
 }
 
 .ampstart-mobile-frame amp-iframe {
-  background: var(--color-white);
   top: 83px;
   bottom: 83px;
   left: 26px;
@@ -65,9 +76,21 @@
 }
 
 .ampstart-tablet-frame amp-iframe {
-  background: var(--color-white);
   top: 76px;
   bottom: 76px;
   left: 39px;
   right: 39px;
+}
+
+.ampstart-desktop-frame {
+  margin-top: 70px;
+  padding: 0 70px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.ampstart-desktop-frame amp-iframe {
+  bottom: 70px;
+  left: 70px;
+  right: 70px;
 }
