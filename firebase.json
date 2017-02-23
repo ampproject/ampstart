@@ -3,6 +3,8 @@
     "rules": "database.rules.json"
   },
   "hosting": {
-    "public": "dist"
+    "public": "dist",
+    "cleanUrls": true,
+    "redirects": []
   }
 }
