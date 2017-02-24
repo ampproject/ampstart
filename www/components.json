@@ -7,7 +7,8 @@
         "amp-sidebar",
         "amp-lightbox",
         "amp-iframe",
-        "amp-selector"
+        "amp-selector",
+        "amp-analytics"
       ],
       "css-path": "www/components/page.css"
     },

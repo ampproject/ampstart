@@ -4,7 +4,8 @@
       "title": "AMPStart - Get Started",
       "extensions": [
         "amp-carousel",
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-analytics"
       ],
       "css-path": "www/howitworks/page.css"
     },
