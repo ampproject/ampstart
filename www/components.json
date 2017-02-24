@@ -22,16 +22,19 @@
       "sidebar-id": "header-sidebar",
       "nav": [
         {
-          "link": {"url": "#", "text": "What is AMP?"}
+          "link": {"url": "www.ampproject.org", "text": "What is AMP?"}
         },
         {
-          "link": {"url": "/", "text": "Templates"}
+          "link": {"url": "/#templates", "text": "Templates"}
         },
         {
-          "link": {"url": "#", "text": "UI Components"}
+          "link": {"url": "components.html", "text": "UI Components"}
         },
         {
-          "link": {"url": "#", "text": "Get Started"}
+          "link": {"url": "/getstarted.html", "text": "Get Started"}
+        },
+        {
+          "link": {"url": "/howitworks.html", "text": "How it works"}
         },
         {
           "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub"}
@@ -39,7 +42,7 @@
       ],
       "social-follow": {
         "links": [
-          {"twitter": "#"},
+          {"twitter": "https://twitter.com/AMPhtml"},
           {"github": "https://github.com/ampproject/ampstart"},
           {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
           {"wordpress": "#"}
@@ -410,6 +413,19 @@
           }
         ]
       }
-    ]
+    ],
+    "footer": {
+      "social-follow": {
+        "links": [
+          {"twitter": "https://twitter.com/AMPhtml"},
+          {"github": "https://github.com/ampproject/ampstart"},
+          {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
+          {"wordpress": "#"}
+        ]
+      },
+      "copyright": {
+        "text": "AMP start is a part of Accelarated Mobile Pages Project"
+      }
+    }
   }
 }
