@@ -15,13 +15,14 @@
  */
 
 const gulp = require('gulp-help')(require('gulp'));
+const util = require('gulp-util');
 const exec = require('child_process').execSync;
 const jsdom = require('jsdom');
+const through = require('through2');
 const path = require('path');
-const fs = require('fs');
+const fs = require('fs-extra');
 const config = require('./config');
 
-const resources = [];
 
 function collectResources(filepath, html, done) {
   const filename = path.basename(filepath, '.amp.html');
@@ -30,20 +31,24 @@ function collectResources(filepath, html, done) {
     const imgs = [].slice.call(ampimgs).map(function(el) {
       const src = el.getAttribute('src');
       const abspath = path.resolve(path.dirname(filepath), src);
-      return abspath.replace(process.cwd() + '/', '');
+      return abspath.replace(`${process.cwd()}/`, '');
     });
-    const name = filepath.replace(process.cwd() + '/', '');
-    exec(`tar -zcf dist/archive/${filename}.tar.gz ${name} ${imgs.join(' ')}`);
+    const name = filepath.replace(`${process.cwd()}/`, '');
+    imgs.forEach(function(imgpath) {
+      fs.copySync(imgpath, `.archive/${imgpath.replace(/^dist/, filename)}`);
+    });
+    fs.copySync(filepath,
+        `.archive/${filename}/templates/${path.basename(filepath)}`);
+    exec(`cd .archive && tar -zcf ../dist/archive/${filename}.tar.gz ${filename}/`);
     done();
   });
 }
 
 
 function bundle() {
-  try {
-    fs.mkdirSync('dist/archive');
-  } catch(e) {}
-  return gulp.src(config.dest.templates + '/templates/**/*.html')
+  fs.removeSync('.archive');
+  fs.mkdirSync('.archive');
+  return gulp.src(`${config.dest.templates}/templates/**/*.html`)
       .pipe(through.obj(function(file, enc, cb) {
         if (file.isNull()) {
           cb(null, file);
@@ -51,7 +56,9 @@ function bundle() {
         }
         const resources = collectResources(
             file.path, file.contents.toString(), cb.bind(null, null, file));
-      }));
+      })).on('end', function() {
+        fs.removeSync('.archive');
+      });
 }
 
 gulp.task('bundle', bundle);
