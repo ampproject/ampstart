@@ -16,3 +16,4 @@
 
 require('./validate');
 require('./highlight');
+require('./bundle');
