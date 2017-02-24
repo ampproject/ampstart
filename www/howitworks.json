@@ -3,11 +3,7 @@
     "head-tag": {
       "title": "AMPStart - How it works",
       "extensions": [
-        "amp-carousel",
-        "amp-sidebar",
-        "amp-lightbox",
-        "amp-iframe",
-        "amp-selector"
+        "amp-sidebar"
       ],
       "css-path": "www/howitworks/page.css"
     },

@@ -20,3 +20,8 @@
 @import '../../../components/footer/footer';
 @import '../shared';
 @import '../page-vars';
+
+.www-howitworks a {
+  color: var(--color-font-primary);
+}
+
