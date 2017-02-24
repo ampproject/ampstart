@@ -1,8 +1,9 @@
 {
-  "www-howitworks": {
+  "www-getstarted": {
     "head-tag": {
-      "title": "AMPStart - How it works",
+      "title": "AMPStart - Get Started",
       "extensions": [
+        "amp-carousel",
         "amp-sidebar"
       ],
       "css-path": "www/howitworks/page.css"
