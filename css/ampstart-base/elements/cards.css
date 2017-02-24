@@ -1,5 +1,5 @@
 /**
- * Copyright 2016 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,10 +14,6 @@
  * limitations under the License.
  */
 
-@import '../core-vars';
-@import 'elements/cards';
-@import 'elements/heading';
-@import 'elements/anchors';
-@import 'elements/buttons';
-@import 'elements/dropcap';
-@import 'elements/pullquote';
+.ampstart-card {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
