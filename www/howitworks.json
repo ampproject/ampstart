@@ -3,7 +3,8 @@
     "head-tag": {
       "title": "AMPStart - How it works",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-analytics"
       ],
       "css-path": "www/howitworks/page.css"
     },
