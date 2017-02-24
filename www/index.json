@@ -70,12 +70,12 @@
           "img": {
             "width": "361",
             "height": "545",
-            "url": "../img/www/index/template1.png",
+            "url": "../img/www/index/template3.png",
             "layout": "responsive"
           },
-          "desc": "A responsive layout that features text, images, comments, and the ability to share and follow.",
-          "lightbox-id": "template-1",
-          "src": "templates/blog-recipe.amp.html"
+          "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
+          "lightbox-id": "template-3",
+          "src": "templates/blog-photogallery.amp.html"
         }
       },
       {
@@ -84,27 +84,28 @@
           "img": {
             "width": "361",
             "height": "545",
-            "url": "../img/www/index/template2.png",
+            "url": "../img/www/index/template1.png",
             "layout": "responsive"
           },
-          "desc": "A responsive layout that features text, images, comments, and the ability to share and follow.",
           "right-aligned": true,
-          "lightbox-id": "template-2",
-          "src": "templates/blog-thescenic.amp.html"
+          "desc": "A responsive layout that features text and images, and the ability to comment, share, and follow.",
+          "lightbox-id": "template-1",
+          "src": "templates/blog-recipe.amp.html"
         }
       },
       {
-        "template-preview": {
-          "title": "News Article",
+        "template-preview-hidden": {
+          "title": "Another Blog Post",
           "img": {
             "width": "361",
             "height": "545",
-            "url": "../img/www/index/template3.png",
+            "url": "../img/www/index/template2.png",
             "layout": "responsive"
           },
-          "desc": "Jujubes pudding topping croissant danish carrot cake. Lemon drops lollipop oat cake chocolate bar powder lemon drops.",
-          "lightbox-id": "template-3",
-          "src": "templates/blog-photogallery.amp.html"
+          "desc": "",
+          "right-aligned": true,
+          "lightbox-id": "template-2",
+          "src": "templates/blog-thescenic.amp.html"
         }
       }
     ]
