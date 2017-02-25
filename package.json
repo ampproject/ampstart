@@ -4,6 +4,7 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "autoprefixer": "^6.5.3",
+    "child_process": "^1.0.2",
     "cssnano": "^3.8.1",
     "del": "^2.2.2",
     "express": "^4.14.0",
@@ -17,8 +18,9 @@
     "gulp-util": "3.0.8",
     "gulp-webserver": "^0.9.1",
     "highlights": "^2.1.1",
-    "mustache": "2.3.0",
     "jsdom": "^9.11.0",
+    "mustache": "2.3.0",
+    "path": "^0.12.7",
     "postcss": "5.0.14",
     "postcss-calc": "^5.3.1",
     "postcss-color-function": "^2.0.1",
