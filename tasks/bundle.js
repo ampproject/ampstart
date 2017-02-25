@@ -23,7 +23,6 @@ const path = require('path');
 const fs = require('fs-extra');
 const config = require('./config');
 
-
 function collectResources(filepath, html, done) {
   const filename = path.basename(filepath, '.amp.html');
   const env = jsdom.env(html, function(err, window) {
@@ -39,7 +38,8 @@ function collectResources(filepath, html, done) {
     });
     fs.copySync(filepath,
         `.archive/${filename}/templates/${path.basename(filepath)}`);
-    exec(`cd .archive && tar -zcf ../dist/archive/${filename}.tar.gz ${filename}/`);
+
+    exec(`cd .archive && zip -r ../dist/archive/${filename}.zip ${filename}/`);
     done();
   });
 }
@@ -48,6 +48,10 @@ function collectResources(filepath, html, done) {
 function bundle() {
   fs.removeSync('.archive');
   fs.mkdirSync('.archive');
+
+  fs.removeSync('dist/archive');
+  fs.mkdirSync('dist/archive');
+
   return gulp.src(`${config.dest.templates}/templates/**/*.html`)
       .pipe(through.obj(function(file, enc, cb) {
         if (file.isNull()) {

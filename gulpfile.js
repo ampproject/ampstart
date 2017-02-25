@@ -77,7 +77,7 @@ function getPartials(acc, embedderDir, template) {
 
 gulp.task('build', 'build', function(cb) {
   runSequence('clean', 'highlight', 'img', 'postcss', 'posthtml', 'www',
-      'validate', cb);
+      'validate', 'bundle', cb);
 });
 
 gulp.task('clean', function() {
