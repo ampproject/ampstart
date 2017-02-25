@@ -52,13 +52,10 @@
   --border-width: 1px;
   --border-radius: 3px;
 
-
-
   @custom-media --breakpoint-xs (max-width: 40rem);
-  @custom-media --breakpoint-sm (min-width: 40rem);
-  @custom-media --breakpoint-md (min-width: 52rem);
-  @custom-media --breakpoint-lg (min-width: 64rem);
-  @custom-media --breakpoint-sm-md (min-width: 40rem) and (max-width: 52rem);
-  @custom-media --breakpoint-md-lg (min-width: 52rem) and (max-width: 64rem);
-
+  @custom-media --breakpoint-sm (min-width: 40.06rem);
+  @custom-media --breakpoint-md (min-width: 52.06rem);
+  @custom-media --breakpoint-lg (min-width: 64.06rem);
+  @custom-media --breakpoint-sm-md (min-width: 40.06rem) and (max-width: 52rem);
+  @custom-media --breakpoint-md-lg (min-width: 52.06rem) and (max-width: 64rem);
 }
