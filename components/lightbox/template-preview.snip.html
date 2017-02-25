@@ -21,7 +21,7 @@ limitations under the License.
 {{#template-preview}}
 <amp-lightbox id="{{lightbox-id}}" layout="nodisplay" class="ampstart-device-preview relative">
   <div class="ampstart-device-preview-mask absolute top-0 right-0 left-0 bottom-0 {{classes}}" role="button" on="tap:{{lightbox-id}}.close" tabindex="0"></div>
-  <amp-selector class="">
+  <amp-selector>
     <div class="ampstart-device-preview-select flex justify-around items-center center absolute top-0 left-0 right-0">
       <button class="ampstart-btn">GET CODE</button>
       <h3>Article Template Preview</h3>
@@ -37,7 +37,7 @@ limitations under the License.
                sandbox="allow-scripts allow-popups"
                allowfullscreen
                frameborder="0"
-               src="{{src}}" class="absolute">
+               src="{{src}}" class="absolute xs-hide">
                <div placeholder></div>
           </amp-iframe>
         </div>
@@ -53,14 +53,14 @@ limitations under the License.
                sandbox="allow-scripts allow-popups"
                allowfullscreen
                frameborder="0"
-               src="{{src}}"  class="absolute">
+               src="{{src}}"  class="absolute xs-hide">
                <div placeholder></div>
           </amp-iframe>
         </div>
 
-        <amp-img src="img/www/desktop.png" width="60.5" height="35" layout="fixed" alt="desktop icon" option="desktop" class="xs-hide sm-hide md-hide"></amp-img>
+        <amp-img src="img/www/desktop.png" width="60.5" height="35" layout="fixed" alt="desktop icon" option="desktop" class="xs-hide"></amp-img>
 
-        <div class="ampstart-desktop-frame absolute top-0 left-0 right-0 bottom-0 xs-hide sm-hide md-hide">
+        <div class="ampstart-desktop-frame absolute top-0 left-0 right-0 bottom-0">
         <amp-iframe width="324"
              height="494"
              layout="responsive"

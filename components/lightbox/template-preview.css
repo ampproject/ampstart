@@ -60,10 +60,9 @@
 .ampstart-mobile-frame {
   width: 412px;
   height: 806px;
-  background: #fff;
+  margin: 100px 0 0 -206px;
   top: 50%;
   left: 50%;
-  margin: 140px 0 0 -206px;
   border-radius: 17px;
 }
 
@@ -93,4 +92,27 @@
   bottom: 70px;
   left: 70px;
   right: 70px;
+}
+
+/*
+ * If on cellphone/very small screen mode always go full screen mode
+ * Ideally one should never get in this mode as the view template button
+ * for cellphone/very small screen mode opens the template in a new tab.
+ */
+@media (--breakpoint-xs), (max-height: 770px) {
+  .ampstart-tablet-frame,
+  .ampstart-mobile-frame,
+  [option="mobile"][selected] + .ampstart-mobile-frame,
+  [option="tablet"][selected] + .ampstart-tablet-frame {
+    visibility: hidden;
+  }
+
+  .ampstart-desktop-frame,
+  [option="desktop"][selected] + .ampstart-desktop-frame {
+    visibility: visible;
+  }
+
+  .ampstart-device-preview [option] {
+    display: none;
+  }
 }
