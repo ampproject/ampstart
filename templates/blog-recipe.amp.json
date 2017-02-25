@@ -88,7 +88,6 @@
       "title": "Leave a reply",
       "method": "GET",
       "action": "/",
-      "form-text": "Not to worry, your email will not be published.",
       "inputs": [
         {
           "input": {
@@ -147,7 +146,7 @@
     "footer": {
       "social-follow": false,
       "copyright": {
-        "text": "© 2017 The Blog"
+        "text": "© Baseline 2017"
       }
     }
   }
