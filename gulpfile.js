@@ -110,11 +110,11 @@ gulp.task('www', function() {
 
 gulp.task('watch', 'watch stuff', ['build'], function() {
   return gulp.watch([
-    config.src.templates,
+    config.src.components,
     config.src.www_pages,
-    config.src.templates_css,
     config.src.css,
-    config.src.data],
+    config.src.data,
+    config.src.img],
       ['build']);
 });
 

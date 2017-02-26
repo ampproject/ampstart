@@ -16,7 +16,7 @@
 @import '../../../core-vars';
 
 :root {
-  --color-primary: #000;
+/*  --color-primary: #000;
   --color-font-primary: #fff;
 
   --color-secondary: #fff;
@@ -28,9 +28,10 @@
   --color-border: var(--color-dark-grey);
 
   --color-font-default: var(--color-dark-grey);
-  /*--color-disabled: #9b9b9b;*/
 
   --color-navbar-primary: #fff;
   --color-navbar-font-primary: #000;
-  --color-font-theme: #003f93;
+  --color-font-theme: #003f93;*/
+  --color-navbar-primary: #fff;
+  --color-navbar-font-primary: #000;
 }
