@@ -15,22 +15,6 @@
  */
 
 :root {
-  --color-primary: #fff;
-  --color-font-primary: #000;
-
-  --color-secondary: #000;
-  --color-font-secondary: #fff;
-
-  --color-font-default: var(--color-dark-grey);
-
-  --color-input-primary: var(--color-font-theme);
-  --color-input-font-primary: var(--color-font-primary);
-  --color-input-secondary: var(--color-secondary);
-  --color-input-font-secondary: var(--color-font-theme);
-
   --color-footer-background: var(--color-font-theme);
-  --color-font-footer: var(--color-font-secondary);
-
-  --color-font-theme: #003f93;
-  --color-dropdown-content: var(--color-font-theme);
+  --color-font-footer: var(--color-font-primary);
 }
