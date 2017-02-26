@@ -80,8 +80,8 @@
         ]
       },
       {
-        "name": "Inputs",
-        "id": "inputs",
+        "name": "Form Elements",
+        "id": "form-elements",
         "variants": [
           {
             "heading": "Checkboxes",
@@ -158,33 +158,42 @@
         ]
       },
       {
-        "name": "Navigation",
-        "id": "navigation",
+        "name": "Links & Sharing",
+        "id": "links-and-sharing",
         "desc-text": false,
         "variants": [
           {
-            "heading": "Responsive Menubar",
             "render": {
               "iframe": {
-                "url": "render/navbar-with-sidebar.amp.html",
+                "url": "render/related-article.amp.html",
                 "width": false,
-                "height": "500px",
+                "height": "730",
                 "layout": "fixed-height"
               }
             },
-            "code-file": "navbar-with-sidebar"
+            "code-file": "related-article"
           },
           {
-            "heading": "Header Bar with Sidebar",
             "render": {
               "iframe": {
-                "url": "render/navbar-sidebar-only.amp.html",
+                "url": "render/social-follow.amp.html",
                 "width": false,
-                "height": "500px",
+                "height": "116",
                 "layout": "fixed-height"
               }
             },
-            "code-file": "navbar-sidebar-only"
+            "code-file": "social-follow"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/social-share.amp.html",
+                "width": false,
+                "height": "124",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "social-share"
           }
         ]
       },
@@ -214,68 +223,6 @@
               }
             },
             "code-file": "list-unordered"
-          }
-        ]
-      },
-      {
-        "name": "Typography",
-        "id": "typography",
-        "desc-text": false,
-        "variants": [
-          {
-            "render": {
-              "iframe": {
-                "url": "render/headings.amp.html",
-                "width": false,
-                "height": "234",
-                "layout": "fixed-height"
-              }
-            },
-            "code-file": "headings"
-          },
-          {
-            "render": {
-              "iframe": {
-                "url": "render/sizes.amp.html",
-                "width": false,
-                "height": "307",
-                "layout": "fixed-height"
-              }
-            },
-            "code-file": "sizes"
-          },
-          {
-            "render": {
-              "iframe": {
-                "url": "render/pullquote.amp.html",
-                "width": false,
-                "height": "192",
-                "layout": "fixed-height"
-              }
-            },
-            "code-file": "pullquote"
-          },
-          {
-            "render": {
-              "iframe": {
-                "url": "render/dropcap.amp.html",
-                "width": false,
-                "height": "171",
-                "layout": "fixed-height"
-              }
-            },
-            "code-file": "dropcap"
-          },
-          {
-            "render": {
-              "iframe": {
-                "url": "render/bodycopy.amp.html",
-                "width": false,
-                "height": "500",
-                "layout": "fixed-height"
-              }
-            },
-            "code-file": "bodycopy"
           }
         ]
       },
@@ -360,46 +307,37 @@
               }
             },
             "code-file": "related-section"
-          },
-          {
-            "render": {
-              "iframe": {
-                "url": "render/related-article.amp.html",
-                "width": false,
-                "height": "730",
-                "layout": "fixed-height"
-              }
-            },
-            "code-file": "related-article"
           }
         ]
       },
       {
-        "name": "Other",
-        "id": "other",
+        "name": "Navigation",
+        "id": "navigation",
         "desc-text": false,
         "variants": [
           {
+            "heading": "Responsive Menubar",
             "render": {
               "iframe": {
-                "url": "render/social-follow.amp.html",
+                "url": "render/navbar-with-sidebar.amp.html",
                 "width": false,
-                "height": "116",
+                "height": "500px",
                 "layout": "fixed-height"
               }
             },
-            "code-file": "social-follow"
+            "code-file": "navbar-with-sidebar"
           },
           {
+            "heading": "Header Bar with Sidebar",
             "render": {
               "iframe": {
-                "url": "render/social-share.amp.html",
+                "url": "render/navbar-sidebar-only.amp.html",
                 "width": false,
-                "height": "124",
+                "height": "500px",
                 "layout": "fixed-height"
               }
             },
-            "code-file": "social-share"
+            "code-file": "navbar-sidebar-only"
           },
           {
             "render": {
@@ -411,6 +349,68 @@
               }
             },
             "code-file": "footer"
+          }
+        ]
+      },
+      {
+        "name": "Typography",
+        "id": "typography",
+        "desc-text": false,
+        "variants": [
+          {
+            "render": {
+              "iframe": {
+                "url": "render/headings.amp.html",
+                "width": false,
+                "height": "234",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "headings"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/sizes.amp.html",
+                "width": false,
+                "height": "307",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "sizes"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/pullquote.amp.html",
+                "width": false,
+                "height": "192",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "pullquote"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/dropcap.amp.html",
+                "width": false,
+                "height": "171",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "dropcap"
+          },
+          {
+            "render": {
+              "iframe": {
+                "url": "render/bodycopy.amp.html",
+                "width": false,
+                "height": "500",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "bodycopy"
           }
         ]
       }

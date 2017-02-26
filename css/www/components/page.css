@@ -34,10 +34,6 @@
   top: var(--space-7);
 }
 
-.www-component-anchors > li {
-  height: var(--navbar-height);
-}
-
 .www-component-anchor {
   clear: both;
 }
