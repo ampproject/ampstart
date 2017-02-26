@@ -35,7 +35,7 @@
 }
 
 .www-component-anchors > li {
-  height: var(--navbar-height);
+  margin-bottom: var(--space-3);
 }
 
 .www-component-anchor {
