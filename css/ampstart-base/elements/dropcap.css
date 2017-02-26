@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-@import '../../core-vars';
-
 /* Dropcap */
 .ampstart-dropcap {
   padding-top: var(--space-2);

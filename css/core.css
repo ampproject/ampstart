@@ -73,7 +73,6 @@
 @custom-media --breakpoint-md (min-width: 52em);
 @custom-media --breakpoint-lg (min-width: 64em);
 */
-@import 'core-vars';
 
 @import 'ampstart-base/base-page';
 @import 'ampstart-base/base-elements';

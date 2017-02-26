@@ -13,6 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import 'bass-override-vars';
+@import 'ampstart-spacing-vars';
+@import '../../components/inputs/input-vars';
+@import '../../components/navbar/navbar-vars';
+@import '../../components/footer/footer-vars';
+@import '../../components/dropdown/dropdown-vars';
+
 
 :root {
   --color-white: #fff;

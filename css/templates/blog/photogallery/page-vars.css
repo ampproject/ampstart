@@ -13,8 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../../core-vars';
-
 :root {
 /*  --color-primary: #000;
   --color-font-primary: #fff;
@@ -32,6 +30,6 @@
   --color-navbar-primary: #fff;
   --color-navbar-font-primary: #000;
   --color-font-theme: #003f93;*/
-  --color-navbar-primary: #fff;
-  --color-navbar-font-primary: #000;
+/*  --color-navbar-primary: #fff;
+  --color-navbar-font-primary: #000;*/
 }

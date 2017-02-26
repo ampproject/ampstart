@@ -13,6 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import '../core';
+@import '../../components/navbar/navbar';
+@import '../../components/social-follow/social-follow';
+@import '../../components/footer/footer';
 @import 'page-vars';
 
 .www-header {

@@ -13,14 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../core';
-@import '../../../components/navbar/navbar';
-@import '../../../components/lightbox/template-preview';
-@import '../../../components/social-follow/social-follow';
-@import '../../../components/footer/footer';
 @import '../shared';
 @import '../highlight-syntax/atom-light-syntax';
-@import '../page-vars';
 
 .www-components-sec-nav {
   padding-top: var(--space-7);
