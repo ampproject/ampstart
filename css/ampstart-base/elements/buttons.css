@@ -46,4 +46,5 @@
 .ampstart-btn[disabled]:focus {
   opacity: 0.5;
   outline: 0;
+  cursor: default;
 }
