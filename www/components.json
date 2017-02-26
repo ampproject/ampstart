@@ -176,6 +176,17 @@
           {
             "render": {
               "iframe": {
+                "url": "render/related-section.amp.html",
+                "width": false,
+                "height": "555",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "related-section"
+          },
+          {
+            "render": {
+              "iframe": {
                 "url": "render/social-follow.amp.html",
                 "width": false,
                 "height": "116",
@@ -296,17 +307,6 @@
               }
             },
             "code-file": "byline"
-          },
-          {
-            "render": {
-              "iframe": {
-                "url": "render/related-section.amp.html",
-                "width": false,
-                "height": "555",
-                "layout": "fixed-height"
-              }
-            },
-            "code-file": "related-section"
           }
         ]
       },
