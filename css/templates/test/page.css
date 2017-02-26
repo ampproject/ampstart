@@ -30,3 +30,14 @@
 .test-dropdown-container {
   min-height: 30px;
 }
+
+:root {
+  --color-primary: #9013fe;
+  --color-font-primary: #fff;
+
+  --color-secondary: #fff;
+  --color-font-secondary: #9013fe;
+
+  --color-font-default: var(--color-dark-grey);
+  /*--color-disabled: #9b9b9b;*/
+}

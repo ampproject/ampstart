@@ -203,15 +203,22 @@
 }
 
 /* Custom radio */
+.ampstart-input input[type="radio"]:checked {
+  background-color: var(--color-input-secondary);
+}
+
 .ampstart-input input[type="radio"]::after {
-  border-radius: 18px;
+  top: 3px;
+  bottom: 3px;
+  left: 3px;
+  right: 3px;
+  border-radius: 12px;
 }
 
 .ampstart-input input[type="radio"]:checked::after {
-  content: "•";
+  content: "";
   font-size: var(--h1);
-  background-color: var(--color-input-secondary);
-  color: var(--color-input-font-secondary);
+  background-color: var(--color-input-font-secondary);
 }
 
 /* Hacks for IE/Edge */
