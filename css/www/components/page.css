@@ -57,6 +57,11 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   margin-bottom: var(--space-6);
 }
 
+.www-component-desc a {
+  text-decoration: none;
+  color: var(--color-font-primary:);
+}
+
 .www-component-desc h3 {
   letter-spacing: inherit;
 }
