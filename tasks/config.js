@@ -21,7 +21,7 @@ module.exports = {
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
     css: 'css/**/*.css',
-    data: 'data.json',
+    data: '{templates,components,www}/**/*.json',
     img: 'img/**',
   },
   dest: {
