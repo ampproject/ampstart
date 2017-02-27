@@ -1,0 +1,583 @@
+{
+  "www-render": {
+    "buttons": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "lists": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Lists",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "inputs": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Inputs",
+        "extensions": [
+          "amp-form"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "checkboxes": [
+        {
+          "label": "On",
+          "checkbox": {
+            "label": "Checkbox 1",
+            "id": "cb1",
+            "name": "cb",
+            "value": "1",
+            "checked": "checked"
+          }
+        },
+        {
+          "label": "Off",
+          "checkbox": {
+            "label": "Checkbox 2",
+            "id": "cb2",
+            "name": "cb",
+            "value": "2"
+          }
+        },
+        {
+          "label": "Disabled",
+          "checkbox": {
+            "label": "Checkbox 3",
+            "id": "cb3",
+            "name": "cb",
+            "value": "3",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "radios": [
+        {
+          "label": "On",
+          "radio": {
+            "label": "Radio 1",
+            "id": "rb1",
+            "name": "rb",
+            "value": "1",
+            "checked": "checked"
+          }
+        },
+        {
+          "label": "Off",
+          "radio": {
+            "label": "Radio 2",
+            "id": "rb2",
+            "name": "rb",
+            "value": "2"
+          }
+        },
+        {
+          "label": "Disabled",
+          "radio": {
+            "label": "Radio 3",
+            "id": "rb3",
+            "name": "rb",
+            "value": "3",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "textboxes": [
+        {
+          "label": "Textbox",
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "Enter your Name",
+            "id": "ip1",
+            "name": "name1"
+          }
+        },
+        {
+          "label": "Textbox Filled",
+          "input": {
+            "type": "text",
+            "value": "John Smith",
+            "placeholder": "Enter your Name",
+            "id": "ip1",
+            "name": "name1"
+          }
+        },
+        {
+          "label": "Disabled Textbox",
+          "input": {
+            "type": "text",
+            "value": "",
+            "placeholder": "This input is Disabled",
+            "id": "ip1",
+            "name": "name1",
+            "disabled": "disabled"
+          }
+        },
+        {
+          "label": "Date Input",
+          "input": {
+            "type": "date",
+            "value": "2020-10-10",
+            "placeholder": "Date of Expiry",
+            "id": "ip4",
+            "name": "name4"
+          }
+        }
+      ],
+      "rangeinputs": [
+        {
+          "label": "Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11",
+            "name": "name11"
+          }
+        },
+        {
+          "label": "Disabled Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11a",
+            "name": "name11",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "textareas": [
+        {
+          "label": "Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Write your story",
+            "id": "ip13",
+            "name": "name13"
+          }
+        },
+        {
+          "label": "Disabled Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Dont Write anything",
+            "id": "ip13a",
+            "name": "name13",
+            "disabled": "disabled"
+          }
+        }
+      ],
+      "selects": [
+        {
+          "label": "Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12",
+            "name": "name12"
+          }
+        },
+        {
+          "label": "Disabled Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12a",
+            "name": "name12",
+            "disabled": "disabled"
+          }
+        }
+      ]
+    },
+    "typography": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "media": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "fullpage-hero": {
+        "heading": "Most Beautiful Hikes in the Pacific Northwest",
+        "narrow-img": "../../img/rectangle1.png",
+        "wide-img": "../../img/rectangle2.png",
+        "credit": {
+          "credit-prefix": "By",
+          "author": {"text": "Jamie Smith", "url": "#"},
+          "credit-suffix": "Posted today"
+        },
+        "readmore": {
+          "text": "Read more",
+          "content-id": "content"
+        }
+      },
+      "img-heading": {
+        "image-with-heading": {
+          "width": "1280",
+          "height": "853",
+          "url": "../../img/rectangle2.png",
+          "heading-html": "<h1>Somewhere in Alaska</h1>"
+        }
+      },
+      "img-caption": {
+        "image-with-caption": {
+          "width": "1280",
+          "height": "853",
+          "url": "../../img/rectangle2.png",
+          "caption": "Description of the photograph.",
+          "credit": {
+            "credit-prefix": "Taken by ",
+            "author": {"text": "James Victore", "url": "#"}
+          }
+        }
+      },
+      "byline": {
+        "image": "../../img/oval.png",
+        "author": {"text": "Jacinda B", "url": "#"},
+        "time": {"text": "Sept 10, 2016 @12:15 pm", "value":"2016-09-18T12:15"}
+      },
+      "related-section": {
+        "heading": {
+          "level": "2",
+          "classes": "h3",
+          "text": "Latest Articles"
+        },
+        "images-with-caption": [
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle1.png",
+              "caption": "Bullseye view: Bird Watching 101"
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle2.png",
+              "caption": "The Worlds fastest animal"
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "233",
+              "height": "202",
+              "url": "../../img/rectangle1.png",
+              "caption": "Cattle Ranch roundup"
+            }
+          }
+        ]
+      },
+      "related-article": {
+        "section-heading": {
+          "level": "2",
+          "text": "Related article"
+        },
+        "hero-img": {
+          "width": "1280",
+          "height": "720",
+          "url": "../../img/rectangle2.png",
+          "alt": "Grey box"
+        },
+        "article-heading": {
+          "level": "3",
+          "text": "The Best Road Trips in Alaska"
+        },
+        "content-text": "Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.",
+        "article-link": {"text": "Read more", "url": "#"}
+      }
+    },
+    "media-carousel": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": ["amp-carousel"],
+        "css-path": "www/render/page.css"
+      },
+      "img-heading-carousel": {
+        "carousel": {
+          "type": "slides",
+          "layout": "responsive",
+          "width": "1280",
+          "height": "853",
+          "images": [
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/rectangle2.png",
+                "heading-html": "<h1>Image 1</h1>"
+              }
+            },
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/rectangle1.png",
+                "caption": "Bright red flower. ",
+                "heading-html": "<h1>Image 2</h1>"
+              }
+            },
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/rectangle2.png",
+                "heading-html": "<h1>Image 3</h1>"
+              }
+            }
+          ]
+        }
+      },
+      "img-caption-carousel": {
+        "carousel": {
+          "type": "slides",
+          "layout": "responsive",
+          "width": "1280",
+          "height": "853",
+          "images": [
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/rectangle2.png",
+                "caption": "Description of photograph 1.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "Solomon Grundy", "url": "#"}
+                }
+              }
+            },
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/rectangle1.png",
+                "caption": "Description of photograph 2.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "James Victore", "url": "#"}
+                }
+              }
+            },
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/rectangle2.png",
+                "caption": "Description of photograph 3.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "Solomon Grundy", "url": "#"}
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "navigation": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [
+          "amp-accordion",
+          "amp-sidebar"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "navbar-sidebar-only": {
+        "navbar": {
+          "logo": {
+            "url": "../img/blog-thescenic/header-logo.png",
+            "width": "110",
+            "height": "33"
+          },
+          "name": "The Blog",
+          "sidebar-id": "header-sidebar",
+          "sidebaronly": true,
+          "nav": [
+            {
+              "dropdown": {
+                "heading": "Fashion",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Styling Tips"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Designers"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Travel"}
+            },
+
+            {
+              "dropdown": {
+                "heading": "Food",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Recipes"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Hosting Tips"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Beauty"}
+            },
+
+            {
+              "link": {"url": "#", "text": "Shop"}
+            }
+          ],
+          "social-follow": {
+            "links": [
+              {"twitter": "#"},
+              {"facebook": "#"},
+              {"instagram": "#"},
+              {"pinterest": "#"},
+              {"email": "#"}
+            ]
+          },
+          "faq": {
+            "links": [
+              {
+                "link": {"url": "#", "text": "About"}
+              },
+              {
+                "link": {"url": "#", "text": "Contact"}
+              }
+            ]
+          }
+        }
+      },
+      "navbar-with-sidebar": {
+        "navbar": {
+          "logo": {
+            "url": "../img/blog-thescenic/header-logo.png",
+            "width": "110",
+            "height": "33"
+          },
+          "name": "The Blog",
+          "sidebar-id": "header-sidebar",
+          "nav": [
+            {
+              "dropdown": {
+                "heading": "Fashion",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Styling Tips"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Designers"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Travel"}
+            },
+
+            {
+              "dropdown": {
+                "heading": "Food",
+                "options": [
+                  {
+                    "link": {"url": "#", "text": "Recipes"}
+                  },
+                  {
+                    "link": {"url": "#", "text": "Hosting Tips"}
+                  }
+                ]
+              }
+            },
+
+            {
+              "link": {"url": "#", "text": "Beauty"}
+            },
+
+            {
+              "link": {"url": "#", "text": "Shop"}
+            }
+          ],
+          "social-follow": {
+            "links": [
+              {"twitter": "#"},
+              {"facebook": "#"},
+              {"instagram": "#"},
+              {"pinterest": "#"},
+              {"email": "#"}
+            ]
+          },
+          "faq": {
+            "links": [
+              {
+                "link": {"url": "#", "text": "About"}
+              },
+              {
+                "link": {"url": "#", "text": "Contact"}
+              }
+            ]
+          }
+        }
+      }
+    },
+    "other": {
+      "head-tag": {
+        "title": "AMPStart - UI Components - Buttons",
+        "extensions": [
+          "amp-social-share"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"pinterest": "#"},
+          {"instagram": "#"},
+          {"gplus": "#"},
+          {"email": "#"}
+        ]
+      },
+      "footer": {
+        "social-follow": {
+          "links": [
+            {"twitter": "#"},
+            {"facebook": "#"},
+            {"pinterest": "#"},
+            {"email": "#"}
+          ]
+        },
+        "faq-links": {
+          "links": [
+            {"text": "About", "url": "#"},
+            {"text": "Contact", "url": "#"},
+            {"text": "Terms", "url": "#"}
+          ]
+        },
+        "copyright": {
+          "text": "© Your Company, 2016"
+        }
+      }
+    }
+  }
+}
