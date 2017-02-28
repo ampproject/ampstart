@@ -32,7 +32,7 @@
           "link": {"url": "/getstarted.html", "text": "Get Started"}
         },
         {
-          "link": {"url": "/howitworks.html", "text": "How it works"}
+          "link": {"url": "/howitworks.html", "text": "How it works", "classes": "www-current-page"}
         },
         {
           "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub"}

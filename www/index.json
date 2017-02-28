@@ -24,7 +24,7 @@
       "sidebar-id": "header-sidebar",
       "nav": [
         {
-          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?"}
+          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?", "classes": "www-current-page"}
         },
         {
           "link": {"url": "/#templates", "text": "Templates"}

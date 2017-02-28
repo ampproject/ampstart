@@ -20,6 +20,14 @@
 @import '../../components/footer/footer';
 @import 'page-vars';
 
+.ampstart-headerbar-nav .ampstart-nav-item {
+  border-bottom: solid 4px transparent;
+}
+
+.ampstart-headerbar-nav .ampstart-nav-item.www-current-page {
+  border-bottom: solid 4px var(--color-secondary);
+}
+
 .www-header {
   background-image: var(--header-gradient);
   padding: var(--space-7) 0;
@@ -49,4 +57,3 @@
 .ampstart-device-preview-select {
   box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
 }
-

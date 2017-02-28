@@ -30,7 +30,7 @@
           "link": {"url": "components.html", "text": "UI Components"}
         },
         {
-          "link": {"url": "/getstarted.html", "text": "Get Started"}
+          "link": {"url": "/getstarted.html", "text": "Get Started", "classes": "www-current-page"}
         },
         {
           "link": {"url": "/howitworks.html", "text": "How it works"}
