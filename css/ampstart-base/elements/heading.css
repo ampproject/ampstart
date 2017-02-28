@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-@import '../../core-vars';
-
 h1, .h1 {
  font-size: var(--h1);
  line-height: var(--line-height-6);

@@ -13,6 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+@import 'bass-override-vars';
+@import 'ampstart-spacing-vars';
+@import '../../components/inputs/input-vars';
+@import '../../components/navbar/navbar-vars';
+@import '../../components/footer/footer-vars';
+@import '../../components/dropdown/dropdown-vars';
+
 
 :root {
   --color-white: #fff;
@@ -21,17 +28,23 @@
   --color-black: #000;
 
   --color-primary: #000;
-  --color-font-secondary: #000;
+  --color-font-primary: #fff;
 
   --color-secondary: #fff;
-  --color-font-primary: #fff;
+  --color-font-secondary: #000;
+
   --color-font-default: var(--color-dark-grey);
   --color-font-subtitle: #4f4f4f;
-  --color-font-theme: var(--color-font-primary);
+  --color-font-theme: #003f93;
 
   --color-disabled: #9b9b9b;
+  --color-border: var(--color-dark-grey);
 
-  --color-border: var(--color-black);
+  --color-navbar-primary: #fff;
+  --color-navbar-font-primary: #000;
+
+  --color-input-primary: var(--color-font-theme);
+  --color-input-font-secondary: var(--color-font-theme);
 
   --font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 

@@ -14,12 +14,7 @@
  * limitations under the License.
  */
 
-@import '../../core';
-@import '../../../components/navbar/navbar';
-@import '../../../components/social-follow/social-follow';
-@import '../../../components/footer/footer';
 @import '../shared';
-@import '../page-vars';
 
 .www-howitworks a {
   color: var(--color-font-primary);

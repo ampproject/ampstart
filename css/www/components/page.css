@@ -13,14 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../core';
-@import '../../../components/navbar/navbar';
-@import '../../../components/lightbox/template-preview';
-@import '../../../components/social-follow/social-follow';
-@import '../../../components/footer/footer';
 @import '../shared';
 @import '../highlight-syntax/atom-light-syntax';
-@import '../page-vars';
 
 .www-components-sec-nav {
   padding-top: var(--space-7);
@@ -51,6 +45,7 @@ body .www-component-anchors .www-component-anchor[option][selected] {
 
 .www-component-desc > * {
   padding-left: var(--space-6);
+  padding-right: var(--space-6);
 }
 
 .www-component-desc {
@@ -89,12 +84,21 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   overflow: auto;
 }
 
-
 @media (--breakpoint-xs) {
   .www-component-desc > * {
     padding-left: 0;
+    padding-right: 0;
   }
   .www-component-desc {
     margin-bottom: var(--space-5);
+  }
+  .www-components {
+    margin-right: var(--space-2);
+  }
+}
+
+@media (--breakpoint-sm-md) {
+  .www-components {
+    margin-right: var(--space-2);
   }
 }

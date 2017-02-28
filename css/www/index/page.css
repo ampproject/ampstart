@@ -14,13 +14,8 @@
  * limitations under the License.
  */
 
-@import '../../core';
-@import '../../../components/navbar/navbar';
-@import '../../../components/lightbox/template-preview';
-@import '../../../components/footer/footer';
-@import '../../../components/social-follow/social-follow';
 @import '../shared';
-@import '../page-vars';
+@import '../../../components/lightbox/template-preview';
 
 .www-index-templates .ampstart-btn,
 .www-header .ampstart-btn {

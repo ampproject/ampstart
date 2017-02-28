@@ -35,10 +35,6 @@ main {
   width: 100%;
 }
 
-.ampstart-icon {
-  fill: var(--color-font-theme);
-}
-
 .recipe-article-category,
 .recipe-comments h3 {
   color: var(--color-font-theme);

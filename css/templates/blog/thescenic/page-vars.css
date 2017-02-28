@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import '../../../core-vars';
 
 :root {
   --color-primary: #9013fe;
@@ -22,6 +21,15 @@
   --color-secondary: #fff;
   --color-font-secondary: #9013fe;
 
-  --color-font-default: var(--color-dark-grey);
-  /*--color-disabled: #9b9b9b;*/
+  --color-font-theme: var(--color-font-primary);
+
+  --color-dropdown-content: var(--color-font-primary);
+
+  --color-navbar-primary: var(--color-primary);
+  --color-navbar-font-primary: var(--color-font-primary);
+  --color-navbar-secondary: var(--color-secondary);
+  --color-navbar-font-secondary: var(--color-font-secondary);
+
+  --color-footer-background: var(--color-primary);
+  --color-font-footer: var(--color-font-primary);
 }

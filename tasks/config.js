@@ -16,12 +16,12 @@
 
 module.exports = {
   src: {
-    templates: '{templates,components}/**/*.html',
-    templates_css: '{templates,components}/**/*.css',
+    components: 'components/**/*.*',
+    templates: '{templates, dummy}/**/*.html',
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
-    css: 'css/**/*.css',
-    data: 'data.json',
+    css: ['css/**/*.css', '!css/ampstart-base/**/*.css'],
+    data: '*/**/*.json',
     img: 'img/**',
   },
   dest: {

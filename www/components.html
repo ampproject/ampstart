@@ -25,7 +25,7 @@ limitations under the License.
     <span class="block px2 mb4">Customize your page with pre-built, reusable components. Copy and paste whatever you need to your existing templates</span>
   </header>
   <amp-selector layout="container">
-  <main class="flex px2">
+  <main class="flex pl2">
     <aside class="www-components-sec-nav col-2 xs-hide sm-hide relative">
       <ul class="www-component-anchors list-reset m0 p0 px1 caps">
         {{#components}}
@@ -36,8 +36,8 @@ limitations under the License.
     <article class="www-components flex-auto col-8">
 
       {{#components}}
-        <section class="www-component-desc" id="{{id}}">
-          <h2 class="www-heading  pb4 mb2 relative">{{name}}</h2>
+        <section class="www-component-desc flex-column justify-center" id="{{id}}">
+          <h2 class="www-heading pb4 mb2 relative">{{name}}</h2>
           {{#desc-text}}
           <p class="mb4">{{.}}</p>
           {{/desc-text}}
@@ -67,7 +67,6 @@ limitations under the License.
         </section>
       {{/components}}
     </article>
-    <aside class="col-2 xs-hide"></aside>
   </main>
   </amp-selector>
   {{> ../components/footer/footer.snip.html}}
