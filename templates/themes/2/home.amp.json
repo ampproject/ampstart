@@ -73,12 +73,12 @@
             {
               "location": "San Francisco",
               "address": [
-                "123 E Somewhere St.",
+                "123 E Somewhere St.,",
                 "San Francisco, CA"
               ],
               "hours": [
                 "Mon-Thu 11am–2pm, 4pm–9pm",
-                "Fri-Sun 111am–3pm, 4pm–12am"
+                "Fri-Sun 11am–3pm, 4pm–12am"
               ]
             },
             {
@@ -89,7 +89,7 @@
               ],
               "hours": [
                 "Mon-Thu 11am–2pm, 4pm–9pm",
-                "Fri-Sun 111am–3pm, 4pm–11pm"
+                "Fri-Sun 11am–3pm, 4pm–11pm"
               ]
             }
           ]
