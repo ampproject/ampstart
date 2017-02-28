@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 @import '../core';
+@import '../../components/carousel/carousel';
 @import '../../components/navbar/navbar';
 @import '../../components/social-follow/social-follow';
 @import '../../components/footer/footer';

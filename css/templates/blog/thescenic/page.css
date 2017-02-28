@@ -16,6 +16,7 @@
 
 @import '../../../core';
 @import '../../../../components/byline/byline';
+@import '../../../../components/carousel/carousel';
 @import '../../../../components/dropdown/dropdown';
 @import '../../../../components/footer/footer';
 @import '../../../../components/images/fullpage-hero';
