@@ -324,6 +324,7 @@
             "heading": "Responsive Menubar",
             "render": {
               "iframe": {
+                "card": true,
                 "url": "render/navbar-with-sidebar.amp.html",
                 "width": false,
                 "height": "500px",
@@ -339,6 +340,7 @@
             "heading": "Header Bar with Sidebar",
             "render": {
               "iframe": {
+                "card": true,
                 "url": "render/navbar-sidebar-only.amp.html",
                 "width": false,
                 "height": "500px",
@@ -353,6 +355,7 @@
           {
             "render": {
               "iframe": {
+                "card": true,
                 "url": "render/footer.amp.html",
                 "width": false,
                 "height": "361",
