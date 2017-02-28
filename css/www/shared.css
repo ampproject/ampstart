@@ -39,3 +39,7 @@
   position: absolute;
   bottom: 0;
 }
+
+.ampstart-device-preview-select {
+  background: var(--color-highlight-background);
+}
