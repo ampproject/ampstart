@@ -1,0 +1,89 @@
+/**
+ * Copyright 2017 The AMPStart Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import '../../../core';
+@import '../../../../components/footer/footer';
+@import '../../../../components/images/fullpage-hero';
+@import '../../../../components/images/images';
+@import '../../../../components/navbar/navbar';
+@import '../../../../components/social-follow/social-follow';
+@import 'page-vars';
+
+body {
+  line-height: 1.75;
+}
+
+.h1,
+.h2,
+.h3,
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.h1,
+h1 {
+  font-size: 2.25rem;  /* 36/16 */
+  letter-spacing: .1px;
+  line-height: 1.33333;  /* 48/36 */
+}
+
+.h2,
+h2 {
+  font-size: 1.75rem;  /* 28/16 */
+  letter-spacing: 0;
+  line-height: 1.71429;  /* 48/28 */
+}
+
+.h3,
+h3 {
+  font-size: 1.25rem;  /* 20/16 */
+  letter-spacing: .3px;
+  line-height: 1.6;  /* 32/20 */
+}
+
+.h4,
+.h5,
+.h6,
+h4,
+h5,
+h6 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0;
+  line-height: 1.25;  /* 20/16 */
+}
+
+.divider::after {
+  border-bottom: 1px solid var(--color-border);
+  content: '';
+  display: block;
+  height: 2rem;
+  width: 8.33%;
+}
+
+article > h2[id] {
+  /* Offset position of anchored headings to compensate for the header bar. */
+  margin-top: -5.5rem;
+  padding-top: 5.5rem;
+}
+
+article > h2 + p::first-letter {
+  float: left;
+  font-size: 3.125rem;  /* 50/16 */
+  line-height: 1.12;  /* 56/50 */
+  margin-right: .5rem;
+}
