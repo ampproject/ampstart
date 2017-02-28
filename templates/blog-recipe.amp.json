@@ -143,10 +143,18 @@
         {"email": "#"}
       ]
     },
+
     "footer": {
       "social-follow": false,
+      "faq-links": {
+        "links": [
+          {"text": "About", "url": "#"},
+          {"text": "Contact", "url": "#"},
+          {"text": "Terms", "url": "#"}
+        ]
+      },
       "copyright": {
-        "text": "© Baseline 2017"
+        "text": "© Your Company, 2016"
       }
     }
   }

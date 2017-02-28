@@ -26,7 +26,7 @@
         {
           "label": "On",
           "checkbox": {
-            "label": "Checkbox 1",
+            "label": "Chkbox 1",
             "id": "cb1",
             "name": "cb",
             "value": "1",
@@ -36,7 +36,7 @@
         {
           "label": "Off",
           "checkbox": {
-            "label": "Checkbox 2",
+            "label": "Chkbox 2",
             "id": "cb2",
             "name": "cb",
             "value": "2"
@@ -45,7 +45,7 @@
         {
           "label": "Disabled",
           "checkbox": {
-            "label": "Checkbox 3",
+            "label": "Chkbox 3",
             "id": "cb3",
             "name": "cb",
             "value": "3",

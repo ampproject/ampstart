@@ -26,27 +26,9 @@
 @import '../../../../components/related-section/related-section';
 @import '../../../../components/socialbox/socialbox';
 @import '../../../../components/social-follow/social-follow';
-@import 'page-vars';
 
-main {
-  margin-top: var(--navbar-height);
-}
 .ampstart-input {
   width: 100%;
-}
-
-.recipe-article-category,
-.recipe-comments h3 {
-  color: var(--color-font-theme);
-}
-
-.ampstart-footer {
-  padding-top: var(--space-3);
-  margin-top: var(--space-6);
-}
-
-.ampstart-footer small {
-  font-size: var(--h4);
 }
 
 main .ampstart-social-follow {

@@ -17,7 +17,8 @@
         "url": "../img/www/amp_logo_black.svg",
         "width": "24",
         "height": "24",
-        "classes": "xs-hide sm-hide"
+        "classes": "xs-hide sm-hide",
+        "href": "/"
       },
       "name": "The Blog",
       "sidebar-id": "header-sidebar",
@@ -46,7 +47,7 @@
           {"twitter": "https://twitter.com/AMPhtml"},
           {"github": "https://github.com/ampproject/ampstart"},
           {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
-          {"wordpress": "#"}
+          {"wordpress": "https://www.amphtml.wordpress.com"}
         ]
       }
     },
@@ -56,7 +57,7 @@
           {"twitter": "https://twitter.com/AMPhtml"},
           {"github": "https://github.com/ampproject/ampstart"},
           {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
-          {"wordpress": "#"}
+          {"wordpress": "https://www.amphtml.wordpress.com"}
         ]
       },
       "copyright": {

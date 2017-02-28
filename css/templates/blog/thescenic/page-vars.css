@@ -21,7 +21,7 @@
   --color-secondary: #fff;
   --color-font-secondary: #9013fe;
 
-  --color-font-theme: var(--color-font-primary);
+  --color-font-accent: var(--color-font-primary);
 
   --color-dropdown-content: var(--color-font-primary);
 
