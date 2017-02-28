@@ -209,12 +209,12 @@
         "css-path": "www/render/page.css"
       },
       "fullpage-hero": {
-        "heading": "Most Beautiful Hikes in the Pacific Northwest",
-        "narrow-img": "../../img/rectangle1.png",
-        "wide-img": "../../img/rectangle2.png",
+        "heading": "Spaceshuttles : The New Tiny Homes",
+        "narrow-img": "../../img/components/nasa-53885.jpg",
+        "wide-img": "../../img/components/nasa-53885.jpg",
         "credit": {
           "credit-prefix": "By",
-          "author": {"text": "Jamie Smith", "url": "#"},
+          "author": {"text": "Neil Armstrong", "url": "#"},
           "credit-suffix": "Posted today"
         },
         "readmore": {
@@ -226,19 +226,19 @@
         "image-with-heading": {
           "width": "1280",
           "height": "853",
-          "url": "../../img/rectangle2.png",
-          "heading-html": "<h1>Somewhere in Alaska</h1>"
+          "url": "../../img/components/nasa-43564.jpg",
+          "heading-html": "<h1>Somewhere in Space</h1>"
         }
       },
       "img-caption": {
         "image-with-caption": {
-          "width": "1280",
-          "height": "853",
-          "url": "../../img/rectangle2.png",
-          "caption": "Description of the photograph.",
+          "width": "1078",
+          "height": "1024",
+          "url": "../../img/components/nasa-89125.jpg",
+          "caption": "The problem with internet quotes is that you cant always depend on their accuracy.",
           "credit": {
-            "credit-prefix": "Taken by ",
-            "author": {"text": "James Victore", "url": "#"}
+            "credit-prefix": "Quoted from",
+            "author": {"text": "Abraham Lincoln", "url": "#"}
           }
         }
       },
@@ -258,7 +258,7 @@
             "image-with-caption": {
               "width": "233",
               "height": "202",
-              "url": "../../img/rectangle1.png",
+              "url": "../../img/components/nasa-45068.jpg",
               "caption": "Bullseye view: Bird Watching 101"
             }
           },
@@ -266,7 +266,7 @@
             "image-with-caption": {
               "width": "233",
               "height": "202",
-              "url": "../../img/rectangle2.png",
+              "url": "../../img/components/nasa-43567.jpg",
               "caption": "The Worlds fastest animal"
             }
           },
@@ -274,7 +274,7 @@
             "image-with-caption": {
               "width": "233",
               "height": "202",
-              "url": "../../img/rectangle1.png",
+              "url": "../../img/components/nasa-53885.jpg",
               "caption": "Cattle Ranch roundup"
             }
           }
@@ -288,14 +288,14 @@
         "hero-img": {
           "width": "1280",
           "height": "720",
-          "url": "../../img/rectangle2.png",
+          "url": "../../img/components/nasa-43568.jpg",
           "alt": "Grey box"
         },
         "article-heading": {
           "level": "3",
           "text": "The Best Road Trips in Alaska"
         },
-        "content-text": "Toffee jelly-o gummi bears biscuit gummi bears cake soufflé jelly-o. Soufflé halvah wafer soufflé jujubes tart chocolate cake. Pie cupcake lemon drops chupa chups gummies sweet gingerbread. Powder ice cream cheesecake cookie oat cake bear claw cookie jujubes.",
+        "content-text": "Nam semper tristique aliquet. Fusce et mauris elit. Nunc pharetra, felis pretium semper malesuada, tortor libero tincidunt arcu, sit amet fringilla magna ante sit amet magna. Praesent sem leo, fringilla at dolor eu, blandit malesuada dolor.",
         "article-link": {"text": "Read more", "url": "#"}
       }
     },
@@ -316,7 +316,7 @@
               "image-with-heading": {
                 "width": "1280",
                 "height": "853",
-                "url": "../../img/rectangle2.png",
+                "url": "../../img/components/nasa-45074.jpg",
                 "heading-html": "<h1>Image 1</h1>"
               }
             },
@@ -324,7 +324,7 @@
               "image-with-heading": {
                 "width": "1280",
                 "height": "853",
-                "url": "../../img/rectangle1.png",
+                "url": "../../img/components/nasa-45068.jpg",
                 "caption": "Bright red flower. ",
                 "heading-html": "<h1>Image 2</h1>"
               }
@@ -333,7 +333,7 @@
               "image-with-heading": {
                 "width": "1280",
                 "height": "853",
-                "url": "../../img/rectangle2.png",
+                "url": "../../img/components/nasa-45076.jpg",
                 "heading-html": "<h1>Image 3</h1>"
               }
             }
@@ -351,11 +351,11 @@
               "image-with-caption": {
                 "width": "1280",
                 "height": "753",
-                "url": "../../img/rectangle2.png",
+                "url": "../../img/components/nasa-45076.jpg",
                 "caption": "Description of photograph 1.",
                 "credit": {
                   "credit-prefix": "Taken by ",
-                  "author": {"text": "Solomon Grundy", "url": "#"}
+                  "author": {"text": "Elon Musk", "url": "#"}
                 }
               }
             },
@@ -363,11 +363,11 @@
               "image-with-caption": {
                 "width": "1280",
                 "height": "753",
-                "url": "../../img/rectangle1.png",
+                "url": "../../img/components/nasa-45074.jpg",
                 "caption": "Description of photograph 2.",
                 "credit": {
                   "credit-prefix": "Taken by ",
-                  "author": {"text": "James Victore", "url": "#"}
+                  "author": {"text": "The Man on the Moon", "url": "#"}
                 }
               }
             },
@@ -375,11 +375,11 @@
               "image-with-caption": {
                 "width": "1280",
                 "height": "753",
-                "url": "../../img/rectangle2.png",
+                "url": "../../img/components/nasa-45068.jpg",
                 "caption": "Description of photograph 3.",
                 "credit": {
                   "credit-prefix": "Taken by ",
-                  "author": {"text": "Solomon Grundy", "url": "#"}
+                  "author": {"text": "Albert Einstien", "url": "#"}
                 }
               }
             }
