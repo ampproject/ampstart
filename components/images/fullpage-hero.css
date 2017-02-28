@@ -14,9 +14,6 @@
  * limitations under the License.
  */
 
-.ampstart-headerbar ~ .ampstart-image-fullpage-hero {
-  margin-top: var(--navbar-height);
-}
 .ampstart-image-fullpage-hero {
   color: var(--color-font-primary);
 }

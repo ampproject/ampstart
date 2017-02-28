@@ -15,5 +15,5 @@
  */
 
 :root {
-  --color-dropdown-content: var(--color-font-theme);
+  --color-dropdown-content: var(--color-font-accent);
 }

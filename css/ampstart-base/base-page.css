@@ -45,3 +45,8 @@ p {
   color: var(--color-font-subtitle);
   font-size: var(--h5);
 }
+
+/* Accents */
+.ampstart-accent {
+  color: var(--color-font-accent);
+}
