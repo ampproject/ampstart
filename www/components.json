@@ -8,7 +8,8 @@
         "amp-lightbox",
         "amp-iframe",
         "amp-selector",
-        "amp-analytics"
+        "amp-analytics",
+        "amp-accordion"
       ],
       "css-path": "www/components/page.css"
     },
@@ -199,6 +200,9 @@
                 "layout": "fixed-height"
               }
             },
+            "required-scripts": {
+              "extensions": ["amp-social-share"]
+            },
             "code-file": "social-share"
           }
         ]
@@ -279,6 +283,9 @@
                 "layout": "fixed-height"
               }
             },
+            "required-scripts": {
+              "extensions": ["amp-carousel"]
+            },
             "code-file": "carousel-with-heading"
           },
           {
@@ -289,6 +296,9 @@
                 "height": "547",
                 "layout": "fixed-height"
               }
+            },
+            "required-scripts": {
+              "extensions": ["amp-carousel"]
             },
             "code-file": "carousel-with-caption"
           },
@@ -314,11 +324,15 @@
             "heading": "Responsive Menubar",
             "render": {
               "iframe": {
+                "card": true,
                 "url": "render/navbar-with-sidebar.amp.html",
                 "width": false,
                 "height": "500px",
                 "layout": "fixed-height"
               }
+            },
+            "required-scripts": {
+              "extensions": ["amp-sidebar", "amp-accordion"]
             },
             "code-file": "navbar-with-sidebar"
           },
@@ -326,17 +340,22 @@
             "heading": "Header Bar with Sidebar",
             "render": {
               "iframe": {
+                "card": true,
                 "url": "render/navbar-sidebar-only.amp.html",
                 "width": false,
                 "height": "500px",
                 "layout": "fixed-height"
               }
             },
+            "required-scripts": {
+              "extensions": ["amp-sidebar", "amp-accordion"]
+            },
             "code-file": "navbar-sidebar-only"
           },
           {
             "render": {
               "iframe": {
+                "card": true,
                 "url": "render/footer.amp.html",
                 "width": false,
                 "height": "361",

@@ -51,16 +51,33 @@ limitations under the License.
             {{#render.iframe}}
             <!-- Rendered Output -->
             <div>
-              <amp-iframe src="{{url}}" height="{{height}}" layout="{{layout}}" {{#width}}width="{{.}}"{{/width}} sandbox="allow-scripts" class="www-component-rendered mb2 center">
+              <amp-iframe src="{{url}}" height="{{height}}" layout="{{layout}}" {{#width}}width="{{.}}"{{/width}} sandbox="allow-scripts" class="www-component-rendered {{#card}}ampstart-card{{/card}} mb2 center">
                 <div placeholder></div>
               </amp-iframe>
             </div>
             {{/render.iframe}}
+            {{#required-scripts}}
+            <div class="www-example-code mb4 py2">
+              <h3 class="caps h4 border-none mb2">SCRIPT TAG</h3>
+              <p>To use {{name}} the following script tags must be included as a direct child of the HEAD tag of your page.</p>
+              <pre class="editor editor-colors">
+              {{#extensions}}
+              <div class="line">
+                <span class="text html basic"><span class="meta tag any html"><span class="punctuation definition tag html"><span>&lt;</span></span><span class="entity name tag html"><span>script</span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>custom-element</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>"</span></span><span>{{.}}</span><span class="punctuation definition string end html"><span>"</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>src</span></span><span>=</span><span class="string quoted double html"><span class="punctuation definition string begin html"><span>"</span></span><span class="markup underline link https hyperlink"><span>https://cdn.ampproject.org/v0/{{.}}-0.1.js</span></span><span class="punctuation definition string end html"><span>"</span></span></span><span>&nbsp;</span><span class="entity other attribute-name html"><span>async</span></span><span class="punctuation definition tag html"><span>&gt;</span><span class="meta scope between-tag-pair html"><span>&lt;</span></span><span>/</span></span><span class="entity name tag html"><span>script</span></span><span class="punctuation definition tag html"><span>&gt;</span></span></span></span>
+              </div>
+              {{/extensions}}
+              </pre>
+            </div>
+            {{/required-scripts}}
             {{#code-file}}
             <div class="www-example-code mb4 py2">
-              <h3 class="caps h4">HTML</h3>
-              <!-- HTML markup used to render the element/component -->
-              <include src="dist/hl-partials/{{.}}.html"></include>
+              <amp-accordion disable-session-states>
+                <section>
+                  <h3 class="caps h4 border-none">HTML</h3>
+                  <!-- HTML markup used to render the element/component -->
+                  <include src="dist/hl-partials/{{.}}.html"></include>
+                </section>
+              </amp-accordion>
             </div>
             {{/code-file}}
           {{/variants}}

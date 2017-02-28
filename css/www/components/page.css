@@ -79,10 +79,9 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   background: var(--color-highlight-background);
 }
 
-.www-example-code {
+.www-example-code,
+.www-example-code h3 {
   background: var(--color-highlight-background);
-  max-height: 500px;
-  overflow: auto;
 }
 
 @media (--breakpoint-xs) {
