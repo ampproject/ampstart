@@ -16,16 +16,7 @@
 
 @import 'normalize.css';
 
-/*
- * Bassplate
- * Boilerplate for Basscss with PostCSS
- * http://github.com/basscss/bassplate
- *
- * Remove or comment out unneeded modules and import your own files.
- * Adjust global media queries and custom properties below.
- *
- */
-
+/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 /* Basscss Modules */
 @import 'basscss-type-scale';
 @import 'basscss-typography';
