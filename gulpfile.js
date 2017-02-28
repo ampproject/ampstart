@@ -111,6 +111,7 @@ gulp.task('www', function() {
 gulp.task('watch', 'watch stuff', ['build'], function() {
   return gulp.watch([
     config.src.components,
+    config.src.templates,
     config.src.www_pages,
     config.src.css,
     config.src.data,
