@@ -26,6 +26,10 @@ limitations under the License.
 
   {{> amp-extension-script.snip.html}}
 
+  {{#font-stylesheets}}
+    <link href="{{{.}}}" rel="stylesheet">
+  {{/font-stylesheets}}
+
   <link href="dist/css/{{{css-path}}}" rel="stylesheet" amp-custom>
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
