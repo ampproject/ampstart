@@ -14,7 +14,8 @@
         "url": "../img/www/amp_logo_black.svg",
         "width": "24",
         "height": "24",
-        "classes": "xs-hide sm-hide"
+        "classes": "xs-hide sm-hide",
+        "href": "/"
       },
       "name": "The Blog",
       "sidebar-id": "header-sidebar",
