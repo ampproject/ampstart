@@ -24,10 +24,10 @@
       "sidebar-id": "header-sidebar",
       "nav": [
         {
-          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?", "classes": "www-current-page"}
+          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?"}
         },
         {
-          "link": {"url": "/#templates", "text": "Templates"}
+          "link": {"url": "/#templates", "text": "Templates", "classes": "www-current-page"}
         },
         {
           "link": {"url": "components.html", "text": "UI Components"}
