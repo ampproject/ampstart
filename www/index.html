@@ -47,14 +47,14 @@ limitations under the License.
       </ul>
     </section>
 
-    <section class="www-index-templates px4" id="templates">
+    <section class="www-index-templates" id="templates">
       <h2 class="center mb4">Page Templates</h2>
       <ul class="list-reset">
         {{#template-previews}}
         {{#template-preview}}
         <li class="relative clearfix">
           {{#img}}
-          <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="{{layout}}" class="col-12 sm-col-5 lg-col-4 mx4 {{#right-aligned}}col-right{{/right-aligned}}{{^right-aligned}}left col {{/right-aligned}}"></amp-img>
+          <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="{{layout}}" class="ampstart-card col-12 sm-col-5 lg-col-4 mx4 {{#right-aligned}}col-right{{/right-aligned}}{{^right-aligned}}left col {{/right-aligned}}"></amp-img>
           {{/img}}
           <h3 class="caps mt4 p4">{{title}}</h3>
           <p class="px4 pb4">{{desc}}</p>
@@ -76,8 +76,6 @@ limitations under the License.
         <amp-img src="../img/www/index/template1.png" width="273" height="412" alt="Template1"></amp-img>
         <amp-img src="../img/www/index/template2.png" width="273" height="412" alt="Template2"></amp-img>
         <amp-img src="../img/www/index/template3.png" width="273" height="412" alt="Template3"></amp-img>
-        <amp-img src="../img/www/index/template1.png" width="273" height="412" alt="Template4"></amp-img>
-        <amp-img src="../img/www/index/template2.png" width="273" height="412" alt="Template5"></amp-img>
       </amp-carousel>
     </section>
     </main>

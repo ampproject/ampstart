@@ -84,7 +84,6 @@
         "id": "form-elements",
         "variants": [
           {
-            "heading": "Checkboxes",
             "render": {
               "iframe": {
                 "url": "render/checkbox.amp.html",
@@ -96,7 +95,6 @@
             "code-file": "checkbox"
           },
           {
-            "heading": "Radio Buttons",
             "render": {
               "iframe": {
                 "url": "render/radio.amp.html",
@@ -108,7 +106,6 @@
             "code-file": "radio"
           },
           {
-            "heading": "Textboxes",
             "render": {
               "iframe": {
                 "url": "render/textbox.amp.html",
@@ -120,7 +117,6 @@
             "code-file": "textbox"
           },
           {
-            "heading": "Range Inputs",
             "render": {
               "iframe": {
                 "url": "render/rangeinputs.amp.html",
@@ -132,7 +128,6 @@
             "code-file": "rangeinputs"
           },
           {
-            "heading": "Textarea",
             "render": {
               "iframe": {
                 "url": "render/textarea.amp.html",
@@ -144,7 +139,6 @@
             "code-file": "textarea"
           },
           {
-            "heading": "Select",
             "render": {
               "iframe": {
                 "url": "render/select.amp.html",

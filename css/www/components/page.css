@@ -45,6 +45,7 @@ body .www-component-anchors .www-component-anchor[option][selected] {
 
 .www-component-desc > * {
   padding-left: var(--space-6);
+  padding-right: var(--space-6);
 }
 
 .www-component-desc {
@@ -83,12 +84,21 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   overflow: auto;
 }
 
-
 @media (--breakpoint-xs) {
   .www-component-desc > * {
     padding-left: 0;
+    padding-right: 0;
   }
   .www-component-desc {
     margin-bottom: var(--space-5);
+  }
+  .www-components {
+    margin-right: var(--space-2);
+  }
+}
+
+@media (--breakpoint-sm-md) {
+  .www-components {
+    margin-right: var(--space-2);
   }
 }
