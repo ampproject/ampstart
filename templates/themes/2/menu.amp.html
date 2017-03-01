@@ -29,18 +29,18 @@ limitations under the License.
           <h2 class="h1 my4">{{section}}</h2>
           <dl class="clearfix">
             {{#pick}}
-              <dt class="h5 mb2 block regular">{{heading}}
+              <dt class="h5 mb2 block regular">{{heading}}</dt>
               {{#image}}
-                <dd class="m0"><amp-img class="mb2" src="{{url}}" width="{{width}}" height="{{height}}" alt="{{alt}}" layout="responsive"></amp-img>
+                <dd class="m0"><amp-img class="mb2" src="{{url}}" width="{{width}}" height="{{height}}" alt="{{alt}}" layout="responsive"></amp-img></dd>
               {{/image}}
-              <dt class="col col-10 h2 mb1">{{dish}}
-              <dd class="col col-2 m0 mb1 self-center right-align">{{price}}
-              <dd class="col col-12 m0 mb4 divider">{{description}}
+              <dt class="col col-10 h2 mb1">{{dish}}</dt>
+              <dd class="col col-2 m0 mb1 self-center right-align">{{price}}</dd>
+              <dd class="col col-12 m0 mb4 divider">{{description}}</dd>
             {{/pick}}
             {{#items}}
-              <dt class="col col-10 h3 mb1">{{dish}}
-              <dd class="col col-2 m0 mb1 self-center right-align">{{price}}
-              <dd class="col col-12 m0 mb4">{{description}}
+              <dt class="col col-10 h3 mb1">{{dish}}</dt>
+              <dd class="col col-2 m0 mb1 self-center right-align">{{price}}</dd>
+              <dd class="col col-12 m0 mb4">{{description}}</dd>
             {{/items}}
           </dl>
         {{/menu}}
