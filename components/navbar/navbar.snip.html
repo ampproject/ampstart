@@ -22,12 +22,17 @@ limitations under the License.
     <div role="button" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</div>
     {{#logo}}
       {{#href}}
-      <a href="{{.}}" class="text-decoration-none inline-block">
+      <a href="{{.}}" class="text-decoration-none inline-block mx-auto">
       {{/href}}
-      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto {{classes}}" alt="{{name}}"></amp-img>
+      {{#url}}
+        <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto {{classes}}" alt="{{name}}"></amp-img>
+      {{/url}}
+      {{^url}}
+        <div class="h3 bold caps mx-auto {{classes}}">{{name}}</div>
+      {{/url}}
       {{#href}}
-      {{/href}}
       </a>
+      {{/href}}
     {{/logo}}
     {{^sidebaronly}}
       <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
