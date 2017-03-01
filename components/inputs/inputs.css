@@ -22,6 +22,7 @@
   line-height: var(--line-height-3);
 }
 
+.ampstart-input [disabled] + label,
 .ampstart-input [disabled] {
   opacity: 0.5;
 }
@@ -69,9 +70,9 @@
   color: transparent;
 }
 
-.ampstart-input > textarea:not(:placeholder-shown) + label,
-.ampstart-input > select:not(:placeholder-shown) + label,
-.ampstart-input > input:not(:placeholder-shown) + label {
+.ampstart-input > textarea:not(:placeholder-shown):not([disabled]) + label,
+.ampstart-input > select:not(:placeholder-shown):not([disabled]) + label,
+.ampstart-input > input:not(:placeholder-shown):not([disabled]) + label {
   opacity: 1;
 }
 
@@ -162,8 +163,8 @@
   border-radius: 20px;
 }
 
-.ampstart-input input[type="checkbox"] + label,
-.ampstart-input input[type="radio"] + label {
+.ampstart-input input[type="checkbox"]:not([disabled]) + label,
+.ampstart-input input[type="radio"]:not([disabled]) + label {
   pointer-events: auto;
   animation: none;
   vertical-align: middle;
