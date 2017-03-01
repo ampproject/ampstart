@@ -42,11 +42,16 @@
   opacity: 1;
 }
 
+.ampstart-navbar-trigger:focus {
+  outline: none;
+}
+
 .ampstart-navbar-trigger,
 .ampstart-sidebar-faq a,
 .ampstart-nav a {
   cursor: pointer;
   text-decoration: none;
+
 }
 
 .ampstart-navbar-trigger {
