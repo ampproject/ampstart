@@ -209,13 +209,13 @@
         "css-path": "www/render/page.css"
       },
       "fullpage-hero": {
-        "heading": "Spaceshuttles : The New Tiny Homes",
+        "heading": "Life on a space shuttle",
         "narrow-img": "../../img/components/nasa-53885.jpg",
         "wide-img": "../../img/components/nasa-53885.jpg",
         "credit": {
           "credit-prefix": "By",
-          "author": {"text": "Neil Armstrong", "url": "#"},
-          "credit-suffix": "Posted today"
+          "author": {"text": "D.F. Roy", "url": "#"},
+          "credit-suffix": "January 14, 2017"
         },
         "readmore": {
           "text": "Read more",
@@ -227,7 +227,7 @@
           "width": "1280",
           "height": "853",
           "url": "../../img/components/nasa-43564.jpg",
-          "heading-html": "<h1>Somewhere in Space</h1>"
+          "heading-html": "<h1>Views from Space</h1>"
         }
       },
       "img-caption": {
@@ -235,10 +235,10 @@
           "width": "1078",
           "height": "1024",
           "url": "../../img/components/nasa-89125.jpg",
-          "caption": "The problem with internet quotes is that you cant always depend on their accuracy.",
+          "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
           "credit": {
-            "credit-prefix": "Quoted from",
-            "author": {"text": "Abraham Lincoln", "url": "#"}
+            "credit-prefix": "Taken by ",
+            "author": {"text": "J.T. Lee", "url": "#"}
           }
         }
       },
@@ -251,7 +251,7 @@
         "heading": {
           "level": "2",
           "classes": "h3",
-          "text": "Latest Articles"
+          "text": "Recommended for you"
         },
         "images-with-caption": [
           {
@@ -259,7 +259,7 @@
               "width": "233",
               "height": "202",
               "url": "../../img/components/nasa-45068.jpg",
-              "caption": "Bullseye view: Bird Watching 101"
+              "caption": "Imagine: life on the moon"
             }
           },
           {
@@ -267,7 +267,7 @@
               "width": "233",
               "height": "202",
               "url": "../../img/components/nasa-43567.jpg",
-              "caption": "The Worlds fastest animal"
+              "caption": "A satellite's view"
             }
           },
           {
@@ -275,7 +275,7 @@
               "width": "233",
               "height": "202",
               "url": "../../img/components/nasa-53885.jpg",
-              "caption": "Cattle Ranch roundup"
+              "caption": "Out-of-this-world space tech"
             }
           }
         ]
@@ -352,10 +352,10 @@
                 "width": "1280",
                 "height": "753",
                 "url": "../../img/components/nasa-45076.jpg",
-                "caption": "Description of photograph 1.",
+                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
                 "credit": {
                   "credit-prefix": "Taken by ",
-                  "author": {"text": "Elon Musk", "url": "#"}
+                  "author": {"text": "J.T. Lee", "url": "#"}
                 }
               }
             },
@@ -364,10 +364,10 @@
                 "width": "1280",
                 "height": "753",
                 "url": "../../img/components/nasa-45074.jpg",
-                "caption": "Description of photograph 2.",
+                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
                 "credit": {
                   "credit-prefix": "Taken by ",
-                  "author": {"text": "The Man on the Moon", "url": "#"}
+                  "author": {"text": "Mali D.", "url": "#"}
                 }
               }
             },
@@ -376,10 +376,10 @@
                 "width": "1280",
                 "height": "753",
                 "url": "../../img/components/nasa-45068.jpg",
-                "caption": "Description of photograph 3.",
+                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
                 "credit": {
                   "credit-prefix": "Taken by ",
-                  "author": {"text": "Albert Einstien", "url": "#"}
+                  "author": {"text": "L. Fischer", "url": "#"}
                 }
               }
             }
