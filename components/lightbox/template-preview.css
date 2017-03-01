@@ -93,45 +93,76 @@
   right: 70px;
 }
 
-@media (max-height: 889px) {
-  .ampstart-mobile-frame amp-iframe {
-    top: 70px;
-    bottom: 70px;
-    left: 22px;
-    right: 22px;
+@media (max-height: 896px) {
+  .ampstart-mobile-frame,
+  .ampstart-tablet-frame {
+    transform: scale(0.95);
+    margin-top: 50px;
   }
+}
 
+@media (max-height: 810px) {
   .ampstart-mobile-frame {
-    width: 350px;
-    height: 684px;
-    margin: 80px 0 0 -125px;
-    top: 50%;
-    left: 50%;
-    border-radius: 17px;
+    transform: scale(0.9);
+    margin-top: 50px;
+  }
+}
+
+@media (max-height: 849px) {
+  .ampstart-tablet-frame {
+    transform: scale(0.85);
+    margin-top: 0px;
+  }
+}
+
+
+@media (max-height: 786px) {
+  .ampstart-mobile-frame,
+  .ampstart-tablet-frame {
+    transform: scale(0.85);
+    margin-top: 0px;
+  }
+}
+
+@media (max-height: 768px) {
+  .ampstart-tablet-frame {
+    transform: scale(0.8);
+    margin-top: -30px;
+  }
+}
+
+
+@media (max-height: 719px) {
+  .ampstart-mobile-frame,
+  .ampstart-tablet-frame {
+    transform: scale(0.73);
+    margin-top: -60px;
   }
 
   .ampstart-tablet-frame {
-    width: 500px;
-    height: 707px;
-    top: 50%;
-    left: 50%;
-    margin: 80px 0 0 -250px;
-  }
-
-  .ampstart-tablet-frame amp-iframe {
-    top: 64px;
-    bottom: 64px;
-    left: 33px;
-    right: 33px;
+    margin-top: -60px;
   }
 }
+
+@media (max-height: 649px) {
+  .ampstart-mobile-frame,
+  .ampstart-tablet-frame {
+    transform: scale(0.65);
+    margin-top: -80px;
+  }
+
+  .ampstart-tablet-frame {
+    margin-top: -105px;
+  }
+}
+
 
 /*
  * If on cellphone/very small screen mode always go full screen mode
  * Ideally one should never get in this mode as the view template button
  * for cellphone/very small screen mode opens the template in a new tab.
  */
-@media (--breakpoint-xs), (max-height: 765px) {
+@media (--breakpoint-xs), (max-height: 599px) {
   .ampstart-tablet-frame,
   .ampstart-mobile-frame,
   [option="mobile"][selected] + .ampstart-mobile-frame,
