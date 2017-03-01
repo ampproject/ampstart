@@ -8,7 +8,8 @@
         "amp-lightbox",
         "amp-iframe",
         "amp-selector",
-        "amp-analytics"
+        "amp-analytics",
+        "amp-user-notification"
       ],
       "css-path": "www/index/page.css"
     },
@@ -112,6 +113,11 @@
           "download": "archive/blog-thescenic.zip"
         }
       }
-    ]
+    ],
+    "notification": {
+      "id": "ast-cookie-notif",
+      "text": "This site uses cookies to collect statistics and improve user experience. By continuing to use this site you are agreeing to our use of cookies.",
+      "action-text": "Accept"
+    }
   }
 }

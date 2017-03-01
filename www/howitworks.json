@@ -4,7 +4,8 @@
       "title": "AMPStart - How it works",
       "extensions": [
         "amp-sidebar",
-        "amp-analytics"
+        "amp-analytics",
+        "amp-user-notification"
       ],
       "css-path": "www/howitworks/page.css"
     },
@@ -59,6 +60,11 @@
       "copyright": {
         "text": "AMP start is a part of Accelarated Mobile Pages Project"
       }
+    },
+    "notification": {
+      "id": "ast-cookie-notif",
+      "text": "This site uses cookies to collect statistics and improve user experience. By continuing to use this site you are agreeing to our use of cookies.",
+      "action-text": "Accept"
     }
   }
 }
