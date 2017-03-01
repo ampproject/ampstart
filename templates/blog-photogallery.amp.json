@@ -65,13 +65,13 @@
       }
     },
     "fullpage-hero": {
-      "heading": "Most Beautiful Photos",
+      "heading": "The Year's Best Photos",
       "narrow-img": "../img/blog-photo-gallery/elephants_narrow.png",
       "wide-img": "../img/blog-photo-gallery/elephant_wide.jpg",
       "credit": {
-        "credit-prefix": "Taken by",
-        "author": {"text": "James Victore", "url": "#"},
-        "credit-suffix": "Posted 1 hour ago"
+        "credit-prefix": "",
+        "author": {"text": "J.T. Lee", "url": "#"},
+        "credit-suffix": "January 18th, 2017"
       },
       "readmore": {
         "text": "Read more",
@@ -83,10 +83,10 @@
         "width": "756",
         "height": "520",
         "url": "../img/blog-photo-gallery/gorilla_cropped.png",
-        "caption": "Description of the photograph. ",
+        "caption": "Description of the photograph.",
         "credit": {
           "credit-prefix": "Taken by ",
-          "author": {"text": "James Victore", "url": "#"}
+          "author": {"text": "D.F. Roy", "url": "#"}
         }
       }
     },
@@ -95,17 +95,17 @@
       "layout": "responsive",
       "width": "756",
       "height": "638",
-      "caption": "Marshmallow pudding chupa chups gummies cake chocolate bar cake jelly-o. Pie ice cream halvah.",
+      "caption": "Ut efficitur, nisl in egestas placerat, nisl elit accumsan ante, nec aliquam ligula massa a ipsum.",
       "images": [
         {
           "image-with-caption": {
             "width": "756",
             "height": "520",
             "url": "../img/blog-photo-gallery/flower_cropped.png",
-            "caption": "Bright red flower. ",
+            "caption": "Bright red flower.",
             "credit": {
               "credit-prefix": "Taken by ",
-              "author": {"text": "James Victore", "url": "#"}
+              "author": {"text": "Anna Q.", "url": "#"}
             }
           }
         },
@@ -114,10 +114,10 @@
             "width": "756",
             "height": "520",
             "url": "../img/blog-photo-gallery/flower_cropped.png",
-            "caption": "Bright red flower. ",
+            "caption": "Bright red flower.",
             "credit": {
               "credit-prefix": "Taken by ",
-              "author": {"text": "James Victore", "url": "#"}
+              "author": {"text": "L. Fischer", "url": "#"}
             }
           }
         },
@@ -126,10 +126,10 @@
             "width": "756",
             "height": "520",
             "url": "../img/blog-photo-gallery/flower_cropped.png",
-            "caption": "Bright red flower. ",
+            "caption": "Bright red flower.",
             "credit": {
               "credit-prefix": "Taken by ",
-              "author": {"text": "James Victore", "url": "#"}
+              "author": {"text": "Mali D.", "url": "#"}
             }
           }
         }
@@ -148,7 +148,7 @@
       },
       "article-heading": {
         "level": "3",
-        "text": "Article title here"
+        "text": "Sloths on the move"
       },
       "content-text": "Duis nisl sem, gravida sed sapien sed, ultrices varius sem. Aliquam venenatis aliquam lobortis. Nam et euismod eros. Nunc gravida egestas arcu, sed laoreet nunc rutrum ultrices. Nunc fermentum consequat laoreet.",
       "article-link": {"text": "Read more", "url": "#"}
