@@ -33,10 +33,10 @@
           "link": {"url": "/howitworks.html", "text": "How it works"}
         },
         {
-          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?"}
+          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?", "target": "_blank"}
         },
         {
-          "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub"}
+          "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub", "target": "_blank"}
         }
       ],
       "social-follow": {
