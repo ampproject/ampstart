@@ -20,9 +20,6 @@
       "sidebar-id": "header-sidebar",
       "nav": [
         {
-          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?"}
-        },
-        {
           "link": {"url": "/#templates", "text": "Templates"}
         },
         {
@@ -33,6 +30,9 @@
         },
         {
           "link": {"url": "/howitworks.html", "text": "How it works", "classes": "www-current-page"}
+        },
+        {
+          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?"}
         },
         {
           "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub"}
