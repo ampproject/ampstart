@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
+/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 @import 'normalize.css';
 
-/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 /* Basscss Modules */
 @import 'basscss-type-scale';
 @import 'basscss-typography';
