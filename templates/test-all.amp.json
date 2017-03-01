@@ -148,7 +148,7 @@
         {
           "textarea": {
             "rows": 5,
-            "placeholder": "Dont Write anything",
+            "placeholder": "This input is disabled",
             "id": "ip13a",
             "name": "name13",
             "disabled": "disabled"
