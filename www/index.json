@@ -8,7 +8,8 @@
         "amp-lightbox",
         "amp-iframe",
         "amp-selector",
-        "amp-analytics"
+        "amp-analytics",
+        "amp-user-notification"
       ],
       "css-path": "www/index/page.css"
     },
@@ -36,10 +37,10 @@
           "link": {"url": "/howitworks.html", "text": "How it works"}
         },
         {
-          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?"}
+          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?", "target": "_blank"}
         },
         {
-          "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub"}
+          "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub", "target": "_blank"}
         }
       ],
       "social-follow": {
@@ -112,6 +113,11 @@
           "download": "archive/blog-thescenic.zip"
         }
       }
-    ]
+    ],
+    "notification": {
+      "id": "ast-cookie-notif",
+      "text": "This site uses cookies to collect statistics and improve user experience. By continuing to use this site you are agreeing to our use of cookies.",
+      "action-text": "Accept"
+    }
   }
 }

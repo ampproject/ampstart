@@ -34,7 +34,7 @@ limitations under the License.
         <ul class="list-reset center m0 p0 flex justify-center nowrap">
           {{#nav}}
             {{#link}}
-              <li class="ampstart-nav-item {{classes}}"><a href="{{url}}" class="text-decoration-none block">{{text}}</a></li>
+              <li class="ampstart-nav-item {{classes}}"><a href="{{url}}" class="text-decoration-none block" {{#target}}target="{{.}}"{{/target}}>{{text}}</a></li>
             {{/link}}
             {{#dropdown}}
               <li class="ampstart-nav-item ampstart-nav-dropdown relative">
