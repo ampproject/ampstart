@@ -35,17 +35,23 @@
   --color-secondary: var(--color-black);
   --color-font-secondary: var(--color-white);
 
+  --color-font-default: var(--color-white);
+  --color-font-subtitle: var(--color-white);
   --color-font-accent: var(--color-white);
 
   --color-footer-background: inherit;
-  --color-font-footer: inherit;
+  --color-font-footer: currentColor;
 
+  --color-disabled: var(--color-grey);
   --color-border: var(--color-white);
 
   --color-font-default: var(--color-white);
 
   --color-navbar-primary: var(--color-black);
   --color-navbar-font-primary: var(--color-white);
+
+  --color-input-primary: var(--color-font-accent);
+  --color-input-font-secondary: var(--color-font-accent);
 
   --font-family: Lora, serif;
 }
