@@ -2,6 +2,7 @@
   "thescenic": {
     "head-tag": {
       "title": "The Photo Blog",
+      "canonical-path": "templates/thescenic.amp",
       "extensions": [
         "amp-carousel",
         "amp-sidebar",

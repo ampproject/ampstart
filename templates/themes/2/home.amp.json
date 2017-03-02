@@ -2,6 +2,7 @@
   "home": {
     "head-tag": {
       "title": "Beck & Galo",
+      "canonical-path": "templates/themes/2/home.amp",
       "extensions": [
         "amp-carousel",
         "amp-image-lightbox",

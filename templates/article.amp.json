@@ -2,6 +2,7 @@
   "article": {
     "head-tag": {
       "title": "The Photo Blog",
+      "canonical-path": "templates/article.amp",
       "extensions": [
         "amp-carousel",
         "amp-sidebar",

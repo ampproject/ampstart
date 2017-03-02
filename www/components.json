@@ -2,6 +2,7 @@
   "www-components": {
     "head-tag": {
       "title": "AMPStart - UI Components",
+      "canonical-path": "components",
       "extensions": [
         "amp-carousel",
         "amp-sidebar",

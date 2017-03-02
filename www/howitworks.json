@@ -2,6 +2,7 @@
   "www-howitworks": {
     "head-tag": {
       "title": "AMPStart - How it works",
+      "canonical-path": "howitworks",
       "extensions": [
         "amp-sidebar",
         "amp-analytics"
