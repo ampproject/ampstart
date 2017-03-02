@@ -56,16 +56,16 @@ limitations under the License.
         {{#template-preview}}
         <li class="relative clearfix mb2">
           {{#img}}
-          <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="{{layout}}" class="ampstart-card xs-col-12 sm-col-5 md-col-4 lg-col-3 mx4 {{#right-aligned}}col-right{{/right-aligned}}{{^right-aligned}}left col {{/right-aligned}}"></amp-img>
+          <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="{{layout}}" class="ampstart-card xs-col-12 sm-col-5 md-col-4 lg-col-3 mx4 {{#right-aligned}}col-right{{/right-aligned}}{{^right-aligned}}left col {{/right-aligned}}"></amp-img>
           {{/img}}
           <div class="px4 mt4">
           <h3 class="caps py4">{{title}}</h3>
           <p class="pb4">{{desc}}</p>
           <div class="pb2 center">
             <button class="ampstart-btn caps xs-hide mr2 mb2" on="tap:{{lightbox-id}}">View Template</button>
-            <button class="ampstart-btn caps xs-hide mr2 mb2"><a href="{{download}}" class="text-decoration-none block" target="_blank">Download Code</a></button>
+            <button class="ampstart-btn caps xs-hide mr2 mb2"><a href="{{{download}}}" class="text-decoration-none block" target="_blank">Download Code</a></button>
 
-            <button class="ampstart-btn caps sm-hide md-hide lg-hide"><a href="{{src}}" target="_blank" class="block text-decoration-none">View Template</a></button>
+            <button class="ampstart-btn caps sm-hide md-hide lg-hide"><a href="{{{src}}}" target="_blank" class="block text-decoration-none">View Template</a></button>
           </div>
           </div>
         </li>

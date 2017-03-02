@@ -25,7 +25,7 @@ limitations under the License.
     <ul class="list-reset m0 p0 caps h5">
       {{#nav}}
         {{#link}}
-          <li class="ampstart-nav-item"><a href="{{url}}">{{text}}</a></li>
+          <li class="ampstart-nav-item"><a href="{{{url}}}">{{text}}</a></li>
         {{/link}}
         {{#dropdown}}
           <li class="ampstart-nav-item ampstart-nav-dropdown relative">
@@ -46,7 +46,7 @@ limitations under the License.
   {{#faq}}
     <ul class="ampstart-sidebar-faq list-reset m0">
       {{#links}}
-        <li class="ampstart-faq-item"><a href="{{link.url}}" class="text-decoration-none">{{link.text}}</a></li>
+        <li class="ampstart-faq-item"><a href="{{{link.url}}}" class="text-decoration-none">{{link.text}}</a></li>
       {{/links}}
     </ul>
   {{/faq}}
