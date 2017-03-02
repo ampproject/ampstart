@@ -24,14 +24,14 @@ limitations under the License.
 
   {{#fullpage-hero}}
     <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-      <amp-img width="404" height="720" layout="responsive" src="{{narrow-img}}" media="(max-width: 415px)"></amp-img>
-      <amp-img height="720" layout="fixed-height" src="{{wide-img}}" media="(min-width: 416px)"></amp-img>
+      <amp-img width="404" height="720" layout="responsive" src="{{{narrow-img}}}" media="(max-width: 415px)"></amp-img>
+      <amp-img height="720" layout="fixed-height" src="{{{wide-img}}}" media="(min-width: 416px)"></amp-img>
       <header class="absolute top-0 right-0 left-0 center">
         {{{heading-html}}}
       </header>
       {{#cta}}
         <div class="absolute right-0 bottom-0 left-0 center">
-          <a class="h5 px4 py3 m3 inline-block text-decoration-none border" href="{{url}}">{{text}}</a>
+          <a class="h5 px4 py3 m3 inline-block text-decoration-none border" href="{{{url}}}">{{text}}</a>
         </div>
       {{/cta}}
     </figure>
@@ -58,7 +58,7 @@ limitations under the License.
             <amp-image-lightbox id="lightbox" layout="nodisplay"></amp-image-lightbox>
             <amp-carousel class="my2 mxn3" height="{{height}}" layout="fixed-height" type="carousel">
               {{#images}}
-                <amp-img src="{{url}}" width="{{width}}" height="{{height}}" alt="{{alt}}" on="tap:lightbox" role="button" tabindex="0"></amp-img>
+                <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" alt="{{alt}}" on="tap:lightbox" role="button" tabindex="0"></amp-img>
               {{/images}}
             </amp-carousel>
           {{/carousel}}

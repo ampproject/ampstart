@@ -19,10 +19,10 @@ limitations under the License.
   <!-- Start byline -->
   <address class="ampstart-byline clearfix mb4 px3 h5">
     {{#image}}
-    <amp-img class="ampstart-byline-photo mr3 left" src="{{.}}" layout="fixed" height="60" width="60"></amp-img>
+    <amp-img class="ampstart-byline-photo mr3 left" src="{{{.}}}" layout="fixed" height="60" width="60"></amp-img>
     {{/image}}
     {{#author}}
-    <a class="ampstart-byline-author block text-decoration-none my1" href="{{url}}" role="author">{{text}}</a>
+    <a class="ampstart-byline-author block text-decoration-none my1" href="{{{url}}}" role="author">{{text}}</a>
     {{/author}}
     {{#time}}
     <time class="ampstart-byline-pubdate block bold my1" datetime="{{value}}">{{text}}</time>
