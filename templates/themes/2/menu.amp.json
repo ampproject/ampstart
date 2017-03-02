@@ -13,6 +13,10 @@
     "navbar": {
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
+      "logo": {
+        "href": "home.amp.html",
+        "name": "Beck & Galo"
+      },
       "nav": [
         {
           "link": {"url": "home.amp.html", "text": "Home"}
