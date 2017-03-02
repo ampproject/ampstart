@@ -51,9 +51,16 @@
           "id": "story",
           "heading": "Our Story",
           "paragraphs": [
-            "Bacon ipsum dolor amet cupidatat nostrud id laboris ad fatback in laborum sausage pork pork loin. Capicola ut cupidatat, eu tempor pork loin duis short loin magna reprehenderit ea veniam flank. Voluptate capicola minim sed, chuck ground round incididunt porchetta. Ground round beef strip steak pork chop, eu burgdoggen anim duis shoulder pastrami pork pig.",
-            "Venison magna ad nisi. Tempor picanha brisket commodo sausage turducken magna mollit. Landjaeger ham hock swine, pig ipsum sausage ribeye drumstick laborum culpa chicken velit id tenderloin esse. Cupim dolor commodo officia beef meatball. Reprehenderit ad ut sint spare ribs magna, culpa velit. Picanha do corned beef cupidatat velit.",
-            "Pork belly magna nulla, excepteur consequat burgdoggen quis labore beef ribs pork loin. Jerky duis spare ribs sint nostrud filet mignon sunt, ham nisi et. Ut pig aute, kevin et pancetta ball tip dolor landjaeger ribeye anim turkey. Pastrami drumstick qui bresaola ham, aute fatback commodo veniam tempor t-bone velit frankfurter. Fugiat bresaola id, bacon pork chop sausage mollit in ground round. Aliquip aliqua laborum shankle pork chop in cupim."
+            {
+              "dropcap": true,
+              "text": "Bacon ipsum dolor amet cupidatat nostrud id laboris ad fatback in laborum sausage pork pork loin. Capicola ut cupidatat, eu tempor pork loin duis short loin magna reprehenderit ea veniam flank. Voluptate capicola minim sed, chuck ground round incididunt porchetta. Ground round beef strip steak pork chop, eu burgdoggen anim duis shoulder pastrami pork pig."
+            },
+            {
+              "text": "Venison magna ad nisi. Tempor picanha brisket commodo sausage turducken magna mollit. Landjaeger ham hock swine, pig ipsum sausage ribeye drumstick laborum culpa chicken velit id tenderloin esse. Cupim dolor commodo officia beef meatball. Reprehenderit ad ut sint spare ribs magna, culpa velit. Picanha do corned beef cupidatat velit."
+            },
+            {
+              "text": "Pork belly magna nulla, excepteur consequat burgdoggen quis labore beef ribs pork loin. Jerky duis spare ribs sint nostrud filet mignon sunt, ham nisi et. Ut pig aute, kevin et pancetta ball tip dolor landjaeger ribeye anim turkey. Pastrami drumstick qui bresaola ham, aute fatback commodo veniam tempor t-bone velit frankfurter. Fugiat bresaola id, bacon pork chop sausage mollit in ground round. Aliquip aliqua laborum shankle pork chop in cupim."
+            }
           ]
         },
         {

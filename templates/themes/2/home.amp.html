@@ -42,10 +42,10 @@ limitations under the License.
       <article class="px3">
         {{#sections}}
           {{#heading}}
-            <h2 id="{{id}}" class="my4">{{heading}}</h2>
+            <h2 id="{{id}}" class="my4 theme2-anchored">{{heading}}</h2>
           {{/heading}}
           {{#paragraphs}}
-            <p class="mb1">{{.}}</p>
+            <p class="mb1{{#dropcap}} ampstart-dropcap{{/dropcap}}">{{text}}</p>
           {{/paragraphs}}
           {{#locations}}
             <div class="col col-12 sm-col-6 mb4">

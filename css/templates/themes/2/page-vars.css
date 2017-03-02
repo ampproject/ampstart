@@ -15,6 +15,18 @@
  */
 
 :root {
+  --h1: 2.25rem;  /*36px*/
+  --h2: 1.75rem;  /*28px*/
+  --h3: 1.25rem;  /*20px*/
+  --h4: 1rem;  /*16px*/
+
+  --line-height-3: 1.75;  /*28px/16px*/
+  --line-height-4: 1.6;  /*32px/20px*/
+  --line-height-5: 1.71429;  /*48px/28px*/
+  --line-height-6: 1.33333;  /*48px/36px*/
+
+  --navbar-height: 3.5rem;
+
   --color-body-background: #1d1d1d;
 
   --color-primary: var(--color-black);
