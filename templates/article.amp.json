@@ -66,11 +66,11 @@
       }
     },
     "fullpage-hero": {
-      "heading": "The Year's Best Photos",
+      "heading": "The Year's Best Animal Photos",
       "narrow-img": "../img/article/elephants_narrow.png",
       "wide-img": "../img/article/elephants_wide.jpg",
       "credit": {
-        "credit-prefix": "",
+        "credit-prefix": "By",
         "author": {"text": "J.T. Lee", "url": "#"},
         "credit-suffix": "January 18th, 2017"
       },
