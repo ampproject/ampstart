@@ -78,6 +78,7 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   white-space: pre-line;
   background: var(--color-highlight-background);
   overflow-y: auto;
+  margin: 0;
 }
 
 .www-example-code,
@@ -101,5 +102,16 @@ body .www-component-anchors .www-component-anchor[option][selected] {
 @media (--breakpoint-sm-md) {
   .www-components {
     margin-right: var(--space-2);
+  }
+}
+
+/* Remove the spacing around content when the width is less than
+ * --min-body-width (315px) + space on left (24px) + space on right (24px).
+ */
+@media (max-width: 363px) {
+  .www-component-iframe-container > amp-iframe {
+    transform: scale(0.792);
+    transform-origin: 0 0;
+    width: 343px;
   }
 }
