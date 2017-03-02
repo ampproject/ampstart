@@ -57,6 +57,12 @@
           {"wordpress": "https://amphtml.wordpress.com"}
         ]
       },
+      "faq-links": {
+        "links": [
+          {"text": "Privacy", "url": "https://www.google.com/intl/en/policies/privacy/"},
+          {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE"}
+        ]
+      },
       "copyright": {
         "text": "AMP start is a part of Accelarated Mobile Pages Project"
       }
