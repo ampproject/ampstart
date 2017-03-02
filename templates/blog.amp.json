@@ -9,7 +9,7 @@
         "amp-form",
         "amp-instagram"
       ],
-      "css-path": "templates/blog/recipe/page.css"
+      "css-path": "templates/blog/page.css"
     },
     "navbar": {
       "logo": {

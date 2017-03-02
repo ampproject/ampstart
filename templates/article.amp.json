@@ -10,7 +10,7 @@
         "amp-twitter",
         "amp-social-share"
       ],
-      "css-path": "templates/blog/photogallery/page.css"
+      "css-path": "templates/article/page.css"
     },
     "navbar": {
       "name": "Scenic Times",
