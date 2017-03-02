@@ -2,6 +2,7 @@
   "test-all-amp": {
     "head-tag": {
       "title": "Test Page",
+      "canonical-path": "templates/test-all.amp",
       "extensions": [
         "amp-accordion",
         "amp-form"

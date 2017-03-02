@@ -2,6 +2,7 @@
   "menu": {
     "head-tag": {
       "title": "Beck & Galo – Menu",
+      "canonical-path": "templates/themes/2/menu.amp",
       "extensions": [
         "amp-sidebar"
       ],

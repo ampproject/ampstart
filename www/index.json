@@ -2,6 +2,7 @@
   "www-index": {
     "head-tag": {
       "title": "AMPStart",
+      "canonical-path": "",
       "extensions": [
         "amp-carousel",
         "amp-sidebar",

@@ -2,6 +2,7 @@
   "www-getstarted": {
     "head-tag": {
       "title": "AMPStart - Get Started",
+      "canonical-path": "getstarted",
       "extensions": [
         "amp-carousel",
         "amp-sidebar",

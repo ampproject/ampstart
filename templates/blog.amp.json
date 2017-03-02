@@ -2,6 +2,7 @@
   "blog": {
     "head-tag": {
       "title": "The Recipe Blog",
+      "canonical-path": "templates/blog.amp",
       "extensions": [
         "amp-carousel",
         "amp-sidebar",
