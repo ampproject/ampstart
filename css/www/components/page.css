@@ -78,6 +78,7 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   white-space: pre-line;
   background: var(--color-highlight-background);
   overflow-y: auto;
+  margin: 0;
 }
 
 .www-example-code,

@@ -72,12 +72,14 @@ limitations under the License.
             </div>
             {{/required-scripts}}
             {{#code-file}}
-            <div class="www-example-code mb4 py2">
+            <div class="www-example-code mb4">
               <amp-accordion disable-session-states>
                 <section>
-                  <h3 class="caps h4 border-none">HTML</h3>
+                  <h3 class="caps h4 border-none py2">HTML</h3>
                   <!-- HTML markup used to render the element/component -->
+                  <div class="pb2">
                   <include src="dist/hl-partials/{{.}}.html"></include>
+                  </div>
                 </section>
               </amp-accordion>
             </div>
@@ -90,7 +92,6 @@ limitations under the License.
   </amp-selector>
   {{> ../components/footer/footer.snip.html}}
   {{> ../utils/www-analytics.snip.html}}
-  {{> ../components/user-notification/user-notification.snip.html}}
 </body>
 </html>
 {{/www-components}}
