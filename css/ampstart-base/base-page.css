@@ -31,6 +31,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* This is needed to override from templates*/
+body[style] {
+  font-family: var(--font-family);
+}
+
+
 main {
   max-width: var(--content-max-width);
   margin: 0 auto;
