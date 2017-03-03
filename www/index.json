@@ -11,7 +11,10 @@
         "amp-selector",
         "amp-analytics"
       ],
-      "css-path": "www/index/page.css"
+      "css-path": "www/index/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
+      ]
     },
     "navbar": {
       "logo": {

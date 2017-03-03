@@ -8,7 +8,10 @@
         "amp-sidebar",
         "amp-analytics"
       ],
-      "css-path": "www/howitworks/page.css"
+      "css-path": "www/howitworks/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
+      ]
     },
     "navbar": {
       "logo": {

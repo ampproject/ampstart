@@ -21,6 +21,10 @@
 @import '../../components/user-notification/user-notification';
 @import 'page-vars';
 
+h1,h2,h3,h4,h5,h6 {
+  font-family: Inconsolata;
+}
+
 .ampstart-headerbar-nav .ampstart-nav-item {
   border-bottom: solid 4px transparent;
 }

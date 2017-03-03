@@ -48,7 +48,11 @@
   --color-input-primary: var(--color-font-accent);
   --color-input-font-secondary: var(--color-font-accent);
 
-  --font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  /* Never override this */
+  --base-font-family: -apple-system, BlinkMacSystemFont,"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+  /* Override this */
+  --font-family: '';
 
   --zindex-max: 999;
 
