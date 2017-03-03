@@ -55,7 +55,7 @@
       ]
     },
     "fullpage-hero": {
-      "heading": "Most Beautiful Hikes in Alaska",
+      "heading-html": "Most Beautiful Hikes in Alaska",
       "narrow-img": "../img/thescenic/cropped_hero.jpg",
       "wide-img": "../img/thescenic/hero.jpg",
       "readmore": {

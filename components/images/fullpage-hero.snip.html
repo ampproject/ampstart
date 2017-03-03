@@ -25,7 +25,7 @@ limitations under the License.
       <header class="p3">
         <h1 class="ampstart-fullpage-hero-heading mb3">
           <span class="ampstart-fullpage-hero-heading-text">
-            {{{heading}}}
+            {{{heading-html}}}
           </span>
         </h1>
 
@@ -35,11 +35,16 @@ limitations under the License.
           </span>
         {{/credit}}
     </header>
-      <footer class="absolute left-0 right-0 bottom-0">
-        {{#readmore}}
-          <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#{{content-id}}">{{text}}</a>
-        {{/readmore}}
-      </footer>
+    <footer class="absolute left-0 right-0 bottom-0">
+      {{#readmore}}
+      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#{{content-id}}">{{text}}</a>
+      {{/readmore}}
+      {{#cta}}
+      <button class="ampstart-btn ampstart-fullpage-hero-cta h5 m3">
+        <a class="block text-decoration-none px1 py2" href="{{{url}}}">{{text}}</a>
+      </button>
+      {{/cta}}
+    </footer>
     </figcaption>
   </figure>
   <!-- End Fullpage Hero -->

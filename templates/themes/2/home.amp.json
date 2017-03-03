@@ -38,7 +38,7 @@
       }
     },
     "fullpage-hero": {
-      "heading-html": "<h1 class=\"h6 caps m4\">Welcome to <span class=\"h1 block bold caps my1\">Beck & Galo</span> Modern American Cuisine</h1>",
+      "heading-html": "<span class=\"h6 block caps\">Welcome to</span><span class=\"h1 block bold caps my1\">Beck & Galo</span><span class=\"h6 block caps\">Modern American Cuisine</span>",
       "narrow-img": "../../../img/themes/2/hero.jpg",
       "wide-img": "../../../img/themes/2/hero.jpg",
       "cta": {

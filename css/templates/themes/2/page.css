@@ -56,6 +56,18 @@ h6 {
   letter-spacing: 0;
 }
 
+.ampstart-fullpage-hero-heading-text {
+  display: block;
+  padding: var(--space-1);
+  line-height: 1rem;
+}
+
+.ampstart-fullpage-hero-heading-text,
+.ampstart-image-fullpage-hero .ampstart-image-credit {
+  box-decoration-break: none;
+  background: none;
+}
+
 .theme2-divider::after {
   border-bottom: 1px solid var(--color-border);
   content: '';
