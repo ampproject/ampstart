@@ -21,7 +21,6 @@
 }
 
 .ampstart-dropcap:first-letter {
-  border-top: var(--border-width) solid var(--color-primary);
   color: var(--color-font-secondary);
   font-size: var(--h1);
   font-weight: var(--bold-font-weight);
