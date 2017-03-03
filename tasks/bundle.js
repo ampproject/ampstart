@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 The AMPStart Authors. All Rights Reserved.
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -127,7 +127,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 AMP Start | https://github.com/ampproject/ampstart/blob/master/LICENSE
 ----------------------------------------------------------------------------
-Copyright 2017 The AMPStart Authors. All Rights Reserved.
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

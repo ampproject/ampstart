@@ -2,21 +2,21 @@
   "www-render": {
     "buttons": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Buttons",
+        "title": "AMP Start - UI Components - Buttons",
         "extensions": [],
         "css-path": "www/render/page.css"
       }
     },
     "lists": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Lists",
+        "title": "AMP Start - UI Components - Lists",
         "extensions": [],
         "css-path": "www/render/page.css"
       }
     },
     "inputs": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Inputs",
+        "title": "AMP Start - UI Components - Inputs",
         "extensions": [
           "amp-form"
         ],
@@ -197,14 +197,14 @@
     },
     "typography": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Buttons",
+        "title": "AMP Start - UI Components - Buttons",
         "extensions": [],
         "css-path": "www/render/page.css"
       }
     },
     "media": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Buttons",
+        "title": "AMP Start - UI Components - Buttons",
         "extensions": [],
         "css-path": "www/render/page.css"
       },
@@ -301,7 +301,7 @@
     },
     "media-carousel": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Buttons",
+        "title": "AMP Start - UI Components - Buttons",
         "extensions": ["amp-carousel"],
         "css-path": "www/render/page.css"
       },
@@ -389,7 +389,7 @@
     },
     "navigation": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Buttons",
+        "title": "AMP Start - UI Components - Buttons",
         "extensions": [
           "amp-accordion",
           "amp-sidebar"
@@ -542,7 +542,7 @@
     },
     "other": {
       "head-tag": {
-        "title": "AMPStart - UI Components - Buttons",
+        "title": "AMP Start - UI Components - Buttons",
         "extensions": [
           "amp-social-share"
         ],
