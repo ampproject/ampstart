@@ -44,6 +44,10 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   background: var(--header-gradient);
 }
 
+.www-header > * {
+  padding-left: var(--space-7);
+  padding-right: var(--space-7);
+}
 .www-component-desc > * {
   padding-left: var(--space-6);
   padding-right: var(--space-6);
@@ -97,11 +101,25 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   .www-components {
     margin-right: var(--space-2);
   }
+
+  .www-header > *{
+    padding-left: var(--space-2);
+    padding-right: var(--space-2);
+  }
 }
 
 @media (--breakpoint-sm-md) {
   .www-components {
     margin-right: var(--space-2);
+  }
+
+  .www-header {
+    margin-left: calc(-1 * var(--space-1));
+  }
+
+  .www-header > *{
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

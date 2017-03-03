@@ -102,7 +102,7 @@
           "submit": {
             "id": "submit",
             "name": "submit",
-            "value": "Submit",
+            "value": "SUBMIT",
             "classes": "ampstart-btn-secondary"
           }
         }
