@@ -66,7 +66,7 @@
       }
     },
     "fullpage-hero": {
-      "heading": "The Year's Best Animal Photos",
+      "heading-html": "The Year's Best Animal Photos",
       "narrow-img": "../img/article/elephants_narrow.png",
       "wide-img": "../img/article/elephants_wide.jpg",
       "credit": {

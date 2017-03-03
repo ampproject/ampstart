@@ -37,6 +37,10 @@
   line-height: var(--space-6);
 }
 
+.ampstart-fullpage-hero-cta {
+  background: transparent;
+}
+
 .ampstart-readmore {
   background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
   color: var(--color-font-primary);

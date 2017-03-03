@@ -22,20 +22,9 @@ limitations under the License.
 <body>
   {{> ../components/navbar/navbar.snip.html}}
 
-  {{#fullpage-hero}}
-    <figure class="ampstart-image-fullpage-hero m0 relative mb4">
-      <amp-img width="404" height="720" layout="responsive" src="{{{narrow-img}}}" media="(max-width: 415px)"></amp-img>
-      <amp-img height="720" layout="fixed-height" src="{{{wide-img}}}" media="(min-width: 416px)"></amp-img>
-      <header class="absolute top-0 right-0 left-0 center">
-        {{{heading-html}}}
-      </header>
-      {{#cta}}
-        <div class="absolute right-0 bottom-0 left-0 center">
-          <a class="h5 px4 py3 m3 inline-block text-decoration-none border" href="{{{url}}}">{{text}}</a>
-        </div>
-      {{/cta}}
-    </figure>
-  {{/fullpage-hero}}
+  <div class="center">
+  {{> ../components/images/fullpage-hero.snip.html}}
+  </div>
 
   <main id="content" role="main">
     {{#main}}
