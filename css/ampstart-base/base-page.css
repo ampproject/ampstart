@@ -24,18 +24,12 @@ body {
   background: var(--color-body-background);
   color: var(--color-font-default);
   line-height: var(--line-height-3);
-  font-family: var(--base-font-family);
+  font-family: var(--font-family);
   min-width: var(--body-min-width);
   overflow-x: hidden;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
 }
-
-/* This is needed to override from templates*/
-body[style] {
-  font-family: var(--font-family);
-}
-
 
 main {
   max-width: var(--content-max-width);
