@@ -21,16 +21,21 @@
 @import '../../components/user-notification/user-notification';
 @import 'page-vars';
 
-h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6,
+.www-header {
   font-family: Inconsolata;
 }
 
-.ampstart-headerbar-nav .ampstart-nav-item {
-  border-bottom: solid 4px transparent;
+.ampstart-headerbar-nav .ampstart-nav-item.www-current-page {
+  color: #066573;
 }
 
-.ampstart-headerbar-nav .ampstart-nav-item.www-current-page {
-  border-bottom: solid 4px var(--color-secondary);
+.ampstart-headerbar-nav .ampstart-nav-item.www-current-page::after,
+.www-component-anchor[selected]::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: var(--header-gradient);
 }
 
 .www-header {
