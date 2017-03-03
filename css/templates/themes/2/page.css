@@ -89,7 +89,6 @@ h6 {
 }
 
 .ampstart-dropcap:first-letter {
-  border-top: 0;
   color: inherit;
   float: left;
   font-size: 3.125rem;  /* 50/16 */
