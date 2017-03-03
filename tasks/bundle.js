@@ -55,7 +55,7 @@ function collectResources(filepath, html, done) {
         `.archive/${filename}/templates/${path.basename(filepath)}`);
     if (css) {
       fs.mkdirSync(`.archive/${filename}/css`);
-      fs.writeFileSync(`.archive/${filename}/css/${filename}.amp.css`,
+      fs.writeFileSync(`.archive/${filename}/css/${filename}.max.css`,
           cssbeautify(css, {indent: '  '}));
     }
     fs.writeFileSync(`.archive/${filename}/LICENSE`, licenses);
@@ -88,6 +88,9 @@ function bundle() {
 gulp.task('bundle', bundle);
 
 const licenses = `
+Basscss | https://github.com/basscss/basscss/blob/master/LICENSE.md
+----------------------------------------------------------------------------
+
 # The MIT License (MIT)
 
 Copyright © Nicolas Gallagher and Jonathan Neal
@@ -110,7 +113,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-
+Normalize | https://github.com/necolas/normalize.css/blob/master/LICENSE.md
+----------------------------------------------------------------------------
 # The MIT License (MIT)
 Copyright (c) 2013 – 2016 Brent Jackson
 
@@ -121,6 +125,8 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+AMP Start | https://github.com/ampproject/ampstart/blob/master/LICENSE
+----------------------------------------------------------------------------
 Copyright 2017 The AMPStart Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
