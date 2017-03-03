@@ -102,8 +102,8 @@
           "image-with-caption": {
             "width": "756",
             "height": "520",
-            "url": "../img/article/flower.png",
-            "caption": "Bright red flower.",
+            "url": "../img/article/zebras.jpg",
+            "caption": "Zebras grazing.",
             "credit": {
               "credit-prefix": "Taken by ",
               "author": {"text": "Anna Q.", "url": "#"}
@@ -114,8 +114,8 @@
           "image-with-caption": {
             "width": "756",
             "height": "520",
-            "url": "../img/article/flower.png",
-            "caption": "Bright red flower.",
+            "url": "../img/article/sheep.jpg",
+            "caption": "Sheep in a field.",
             "credit": {
               "credit-prefix": "Taken by ",
               "author": {"text": "L. Fischer", "url": "#"}
@@ -126,8 +126,8 @@
           "image-with-caption": {
             "width": "756",
             "height": "520",
-            "url": "../img/article/flower.png",
-            "caption": "Bright red flower.",
+            "url": "../img/article/camels.jpg",
+            "caption": "Camels on a beach.",
             "credit": {
               "credit-prefix": "Taken by ",
               "author": {"text": "Mali D.", "url": "#"}
