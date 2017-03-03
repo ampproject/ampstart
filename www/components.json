@@ -164,7 +164,7 @@
               "iframe": {
                 "url": "render/related-article.amp.html",
                 "width": false,
-                "height": "730",
+                "height": "749",
                 "layout": "fixed-height"
               }
             },
@@ -269,7 +269,7 @@
               "iframe": {
                 "url": "render/image-with-caption.amp.html",
                 "width": false,
-                "height": "591",
+                "height": "807",
                 "layout": "fixed-height"
               }
             },
