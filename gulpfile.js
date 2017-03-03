@@ -88,6 +88,23 @@ gulp.task('img', function() {
   return gulp.src(config.src.img).pipe(gulp.dest(config.dest.img));
 });
 
+function inlineCheckScript(node) {
+  return false;
+}
+
+function inlineCheckStyle(node) {
+  return node.tag === 'link' && node.attrs && node.attrs.rel === 'stylesheet' &&
+      'amp-custom' in node.attrs && node.attrs.href;
+}
+
+const inlineTransformation = {
+  script: {
+    check: inlineCheckScript,
+  },
+  style: {
+    check: inlineCheckStyle,
+  }
+}
 
 gulp.task('www', function() {
   const plugins = [
@@ -96,9 +113,7 @@ gulp.task('www', function() {
     }),
     require('posthtml-inline-assets')({
       from: config.dest.www_pages,
-      inline: {
-        script: { check: function() { return false; } },
-      }
+      inline: inlineTransformation,
     }),
   ];
   const options = {};
@@ -125,9 +140,7 @@ gulp.task('posthtml', 'build kickstart files', function() {
   const plugins = [
     require('posthtml-inline-assets')({
       from: config.dest.templates,
-      inline: {
-        script: { check: function() { return false; } },
-      }
+      inline: inlineTransformation,
     }),
     require('posthtml-include')({ encoding: 'utf-8' }),
   ];
