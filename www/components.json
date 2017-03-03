@@ -12,7 +12,10 @@
         "amp-analytics",
         "amp-accordion"
       ],
-      "css-path": "www/components/page.css"
+      "css-path": "www/components/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
+      ]
     },
     "navbar": {
       "logo": {

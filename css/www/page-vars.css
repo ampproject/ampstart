@@ -36,4 +36,6 @@
   --color-highlight-background: #f9f7f7;
 
   --header-gradient: linear-gradient(to right, #280e75 0%, #066573 100%);
+
+  --font-family: Montserrat, serif;
 }
