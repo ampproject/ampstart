@@ -39,14 +39,15 @@
 .ampstart-mobile-frame,
 .ampstart-tablet-frame,
 .ampstart-desktop-frame {
-  visibility: hidden;
+  opacity: 0;
 }
 
 
 [option="mobile"][selected] + .ampstart-mobile-frame,
 [option="tablet"][selected] + .ampstart-tablet-frame,
 [option="desktop"][selected] + .ampstart-desktop-frame {
-  visibility: visible;
+  opacity: 1;
+  z-index: var(--zindex-max);
 }
 
 .ampstart-mobile-frame amp-iframe {
@@ -167,12 +168,13 @@
   .ampstart-mobile-frame,
   [option="mobile"][selected] + .ampstart-mobile-frame,
   [option="tablet"][selected] + .ampstart-tablet-frame {
-    visibility: hidden;
+    opacity: 0;
   }
 
   .ampstart-desktop-frame,
   [option="desktop"][selected] + .ampstart-desktop-frame {
-    visibility: visible;
+    opacity: 1;
+    z-index: var(--zindex-max);
   }
 
   .ampstart-device-preview [option] {
