@@ -22,12 +22,17 @@ limitations under the License.
   <title>{{title}}</title>
   <link rel="canonical" href="https://www.ampstart.com/{{#canonical-path}}{{{canonical-path}}}{{/canonical-path}}">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+  {{#favicon}}
+  <link rel="shortcut icon" href="{{href}}">
+  {{/favicon}}
+
   {{> amp-boilerplate-css.snip.html}}
 
   {{> amp-extension-script.snip.html}}
 
   {{#font-stylesheets}}
-    <link href="{{{.}}}" rel="stylesheet">
+  <link href="{{{.}}}" rel="stylesheet">
   {{/font-stylesheets}}
 
   <link href="dist/css/{{{css-path}}}" rel="stylesheet" amp-custom>
