@@ -55,7 +55,7 @@ function collectResources(filepath, html, done) {
         `.archive/${filename}/templates/${path.basename(filepath)}`);
     if (css) {
       fs.mkdirSync(`.archive/${filename}/css`);
-      fs.writeFileSync(`.archive/${filename}/css/${filename}.amp.css`,
+      fs.writeFileSync(`.archive/${filename}/css/${filename}.max.css`,
           cssbeautify(css, {indent: '  '}));
     }
     fs.writeFileSync(`.archive/${filename}/LICENSE`, licenses);
