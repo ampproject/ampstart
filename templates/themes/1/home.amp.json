@@ -232,8 +232,7 @@
         "category": "Paris",
         "comments": "28 comments",
         "url": "#",
-        "narrow-img": "../../../img/themes/1/tower.jpg",
-        "wide-img": "../../../img/themes/1/tower.jpg"
+        "image": "../../../img/themes/1/tower.jpg"
       }
     ],
     "footer": {

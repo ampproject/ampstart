@@ -55,6 +55,33 @@ h4,
   font-size: 1.5rem;
 }
 
+.ampstart-nav-dropdown .ampstart-dropdown-item,
+.ampstart-nav-dropdown .ampstart-dropdown>section>header,
+.ampstart-sidebar-faq {
+  background: transparent;
+  color: var(--color-white);
+  font-family: var(--font-secondary);
+}
+
+.ampstart-nav-dropdown amp-accordion ul {
+  background: transparent;
+  margin-left: 1rem;
+}
+
+.ampstart-sidebar .ampstart-dropdown-item,
+.ampstart-sidebar .ampstart-dropdown header,
+.ampstart-sidebar .ampstart-faq-item {
+  margin-bottom: 1.5rem;
+}
+
+.ampstart-dropdown>section>header:after {
+  color: var(--color-white);
+}
+
+.ampstart-sidebar .ampstart-icon {
+  fill: var(--color-white);
+}
+
 .ampstart-image-fullpage-hero figcaption,
 .ampstart-article-summary header {
   background: var(--color-primary);
@@ -79,7 +106,7 @@ h4,
   background: none;
   display: block;
   margin: 0;
-  padding: var(--space-4);
+  padding: var(--space-2) 0 var(--space-4);
 }
 
 .ampstart-readmore::after {
