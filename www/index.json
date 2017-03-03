@@ -14,7 +14,10 @@
       "css-path": "www/index/page.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
-      ]
+      ],
+      "favicon": {
+        "href": "../img/www/amp_favicon.png"
+      }
     },
     "navbar": {
       "logo": {
