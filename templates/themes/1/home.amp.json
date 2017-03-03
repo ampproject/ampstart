@@ -84,9 +84,27 @@
         "content-id": "content"
       }
     },
+    "article-summary": {
+      "heading": "Quaint Enamel Pin Fingerstache, Kogi Roof Party Offal Mug",
+      "narrow-img": "../../../img/themes/1/night.jpg",
+      "wide-img": "../../../img/themes/1/night.jpg",
+      "credit": {
+        "credit-prefix": "By",
+        "author": {"text": "Jamie Smith", "url": "#"},
+        "credit-suffix": "Posted today"
+      },
+      "readmore": {
+        "text": "",
+        "content-id": "content"
+      },
+      "text": "My snippet root."
+    },
     "article": {
+      "article-summary": {
+        "text": "My snippet article."
+      },
       "category": "Photo Gallery",
-      "subtitle": "Vivamus viverra augue libero, vitae dapibus lectus accumsan eget. Pellentesque eget ipsum purus. Maecenas leo odio, ornare nec ex id, suscipit porta ipsum. Ut fringilla semper cursus.",
+      "subtitle": "Subtitle Vivamus viverra augue libero, vitae dapibus lectus accumsan eget. Pellentesque eget ipsum purus. Maecenas leo odio, ornare nec ex id, suscipit porta ipsum. Ut fringilla semper cursus.",
       "blocks": [
         {
           "paragraphs": [
@@ -208,57 +226,16 @@
         }
       ]
     },
-    "related-article": {
-      "section-heading": {
-        "level": "2",
-        "text": "Related article"
-      },
-      "hero-img": {
-        "width": "656",
-        "height": "248",
-        "url": "../../../img/themes/1/tower.png",
-        "alt": "The Eiffel Tower"
-      },
-      "article-heading": {
-        "level": "3",
-        "text": "Quaint Enamel Pin Fingerstache, Kogi Roof Party Offal Mug"
-      },
-      "content-text": "",
-      "article-link": {"text": "Read more", "url": "#"}
-    },
-    "related-section": {
-      "heading": {
-        "level": "2",
-        "classes": "h3",
-        "text": "Latest Articles"
-      },
-      "images-with-caption": [
-        {
-          "image-with-caption": {
-            "width": "233",
-            "height": "202",
-            "url": "../../../img/article/bird.png",
-            "caption": "Bullseye view: Bird Watching 101"
-          }
-        },
-        {
-          "image-with-caption": {
-            "width": "233",
-            "height": "202",
-            "url": "../../../img/article/cheetah.png",
-            "caption": "The Worlds fastest animal"
-          }
-        },
-        {
-          "image-with-caption": {
-            "width": "233",
-            "height": "202",
-            "url": "../../../img/article/cow.png",
-            "caption": "Cattle Ranch roundup"
-          }
-        }
-      ]
-    },
+    "related-articles": [
+      {
+        "title": "Quaint Enamel Pin Fingerstache, Kogi Roof Party Offal Mug",
+        "category": "Paris",
+        "comments": "28 comments",
+        "url": "#",
+        "narrow-img": "../../../img/themes/1/tower.jpg",
+        "wide-img": "../../../img/themes/1/tower.jpg"
+      }
+    ],
     "footer": {
       "social-follow": {
         "links": [

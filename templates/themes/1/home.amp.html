@@ -61,7 +61,7 @@ limitations under the License.
                 <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" class="left mr3"></amp-img>
               {{/image}}
               <p class="mx3 my1 caps h3">{{text}}</p>
-              <h2 class="mx3 my1 h4">{{title}}</h2>
+              <h2 class="mx3 my1 h4 line-height-2">{{title}}</h2>
             </div>
           {{/section-title}}
           {{#paragraphs}}
@@ -86,17 +86,22 @@ limitations under the License.
     <aside>
       {{> ../components/socialbox/socialbox.snip.html}}
 
-      <h2 class="m3 caps center ampstart-subtitle">Related articles</h2>
+      <h2 class="m3 mb4 pb4 caps bold center h3">Related articles</h2>
 
-      {{#related-article}}
-        {{> ../components/related-article/related-article.snip.html}}
-      {{/related-article}}
+      {{#related-articles}}
+        <article class="ampstart-article-summary m0 relative">
+          <a href="{{url}}">
+            <amp-img width="360" height="400" layout="responsive" src="{{narrow-img}}" media="(max-width: 360px)"></amp-img>
+            <amp-img height="400" layout="fixed-height" src="{{wide-img}}" media="(min-width: 416px)"></amp-img>
+            <header class="absolute bottom-0 right-0 left-0 center m3 p3">
+              <h3 class="caps bold">{{category}}</h3>
+              <h1 class="h2 my1">{{title}}</h1>
+              <p class="h3 bold">{{comments}}</p>
+            </header>
+          </a>
+        </article>
+      {{/related-articles}}
 
-      <h2 class="m3 caps center ampstart-subtitle">Latest articles</h2>
-
-      {{#related-section}}
-        {{> ../components/related-section/related-section.snip.html}}
-      {{/related-section}}
     </aside>
   </main>
   {{> ../components/footer/footer.snip.html}}
