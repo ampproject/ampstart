@@ -11,7 +11,7 @@
         "amp-social-share"
       ],
       "font-stylesheets": [
-        "https://fonts.googleapis.com/css?family=EB+Garamond"
+        "https://fonts.googleapis.com/css?family=EB+Garamond|Work+Sans"
       ],
       "css-path": "templates/themes/1/page.css"
     },

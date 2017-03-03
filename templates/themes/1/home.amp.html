@@ -28,13 +28,13 @@ limitations under the License.
       <amp-img height="720" layout="fixed-height" src="{{wide-img}}" media="(min-width: 416px)"></amp-img>
       <figcaption class="absolute bottom-0 right-0 left-0 center m3">
         <header class="p3">
-          <h1 class="ampstart-fullpage-hero-heading ampstart-article-title mb1">
+          <h1 class="ampstart-fullpage-hero-heading h2 mb1">
             <span class="ampstart-fullpage-hero-heading-text">
               {{{heading}}}
             </span>
           </h1>
           {{#credit}}
-            <span class="ampstart-image-credit ampstart-subtitle bold">
+            <span class="ampstart-image-credit h3 bold">
               {{credit-prefix}} {{#author}}<a href="{{url}}" role="author" class="text-decoration-none">{{text}}</a>{{/author}}{{#credit-suffix}}, {{.}}{{/credit-suffix}}
             </span>
           {{/credit}}
@@ -51,17 +51,16 @@ limitations under the License.
 
   <main id="content" role="main">
     <article class="photo-article">
-
       {{#article}}
-        <h2 class="m3 center ampstart-label italic">{{category}}</h2>
-        <p class="m3 ampstart-subtitle bold">{{subtitle}}</p>
+        <h2 class="m3 center h4 italic">{{category}}</h2>
+        <p class="m3 h3 bold">{{subtitle}}</p>
         {{#blocks}}
           {{#section-title}}
             <div class="clearfix">
               {{#image}}
                 <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" class="left mr3"></amp-img>
               {{/image}}
-              <p class="mx3 my1 caps ampstart-subtitle">{{text}}</p>
+              <p class="mx3 my1 caps h3">{{text}}</p>
               <h2 class="mx3 my1 h4">{{title}}</h2>
             </div>
           {{/section-title}}
@@ -82,26 +81,23 @@ limitations under the License.
           {{/twitter}}
         {{/blocks}}
       {{/article}}
+    </article>
+
+    <aside>
+      {{> ../components/socialbox/socialbox.snip.html}}
 
       <h2 class="m3 caps center ampstart-subtitle">Related articles</h2>
-
-      <hr>
-
-      <p class="m3">Integer fringilla eu lacus sit amet tristique. Nulla sagittis fermentum porta. Aenean convallis nulla eu nulla lobortis, sit amet sagittis mauris tincidunt. Praesent sed efficitur odio. Quisque et sollicitudin nisi. Fusce sed auctor ligula. Suspendisse potenti. Nam hendrerit sollicitudin enim, non aliquet lacus congue et.</p>
-
 
       {{#related-article}}
         {{> ../components/related-article/related-article.snip.html}}
       {{/related-article}}
 
-      <p class="m3"> Etiam egestas velit ut purus dictum, vel placerat turpis convallis. Nullam metus urna, posuere ut elit eu, imperdiet consequat metus. Phasellus blandit at lorem ut mollis. Donec vel ligula at erat mattis aliquet eget quis nibh.</p>
-
-      {{> ../components/socialbox/socialbox.snip.html}}
+      <h2 class="m3 caps center ampstart-subtitle">Latest articles</h2>
 
       {{#related-section}}
         {{> ../components/related-section/related-section.snip.html}}
       {{/related-section}}
-    </article>
+    </aside>
   </main>
   {{> ../components/footer/footer.snip.html}}
 </body>

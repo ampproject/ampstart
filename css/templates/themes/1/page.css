@@ -27,3 +27,85 @@
 @import '../../../../components/socialbox/socialbox';
 @import '../../../../components/social-follow/social-follow';
 @import 'page-vars';
+
+h1,
+.h1 {
+  letter-spacing: 0;
+}
+
+h2,
+.h2 {
+  letter-spacing: 0;
+}
+
+h3,
+.h3 {
+  color: var(--color-black);
+  font-family: var(--font-secondary);
+  letter-spacing: .6px;
+}
+
+h4,
+.h4 {
+  letter-spacing: .2px;
+  line-height: var(--line-height-2);
+}
+
+.ampstart-navbar-trigger {
+  font-size: 1.5rem;
+}
+
+.ampstart-image-fullpage-hero figcaption {
+  background: var(--color-primary);
+  opacity: .9;
+}
+
+.ampstart-fullpage-hero-heading {
+  line-height: 1.6;
+}
+
+.ampstart-image-fullpage-hero .ampstart-image-credit {
+  background: none;
+  padding: 0;
+}
+
+.ampstart-fullpage-hero-heading-text {
+  background: none;
+  padding: 0;
+}
+
+.ampstart-readmore {
+  background: none;
+  display: block;
+  margin: 0;
+  padding: var(--space-4);
+}
+
+.ampstart-readmore::after {
+  content: " ";
+  border: 2px solid #000;
+  border-width: 0 2px 2px 0;
+  bottom: 2rem;
+  display: block;
+  height: 10px;
+  left: calc(50% - 5px);
+  position: absolute;
+  transform: rotateZ(45deg);
+  width: 10px;
+}
+
+.ampstart-sidebar {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.ampstart-dropcap:first-letter {
+  border: 0;
+  color: var(--color-black);
+  float: left;
+  font-size: 3.59375rem;  /* 57.5/16 */
+  font-weight: inherit;
+  line-height: 1.14782;  /* 66/57.5 */
+  margin-left: 0;
+  margin-right: .5rem;
+}

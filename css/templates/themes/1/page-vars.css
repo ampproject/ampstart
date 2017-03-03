@@ -15,8 +15,21 @@
  */
 
 :root {
-  --color-primary: #0f0;
-  --color-font-primary: #fff;
+  --h1: 2.25rem;  /* 36px */
+  --h2: 1.25rem;  /* 28px */
+  --h3: .6875rem;  /* 20px */
+  --h4: .875rem;  /* 14px */
+
+  --line-height-2: 1.42857;  /* 20px/14px*/
+  --line-height-3: 2.0625;  /* 33px/16px*/
+  --line-height-4: 1.81818;  /* 20px/11px */
+  --line-height-5: 1.6;  /* 32px/20px */
+  --line-height-6: 1.11111;  /* 40px/36px */
+
+  --navbar-height: 3.5rem;
+
+  --color-primary: #fff;
+  --color-font-primary: #000;
 
   --color-secondary: #fff;
   --color-font-secondary: #000;
@@ -27,9 +40,11 @@
   --color-border: var(--color-dark-grey);
 
   --color-font-default: var(--color-dark-grey);
-  /*--color-disabled: #9b9b9b;*/
 
   --color-navbar-primary: #fff;
   --color-navbar-font-primary: #000;
-  --color-font-theme: #003f93;
+
+  --font-primary: "EB Garamond", times, serif;
+  --font-secondary: "Work Sans", arial, sans-serif;
+  --font-family: var(--font-primary);
 }
