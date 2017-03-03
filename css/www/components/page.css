@@ -90,6 +90,18 @@ body .www-component-anchors .www-component-anchor[option][selected] {
   background: var(--color-highlight-background);
 }
 
+.www-example-code amp-accordion h3::after {
+  content: "";
+  background: url(img/www/caret.svg) 0 0 transparent no-repeat;
+  width: 11px;
+  height: 7px;
+  display: inline-block;
+  margin-left: var(--space-3);
+}
+.www-example-code amp-accordion [expanded] h3::after {
+  transform: scaleY(-1);
+}
+
 @media (--breakpoint-xs) {
   .www-component-desc > * {
     padding-left: 0;

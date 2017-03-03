@@ -22,9 +22,9 @@
     },
     "navbar": {
       "logo": {
-        "url": "../img/www/amp_logo_black.svg",
-        "width": "24",
-        "height": "24",
+        "url": "../img/www/amp_start_logo.svg",
+        "width": "119",
+        "height": "26",
         "classes": "xs-hide sm-hide",
         "href": "/"
       },
