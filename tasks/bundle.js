@@ -113,7 +113,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Normalize | https://github.com/necolas/normalize.css/blob/master/LICENSE.md
+Normalize.css | https://github.com/necolas/normalize.css/blob/master/LICENSE.md
 ----------------------------------------------------------------------------
 # The MIT License (MIT)
 Copyright (c) 2013 – 2016 Brent Jackson
