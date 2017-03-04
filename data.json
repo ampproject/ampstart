@@ -209,7 +209,7 @@
         "css-path": "www/render/page.css"
       },
       "fullpage-hero": {
-        "heading": "Life on a space shuttle",
+        "heading-html": "Life on a space shuttle",
         "narrow-img": "../../img/components/nasa-53885.jpg",
         "wide-img": "../../img/components/nasa-53885.jpg",
         "credit": {
