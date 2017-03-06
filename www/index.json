@@ -112,6 +112,36 @@
         }
       }
     ],
+    "showcase-template-previews": [
+      {
+        "template-preview": {
+          "title": "Opinionated Template 1",
+          "img": {
+            "width": "231",
+            "height": "412",
+            "url": "../img/www/index/theme1_article.png",
+            "2x_url": "../img/www/index/theme1_article_2x.png"
+          },
+          "lightbox-id": "theme1_article",
+          "src": "templates/themes/1/template_1_article.amp.html",
+          "download": "archive/template_1_article.zip"
+        }
+      },
+      {
+        "template-preview": {
+          "title": "Opinionated Template 2",
+          "img": {
+            "width": "231",
+            "height": "412",
+            "url": "../img/www/index/theme2_home.png",
+            "2x_url": "../img/www/index/theme2_home_2x.png"
+          },
+          "lightbox-id": "theme2_home",
+          "src": "templates/themes/2/home.amp.html",
+          "download": "archive/home.zip"
+        }
+      }
+    ],
     "notification": {
       "id": "ast-cookie-notif",
       "text": "This site uses cookies to collect statistics and improve user experience. By continuing to use this site you are agreeing to our use of cookies.",

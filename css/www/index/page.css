@@ -47,6 +47,10 @@
   }
 }
 
+.www-index-showcase amp-img {
+  cursor: pointer;
+}
+
 .ampstart-footer small {
   font-size: var(--h6);
 }
