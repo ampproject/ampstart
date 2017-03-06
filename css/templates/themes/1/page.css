@@ -72,6 +72,14 @@ h4,
   font-family: var(--font-secondary);
 }
 
+.ampstart-nav-dropdown .ampstart-dropdown {
+  letter-spacing: 0;
+}
+
+.ampstart-dropdown-item {
+  text-transform: none;
+}
+
 .ampstart-nav-dropdown amp-accordion ul {
   margin-left: 1rem;
 }
