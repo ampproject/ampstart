@@ -78,9 +78,13 @@ limitations under the License.
     <section class="www-index-showcase px4">
       <h2 class="center mb4">Built with AMP Start</h2>
       <amp-carousel type="carousel" layout="fixed-height" height="412" controls class="mb4">
-        <amp-img src="../img/www/index/template1.png" width="273" height="412" alt="Template1"></amp-img>
-        <amp-img src="../img/www/index/template2.png" width="273" height="412" alt="Template2"></amp-img>
-        <amp-img src="../img/www/index/template3.png" width="273" height="412" alt="Template3"></amp-img>
+        {{#showcase-template-previews}}
+        {{#template-preview}}
+          {{#img}}
+          <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" title="View {{title}}" on="tap:{{lightbox-id}}"></amp-img>
+          {{/img}}
+        {{/template-preview}}
+        {{/showcase-template-previews}}
       </amp-carousel>
     </section>
     </main>
@@ -88,6 +92,9 @@ limitations under the License.
     {{#template-previews}}
       {{> ../components/lightbox/template-preview.snip.html}}
     {{/template-previews}}
+    {{#showcase-template-previews}}
+      {{> ../components/lightbox/template-preview.snip.html}}
+    {{/showcase-template-previews}}
     {{> ../utils/www-analytics.snip.html}}
   </body>
   </html>
