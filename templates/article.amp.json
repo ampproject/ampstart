@@ -8,7 +8,6 @@
         "amp-sidebar",
         "amp-accordion",
         "amp-instagram",
-        "amp-twitter",
         "amp-social-share"
       ],
       "css-path": "templates/article/page.css"
