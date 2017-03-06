@@ -50,7 +50,7 @@
 
 .ampstart-readmore::after {
   display: block;
-  content: 'v';
+  content: '⌄';
 }
 
 @media (--breakpoint-md) {
