@@ -56,6 +56,12 @@ h4,
   color: var(--color-font-primary);
 }
 
+.ampstart-headerbar .h3 {
+  font: normal var(--h2)/var(--line-height-5) var(--font-primary);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .ampstart-navbar-trigger {
   font-size: 1.5rem;
 }
@@ -98,11 +104,8 @@ h4,
 }
 
 .ampstart-image-credit {
-  font-family: var(--font-secondary);
-  font-size: var(--h3);
-  font-weight: bold;
+  font: bold var(--h3)/var(--line-height-5) var(--font-secondary);
   letter-spacing: .6px;
-  line-height: var(--line-height-5);
 }
 
 .ampstart-image-credit br {
