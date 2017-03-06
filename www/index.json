@@ -118,7 +118,7 @@
           "title": "Opinionated Template 1",
           "img": {
             "width": "231",
-            "height": "412",
+            "height": "410",
             "url": "../img/www/index/theme1_article.png",
             "2x_url": "../img/www/index/theme1_article_2x.png"
           },
@@ -132,7 +132,7 @@
           "title": "Opinionated Template 2",
           "img": {
             "width": "231",
-            "height": "412",
+            "height": "410",
             "url": "../img/www/index/theme2_home.png",
             "2x_url": "../img/www/index/theme2_home_2x.png"
           },
