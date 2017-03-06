@@ -82,9 +82,10 @@
         "template-preview": {
           "title": "Article",
           "img": {
-            "width": "361",
-            "height": "545",
+            "width": "360",
+            "height": "640",
             "url": "../img/www/index/template3.png",
+            "2x_url": "../img/www/index/template3_2x.png",
             "layout": "responsive"
           },
           "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
@@ -97,9 +98,10 @@
         "template-preview": {
           "title": "Blog Post",
           "img": {
-            "width": "361",
-            "height": "545",
+            "width": "360",
+            "height": "640",
             "url": "../img/www/index/template1.png",
+            "2x_url": "../img/www/index/template1_2x.png",
             "layout": "responsive"
           },
           "right-aligned": true,
@@ -107,22 +109,6 @@
           "lightbox-id": "template-1",
           "src": "templates/blog.amp.html",
           "download": "archive/blog.zip"
-        }
-      },
-      {
-        "template-preview-hidden": {
-          "title": "Another Blog Post",
-          "img": {
-            "width": "361",
-            "height": "545",
-            "url": "../img/www/index/template2.png",
-            "layout": "responsive"
-          },
-          "desc": "",
-          "right-aligned": true,
-          "lightbox-id": "template-2",
-          "src": "templates/thescenic.amp.html",
-          "download": "archive/thescenic.zip"
         }
       }
     ],
