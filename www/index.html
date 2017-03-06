@@ -54,7 +54,7 @@ limitations under the License.
       <ul class="list-reset">
         {{#template-previews}}
         {{#template-preview}}
-        <li class="relative clearfix mb2">
+        <li class="relative clearfix mb2" id="{{id}}">
           {{#img}}
           <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" layout="{{layout}}" class="ampstart-card xs-col-12 sm-col-5 md-col-4 lg-col-3 mx4 {{#right-aligned}}col-right{{/right-aligned}}{{^right-aligned}}left col {{/right-aligned}}"></amp-img>
           {{/img}}
@@ -78,9 +78,8 @@ limitations under the License.
     <section class="www-index-showcase px4">
       <h2 class="center mb4">Built with AMP Start</h2>
       <amp-carousel type="carousel" layout="fixed-height" height="412" controls class="mb4">
-        <amp-img src="../img/www/index/template1.png" width="273" height="412" alt="Template1"></amp-img>
-        <amp-img src="../img/www/index/template2.png" width="273" height="412" alt="Template2"></amp-img>
-        <amp-img src="../img/www/index/template3.png" width="273" height="412" alt="Template3"></amp-img>
+        <amp-img src="../img/www/index/template1.png" width="231" height="412" alt="Template1"></amp-img>
+        <amp-img src="../img/www/index/template3.png" width="231" height="412" alt="Template3"></amp-img>
       </amp-carousel>
     </section>
     </main>
