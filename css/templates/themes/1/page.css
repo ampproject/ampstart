@@ -40,7 +40,7 @@ h2,
 
 h3,
 .h3 {
-  color: var(--color-black);
+  color: var(--color-font-primary);
   font-family: var(--font-secondary);
   letter-spacing: .6px;
 }
@@ -51,6 +51,11 @@ h4,
   line-height: var(--line-height-2);
 }
 
+.ampstart-headerbar {
+  background: var(--color-primary);
+  color: var(--color-font-primary);
+}
+
 .ampstart-navbar-trigger {
   font-size: 1.5rem;
 }
@@ -58,13 +63,10 @@ h4,
 .ampstart-nav-dropdown .ampstart-dropdown-item,
 .ampstart-nav-dropdown .ampstart-dropdown>section>header,
 .ampstart-sidebar-faq {
-  background: transparent;
-  color: var(--color-white);
   font-family: var(--font-secondary);
 }
 
 .ampstart-nav-dropdown amp-accordion ul {
-  background: transparent;
   margin-left: 1rem;
 }
 
@@ -72,14 +74,6 @@ h4,
 .ampstart-sidebar .ampstart-dropdown header,
 .ampstart-sidebar .ampstart-faq-item {
   margin-bottom: 1.5rem;
-}
-
-.ampstart-dropdown>section>header:after {
-  color: var(--color-white);
-}
-
-.ampstart-sidebar .ampstart-icon {
-  fill: var(--color-white);
 }
 
 .ampstart-image-fullpage-hero figcaption,
@@ -122,14 +116,7 @@ h4,
   width: 10px;
 }
 
-.ampstart-sidebar {
-  background-color: var(--color-black);
-  color: var(--color-white);
-}
-
 .ampstart-dropcap:first-letter {
-  border: 0;
-  color: var(--color-black);
   float: left;
   font-size: 3.59375rem;  /* 57.5/16 */
   font-weight: inherit;

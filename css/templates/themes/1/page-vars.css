@@ -28,21 +28,22 @@
 
   --navbar-height: 3.5rem;
 
-  --color-primary: #fff;
-  --color-font-primary: #000;
+  --color-primary: var(--color-white);
+  --color-font-primary: var(--color-black);
 
-  --color-secondary: #fff;
-  --color-font-secondary: #000;
+  --color-secondary: var(--color-black);
+  --color-font-secondary: var(--color-white);
 
-  --color-footer-background: var(--color-secondary);
-  --color-font-footer: var(--color-font-secondary);
+  --color-footer-background: var(--color-primary);
+  --color-font-footer: var(--color-font-primary);
 
   --color-border: var(--color-dark-grey);
 
   --color-font-default: var(--color-dark-grey);
+  --color-font-accent: var(--color-font-secondary);
 
-  --color-navbar-primary: #fff;
-  --color-navbar-font-primary: #000;
+  --color-navbar-primary: var(--color-secondary);
+  --color-navbar-font-primary: var(--color-font-secondary);
 
   --font-primary: "EB Garamond", times, serif;
   --font-secondary: "Work Sans", arial, sans-serif;
