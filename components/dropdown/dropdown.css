@@ -41,7 +41,7 @@
 }
 
 .ampstart-dropdown > [expanded] > header::after {
-  content: '-';
+  content: '–';
 }
 
 .absolute .ampstart-dropdown-items {
