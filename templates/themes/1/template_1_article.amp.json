@@ -71,7 +71,7 @@
       }
     },
     "fullpage-hero": {
-      "heading-html": "Quaint Enamel Pin Fingerstache, Kogi Roof Party Offal Mug",
+      "heading-html": "Est epicuri indoctum ad, oblique conceptam ut vel consequuntur",
       "narrow-img": "../../../img/themes/1/night.jpg",
       "wide-img": "../../../img/themes/1/night.jpg",
       "credit": {
@@ -83,21 +83,6 @@
         "text": "",
         "content-id": "content"
       }
-    },
-    "article-summary": {
-      "heading": "Quaint Enamel Pin Fingerstache, Kogi Roof Party Offal Mug",
-      "narrow-img": "../../../img/themes/1/night.jpg",
-      "wide-img": "../../../img/themes/1/night.jpg",
-      "credit": {
-        "credit-prefix": "By",
-        "author": {"text": "Jamie Smith", "url": "#"},
-        "credit-suffix": "Posted today"
-      },
-      "readmore": {
-        "text": "",
-        "content-id": "content"
-      },
-      "text": "My snippet root."
     },
     "article": {
       "article-summary": {
@@ -228,7 +213,7 @@
     },
     "related-articles": [
       {
-        "title": "Quaint Enamel Pin Fingerstache, Kogi Roof Party Offal Mug",
+        "title": "Nam vidit erant nonumes in, homero menandri praesent vix an",
         "category": "Paris",
         "comments": "28 comments",
         "url": "#",
