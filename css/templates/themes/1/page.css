@@ -82,8 +82,31 @@ h4,
   opacity: .9;
 }
 
+.ampstart-image-fullpage-hero figcaption {
+  margin: var(--space-3);
+  top: initial;
+}
+
 .ampstart-fullpage-hero-heading {
+  font-size: var(--h2);
   line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.ampstart-image-fullpage-hero footer {
+  position: static;
+}
+
+.ampstart-image-credit {
+  font-family: var(--font-secondary);
+  font-size: var(--h3);
+  font-weight: bold;
+  letter-spacing: .6px;
+  line-height: var(--line-height-5);
+}
+
+.ampstart-image-credit br {
+  display: none;
 }
 
 .ampstart-image-fullpage-hero .ampstart-image-credit {
@@ -117,6 +140,7 @@ h4,
 }
 
 .ampstart-dropcap:first-letter {
+  color: var(--color-font-primary);
   float: left;
   font-size: 3.59375rem;  /* 57.5/16 */
   font-weight: inherit;

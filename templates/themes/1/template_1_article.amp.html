@@ -20,34 +20,10 @@ limitations under the License.
 {{> ../utils/amp-page-head.snip.html}}
 <body>
   {{> ../components/navbar/navbar.snip.html}}
-
-  {{#fullpage-hero}}
-    <!-- Start Fullpage Hero -->
-    <figure class="ampstart-image-fullpage-hero m0 relative">
-      <amp-img width="404" height="720" layout="responsive" src="{{{narrow-img}}}" media="(max-width: 415px)"></amp-img>
-      <amp-img height="720" layout="fixed-height" src="{{{wide-img}}}" media="(min-width: 416px)"></amp-img>
-      <figcaption class="absolute bottom-0 right-0 left-0 center m3">
-        <header class="p3">
-          <h1 class="ampstart-fullpage-hero-heading h2 mb1">
-            <span class="ampstart-fullpage-hero-heading-text">
-              {{{heading}}}
-            </span>
-          </h1>
-          {{#credit}}
-            <span class="ampstart-image-credit h3 bold">
-              {{credit-prefix}} {{#author}}<a href="{{{url}}}" role="author" class="text-decoration-none">{{text}}</a>{{/author}}{{#credit-suffix}}, {{.}}{{/credit-suffix}}
-            </span>
-          {{/credit}}
-        </header>
-        <footer>
-          {{#readmore}}
-            <a class="ampstart-readmore" href="#{{content-id}}">{{text}}</a>
-          {{/readmore}}
-        </footer>
-      </figcaption>
-    </figure>
-    <!-- End Fullpage Hero -->
-  {{/fullpage-hero}}
+  
+  <div class="center">
+  {{> ../components/images/fullpage-hero.snip.html}}
+  </div>
 
   <main id="content" role="main">
     <article class="photo-article">
