@@ -85,6 +85,7 @@
             "width": "360",
             "height": "640",
             "url": "../img/www/index/template3.png",
+            "2x_url": "../img/www/index/template3_2x.png",
             "layout": "responsive"
           },
           "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
@@ -100,6 +101,7 @@
             "width": "360",
             "height": "640",
             "url": "../img/www/index/template1.png",
+            "2x_url": "../img/www/index/template1_2x.png",
             "layout": "responsive"
           },
           "right-aligned": true,
