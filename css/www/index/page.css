@@ -49,6 +49,7 @@
 
 .www-index-showcase amp-img {
   cursor: pointer;
+  margin-top: 1px;
 }
 
 .ampstart-footer small {
