@@ -7,7 +7,6 @@
         "amp-sidebar",
         "amp-accordion",
         "amp-instagram",
-        "amp-twitter",
         "amp-social-share"
       ],
       "font-stylesheets": [
@@ -209,18 +208,6 @@
           "paragraphs": [
             {
               "text": "Vestibulum eu varius dolor. Praesent sagittis magna sem, non bibendum quam aliquam et. Sed et tristique mi. Quisque porta lorem et nulla lacinia gravida. Nullam semper lobortis sem, interdum tempus tellus."
-            }
-          ]
-        },
-        {
-          "twitter": {
-            "id": "819614235210620928"
-          }
-        },
-        {
-          "paragraphs": [
-            {
-              "text": "Mauris aliquet eleifend lacinia. Maecenas non finibus ante, et maximus urna. In non enim a lectus molestie tincidunt. Curabitur eu tortor odio. Aliquam bibendum elit risus, vitae rutrum ex placerat eget."
             }
           ]
         }
