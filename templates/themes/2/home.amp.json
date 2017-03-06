@@ -18,13 +18,13 @@
       "sidebaronly": true,
       "nav": [
         {
-          "link": {"url": "home.amp.html", "text": "Home"}
+          "link": {"url": "#", "text": "Home"}
         },
         {
-          "link": {"url": "menu.amp.html", "text": "Menu"}
+          "link": {"url": "#", "text": "Menu"}
         },
         {
-          "link": {"url": "home.amp.html#locations", "text": "Locations & Hours"}
+          "link": {"url": "#locations", "text": "Locations & Hours"}
         }
       ],
       "social-follow": {
@@ -43,7 +43,7 @@
       "wide-img": "../../../img/themes/2/hero.jpg",
       "cta": {
         "text": "View Menu",
-        "url": "menu.amp.html"
+        "url": "#"
       }
     },
     "main": {

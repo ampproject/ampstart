@@ -15,18 +15,17 @@
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "logo": {
-        "href": "home.amp.html",
         "name": "Beck & Galo"
       },
       "nav": [
         {
-          "link": {"url": "home.amp.html", "text": "Home"}
+          "link": {"url": "#", "text": "Home"}
         },
         {
-          "link": {"url": "menu.amp.html", "text": "Menu"}
+          "link": {"url": "#", "text": "Menu"}
         },
         {
-          "link": {"url": "home.amp.html#locations", "text": "Locations & Hours"}
+          "link": {"url": "#", "text": "Locations & Hours"}
         }
       ],
       "social-follow": {
