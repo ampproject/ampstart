@@ -77,11 +77,22 @@ limitations under the License.
 
     <section class="www-index-showcase px4">
       <h2 class="center mb4">Built with AMP Start</h2>
-      <amp-carousel type="carousel" layout="fixed-height" height="414" controls class="mb4 mx-auto">
+      <amp-carousel type="carousel" layout="fixed-height" height="414" controls class="mb4 mx-auto xs-hide">
         {{#showcase-template-previews}}
         {{#template-preview}}
           {{#img}}
-          <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" class="ampstart-card" title="View {{title}}"{{#lightbox-id}} on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
+          <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" class="ampstart-card" alt="{{title}}"{{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
+          {{/img}}
+        {{/template-preview}}
+        {{/showcase-template-previews}}
+      </amp-carousel>
+      <amp-carousel type="carousel" layout="fixed-height" height="414" controls class="mb4 mx-auto sm-hide md-hide lg-hide">
+        {{#showcase-template-previews}}
+        {{#template-preview}}
+          {{#img}}
+            {{#src}}<a href="{{{src}}}" title="View {{title}}" target="_blank">{{/src}}
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" class="ampstart-card" alt="{{title}}"></amp-img>
+            {{#src}}</a>{{/src}}
           {{/img}}
         {{/template-preview}}
         {{/showcase-template-previews}}
