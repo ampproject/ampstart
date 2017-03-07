@@ -47,9 +47,16 @@
   }
 }
 
+.www-index-showcase amp-carousel {
+  max-width: 709px;
+}
+
 .www-index-showcase amp-img {
-  cursor: pointer;
   margin-top: 1px;
+}
+
+.www-index-showcase amp-img[on] {
+  cursor: pointer;
 }
 
 .ampstart-footer small {

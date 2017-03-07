@@ -19,6 +19,7 @@ limitations under the License.
 <!-- This component is specific to www and might not be re-usable without css edits -->
 
 {{#template-preview}}
+{{#lightbox-id}}
 <amp-lightbox id="{{lightbox-id}}" layout="nodisplay" class="ampstart-device-preview relative">
   <div class="ampstart-device-preview-mask absolute top-0 right-0 left-0 bottom-0 {{classes}}" role="button" on="tap:{{lightbox-id}}.close" tabindex="0"></div>
   <amp-selector>
@@ -77,4 +78,5 @@ limitations under the License.
     </div>
   </amp-selector>
 </amp-lightbox>
+{{/lightbox-id}}
 {{/template-preview}}
