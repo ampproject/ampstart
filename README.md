@@ -1,4 +1,4 @@
-# AMP Start ⚡
+# [AMP Start](https://ampstart.com/) ⚡
 
 A collection of quick-start templates to build your AMP page quickly and easily.
 AMP Start is built on top of [Basscss](http://basscss.com/) a low-level CSS toolkit.
