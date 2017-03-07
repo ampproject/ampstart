@@ -51,3 +51,8 @@ p {
 .ampstart-accent {
   color: var(--color-font-accent);
 }
+
+#content {
+  margin-top: calc(0px - var(--navbar-height));
+  padding-top: var(--navbar-height);
+}
