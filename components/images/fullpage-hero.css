@@ -51,6 +51,7 @@
 .ampstart-readmore::after {
   display: block;
   content: '⌄';
+  font-size: var(--h2);
 }
 
 @media (--breakpoint-md) {
