@@ -81,7 +81,7 @@ limitations under the License.
         {{#showcase-template-previews}}
         {{#template-preview}}
           {{#img}}
-          <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" class="ampstart-card" alt="{{title}}"{{#lightbox-id}} title="View {{title}}" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
+          <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" class="ampstart-card" alt="{{title}}"{{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
           {{/img}}
         {{/template-preview}}
         {{/showcase-template-previews}}
