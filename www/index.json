@@ -140,6 +140,17 @@
           "src": "templates/themes/2/home.amp.html",
           "download": "archive/home.zip"
         }
+      },
+      {
+        "template-preview": {
+          "title": "Opinionated Template 3: Coming Soon",
+          "img": {
+            "width": "231",
+            "height": "410",
+            "url": "../img/www/index/theme3_coming_soon.png",
+            "2x_url": "../img/www/index/theme3_coming_soon_2x.png"
+          }
+        }
       }
     ],
     "notification": {
