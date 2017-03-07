@@ -51,11 +51,6 @@ h4,
   line-height: var(--line-height-2);
 }
 
-#content {
-  padding-top: var(--space-6);
-  margin-top: calc(0px - var(--space-6));
-}
-
 .ampstart-headerbar {
   background: var(--color-primary);
   color: var(--color-font-primary);
