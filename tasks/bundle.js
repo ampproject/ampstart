@@ -51,8 +51,9 @@ function collectResources(filepath, html, done) {
     imgs.forEach(function(imgpath) {
       fs.copySync(imgpath, `.archive/${imgpath.replace(/^dist/, filename)}`);
     });
+    const pathToTmpl = filepath.replace(/.*templates\/(.*)/, '\$1');
     fs.copySync(filepath,
-        `.archive/${filename}/templates/${path.basename(filepath)}`);
+        `.archive/${filename}/templates/${pathToTmpl}`);
     if (css) {
       fs.mkdirSync(`.archive/${filename}/css`);
       fs.writeFileSync(`.archive/${filename}/css/${filename}.max.css`,
