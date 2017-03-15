@@ -1,13 +1,13 @@
 {
   "name": "kickstart",
-	"script": {
-		"build": "gulp build",
-		"clean": "gulp clean",
-		"www": "gulp www",
-		"highlight": "gulp highlight",
-		"watch": "gulp watch",
-		"serve": "gulp serve"
-	},
+  "script": {
+    "build": "gulp build",
+    "clean": "gulp clean",
+    "www": "gulp www",
+    "highlight": "gulp highlight",
+    "watch": "gulp watch",
+    "serve": "gulp serve"
+  },
   "private": true,
   "license": "Apache-2.0",
   "devDependencies": {
