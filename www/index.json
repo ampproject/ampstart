@@ -34,7 +34,7 @@
           "link": {"url": "index.html#templates", "text": "Templates", "classes": "www-current-page"}
         },
         {
-          "link": {"url": "components.html", "text": "UI Components"}
+          "link": {"url": "components.html", "text": "Components"}
         },
         {
           "link": {"url": "getstarted.html", "text": "Get Started"}
