@@ -52,7 +52,7 @@ p {
   color: var(--color-font-accent);
 }
 
-#content {
+#content:target {
   margin-top: calc(0px - var(--navbar-height));
   padding-top: var(--navbar-height);
 }
