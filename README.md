@@ -10,17 +10,16 @@ AMP Start is built on top of [Basscss](http://basscss.com/) a low-level CSS tool
 
 1. Install [NodeJS](https://nodejs.org).
 2. In the repo directory, run `npm i` command to install the required npm packages.
-3. Run `npm i -g gulp` command to install gulp system-wide (on Mac or Linux you may need to prefix this with `sudo`, depending on how Node was installed).
 
 ### Build & Test
 | Command                                                                 | Description                                                           |
 | ----------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| `gulp build`<sup>[[1]](#footnote-1)</sup>                               | Builds the AMP library.                                               |
-| `gulp clean`                                                            | Removes build output.                                                 |
-| `gulp www`                                                              | Recompile www to build directory.                                     |
-| `gulp highlight`                                                        | Build HTML for code highlighting.                                     |
-| `gulp watch`<sup>[[1]](#footnote-1)</sup>                               | Watches for changes in files, re-build.                               |
-| `gulp serve`                                                            | Serves content in repo root dir over http://localhost:8000/.|
+| `npm run build`<sup>[[1]](#footnote-1)</sup>                               | Builds the AMP library.                                               |
+| `npm run clean`                                                            | Removes build output.                                                 |
+| `npm run www`                                                              | Recompile www to build directory.                                     |
+| `npm run highlight`                                                        | Build HTML for code highlighting.                                     |
+| `npm run watch`<sup>[[1]](#footnote-1)</sup>                               | Watches for changes in files, re-build.                               |
+| `npm run serve`                                                            | Serves content in repo root dir over http://localhost:8000/.|
 
 <a id="footnote-1">[1]</a> On Windows, this command must be run as administrator.
 
