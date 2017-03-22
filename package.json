@@ -1,6 +1,6 @@
 {
   "name": "kickstart",
-  "script": {
+  "scripts": {
     "build": "gulp build",
     "clean": "gulp clean",
     "www": "gulp www",
