@@ -41,11 +41,6 @@ p {
   margin: 0;
 }
 
-button {
-  font-family: inherit;
-  font-weight: inherit;
-}
-
 /* Subtitle */
 .ampstart-subtitle {
   color: var(--color-font-subtitle);
