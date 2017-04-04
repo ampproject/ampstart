@@ -42,6 +42,20 @@
   opacity: 0;
 }
 
+.ampstart-device-preview-select [option="mobile"],
+.ampstart-device-preview-select [option="tablet"],
+.ampstart-device-preview-select [option="desktop"] {
+  padding: 2px calc(var(--space-1)/2);
+}
+
+.ampstart-device-preview-select [option="mobile"][selected],
+.ampstart-device-preview-select [option="tablet"][selected],
+.ampstart-device-preview-select [option="desktop"][selected] {
+  outline: none;
+  border: solid 1px var(--color-black);
+  border-radius: 8px;
+}
+
 
 [option="mobile"][selected] + .ampstart-mobile-frame,
 [option="tablet"][selected] + .ampstart-tablet-frame,
