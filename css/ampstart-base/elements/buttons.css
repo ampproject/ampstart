@@ -16,6 +16,8 @@
 
 /* Buttons */
 .ampstart-btn {
+  font-family: inherit;
+  font-weight: inherit;
   font-size: 1rem;
   line-height: var(--line-height-2);
   padding: 0.7em 0.8em;
