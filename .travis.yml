@@ -12,7 +12,7 @@ install:
 - npm install -g firebase-tools
 - npm install
 script:
-- gulp build
+- npm run build
 after_success:
 - 'if [ "${TRAVIS_BRANCH}" = "production" ]; then firebase deploy --non-interactive --token "$FIREBASE_TOKEN" --project ampstart-8dc54; fi'
 - 'if [ "${TRAVIS_BRANCH}" = "master" ]; then firebase deploy --non-interactive --token "$FIREBASE_TOKEN" --project ampstart-staging; fi'
