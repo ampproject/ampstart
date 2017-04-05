@@ -22,6 +22,10 @@
   font-family: inherit;
 }
 
+.ampstart-device-preview .ampstart-btn {
+  background-color: transparent;
+}
+
 .ampstart-device-preview amp-iframe {
   background: var(--color-white);
 }
@@ -45,6 +49,30 @@
 .ampstart-desktop-frame {
   opacity: 0;
 }
+
+.ampstart-device-preview-select [option] {
+  cursor: pointer;
+}
+
+.ampstart-device-preview-select [option]:focus {
+  outline: none;
+}
+
+.ampstart-device-preview-select [option] h4 {
+  line-height: 38px;
+  color: inherit;
+}
+
+.ampstart-device-preview-select [option]:hover h4,
+.ampstart-device-preview-select [option][selected] h4 {
+  color: var(--color-black);
+}
+
+.ampstart-device-preview-select [option]:hover amp-img,
+.ampstart-device-preview-select [option][selected] amp-img {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.14), 0 1px 1px -1px rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12);
+}
+
 
 .ampstart-device-preview-select [option="mobile"],
 .ampstart-device-preview-select [option="tablet"],
