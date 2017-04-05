@@ -300,7 +300,7 @@
               "iframe": {
                 "url": "render/carousel-with-caption.amp.html",
                 "width": false,
-                "height": "547",
+                "height": "555",
                 "layout": "fixed-height"
               }
             },
