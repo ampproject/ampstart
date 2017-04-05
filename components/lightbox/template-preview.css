@@ -65,34 +65,34 @@
 }
 
 .ampstart-mobile-frame amp-iframe {
-  top: 83px;
-  bottom: 83px;
-  left: 26px;
-  right: 26px;
+  top: 63px;
+  bottom: 67px;
+  left: 37px;
+  right: 36px;
 }
 
 .ampstart-mobile-frame {
-  width: 412px;
+  width: 458px;
   height: 806px;
-  margin: 80px 0 0 -206px;
+  margin: 80px 0 0 -229px;
   top: 50%;
   left: 50%;
   border-radius: 17px;
 }
 
 .ampstart-tablet-frame {
-  width: 601px;
+  width: 605px;
   height: 850px;
   top: 50%;
   left: 50%;
-  margin: 80px 0 0 -300.5px;
+  margin: 80px 0 0 -302.5px;
 }
 
 .ampstart-tablet-frame amp-iframe {
-  top: 76px;
+  top: 71px;
   bottom: 76px;
-  left: 39px;
-  right: 39px;
+  left: 49px;
+  right: 49px;
 }
 
 .ampstart-desktop-frame {
