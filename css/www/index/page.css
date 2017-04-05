@@ -17,6 +17,10 @@
 @import '../../../components/lightbox/template-preview';
 @import '../shared';
 
+h2, h3 {
+  color: var(--color-black);
+}
+
 .www-index-templates .ampstart-btn,
 .www-header .ampstart-btn {
   background-color: transparent;

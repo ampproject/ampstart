@@ -24,7 +24,6 @@
 h1,h2,h3,h4,h5,h6,
 .www-header {
   font-family: Inconsolata, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  color: var(--color-black);
 }
 
 .ampstart-headerbar-nav .ampstart-nav-item {
@@ -52,9 +51,10 @@ h1,h2,h3,h4,h5,h6,
 
 .www-heading {
   letter-spacing: inherit;
+  color: var(--color-black);
 }
 
-.www-heading::after{
+.www-heading::after {
   content: '';
   display: block;
   height: 2px;
