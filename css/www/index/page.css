@@ -21,6 +21,10 @@ h2, h3 {
   color: var(--color-black);
 }
 
+.www-index-header-action {
+  font-family: var(--font-family);
+}
+
 .www-index-templates .ampstart-btn,
 .www-header .ampstart-btn {
   background-color: transparent;
