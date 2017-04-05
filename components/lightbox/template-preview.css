@@ -13,9 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 .ampstart-device-preview [placeholder] {
   background: var(--color-primary);
+}
+
+.ampstart-device-preview h3,
+.ampstart-device-preview h4 {
+  font-family: inherit;
 }
 
 .ampstart-device-preview amp-iframe {
@@ -42,6 +46,21 @@
   opacity: 0;
 }
 
+.ampstart-device-preview-select [option="mobile"],
+.ampstart-device-preview-select [option="tablet"],
+.ampstart-device-preview-select [option="desktop"] {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.ampstart-device-preview-select [option="mobile"][selected],
+.ampstart-device-preview-select [option="tablet"][selected],
+.ampstart-device-preview-select [option="desktop"][selected] {
+  outline: none;
+  border: solid 1px var(--color-black);
+  border-radius: 8px;
+}
+
 
 [option="mobile"][selected] + .ampstart-mobile-frame,
 [option="tablet"][selected] + .ampstart-tablet-frame,
@@ -51,34 +70,34 @@
 }
 
 .ampstart-mobile-frame amp-iframe {
-  top: 83px;
-  bottom: 83px;
-  left: 26px;
-  right: 26px;
+  top: 63px;
+  bottom: 67px;
+  left: 37px;
+  right: 36px;
 }
 
 .ampstart-mobile-frame {
-  width: 412px;
+  width: 458px;
   height: 806px;
-  margin: 80px 0 0 -206px;
+  margin: 80px 0 0 -229px;
   top: 50%;
   left: 50%;
   border-radius: 17px;
 }
 
 .ampstart-tablet-frame {
-  width: 601px;
+  width: 605px;
   height: 850px;
   top: 50%;
   left: 50%;
-  margin: 80px 0 0 -300.5px;
+  margin: 80px 0 0 -302.5px;
 }
 
 .ampstart-tablet-frame amp-iframe {
-  top: 76px;
+  top: 71px;
   bottom: 76px;
-  left: 39px;
-  right: 39px;
+  left: 49px;
+  right: 49px;
 }
 
 .ampstart-desktop-frame {
