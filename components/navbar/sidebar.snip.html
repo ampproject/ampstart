@@ -48,6 +48,11 @@ limitations under the License.
       {{#links}}
         <li class="ampstart-faq-item"><a href="{{{link.url}}}" class="text-decoration-none">{{link.text}}</a></li>
       {{/links}}
+      {{#calltracking}}
+        <li class="ampstart-faq-item bold">
+          {{> ../calltracking/calltracking.snip.html}}
+        </li>
+      {{/calltracking}}
     </ul>
   {{/faq}}
 
