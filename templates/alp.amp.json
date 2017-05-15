@@ -18,8 +18,18 @@
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "logo": {
-         "name": "Company Name"
+         "name": "Company Name",
+         "classes": "xs-hide"
       },
+      "fixeditems": [
+        {
+          "calltracking": {
+            "config": "https://example.com/calltracking.json",
+            "text": "Call now: (800)555-5555",
+            "href": "tel:8005555555"
+          }
+        }
+      ],
       "faq": {
         "links": [
           {
@@ -82,7 +92,7 @@
             "id": "submit",
             "name": "submit",
             "value": "Submit",
-            "classes": "ampstart-btn-secondary"
+            "classes": ""
           }
         }
       ]

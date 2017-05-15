@@ -35,26 +35,33 @@ limitations under the License.
       {{/href}}
     {{/logo}}
     {{^sidebaronly}}
-      <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
-        <ul class="list-reset center m0 p0 flex justify-center nowrap">
-          {{#nav}}
-            {{#link}}
-              <li class="ampstart-nav-item {{classes}}"><a href="{{{url}}}" class="text-decoration-none block" {{#target}}target="{{.}}"{{/target}}>{{text}}</a></li>
-            {{/link}}
-            {{#dropdown}}
-              <li class="ampstart-nav-item ampstart-nav-dropdown relative">
-                {{> ../dropdown/dropdown.snip.html}}
-              </li>
-            {{/dropdown}}
-            {{#search}}
-              <li  class="ampstart-nav-item ampstart-nav-search right-align">
-                <input type="text" placeholder="{{text}}"></input>
-              </li>
-            {{/search}}
-          {{/nav}}
-        </ul>
-      </nav>
+    <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
+      <ul class="list-reset center m0 p0 flex justify-center nowrap">
+        {{#nav}}
+          {{#link}}
+          <li class="ampstart-nav-item {{classes}}"><a href="{{{url}}}" class="text-decoration-none block" {{#target}}target="{{.}}"{{/target}}>{{text}}</a></li>
+          {{/link}}
+          {{#dropdown}}
+          <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+            {{> ../dropdown/dropdown.snip.html}}
+          </li>
+          {{/dropdown}}
+          {{#search}}
+          <li  class="ampstart-nav-item ampstart-nav-search right-align">
+            <input type="text" placeholder="{{text}}"></input>
+          </li>
+          {{/search}}
+        {{/nav}}
+      </ul>
+    </nav>
     {{/sidebaronly}}
+    {{#fixeditems}}
+    <div class="ampstart-headerbar-fixed center m0 p0 mr2 flex justify-center nowrap">
+      {{#calltracking}}
+        {{> ../calltracking/calltracking.snip.html}}
+      {{/calltracking}}
+    </div>
+    {{/fixeditems}}
   </header>
   {{> sidebar.snip.html}}
   <!-- End Navbar -->
