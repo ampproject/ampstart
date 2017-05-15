@@ -34,11 +34,31 @@
   top: -35px;
 }
 
+.alp-form-container form {
+  max-width: 340px;
+}
+
 .alp-form-container legend {
-  font-size: var(--h4);
+  font-size: var(--h3);
   font-weight: bold;
 }
 
 .alp-page .ampstart-input {
   width: 100%;
 }
+
+.ampstart-headerbar-fixed {
+  line-height: var(--navbar-height);
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+@media (--breakpoint-xs) {
+  .ampstart-headerbar-fixed {
+    flex: 1;
+    position: static;
+  }
+}
+
+
