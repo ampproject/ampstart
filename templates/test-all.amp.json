@@ -7,7 +7,7 @@
         "amp-accordion",
         "amp-form"
       ],
-      "css-path": "templates/themes/2/page.css"
+      "css-path": "templates/test/page.css"
     },
     "form": {
       "title": "Leave a reply",
