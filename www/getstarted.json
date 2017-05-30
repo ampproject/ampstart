@@ -66,8 +66,8 @@
       },
       "faq-links": {
         "links": [
-          {"text": "Privacy", "url": "https://www.google.com/policies/privacy/"},
-          {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE"}
+          {"text": "Privacy", "url": "https://www.google.com/policies/privacy/", "target": "_blank"},
+          {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE", "target": "_blank"}
         ]
       },
       "copyright": {

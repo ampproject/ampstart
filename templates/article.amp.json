@@ -197,9 +197,9 @@
       },
       "faq-links": {
         "links": [
-          {"text": "About", "url": "#", "target": "_blank"},
-          {"text": "Contact", "url": "#", "target": "_blank"},
-          {"text": "Terms", "url": "#", "target": "_blank"}
+          {"text": "About", "url": "#"},
+          {"text": "Contact", "url": "#"},
+          {"text": "Terms", "url": "#"}
         ]
       },
       "copyright": {

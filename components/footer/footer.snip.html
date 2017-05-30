@@ -25,12 +25,7 @@ limitations under the License.
         <ul class="list-reset flex flex-wrap mb3">
           {{#links}}
             <li class="px1">
-              <a class="text-decoration-none caps h5" 
-                {{#if target}}
-                  target="{{target}}" 
-                {{/if}}
-                href="{{{url}}}">{{text}}
-              </a>
+              <a class="text-decoration-none caps h5" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a>
             </li>
           {{/links}}
         </ul>
