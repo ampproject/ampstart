@@ -21,8 +21,22 @@
   box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
 }
 
-.ampstart-headerbar + *:not(amp-sidebar),
-.ampstart-headerbar + amp-sidebar + * {
+.ampstart-headerbar + div,
+.ampstart-headerbar + figure,
+.ampstart-headerbar + section,
+.ampstart-headerbar + article,
+.ampstart-headerbar + main,
+.ampstart-headerbar + nav,
+.ampstart-headerbar + footer,
+.ampstart-headerbar + header,
+.ampstart-headerbar + amp-sidebar + div,
+.ampstart-headerbar + amp-sidebar + figure,
+.ampstart-headerbar + amp-sidebar + section,
+.ampstart-headerbar + amp-sidebar + article,
+.ampstart-headerbar + amp-sidebar + main,
+.ampstart-headerbar + amp-sidebar + nav,
+.ampstart-headerbar + amp-sidebar + footer,
+.ampstart-headerbar + amp-sidebar + header {
   margin-top: var(--navbar-height);
 }
 

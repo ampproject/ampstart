@@ -20,7 +20,20 @@
   background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
 }
 
-.ampstart-image-heading > * {
+.ampstart-image-heading > .h1,
+.ampstart-image-heading > .h2,
+.ampstart-image-heading > .h3,
+.ampstart-image-heading > .h4,
+.ampstart-image-heading > .h5,
+.ampstart-image-heading > .h6,
+.ampstart-image-heading > .ampstart-subtitle,
+.ampstart-image-heading > .caps,
+.ampstart-image-heading > h1,
+.ampstart-image-heading > h2,
+.ampstart-image-heading > h3,
+.ampstart-image-heading > h4,
+.ampstart-image-heading > h5,
+.ampstart-image-heading > h6 {
   margin: 0;
 }
 

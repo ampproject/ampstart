@@ -15,7 +15,22 @@
  */
 @import 'base-page-vars';
 
-* {
+amp-sidebar,
+div,
+section,
+input,
+textarea,
+select,
+label,
+button,
+.btn,
+.border,
+.border-top,
+.border-right,
+.border-bottom,
+.border-left,
+.ampstart-btn,
+.ampstart-input {
   box-sizing: border-box;
 }
 
