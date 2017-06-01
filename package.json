@@ -1,5 +1,8 @@
 {
   "name": "kickstart",
+  "engines": {
+    "node": "^7.0.0"
+  },
   "scripts": {
     "build": "gulp build",
     "clean": "gulp clean",
