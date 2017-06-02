@@ -5,9 +5,12 @@
       "canonical-path": "templates/test-all.amp",
       "extensions": [
         "amp-accordion",
-        "amp-form"
+        "amp-form",
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-social-share"
       ],
-      "css-path": "templates/test/page.css"
+      "css-path": "templates/themes/2/page.css"
     },
     "form": {
       "title": "Leave a reply",
