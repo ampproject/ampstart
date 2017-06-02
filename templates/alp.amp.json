@@ -19,7 +19,7 @@
       "sidebaronly": true,
       "logo": {
          "name": "Company Name",
-         "classes": "xs-hide"
+         "classes": "h3 xs-hide"
       },
       "fixeditems": [
         {
@@ -103,6 +103,7 @@
       "href": "tel:8005555555"
     },
     "footer": {
+      "spacing-classes": "px3",
       "social-follow": false,
       "faq-links": {
         "links": [

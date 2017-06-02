@@ -48,6 +48,7 @@
 .ampstart-input > label {
   color: var(--color-input-font-secondary);
   pointer-events: none;
+  text-align: left;
   font-size: var(--h5);
   line-height: var(--line-height-1);
   opacity: 0;

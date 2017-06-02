@@ -47,11 +47,25 @@
   width: 100%;
 }
 
+.ampstart-headerbar-title {
+  color: var(--color-font-default);
+}
+
 .ampstart-headerbar-fixed {
   line-height: var(--navbar-height);
   position: absolute;
   right: 0;
   font-weight: bold;
+}
+
+.ampstart-footer {
+  padding-top: 0;
+}
+
+.ampstart-footer-nav a{
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1rem;
 }
 
 @media (--breakpoint-xs) {
