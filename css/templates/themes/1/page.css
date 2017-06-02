@@ -57,10 +57,8 @@ h4,
   color: var(--color-font-primary);
 }
 
-.ampstart-headerbar .h3 {
+.ampstart-headerbar-title {
   font: normal var(--h2)/var(--line-height-5) var(--font-primary);
-  letter-spacing: 0;
-  text-transform: none;
 }
 
 .ampstart-navbar-trigger {

@@ -19,7 +19,8 @@
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "logo": {
-        "name": "The Scenic"
+        "name": "The Scenic",
+        "classes": "h3"
       },
       "nav": [
         {
