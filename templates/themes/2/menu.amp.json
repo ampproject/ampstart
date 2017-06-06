@@ -19,13 +19,13 @@
       },
       "nav": [
         {
-          "link": {"url": "#", "text": "Home"}
+          "link": {"url": "home.amp.html", "text": "Home"}
         },
         {
           "link": {"url": "#", "text": "Menu"}
         },
         {
-          "link": {"url": "#", "text": "Locations & Hours"}
+          "link": {"url": "home.amp.html#locations", "text": "Locations & Hours"}
         }
       ],
       "social-follow": {

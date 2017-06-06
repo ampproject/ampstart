@@ -21,7 +21,7 @@
           "link": {"url": "#", "text": "Home"}
         },
         {
-          "link": {"url": "#", "text": "Menu"}
+          "link": {"url": "menu.amp.html", "text": "Menu"}
         },
         {
           "link": {"url": "#locations", "text": "Locations & Hours"}
@@ -43,7 +43,7 @@
       "wide-img": "../../../img/themes/2/hero.jpg",
       "cta": {
         "text": "View Menu",
-        "url": "#"
+        "url": "menu.amp.html"
       }
     },
     "main": {
