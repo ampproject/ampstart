@@ -398,12 +398,6 @@
       },
       "navbar-sidebar-only": {
         "navbar": {
-          "logo": {
-            "url": "../img/thescenic/header-logo.png",
-            "width": "110",
-            "height": "33"
-          },
-          "name": "The Scenic Blog logo",
           "sidebar-id": "header-sidebar",
           "sidebaronly": true,
           "nav": [
@@ -470,12 +464,6 @@
       },
       "navbar-with-sidebar": {
         "navbar": {
-          "logo": {
-            "url": "../img/thescenic/header-logo.png",
-            "width": "110",
-            "height": "33"
-          },
-          "name": "The Scenic Blog Logo",
           "sidebar-id": "header-sidebar",
           "nav": [
             {
