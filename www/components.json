@@ -23,12 +23,13 @@
     "navbar": {
       "logo": {
         "url": "../img/www/amp_start_logo.svg",
+        "alt": "AMP start home logo",
         "width": "119",
         "height": "26",
         "classes": "xs-hide sm-hide",
         "href": "/"
       },
-      "name": "AMP start home logo",
+      "name": "The Blog",
       "sidebar-id": "header-sidebar",
       "nav": [
         {

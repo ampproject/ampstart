@@ -400,11 +400,11 @@
         "navbar": {
           "logo": {
             "url": "../img/components/sidebar-example-logo.png",
-            "alt": "Sidebar blog logo",
+            "alt": "Example logo image",
             "width": "110",
             "height": "33"
           },
-          "name": "The blog logo",
+          "name": "The Blog",
           "sidebar-id": "header-sidebar",
           "sidebaronly": true,
           "nav": [
@@ -473,11 +473,11 @@
         "navbar": {
           "logo": {
             "url": "../img/components/sidebar-example-logo.png",
-            "alt": "Sidebar blog logo",
+            "alt": "Example logo image",
             "width": "110",
             "height": "33"
           },
-          "name": "The blog logo",
+          "name": "The Blog",
           "sidebar-id": "header-sidebar",
           "nav": [
             {
