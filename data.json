@@ -400,10 +400,11 @@
         "navbar": {
           "logo": {
             "url": "../img/components/sidebar-example-logo.png",
+            "alt": "Sidebar blog logo",
             "width": "110",
             "height": "33"
           },
-          "name": "Sidebar blog logo",
+          "name": "The blog logo",
           "sidebar-id": "header-sidebar",
           "sidebaronly": true,
           "nav": [
@@ -472,10 +473,11 @@
         "navbar": {
           "logo": {
             "url": "../img/components/sidebar-example-logo.png",
+            "alt": "Sidebar blog logo",
             "width": "110",
             "height": "33"
           },
-          "name": "Sidebar blog logo",
+          "name": "The blog logo",
           "sidebar-id": "header-sidebar",
           "nav": [
             {
