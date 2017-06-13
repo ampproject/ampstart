@@ -399,7 +399,8 @@
       "navbar-sidebar-only": {
         "navbar": {
           "logo": {
-            "url": "../img/thescenic/header-logo.png",
+            "url": "../img/components/sidebar-example-logo.png",
+            "alt": "Example logo image",
             "width": "110",
             "height": "33"
           },
@@ -471,7 +472,8 @@
       "navbar-with-sidebar": {
         "navbar": {
           "logo": {
-            "url": "../img/thescenic/header-logo.png",
+            "url": "../img/components/sidebar-example-logo.png",
+            "alt": "Example logo image",
             "width": "110",
             "height": "33"
           },

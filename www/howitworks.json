@@ -18,6 +18,7 @@
     "navbar": {
       "logo": {
         "url": "../img/www/amp_start_logo.svg",
+        "alt": "AMP start home logo",
         "width": "119",
         "height": "26",
         "classes": "xs-hide sm-hide",

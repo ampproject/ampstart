@@ -1,5 +1,5 @@
 {{!
-<!---
+<!--- 
 Copyright 2016 The AMP Start Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,13 +19,13 @@ limitations under the License.
 {{#navbar}}
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-    <div role="button" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</div>
+    <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</div>
     {{#logo}}
       {{#href}}
       <a href="{{{.}}}" class="text-decoration-none inline-block mx-auto">
       {{/href}}
       {{#url}}
-        <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto {{classes}}" alt="{{name}}"></amp-img>
+        <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="fixed" class="my0 mx-auto {{classes}}" alt="{{#alt}}{{.}}{{/alt}}{{^alt}}{{name}}{{/alt}}"></amp-img>
       {{/url}}
       {{^url}}
         <div class="ampstart-headerbar-title mx-auto {{classes}}">{{name}}</div>
