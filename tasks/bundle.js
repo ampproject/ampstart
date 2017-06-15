@@ -31,7 +31,7 @@ function collectResources(filepath, html, done) {
     const ampimgs = window.document.querySelectorAll('amp-img[src]');
     // This can most likely be done with the amp-img scan but separating
     // out for now.
-    let srcsetimgs = window.document.querySelectorAll('amp-img[srcset]');
+    var srcsetimgs = window.document.querySelectorAll('amp-img[srcset]');
     srcsetimgs = [].concat.apply([], [].slice.call(srcsetimgs)
         .map(function(ampimg) {
           return ampimg.getAttribute('srcset')
