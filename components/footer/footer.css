@@ -17,7 +17,6 @@
 .ampstart-footer {
   background-color: var(--color-footer-background);
   color: var(--color-font-footer);
-  font-size: var(--h6);
   padding-top: var(--space-7);
   padding-bottom: var(--space-7);
 }

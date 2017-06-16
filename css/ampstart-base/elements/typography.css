@@ -54,7 +54,8 @@ body {
   line-height: var(--line-height-2);
 }
 
-.ampstart-footer {
+.ampstart-footer,
+.ampstart-footer-text {
   font-size: var(--h6);
   line-height: var(--line-height-1);
 }
