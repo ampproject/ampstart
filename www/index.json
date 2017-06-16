@@ -87,7 +87,8 @@
             "height": "640",
             "url": "../img/www/index/template3.png",
             "2x_url": "../img/www/index/template3_2x.png",
-            "layout": "responsive"
+            "layout": "responsive",
+            "alt": "Screenshot of the Article template"
           },
           "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
           "lightbox-id": "template-3",
@@ -103,7 +104,8 @@
             "height": "640",
             "url": "../img/www/index/template1.png",
             "2x_url": "../img/www/index/template1_2x.png",
-            "layout": "responsive"
+            "layout": "responsive",
+            "alt": "Screenshot of the Blog Post template"
           },
           "right-aligned": true,
           "desc": "A responsive layout that features text and images, and the ability to comment, share, and follow.",
