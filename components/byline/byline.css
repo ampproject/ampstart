@@ -14,10 +14,6 @@
  * limitations under the License.
  */
 
-.ampstart-byline {
-  color: var(--color-dark-grey);
-}
-
 .ampstart-byline time {
   font-style: normal;
   white-space: nowrap;

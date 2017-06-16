@@ -36,22 +36,25 @@ body {
 }
 
 .ampstart-subtitle {
-
+  color: var(--color-font-subtitle);
 }
 
 .ampstart-label {
-
+  font-size: var(--h5);
+  line-height: var(--line-height-2);
+  text-transform: uppercase;
+  letter-spacing: .2em
 }
 
 .ampstart-byline,
-.ampstart-caption {
-
-}
-
+.ampstart-caption,
 .ampstart-hint {
-
+  font-size: var(--h5);
+  color: var(--color-font-subtitle);
+  line-height: var(--line-height-2);
 }
 
 .ampstart-footer {
-
+  font-size: var(--h6);
+  line-height: var(--line-height-1);
 }

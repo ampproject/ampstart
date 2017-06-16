@@ -40,11 +40,6 @@ p {
   margin: 0;
 }
 
-/* Subtitle */
-.ampstart-subtitle {
-  color: var(--color-font-subtitle);
-  font-size: var(--h5);
-}
 
 /* Accents */
 .ampstart-accent {
