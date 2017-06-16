@@ -16,13 +16,11 @@
 
 .ampstart-title-lg {
   font-size: var(--h1);
-  font-weight: bold;
   line-height: var(--line-height-6);
 }
 
 .ampstart-title-md {
   font-size: var(--h2);
-  font-weight: bold;
   line-height: var(--line-height-5);
 }
 
