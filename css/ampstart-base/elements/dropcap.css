@@ -21,5 +21,7 @@
   float: left;
   overflow:hidden;
   /* Line up with text*/
-  padding-top: var(--h5);
+  line-height: var(--h1);
+  margin-left: 0;
+  margin-right: .5rem;
 }
