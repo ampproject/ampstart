@@ -317,7 +317,7 @@
                 "width": "1280",
                 "height": "853",
                 "url": "../../img/components/nasa-45074.jpg",
-                "heading-html": "<h1>Image 1</h1>"
+                "heading-html": "<h3 class=\"h1\">Image 1</h3>"
               }
             },
             {
@@ -326,7 +326,7 @@
                 "height": "853",
                 "url": "../../img/components/nasa-45068.jpg",
                 "caption": "Bright red flower. ",
-                "heading-html": "<h1>Image 2</h1>"
+                "heading-html": "<h3 class=\"h1\">Image 2</h3>"
               }
             },
             {
@@ -334,7 +334,7 @@
                 "width": "1280",
                 "height": "853",
                 "url": "../../img/components/nasa-45076.jpg",
-                "heading-html": "<h1>Image 3</h1>"
+                "heading-html": "<h3 class=\"h1\">Image 3</h3>"
               }
             }
           ]
