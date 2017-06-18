@@ -54,6 +54,10 @@
   font-size: var(--h2);
 }
 
+.ampstart-readmore-text {
+  background: var(--color-primary);
+}
+
 @media (--breakpoint-md) {
   .ampstart-image-fullpage-hero > amp-img {
     height: 60vh;

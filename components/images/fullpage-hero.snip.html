@@ -37,12 +37,10 @@ limitations under the License.
     </header>
     <footer class="absolute left-0 right-0 bottom-0">
       {{#readmore}}
-      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#{{content-id}}">{{text}}</a>
+      <a class="ampstart-readmore py3 caps line-height-2 text-decoration-none center block h5" href="#{{content-id}}"><span class="ampstart-readmore-text px1">{{text}}</span></a>
       {{/readmore}}
       {{#cta}}
-      <button class="ampstart-btn ampstart-fullpage-hero-cta h5 m3">
-        <a class="block text-decoration-none px1 py2" href="{{{url}}}">{{text}}</a>
-      </button>
+      <a class="ampstart-btn inline-block ampstart-fullpage-hero-cta h5 m3 text-decoration-none" href="{{{url}}}">{{text}}</a>
       {{/cta}}
     </footer>
     </figcaption>
