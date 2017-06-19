@@ -90,17 +90,10 @@ h6 {
 }
 
 /* Dropcap overrides. */
-.ampstart-dropcap {
-  padding-top: 0;
-  margin-top: 0;
-}
 
 .ampstart-dropcap:first-letter {
   color: inherit;
-  float: left;
   font-size: 3.125rem;  /* 50/16 */
   font-weight: inherit;
   line-height: 1.12;  /* 56/50 */
-  margin-left: 0;
-  margin-right: .5rem;
 }

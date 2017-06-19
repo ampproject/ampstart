@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-.ampstart-dropcap:first-letter {
+.ampstart-initialcap {
+  padding-top: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.ampstart-initialcap:first-letter {
   color: var(--color-font-secondary);
   font-size: var(--h1);
   font-weight: var(--bold-font-weight);
-  float: left;
-  overflow:hidden;
-  /* Line up with text*/
-  line-height: var(--h1);
-  margin-left: 0;
-  margin-right: .5rem;
+  margin-left: -2px;
 }

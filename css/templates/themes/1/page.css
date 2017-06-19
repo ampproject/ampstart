@@ -155,10 +155,7 @@ h4,
 
 .ampstart-dropcap:first-letter {
   color: var(--color-font-primary);
-  float: left;
   font-size: 3.59375rem;  /* 57.5/16 */
   font-weight: inherit;
   line-height: 1.14782;  /* 66/57.5 */
-  margin-left: 0;
-  margin-right: .5rem;
 }

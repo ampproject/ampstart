@@ -426,6 +426,17 @@
           {
             "render": {
               "iframe": {
+                "url": "render/initialcap.amp.html",
+                "width": false,
+                "height": "220",
+                "layout": "fixed-height"
+              }
+            },
+            "code-file": "initialcap"
+          },
+          {
+            "render": {
+              "iframe": {
                 "url": "render/bodycopy.amp.html",
                 "width": false,
                 "height": "832",
