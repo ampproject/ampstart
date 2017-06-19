@@ -658,6 +658,87 @@
           "amp-social-share"
         ],
         "css-path": "www/render/page.css"
+      },
+      "img-heading-carousel": {
+        "carousel": {
+          "type": "slides",
+          "layout": "responsive",
+          "width": "1280",
+          "height": "853",
+          "images": [
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/components/nasa-45074.jpg",
+                "heading-html": "<h1>Image 1</h1>"
+              }
+            },
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/components/nasa-45068.jpg",
+                "caption": "Bright red flower. ",
+                "heading-html": "<h1>Image 2</h1>"
+              }
+            },
+            {
+              "image-with-heading": {
+                "width": "1280",
+                "height": "853",
+                "url": "../../img/components/nasa-45076.jpg",
+                "heading-html": "<h1>Image 3</h1>"
+              }
+            }
+          ]
+        }
+      },
+      "img-caption-carousel": {
+        "carousel": {
+          "type": "slides",
+          "layout": "responsive",
+          "width": "1280",
+          "height": "870",
+          "images": [
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/components/nasa-45076.jpg",
+                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "J.T. Lee", "url": "#"}
+                }
+              }
+            },
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/components/nasa-45074.jpg",
+                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "Mali D.", "url": "#"}
+                }
+              }
+            },
+            {
+              "image-with-caption": {
+                "width": "1280",
+                "height": "753",
+                "url": "../../img/components/nasa-45068.jpg",
+                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
+                "credit": {
+                  "credit-prefix": "Taken by ",
+                  "author": {"text": "L. Fischer", "url": "#"}
+                }
+              }
+            }
+          ]
+        }
       }
     },
     "textarea": {
