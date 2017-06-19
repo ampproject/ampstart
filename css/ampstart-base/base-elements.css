@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 
+@import 'elements/typography';
 @import 'elements/cards';
 @import 'elements/heading';
 @import 'elements/anchors';
