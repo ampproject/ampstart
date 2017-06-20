@@ -4,9 +4,7 @@
       "title": "AMP Start - UI Components",
       "canonical-path": "components",
       "extensions": [
-        "amp-carousel",
         "amp-sidebar",
-        "amp-lightbox",
         "amp-iframe",
         "amp-selector",
         "amp-analytics",
