@@ -51,7 +51,7 @@ body {
   font-size: var(--h5);
   color: var(--color-font-subtitle);
   line-height: var(--line-height-2);
-  letter-spacing: .1rem
+  letter-spacing: .06rem;
 }
 
 .ampstart-label {
@@ -62,5 +62,5 @@ body {
 .ampstart-small-text {
   font-size: var(--h6);
   line-height: var(--line-height-1);
-  letter-spacing: .1rem
+  letter-spacing: .06rem;
 }
