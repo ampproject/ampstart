@@ -33,6 +33,7 @@
 .ampstart-device-preview-mask {
   background: var(--color-white);
   opacity: 0.8;
+  pointer-events: none;
 }
 
 .ampstart-device-preview-select {
