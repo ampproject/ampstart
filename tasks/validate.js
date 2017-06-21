@@ -26,7 +26,8 @@ function validate() {
         `!${config.dest.hl_partials}/**/*.html`,
       ])
       .pipe(validator.validate())
-      .pipe(validator.format());
+      .pipe(validator.format())
+      .pipe(validator.failAfterError());
 }
 
 gulp.task('validate', validate);
