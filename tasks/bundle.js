@@ -27,7 +27,8 @@ const cssbeautify = require('cssbeautify');
 function collectResources(filepath, html, done) {
   const filename = path.basename(filepath, '.amp.html');
   const env = jsdom.env(html, function(err, window) {
-    const css = window.document.querySelector('style[amp-custom]').textContent;
+    const ampCustom = window.document.querySelector('style[amp-custom]');
+    const css = ampCustom && ampCustom.textContent || '';
     const ampimgs = window.document.querySelectorAll('amp-img[src]');
     // This can most likely be done with the amp-img scan but separating
     // out for now.
@@ -63,6 +64,7 @@ function collectResources(filepath, html, done) {
       fs.copySync(imgpath, `.archive/${imgpath.replace(/^dist/, filename)}`);
     });
     const pathToTmpl = filepath.replace(/.*templates\/(.*)/, '\$1');
+    console.log('pathToTmpl', pathToTmpl);
     fs.copySync(filepath,
         `.archive/${filename}/templates/${pathToTmpl}`);
     if (css) {
