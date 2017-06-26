@@ -6,7 +6,7 @@
         "extensions": [],
         "css-path": "www/render/page.css"
       }
-    },
+    }, 
     "lists": {
       "head-tag": {
         "title": "AMP Start - UI Components - Lists",
