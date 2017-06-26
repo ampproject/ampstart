@@ -2,7 +2,7 @@
   "www-index": {
     "head-tag": {
       "title": "AMP Start - Accelarated Mobile Pages Templates",
-      "canonical-path": "https://www.ampstart.com/",
+      "canonical-path": "",
       "extensions": [
         "amp-carousel",
         "amp-sidebar",
