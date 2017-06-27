@@ -66,8 +66,8 @@
     },
     "fullpage-hero": {
       "heading-html": "The Year's Best Animal Photos",
-      "narrow-img": "../img/article/elephants_narrow.png",
-      "wide-img": "../img/article/elephants_wide.jpg",
+      "narrow-img": "../../img/article/elephants_narrow.png",
+      "wide-img": "../../img/article/elephants_wide.jpg",
       "credit": {
         "credit-prefix": "By",
         "author": {"text": "J.T. Lee", "url": "#"},
@@ -82,7 +82,7 @@
       "image-with-caption": {
         "width": "756",
         "height": "520",
-        "url": "../img/article/gorilla.png",
+        "url": "../../img/article/gorilla.png",
         "caption": "Description of the photograph.",
         "credit": {
           "credit-prefix": "Taken by ",
@@ -101,7 +101,7 @@
           "image-with-caption": {
             "width": "756",
             "height": "520",
-            "url": "../img/article/zebras.jpg",
+            "url": "../../img/article/zebras.jpg",
             "caption": "Zebras grazing.",
             "credit": {
               "credit-prefix": "Taken by ",
@@ -113,7 +113,7 @@
           "image-with-caption": {
             "width": "756",
             "height": "520",
-            "url": "../img/article/sheep.jpg",
+            "url": "../../img/article/sheep.jpg",
             "caption": "Sheep in a field.",
             "credit": {
               "credit-prefix": "Taken by ",
@@ -125,7 +125,7 @@
           "image-with-caption": {
             "width": "756",
             "height": "520",
-            "url": "../img/article/camels.jpg",
+            "url": "../../img/article/camels.jpg",
             "caption": "Camels on a beach.",
             "credit": {
               "credit-prefix": "Taken by ",
@@ -143,7 +143,7 @@
       "hero-img": {
         "width": "656",
         "height": "248",
-        "url": "../img/article/sloth.png",
+        "url": "../../img/article/sloth.png",
         "alt": "this is a sloth"
       },
       "article-heading": {
@@ -164,7 +164,7 @@
           "image-with-caption": {
             "width": "233",
             "height": "202",
-            "url": "../img/article/bird.png",
+            "url": "../../img/article/bird.png",
             "caption": "Bullseye view: Bird Watching 101"
           }
         },
@@ -172,7 +172,7 @@
           "image-with-caption": {
             "width": "233",
             "height": "202",
-            "url": "../img/article/cheetah.png",
+            "url": "../../img/article/cheetah.png",
             "caption": "The Worlds fastest animal"
           }
         },
@@ -180,7 +180,7 @@
           "image-with-caption": {
             "width": "233",
             "height": "202",
-            "url": "../img/article/cow.png",
+            "url": "../../img/article/cow.png",
             "caption": "Cattle Ranch roundup"
           }
         }
