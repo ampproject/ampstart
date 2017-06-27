@@ -1,0 +1,68 @@
+.ampstart-icon {
+  fill: var(--color-primary);
+}
+
+.ampstart-headerbar {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.ampstart-headerbar-link {
+  margin-left: 0;
+}
+
+.ampstart-headerbar-title {
+  font-size: 40px;
+  line-height: normal;
+}
+
+.ampstart-sidebar {
+  background-color: var(--color-white);
+  width: 100%;
+}
+
+.ampstart-sidebar .ampstart-navbar-trigger {
+  padding-top: 22px;
+  font-size: 22px;
+  color: var(--color-primary);
+}
+
+.ampstart-nav {
+  margin-top: 120px;
+}
+
+.ampstart-nav-item {
+  color: var(--color-primary);
+}
+
+.ampstart-nav-link {
+  font-size: var(--h3);
+  font-weight: var(--bold-font-weight);
+  line-height: normal;
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+.ampstart-sidebar-nav {
+  padding-bottom: 3rem;
+}
+
+.ampstart-sidebar-faq {
+  position: absolute;
+  bottom: var(--space-1);
+  left: 0;
+  width: 100%;
+  color: var(--color-secondary);
+  border-top: 1px solid var(--color-seperator);
+  font-family: var(--font-family-secondary);
+  padding-top: var(--space-2);
+}
+
+.ampstart-faq-item {
+  line-height: normal;
+  padding: 0 0 var(--space-1) var(--space-3);
+}
+
+.main {
+  margin-top: 60px;
+}
