@@ -14,7 +14,7 @@
     },
     "navbar": {
       "logo": {
-        "url": "../img/blog/logo.png",
+        "url": "../../img/blog/logo.png",
         "width": "100",
         "height": "61.3"
       },

@@ -2,7 +2,7 @@
   "test-all-amp": {
     "head-tag": {
       "title": "Test Page",
-      "canonical-path": "templates/test-all.amp",
+      "canonical-path": "templates/test-all/test-all.amp",
       "extensions": [
         "amp-accordion",
         "amp-form",
@@ -10,7 +10,7 @@
         "amp-sidebar",
         "amp-social-share"
       ],
-      "css-path": "templates/themes/2/page.css"
+      "css-path": "templates/themes_2/page.css"
     },
     "form": {
       "title": "Leave a reply",
