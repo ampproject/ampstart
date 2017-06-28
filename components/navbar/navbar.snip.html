@@ -60,6 +60,9 @@ limitations under the License.
       {{#calltracking}}
         {{> ../calltracking/calltracking.snip.html}}
       {{/calltracking}}
+      {{#link}}
+        <a href="{{{url}}}" class="text-decoration-none px1 {{classes}}" {{#target}}target={{.}}{{/target}}>{{text}}</a>
+      {{/link}}
     </div>
     {{/fixeditems}}
   </header>
