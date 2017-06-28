@@ -1,0 +1,55 @@
+@import "../page-vars";
+
+/* An extra layer on top of bass css to allow responsive type scale */
+
+@media (--breakpoint-md) {
+  .lune .h1-md {
+    font-size: var(--h1-md);
+  }
+
+  .lune .h2-md {
+    font-size: var(--h2-md);
+  }
+
+  .lune .h3-md {
+    font-size: var(--h3-md);
+  }
+
+  .lune .h4-md {
+    font-size: var(--h4-md);
+  }
+
+  .lune .h5-md {
+    font-size: var(--h5-md);
+  }
+
+  .lune .h6-md {
+    font-size: var(--h6-md);
+  }
+}
+
+@media (--breakpoint-lg) {
+  .lune .h1-lg {
+    font-size: var(--h1-lg);
+  }
+
+  .lune .h2-lg {
+    font-size: var(--h2-lg);
+  }
+
+  .lune .h3-lg {
+    font-size: var(--h3-lg);
+  }
+
+  .lune .h4-lg {
+    font-size: var(--h4-lg);
+  }
+
+  .lune .h5-lg {
+    font-size: var(--h5-lg);
+  }
+
+  .lune .h6-lg {
+    font-size: var(--h6-lg);
+  }
+}

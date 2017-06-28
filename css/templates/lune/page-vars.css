@@ -1,0 +1,80 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+:root {
+  --content-max-width: 650px;
+  --font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --z1: 1; /* body */
+  --z2: 2; /* overlay */
+  --z3: 3; /* sidebar mask */  
+  --z4: 4; /* sidebar */
+  --z5: 5; /* header */
+
+  --layout-header-height-m: 70px;
+  --layout-header-height-d: 92px;
+
+
+  /* Type */
+  --font-family: "Lato", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", Arial, sans-serif;
+
+  /* Responsive type scale */
+  --h1: 5.3125rem; /* 85px */
+  --h2: 3.125rem; /* 50px */
+  --h3: 2.18rem; /* 35px */
+  --h4: 1.25rem; /* 20px */
+  --h5: 1.125rem; /* 18px */
+  --h6: .875rem; /* 14px */
+
+  --h1-md: 22.5rem; /* 360px */
+  --h2-md: 14rem; /* 224px */
+  --h3-md: 10rem; /* 160px */
+  --h4-md: 2.75rem; /* 44px */
+  --h5-md: 1.75rem; /* 28px */
+  --h6-md: 1.22rem; /* 22px */
+
+  --h1-lg: 22.5rem; /* 360px */
+  --h2-lg: 14rem; /* 224px */
+  --h3-lg: 10rem; /* 160px */
+  --h4-lg: 2.75rem; /* 44px */
+  --h5-lg: 1.75rem; /* 28px */
+  --h6-lg: 1.22rem; /* 22px */
+
+  /* Colours */
+  --color-dark-grey: #202125;
+  --color-dark-grey-2: #33353c;
+
+  --color-light-1: var(--color-white);
+  --color-light-2: #f9f9f9;
+
+  /* Backgrounds */
+  --color-bg-dark-m: var(--color-dark-grey);
+  --color-bg-dark-d: var(--color-dark-grey-2);
+  --color-bg-light: var(--color-light-1);
+  --color-overlay-1: #fcefef;
+  --color-overlay-2: var(--color-light-2);
+
+  /* Foregrounds */
+  --color-font-primary: var(--color-light-1);
+  --color-font-secondary: var(--color-dark-grey);
+  --color-navbar-font-primary: var(--color-dark-grey);
+
+  --content-max-width: 100%;
+
+
+  @custom-media --breakpoint-mt (min-width: 45rem); /* 720px */
+  @custom-media --breakpoint-vld (min-width: 77.5rem); /* 1240px */
+}
