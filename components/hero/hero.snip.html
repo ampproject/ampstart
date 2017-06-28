@@ -1,0 +1,20 @@
+{{#hero}}
+  <div class="ampstart-hero center">
+    <div class="ampstart-hero-img">
+      {{#images}}
+        {{#image}}
+          <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" media="{{media}}" alt="{{alt}}"></amp-img>
+        {{/image}}
+      {{/images}}
+    </div>
+    <div class="ampstart-hero-content ampstart-hero-theme-{{text-theme}} flex justify-center flex-column">
+      <div>
+      <h2 class="ampstart-hero-title h3 caps">{{title}}</h2>
+      <p class="ampstart-hero-body">{{body}}</p>
+      {{#link}}
+        <button class="ampstart-btn ampstart-btn-secondary caps">{{text}}</button>
+      {{/link}}
+      </div>
+    </div>
+  </div>
+{{/hero}}

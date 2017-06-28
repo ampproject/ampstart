@@ -1,4 +1,11 @@
 @import '../../core';
-@import '../../../components/inputs/inputs';
 @import 'page-vars';
+@import 'typography';
+@import 'elements';
+@import '../../../components/inputs/inputs';
 @import 'header';
+@import '../../../components/hero/hero';
+
+main {
+  max-width: none;
+}

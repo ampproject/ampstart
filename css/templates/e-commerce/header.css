@@ -1,19 +1,32 @@
+@import '../../core';
+@import 'page-vars';
+
 .ampstart-icon {
   fill: var(--color-primary);
 }
 
 .ampstart-headerbar {
-  background-color: var(--color-primary);
-  color: var(--color-white);
-}
-
-.ampstart-headerbar-link {
-  margin-left: 0;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  height: var(--narrow-nav-height);
+  z-index: var(--z1);
 }
 
 .ampstart-headerbar-title {
-  font-size: 40px;
+  font-size: var(--h4);
+  font-weight: var(--bold-font-weight);
   line-height: normal;
+  color: var(--color-secondary);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-headerbar-title {
+    font-size: var(--h3);
+  }
+}
+
+.ampstart-headerbar-home-link {
+  padding-bottom: 0;
 }
 
 .ampstart-sidebar {
@@ -21,14 +34,23 @@
   width: 100%;
 }
 
+.ampstart-sidebar-container {
+  position: absolute;
+  bottom: var(--space-1);
+  left: 0;
+  width: 100%;
+}
+
 .ampstart-sidebar .ampstart-navbar-trigger {
-  padding-top: 22px;
-  font-size: 22px;
+  padding-top: var(--space-3);
+  font-size: var(--space-3);
   color: var(--color-primary);
 }
 
 .ampstart-nav {
-  margin-top: 120px;
+  margin-top: var(--space-2);
+  margin-bottom: var(--space-4);
+  margin-left: var(--space-3);
 }
 
 .ampstart-nav-item {
@@ -43,26 +65,26 @@
   margin-bottom: var(--space-3);
 }
 
-.ampstart-sidebar-nav {
-  padding-bottom: 3rem;
-}
-
 .ampstart-sidebar-faq {
-  position: absolute;
-  bottom: var(--space-1);
-  left: 0;
   width: 100%;
   color: var(--color-secondary);
   border-top: 1px solid var(--color-seperator);
   font-family: var(--font-family-secondary);
   padding-top: var(--space-2);
+  padding-left: var(--space-3);
 }
 
 .ampstart-faq-item {
   line-height: normal;
-  padding: 0 0 var(--space-1) var(--space-3);
+  padding: 0 0 var(--space-1) 0;
 }
 
 .main {
-  margin-top: 60px;
+  margin-top: var(--narrow-nav-height);
+}
+
+@media (--breakpoint-md) {
+  .main {
+    margin-top: calc(var(--narrow-nav-height) + var(--space-1));
+  }
 }

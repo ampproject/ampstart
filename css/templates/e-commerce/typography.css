@@ -1,0 +1,8 @@
+@import '../../core';
+@import 'page-vars';
+
+.h3 {
+  color: var(--color-font-title);
+  line-height: normal;
+  padding-bottom: var(--space-1);
+}

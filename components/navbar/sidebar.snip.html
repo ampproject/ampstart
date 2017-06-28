@@ -21,40 +21,42 @@ limitations under the License.
   <div class="flex justify-start items-center ampstart-sidebar-header">
     <div role="button" aria-label="close sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
   </div>
-  <nav class="ampstart-sidebar-nav ampstart-nav">
-    <ul class="list-reset m0 p0 ampstart-label">
-      {{#nav}}
-        {{#link}}
-          <li class="ampstart-nav-item"><a class="ampstart-nav-link" href="{{{url}}}">{{text}}</a></li>
-        {{/link}}
-        {{#dropdown}}
-          <li class="ampstart-nav-item ampstart-nav-dropdown relative">
-            {{> ../dropdown/dropdown-inline.snip.html}}
-          </li>
-        {{/dropdown}}
-        {{#search}}
-          <li  class="ampstart-nav-item ampstart-nav-search">
-            <input type="text" placeholder="{{text}}"></input>
-          </li>
-        {{/search}}
-      {{/nav}}
-    </ul>
-  </nav>
+  <div class="ampstart-sidebar-container">
+    <nav class="ampstart-sidebar-nav ampstart-nav">
+      <ul class="list-reset m0 p0 ampstart-label">
+        {{#nav}}
+          {{#link}}
+            <li class="ampstart-nav-item"><a class="ampstart-nav-link" href="{{{url}}}">{{text}}</a></li>
+          {{/link}}
+          {{#dropdown}}
+            <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+              {{> ../dropdown/dropdown-inline.snip.html}}
+            </li>
+          {{/dropdown}}
+          {{#search}}
+            <li  class="ampstart-nav-item ampstart-nav-search">
+              <input type="text" placeholder="{{text}}"></input>
+            </li>
+          {{/search}}
+        {{/nav}}
+      </ul>
+    </nav>
 
-  {{> ../social-follow/social-follow.snip.html}}
+    {{> ../social-follow/social-follow.snip.html}}
 
-  {{#faq}}
-    <ul class="ampstart-sidebar-faq list-reset m0">
-      {{#links}}
-        <li class="ampstart-faq-item"><a href="{{{link.url}}}" class="text-decoration-none">{{link.text}}</a></li>
-      {{/links}}
-      {{#calltracking}}
-        <li class="ampstart-faq-item bold">
-          {{> ../calltracking/calltracking.snip.html}}
-        </li>
-      {{/calltracking}}
-    </ul>
-  {{/faq}}
+    {{#faq}}
+      <ul class="ampstart-sidebar-faq list-reset m0">
+        {{#links}}
+          <li class="ampstart-faq-item"><a href="{{{link.url}}}" class="text-decoration-none">{{link.text}}</a></li>
+        {{/links}}
+        {{#calltracking}}
+          <li class="ampstart-faq-item bold">
+            {{> ../calltracking/calltracking.snip.html}}
+          </li>
+        {{/calltracking}}
+      </ul>
+    {{/faq}}
+  </div>
 
   </ul>
 </amp-sidebar>

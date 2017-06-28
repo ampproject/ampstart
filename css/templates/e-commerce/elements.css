@@ -1,0 +1,11 @@
+@import '../../core';
+@import 'page-vars';
+
+.ampstart-btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  font-size: var(--button-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--bold-font-weight);
+}

@@ -18,6 +18,15 @@
   --color-primary: #FF8888;
   --color-secondary: #222;
   --color-seperator: #DADADA;
+  --color-font-default: #666;
+  --color-font-title: #000;
   --font-family: 'Open Sans Condensed', sans-serif;
   --font-family-secondary: 'Cardo', serif;
+  --body-font-size: 1rem;
+  --button-font-size: 1rem;
+  --caps-letter-spacing: 0;
+
+  /* Narrow custom properties */
+  --narrow-page-padding: var(--space-3);
+  --narrow-nav-height: 2.5rem;
 }

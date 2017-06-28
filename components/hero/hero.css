@@ -1,0 +1,50 @@
+.ampstart-hero-content {
+  padding: var(--space-3) var(--narrow-page-padding);
+}
+
+.ampstart-hero-body {
+  padding-bottom: var(--space-3);
+  font-size: var(--body-font-size);
+  font-family: var(--font-family-secondary);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-hero {
+    position: relative;
+    color: var(--color-white);
+    text-align: left;
+  }
+
+  .ampstart-hero-title {
+    font-size: var(--h1);
+    color: var(--color-white);
+    font-weight: var(--bold-font-weight);
+  }
+
+  .ampstart-hero-content {
+    position: absolute;
+    top: 0;
+    left: var(--space-2);
+    width: 30%;
+    height: 100%;
+  }
+
+  .ampstart-hero .ampstart-btn {
+    background-color: var(--color-white);
+    border: none;
+    color: var(--color-font-title);
+    font-size: var(--h5);
+    padding: var(--space-1) var(--space-3);
+  }
+
+  .ampstart-hero-theme-secondary .ampstart-hero-title,
+  .ampstart-hero-theme-secondary .ampstart-hero-body,
+  .ampstart-hero-theme-secondary .ampstart-hero .ampstart-btn {
+    color: var(--color-secondary);
+  }
+
+  .ampstart-hero-theme-secondary .ampstart-btn {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+  }
+}
