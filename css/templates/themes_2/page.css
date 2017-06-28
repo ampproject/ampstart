@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-@import '../../../core';
-@import '../../../../components/byline/byline';
-@import '../../../../components/carousel/carousel';
-@import '../../../../components/dropdown/dropdown';
-@import '../../../../components/footer/footer';
-@import '../../../../components/images/fullpage-hero';
-@import '../../../../components/images/images';
-@import '../../../../components/inputs/inputs';
-@import '../../../../components/navbar/navbar';
-@import '../../../../components/related-article/related-article';
-@import '../../../../components/related-section/related-section';
-@import '../../../../components/socialbox/socialbox';
-@import '../../../../components/social-follow/social-follow';
+@import '../../core';
+@import '../../../components/byline/byline';
+@import '../../../components/carousel/carousel';
+@import '../../../components/dropdown/dropdown';
+@import '../../../components/footer/footer';
+@import '../../../components/images/fullpage-hero';
+@import '../../../components/images/images';
+@import '../../../components/inputs/inputs';
+@import '../../../components/navbar/navbar';
+@import '../../../components/related-article/related-article';
+@import '../../../components/related-section/related-section';
+@import '../../../components/socialbox/socialbox';
+@import '../../../components/social-follow/social-follow';
 @import 'page-vars';
 
 .h1,

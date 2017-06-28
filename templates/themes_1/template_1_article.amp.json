@@ -12,7 +12,7 @@
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=EB+Garamond%7CWork+Sans:400,700"
       ],
-      "css-path": "templates/themes/1/page.css"
+      "css-path": "templates/themes_1/page.css"
     },
     "navbar": {
       "name": "Scenic",
@@ -72,8 +72,8 @@
     },
     "fullpage-hero": {
       "heading-html": "Est epicuri indoctum ad, oblique conceptam ut vel consequuntur",
-      "narrow-img": "../../../img/themes/1/night.jpg",
-      "wide-img": "../../../img/themes/1/night.jpg",
+      "narrow-img": "../../img/themes_1/night.jpg",
+      "wide-img": "../../img/themes_1/night.jpg",
       "credit": {
         "credit-prefix": "By",
         "author": {"text": "Jamie Smith", "url": "#"},
@@ -116,7 +116,7 @@
             "image-with-caption": {
               "width": "756",
               "height": "520",
-              "url": "../../../img/themes/1/jump.jpg",
+              "url": "../../img/themes_1/jump.jpg",
               "caption": "Description of the photograph.",
               "credit": {
                 "credit-prefix": "Taken by ",
@@ -137,7 +137,7 @@
                 "image-with-caption": {
                   "width": "756",
                   "height": "520",
-                  "url": "../../../img/themes/1/cars.jpg",
+                  "url": "../../img/themes_1/cars.jpg",
                   "caption": "New York cars.",
                   "credit": {
                     "credit-prefix": "Taken by ",
@@ -149,7 +149,7 @@
                 "image-with-caption": {
                   "width": "756",
                   "height": "520",
-                  "url": "../../../img/themes/1/street.jpg",
+                  "url": "../../img/themes_1/street.jpg",
                   "caption": "New York street",
                   "credit": {
                     "credit-prefix": "Taken by ",
@@ -170,7 +170,7 @@
         {
           "section-title": {
             "image": {
-              "url": "../../../img/themes/1/building_square.jpg",
+              "url": "../../img/themes_1/building_square.jpg",
               "width": "100",
               "height": "100"
             },
@@ -207,7 +207,7 @@
         "category": "Paris",
         "comments": "28 comments",
         "url": "#",
-        "image": "../../../img/themes/1/tower.jpg"
+        "image": "../../img/themes_1/tower.jpg"
       }
     ],
     "footer": {
