@@ -1,0 +1,50 @@
+{
+  "lune": {
+    "head-tag": {
+      "title": "The Ad Landing Page",
+      "canonical-path": "templates/lune.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Lato:400,700,900"
+      ],
+      "css-path": "templates/lune/page.css"
+    },
+    "navbar": {
+      "name": "The Ad Landing Page",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "logo": {
+         "name": "LUNE",
+         "classes": "h3 xs-hide"
+      },
+      "fixeditems": [
+        {
+          "links": [{
+            "link": {
+              "url": "mailto:contact@lune.com",
+              "text": "contact@lune.com"
+            }
+          }]
+        }
+      ],
+      "faq": {
+        "links": [
+          {
+            "link": {"url": "#blanc", "text": "Blanc"}
+          },
+          {
+            "link": {"url": "#noir", "text": "Noir"}
+          },
+          {
+            "link": {"url": "#store", "text": "Store"}
+          },
+          {
+            "link": {"url": "mailto:contact@lune.com", "text": "contact@lune.com"}
+          }
+        ]
+      }
+    }
+  }
+}

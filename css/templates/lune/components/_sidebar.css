@@ -1,0 +1,26 @@
+@import "../page-vars";
+
+.lune amp-sidebar {
+  z-index: var(--z4);
+
+  width: 80vw;
+
+  /*background: $c-bg-light;*/
+}
+
+@media (--breakpoint-mt) {
+  .lune amp-sidebar {
+    width: 50vw;
+  }
+}
+
+/* hide the amp-sidebar without failing validation ¯\_(ツ)_/¯ */
+.lune div[class*='sidebar-mask'] {
+  z-index: var(--z3);
+
+  opacity: 0;
+}
+
+.lune .sidebar__nav {
+  width: 100%;
+}

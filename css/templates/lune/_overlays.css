@@ -1,0 +1,42 @@
+@import 'page-vars';
+
+.lune-overlay {
+  position: fixed;
+
+  z-index: --z2;
+
+  display: none;
+  width: 100vw;
+  height: 100vh;
+
+  padding-top: var(--layout-header-height-m);
+
+  opacity: 0;
+}
+
+.lune-overlay:target {
+  display: block;
+  opacity: 1;
+
+  animation: overlay-animation-in .3s forwards ease-out;
+}
+
+@media (--breakpoint-mt) {
+  .lune-overlay {
+    padding-top: var(--layout-header-height-d);
+  }
+}
+
+@keyframes overlay-animation-in {
+  from {
+    opacity: 0;
+
+    transform: scale(.95);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: none;
+  }
+}
