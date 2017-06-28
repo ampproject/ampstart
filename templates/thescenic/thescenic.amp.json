@@ -13,7 +13,7 @@
     },
     "navbar": {
       "logo": {
-        "url": "../img/thescenic/header-logo.png",
+        "url": "../../img/thescenic/header-logo.png",
         "width": "147",
         "height": "44"
       },
@@ -56,15 +56,15 @@
     },
     "fullpage-hero": {
       "heading-html": "Most Beautiful Hikes in Alaska",
-      "narrow-img": "../img/thescenic/cropped_hero.jpg",
-      "wide-img": "../img/thescenic/hero.jpg",
+      "narrow-img": "../../img/thescenic/cropped_hero.jpg",
+      "wide-img": "../../img/thescenic/hero.jpg",
       "readmore": {
         "text": "Read more",
         "content-id": "content"
       }
     },
     "byline": {
-      "image": "../img/oval.png",
+      "image": "../../img/oval.png",
       "author": {"text": "Jacinda B", "url": "#"},
       "time": {"text": "Sept 10, 2016 @12:15 pm", "value":"2016-09-18T12:15"}
     },
@@ -79,7 +79,7 @@
           "image-with-heading": {
             "width": "1280",
             "height": "853",
-            "url": "../img/thescenic/carousel2.jpg",
+            "url": "../../img/thescenic/carousel2.jpg",
             "heading-html": "<h2>Somewhere in Alaska</h2>"
           }
         },
@@ -87,7 +87,7 @@
           "image-with-heading": {
             "width": "1280",
             "height": "853",
-            "url": "../img/thescenic/carousel1.jpg",
+            "url": "../../img/thescenic/carousel1.jpg",
             "heading-html": "<h2>Somewhere in Alaska</h2>"
           }
         },
@@ -95,7 +95,7 @@
           "image-with-heading": {
             "width": "1280",
             "height": "853",
-            "url": "../img/thescenic/carousel3.jpg",
+            "url": "../../img/thescenic/carousel3.jpg",
             "heading-html": "<h2>Somewhere in Alaska</h2>"
           }
         }
@@ -106,7 +106,7 @@
         "image-with-caption": {
           "width": "1280",
           "height": "745",
-          "url": "../img/thescenic/castle.jpg",
+          "url": "../../img/thescenic/castle.jpg",
           "caption": "Description of the photograph. ",
           "credit": {
             "credit-prefix": "Taken by ",
@@ -118,7 +118,7 @@
         "image-with-caption": {
           "width": "683",
           "height": "1024",
-          "url": "../img/thescenic/waterfall.jpg",
+          "url": "../../img/thescenic/waterfall.jpg",
           "caption": "Description of the photograph.",
           "credit": {
             "credit-prefix": "Taken by ",
@@ -130,7 +130,7 @@
         "image-with-caption": {
           "width": "1280",
           "height": "853",
-          "url": "../img/thescenic/bear.jpg",
+          "url": "../../img/thescenic/bear.jpg",
           "caption": "Description of the photograph.",
           "credit": {
             "credit-prefix": "Taken by ",
@@ -147,7 +147,7 @@
       "hero-img": {
         "width": "1280",
         "height": "720",
-        "url": "../img/thescenic/carousel3.jpg",
+        "url": "../../img/thescenic/carousel3.jpg",
         "alt": "deserted road"
       },
       "article-heading": {
@@ -168,7 +168,7 @@
           "image-with-caption": {
             "width": "1280",
             "height": "720",
-            "url": "../img/thescenic/mushrooms.jpg",
+            "url": "../../img/thescenic/mushrooms.jpg",
             "caption": "Description of the photograph. Description of the photograph."
           }
         },
@@ -176,7 +176,7 @@
           "image-with-caption": {
             "width": "1280",
             "height": "720",
-            "url": "../img/thescenic/house.jpg",
+            "url": "../../img/thescenic/house.jpg",
             "caption": "Description of the photograph. Description of the photograph."
           }
         },
@@ -184,7 +184,7 @@
           "image-with-caption": {
             "width": "1280",
             "height": "720",
-            "url": "../img/thescenic/fish.jpg",
+            "url": "../../img/thescenic/fish.jpg",
             "caption": "Description of the photograph. Description of the photograph."
           }
         }

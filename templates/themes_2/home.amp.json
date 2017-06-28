@@ -2,7 +2,7 @@
   "home": {
     "head-tag": {
       "title": "Beck & Galo",
-      "canonical-path": "templates/themes/2/home.amp",
+      "canonical-path": "templates/themes_2/home.amp",
       "extensions": [
         "amp-carousel",
         "amp-image-lightbox",
@@ -11,7 +11,7 @@
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLora%7CLato"
       ],
-      "css-path": "templates/themes/2/page.css"
+      "css-path": "templates/themes_2/page.css"
     },
     "navbar": {
       "sidebar-id": "header-sidebar",
@@ -39,8 +39,8 @@
     },
     "fullpage-hero": {
       "heading-html": "<span class=\"h6 block caps\">Welcome to</span><span class=\"h1 block bold caps my1\">Beck & Galo</span><span class=\"h6 block caps\">Modern American Cuisine</span>",
-      "narrow-img": "../../../img/themes/2/hero.jpg",
-      "wide-img": "../../../img/themes/2/hero.jpg",
+      "narrow-img": "../../img/themes_2/hero.jpg",
+      "wide-img": "../../img/themes_2/hero.jpg",
       "cta": {
         "text": "View Menu",
         "url": "menu.amp.html"
@@ -69,7 +69,7 @@
             "image-with-heading": {
               "width": "600",
               "height": "450",
-              "url": "../../../img/themes/2/bar.jpg",
+              "url": "../../img/themes_2/bar.jpg",
               "heading-html": "<h2 class=\"h1 bold\">Happy Hour</h2><p class=\"h4\">Mon-Fri 5PM</p>"
             }
           }
@@ -109,37 +109,37 @@
             "height": 200,
             "images": [
               {
-                "url": "../../../img/themes/2/hero.jpg",
+                "url": "../../img/themes_2/hero.jpg",
                 "width": 300,
                 "height": 200,
                 "alt": "Dining area"
               },
               {
-                "url": "../../../img/themes/2/bar.jpg",
+                "url": "../../img/themes_2/bar.jpg",
                 "width": 267,
                 "height": 200,
                 "alt": "Bar area"
               },
               {
-                "url": "../../../img/themes/2/waffles.jpg",
+                "url": "../../img/themes_2/waffles.jpg",
                 "width": 300,
                 "height": 200,
                 "alt": "Caramel Banana Waffles"
               },
               {
-                "url": "../../../img/themes/2/soup.jpg",
+                "url": "../../img/themes_2/soup.jpg",
                 "width": 300,
                 "height": 200,
                 "alt": "Pumpkin Soup"
               },
               {
-                "url": "../../../img/themes/2/steak.jpg",
+                "url": "../../img/themes_2/steak.jpg",
                 "width": 300,
                 "height": 200,
                 "alt": "Steak"
               },
               {
-                "url": "../../../img/themes/2/pie.jpg",
+                "url": "../../img/themes_2/pie.jpg",
                 "width": 300,
                 "height": 200,
                 "alt": "Key Lime Pie"
