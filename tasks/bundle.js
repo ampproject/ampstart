@@ -26,8 +26,10 @@ const cssbeautify = require('cssbeautify');
 
 function collectResources(filepath, html, done) {
   const filename = path.basename(filepath, '.amp.html');
+  console.log('start for', filepath);
   const env = jsdom.env(html, function(err, window) {
-    const css = window.document.querySelector('style[amp-custom]').textContent;
+    const ampCustom = window.document.querySelector('style[amp-custom]');
+    const css = ampCustom && ampCustom.textContent || '';
     const ampimgs = window.document.querySelectorAll('amp-img[src]');
     // This can most likely be done with the amp-img scan but separating
     // out for now.
@@ -43,6 +45,7 @@ function collectResources(filepath, html, done) {
                   return false;
                 }
                 const abspath = path.resolve(path.dirname(filepath), src);
+                console.log('abspath', abspath);
                 return abspath.replace(`${process.cwd()}/`, '');
               });
         }));
@@ -54,15 +57,20 @@ function collectResources(filepath, html, done) {
         return false;
       }
       const abspath = path.resolve(path.dirname(filepath), src);
+      console.log('src', src);
+      console.log('abspath', abspath);
       return abspath.replace(`${process.cwd()}/`, '');
     });
     const name = filepath.replace(`${process.cwd()}/`, '');
     imgs.push.apply(imgs, srcsetimgs);
     imgs.forEach(function(imgpath) {
-      imgpath &&
-      fs.copySync(imgpath, `.archive/${imgpath.replace(/^dist/, filename)}`);
+      if (imgpath) {
+        const dest = `.archive/${imgpath.replace(/^dist/, filename)}`;
+        fs.copySync(imgpath, dest);
+      }
     });
     const pathToTmpl = filepath.replace(/.*templates\/(.*)/, '\$1');
+    console.log('pathToTmpl', pathToTmpl);
     fs.copySync(filepath,
         `.archive/${filename}/templates/${pathToTmpl}`);
     if (css) {
