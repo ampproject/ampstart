@@ -21,6 +21,7 @@
         "name": "Branding",
         "classes": "h3 caps"
       },
+      "sidebarclasses": "center",
       "nav": [
         {
           "link": {
@@ -64,7 +65,8 @@
           {
             "twitter": "#"
           }
-        ]
+        ],
+        "classes": "mt1 mb2"
       },
       "faq": {
         "links": [

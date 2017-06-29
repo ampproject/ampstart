@@ -6,6 +6,16 @@
 @import 'header';
 @import '../../../components/hero/hero';
 
+body {
+  font-size: var(--narrow-body-font-size);
+}
+
+@media (--breakpoint-md) {
+  body {
+    font-size: var(--wide-body-font-size);
+  }
+}
+
 main {
   max-width: none;
 }

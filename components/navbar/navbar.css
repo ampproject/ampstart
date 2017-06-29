@@ -55,8 +55,7 @@
 }
 
 .ampstart-navbar-trigger {
-  line-height: var(--navbar-height);
-  font-size: var(--h2);
+  height: 24px;
 }
 
 .ampstart-headerbar-nav {

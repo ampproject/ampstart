@@ -19,7 +19,12 @@ limitations under the License.
 {{#navbar}}
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-    <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">☰</div>
+    <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0z"/>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="currentColor"/>
+      </svg>
+    </div>
     {{#logo}}
       {{#href}}
       <a href="{{{.}}}" class="text-decoration-none inline-block mx-auto ampstart-headerbar-home-link {{classes}}">

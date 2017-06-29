@@ -1,11 +1,17 @@
 .ampstart-hero-content {
-  padding: var(--space-3) var(--narrow-page-padding);
+  padding: calc(var(--space-4) + var(--space-1)) var(--narrow-page-padding);
 }
 
 .ampstart-hero-body {
   padding-bottom: var(--space-3);
-  font-size: var(--body-font-size);
   font-family: var(--font-family-secondary);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.ampstart-hero-title {
+  font-weight: var(--bold-font-weight);
 }
 
 @media (--breakpoint-md) {
@@ -21,11 +27,15 @@
     font-weight: var(--bold-font-weight);
   }
 
+  .ampstart-hero-body {
+    max-width: none;
+  }
+
   .ampstart-hero-content {
     position: absolute;
     top: 0;
     left: var(--space-2);
-    width: 30%;
+    width: 45%;
     height: 100%;
   }
 
@@ -34,7 +44,6 @@
     border: none;
     color: var(--color-font-title);
     font-size: var(--h5);
-    padding: var(--space-1) var(--space-3);
   }
 
   .ampstart-hero-theme-secondary .ampstart-hero-title,
@@ -46,5 +55,11 @@
   .ampstart-hero-theme-secondary .ampstart-btn {
     color: var(--color-white);
     background-color: var(--color-secondary);
+  }
+}
+
+@media (--breakpoint-lg) {
+  .ampstart-hero-content {
+    width: 30%;
   }
 }
