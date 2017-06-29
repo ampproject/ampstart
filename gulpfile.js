@@ -28,7 +28,7 @@ const config = require('./tasks/config');
 const server = require('gulp-webserver');
 require('./tasks');
 
-const partialsMap = Object.create(null);
+let partialsMap = {};
 
 function getData(opt_path) {
   var path = 'data.json';
@@ -82,6 +82,8 @@ gulp.task('build', 'build', function(cb) {
 });
 
 gulp.task('clean', function() {
+  // Clears partials map so changes to components are rebuilt in watch task.
+  partialsMap = {};
   return del(['dist']);
 });
 
