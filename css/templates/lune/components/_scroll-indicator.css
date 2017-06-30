@@ -1,4 +1,4 @@
-.lune .scroll-indicator {
+.lune-scroll-indicator {
   font-weight: 700;
   font-size: var(--scroll-font-size);
   letter-spacing: var(--hotspot-letter-spacing);
@@ -6,7 +6,7 @@
   padding-bottom: 3.125rem;
 }
 
-.lune .scroll-indicator::after {
+.lune-scroll-indicator::after {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -22,7 +22,7 @@
 }
 
 @media (--breakpoint-mt) {
-  .lune .scroll-indicator {
+  .lune-scroll-indicator {
     font-size: var(--header-contact-font-size);
   }
 }
