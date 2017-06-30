@@ -27,31 +27,71 @@
   --layout-header-height-m: 70px;
   --layout-header-height-d: 92px;
 
+  --font-weight-black: 900;
+
 
   /* Type */
   --font-family: "Lato", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", Arial, sans-serif;
 
-  /* Responsive type scale */
-  --h1: 5.3125rem; /* 85px */
-  --h2: 3.125rem; /* 50px */
-  --h3: 2.18rem; /* 35px */
-  --h4: 1.25rem; /* 20px */
-  --h5: 1.125rem; /* 18px */
-  --h6: .875rem; /* 14px */
+  /* Responsive headings type scale */
+  --h1: 5.625rem; /* 90px */
+  --h2: 5rem; /* 80px */
+  --h3: 3.75rem; /* 60px */
+  --h4: 3.125rem; /* 50px */
+  --h5: 2.1875rem; /* 35px */
+  --h6: 1.375rem; /* 22px */
 
-  --h1-md: 22.5rem; /* 360px */
-  --h2-md: 14rem; /* 224px */
-  --h3-md: 10rem; /* 160px */
-  --h4-md: 2.75rem; /* 44px */
-  --h5-md: 1.75rem; /* 28px */
-  --h6-md: 1.22rem; /* 22px */
+  --h1-md: 11.25; /* 180px */
+  --h2-md: 7.5rem; /* 120px */
+  --h3-md: 7rem; /* 112px */
+  --h4-md: 5rem; /* 80px */
+  --h5-md: 4.375rem; /* 70px */
+  --h6-md: 3.125rem; /* 50px */
 
-  --h1-lg: 22.5rem; /* 360px */
-  --h2-lg: 14rem; /* 224px */
-  --h3-lg: 10rem; /* 160px */
-  --h4-lg: 2.75rem; /* 44px */
-  --h5-lg: 1.75rem; /* 28px */
-  --h6-lg: 1.22rem; /* 22px */
+  --h1-lg: 11.25; /* 180px */
+  --h2-lg: 7.5rem; /* 120px */
+  --h3-lg: 7rem; /* 112px */
+  --h4-lg: 5rem; /* 80px */
+  --h5-lg: 4.375rem; /* 70px */
+  --h6-lg: 3.125rem; /* 50px */
+
+
+  /** Nav items */
+  --nav-item-font-size-m: 1.5rem; /* 24px */
+  --nav-item-font-size-d: 3.25rem; /* 52px */
+  --nav-item-weight: var(--font-weight-black);
+  --nav-item-line-height: 3.84em;
+  --nav-email-font-size: 1.125rem; /* 18px */
+
+  /* Header */
+  --header-title-font-size: 1.3125rem; /* 21px */
+  --header-title-letter-spacing: .52em;
+  --header-contact-font-size: 0.8125rem; /* 13px */
+
+  /* CTAs */
+  --cta-font-size-m: .75rem; /* 12px */
+  --cta-font-size-d: .6875rem; /* 11px */
+
+  /* Body text */
+  --body-font-size: 1.125rem; /* 18px */
+  --body-letter-spacing: .02em;
+  --body-line-height-m: 1.69em;
+  --body-line-height-d: 1.75em;
+
+  /* Hotspots */
+  --hotspot-font-size: 0.5625rem; /* 9px */
+  --hotspot-letter-spacing: .26em;
+
+
+  /* Scroll indicator */
+  --scroll-font-size: .75rem; /* 12px */
+
+
+
+
+  
+
+
 
   /* Colours */
   --color-dark-grey: #202125;

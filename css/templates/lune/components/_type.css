@@ -1,5 +1,9 @@
 @import "../page-vars";
 
+.black {
+  font-weight: var(--font-weight-black);
+}
+
 /* An extra layer on top of bass css to allow responsive type scale */
 
 @media (--breakpoint-md) {

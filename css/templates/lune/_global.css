@@ -1,0 +1,38 @@
+@import "page-vars";
+
+p {
+  line-height: var(--body-line-height-m);
+
+  font-size: var(--body-font-size);
+
+  letter-spacing: var(--body-letter-spacing);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (--breakpoint-mt) {
+  p {
+    line-height: var(--body-line-height-d);
+  }
+}
+
+.position-center {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.position-center-v {
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.position-center-h {
+  left: 50%;
+
+  transform: translateX(-50%);
+}
