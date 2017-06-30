@@ -40,15 +40,20 @@ function getData(opt_path) {
 }
 
 function mustacheStream() {
-  return through.obj(function(file, enc, cb) {
+  return through.obj(function (file, enc, cb) {
     if (file.isNull()) {
       cb(null, file);
       return;
     }
     var partials = getPartials(partialsMap,
-        path.dirname(file.path), file.contents.toString());
-    file.contents = new Buffer(Mustache.render(file.contents.toString(),
-        getData(file.path), partials));
+      path.dirname(file.path), file.contents.toString());
+
+    let fileContents = Mustache.render(file.contents.toString(),
+      getData(file.path), partials);
+
+    // Replaces [[[title]]] to {{title}} which allows the use of amp-mustache.
+    fileContents = fileContents.replace(/\[\[\[/g, "{{").replace(/\]\]\]/g, "}}");
+    file.contents = new Buffer(fileContents);
     cb(null, file);
   });
 }
