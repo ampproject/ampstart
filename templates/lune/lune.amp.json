@@ -15,6 +15,7 @@
       "name": "The Ad Landing Page",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
+      "href": "#",
       "logo": {
          "name": "LUNE",
          "classes": "h3 xs-hide"
@@ -56,9 +57,9 @@
           "NC"
         ],
         "hero": {
-          "image": "../../img/lune/blanc-hero-m@2x.png" 
+          "image": "../../img/lune/blanc-hero-m@2x.png"
         },
-        
+
         "intro": {
           "title": "Lune Blanc",
           "body": [
