@@ -1,12 +1,16 @@
-.lune .cta {
-  padding-left: 50px;
-  padding-right: 50px;
+.lune-cta {
+  padding: 1.2em 1.6em;
 
+  min-width: 14em;
+
+  font-weight: 700;
   font-size: var(--cta-font-size-m);
+
+  letter-spacing: var(--hotspot-letter-spacing);
 }
 
 @media (--breakpoint-mt) {
-  .lune .cta {
+  .lune-cta {
     font-size: var(--cta-font-size-d);
   }
 }
