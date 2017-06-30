@@ -42,24 +42,26 @@ limitations under the License.
         </div>
 
         <!-- PRODUCT PAGE -->
-        <div class="lune-page lune-page--product-{{id}}" id="{{id}}">
+        <div class="lune-page lune-page--product lune-page--product-{{id}}" id="{{id}}">
           {{#hero}}
-            <section class="hero">
-              <div class="hero__content absolute position-center col-12 flex flex-column items-center product__title-1 h1 h1-md black">
+            <section class="hero product__hero">
+              <div class="hero__content col-12 flex flex-column items-center justify-center product__title-1 h1 h1-md black">
                 <div class="hero__title__wrapper">
                   <h1 class="caps m0 relative px3 product-title-top has-mobile-hyphen" aria-label="{{full_title}}">{{title_parts.0}}</h1>
                   {{#title_parts.1}}
                     <h1 class="caps m0 relative px3 product-title-bottom" aria-hidden>{{.}}</h1>
                   {{/title_parts.1}}
                 </div>
-
-                <amp-img
-                    src="{{image}}"
-                    width="455"
-                    height="773"
-                    layout="responsive"
-                    alt="{{full_title}}"
-                    class="hero__chair col-7"></amp-img>
+                
+                <div class="hero__image__wrapper">
+                  <amp-img
+                      src="{{image}}"
+                      width="455"
+                      height="773"
+                      layout="responsive"
+                      alt="{{full_title}}"
+                      class="hero__chair col-7"></amp-img>
+                </div>
               </div>
 
               <p class="scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
@@ -68,14 +70,15 @@ limitations under the License.
           {{/hero}}
 
           {{#intro}}
-            <section class="section p3">
+            <section class="section p3 section--intro">
 
-              <h2 class="product__title-2 mb2 caps h6 black">{{title}}</h2>
+              <div class="intro__wrapper">
+                <h2 class="product__title-2 mb2 caps h6 black">{{title}}</h2>
 
-              {{#body}}
-                <p class="product__body mb2">{{.}}</p>
-              {{/body}}
-
+                {{#body}}
+                  <p class="product__body mb2">{{.}}</p>
+                {{/body}}
+              </div>
             </section>
           {{/intro}}
 
@@ -105,7 +108,23 @@ limitations under the License.
               {{#list}}
 
                 <div class="product__materials flex flex-column">
-                  <h3 class="caps product__materials__title black relative">{{title}}</h3>
+
+                  {{#title_parts}}
+                    <h3 class="caps product__materials__title product__materials__title--split black relative md-hide lg-hide">
+                      {{#mobile}}  
+                        <span>{{.}}</span>
+                      {{/mobile}}
+                    </h3>
+
+                    <h3 class="caps product__materials__title product__materials__title--split black relative xs-hide sm-hide">
+                      {{#desktop}}  
+                        <span>{{.}}</span>
+                      {{/desktop}}
+                    </h3>
+                  {{/title_parts}}
+                  {{^title_parts}}
+                    <h3 class="caps product__materials__title black relative">{{title}}</h3>
+                  {{/title_parts}}
 
                   {{#images}}
 
@@ -118,7 +137,7 @@ limitations under the License.
                           alt="{{title}}"
                           class=""></amp-img>
                       {{#hotspots}}
-                        <a href="{{url}}" class="no-button-styles absolute flex items-center justify-center p0 caps product__more-hotspot" style="top: {{position.x}}; left:{{position.y}}">More</a>
+                        <a href="{{url}}" class="no-button-styles absolute flex items-center justify-center p0 caps product__more-hotspot {{classes}}">More</a>
                       {{/hotspots}}
                     </div>
 
@@ -129,6 +148,14 @@ limitations under the License.
 
             </section>
           {{/materials}}
+
+          {{#bottom_cta}}
+            <div class="products__bottom-cta flex justify-center">
+              <a href="{{text}}" class="ampstart-btn ampstart-btn-secondary cta caps px4 mt1 mb4 bold">
+                {{text}}
+              </a>
+            </div>
+          {{/bottom_cta}}
 
         </div>
       {{/products}}

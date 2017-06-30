@@ -91,6 +91,7 @@
         },
         "materials": {
           "title": "Materials",
+          "title_parts": [],
           "list": [{
             "title": "Oak",
             "images": [{
@@ -107,29 +108,38 @@
               "hotspots": [{
                 "title": "More",
                 "url": "#blanc-oak",
-                "position": {
-                  "x": "53%",
-                  "y": "23%"
-                }
+                "classes": "product__more-hotspot--1"
               }]
             }]
           }, {
             "title": "Polypropylene",
+            "title_parts": {
+              "mobile": [
+                "POLY-",
+                "-PROP-",
+                "-YLENE"
+              ],
+              "desktop": [
+                "POLYPR-",
+                "-OPYLENE"
+              ]
+            },
             "images": [{
-              "src": "",
-              "classes": "",
-              "width": 0,
-              "height": 0,
+              "src": "../../img/lune/blanc-product-materials-poly-01@2x.jpg",
+              "classes": "product__materials__img--3 col-11 self-center",
+              "width": 563,
+              "height": 785,
               "hotspots": [{
                 "title": "More",
                 "url": "#blanc-polypropylene",
-                "position": {
-                  "x": 0,
-                  "y": 0
-                }
+                "classes": "product__more-hotspot--2"
               }]
             }]
           }]
+        },
+        "bottom_cta": {
+          "url": "#",
+          "text": "Visit us"
         }
       }]
     },
