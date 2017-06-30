@@ -40,13 +40,17 @@ function getData(opt_path) {
 }
 
 function mustacheStream() {
-  return through.obj(function (file, enc, cb) {
+  return through.obj(function(file, enc, cb) {
     if (file.isNull()) {
       cb(null, file);
       return;
     }
-    var partials = getPartials(partialsMap,
-      path.dirname(file.path), file.contents.toString());
+
+    var partials = getPartials(
+      partialsMap,
+      path.dirname(file.path),
+      file.contents.toString()
+    );
 
     let fileContents = Mustache.render(file.contents.toString(),
       getData(file.path), partials);
