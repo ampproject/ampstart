@@ -1,0 +1,47 @@
+@import "../page-vars.css";
+
+.lune .ampstart-headerbar {
+  height: var(--layout-header-height-m);
+
+  box-shadow: none;
+}
+
+.lune .ampstart-headerbar-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  font-size: var(--header-title-font-size);
+  font-weight: var(--font-weight-black);
+
+  letter-spacing: .52em;
+  line-height: 1em;
+
+  /* Using same indent as the letter spacing to make the text properly centered. */
+  text-indent: .52em;
+
+  transform: translate(-50%, -50%);
+}
+
+.lune .ampstart-navbar-trigger {
+  padding-left: 5px;
+
+  font-size: 40px;
+}
+
+@media (--breakpoint-mt) {
+
+  .lune .ampstart-navbar-trigger {
+    padding-left: 20px;
+  }
+
+  .lune .ampstart-headerbar {
+    height: var(--layout-header-height-d);
+  }
+}
+
+/* Remove the default margin top from amp-sidebar and navbar */
+.lune .ampstart-headerbar+:not(amp-sidebar),
+.lune .ampstart-headerbar+amp-sidebar+* {
+  margin-top: 0;
+}

@@ -1,11 +1,13 @@
 @import "../page-vars";
 
 .lune amp-sidebar {
-  z-index: var(--z4);
-
   width: 80vw;
 
   /*background: $c-bg-light;*/
+}
+
+.lune amp-sidebar .ampstart-navbar-trigger  {
+  padding-top: 10px;
 }
 
 @media (--breakpoint-mt) {
@@ -16,11 +18,59 @@
 
 /* hide the amp-sidebar without failing validation ¯\_(ツ)_/¯ */
 .lune div[class*='sidebar-mask'] {
-  z-index: var(--z3);
-
   opacity: 0;
 }
 
 .lune .sidebar__nav {
   width: 100%;
+}
+
+.lune .ampstart-sidebar-faq {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+}
+
+.lune .ampstart-faq-item {
+  display: block;
+
+  width: 80%;
+  max-width: 7.5em;
+
+  margin: auto;
+
+  font-size: var(--nav-item-font-size-m);
+  font-weight: var(--nav-item-weight);
+  
+  line-height: var(--nav-item-line-height);
+  
+  text-transform: uppercase;
+}
+
+.lune .ampstart-faq-item a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lune .ampstart-faq-item:last-child a {
+  font-size: var(--nav-email-font-size);
+
+  letter-spacing: .12em;
+
+  text-decoration: underline;
+  text-transform: lowercase;
+}
+
+@media (--breakpoint-mt) {
+  .lune .ampstart-faq-item {
+    font-size: var(--nav-item-font-size-d);
+  }
+
+  .lune .ampstart-faq-item:last-child {
+    display: none;
+  }
 }

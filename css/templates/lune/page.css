@@ -19,14 +19,18 @@
 @import '../../../components/navbar/navbar';
 @import 'page-vars';
 
+@import '_global';
+
 @import 'components/_type';
+@import 'components/_sidebar';
+@import 'components/_header';
+@import 'components/_hero';
+@import 'components/_scroll-indicator';
 
 @import '_pages';
-@import '_overlays';
+@import 'pages/_product';
 
-.lune .ampstart-faq-item {
-  color: #0f0;
-}
+@import '_overlays';
 
 .lune amp-sidebar {
   width: 80vw;

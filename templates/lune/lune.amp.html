@@ -13,48 +13,129 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 {{#lune}}
+
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
-    {{> ../components/navbar/navbar.snip.html}}
+    {{> ../../components/navbar/navbar.snip.html}}
     
     <!-- STORE PAGE -->
     <div class="lune-page lune-page--store" id="store">STORE PAGE</div>
 
-
-    <div class="lune-overlay lune-theme--overlay-1" id="noir-oak">
-      <p>noir overlay - OAK</p>
-
-      <a href="/#noir">Close overlay</a>
-    </div>
-
-    <div class="lune-overlay lune-theme--overlay-2" id="noir-polypropylene">
-      <p>noir overlay - POLYPROPYLENE</p>
-
-      <a href="/#blanc">Close overlay</a>
-    </div>
-
-    <div class="lune-page lune-page--product-blanc" id="blanc">
-      BLANC page
-    </div>
-
     
-    <div class="lune-overlay lune-theme--overlay-1" id="noir-oak">
-      <p>NOIR overlay - OAK</p>
+    <!-- PRODUCTS -->
 
-      <a href="/#noir">Close overlay</a>
-    </div>
+    {{#product-pages}}
+      {{#products}}
 
-    <div class="lune-overlay lune-theme--overlay-2" id="noir-polypropylene">
-      <p>NOIR overlay - POLYPROPYLENE</p>
+        <!-- PRODUCT OVERLAYS -->
+        <div class="lune-overlay lune-theme--overlay-1" id="{{id}}-oak">
+          <p>noir overlay - OAK</p>
 
-      <a href="/#noir">Close overlay</a>
-    </div>
+          <a href="#{{id}}">Close overlay</a>
+        </div>
 
-    <div class="lune-page lune-page--product-noir" id="noir">
-      NOIR page
-    </div>
+        <div class="lune-overlay lune-theme--overlay-2" id="{{id}}-polypropylene">
+          <p>noir overlay - POLYPROPYLENE</p>
 
+          <a href="#{{id}}">Close overlay</a>
+        </div>
+        
+        <!-- PRODUCT PAGE -->
+        <div class="lune-page lune-page--product-{{id}}" id="{{id}}">
+          {{#hero}}
+            <section class="hero">
+              <div class="hero__content absolute position-center col-12 flex flex-column items-center product__title-1 h1 h1-md black">
+                <div class="hero__title__wrapper">
+                  <h1 class="caps m0 relative px3 product-title-top has-mobile-hyphen" aria-label="{{full_title}}">{{title_parts.0}}</h1>
+                  {{#title_parts.1}}
+                    <h1 class="caps m0 relative px3 product-title-bottom" aria-hidden>{{.}}</h1>
+                  {{/title_parts.1}}
+                </div>
+
+                <amp-img
+                    src="{{image}}"
+                    width="455"
+                    height="773"
+                    layout="responsive"
+                    alt="{{full_title}}"
+                    class="hero__chair col-7"></amp-img>
+              </div>
+
+              <p class="scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
+
+            </section>
+          {{/hero}}
+          
+          {{#intro}}
+            <section class="section p3">
+
+              <h2 class="product__title-2 mb2 caps h6 black">{{title}}</h2>
+
+              {{#body}}
+                <p class="product__body mb2">{{.}}</p>
+              {{/body}}
+
+            </section>
+          {{/intro}}
+        
+          {{#specs}}
+          <section class="section p3">
+            <h2 class="product__title-2 caps h6 black mb2 flex items-center product__title--line-after">{{title}}</h2>
+
+            <p class="product__body mb4">{{body}}</p>
+
+            <ul class="product__details p0 m0">
+              {{#details}}
+                <li class="flex pb3">
+                  <span class="product__specs-title black caps">{{title}}</span>
+                  <div class="divider mx1"></div>
+                  <span class="product__specs-figure black caps">{{value}}</span>
+                  <span class="product__specs-unit black caps">{{unit}}</span>
+                </li>
+              {{/details}}
+            </ul>
+          </section>
+          {{/specs}}
+
+          {{#materials}}
+            <section class="section p3">
+              <h2 class="product__title-2 h6 black mb4 caps flex items-center product__title--line-after">{{title}}</h2>
+
+              {{#list}}
+
+                <div class="product__materials flex flex-column">
+                  <h3 class="caps product__materials__title black relative">{{title}}</h3>
+
+                  {{#images}}
+
+                    <div class="product__materials__image relative {{classes}}">
+                      <amp-img
+                          src="{{src}}"
+                          width="{{width}}"
+                          height="{{height}}"
+                          layout="responsive"
+                          alt="{{title}}"
+                          class=""></amp-img>
+                      {{#hotspots}}
+                        <a href="{{url}}" class="no-button-styles absolute flex items-center justify-center p0 caps product__more-hotspot" style="top: {{position.x}}; left:{{position.y}}">More</a>
+                      {{/hotspots}}
+                    </div>
+
+                  {{/images}}
+                </div>
+
+              {{/list}}
+
+            </section>
+          {{/materials}}
+
+        </div>
+      {{/products}}
+    {{/product-pages}}
+  
+
+    <!-- LANDING PAGE -->
     <div class="lune-page lune-page--landing lune-page--default" id="landing">
       LANDING page
     </div>

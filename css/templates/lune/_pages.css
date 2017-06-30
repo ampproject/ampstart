@@ -6,29 +6,26 @@
   z-index: var(--z1);
 
   /* By default a page is hidden. */
-  display: none;
+  /*display: none;*/
+  height: 0;
+  overflow: hidden;
   opacity: 0;
 
-  min-height: 100vh;
-  padding-top: var(--layout-header-height-m);
+  
 }
 
-/* A page is shown when it's the :target
-   The home page can be shown even when it's not the :target (e.g. URL=`/`) */
-.lune-page--default,
-.lune-page:target {
-  display: block;
 
-  will-change: transform;
-
-  animation: page-animation-in .6s .2s forwards;
-}
 
 /* The home page needs to be hidden if another page or another overlay are the :target */
 .lune-page:target ~ .lune-page--default,
 .lune-overlay:target ~ .lune-page--default {
-  display: none;
+  /*display: none;*/
+  height: 0;
+  overflow: hidden;
   opacity: 0;
+
+  min-height: 0;
+  padding: 0;
 }
 
 @media (--breakpoint-mt) {
@@ -38,6 +35,12 @@
 }
 
 
+
+
+/* A page is shown when it's the :target
+   The home page can be shown even when it's not the :target (e.g. URL=`/`) */
+.lune-page--default,
+.lune-page:target,
 /* Ad-hoc rules to keep a page visible when an associated overlay is the :target
    Associated overlays' ids share the same prefix as the pages they are associated to.
    e.g page: id="blanc" --- overlay: id="blanc-specs" */
@@ -46,9 +49,24 @@
 .lune-overlay[id^="noir"]:target ~ .lune-page[id="noir"],
 .lune-overlay[id^="store"]:target ~ .lune-page[id="store"] {
   display: block;
+  height: auto;
+  overflow: auto;
   opacity: 1;
 
+  min-height: 100vh;
+
+  padding-top: var(--layout-header-height-m);
+
   animation: page-animation-in .6s .2s forwards;
+}
+
+@media (--breakpoint-mt) {
+  .lune-overlay[id^="home"]:target ~ .lune-page[id="home"],
+  .lune-overlay[id^="blanc"]:target ~ .lune-page[id="blanc"],
+  .lune-overlay[id^="noir"]:target ~ .lune-page[id="noir"],
+  .lune-overlay[id^="store"]:target ~ .lune-page[id="store"] {
+    padding-top: var(--layout-header-height-d);
+  }
 }
 
 @keyframes page-animation-in {

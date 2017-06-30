@@ -32,19 +32,105 @@
       "faq": {
         "links": [
           {
-            "link": {"url": "#blanc", "text": "Blanc"}
+            "link": {"url": "#blanc", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>"}
           },
           {
-            "link": {"url": "#noir", "text": "Noir"}
+            "link": {"url": "#noir", "text": "<span>N</span><span>o</span><span>i</span><span>r</span>"}
           },
           {
-            "link": {"url": "#store", "text": "Store"}
+            "link": {"url": "#store", "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>"}
           },
           {
             "link": {"url": "mailto:contact@lune.com", "text": "contact@lune.com"}
           }
         ]
       }
+    },
+
+    "product-pages": {
+      "products": [{
+        "id": "blanc",
+        "full_title": "BLANC",
+        "title_parts": [
+          "BLA",
+          "NC"
+        ],
+        "hero": {
+          "image": "../../img/lune/blanc-hero-m@2x.png" 
+        },
+        
+        "intro": {
+          "title": "Lune Blanc",
+          "body": [
+            "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
+            "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+          ]
+        },
+
+        "specs": {
+          "title": "Specs",
+          "body": "Engineered for extremes. Titanium flat-yarn and breathable fibres transfer heat away. Aluminium spheres create an instant cool feeling.",
+          "details": [{
+            "title": "Height",
+            "value": "81",
+            "unit": "cm"
+          }, {
+            "title": "Width",
+            "value": "45",
+            "unit": "cm"
+          }, {
+            "title": "Depth",
+            "value": "55",
+            "unit": "cm"
+          }, {
+            "title": "Seat Height",
+            "value": "41",
+            "unit": "cm"
+          }]
+        },
+        "materials": {
+          "title": "Materials",
+          "list": [{
+            "title": "Oak",
+            "images": [{
+              "src": "../../img/lune/blanc-product-materials-oak-01@2x.jpg",
+              "classes": "col-11 product__materials__img--1",
+              "width": 561,
+              "height": 656,
+              "hotspots": []
+            }, {
+              "src": "../../img/lune/blanc-product-materials-oak-02@2x.jpg",
+              "classes": "col-10 self-end product__materials__img--2",
+              "width": 500,
+              "height": 785,
+              "hotspots": [{
+                "title": "More",
+                "url": "#blanc-oak",
+                "position": {
+                  "x": "53%",
+                  "y": "23%"
+                }
+              }]
+            }]
+          }, {
+            "title": "Polypropylene",
+            "images": [{
+              "src": "",
+              "classes": "",
+              "width": 0,
+              "height": 0,
+              "hotspots": [{
+                "title": "More",
+                "url": "#blanc-polypropylene",
+                "position": {
+                  "x": 0,
+                  "y": 0
+                }
+              }]
+            }]
+          }]
+        }
+      }]
     }
   }
 }

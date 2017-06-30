@@ -1,0 +1,21 @@
+.lune .scroll-indicator {
+  font-size: var(--scroll-font-size);
+  letter-spacing: .26em;
+
+  padding-bottom: 47px;
+}
+
+.lune .scroll-indicator:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 2px;
+  height: 35px;
+
+  background: var(--color-dark-grey);
+
+  transform: translateX(-50%);
+
+  content: '';
+}

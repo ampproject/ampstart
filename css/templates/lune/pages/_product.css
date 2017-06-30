@@ -1,0 +1,123 @@
+/* ==============================================================================
+// HERO
+=============================================================================== */
+
+.lune .product__title-1 {
+  letter-spacing: .26em;
+  line-height: 1.33em;
+}
+
+.lune .hero__content {
+  margin-top: calc(-(var(--layout-header-height-m) / 2));
+}
+
+.lune .hero__content h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+.lune .hero__chair {
+  z-index: 2;
+
+  max-width: 338px;
+
+  margin-top: -1.9em;
+}
+
+
+@media (--breakpoint-mt) {
+  .lune .hero__content h1 {
+    display: inline;
+
+    padding: 0;
+  }
+
+  .lune .hero__title__wrapper {
+    display: flex;
+  }
+
+  .lune .hero__chair {
+    margin-top: -0.5em;
+  }
+
+  .lune .has-mobile-hyphen:after {
+    content: none;
+  }
+}
+
+.lune .product-title-top {
+  z-index: 1;
+}
+
+.lune .has-mobile-hyphen:after {
+  content: '-';
+}
+
+.lune .product-title-bottom {
+  z-index: 3;
+}
+
+
+/* ==============================================================================
+// INTRO & SPECS
+=============================================================================== */
+
+.product__title--line-after:after {
+  display: inline-block;
+  flex-grow: 1;
+
+  height: 2px;
+
+  margin-left: 12px;
+
+  background: #000;
+
+  content: '';
+}
+
+.product__details .divider {
+  flex-grow: 1;
+
+  border-bottom: 1px solid currentColor;
+}
+
+
+/* ==============================================================================
+// MATERIALS
+=============================================================================== */
+
+.product__materials__title {
+  z-index: 1;
+
+  margin: 0 0 -10px 30px;
+}
+
+.product__materials__img--2 {
+  margin-top: -125px;
+}
+
+
+.product__more-hotspot {
+  width: 82px;
+  height: 82px;
+
+  font-size: var(--hotspot-font-size);
+  letter-spacing: var(--hotspot-letter-spacing);
+
+  border-radius: 50%;
+
+  color: var(--color-light-1);
+
+  background: var(--color-bg-dark-m);
+
+  cursor: pointer;
+}
+
+.product__more-hotspot:hover,
+.product__more-hotspot:focus {
+  color: var(--color-dark-grey);
+
+  background: var(--color-light-1);
+}

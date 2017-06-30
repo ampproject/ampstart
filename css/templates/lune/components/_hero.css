@@ -1,0 +1,11 @@
+.hero {
+  position: relative;
+
+  min-height: calc(100vh - var(--layout-header-height-m));
+}
+
+@media (--breakpoint-mt) {
+  .hero {
+    min-height: calc(100vh - var(--layout-header-height-d));
+  }
+}
