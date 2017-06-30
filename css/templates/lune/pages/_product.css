@@ -1,3 +1,9 @@
+.lune .lune-page--product section {
+  position: relative;
+
+  z-index: 2;
+}
+
 /* ==============================================================================
 // HERO
 =============================================================================== */
@@ -5,6 +11,10 @@
 .lune .product__title-1 {
   letter-spacing: .26em;
   line-height: 1.33em;
+}
+
+.product__hero {
+  z-index: 1;
 }
 
 .lune .hero__content {
@@ -26,6 +36,17 @@
   margin-top: -1.9em;
 }
 
+.lune .product-title-top {
+  z-index: 1;
+}
+
+.lune .has-mobile-hyphen:after {
+  content: '-';
+}
+
+.lune .product-title-bottom {
+  z-index: 3;
+}
 
 @media (--breakpoint-mt) {
   .lune .hero__content h1 {
@@ -47,16 +68,21 @@
   }
 }
 
-.lune .product-title-top {
-  z-index: 1;
-}
+@media (--breakpoint-md) {
+  .lune .hero__chair {
+    margin-top: 0;
+  }
+  
+  .lune .hero__image__wrapper {
+    position: fixed;
+    top: 50%;
 
-.lune .has-mobile-hyphen:after {
-  content: '-';
-}
+    width: 100%;
 
-.lune .product-title-bottom {
-  z-index: 3;
+    margin-top: 90px;
+
+    transform: translateY(-50%);
+  }
 }
 
 
@@ -83,6 +109,20 @@
   border-bottom: 1px solid currentColor;
 }
 
+@media (--breakpoint-md) {
+  .section--intro {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-height: 100vh;
+  }
+
+  .intro__wrapper {
+    width: 40%;
+  }
+}
+
 
 /* ==============================================================================
 // MATERIALS
@@ -91,11 +131,24 @@
 .product__materials__title {
   z-index: 1;
 
-  margin: 0 0 -10px 30px;
+  margin: 0 0 0 30px;
+}
+
+.product__materials__title--split span {
+  display: block;
+}
+
+.product__materials__img--1 {
+  margin-top: -30px;
 }
 
 .product__materials__img--2 {
-  margin-top: -125px;
+  margin-top: -155px;
+  margin-bottom: 50px;
+}
+
+.product__materials__img--3 {
+  margin-top: -100px;
 }
 
 
@@ -120,4 +173,14 @@
   color: var(--color-dark-grey);
 
   background: var(--color-light-1);
+}
+
+.product__more-hotspot--1 {
+  top: 53%;
+  left: 23%;
+}
+
+.product__more-hotspot--2 {
+  top: 42%;
+  left: 36%;
 }
