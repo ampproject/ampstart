@@ -1,21 +1,28 @@
 .lune .scroll-indicator {
+  font-weight: 700;
   font-size: var(--scroll-font-size);
-  letter-spacing: .26em;
+  letter-spacing: var(--hotspot-letter-spacing);
 
-  padding-bottom: 47px;
+  padding-bottom: 3.125rem;
 }
 
-.lune .scroll-indicator:after {
+.lune .scroll-indicator::after {
   position: absolute;
   bottom: 0;
   left: 50%;
 
-  width: 2px;
-  height: 35px;
+  width: .125rem;
+  height: 2.1874rem;
 
-  background: var(--color-dark-grey);
+  background: currentColor;
 
   transform: translateX(-50%);
 
   content: '';
+}
+
+@media (--breakpoint-mt) {
+  .lune .scroll-indicator {
+    font-size: var(--header-contact-font-size);
+  }
 }
