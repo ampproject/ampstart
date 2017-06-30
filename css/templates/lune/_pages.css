@@ -28,15 +28,6 @@
   padding: 0;
 }
 
-@media (--breakpoint-mt) {
-  .lune-page {
-    padding-top: var(--layout-header-height-d);
-  }
-}
-
-
-
-
 /* A page is shown when it's the :target
    The home page can be shown even when it's not the :target (e.g. URL=`/`) */
 .lune-page--default,
@@ -61,6 +52,8 @@
 }
 
 @media (--breakpoint-mt) {
+  .lune-page--default,
+  .lune-page:target,
   .lune-overlay[id^="home"]:target ~ .lune-page[id="home"],
   .lune-overlay[id^="blanc"]:target ~ .lune-page[id="blanc"],
   .lune-overlay[id^="noir"]:target ~ .lune-page[id="noir"],
