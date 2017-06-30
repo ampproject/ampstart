@@ -18,11 +18,11 @@ limitations under the License.
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
     {{> ../../components/navbar/navbar.snip.html}}
-    
+
     <!-- STORE PAGE -->
     <div class="lune-page lune-page--store" id="store">STORE PAGE</div>
 
-    
+
     <!-- PRODUCTS -->
 
     {{#product-pages}}
@@ -40,7 +40,7 @@ limitations under the License.
 
           <a href="#{{id}}">Close overlay</a>
         </div>
-        
+
         <!-- PRODUCT PAGE -->
         <div class="lune-page lune-page--product-{{id}}" id="{{id}}">
           {{#hero}}
@@ -66,7 +66,7 @@ limitations under the License.
 
             </section>
           {{/hero}}
-          
+
           {{#intro}}
             <section class="section p3">
 
@@ -78,7 +78,7 @@ limitations under the License.
 
             </section>
           {{/intro}}
-        
+
           {{#specs}}
           <section class="section p3">
             <h2 class="product__title-2 caps h6 black mb2 flex items-center product__title--line-after">{{title}}</h2>
@@ -133,13 +133,29 @@ limitations under the License.
         </div>
       {{/products}}
     {{/product-pages}}
-  
+
 
     <!-- LANDING PAGE -->
     <div class="lune-page lune-page--landing lune-page--default" id="landing">
-      LANDING page
+      {{#landing-sections}}
+        <section class="landing__section relative flex flex-column items-center justify-center {{theme}}">
+          <div class="landing__content relative flex items-center justify-center px3">
+            <h1 class="caps m0" aria-label="Lune {{product_name}}">
+              <span class="landing__title-big landing__back absolute top-0 left-0">Lu</span>
+              <span class="landing__title-big landing__front absolute bottom-0 right-0">Ne</span>
+              {{type.justify_word(product_name, 'landing__title-small landing__front absolute position-center-h')}}
+            </h1>
+            <div class="landing__image"></div>
+            <div class="absolute bottom-0 left-0 right-0 center landing__front">
+              <a href="#{{product_name}}" class="lune-cta caps">Discover {{product_name}}</a>
+            </div>
+          </div>
+          {{#scroll}}
+            <p class="scroll-indicator absolute bottom-0 m0 position-center-h caps">Scroll</p>
+          {{/scroll}}
+        </section>
+      {{/landing-sections}}
     </div>
-
 
   </body>
 </html>

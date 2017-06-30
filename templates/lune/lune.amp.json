@@ -131,6 +131,19 @@
           }]
         }
       }]
-    }
+    },
+
+    "landing-sections": [
+      {
+        "theme": "lune-theme--light",
+        "product_name": "blanc",
+        "scroll": true
+      },
+      {
+        "theme": "lune-theme--dark",
+        "product_name": "noir",
+        "scroll": false
+      }
+    ]
   }
 }
