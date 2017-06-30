@@ -15,11 +15,12 @@
  */
 
 :root {
-  --color-primary: #FF8888;
+  --color-primary: #ff8888;
   --color-secondary: #222;
-  --color-seperator: #DADADA;
+  --color-seperator: #dadada;
   --color-font-default: #666;
   --color-font-title: #000;
+  --color-icon: var(--color-primary);
   --font-family: 'Open Sans Condensed', sans-serif;
   --font-family-secondary: 'Cardo', serif;
   --button-font-size: .8rem;

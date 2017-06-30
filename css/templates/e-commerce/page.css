@@ -1,10 +1,7 @@
 @import '../../core';
 @import 'page-vars';
-@import 'typography';
-@import 'elements';
 @import '../../../components/inputs/inputs';
-@import 'header';
-@import '../../../components/hero/hero';
+@import '../../../components/social-follow/social-follow';
 
 body {
   font-size: var(--narrow-body-font-size);
@@ -18,4 +15,202 @@ body {
 
 main {
   max-width: none;
+}
+
+
+/* TYPOGRAPHY */
+.h3 {
+  color: var(--color-font-title);
+  line-height: normal;
+  padding-bottom: var(--space-1);
+}
+
+
+/* ELEMENTS */
+.ampstart-btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  font-size: var(--button-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--bold-font-weight);
+}
+
+.ampstart-hero .ampstart-btn {
+  padding: var(--space-1) var(--space-3);
+}
+
+
+/* HEADER */
+.ampstart-headerbar {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  height: var(--narrow-nav-height);
+  z-index: var(--z1);
+}
+
+.ampstart-navbar-trigger {
+  cursor: pointer;
+  height: 24px;
+  color: var(--color-primary);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-headerbar {
+    height: var(--wide-nav-height);
+  }
+
+  .ampstart-headerbar .ampstart-navbar-trigger {
+    padding: 0;
+    margin-left: var(--space-1);
+  }
+}
+
+.ampstart-headerbar-title {
+  font-size: var(--h4);
+  font-weight: var(--bold-font-weight);
+  line-height: normal;
+  color: var(--color-secondary);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-headerbar-title {
+    font-size: var(--h3);
+  }
+}
+
+.ampstart-headerbar-home-link {
+  padding-bottom: 0;
+  text-indent: -var(--space-2);
+  color: var(--color-primary);
+}
+
+.ampstart-sidebar {
+  background-color: var(--color-white);
+  width: var(--sidebar-width);
+  margin-bottom: var(--space-3);
+}
+
+.ampstart-sidebar-header {
+  position: relative;
+  z-index: var(--z1);
+}
+
+.ampstart-sidebar .ampstart-navbar-trigger {
+  margin-top: var(--space-3);
+  font-size: var(--space-3);
+  color: var(--color-primary);
+}
+
+.ampstart-nav {
+  margin: var(--space-3) 0 var(--space-4) 0;
+}
+
+.ampstart-nav-item {
+  color: var(--color-primary);
+}
+
+.ampstart-nav-link {
+  font-size: var(--h3);
+  font-weight: var(--bold-font-weight);
+  line-height: normal;
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+.ampstart-sidebar-faq {
+  width: 100%;
+  color: var(--color-secondary);
+  font-family: var(--font-family-secondary);
+  padding-top: var(--space-2);
+}
+
+.ampstart-faq-item {
+  line-height: normal;
+  padding: 0 0 var(--space-1) 0;
+}
+
+.ampstart-social-follow {
+  justify-content: initial;
+  display: inline-block;
+}
+
+.ampstart-social-follow li {
+  display: inline-block;
+}
+
+.ampstart-social-follow li:last-child {
+  margin-right: 0;
+}
+
+.main {
+  margin-top: var(--narrow-nav-height);
+}
+
+@media (--breakpoint-md) {
+  .main {
+    margin-top: calc(var(--wide-nav-height));
+  }
+}
+
+
+/* HERO */
+.e-commerce-ampstart-hero-content {
+  padding: calc(var(--space-4) + var(--space-1)) var(--narrow-page-padding);
+}
+
+.e-commerce-ampstart-hero-body {
+  padding-bottom: var(--space-3);
+  font-family: var(--font-family-secondary);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.e-commerce-ampstart-hero-title {
+  font-weight: var(--bold-font-weight);
+}
+
+@media (--breakpoint-md) {
+  .e-commerce-ampstart-hero {
+    position: relative;
+    color: var(--color-white);
+    text-align: left;
+  }
+
+  .e-commerce-ampstart-hero-title {
+    font-size: var(--h1);
+    color: var(--color-white);
+    font-weight: var(--bold-font-weight);
+  }
+
+  .e-commerce-ampstart-hero-body {
+    margin: 0;
+  }
+
+  .e-commerce-ampstart-hero-content {
+    position: absolute;
+    top: 0;
+    left: var(--space-2);
+    width: 500px;
+    height: 100%;
+  }
+
+  .e-commerce-ampstart-hero .ampstart-btn {
+    background-color: var(--color-white);
+    border: none;
+    color: var(--color-font-title);
+    font-size: var(--h5);
+  }
+
+  .e-commerce-ampstart-hero-theme-secondary .e-commerce-ampstart-hero-title,
+  .e-commerce-ampstart-hero-theme-secondary .e-commerce-ampstart-hero-body,
+  .e-commerce-ampstart-hero-theme-secondary .e-commerce-ampstart-hero .ampstart-btn {
+    color: var(--color-secondary);
+  }
+
+  .e-commerce-ampstart-hero-theme-secondary .ampstart-btn {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+  }
 }

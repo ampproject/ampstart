@@ -17,7 +17,10 @@
 module.exports = {
   src: {
     components: 'components/**/*.*',
-    templates: '{templates, dummy}/**/*.html',
+    templates: [
+      '{templates, dummy}/**/*.html',
+      '!templates/e-commerce/partials/hero/*.html'
+    ],
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
     css: ['css/**/*.css', '!css/ampstart-base/**/*.css'],

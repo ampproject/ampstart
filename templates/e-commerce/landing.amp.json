@@ -18,7 +18,7 @@
       "sidebaronly": true,
       "logo": {
         "href": "/",
-        "name": "Branding",
+        "name": "E-Commerce",
         "classes": "h3 caps"
       },
       "sidebarclasses": "center",
@@ -66,7 +66,7 @@
             "twitter": "#"
           }
         ],
-        "classes": "mt1 mb2"
+        "spacing-classes": "mt1 mb2"
       },
       "faq": {
         "links": [
