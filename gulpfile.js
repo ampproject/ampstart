@@ -56,7 +56,7 @@ function mustacheStream() {
       getData(file.path), partials);
 
     // Replaces [[[title]]] to {{title}} which allows the use of amp-mustache.
-    fileContents = fileContents.replace(/\[\[\[/g, "{{").replace(/\]\]\]/g, "}}");
+    fileContents = fileContents.replace(/<%/g, "{{").replace(/%>/g, "}}");
     file.contents = new Buffer(fileContents);
     cb(null, file);
   });
