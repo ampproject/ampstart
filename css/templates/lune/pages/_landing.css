@@ -4,17 +4,34 @@
   --landing-title-offset-h-m: -6%;
   --landing-title-offset-h-t: -32%;
   --landing-title-offset-h-d: -38%;
+
+  --landing-page-height: 100vh;
+  --landing-page-min-height: 37.5rem;
+
+  @custom-media --breakpoint-landing-min-height (max-height: 37.4375rem); /* 720px */
 }
 
 .lune-page--landing {
   padding-top: 0;
+
+  height: calc(2 * var(--landing-page-height));
 }
 
 .landing__section {
-  height: 100vh;
-  min-height: 37.5rem;
+  height: var(--landing-page-height);
+  min-height: var(--landing-page-min-height);
 
   padding-top: var(--layout-header-height-m);
+}
+
+@media (--breakpoint-landing-min-height) {
+  .lune-page--landing {
+    height: auto;
+  }
+
+  .landing__section {
+    position: relative;
+  }
 }
 
 .landing__section .lune-scroll-indicator {
