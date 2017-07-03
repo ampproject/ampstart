@@ -27,6 +27,7 @@
 @import 'components/_hero';
 @import 'components/_scroll-indicator';
 @import 'components/_cta';
+@import 'components/_product-toggle';
 
 @import '_pages';
 @import 'pages/_landing';

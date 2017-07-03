@@ -180,6 +180,8 @@
   z-index: 1;
 
   margin: 0 0 0 30px;
+
+  white-space: nowrap;
 }
 
 .product__materials__title--split span {

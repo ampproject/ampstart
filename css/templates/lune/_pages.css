@@ -13,7 +13,7 @@
 
   margin: 0 auto;
 
-  
+
 }
 
 
@@ -43,7 +43,6 @@
 .lune-overlay[id^="store"]:target ~ .lune-page[id="store"] {
   display: block;
   height: auto;
-  overflow: auto;
   opacity: 1;
 
   min-height: 100vh;
