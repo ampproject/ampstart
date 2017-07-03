@@ -90,6 +90,7 @@
           }]
         },
         "materials": {
+          "classes": "product__materials--oak",
           "title": "Materials",
           "title_parts": [],
           "list": [{
@@ -112,6 +113,7 @@
               }]
             }]
           }, {
+            "classes": "product__materials--poly",
             "title": "Polypropylene",
             "title_parts": {
               "mobile": [

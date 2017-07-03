@@ -26,6 +26,8 @@
 
 @media (--breakpoint-mt) {
   .lune-cta {
+    padding: 15px 70px;
+    
     font-size: var(--cta-font-size-d);
   }
 }
