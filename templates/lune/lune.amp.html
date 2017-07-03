@@ -171,11 +171,16 @@ limitations under the License.
         <section class="landing__section relative flex flex-column items-center justify-center {{theme}}">
           <h1 class="a11y-visually-hidden">Lune {{product_name}}</h1>
           <div class="landing__content relative flex items-center justify-center">
-            <div class="absolute landing__image-wrapper position-center-h">
-              <span class="landing__title-big landing__title-big--top-left absolute caps">lu-</span>
-              <div class="landing__image absolute top-0 right-0 bottom-0 left-0"></div>
-              <span class="flex justify-between landing__title-small absolute caps">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
-              <span class="landing__title-big landing__title-big--bottom-right absolute caps">-ne</span>
+            <div class="absolute landing__image-wrapper position-center">
+              <span class="landing__title-big landing__title-big--top-left absolute caps" aria-hidden="true">lu-</span>
+              <amp-img
+                alt=""
+                src="../../img/lune/{{product_name}}-landing-hero@2x.png"
+                width="1"
+                height="1.37"
+                layout="responsive"></amp-img>
+              <span class="flex justify-between landing__title-small absolute caps" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+              <span class="landing__title-big landing__title-big--bottom-right absolute caps" aria-hidden="true">-ne</span>
             </div>
             <div class="absolute bottom-0 left-0 right-0 center">
               <a href="#{{product_name}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps">Discover {{product_name}}</a>
