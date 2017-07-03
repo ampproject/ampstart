@@ -11,9 +11,11 @@
   overflow: hidden;
   opacity: 0;
 
+
+}
+
+.lune-page .lune-page__wrapper {
   margin: 0 auto;
-
-
 }
 
 
