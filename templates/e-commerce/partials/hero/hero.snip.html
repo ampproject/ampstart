@@ -1,20 +1,18 @@
 {{#hero}}
-  <div class="e-commerce-ampstart-hero center">
-    <div class="e-commerce-ampstart-hero-img">
-      {{#images}}
-        {{#image}}
-          <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" media="{{media}}" alt="{{alt}}"></amp-img>
-        {{/image}}
-      {{/images}}
-    </div>
-    <div class="e-commerce-ampstart-hero-content e-commerce-ampstart-hero-theme-{{text-theme}} flex justify-center flex-column">
-      <div>
-      <h2 class="e-commerce-ampstart-hero-title h3 caps">{{title}}</h2>
-      <p class="e-commerce-ampstart-hero-body">{{body}}</p>
+<section class="commerce-hero-content center">
+  {{#images}}
+    {{#image}}
+      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" media="{{media}}" alt="{{alt}}"></amp-img>
+    {{/image}}
+  {{/images}}
+  <div class="commerce-hero-content-content commerce-hero-content-theme-{{text-theme}} flex justify-center flex-column">
+    <div>
+      <h2 class="commerce-hero-content-title h3 caps">{{title}}</h2>
+      <p class="commerce-hero-content-body">{{body}}</p>
       {{#link}}
-        <button class="ampstart-btn ampstart-btn-secondary caps">{{text}}</button>
+        <a href="{{url}}" class="ampstart-btn ampstart-btn-secondary caps">{{text}}</a>
       {{/link}}
-      </div>
     </div>
   </div>
+</section>
 {{/hero}}

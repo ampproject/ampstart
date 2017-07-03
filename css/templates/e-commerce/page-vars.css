@@ -15,25 +15,23 @@
  */
 
 :root {
-  --color-primary: #ff8888;
+  --color-font-accent: #ff8888;
+  --color-primary: #000;
   --color-secondary: #222;
-  --color-seperator: #dadada;
   --color-font-default: #666;
-  --color-font-title: #000;
-  --color-icon: var(--color-primary);
   --font-family: 'Open Sans Condensed', sans-serif;
   --font-family-secondary: 'Cardo', serif;
   --button-font-size: .8rem;
   --caps-letter-spacing: 0;
-
+  --content-max-width: none;
   --sidebar-width: 350px;
 
   /* Narrow custom properties */
   --narrow-page-padding: var(--space-3);
-  --narrow-nav-height: 3.5rem;
+  --narrow-nav-item-height: 3.5rem;
   --narrow-body-font-size: .9rem;
 
   /* Wide custom properties */
-  --wide-nav-height: 5rem;
+  --wide-nav-item-height: 5rem;
   --wide-body-font-size: 1rem;
 }

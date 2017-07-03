@@ -4,8 +4,6 @@
       "title": "branding",
       "canonical-path": "templates/themes/3/home.amp",
       "extensions": [
-        "amp-carousel",
-        "amp-image-lightbox",
         "amp-sidebar"
       ],
       "font-stylesheets": [
