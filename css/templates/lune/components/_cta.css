@@ -1,4 +1,8 @@
+@import "../page-vars";
+
 .lune-cta {
+  display: inline-block;
+
   padding: 1.2em 1.6em;
 
   min-width: 14em;
@@ -7,6 +11,17 @@
   font-size: var(--cta-font-size-m);
 
   letter-spacing: var(--hotspot-letter-spacing);
+
+  background: transparent;
+}
+
+.lune-cta,
+.lune-cta:active,
+.lune-cta:focus,
+.lune-cta:hover,
+.lune-cta:visited {
+  border-color: inherit;
+  color: inherit;
 }
 
 @media (--breakpoint-mt) {
