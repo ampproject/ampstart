@@ -29,6 +29,7 @@
 @import 'components/_cta';
 
 @import '_pages';
+@import 'pages/_landing';
 @import 'pages/_product';
 
 @import '_overlays';

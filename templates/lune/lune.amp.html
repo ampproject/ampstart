@@ -64,7 +64,7 @@ limitations under the License.
                 </div>
               </div>
 
-              <p class="scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
+              <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
 
             </section>
           {{/hero}}
@@ -110,13 +110,13 @@ limitations under the License.
                 <div class="product__materials flex flex-column {{classes}}">
 
                   {{#title_parts}}
-                    <h3 class="caps h2-md product__materials__title product__materials__title--split black relative md-hide lg-hide">
+                    <h3 class="caps h2-md  product__materials__title product__materials__title--split black relative md-hide lg-hide">
                       {{#mobile}}
                         <span>{{.}}</span>
                       {{/mobile}}
                     </h3>
 
-                    <h3 class="caps h2-md product__materials__title product__materials__title--split black relative xs-hide sm-hide">
+                    <h3 class="caps h2-md  product__materials__title product__materials__title--split black relative xs-hide sm-hide">
                       {{#desktop}}
                         <span>{{.}}</span>
                       {{/desktop}}
@@ -151,7 +151,7 @@ limitations under the License.
 
           {{#bottom_cta}}
             <div class="products__bottom-cta flex justify-center">
-              <a href="{{text}}" class="ampstart-btn ampstart-btn-secondary cta caps px4 mt1 mb4 bold">
+              <a href="{{text}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps px4 mt1 mb4 center">
                 {{text}}
               </a>
             </div>
@@ -164,9 +164,26 @@ limitations under the License.
 
     <!-- LANDING PAGE -->
     <div class="lune-page lune-page--landing lune-page--default" id="landing">
-      LANDING page
-    </div>
+      {{#landing-sections}}
+        <section class="landing__section relative flex flex-column items-center justify-center {{theme}}">
+          <div class="landing__content relative flex items-center justify-center px3">
+            <h1 class="landing__title-big caps m0" aria-label="Lune {{product_name}}">
+              <span class="landing__title-big landing__back absolute top-0 left-0">Lu</span>
+              <span class="landing__title-big landing__front absolute bottom-0 right-0">Ne</span>
+              <span class="flex justify-between landing__title-small landing__front absolute position-center-h" aria-label="{{product_name}}">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+            </h1>
+            <div class="landing__image"></div>
+            <div class="absolute bottom-0 left-0 right-0 center landing__front">
+              <a href="#{{product_name}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps">Discover {{product_name}}</a>
+            </div>
+          </div>
+          {{#scroll}}
+            <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps">Scroll</p>
+          {{/scroll}}
+        </section>
 
+      {{/landing-sections}}
+    </div>
 
   </body>
 </html>
