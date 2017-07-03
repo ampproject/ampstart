@@ -328,3 +328,34 @@
     padding: 60px 0;
   }
 }
+
+
+.chapter,
+.chapter-number {
+  font-size: 9px;
+
+  word-wrap: break-word;
+}
+
+.chapter {
+  left: calc(((100% - 100vw) / 2) + 30px);
+
+  width: 10px;
+}
+
+.chapter span {
+  margin-bottom: 1em;
+}
+
+.chapter-number {
+  right: calc(((100% - 100vw) / 2) + 30px);
+
+  width: 15px;
+}
+
+.chapter-number span:first-of-type {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+  border-bottom: 1px solid currentColor;
+}
