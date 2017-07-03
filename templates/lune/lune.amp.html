@@ -18,11 +18,11 @@ limitations under the License.
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
     {{> ../../components/navbar/navbar.snip.html}}
-    
-    <!-- STORE PAGE -->
-    <div class="lune-page lune-page--store" id="store">STORE PAGE</div>
 
-    
+    <!-- STORE PAGE -->
+    <div class="lune-page lune-page--store md-col-9" id="store">STORE PAGE</div>
+
+
     <!-- PRODUCTS -->
 
     {{#product-pages}}
@@ -40,20 +40,20 @@ limitations under the License.
 
           <a href="#{{id}}">Close overlay</a>
         </div>
-        
+
         <!-- PRODUCT PAGE -->
-        <div class="lune-page lune-page--product lune-page--product-{{id}}" id="{{id}}">
+        <div class="lune-page lune-page--product lune-page--product-{{id}} md-col-9" id="{{id}}">
           {{#hero}}
             <section class="hero product__hero">
-              <div class="hero__content col-12 flex flex-column items-center justify-center product__title-1 h1 h1-md black">
+              <div class="hero__content col-12 flex flex-column items-center justify-center product__title-1 h1 h2-md h1-lg black">
                 <div class="hero__title__wrapper">
                   <h1 class="caps m0 relative px3 product-title-top has-mobile-hyphen" aria-label="{{full_title}}">{{title_parts.0}}</h1>
                   {{#title_parts.1}}
                     <h1 class="caps m0 relative px3 product-title-bottom" aria-hidden>{{.}}</h1>
                   {{/title_parts.1}}
                 </div>
-                
-                <div class="hero__image__wrapper">
+
+                <div class="hero__image__wrapper flex justify-center col-12">
                   <amp-img
                       src="{{image}}"
                       width="455"
@@ -68,12 +68,12 @@ limitations under the License.
 
             </section>
           {{/hero}}
-          
+
           {{#intro}}
             <section class="section p3 section--intro">
 
               <div class="intro__wrapper">
-                <h2 class="product__title-2 mb2 caps h6 black">{{title}}</h2>
+                <h2 class="product__title-2 mb2 caps h6 black h4-md">{{title}}</h2>
 
                 {{#body}}
                   <p class="product__body mb2">{{.}}</p>
@@ -81,12 +81,12 @@ limitations under the License.
               </div>
             </section>
           {{/intro}}
-        
+
           {{#specs}}
           <section class="section p3">
-            <h2 class="product__title-2 caps h6 black mb2 flex items-center product__title--line-after">{{title}}</h2>
+            <h2 class="product__title-2 caps h6 black mb2 flex items-center product__title--line-after md-hide lg-hide">{{title}}</h2>
 
-            <p class="product__body mb4">{{body}}</p>
+            <p class="product__body mb4 md-hide lg-hide">{{body}}</p>
 
             <ul class="product__details p0 m0">
               {{#details}}
@@ -102,28 +102,28 @@ limitations under the License.
           {{/specs}}
 
           {{#materials}}
-            <section class="section p3">
+            <section class="section p3 section--materials">
               <h2 class="product__title-2 h6 black mb4 caps flex items-center product__title--line-after">{{title}}</h2>
 
               {{#list}}
 
-                <div class="product__materials flex flex-column">
+                <div class="product__materials flex flex-column {{classes}}">
 
                   {{#title_parts}}
-                    <h3 class="caps product__materials__title product__materials__title--split black relative md-hide lg-hide">
-                      {{#mobile}}  
+                    <h3 class="caps h2-md product__materials__title product__materials__title--split black relative md-hide lg-hide">
+                      {{#mobile}}
                         <span>{{.}}</span>
                       {{/mobile}}
                     </h3>
 
-                    <h3 class="caps product__materials__title product__materials__title--split black relative xs-hide sm-hide">
-                      {{#desktop}}  
+                    <h3 class="caps h2-md product__materials__title product__materials__title--split black relative xs-hide sm-hide">
+                      {{#desktop}}
                         <span>{{.}}</span>
                       {{/desktop}}
                     </h3>
                   {{/title_parts}}
                   {{^title_parts}}
-                    <h3 class="caps product__materials__title black relative">{{title}}</h3>
+                    <h3 class="caps h2-md product__materials__title black relative">{{title}}</h3>
                   {{/title_parts}}
 
                   {{#images}}
@@ -160,7 +160,7 @@ limitations under the License.
         </div>
       {{/products}}
     {{/product-pages}}
-  
+
 
     <!-- LANDING PAGE -->
     <div class="lune-page lune-page--landing lune-page--default" id="landing">

@@ -20,7 +20,7 @@
 
   --z1: 1; /* body */
   --z2: 2; /* overlay */
-  --z3: 3; /* sidebar mask */  
+  --z3: 3; /* sidebar mask */
   --z4: 4; /* sidebar */
   --z5: 5; /* header */
 
@@ -48,12 +48,14 @@
   --h5-md: 4.375rem; /* 70px */
   --h6-md: 3.125rem; /* 50px */
 
-  --h1-lg: 11.25; /* 180px */
+  --h1-lg: 11.25rem; /* 180px */
   --h2-lg: 7.5rem; /* 120px */
   --h3-lg: 7rem; /* 112px */
   --h4-lg: 5rem; /* 80px */
   --h5-lg: 4.375rem; /* 70px */
   --h6-lg: 3.125rem; /* 50px */
+
+  --line-height-1: 1em;
 
 
   /** Nav items */
@@ -89,7 +91,7 @@
 
 
 
-  
+
 
 
 
