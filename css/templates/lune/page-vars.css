@@ -20,7 +20,7 @@
 
   --z1: 1; /* body */
   --z2: 2; /* overlay */
-  --z3: 3; /* sidebar mask */  
+  --z3: 3; /* sidebar mask */
   --z4: 4; /* sidebar */
   --z5: 5; /* header */
 
@@ -89,7 +89,7 @@
 
 
 
-  
+
 
 
 
@@ -97,7 +97,7 @@
   --color-dark-grey: #202125;
   --color-dark-grey-2: #33353c;
 
-  --color-light-1: var(--color-white);
+  --color-light-1: #fff;
   --color-light-2: #f9f9f9;
 
   /* Backgrounds */
@@ -108,9 +108,8 @@
   --color-overlay-2: var(--color-light-2);
 
   /* Foregrounds */
-  --color-font-primary: var(--color-light-1);
-  --color-font-secondary: var(--color-dark-grey);
-  --color-navbar-font-primary: var(--color-dark-grey);
+  --color-font-primary: var(--color-dark-grey);
+  --color-font-secondary: var(--color-font-primary);
 
   --content-max-width: 100%;
 
