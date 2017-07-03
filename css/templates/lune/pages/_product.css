@@ -6,7 +6,7 @@
 
 @media (--breakpoint-md) {
   .lune .lune-page--product section {
-    min-height: 100vh;
+    min-height: calc(100vh - var(--layout-header-height-d));
   }
 }
 
@@ -38,8 +38,6 @@
   z-index: 2;
 
   max-width: 338px;
-
-  margin-top: -1.9em;
 }
 
 .lune .product-title-top {
@@ -52,6 +50,12 @@
 
 .lune .product-title-bottom {
   z-index: 3;
+}
+
+.lune .hero__title__wrapper {
+  margin-bottom: -1.9em;
+
+  min-height: 238px;
 }
 
 @media (--breakpoint-mt) {
@@ -74,9 +78,16 @@
   }
 }
 
+@media (--breakpoint-mt) {
+  .lune .hero__title__wrapper {
+    margin-bottom: -1em;
+  }
+}
+
 @media (--breakpoint-md) {
   .lune .hero__chair {
     margin-top: 0;
+
   }
 
   .lune .hero__image__wrapper {
