@@ -166,20 +166,19 @@ limitations under the License.
     <div class="lune-page lune-page--landing lune-page--default" id="landing">
       {{#landing-sections}}
         <section class="landing__section relative flex flex-column items-center justify-center {{theme}}">
-          <div class="landing__content relative flex items-center justify-center px3">
-            <h1 class="landing__title-big caps m0" aria-label="Lune {{product_name}}">
-              <span class="landing__title-big landing__back absolute top-0 left-0">Lu</span>
-              <span class="landing__title-big landing__front absolute bottom-0 right-0">Ne</span>
-              <span class="flex justify-between landing__title-small landing__front absolute position-center-h" aria-label="{{product_name}}">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
-            </h1>
-            <div class="landing__image"></div>
-            <div class="absolute bottom-0 left-0 right-0 center landing__front">
+          <h1 class="a11y-visually-hidden">Lune {{product_name}}</h1>
+          <div class="landing__content relative flex items-center justify-center">
+            <div class="absolute landing__image-wrapper position-center-h">
+              <span class="landing__title-big landing__title-big--top-left absolute caps">lu-</span>
+              <div class="landing__image absolute top-0 right-0 bottom-0 left-0"></div>
+              <span class="flex justify-between landing__title-small absolute caps">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+              <span class="landing__title-big landing__title-big--bottom-right absolute caps">-ne</span>
+            </div>
+            <div class="absolute bottom-0 left-0 right-0 center">
               <a href="#{{product_name}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps">Discover {{product_name}}</a>
             </div>
           </div>
-          {{#scroll}}
-            <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps">Scroll</p>
-          {{/scroll}}
+          <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps">Scroll</p>
         </section>
 
       {{/landing-sections}}

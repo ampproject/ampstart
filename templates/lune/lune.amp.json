@@ -148,14 +148,12 @@
       {
         "theme": "lune-theme--light",
         "product_name": "blanc",
-        "product_name_split": ["b", "l", "a", "n", "c"],
-        "scroll": true
+        "product_name_split": ["b", "l", "a", "n", "c"]
       },
       {
         "theme": "lune-theme--dark",
         "product_name": "noir",
-        "product_name_split": ["n", "o", "i", "r"],
-        "scroll": false
+        "product_name_split": ["n", "o", "i", "r"]
       }
     ]
   }
