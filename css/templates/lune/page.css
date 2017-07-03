@@ -29,10 +29,12 @@
 @import 'components/_cta';
 
 @import '_pages';
+@import '_overlays';
+@import '_themes';
+
 @import 'pages/_landing';
 @import 'pages/_product';
 
-@import '_overlays';
 
 .lune amp-sidebar {
   width: 80vw;
