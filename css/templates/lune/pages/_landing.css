@@ -20,6 +20,9 @@
   height: calc(2 * var(--landing-page-height));
 }
 
+/*******************************************************************************
+ * Enter animation (image, text and cta buttons).
+ ******************************************************************************/
 .lune-page:target ~ .lune-page--landing .landing__image,
 .lune-overlay:target ~ .lune-page--landing .landing__image,
 .lune-page:target ~ .lune-page--landing .landing__title-big,
@@ -73,19 +76,52 @@
   }
 }
 
+/*******************************************************************************
+ * Layout & typography
+ ******************************************************************************/
+.lune-page--landing {
+  padding-top: 0;
+
+  height: calc(2 * var(--landing-page-height));
+}
+
 .landing__section {
+  position: relative;
+
   height: var(--landing-page-height);
   min-height: var(--landing-page-min-height);
 
   padding-top: var(--layout-header-height-m);
 }
 
+.landing__section.lune-theme--dark {
+  position: fixed;
+}
+
+/*
+ * Swtich back to relative position and auto height when the landing page is not
+ * in view. Avoids the fixed section to be in front of other top-level pages.
+ */
+.lune-page:target ~ .lune-page--landing,
+.lune-overlay:target ~ .lune-page--landing {
+  height: auto;
+}
+
+.lune-page:target ~ .lune-page--landing .landing__section.lune-theme--dark,
+.lune-overlay:target ~ .lune-page--landing .landing__section.lune-theme--dark {
+  position: relative;
+}
+
+/*
+ * Swtich back to relative position and auto height when there is not enough
+ * estate in the viewport for a section to be fully displayed.
+ */
 @media (--breakpoint-landing-min-height) {
   .lune-page--landing {
     height: auto;
   }
 
-  .landing__section {
+  .landing__section.lune-theme--dark {
     position: relative;
   }
 }

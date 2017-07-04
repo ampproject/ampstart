@@ -243,12 +243,12 @@
 
     "landing-sections": [
       {
-        "classes": "relative z1 lune-theme--light",
+        "classes": "z1 lune-theme--light",
         "product_name": "blanc",
         "product_name_split": ["b", "l", "a", "n", "c"]
       },
       {
-        "classes": "fixed top-0 left-0 right-0 lune-theme--dark",
+        "classes": "top-0 left-0 right-0 lune-theme--dark",
         "product_name": "noir",
         "product_name_split": ["n", "o", "i", "r"]
       }

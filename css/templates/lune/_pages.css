@@ -3,6 +3,8 @@
 /* Show / hide pages based on URL Fragment.
   Home (default) is a special case for when there is no fragment defined. */
 .lune-page {
+  position: relative;
+
   z-index: var(--z1);
 
   /* By default a page is hidden. */
@@ -10,8 +12,6 @@
   height: 0;
   overflow: hidden;
   opacity: 0;
-
-
 }
 
 .lune-page .lune-page__wrapper {
