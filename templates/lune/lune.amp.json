@@ -4,7 +4,8 @@
       "title": "The Ad Landing Page",
       "canonical-path": "templates/lune.amp",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-fx-flying-carpet"
       ],
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Lato:400,700,900"

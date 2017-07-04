@@ -106,7 +106,7 @@
   --color-bg-dark-m: var(--color-dark-grey);
   --color-bg-dark-d: var(--color-dark-grey-2);
   --color-bg-light: var(--color-light-1);
-  --color-overlay-1: #fcefef;
+  --color-overlay-1: var(--color-light-1);
   --color-overlay-2: var(--color-light-2);
 
   /* Foregrounds */

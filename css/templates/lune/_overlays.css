@@ -3,11 +3,13 @@
 .lune-overlay {
   position: fixed;
 
-  z-index: --z2;
+  z-index: var(--z2);
 
   display: none;
   width: 100vw;
   height: 100vh;
+
+  overflow: scroll;
 
   padding-top: var(--layout-header-height-m);
 
@@ -39,4 +41,52 @@
 
     transform: none;
   }
+}
+
+.overlay__hero__text {
+  z-index: var(--z1);
+}
+
+.overlay__hero__title {
+  padding-bottom: 100px;
+
+  letter-spacing: .48em;
+  line-height: 2em;
+
+  text-indent: .24em;
+}
+
+.overlay__headline-2 {
+  z-index: var(--z1);
+
+  margin-bottom: -140px;
+
+  letter-spacing: .46em;
+  line-height: 1.75em;
+}
+
+.lune-overlay amp-fx-flying-carpet::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1;
+
+  content: '';
+}
+
+.lune-overlay .overlay__close {
+  top: 75px;
+  right: 30px;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  color: #fff;
+
+  background: var(--color-dark-grey);
 }

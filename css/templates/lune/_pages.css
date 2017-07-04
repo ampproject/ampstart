@@ -78,3 +78,14 @@
     transform: none;
   }
 }
+
+
+.page-min-height {
+  min-height: calc(100vh - var(--layout-header-height-m));
+}
+
+@media (--breakpoint-mt) {
+  .page-min-height {
+    min-height: calc(100vh - var(--layout-header-height-d));
+  }
+}
