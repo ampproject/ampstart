@@ -1,0 +1,215 @@
+{
+  "home": {
+    "head-tag": {
+      "title": "branding",
+      "canonical-path": "templates/themes/3/home.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
+      ],
+      "css-path": "templates/e-commerce/page.css"
+    },
+    "navbar": {
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "logo": {
+        "href": "/",
+        "name": "E-Commerce",
+        "classes": "h3 caps"
+      },
+      "nav": [
+        {
+          "link": {
+            "url": "#",
+            "text": "Products"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "About us"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "Blog"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "Contact us"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "Bike register"
+          }
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {
+            "facebook": "#"
+          },
+          {
+            "instagram": "#"
+          },
+          {
+            "twitter": "#"
+          }
+        ]
+      },
+      "faq": {
+        "links": [
+          {
+            "link": {
+              "url": "#",
+              "text": "Size Guide"
+            }
+          },
+          {
+            "link": {
+              "url": "#",
+              "text": "Returns Policy"
+            }
+          },
+          {
+            "link": {
+              "url": "#",
+              "text": "Cookie & privacy policy"
+            }
+          }
+        ]
+      }
+    },
+    "main": {
+      "heros": [
+        {
+          "hero": {
+            "text-theme": "primary",
+            "title": "Headline",
+            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+            "link": {
+              "url": "#",
+              "text": "see more"
+            },
+            "images": [
+              {
+                "image": {
+                  "url": "../../img/e-commerce/narrow-landing-01.png",
+                  "width": 750,
+                  "height": 460,
+                  "media": "(max-width: 52.06rem)",
+                  "alt": "Hero Landing 1"
+                }
+              },{
+                "image": {
+                  "url": "../../img/e-commerce/wide-landing-01.png",
+                  "width": 2560,
+                  "height": 800,
+                  "media": "(min-width: 52.07rem)",
+                  "alt": "Hero Landing 1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "hero": {
+            "text-theme": "primary",
+            "title": "Headline",
+            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+            "link": {
+              "url": "#",
+              "text": "see more"
+            },
+            "images": [
+              {
+                "image": {
+                  "url": "../../img/e-commerce/narrow-landing-02.png",
+                  "width": 750,
+                  "height": 460,
+                  "media": "(max-width: 52.06rem)",
+                  "alt": "Hero Landing 1"
+                }
+              },{
+                "image": {
+                  "url": "../../img/e-commerce/wide-landing-02.png",
+                  "width": 2560,
+                  "height": 800,
+                  "media": "(min-width: 52.07rem)",
+                  "alt": "Hero Landing 1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "hero": {
+            "text-theme": "secondary",
+            "title": "Headline",
+            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+            "link": {
+              "url": "#",
+              "text": "see more"
+            },
+            "images": [
+              {
+                "image": {
+                  "url": "../../img/e-commerce/narrow-landing-03.png",
+                  "width": 750,
+                  "height": 460,
+                  "media": "(max-width: 52.06rem)",
+                  "alt": "Hero Landing 1"
+                }
+              },{
+                "image": {
+                  "url": "../../img/e-commerce/wide-landing-03.png",
+                  "width": 2560,
+                  "height": 800,
+                  "media": "(min-width: 52.07rem)",
+                  "alt": "Hero Landing 1"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "hero": {
+            "text-theme": "primary",
+            "title": "Headline",
+            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+            "link": {
+              "url": "#",
+              "text": "see more"
+            },
+            "images": [
+              {
+                "image": {
+                  "url": "../../img/e-commerce/narrow-landing-01.png",
+                  "width": 750,
+                  "height": 460,
+                  "media": "(max-width: 52.06rem)",
+                  "alt": "Hero Landing 1"
+                }
+              },{
+                "image": {
+                  "url": "../../img/e-commerce/wide-landing-04.png",
+                  "width": 2560,
+                  "height": 800,
+                  "media": "(min-width: 52.07rem)",
+                  "alt": "Hero Landing 1"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
