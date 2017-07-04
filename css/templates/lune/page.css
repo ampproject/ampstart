@@ -28,6 +28,7 @@
 @import 'components/_scroll-indicator';
 @import 'components/_cta';
 @import 'components/_product-toggle';
+@import 'components/_line-after';
 
 @import '_pages';
 @import '_overlays';
