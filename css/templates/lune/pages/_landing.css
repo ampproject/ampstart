@@ -9,16 +9,11 @@
   --landing-page-min-height: 37.5rem;
 
   --landing-anim-delay-start: .4s;
-  --landing-anim-delay-step: .06s;
+  --landing-anim-delay-step: .08s;
 
   @custom-media --breakpoint-landing-min-height (max-height: 37.4375rem); /* 720px */
 }
 
-.lune-page--landing {
-  padding-top: 0;
-
-  height: calc(2 * var(--landing-page-height));
-}
 
 /*******************************************************************************
  * Enter animation (image, text and cta buttons).
@@ -28,7 +23,9 @@
 .lune-page:target ~ .lune-page--landing .landing__title-big,
 .lune-overlay:target ~ .lune-page--landing .landing__title-big,
 .lune-page:target ~ .lune-page--landing .landing__title-small,
-.lune-overlay:target ~ .lune-page--landing .landing__title-small {
+.lune-overlay:target ~ .lune-page--landing .landing__title-small,
+.lune-page:target ~ .lune-page--landing .lune-cta,
+.lune-overlay:target ~ .lune-page--landing .lune-cta {
   animation: none;
 }
 
@@ -37,25 +34,34 @@
 }
 
 .lune-page--landing .landing__title-big,
-.lune-page--landing .landing__title-small {
-  animation: fade-in-move-up .8s var(--landing-anim-delay-start) cubic-bezier(0.41, 0.01, 0.27, 1) both;
+.lune-page--landing .landing__title-small,
+.lune-page--landing .lune-cta {
+  animation: fade-in-move-up .8s var(--landing-anim-delay-start)
+      cubic-bezier(0.41, 0.01, 0.27, 1) both;
 }
 
 .lune-page--landing .landing__title-small {
-  animation-delay: calc(var(--landing-anim-delay-start) + var(--landing-anim-delay-step));
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      var(--landing-anim-delay-step));
 }
 
 .lune-page--landing .landing__title-big--bottom-right {
-  animation-delay: calc(var(--landing-anim-delay-start) + 2 * var(--landing-anim-delay-step));
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      2 * var(--landing-anim-delay-step));
+}
+
+.lune-page--landing .lune-cta {
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      3 * var(--landing-anim-delay-step));
 }
 
 @keyframes fade-in-scale-up {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(.9);
   }
 
-  33% {
+  50% {
     opacity: 1;
   }
 
