@@ -42,8 +42,6 @@ body {
 }
 
 .ampstart-navbar-trigger {
-  cursor: pointer;
-  height: 24px;
   color: var(--color-font-accent);
 }
 
@@ -89,8 +87,9 @@ body {
 }
 
 .ampstart-sidebar .ampstart-navbar-trigger {
-  margin-top: var(--space-3);
+  margin-top: var(--space-2);
   font-size: var(--space-3);
+  line-height: normal;
 }
 
 .ampstart-nav {
