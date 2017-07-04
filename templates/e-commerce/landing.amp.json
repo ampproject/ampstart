@@ -19,7 +19,6 @@
         "name": "E-Commerce",
         "classes": "h3 caps"
       },
-      "sidebarclasses": "center",
       "nav": [
         {
           "link": {
@@ -63,8 +62,7 @@
           {
             "twitter": "#"
           }
-        ],
-        "spacing-classes": "mt1 mb2"
+        ]
       },
       "faq": {
         "links": [

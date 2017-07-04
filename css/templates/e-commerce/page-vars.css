@@ -25,6 +25,7 @@
   --caps-letter-spacing: 0;
   --content-max-width: none;
   --sidebar-width: 350px;
+  --color-font-secondary: var(--color-font-accent);
 
   /* Narrow custom properties */
   --narrow-page-padding: var(--space-3);

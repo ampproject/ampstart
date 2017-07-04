@@ -1,4 +1,5 @@
 @import '../../core';
+@import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
 @import 'page-vars';
@@ -79,6 +80,7 @@ body {
   background-color: var(--color-white);
   width: var(--sidebar-width);
   margin-bottom: var(--space-3);
+  text-align: center;
 }
 
 .ampstart-sidebar-header {
@@ -95,6 +97,10 @@ body {
   margin: var(--space-3) 0 var(--space-4) 0;
 }
 
+.ampstart-nav a {
+  text-decoration: underline;
+}
+
 .ampstart-nav-item {
   color: var(--color-font-accent);
 }
@@ -107,6 +113,10 @@ body {
   margin-bottom: var(--space-3);
 }
 
+.ampstart-sidebar .ampstart-faq-item {
+  margin: 0;
+}
+
 .ampstart-sidebar-faq {
   width: 100%;
   color: var(--color-secondary);
@@ -117,6 +127,10 @@ body {
 .ampstart-faq-item {
   line-height: normal;
   padding: 0 0 var(--space-1) 0;
+}
+
+.ampstart-sidebar .ampstart-social-follow {
+  margin: var(--space-1) 0 var(--space-2) 0;
 }
 
 .ampstart-social-follow {
@@ -144,7 +158,7 @@ body {
 
 
 /* HERO */
-.commerce-hero-content-content {
+.commerce-hero-content {
   padding: calc(var(--space-4) + var(--space-1)) var(--narrow-page-padding);
 }
 
@@ -161,7 +175,7 @@ body {
 }
 
 @media (--breakpoint-md) {
-  .commerce-hero-content {
+  .commerce-hero-content-wrapper {
     position: relative;
     color: var(--color-white);
     text-align: left;
@@ -177,7 +191,7 @@ body {
     margin: 0;
   }
 
-  .commerce-hero-content-content {
+  .commerce-hero-content {
     position: absolute;
     top: 0;
     left: var(--space-2);
@@ -185,7 +199,7 @@ body {
     height: 100%;
   }
 
-  .commerce-hero-content .ampstart-btn {
+  .commerce-hero-content-wrapper .ampstart-btn {
     background-color: var(--color-white);
     border: none;
     color: var(--color-primary);
