@@ -19,7 +19,9 @@ limitations under the License.
   <body class="lune">
 
     <!-- STORE PAGE -->
-    <div class="lune-page lune-page--store" id="store">STORE PAGE</div>
+    <div class="lune-page lune-page--store" id="store">
+
+    </div>
 
 
     <!-- PRODUCTS -->
@@ -184,11 +186,14 @@ limitations under the License.
     <!-- LANDING PAGE -->
     <div class="lune-page lune-page--landing lune-page--default" id="landing">
       {{#landing-sections}}
+        <!-- LANDING SECTION -->
         <section class="landing__section flex flex-column items-center justify-center {{classes}}">
           <h1 class="a11y-visually-hidden">Lune {{product_name}}</h1>
           <div class="landing__content relative flex items-center justify-center">
             <div class="absolute landing__image-wrapper position-center">
+              <!-- LU- -->
               <span class="landing__title-big landing__title-big--top-left absolute caps" aria-hidden="true">lu-</span>
+              <!-- CHAIR IMAGE -->
               <amp-img
                 class="landing__image"
                 alt=""
@@ -196,13 +201,17 @@ limitations under the License.
                 width="1"
                 height="1.37"
                 layout="responsive"></amp-img>
+              <!-- BLANC/NOIR -->
               <span class="flex justify-between landing__title-small absolute caps" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+              <!-- -NE -->
               <span class="landing__title-big landing__title-big--bottom-right absolute caps" aria-hidden="true">-ne</span>
             </div>
+            <!-- DISCOVER CTA -->
             <div class="absolute bottom-0 left-0 right-0 center">
               <a href="#{{product_name}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps">Discover {{product_name}}</a>
             </div>
           </div>
+          <!-- SCROLL INDICATOR -->
           <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps">Scroll</p>
         </section>
 
