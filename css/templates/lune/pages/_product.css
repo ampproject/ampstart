@@ -1,3 +1,5 @@
+@import "../page-vars";
+
 .lune .lune-page--product section {
   position: relative;
 
@@ -52,7 +54,7 @@
   z-index: 3;
 }
 
-.lune .hero__title__wrapper {
+.lune .hero__title-wrapper {
   margin-bottom: -1.9em;
 
   min-height: 238px;
@@ -65,7 +67,7 @@
     padding: 0;
   }
 
-  .lune .hero__title__wrapper {
+  .lune .hero__title-wrapper {
     display: flex;
   }
 
@@ -79,7 +81,7 @@
 }
 
 @media (--breakpoint-mt) {
-  .lune .hero__title__wrapper {
+  .lune .hero__title-wrapper {
     margin-bottom: -1em;
   }
 }
@@ -90,7 +92,7 @@
 
   }
 
-  .lune .hero__image__wrapper {
+  .lune-page--product:target .hero__image-wrapper {
     position: fixed;
     top: 50vh;
 
