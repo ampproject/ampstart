@@ -114,6 +114,10 @@
   background: var(--color-dark-grey);
 }
 
+.lune-overlay:target .overlay__close {
+  position: fixed;
+}
+
 @media (--breakpoint-mt) {
   .overlay__hero {
     min-height: 0;
