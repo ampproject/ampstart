@@ -37,8 +37,3 @@
 
 @import 'pages/_landing';
 @import 'pages/_product';
-
-
-.lune amp-sidebar {
-  width: 80vw;
-}
