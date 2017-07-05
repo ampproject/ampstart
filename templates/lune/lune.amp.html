@@ -19,7 +19,9 @@ limitations under the License.
   <body class="lune">
 
     <!-- STORE PAGE -->
-    <div class="lune-page lune-page--store" id="store">STORE PAGE</div>
+    <div class="lune-page lune-page--store" id="store">
+
+    </div>
 
 
     <!-- PRODUCTS -->
@@ -27,8 +29,7 @@ limitations under the License.
     {{#product-pages}}
       {{#products}}
 
-        <!-- PRODUCT OVERLAYS -->
-
+      <!-- {{id}} PRODUCT OVERLAYS -->
         <div class="lune-overlay lune-theme--overlay-1" id="{{id}}-oak">
 
             <section class="overlay__hero page-min-height relative overflow-hidden  py2 flex flex-column justify-center">
@@ -117,7 +118,7 @@ limitations under the License.
           <a href="#{{id}}">Close overlay</a>
         </div>
 
-          <!-- PRODUCT PAGE -->
+      <!-- {{id}} PRODUCT PAGE -->
         <div class="lune-page lune-page--product lune-page--product-{{id}} {{classes}}" id="{{id}}">
           <div class="lune-page__wrapper md-col-9 {{classes}}">
             {{#hero}}
@@ -143,8 +144,8 @@ limitations under the License.
 
                 <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
 
-                <p class="chapter center xs-hide sm-hide absolute block caps position-center-v"><span class="block">Chapter</span> <span class="block">One</span></p>
-                <p class="chapter-number center absolute xs-hide sm-hide block position-center-v"><span class="block">1</span> <span class="block">4</span></p>
+                <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">One</span></p>
+                <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">1</span> <span class="block">4</span></p>
 
               </section>
             {{/hero}}
@@ -160,15 +161,15 @@ limitations under the License.
                   {{/body}}
                 </div>
 
-                <p class="chapter center xs-hide sm-hide absolute block caps position-center-v"><span class="block">Chapter</span> <span class="block">Two</span></p>
-                <p class="chapter-number center absolute xs-hide sm-hide block position-center-v"><span class="block">2</span> <span class="block">4</span></p>
+                <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Two</span></p>
+                <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">2</span> <span class="block">4</span></p>
 
               </section>
             {{/intro}}
 
             {{#specs}}
             <section class="section p3">
-              <h2 class="product__title-2 caps h6 black mb2 flex items-center product__title--line-after md-hide lg-hide">{{title}}</h2>
+              <h2 class="product__title-2 caps h6 black mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
 
               <p class="product__body mb4 md-hide lg-hide">{{body}}</p>
 
@@ -183,14 +184,14 @@ limitations under the License.
                 {{/details}}
               </ul>
 
-              <p class="chapter center xs-hide sm-hide absolute block caps position-center-v"><span class="block">Chapter</span> <span class="block">Three</span></p>
-              <p class="chapter-number center absolute xs-hide sm-hide block position-center-v"><span class="block">3</span> <span class="block">4</span></p>
+              <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Three</span></p>
+              <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">3</span> <span class="block">4</span></p>
             </section>
             {{/specs}}
 
             {{#materials}}
               <section class="section p3 section--materials">
-                <h2 class="product__title-2 h6 black mb4 caps flex items-center product__title--line-after">{{title}}</h2>
+                <h2 class="product__title-2 h6 black mb4 caps flex items-center lune-line-after">{{title}}</h2>
 
                 {{#list}}
 
@@ -233,8 +234,8 @@ limitations under the License.
 
                 {{/list}}
 
-                <p class="chapter center xs-hide sm-hide absolute block caps position-center-v"><span class="block">Chapter</span> <span class="block">Four</span></p>
-                <p class="chapter-number center absolute xs-hide sm-hide block position-center-v"><span class="block">4</span> <span class="block">4</span></p>
+                <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Four</span></p>
+                <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">4</span> <span class="block">4</span></p>
 
               </section>
             {{/materials}}
@@ -260,24 +261,32 @@ limitations under the License.
     <!-- LANDING PAGE -->
     <div class="lune-page lune-page--landing lune-page--default" id="landing">
       {{#landing-sections}}
-        <section class="landing__section relative flex flex-column items-center justify-center {{theme}}">
+        <!-- LANDING SECTION -->
+        <section class="landing__section flex flex-column items-center justify-center {{classes}}">
           <h1 class="a11y-visually-hidden">Lune {{product_name}}</h1>
           <div class="landing__content relative flex items-center justify-center">
             <div class="absolute landing__image-wrapper position-center">
+              <!-- LU- -->
               <span class="landing__title-big landing__title-big--top-left absolute caps" aria-hidden="true">lu-</span>
+              <!-- CHAIR IMAGE -->
               <amp-img
+                class="landing__image"
                 alt=""
                 src="../../img/lune/{{product_name}}-landing-hero@2x.png"
                 width="1"
                 height="1.37"
                 layout="responsive"></amp-img>
+              <!-- BLANC/NOIR -->
               <span class="flex justify-between landing__title-small absolute caps" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+              <!-- -NE -->
               <span class="landing__title-big landing__title-big--bottom-right absolute caps" aria-hidden="true">-ne</span>
             </div>
+            <!-- DISCOVER CTA -->
             <div class="absolute bottom-0 left-0 right-0 center">
               <a href="#{{product_name}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps">Discover {{product_name}}</a>
             </div>
           </div>
+          <!-- SCROLL INDICATOR -->
           <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps">Scroll</p>
         </section>
 

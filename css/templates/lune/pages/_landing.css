@@ -4,17 +4,132 @@
   --landing-title-offset-h-m: -6%;
   --landing-title-offset-h-t: -32%;
   --landing-title-offset-h-d: -38%;
+
+  --landing-page-height: 100vh;
+  --landing-page-min-height: 37.5rem;
+
+  --landing-anim-delay-start: .4s;
+  --landing-anim-delay-step: .08s;
+
+  @custom-media --breakpoint-landing-min-height (max-height: 37.4375rem); /* 720px */
 }
 
+
+/*******************************************************************************
+ * Enter animation (image, text and cta buttons).
+ ******************************************************************************/
+.lune-page:target ~ .lune-page--landing .landing__image,
+.lune-overlay:target ~ .lune-page--landing .landing__image,
+.lune-page:target ~ .lune-page--landing .landing__title-big,
+.lune-overlay:target ~ .lune-page--landing .landing__title-big,
+.lune-page:target ~ .lune-page--landing .landing__title-small,
+.lune-overlay:target ~ .lune-page--landing .landing__title-small,
+.lune-page:target ~ .lune-page--landing .lune-cta,
+.lune-overlay:target ~ .lune-page--landing .lune-cta {
+  animation: none;
+}
+
+.lune-page--landing .landing__image {
+  animation: fade-in-scale-up 2s var(--landing-anim-delay-start) ease-out both;
+}
+
+.lune-page--landing .landing__title-big,
+.lune-page--landing .landing__title-small,
+.lune-page--landing .lune-cta {
+  animation: fade-in-move-up .8s var(--landing-anim-delay-start)
+      cubic-bezier(0.41, 0.01, 0.27, 1) both;
+}
+
+.lune-page--landing .landing__title-small {
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      var(--landing-anim-delay-step));
+}
+
+.lune-page--landing .landing__title-big--bottom-right {
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      2 * var(--landing-anim-delay-step));
+}
+
+.lune-page--landing .lune-cta {
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      3 * var(--landing-anim-delay-step));
+}
+
+@keyframes fade-in-scale-up {
+  from {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+@keyframes fade-in-move-up {
+  from {
+    opacity: 0;
+    transform: translateY(3.125rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*******************************************************************************
+ * Layout & typography
+ ******************************************************************************/
 .lune-page--landing {
   padding-top: 0;
+
+  height: calc(2 * var(--landing-page-height));
 }
 
 .landing__section {
-  height: 100vh;
-  min-height: 37.5rem;
+  position: relative;
+
+  height: var(--landing-page-height);
+  min-height: var(--landing-page-min-height);
 
   padding-top: var(--layout-header-height-m);
+}
+
+.landing__section.lune-theme--dark {
+  position: fixed;
+}
+
+/*
+ * Swtich back to relative position and 0 height when the landing page is not
+ * in view. Avoids the fixed section to be in front of other top-level pages.
+ */
+.lune-page:target ~ .lune-page--landing,
+.lune-overlay:target ~ .lune-page--landing {
+  height: 0;
+}
+
+.lune-page:target ~ .lune-page--landing .landing__section.lune-theme--dark,
+.lune-overlay:target ~ .lune-page--landing .landing__section.lune-theme--dark {
+  position: relative;
+}
+
+/*
+ * Swtich back to relative position and auto height when there is not enough
+ * estate in the viewport for a section to be fully displayed.
+ */
+@media (--breakpoint-landing-min-height) {
+  .lune-page--landing {
+    height: auto;
+  }
+
+  .landing__section.lune-theme--dark {
+    position: relative;
+  }
 }
 
 .landing__section .lune-scroll-indicator {
