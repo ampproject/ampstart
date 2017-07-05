@@ -30,13 +30,29 @@ require('./tasks');
 
 let partialsMap = {};
 
-function getData(opt_path) {
-  var path = 'data.json';
-  var jsonPath = (opt_path || '').replace(/html$/, 'json');
-  if (opt_path && jsonPath && fs.existsSync(jsonPath)) {
-    path = jsonPath;
+function getData(fileDirectory, opt_path) {
+  /**
+   * Data for each template is determined by the following:
+   * 1) Is there a template specific json file? If so apply it to the
+   *    template.
+   * 2) Does a data.json file exist in the folder? If so, apply it to the
+   *    template.
+   * 3) Otherwise set the data to be the root /data.json.
+   */
+  const dataFile = 'data.json'
+  const folderData = fileDirectory + '/' + dataFile;
+  const templateData = (opt_path || '').replace(/html$/, 'json');
+  let data = dataFile;
+
+  // Checks if template specific data exists.
+  if (opt_path && templateData && fs.existsSync(templateData)) {
+    data = templateData;
   }
-  return JSON.parse(fs.readFileSync(path));
+  // Checks for a data.json file in the current folder.
+  else if (fs.existsSync(folderData)) {
+    data = folderData;
+  }
+  return JSON.parse(fs.readFileSync(data));
 }
 
 function mustacheStream() {
@@ -46,16 +62,14 @@ function mustacheStream() {
       return;
     }
 
-    var partials = getPartials(
-      partialsMap,
-      path.dirname(file.path),
-      file.contents.toString()
-    );
+    const fileDirectory = path.dirname(file.path);
+    const partials = getPartials(partialsMap,
+        path.dirname(file.path), file.contents.toString());
 
     let fileContents = Mustache.render(file.contents.toString(),
-      getData(file.path), partials);
+        getData(fileDirectory, file.path), partials);
 
-    // Replaces [[[title]]] to {{title}} which allows the use of amp-mustache.
+    // Replaces <%title%> to {{title}} which allows the use of amp-mustache.
     fileContents = fileContents.replace(/<%/g, "{{").replace(/%>/g, "}}");
     file.contents = new Buffer(fileContents);
     cb(null, file);
@@ -63,7 +77,7 @@ function mustacheStream() {
 }
 
 function getPartials(acc, embedderDir, template) {
-// Assume {{}} as mustache start/end tags
+  // Assume {{}} as mustache start/end tags
   const partialRegexp = new RegExp('{{>\\s*(\\S+)\\s*}}', 'g');
   var partialMatch = null;
   var partialPath = null;
