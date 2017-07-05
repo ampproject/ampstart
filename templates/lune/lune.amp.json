@@ -5,7 +5,8 @@
       "canonical-path": "templates/lune.amp",
       "extensions": [
         "amp-sidebar",
-        "amp-fx-flying-carpet"
+        "amp-fx-flying-carpet",
+        "amp-accordion"
       ],
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Lato:400,700,900"
@@ -67,7 +68,12 @@
           "body": [
             "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
             "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
-          ]
+          ],
+          "accordion": {
+            "more": "Read more +",
+            "less": "Read less -",
+            "text": "Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id."
+          }
         },
 
         "specs": {

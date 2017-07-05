@@ -30,6 +30,7 @@
 @import 'components/_product-toggle';
 @import 'components/_line-after';
 @import 'components/_chapter';
+@import 'components/_accordion';
 
 @import '_pages';
 @import '_overlays';
