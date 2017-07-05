@@ -21,6 +21,10 @@
   line-height: 1.33em;
 }
 
+.lune .product__title-2 {
+  line-height: 1;
+}
+
 .product__hero {
   z-index: 1;
 }
