@@ -1,4 +1,4 @@
-@import "../page-vars.css";
+@import "../page-vars";
 
 .lune .ampstart-headerbar {
   height: var(--layout-header-height-m);
