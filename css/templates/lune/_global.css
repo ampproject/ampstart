@@ -1,11 +1,16 @@
+@import '../../ampstart-base/bass-override-vars';
 @import "page-vars";
 
 p {
   line-height: var(--body-line-height-m);
 
-  font-size: var(--body-font-size);
+  font-size: var(--body-font-size-m);
 
   letter-spacing: var(--body-letter-spacing);
+}
+
+@media (--breakpoint-md) {
+  font-size: var(--body-font-size-d);
 }
 
 a {

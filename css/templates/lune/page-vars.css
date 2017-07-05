@@ -75,7 +75,8 @@
   --cta-font-size-d: .6875rem; /* 11px */
 
   /* Body text */
-  --body-font-size: 1.125rem; /* 18px */
+  --body-font-size-m: 1.125rem; /* 18px */
+  --body-font-size-d: 0.875rem; /* 14px */
   --body-letter-spacing: .02em;
   --body-line-height-m: 1.69em;
   --body-line-height-d: 1.75em;
