@@ -1,5 +1,10 @@
 @import "../page-vars";
 
+:root {
+  --store-anim-delay-start: .4s;
+  --store-anim-delay-step: .08s;
+}
+
 /*******************************************************************************
  * Layout
  ******************************************************************************/
@@ -166,4 +171,43 @@
   .store__cta {
     align-self: flex-start;
   }
+}
+
+
+/*******************************************************************************
+ * Enter animation (image, text and cta buttons).
+ * Animations keyframes are defined in ../_pages.css
+ ******************************************************************************/
+
+.lune-page--store .store__image,
+.lune-page--store .store__lune-wrapper,
+.lune-page--store .store__address-wrapper,
+.lune-page--store .store__body-wrapper {
+  animation: none
+}
+
+.lune-page--store:target .store__image {
+  animation: fade-in-scale-up 2s var(--store-anim-delay-start) ease-out both;
+}
+
+.lune-page--store:target .store__lune-wrapper,
+.lune-page--store:target .store__address-wrapper,
+.lune-page--store:target .store__body-wrapper {
+  animation: fade-in-move-up .8s var(--store-anim-delay-start)
+      cubic-bezier(0.41, 0.01, 0.27, 1) both;
+}
+
+.lune-page--store:target .store__lune-wrapper {
+  animation-delay: calc(var(--store-anim-delay-start) +
+    var(--store-anim-delay-step));
+}
+
+.lune-page--store:target .store__address-wrapper {
+  animation-delay: calc(var(--store-anim-delay-start) +
+      2 * var(--store-anim-delay-step));
+}
+
+.lune-page--store:target .store__body-wrapper {
+  animation-delay: calc(var(--store-anim-delay-start) +
+      2 * var(--store-anim-delay-step));
 }
