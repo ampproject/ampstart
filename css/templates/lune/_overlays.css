@@ -1,4 +1,3 @@
-@import '../../ampstart-base/bass-override-vars';
 @import 'page-vars';
 
 .lune-overlay {
@@ -150,6 +149,8 @@
   }
 
   .overlay__wrapper {
+    min-height: 462px;
+
     margin-bottom: 100px;
   }
 
