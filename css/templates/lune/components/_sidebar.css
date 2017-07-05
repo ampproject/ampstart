@@ -2,15 +2,13 @@
 
 .lune amp-sidebar {
   width: 80vw;
-
-  /*background: $c-bg-light;*/
 }
 
 .lune amp-sidebar .ampstart-navbar-trigger  {
   padding-top: 10px;
 }
 
-@media (--breakpoint-mt) {
+@media (--breakpoint-lg) {
   .lune amp-sidebar {
     width: 50vw;
   }
@@ -45,9 +43,9 @@
 
   font-size: var(--nav-item-font-size-m);
   font-weight: var(--nav-item-weight);
-  
+
   line-height: var(--nav-item-line-height);
-  
+
   text-transform: uppercase;
 }
 

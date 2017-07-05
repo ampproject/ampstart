@@ -1,7 +1,7 @@
 {
   "lune": {
     "head-tag": {
-      "title": "The Ad Landing Page",
+      "title": "AMP Lune template",
       "canonical-path": "templates/lune.amp",
       "extensions": [
         "amp-sidebar",
@@ -13,7 +13,7 @@
       "css-path": "templates/lune/page.css"
     },
     "navbar": {
-      "name": "The Ad Landing Page",
+      "name": "AMP Lune template",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "href": "#",
@@ -142,9 +142,134 @@
           }]
         },
         "bottom_cta": {
-          "url": "#",
+          "url": "#store",
           "text": "Visit us"
-        }
+        },
+        "overlays":[{
+          "theme": "lune-theme--overlay-1",
+          "overlay-id": "oak",
+          "hero": {
+            "headline": "Headline One",
+            "cta": {
+              "text": "Meet the makers",
+              "url": ""
+            },
+            "image": {
+              "mobile": {
+                "src": "../../img/lune/blanc-product-materials-oak-02@2x.jpg",
+                "width": 500,
+                "height": 785
+              },
+              "desktop": {
+                "src": "../../img/lune/overlay-hero-img-1-desktop@2x.jpg",
+                "height": "720"
+              }
+            }
+          },
+          "main": {
+            "sections": [{
+              "classes": "",
+              "section_title": {
+                "full": "Headline two",
+                "parts": [
+                  "Head",
+                  "line ",
+                  " Two"
+                ]
+              },
+              "subtitle": "Headline three",
+              "body": [
+                "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "right",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-1-1@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }, {
+              "classes": "overlay__wrapper--right",
+              "body": [
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "left",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-1-2@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }]
+          }
+        }, {
+          "theme": "lune-theme--overlay-2",
+          "overlay-id": "polypropylene",
+          "hero": {
+            "headline": "Headline One",
+            "cta": {
+              "text": "Meet the makers",
+              "url": ""
+            },
+            "image": {
+              "mobile": {
+                "src": "../../img/lune/blanc-product-materials-poly-01@2x.jpg",
+                "width": 500,
+                "height": 785
+              },
+              "desktop": {
+                "src": "../../img/lune/overlay-hero-img-2-desktop@2x.jpg",
+                "height": "720"
+              }
+            }
+          },
+          "main": {
+            "sections": [{
+              "classes": "",
+              "section_title": {
+                "full": "Headline two",
+                "parts": [
+                  "Head",
+                  "line ",
+                  " Two"
+                ]
+              },
+              "subtitle": "Headline three",
+              "body": [
+                "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "right",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-2-1@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }, {
+              "classes": "overlay__wrapper--right",
+              "body": [
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "left",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-2-2@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }]
+          }
+        }]
       }, {
         "id": "noir",
         "classes": "lune-theme--dark",
@@ -204,7 +329,7 @@
               "height": 785,
               "hotspots": [{
                 "title": "More",
-                "url": "#blanc-oak",
+                "url": "#noir-oak",
                 "classes": "product__more-hotspot--1"
               }]
             }]
@@ -229,16 +354,141 @@
               "height": 785,
               "hotspots": [{
                 "title": "More",
-                "url": "#blanc-polypropylene",
+                "url": "#noir-polypropylene",
                 "classes": "product__more-hotspot--2"
               }]
             }]
           }]
         },
         "bottom_cta": {
-          "url": "#",
+          "url": "#store",
           "text": "Visit us"
-        }
+        },
+        "overlays":[{
+          "theme": "lune-theme--overlay-1",
+          "overlay-id": "oak",
+          "hero": {
+            "headline": "Headline One",
+            "cta": {
+              "text": "Meet the makers",
+              "url": ""
+            },
+            "image": {
+              "mobile": {
+                "src": "../../img/lune/blanc-product-materials-oak-02@2x.jpg",
+                "width": 500,
+                "height": 785
+              },
+              "desktop": {
+                "src": "../../img/lune/overlay-hero-img-1-desktop@2x.jpg",
+                "height": "720"
+              }
+            }
+          },
+          "main": {
+            "sections": [{
+              "classes": "",
+              "section_title": {
+                "full": "Headline two",
+                "parts": [
+                  "Head",
+                  "line ",
+                  " Two"
+                ]
+              },
+              "subtitle": "Headline three",
+              "body": [
+                "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "right",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-1-1@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }, {
+              "classes": "overlay__wrapper--right",
+              "body": [
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "left",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-1-2@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }]
+          }
+        }, {
+          "theme": "lune-theme--overlay-2",
+          "overlay-id": "polypropylene",
+          "hero": {
+            "headline": "Headline One",
+            "cta": {
+              "text": "Meet the makers",
+              "url": ""
+            },
+            "image": {
+              "mobile": {
+                "src": "../../img/lune/blanc-product-materials-poly-01@2x.jpg",
+                "width": 500,
+                "height": 785
+              },
+              "desktop": {
+                "src": "../../img/lune/overlay-hero-img-2-desktop@2x.jpg",
+                "height": "720"
+              }
+            }
+          },
+          "main": {
+            "sections": [{
+              "classes": "",
+              "section_title": {
+                "full": "Headline two",
+                "parts": [
+                  "Head",
+                  "line ",
+                  " Two"
+                ]
+              },
+              "subtitle": "Headline three",
+              "body": [
+                "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "right",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-2-1@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }, {
+              "classes": "overlay__wrapper--right",
+              "body": [
+                "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+              ],
+              "flying-carpet": {
+                "position": "left",
+                "height": "462px",
+                "image": {
+                  "src": "../../img/lune/overlay-img-2-2@2x.jpg",
+                  "width": 600,
+                  "height": 675
+                }
+              }
+            }]
+          }
+        }]
       }]
     },
 

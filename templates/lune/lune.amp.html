@@ -71,93 +71,96 @@ limitations under the License.
       {{#products}}
 
       <!-- {{id}} PRODUCT OVERLAYS -->
-        <div class="lune-overlay lune-theme--overlay-1" id="{{id}}-oak">
+        {{#overlays}}
 
-            <section class="overlay__hero page-min-height relative overflow-hidden  py2 flex flex-column justify-center">
+          <div class="lune-overlay {{theme}}" id="{{id}}-{{overlay-id}}">
 
-              <div class="overlay__hero__text absolute center col-12">
-                <h2 class="h5 h4-md black overlay__hero__title">HEADLINE ONE</h2>
+            {{#hero}}
+              <section class="overlay__hero page-min-height relative overflow-hidden  py2 flex flex-column justify-center">
 
-                <a href="" class="ampstart-btn lune-cta ampstart-btn-secondary">Meet the makers</a>
-              </div>
+                <div class="overlay__hero__text absolute center col-12">
+                  <h2 class="h5 h4-md black caps overlay__hero__title">{{headline}}</h2>
 
-              <amp-img
-                  src="../../img/lune/blanc-product-materials-oak-02@2x.jpg"
-                  layout="responsive"
-                  width="500"
-                  height="785"
-                  media="(max-width:719px)"
-                  class="absolute overlay__hero__image overlay__hero__image--m"
-              ></amp-img>
-
-              <amp-img
-                  src="../../img/lune/overlay-hero-img-1-desktop@2x.jpg"
-                  layout="fixed-height"
-                  height="720"
-                  media="(min-width:720px)"
-                  class="page-min-height"
-              ></amp-img>
-
-              <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
-            </section>
-
-            <section class="">
-
-              <div class="overlay__wrapper col-10 mx-auto relative">
-
-                <h3 class="relative h4 black mt4 overlay__headline-2 overlay__copy"><span class="has-mobile-hyphen">HEAD</span><span>LINE</span> <span>TWO</span></h3>
-
-                <div class="overlay__carpet-wrapper right-0">
-                  <amp-fx-flying-carpet height="462px">
-                    <amp-img src="../../img/lune/overlay-img-1@2x.jpg"
-                      width="600"
-                      height="675"
-                      alt="an image"></amp-img>
-                  </amp-fx-flying-carpet>
+                  {{#cta}}
+                    <a href="{{url}}" class="ampstart-btn lune-cta ampstart-btn-secondary">{{text}}</a>
+                  {{/cta}}
                 </div>
 
-                <div class="overlay__copy">
-                  <h4 class="h6 caps black mt4 mb3">HEADLINE THREE</h4>
+                {{#image}}
+                  {{#mobile}}
+                    <amp-img
+                        src="{{src}}"
+                        layout="responsive"
+                        width="{{width}}"
+                        height="{{height}}"
+                        media="(max-width:719px)"
+                        class="absolute overlay__hero__image overlay__hero__image--m"
+                    ></amp-img>
+                  {{/mobile}}
 
-                  <p class="mb2">The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.</p>
-                  <p class="mb2">A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”.</p>
-                </div>
+                  {{#desktop}}
+                    <amp-img
+                        src="{{src}}"
+                        layout="fixed-height"
+                        height="{{height}}"
+                        media="(min-width:720px)"
+                        class="page-min-height"
+                    ></amp-img>
+                  {{/desktop}}
+                {{/image}}
 
-              </div>
-              <div class="overlay__wrapper col-10 mx-auto relative overlay__wrapper--right">
+                <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
+              </section>
+            {{/hero}}
+            {{#main}}
+              <section class="">
+                  {{#sections}}
 
-                <div class="overlay__carpet-wrapper left-0">
-                  <amp-fx-flying-carpet height="462px" class="mt4">
-                    <amp-img src="../../img/lune/overlay-img-2@2x.jpg"
-                      width="600"
-                      height="675"
-                      alt="an image"></amp-img>
-                  </amp-fx-flying-carpet>
-                </div>
+                    <div class="overlay__wrapper col-10 mx-auto relative {{classes}}">
 
-                <div class="overlay__copy">
-                  <p class="my4">The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.</p>
+                    {{#section_title}}
+                      <h3 class="relative h4 h6-md black mt4 caps overlay__headline-2 overlay__copy">
+                        {{#parts}}<span class="inline-block">{{.}}</span>{{/parts}}
+                        {{^parts}}
+                          {{full}}
+                        {{/parts}}
+                      </h3>
+                    {{/section_title}}
 
-                  <div class="products__bottom-cta flex justify-center mb4">
-                    <a href="{{text}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps px4 mt1 mb4 center">
-                      Visit us
-                    </a>
+                    {{#flying-carpet}}
+                      <div class="overlay__carpet-wrapper {{position}}-0">
+                        <amp-fx-flying-carpet height="{{height}}">
+                          {{#image}}
+                            <amp-img src="{{src}}"
+                              width="{{width}}"
+                              height="{{height}}"
+                              alt="an image"></amp-img>
+                          {{/image}}
+                        </amp-fx-flying-carpet>
+                      </div>
+                    {{/flying-carpet}}
+
+                    <div class="overlay__copy">
+                      {{#subtitle}}
+                        <h4 class="h6 caps black mt4 mb3">{{.}}</h4>
+                      {{/subtitle}}
+
+                      {{#body}}
+                        <p class="mb2">{{.}}</p>
+                      {{/body}}
+                    </div>
+
                   </div>
-                </div>
 
-              </div>
+                  {{/sections}}
 
-            </section>
+              </section>
+            {{/main}}
 
 
-            <a href="#{{id}}" class="fixed flex items-center justify-center overlay__close">X</a>
-        </div>
-
-        <div class="lune-overlay lune-theme--overlay-2" id="{{id}}-polypropylene">
-          <p>noir overlay - POLYPROPYLENE</p>
-
-          <a href="#{{id}}">Close overlay</a>
-        </div>
+            <a href="#{{id}}" class="flex items-center justify-center overlay__close">X</a>
+          </div>
+        {{/overlays}}
 
       <!-- {{id}} PRODUCT PAGE -->
         <div class="lune-page lune-page--product lune-page--product-{{id}} {{classes}}" id="{{id}}">
@@ -283,7 +286,7 @@ limitations under the License.
 
             {{#bottom_cta}}
               <div class="products__bottom-cta flex justify-center">
-                <a href="{{text}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps px4 mt1 mb4 center">
+                <a href="{{url}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps px4 mt1 mb4 center">
                   {{text}}
                 </a>
               </div>
