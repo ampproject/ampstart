@@ -256,7 +256,7 @@
 }
 
 
-.product__more-hotspot {
+.lune .product__more-hotspot {
   width: 82px;
   height: 82px;
 
@@ -272,8 +272,8 @@
   cursor: pointer;
 }
 
-.product__more-hotspot:hover,
-.product__more-hotspot:focus {
+.lune .product__more-hotspot:hover,
+.lune .product__more-hotspot:focus {
   color: var(--color-dark-grey);
 
   background: var(--color-light-1);
