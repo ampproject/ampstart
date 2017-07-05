@@ -92,7 +92,7 @@
           },
           "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
           "lightbox-id": "template-3",
-          "src": "templates/article.amp.html",
+          "src": "templates/article/article.amp.html",
           "download": "archive/article.zip"
         }
       },
@@ -110,7 +110,7 @@
           "right-aligned": true,
           "desc": "A responsive layout that features text and images, and the ability to comment, share, and follow.",
           "lightbox-id": "template-1",
-          "src": "templates/blog.amp.html",
+          "src": "templates/blog/blog.amp.html",
           "download": "archive/blog.zip"
         }
       }

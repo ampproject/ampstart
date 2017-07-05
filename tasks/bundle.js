@@ -57,8 +57,6 @@ function collectResources(filepath, html, done) {
         return false;
       }
       const abspath = path.resolve(path.dirname(filepath), src);
-      console.log('src', src);
-      console.log('abspath', abspath);
       return abspath.replace(`${process.cwd()}/`, '');
     });
     const name = filepath.replace(`${process.cwd()}/`, '');
@@ -70,7 +68,6 @@ function collectResources(filepath, html, done) {
       }
     });
     const pathToTmpl = filepath.replace(/.*templates\/(.*)/, '\$1');
-    console.log('pathToTmpl', pathToTmpl);
     fs.copySync(filepath,
         `.archive/${filename}/templates/${pathToTmpl}`);
     if (css) {
