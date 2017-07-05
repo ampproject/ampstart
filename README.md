@@ -52,6 +52,15 @@ Beyond that, the core AMP library and builtin elements should aim for very wide 
 
 In particular, we try to maintain "it might not be perfect but isn't broken" - support for the Android 4.0 system browser and Chrome 28+ on phones.
 
+## Notes
+### amp-mustache
+Since ampstart uses the Mustache language to build files, it can conflict with the amp-mustache template. To fix this, use <% instead of {{:
+```
+  <template type="amp-mustache">
+      <%title%>
+      <amp-img src="<%imageUrl%>" width="50" height="50"></amp-img>
+  </template>
+```
 
 # Who makes AMP Start?
 

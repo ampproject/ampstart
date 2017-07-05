@@ -28,7 +28,7 @@ const config = require('./tasks/config');
 const server = require('gulp-webserver');
 require('./tasks');
 
-const partialsMap = Object.create(null);
+let partialsMap = {};
 
 function getData(opt_path) {
   var path = 'data.json';
@@ -45,10 +45,19 @@ function mustacheStream() {
       cb(null, file);
       return;
     }
-    var partials = getPartials(partialsMap,
-        path.dirname(file.path), file.contents.toString());
-    file.contents = new Buffer(Mustache.render(file.contents.toString(),
-        getData(file.path), partials));
+
+    var partials = getPartials(
+      partialsMap,
+      path.dirname(file.path),
+      file.contents.toString()
+    );
+
+    let fileContents = Mustache.render(file.contents.toString(),
+      getData(file.path), partials);
+
+    // Replaces [[[title]]] to {{title}} which allows the use of amp-mustache.
+    fileContents = fileContents.replace(/<%/g, "{{").replace(/%>/g, "}}");
+    file.contents = new Buffer(fileContents);
     cb(null, file);
   });
 }
@@ -82,6 +91,8 @@ gulp.task('build', 'build', function(cb) {
 });
 
 gulp.task('clean', function() {
+  // Clears partials map so changes to components are rebuilt in watch task.
+  partialsMap = {};
   return del(['dist']);
 });
 

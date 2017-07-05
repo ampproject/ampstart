@@ -1,0 +1,217 @@
+@import '../../core';
+@import '../../../components/navbar/navbar';
+@import '../../../components/inputs/inputs';
+@import '../../../components/social-follow/social-follow';
+@import 'page-vars';
+
+body {
+  font-size: var(--narrow-body-font-size);
+}
+
+@media (--breakpoint-md) {
+  body {
+    font-size: var(--wide-body-font-size);
+  }
+}
+
+/* TYPOGRAPHY */
+.h3 {
+  color: var(--color-primary);
+  line-height: normal;
+  padding-bottom: var(--space-1);
+}
+
+
+/* ELEMENTS */
+.ampstart-btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-font-accent);
+  border-color: var(--color-font-accent);
+  font-size: var(--button-font-size);
+  font-family: var(--font-family);
+  font-weight: var(--bold-font-weight);
+  padding: var(--space-1) var(--space-3);
+}
+
+/* HEADER */
+.ampstart-headerbar {
+  color: var(--color-font-accent);
+  background-color: var(--color-white);
+  height: var(--narrow-nav-item-height);
+  z-index: var(--z1);
+}
+
+.ampstart-navbar-trigger {
+  color: var(--color-font-accent);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-headerbar {
+    height: var(--wide-nav-item-height);
+  }
+
+  .ampstart-headerbar .ampstart-navbar-trigger {
+    padding: 0;
+    margin-left: var(--space-1);
+  }
+}
+
+.ampstart-headerbar-title {
+  font-size: var(--h4);
+  font-weight: var(--bold-font-weight);
+  line-height: normal;
+  color: var(--color-secondary);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-headerbar-title {
+    font-size: var(--h3);
+  }
+}
+
+.ampstart-headerbar-home-link {
+  padding-bottom: 0;
+  text-indent: -var(--space-2);
+}
+
+.ampstart-sidebar {
+  background-color: var(--color-white);
+  width: var(--sidebar-width);
+  margin-bottom: var(--space-3);
+  text-align: center;
+}
+
+.ampstart-sidebar-header {
+  position: relative;
+  z-index: var(--z1);
+}
+
+.ampstart-sidebar .ampstart-navbar-trigger {
+  margin-top: var(--space-2);
+  font-size: var(--space-3);
+  line-height: normal;
+}
+
+.ampstart-nav {
+  margin: var(--space-3) 0 var(--space-4) 0;
+}
+
+.ampstart-nav a {
+  text-decoration: underline;
+}
+
+.ampstart-nav-item {
+  color: var(--color-font-accent);
+}
+
+.ampstart-nav-link {
+  font-size: var(--h3);
+  font-weight: var(--bold-font-weight);
+  line-height: normal;
+  display: block;
+  margin-bottom: var(--space-3);
+}
+
+.ampstart-sidebar .ampstart-faq-item {
+  margin: 0;
+}
+
+.ampstart-sidebar-faq {
+  width: 100%;
+  color: var(--color-secondary);
+  font-family: var(--font-family-secondary);
+  padding-top: var(--space-2);
+}
+
+.ampstart-faq-item {
+  line-height: normal;
+  padding: 0 0 var(--space-1) 0;
+}
+
+.ampstart-sidebar .ampstart-social-follow {
+  margin: var(--space-1) 0 var(--space-2) 0;
+}
+
+.ampstart-social-follow {
+  justify-content: initial;
+  display: inline-block;
+}
+
+.ampstart-social-follow li {
+  display: inline-block;
+}
+
+.ampstart-social-follow li:last-child {
+  margin-right: 0;
+}
+
+.main {
+  margin-top: var(--narrow-nav-item-height);
+}
+
+@media (--breakpoint-md) {
+  .main {
+    margin-top: calc(var(--wide-nav-item-height));
+  }
+}
+
+
+/* HERO */
+.commerce-hero-content {
+  padding: calc(var(--space-4) + var(--space-1)) var(--narrow-page-padding);
+}
+
+.commerce-hero-content-body {
+  padding-bottom: var(--space-3);
+  font-family: var(--font-family-secondary);
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.commerce-hero-content-title {
+  font-weight: var(--bold-font-weight);
+}
+
+@media (--breakpoint-md) {
+  .commerce-hero-content-wrapper {
+    position: relative;
+    color: var(--color-white);
+    text-align: left;
+  }
+
+  .commerce-hero-content-title {
+    font-size: var(--h1);
+    color: var(--color-white);
+    font-weight: var(--bold-font-weight);
+  }
+
+  .commerce-hero-content-body {
+    margin: 0;
+  }
+
+  .commerce-hero-content {
+    position: absolute;
+    top: 0;
+    left: var(--space-2);
+    width: 500px;
+    height: 100%;
+  }
+
+  .commerce-hero-content-wrapper .ampstart-btn {
+    background-color: var(--color-white);
+    border: none;
+    color: var(--color-primary);
+    font-size: var(--h5);
+  }
+
+  .commerce-hero-content-theme-secondary,
+  .commerce-hero-content-theme-secondary .commerce-hero-content-title {
+    color: var(--color-secondary);
+  }
+
+  .commerce-hero-content-theme-secondary .ampstart-btn {
+    color: var(--color-white);
+    background-color: var(--color-secondary);
+  }
+}
