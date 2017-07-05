@@ -16,9 +16,8 @@
 
 .lune-page .lune-page__wrapper {
   margin: 0 auto;
+  max-width: 80rem;
 }
-
-
 
 /* The home page needs to be hidden if another page or another overlay are the :target */
 .lune-page:target ~ .lune-page--default,
