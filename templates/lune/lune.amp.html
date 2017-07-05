@@ -19,9 +19,50 @@ limitations under the License.
   <body class="lune">
 
     <!-- STORE PAGE -->
-    <div class="lune-page lune-page--store" id="store">
-
-    </div>
+    {{#store-page}}
+      <div class="lune-page lune-page--store"-page id="store">
+        <div class="lune-page__wrapper md-col-9 p3 lune-theme--light">
+          <h2 class="store__title lune-line-after flex items-center caps mb2">{{title}}</h2>
+          <div class="store__content-upper mx-auto">
+            <div class="store__image-wrapper">
+              <div class="store__image mx-auto relative">
+                {{#hero-images}}
+                  <amp-img {{#media}}media="{{media}}"{{/media}}
+                      {{#width}}width="{{width}}"{{/width}}
+                      {{#height}}height="{{height}}"{{/height}}
+                      {{#srcset}}srcset="{{srcset}}"{{/srcset}}
+                      {{#layout}}layout="{{layout}}"{{/layout}}></amp-img>
+                {{/hero-images}}
+              </div>
+            </div>
+            <div class="store__lune-wrapper relative">
+              <h3 class="store__lune caps">{{subtitle}}</h3>
+            </div>
+          </div>
+          <div class="store__content-lower mx-auto pt4">
+            <div class="store__address-wrapper mb2">
+              <p class="store__address">
+                {{#address-lines}}
+                  {{{.}}}
+                {{/address-lines}}
+              </p>
+            </div>
+            <div class="store__body-wrapper">
+              {{#body-paragraphs}}
+                <div class="store__body {{classes}}">
+                  {{#text}}
+                    <p>{{{.}}}</p>
+                  {{/text}}
+                  {{#cta}}
+                    <a href="{{href}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps center mt4 self-center store__cta">{{{text}}}</a>
+                  {{/cta}}
+                </div>
+              {{/body-paragraphs}}
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/store-page}}
 
 
     <!-- PRODUCTS -->

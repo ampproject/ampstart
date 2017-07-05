@@ -253,6 +253,44 @@
         "product_name": "noir",
         "product_name_split": ["n", "o", "i", "r"]
       }
-    ]
+    ],
+
+    "store-page": {
+      "title": "Visit us",
+      "subtitle": "Lune",
+      "hero-images": [
+        {
+          "srcset": "../../img/lune/store-hero-m@1x.jpg, ../../img/lune/store-hero-m@2x.jpg 2x",
+          "width": "250",
+          "height": "352",
+          "media": "(max-width: 719px)",
+          "layout": "fixed"
+        }, {
+          "srcset": "../../img/lune/store-hero-d@1x.jpg, ../../img/lune/store-hero-d@2x.jpg 2x",
+          "media": "(min-width: 720px)",
+          "layout": "fill"
+        }
+      ],
+      "address-lines": [
+        "<span>24, Rue de Sèvres</span><br>",
+        "<span>75007 Paris</span><br>",
+        "<a class=\"underline\" href=\"tel:+330144398000\">(+33) 01 44 39 80 00<a><br>",
+        "<a class=\"underline\" href=\"https://L-U-N-E.com\">L-U-N-E.com</a>"
+      ],
+      "body-paragraphs": [
+        {
+          "text": "Maecenas id turpis at ante blandit interdum nec eu erat. Quisque in diam in lacus tempor rutrum. Proin vel arcu a orci tristique porta sed ac tellus. Donec elementum rutrum libero. In at volutpat nunc, sed pharetra enim. Donec pharetra, nibh et efficitur pharetra.",
+          "classes": "mb2"
+        },
+        {
+          "text": "Nunc rutrum sollicitudin bibendum. Curabitur dui lacus, euismod ac tortor vitae, dignissim condimentum sapien. Vivamus hendrerit non dui eu sollicitudin.",
+          "classes": "flex flex-column align-center",
+          "cta": {
+            "href": "https://L-U-N-E.com",
+            "text": "Find a reseller"
+          }
+        }
+      ]
+    }
   }
 }
