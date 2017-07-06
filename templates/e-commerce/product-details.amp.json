@@ -1,0 +1,60 @@
+{
+  "header": {
+    "head-tag": {
+      "canonical-path": "templates/themes/e-commerce/product-details.amp",
+      "extensions": [
+        "amp-sidebar",
+        "amp-bind",
+        "amp-carousel",
+        "amp-image-lightbox",
+        "amp-selector",
+        "amp-accordion",
+        "amp-list"
+      ],
+      "templates": [
+        "amp-mustache"
+      ],
+      "css-path": "templates/e-commerce/product-details.css"
+    }
+  },
+  "main": {
+    "product-details": {
+      "name": "Bike 1",
+      "price": "£470",
+      "colourFilterName": "colours",
+      "colours": [{
+          "name": "white",
+          "thumb": {
+            "image1": "/img/e-commerce/product/white-small-1.png",
+            "image2": "/img/e-commerce/product/white-small-2.png"
+          },
+          "large": {
+            "image1": "/img/e-commerce/product/white-large-1.png",
+            "image2": "/img/e-commerce/product/white-large-2.png"
+          }
+        },{
+          "name": "black",
+          "thumb": {
+            "image1": "/img/e-commerce/product/black-small-1.png",
+            "image2": "/img/e-commerce/product/black-small-2.png"
+          },
+          "large": {
+            "image1": "/img/e-commerce/product/black-large-1.png",
+            "image2": "/img/e-commerce/product/black-large-2.png"
+          }
+        }
+      ],
+      "sizes": {
+        "label": "Sizes",
+        "select": {
+          "placeholder": "Select a size",
+          "options": [
+            "61cm", "62cm", "63cm", "64cm"
+          ],
+          "id": "sizes",
+          "name": "sizes"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,154 @@
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!doctype html>
+<html ⚡>
+{{#header}} {{> ../../utils/amp-page-head.snip.html}}
+
+<body>
+  {{> ../../components/navbar/navbar.snip.html}} {{/header}}
+  {{#main}}
+  <main id="content" role="main" class="ml2 mr2">
+    {{#product-details}}
+    <amp-state id="product">
+      <script type="application/json">
+        {
+        "price": "{{price}}",
+        "selectedColor": "white",
+        {{#colours}}
+          "{{name}}": {
+            "thumb": {
+              "image1": "{{{thumb.image1}}}",
+              "image2": "{{{thumb.image2}}}"
+            },
+            "large": {
+              "image1": "{{{large.image1}}}",
+              "image2": "{{{large.image2}}}"
+            }
+          },
+        {{/colours}}
+        "relatedProductsSrc": "/json/related_products.json",
+        "selectedSlide": 0
+      }
+      </script>
+    </amp-state>
+
+    <section class="commerce-product-details">
+      <div class="sm-col sm-col-12 md-col-6">
+        <amp-carousel width="1024" height="682" layout="responsive" type="slides" [slide]="product.selectedSlide"
+          on="slideChange: AMP.setState({product: {selectedSlide: event.index}})">
+          <amp-img [src]="product[product.selectedColor].large.image1" src="{{colours.0.large.image1}}"
+            width="1024" height="682" layout="responsive" on="tap:gallery-lightbox" role="button" tabindex="0"></amp-img>
+          <amp-img [src]="product[product.selectedColor].large.image2" src="{{colours.0.large.image2}}"
+            width="1024" height="682" layout="responsive" on="tap:gallery-lightbox" role="button" tabindex="0"></amp-img>
+        </amp-carousel>
+
+        <amp-image-lightbox id="gallery-lightbox" layout="nodisplay">
+          <div on="tap:gallery-lightbox.close" role="button" tabindex="0"><button class="ampstart-btn caps m2 close-gallery-button" on="tap:gallery-lightbox.close" role="button" tabindex="0">Close</button></div>
+        </amp-image-lightbox>
+
+        <amp-selector [selected]="product.selectedSlide" on="select:AMP.setState({product: {selectedSlide: event.targetOption}})">
+          <div class="center">
+            <ul class="list-reset inline-block">
+              <li class="inline-block">
+                <amp-img option="0" selected="selected" [src]="product[product.selectedColor].thumb.image1"
+                  src="{{colours.0.thumb.image1}}" width="60" height="40"></amp-img>
+              </li>
+              <li class="inline-block">
+                <amp-img option="1" [src]="product[product.selectedColor].thumb.image2"
+                  src="{{colours.0.thumb.image2}}" width="60" height="40"></amp-img>
+              </li>
+            </ul>
+          </div>
+        </amp-selector>
+      </div>
+        <div class="col col-12 md-col-6">
+          <div class="col col-6">
+            <h1 class="h2 caps bold">
+              {{name}}
+            </h1>
+            <div class="h2 caps bold">{{price}}</div>
+          </div>
+          <div class="col col-6">
+            <h3>Reviews</h3>
+            {{> partials/star-rating.snip.html}}
+          </div>
+        </div>
+        <div class="col col-12 md-col-6">
+          <div class="col col-6">
+            <amp-selector name="color" layout="container" [selected]="product.selectedColor" on="select:AMP.setState({
+                            product: {
+                              selectedColor: event.targetOption,
+                              selectedSlide: 0
+                            }
+                          })">
+              {{colourFilterName}}
+              <ul class="p0 m1 list-reset inline-block">
+                <li class="inline-block">
+                  <div option="{{colours.0.name}}" selected="selected" class="color {{colours.0.name}}"></div>
+                </li>
+                <li class="inline-block">
+                  <div option="{{colours.1.name}}" class="color {{colours.1.name}}"></div>
+                </li>
+              </ul>
+            </amp-selector>
+          </div>
+          <div class="col col-6">
+            {{#sizes}}
+              {{> ../../components/inputs/inputs.snip.html}}
+            {{/sizes}}
+          </div>
+        </div>
+        <div class="col col-12 flex">
+            <amp-accordion disable-session-states class="overview">
+              <section expanded>
+                <h4>
+                  Overview
+                </h4>
+                <p>Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus
+                  ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin
+                  fermentum odio, odio arcu in eu wisi. </p>
+              </section>
+            </amp-accordion>
+
+
+          <amp-accordion disable-session-states class="full-spec">
+            <section expanded>
+              <h4>
+                Full spec
+              </h4>
+              <p>Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus
+                ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin
+                fermentum odio, odio arcu in eu wisi. </p>
+            </section>
+          </amp-accordion>
+
+            <div class="reviews"></div>
+
+          <amp-list src="/img/reviews.json" width="300" height="200" layout="responsive">
+            <template type="amp-mustache">
+              TITLE: \{{title}} IMG: {{imageUrl}}
+            </template>
+          </amp-list>
+        </div>
+    </section>
+    {{/product-details}}
+  </main>
+  {{/main}}
+  {{> ../../components/footer/footer.snip.html}}
+</body>
+
+</html>

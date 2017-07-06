@@ -1,0 +1,37 @@
+@import '../../core';
+@import '../../../components/navbar/navbar';
+@import '../../../components/inputs/inputs';
+@import '../../../components/social-follow/social-follow';
+@import 'page-vars';
+
+.review-star {
+  height: 24px;
+  width: 24px;
+  color: var(--color-font-accent);
+}
+
+.color {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--color-black);
+}
+
+.full-spec {
+  background: red;
+  min-height: 500px;
+  order: 3;
+}
+
+.overview {
+  background: green;
+  min-height: 250px;
+  order: 1;
+}
+
+.reviews {
+  background: yellow;
+  min-height: 250px;
+  width: 100%;
+  order: 2;
+}
