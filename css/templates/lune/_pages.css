@@ -1,17 +1,49 @@
 @import "page-vars";
 
+/* We are positioning pages absolutely and using the z-index to control which page
+   is visible. This is done so we can have page transitions without breaking amp-img.
+
+   We have 3 main z-indexes:
+      1. hidden pages
+      2. lune-background: used so hidden pages are not visible and to control the fade colour
+      3. The visible page
+*/
+
+
+/* This hides the rest of the pages, as well as controls the fade colour */
+.lune-background {
+  background: #fff;
+
+  z-index: 1;
+}
+
+.lune-page[id="noir"]:target ~ .lune-background {
+  background: var(--color-bg-dark-m);
+}
+
+@media (--breakpoint-md) {
+  .lune-page[id="noir"]:target ~ .lune-background {
+    background: var(--color-bg-dark-d);
+  }
+}
+
+
 /* Show / hide pages based on URL Fragment.
   Home (default) is a special case for when there is no fragment defined. */
 .lune-page {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  z-index: var(--z1);
+  z-index: 0;
 
-  /* By default a page is hidden. */
-  /*display: none;*/
-  height: 0;
-  overflow: hidden;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: 100vh;
+
   opacity: 0;
+
+  overflow: hidden;
 }
 
 .lune-page .lune-page__wrapper {
@@ -22,13 +54,13 @@
 /* The home page needs to be hidden if another page or another overlay are the :target */
 .lune-page:target ~ .lune-page--default,
 .lune-overlay:target ~ .lune-page--default {
-  /*display: none;*/
-  height: 0;
-  overflow: hidden;
+  z-index: 0;
+
+  max-height: 100vh;
+
   opacity: 0;
 
-  min-height: 0;
-  padding: 0;
+  overflow: hidden;
 }
 
 /* A page is shown when it's the :target
@@ -42,13 +74,8 @@
 .lune-overlay[id^="blanc"]:target ~ .lune-page[id="blanc"],
 .lune-overlay[id^="noir"]:target ~ .lune-page[id="noir"],
 .lune-overlay[id^="store"]:target ~ .lune-page[id="store"] {
-  display: block;
-  height: auto;
-  opacity: 1;
-
-  min-height: 100vh;
-
-  padding-top: var(--layout-header-height-m);
+  z-index: 2;
+  max-height: none;
 
   animation: page-animation-in .6s .2s forwards;
 }

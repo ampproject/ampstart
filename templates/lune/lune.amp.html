@@ -205,6 +205,20 @@ limitations under the License.
                   {{#body}}
                     <p class="product__body mb2">{{.}}</p>
                   {{/body}}
+
+                  {{#accordion}}
+                    <div class="md-hide lg-hide">
+                      <amp-accordion disable-session-states>
+                        <section>
+                          <h4 class="border-none"><span class="show-more bold">{{more}}</span> <span class="show-less bold">{{less}}</span></h4>
+                          <p class="product__body mb2">{{text}}</p>
+                        </section>
+                      </amp-accordion>
+                    </div>
+
+                    <p class="xs-hide sm-hide product__body mb2">{{text}}</p>
+                  {{/accordion}}
+
                 </div>
 
                 <p class="lune-chapter-name ls-0 center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Two</span></p>
@@ -340,6 +354,8 @@ limitations under the License.
     </div>
 
     {{> ../../components/navbar/navbar.snip.html}}
+
+    <div class="fixed lune-background top-0 left-0 right-0 bottom-0"></div>
 
   </body>
 </html>

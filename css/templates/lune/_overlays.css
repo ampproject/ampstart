@@ -3,24 +3,22 @@
 .lune-overlay {
   position: fixed;
 
-  z-index: var(--z2);
+  /*z-index: var(--z2);*/
 
-  /*display: none;*/
+  z-index: 0;
+
   width: 100vw;
-  /*height: 100vh;*/
 
-  height: 0;
+  /*height: 0;*/
   overflow: hidden;
-
-  /*overflow: scroll;*/
-
-  /*padding-top: var(--layout-header-height-m);*/
 
   opacity: 0;
 }
 
 .lune-overlay:target {
   /*display: block;*/
+
+  z-index: 2;
 
   height: 100vh;
 
