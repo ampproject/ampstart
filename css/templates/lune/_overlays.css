@@ -72,20 +72,12 @@
 
 .overlay__hero__title {
   padding-bottom: 100px;
-
-  letter-spacing: .48em;
-  line-height: 2em;
-
-  text-indent: .24em;
 }
 
 .overlay__headline-2 {
   z-index: var(--z1);
 
   margin-bottom: -140px;
-
-  letter-spacing: .46em;
-  line-height: 1.75em;
 }
 
 .lune-overlay amp-fx-flying-carpet::before {

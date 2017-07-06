@@ -1,6 +1,9 @@
 @import "../page-vars";
 
-/* To be used in comination with ampstart buttons */
+/*
+ * To be used in comination with 'ampstart-btn ampstart-btn-secondary caps
+ * center bold ls-26' classes
+ */
 .lune-cta {
   display: inline-block;
 
@@ -8,10 +11,7 @@
 
   min-width: 14em;
 
-  font-weight: 700;
-  font-size: var(--cta-font-size-m);
-
-  letter-spacing: var(--hotspot-letter-spacing);
+  font-size: .75rem; /* 12px */
 
   text-transform: uppercase;
 
@@ -31,6 +31,6 @@
   .lune-cta {
     padding: 1.36em 4.5em;
 
-    font-size: var(--cta-font-size-d);
+    font-size: .6875rem; /* 11px */
   }
 }

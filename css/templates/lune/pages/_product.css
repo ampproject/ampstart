@@ -1,11 +1,5 @@
 @import "../page-vars";
 
-.lune .lune-page--product section {
-  position: relative;
-
-  z-index: 2;
-}
-
 @media (--breakpoint-md) {
   .lune .lune-page--product section {
     min-height: calc(100vh - var(--layout-header-height-d));
@@ -15,24 +9,6 @@
 /*******************************************************************************
  * HERO
  ******************************************************************************/
-
-.lune .product__title-1 {
-  letter-spacing: .26em;
-  line-height: 1.33em;
-}
-
-.lune .product__title-2 {
-  line-height: 1;
-}
-
-.product__hero {
-  z-index: 1;
-}
-
-.lune .hero__content {
-  margin-top: calc(-(var(--layout-header-height-m) / 2));
-}
-
 .lune .hero__content h1 {
   font-size: inherit;
   font-weight: inherit;
@@ -41,27 +17,17 @@
 }
 
 .lune .hero__chair {
-  z-index: 2;
-
-  max-width: 338px;
-}
-
-.lune .product-title-top {
-  z-index: 1;
+  max-width: 21.125rem; /* 338px */
 }
 
 .lune .has-mobile-hyphen:after {
   content: '-';
 }
 
-.lune .product-title-bottom {
-  z-index: 3;
-}
-
 .lune .hero__title-wrapper {
   margin-bottom: -1.9em;
 
-  min-height: 238px;
+  min-height: 14.875rem; /* 238px */
 }
 
 @media (--breakpoint-mt) {
@@ -100,13 +66,13 @@
     position: fixed;
     top: 50vh;
 
-    z-index: 3;
-
     width: 100%;
 
-    margin-top: 90px;
+    margin-top: 5.625rem; /* 90px */
 
     transform: translateY(-50%);
+
+    will-change: transform;
   }
 }
 
@@ -117,32 +83,24 @@
 .product__specs-title,
 .product__specs-figure,
 .product__specs-unit {
-  font-size: 14px;
-  font-weight: var(--font-weight-black);
-  letter-spacing: 0.26em;
+  font-size: .875rem; /* 14px */
 }
 
 @media (--breakpoint-md) {
   .product__specs-title {
-    font-size: 22px;
-    letter-spacing: .56em;
-    line-height: 1em;
+    font-size: 1.375rem; /* 22px */
   }
 
   .product__specs-figure {
-    font-size: 32px;
-    letter-spacing: .1em;
-    line-height: .5em;
+    font-size: 2rem; /* 32px */;
   }
 
   .product__specs-unit {
-    font-size: 22px;
-    letter-spacing: .1em;
-    line-height: 1em;
+    font-size: 1.375rem; /* 22px */
   }
 
   .product__details li {
-    padding: 32px 0;
+    padding: 2rem 0;
   }
 }
 
@@ -162,7 +120,7 @@
   }
 
   .intro__wrapper {
-    width: 300px;
+    width: 18.75rem; /* 300px */
   }
 
   .product__details .divider {
@@ -213,8 +171,6 @@
     margin-top: 170px;
     margin-bottom: -120px;
 
-    letter-spacing: .56em;
-
     text-align: center;
   }
 
@@ -251,7 +207,6 @@
 @media (--breakpoint-lg) {
   .product__materials--poly .product__materials__title {
     font-size: 70px;
-    letter-spacing: .67em;
   }
 }
 
@@ -266,8 +221,7 @@
   width: 82px;
   height: 82px;
 
-  font-size: var(--hotspot-font-size);
-  letter-spacing: var(--hotspot-letter-spacing);
+  font-size: 0.5625rem; /* 9px */
 
   border-radius: 50%;
 

@@ -94,6 +94,7 @@
         "materials": {
           "classes": "product__materials--oak",
           "title": "Materials",
+          "title_classes": "ls-56-mt",
           "title_parts": [],
           "list": [{
             "title": "Oak",
@@ -117,6 +118,7 @@
           }, {
             "classes": "product__materials--poly",
             "title": "Polypropylene",
+            "title_classes": "ls-56-mt ls-67-lg",
             "title_parts": {
               "mobile": [
                 "POLY-",
@@ -313,6 +315,7 @@
         "materials": {
           "classes": "product__materials--oak",
           "title": "Materials",
+          "title_classes": "ls-56-mt",
           "title_parts": [],
           "list": [{
             "title": "Oak",
@@ -336,6 +339,7 @@
           }, {
             "classes": "product__materials--poly",
             "title": "Polypropylene",
+            "title_classes": "ls-56-mt ls-67-lg",
             "title_parts": {
               "mobile": [
                 "POLY-",

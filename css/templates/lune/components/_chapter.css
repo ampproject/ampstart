@@ -2,14 +2,13 @@
 
 /*
  * .lune-chapter-name usually used in combination with basscss 'center absolute
- *  caps position-center-v' classes.
+ *  caps position-center-v ls-0' classes.
  * .lune-chapter-number usually used in combination with basscss 'center flex
- *  flex-column justify-between absolute caps position-center-v' classes.
+ *  flex-column justify-between absolute caps position-center-v ls-0' classes.
  */
 .lune-chapter-name,
 .lune-chapter-number {
   font-size: 0.5625rem;
-  letter-spacing: 0;
 
   /* Width is one letter wide */
   width: 1em;

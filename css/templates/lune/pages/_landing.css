@@ -1,6 +1,7 @@
 @import "../page-vars";
 
 :root {
+  --landing-title-offset-common: -0.26em; /* matches the letter-spacing */
   --landing-title-offset-h-m: -6%;
   --landing-title-offset-h-t: -32%;
   --landing-title-offset-h-d: -38%;
@@ -136,31 +137,26 @@
 .landing__title-big {
   display: inline-block;
 
-  font-weight: var(--font-weight-black);
   font-size: var(--h2);
-  letter-spacing: var(--hotspot-letter-spacing);
-  text-indent: var(--hotspot-letter-spacing);
-
-  line-height: 1;
 }
 
 .landing__title-big--top-left {
-  left: calc(-1 * var(--hotspot-letter-spacing) + var(--landing-title-offset-h-m));
+  left: calc(var(--landing-title-offset-common) +
+      var(--landing-title-offset-h-m));
   top: 4%;
 
   z-index: 1;
 }
 
 .landing__title-big--bottom-right {
-  right: calc(-1 * var(--hotspot-letter-spacing) + var(--landing-title-offset-h-m));
+  right: calc(var(--landing-title-offset-common) +
+      var(--landing-title-offset-h-m));
   top: 64%;
 }
 
 .landing__title-small {
-  font-weight: var(--font-weight-black);
   font-size: var(--h5);
   line-height: 1;
-  letter-spacing: 0;
 
   top: 39%;
   left: var(--landing-title-offset-h-m);
@@ -181,20 +177,24 @@
   }
 
   .landing__title-big--top-left {
-    left: calc(-1 * var(--hotspot-letter-spacing) + var(--landing-title-offset-h-t));
+    left: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-t));
     z-index: initial;
   }
 
   .landing__title-big--bottom-right {
-    right: calc(-1 * var(--hotspot-letter-spacing) + var(--landing-title-offset-h-t));
+    right: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-t));
   }
 
   .landing__section.lune-theme--dark .landing__title-big--top-left {
-    left: calc(-1 * var(--hotspot-letter-spacing) + 0.8 * var(--landing-title-offset-h-t));
+    left: calc(var(--landing-title-offset-common) +
+        0.8 * var(--landing-title-offset-h-t));
   }
 
   .landing__section.lune-theme--dark .landing__title-big--bottom-right {
-    right: calc(-1 * var(--hotspot-letter-spacing) + 0.8 * var(--landing-title-offset-h-t));
+    right: calc(var(--landing-title-offset-common) +
+        0.8 * var(--landing-title-offset-h-t));
   }
 
   .landing__title-small {
@@ -204,10 +204,12 @@
 
 @media (--breakpoint-md) {
   .landing__title-big--top-left {
-    left: calc(-1 * var(--hotspot-letter-spacing) + var(--landing-title-offset-h-d));
+    left: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-d));
   }
 
   .landing__title-big--bottom-right {
-    right: calc(-1 * var(--hotspot-letter-spacing) + var(--landing-title-offset-h-d));
+    right: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-d));
   }
 }

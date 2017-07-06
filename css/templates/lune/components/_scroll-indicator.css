@@ -1,9 +1,10 @@
 @import "../page-vars";
 
+/*
+ * To be used in comination with 'caps bold ls-26' classes
+ */
 .lune-scroll-indicator {
-  font-weight: 700;
-  font-size: var(--scroll-font-size);
-  letter-spacing: var(--hotspot-letter-spacing);
+  font-size: .75rem; /* 12px */
 
   padding-bottom: 3.125rem;
 }
@@ -25,6 +26,6 @@
 
 @media (--breakpoint-mt) {
   .lune-scroll-indicator {
-    font-size: var(--header-contact-font-size);
+    font-size: 0.8125rem; /* 13px */
   }
 }

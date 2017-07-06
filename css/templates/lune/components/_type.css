@@ -1,10 +1,265 @@
 @import "../page-vars";
 
-.black {
+/* An extra layer on top of bass css to allow responsive type scale */
+
+/*******************************************************************************
+ * Additional font weights
+ ******************************************************************************/
+.lune .black {
   font-weight: var(--font-weight-black);
 }
 
-/* An extra layer on top of bass css to allow responsive type scale */
+.lune .bold {
+  font-weight: 700;
+}
+
+.lune .regular {
+  font-weight: 400;
+}
+
+/*******************************************************************************
+ * Letter spacing
+ ******************************************************************************/
+.lune .ls-0 {
+  letter-spacing: 0;
+}
+
+.lune .ls-02 {
+  letter-spacing: var(--body-letter-spacing);
+}
+
+.lune .ls-12 {
+  letter-spacing: .12em;
+}
+
+.lune .ls-26 {
+  letter-spacing: .26em;
+}
+
+.lune .ls-46 {
+  letter-spacing: .46em;
+}
+
+.lune .ls-48 {
+  letter-spacing: .48em;
+}
+
+.lune .ls-52 {
+  letter-spacing: .52em;
+}
+
+.lune .ls-56 {
+  letter-spacing: .56em;
+}
+
+.lune .ls-67 {
+  letter-spacing: .67em;
+}
+
+.lune .ls-100 {
+  letter-spacing: 1em;
+}
+
+@media (--breakpoint-md) {
+  .lune .ls-0-md {
+    letter-spacing: 0;
+  }
+
+  .lune .ls-02-md {
+    letter-spacing: var(--body-letter-spacing);
+  }
+
+  .lune .ls-12-md {
+    letter-spacing: .12em;
+  }
+
+  .lune .ls-26-md {
+    letter-spacing: .26em;
+  }
+
+  .lune .ls-46-md {
+    letter-spacing: .46em;
+  }
+
+  .lune .ls-48-md {
+    letter-spacing: .48em;
+  }
+
+  .lune .ls-52-md {
+    letter-spacing: .52em;
+  }
+
+  .lune .ls-56-md {
+    letter-spacing: .56em;
+  }
+
+  .lune .ls-67-md {
+    letter-spacing: .67em;
+  }
+
+  .lune .ls-100-md {
+    letter-spacing: 1em;
+  }
+}
+
+@media (--breakpoint-mt) {
+  .lune .ls-0-mt {
+    letter-spacing: 0;
+  }
+
+  .lune .ls-02-mt {
+    letter-spacing: var(--body-letter-spacing);
+  }
+
+  .lune .ls-12-mt {
+    letter-spacing: .12em;
+  }
+
+  .lune .ls-26-mt {
+    letter-spacing: .26em;
+  }
+
+  .lune .ls-46-mt {
+    letter-spacing: .46em;
+  }
+
+  .lune .ls-48-mt {
+    letter-spacing: .48em;
+  }
+
+  .lune .ls-52-mt {
+    letter-spacing: .52em;
+  }
+
+  .lune .ls-56-mt {
+    letter-spacing: .56em;
+  }
+
+  .lune .ls-67-mt {
+    letter-spacing: .67em;
+  }
+
+  .lune .ls-100-mt {
+    letter-spacing: 1em;
+  }
+}
+
+@media (--breakpoint-lg) {
+  .lune .ls-0-lg {
+    letter-spacing: 0;
+  }
+
+  .lune .ls-02-lg {
+    letter-spacing: var(--body-letter-spacing);
+  }
+
+  .lune .ls-12-lg {
+    letter-spacing: .12em;
+  }
+
+  .lune .ls-26-lg {
+    letter-spacing: .26em;
+  }
+
+  .lune .ls-46-lg {
+    letter-spacing: .46em;
+  }
+
+  .lune .ls-48-lg {
+    letter-spacing: .48em;
+  }
+
+  .lune .ls-52-lg {
+    letter-spacing: .52em;
+  }
+
+  .lune .ls-56-lg {
+    letter-spacing: .56em;
+  }
+
+  .lune .ls-67-lg {
+    letter-spacing: .67em;
+  }
+
+  .lune .ls-100-lg {
+    letter-spacing: 1em;
+  }
+}
+
+/*******************************************************************************
+ * Text indent
+ ******************************************************************************/
+
+.lune .ti-26 {
+  text-indent: .26em;
+}
+
+.lune .ti-48 {
+  text-indent: .48em;
+}
+
+@media (--breakpoint-md) {
+  .lune .ti-26-md {
+    text-indent: .26em;
+  }
+}
+
+/*******************************************************************************
+ * Line height
+ ******************************************************************************/
+.lune .lh-0 {
+  line-height: 0;
+}
+
+.lune .lh-50 {
+  line-height: .5;
+}
+
+.lune .lh-100 {
+  line-height: 1;
+}
+
+.lune .lh-133 {
+  line-height: 1.33;
+}
+
+.lune .lh-175 {
+  line-height: 1.75;
+}
+
+.lune .lh-200 {
+  line-height: 2;
+}
+
+@media (--breakpoint-md) {
+  .lune .lh-0-md {
+    line-height: 0;
+  }
+
+  .lune .lh-50-md {
+    line-height: .5;
+  }
+
+  .lune .lh-100-md {
+    line-height: 1;
+  }
+
+  .lune .lh-133-md {
+    line-height: 1.33;
+  }
+
+  .lune .lh-175-md {
+    line-height: 1.75;
+  }
+
+  .lune .lh-200-md {
+    line-height: 2;
+  }
+}
+
+/*******************************************************************************
+ * Title font-sizes
+ ******************************************************************************/
 
 @media (--breakpoint-md) {
   .lune .h1-md {

@@ -4,6 +4,8 @@
   height: var(--layout-header-height-m);
 
   box-shadow: none;
+
+  will-change: transform;
 }
 
 .lune .ampstart-headerbar-title {
@@ -11,7 +13,7 @@
   top: 50%;
   left: 50%;
 
-  font-size: var(--header-title-font-size);
+  font-size: 1.3125rem; /* 21px */
   font-weight: var(--font-weight-black);
 
   letter-spacing: .52em;

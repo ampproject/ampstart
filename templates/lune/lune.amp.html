@@ -20,44 +20,46 @@ limitations under the License.
 
     <!-- STORE PAGE -->
     {{#store-page}}
-      <div class="lune-page lune-page--store"-page id="store">
-        <div class="lune-page__wrapper md-col-9 p3 lune-theme--light">
-          <h2 class="store__title lune-line-after flex items-center caps mb2">{{title}}</h2>
-          <div class="store__content-upper mx-auto">
-            <div class="store__image-wrapper">
-              <div class="store__image mx-auto relative">
-                {{#hero-images}}
-                  <amp-img {{#media}}media="{{media}}"{{/media}}
-                      {{#width}}width="{{width}}"{{/width}}
-                      {{#height}}height="{{height}}"{{/height}}
-                      {{#srcset}}srcset="{{srcset}}"{{/srcset}}
-                      {{#layout}}layout="{{layout}}"{{/layout}}></amp-img>
-                {{/hero-images}}
+      <div class="lune-page lune-page--store" id="store">
+        <div class="lune-page__wrapper md-col-9 p3 flex items-center justify-center lune-theme--light">
+          <div>
+            <h2 class="store__title lune-line-after flex items-center caps ls-26 mb2 black">{{title}}</h2>
+            <div class="store__content-upper mx-auto">
+              <div class="store__image-wrapper">
+                <div class="store__image mx-auto relative">
+                  {{#hero-images}}
+                    <amp-img {{#media}}media="{{media}}"{{/media}}
+                        {{#width}}width="{{width}}"{{/width}}
+                        {{#height}}height="{{height}}"{{/height}}
+                        {{#srcset}}srcset="{{srcset}}"{{/srcset}}
+                        {{#layout}}layout="{{layout}}"{{/layout}}></amp-img>
+                  {{/hero-images}}
+                </div>
+              </div>
+              <div class="store__lune-wrapper relative">
+                <h3 class="store__lune ls-48 lh-0 caps black">{{subtitle}}</h3>
               </div>
             </div>
-            <div class="store__lune-wrapper relative">
-              <h3 class="store__lune caps">{{subtitle}}</h3>
-            </div>
-          </div>
-          <div class="store__content-lower mx-auto pt4">
-            <div class="store__address-wrapper mb2">
-              <p class="store__address">
-                {{#address-lines}}
-                  {{{.}}}
-                {{/address-lines}}
-              </p>
-            </div>
-            <div class="store__body-wrapper">
-              {{#body-paragraphs}}
-                <div class="store__body {{classes}}">
-                  {{#text}}
-                    <p>{{{.}}}</p>
-                  {{/text}}
-                  {{#cta}}
-                    <a href="{{href}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps center mt4 self-center store__cta">{{{text}}}</a>
-                  {{/cta}}
-                </div>
-              {{/body-paragraphs}}
+            <div class="store__content-lower mx-auto pt4">
+              <div class="store__address-wrapper mb2">
+                <p class="store__address black lh-200 ls-12">
+                  {{#address-lines}}
+                    {{{.}}}
+                  {{/address-lines}}
+                </p>
+              </div>
+              <div class="store__body-wrapper">
+                {{#body-paragraphs}}
+                  <div class="store__body {{classes}}">
+                    {{#text}}
+                      <p class="regular">{{{.}}}</p>
+                    {{/text}}
+                    {{#cta}}
+                      <a href="{{href}}" target="_blank" rel="noopener noreferrer" class="ampstart-btn ampstart-btn-secondary lune-cta ls-26 bold caps center mt4 self-center store__cta">{{{text}}}</a>
+                    {{/cta}}
+                  </div>
+                {{/body-paragraphs}}
+              </div>
             </div>
           </div>
         </div>
@@ -79,10 +81,10 @@ limitations under the License.
               <section class="overlay__hero page-min-height relative overflow-hidden  py2 flex flex-column justify-center">
 
                 <div class="overlay__hero__text absolute center col-12">
-                  <h2 class="h5 h4-md black caps overlay__hero__title">{{headline}}</h2>
+                  <h2 class="h5 h4-md black caps ls-48 ti-48 lh-200 overlay__hero__title">{{headline}}</h2>
 
                   {{#cta}}
-                    <a href="{{url}}" class="ampstart-btn lune-cta ampstart-btn-secondary">{{text}}</a>
+                    <a href="{{url}}" class="ampstart-btn lune-cta ls-26 bold ampstart-btn-secondary">{{text}}</a>
                   {{/cta}}
                 </div>
 
@@ -109,7 +111,7 @@ limitations under the License.
                   {{/desktop}}
                 {{/image}}
 
-                <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
+                <p class="lune-scroll-indicator ls-26 absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
               </section>
             {{/hero}}
             {{#main}}
@@ -119,7 +121,7 @@ limitations under the License.
                     <div class="overlay__wrapper col-10 mx-auto relative {{classes}}">
 
                     {{#section_title}}
-                      <h3 class="relative h4 h6-md black mt4 caps overlay__headline-2 overlay__copy">
+                      <h3 class="relative h4 h6-md black mt4 caps ls-46 overlay__headline-2 lh-175 overlay__copy">
                         {{#parts}}<span class="inline-block">{{.}}</span>{{/parts}}
                         {{^parts}}
                           {{full}}
@@ -166,96 +168,96 @@ limitations under the License.
         <div class="lune-page lune-page--product lune-page--product-{{id}} {{classes}}" id="{{id}}">
           <div class="lune-page__wrapper md-col-9 {{classes}}">
             {{#hero}}
-              <section class="relative page-min-height hero product__hero">
-                <div class="hero__content col-12 flex flex-column items-center justify-center product__title-1 h1 h2-md h1-lg black">
+              <section class="relative page-min-height hero z1">
+                <div class="hero__content col-12 flex flex-column items-center justify-center ls-26 lh-133 h1 h2-md h1-lg black">
                   <div class="hero__title-wrapper">
-                    <h1 class="caps m0 relative px3 product-title-top {{#title_parts.1}}has-mobile-hyphen{{/title_parts.1}}" aria-label="{{full_title}}">{{title_parts.0}}</h1>
+                    <h1 class="caps m0 relative px3 product-title-top z1 ti-26-md {{#title_parts.1}}has-mobile-hyphen{{/title_parts.1}}" aria-label="{{full_title}}">{{title_parts.0}}</h1>
                     {{#title_parts.1}}
-                      <h1 class="caps m0 relative px3 product-title-bottom" aria-hidden>{{.}}</h1>
+                      <h1 class="caps m0 relative px3 z3" aria-hidden>{{.}}</h1>
                     {{/title_parts.1}}
                   </div>
 
-                  <div class="hero__image-wrapper flex justify-center col-12">
+                  <div class="hero__image-wrapper z3 flex justify-center col-12">
                     <amp-img
                         src="{{image}}"
                         width="455"
                         height="773"
                         layout="responsive"
                         alt="{{full_title}}"
-                        class="hero__chair col-7"></amp-img>
+                        class="hero__chair z2 col-7"></amp-img>
                   </div>
                 </div>
 
-                <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
+                <p class="lune-scroll-indicator ls-26 absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
 
-                <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">One</span></p>
-                <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">1</span> <span class="block">4</span></p>
+                <p class="lune-chapter-name ls-0 center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">One</span></p>
+                <p class="lune-chapter-number ls-0 center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">1</span> <span class="block">4</span></p>
 
               </section>
             {{/hero}}
 
             {{#intro}}
-              <section class="section p3 section--intro">
+              <section class="relative p3 section--intro z2">
 
                 <div class="intro__wrapper">
-                  <h2 class="product__title-2 mb2 caps h6 black h4-md">{{title}}</h2>
+                  <h2 class="mb2 caps h6 lh-100 black h4-md">{{title}}</h2>
 
                   {{#body}}
                     <p class="product__body mb2">{{.}}</p>
                   {{/body}}
                 </div>
 
-                <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Two</span></p>
-                <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">2</span> <span class="block">4</span></p>
+                <p class="lune-chapter-name ls-0 center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Two</span></p>
+                <p class="lune-chapter-number ls-0 center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">2</span> <span class="block">4</span></p>
 
               </section>
             {{/intro}}
 
             {{#specs}}
-            <section class="section p3">
-              <h2 class="product__title-2 caps h6 black mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
+              <section class="relative p3">
+                <h2 class="caps h6 black lh-100 mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
 
-              <p class="product__body mb4 md-hide lg-hide">{{body}}</p>
+                <p class="product__body mb4 md-hide lg-hide">{{body}}</p>
 
-              <ul class="product__details p0 m0">
-                {{#details}}
-                  <li class="flex pb3">
-                    <span class="product__specs-title black caps">{{title}}</span>
-                    <div class="divider mx1"></div>
-                    <span class="product__specs-figure black caps">{{value}}</span>
-                    <span class="product__specs-unit black caps">{{unit}}</span>
-                  </li>
-                {{/details}}
-              </ul>
+                <ul class="product__details p0 m0">
+                  {{#details}}
+                    <li class="flex pb3">
+                      <span class="product__specs-title ls-26 ls-56-md lh-100-md black caps">{{title}}</span>
+                      <div class="divider mx1"></div>
+                      <span class="product__specs-figure ls-26 ls-12-md lh-50-md black caps">{{value}}</span>
+                      <span class="product__specs-unit ls-26 ls-12-md lh-100-md black caps">{{unit}}</span>
+                    </li>
+                  {{/details}}
+                </ul>
 
-              <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Three</span></p>
-              <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">3</span> <span class="block">4</span></p>
-            </section>
+                <p class="lune-chapter-name ls-0 center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Three</span></p>
+                <p class="lune-chapter-number ls-0 center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">3</span> <span class="block">4</span></p>
+              </section>
             {{/specs}}
 
             {{#materials}}
-              <section class="section p3 section--materials">
-                <h2 class="product__title-2 h6 black mb4 caps flex items-center lune-line-after">{{title}}</h2>
+              <section class="relative p3 z1 section--materials">
+                <h2 class="product__title-2 h6 black mb4 lh-100 caps flex items-center lune-line-after">{{title}}</h2>
 
                 {{#list}}
 
                   <div class="product__materials flex flex-column {{classes}}">
 
                     {{#title_parts}}
-                      <h3 class="caps h2-md  product__materials__title product__materials__title--split black relative md-hide lg-hide">
+                      <h3 class="caps h2-md lh-100 product__materials__title product__materials__title--split black relative md-hide lg-hide {{title_classes}}">
                         {{#mobile}}
                           <span>{{.}}</span>
                         {{/mobile}}
                       </h3>
 
-                      <h3 class="caps h2-md  product__materials__title product__materials__title--split black relative xs-hide sm-hide">
+                      <h3 class="caps h2-md lh-100 product__materials__title product__materials__title--split black relative xs-hide sm-hide  {{title_classes}}">
                         {{#desktop}}
                           <span>{{.}}</span>
                         {{/desktop}}
                       </h3>
                     {{/title_parts}}
                     {{^title_parts}}
-                      <h3 class="caps h2-md product__materials__title black relative">{{title}}</h3>
+                      <h3 class="caps h2-md lh-100 product__materials__title black relative  {{title_classes}}">{{title}}</h3>
                     {{/title_parts}}
 
                     {{#images}}
@@ -269,7 +271,7 @@ limitations under the License.
                             alt="{{title}}"
                             class=""></amp-img>
                         {{#hotspots}}
-                          <a href="{{url}}" class="no-button-styles absolute flex items-center justify-center p0 caps product__more-hotspot {{classes}}">More</a>
+                          <a href="{{url}}" class="no-button-styles absolute flex items-center justify-center p0 caps ls-26 product__more-hotspot {{classes}}">More</a>
                         {{/hotspots}}
                       </div>
 
@@ -278,15 +280,15 @@ limitations under the License.
 
                 {{/list}}
 
-                <p class="lune-chapter-name center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Four</span></p>
-                <p class="lune-chapter-number center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">4</span> <span class="block">4</span></p>
+                <p class="lune-chapter-name ls-0 center xs-hide sm-hide absolute caps position-center-v"><span class="block">Chapter</span> <span class="block">Four</span></p>
+                <p class="lune-chapter-number ls-0 center flex flex-column justify-between absolute xs-hide sm-hide position-center-v"><span class="block">4</span> <span class="block">4</span></p>
 
               </section>
             {{/materials}}
 
             {{#bottom_cta}}
               <div class="products__bottom-cta flex justify-center">
-                <a href="{{url}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps px4 mt1 mb4 center">
+                <a href="{{url}}" class="ampstart-btn ampstart-btn-secondary lune-cta ls-26 bold caps px4 mt1 mb4 center">
                   {{text}}
                 </a>
               </div>
@@ -311,7 +313,7 @@ limitations under the License.
           <div class="landing__content relative flex items-center justify-center">
             <div class="absolute landing__image-wrapper position-center">
               <!-- LU- -->
-              <span class="landing__title-big landing__title-big--top-left absolute caps" aria-hidden="true">lu-</span>
+              <span class="landing__title-big landing__title-big--top-left absolute caps black ls-26 ti-26 lh-100" aria-hidden="true">lu-</span>
               <!-- CHAIR IMAGE -->
               <amp-img
                 class="landing__image"
@@ -321,17 +323,17 @@ limitations under the License.
                 height="1.37"
                 layout="responsive"></amp-img>
               <!-- BLANC/NOIR -->
-              <span class="flex justify-between landing__title-small absolute caps" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+              <span class="flex justify-between landing__title-small ls-0 lh-100 absolute caps black" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
               <!-- -NE -->
-              <span class="landing__title-big landing__title-big--bottom-right absolute caps" aria-hidden="true">-ne</span>
+              <span class="landing__title-big landing__title-big--bottom-right absolute caps black ls-26 ti-26 lh-100" aria-hidden="true">-ne</span>
             </div>
             <!-- DISCOVER CTA -->
             <div class="absolute bottom-0 left-0 right-0 center">
-              <a href="#{{product_name}}" class="ampstart-btn ampstart-btn-secondary lune-cta caps">Discover {{product_name}}</a>
+              <a href="#{{product_name}}" class="ampstart-btn ampstart-btn-secondary lune-cta ls-26 bold caps">Discover {{product_name}}</a>
             </div>
           </div>
           <!-- SCROLL INDICATOR -->
-          <p class="lune-scroll-indicator absolute bottom-0 m0 position-center-h caps">Scroll</p>
+          <p class="lune-scroll-indicator ls-26 absolute bottom-0 m0 position-center-h caps">Scroll</p>
         </section>
 
       {{/landing-sections}}

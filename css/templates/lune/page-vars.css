@@ -55,24 +55,8 @@
   --h5-lg: 4.375rem; /* 70px */
   --h6-lg: 3.125rem; /* 50px */
 
+  /** Overrides basscss rule */
   --line-height-1: 1em;
-
-
-  /** Nav items */
-  --nav-item-font-size-m: 1.5rem; /* 24px */
-  --nav-item-font-size-d: 3.25rem; /* 52px */
-  --nav-item-weight: var(--font-weight-black);
-  --nav-item-line-height: 3.84em;
-  --nav-email-font-size: 1.125rem; /* 18px */
-
-  /* Header */
-  --header-title-font-size: 1.3125rem; /* 21px */
-  --header-title-letter-spacing: .52em;
-  --header-contact-font-size: 0.8125rem; /* 13px */
-
-  /* CTAs */
-  --cta-font-size-m: .75rem; /* 12px */
-  --cta-font-size-d: .6875rem; /* 11px */
 
   /* Body text */
   --body-font-size-m: 1.125rem; /* 18px */
@@ -80,17 +64,6 @@
   --body-letter-spacing: .02em;
   --body-line-height-m: 1.69em;
   --body-line-height-d: 1.75em;
-
-  /* Hotspots */
-  --hotspot-font-size: 0.5625rem; /* 9px */
-  --hotspot-letter-spacing: .26em;
-
-
-  /* Scroll indicator */
-  --scroll-font-size: .75rem; /* 12px */
-
-
-
 
 
 

@@ -8,12 +8,8 @@
 /*******************************************************************************
  * Layout
  ******************************************************************************/
-.lune-page--store:target {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 100vh;
+.lune-page--store .lune-page__wrapper {
+  min-height: calc(100vh - var(--layout-header-height-m));
   padding-bottom: var(--layout-header-height-m);
 }
 
@@ -24,9 +20,7 @@
 }
 
 .store__title {
-  font-weight: var(--font-weight-black);
   font-size: var(--h6);
-  letter-spacing: var(--hotspot-letter-spacing);
 }
 
 .store__image {
@@ -39,29 +33,17 @@
 }
 
 .store__lune {
-  font-weight: var(--font-weight-black);
   font-size: var(--h3);
-  letter-spacing: .48em;
-  line-height: 0;
 }
 
 .store__address {
-  font-weight: var(--font-weight-black);
   font-size: var(--body-font-size-m);
-  letter-spacing: .12em;
-  line-height: 2;
-}
-
-.store__body p {
-  font-weight: 400;
-  font-size: var(--body-font-size-m);
-  letter-spacing: var(--body-letter-spacing);
-  line-height: var(--body-line-height-m);
 }
 
 @media (--breakpoint-mt) {
-  .lune-page--store:target {
-    padding-bottom: var(--layout-header-height-m);
+  .lune-page--store .lune-page__wrapper {
+    min-height: calc(100vh - var(--layout-header-height-d));
+    padding-bottom: var(--layout-header-height-d);
   }
 
   .store__title {
@@ -164,7 +146,6 @@
   }
 
   .store__body p {
-    font-size: var(--body-font-size-d);
     line-height: 2;
   }
 

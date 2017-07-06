@@ -41,10 +41,10 @@
 
   margin: auto;
 
-  font-size: var(--nav-item-font-size-m);
-  font-weight: var(--nav-item-weight);
+  font-size: 1.5rem; /* 24px */
+  font-weight: var(--font-weight-black);
 
-  line-height: var(--nav-item-line-height);
+  line-height: 3.84;
 
   text-transform: uppercase;
 }
@@ -55,7 +55,7 @@
 }
 
 .lune .ampstart-faq-item:last-child a {
-  font-size: var(--nav-email-font-size);
+  font-size: 1.125rem; /* 18px */
 
   letter-spacing: .12em;
 
@@ -65,7 +65,7 @@
 
 @media (--breakpoint-mt) {
   .lune .ampstart-faq-item {
-    font-size: var(--nav-item-font-size-d);
+    font-size: 3.25rem; /* 52px */
   }
 
   .lune .ampstart-faq-item:last-child {

@@ -2,29 +2,20 @@
 @import "page-vars";
 
 p {
-  line-height: var(--body-line-height-m);
-
   font-size: var(--body-font-size-m);
-
   letter-spacing: var(--body-letter-spacing);
-}
-
-@media (--breakpoint-md) {
-  font-size: var(--body-font-size-d);
+  line-height: var(--body-line-height-m);
 }
 
 a {
   text-decoration: none;
 }
 
-@media (--breakpoint-mt) {
+@media (--breakpoint-md) {
   p {
+    font-size: var(--body-font-size-d);
     line-height: var(--body-line-height-d);
   }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
 }
 
 .position-center {
