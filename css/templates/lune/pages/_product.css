@@ -1,6 +1,6 @@
 @import "../page-vars";
 
-.lune .lune-page--product section {
+.lune .lune-page--product .section--materials {
   position: relative;
 
   z-index: 2;
