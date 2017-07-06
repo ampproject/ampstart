@@ -17,18 +17,16 @@ limitations under the License.
 }}
 
 <!doctype html>
-{{#www-render.media}}
+{{#www-render.related-section}}
 <html ⚡>
 {{> ../../utils/amp-page-head.snip.html}}
 <body>
 <main class="flex flex-wrap justify-around align-item items-center">
   <div class="flex flex-column items-center">
     <label class="www-example-label bold mb3">Related Articles</label>
-    {{#related-section}}
-      {{> ../../components/related-section/related-section.snip.html}}
-    {{/related-section}}
+    {{> ../../components/related-section/related-section.snip.html}}
   </div>
 </main>
 </body>
 </html>
-{{/www-render.media}}
+{{/www-render.related-section}}

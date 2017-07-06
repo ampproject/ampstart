@@ -17,20 +17,20 @@ limitations under the License.
 }}
 
 <!doctype html>
-{{#www-render.inputs}}
+{{#www-render.textbox}}
 <html ⚡>
 {{> ../../utils/amp-page-head.snip.html}}
 <body>
   <form method="GET" action="/" target="_top" class="p0 m0">
   <main class="flex flex-wrap justify-around align-item items-center">
-    {{#textboxes}}
+    {{#elements}}
     <div class="flex flex-column items-center">
       <label class="www-example-label bold mb3">{{label}}</label>
       {{> ../../components/inputs/inputs.snip.html}}
     </div>
-    {{/textboxes}}
+    {{/elements}}
   </main>
   </form>
 </body>
 </html>
-{{/www-render.inputs}}
+{{/www-render.textbox}}
