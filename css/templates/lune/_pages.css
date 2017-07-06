@@ -14,7 +14,7 @@
 .lune-background {
   background: #fff;
 
-  z-index: 1;
+  z-index: var(--z2);
 }
 
 .lune-page[id="noir"]:target ~ .lune-background {
@@ -35,7 +35,7 @@
   top: 0;
   left: 0;
 
-  z-index: 0;
+  z-index: var(--z1);
 
   width: 100vw;
   min-height: 100vh;
@@ -74,7 +74,7 @@
 .lune-overlay[id^="blanc"]:target ~ .lune-page[id="blanc"],
 .lune-overlay[id^="noir"]:target ~ .lune-page[id="noir"],
 .lune-overlay[id^="store"]:target ~ .lune-page[id="store"] {
-  z-index: 2;
+  z-index: var(--z3);
   max-height: none;
 
   animation: page-animation-in .6s .2s forwards;
