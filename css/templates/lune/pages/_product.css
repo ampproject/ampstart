@@ -1,5 +1,9 @@
 @import "../page-vars";
 
+:root {
+  --hero-title-min-height: 238px;
+}
+
 .lune .lune-page--product .section--materials {
   position: relative;
 
@@ -61,7 +65,7 @@
 .lune .hero__title-wrapper {
   margin-bottom: -1.9em;
 
-  min-height: 238px;
+  min-height: var(--hero-title-min-height);
 }
 
 @media (--breakpoint-mt) {
@@ -98,15 +102,12 @@
 
   .lune-page--product:target .hero__image-wrapper {
     position: fixed;
-    top: 50vh;
+
+    top: calc(var(--layout-header-height-d) + (var(--hero-title-min-height) / 2));
 
     z-index: 3;
 
     width: 100%;
-
-    margin-top: 90px;
-
-    transform: translateY(-50%);
   }
 }
 
