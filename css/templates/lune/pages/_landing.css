@@ -156,7 +156,6 @@
 
 .landing__title-small {
   font-size: var(--h5);
-  line-height: 1;
 
   top: 39%;
   left: var(--landing-title-offset-h-m);

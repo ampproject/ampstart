@@ -25,7 +25,7 @@
 }
 
 .lune .ls-02 {
-  letter-spacing: var(--body-letter-spacing);
+  letter-spacing: .02em;
 }
 
 .lune .ls-12 {
@@ -66,7 +66,7 @@
   }
 
   .lune .ls-02-md {
-    letter-spacing: var(--body-letter-spacing);
+    letter-spacing: .02em;
   }
 
   .lune .ls-12-md {
@@ -108,7 +108,7 @@
   }
 
   .lune .ls-02-mt {
-    letter-spacing: var(--body-letter-spacing);
+    letter-spacing: .02em;
   }
 
   .lune .ls-12-mt {
@@ -150,7 +150,7 @@
   }
 
   .lune .ls-02-lg {
-    letter-spacing: var(--body-letter-spacing);
+    letter-spacing: .02em;
   }
 
   .lune .ls-12-lg {
@@ -253,6 +253,22 @@
   }
 
   .lune .lh-200-md {
+    line-height: 2;
+  }
+}
+
+@media (--breakpoint-mt) {
+  .lune .lh-175-mt {
+    line-height: 1.75;
+  }
+}
+
+@media (--breakpoint-vld) {
+  .lune .lh-175-vld {
+    line-height: 1.75;
+  }
+
+  .lune .lh-200-vld {
     line-height: 2;
   }
 }

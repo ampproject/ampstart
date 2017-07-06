@@ -124,7 +124,7 @@
           }, {
             "classes": "product__materials--poly",
             "title": "Polypropylene",
-            "title_classes": "ls-56-mt ls-67-lg",
+            "title_classes": "ls-56-mt ls-67-lg lh-175-mt",
             "title_parts": {
               "mobile": [
                 "POLY-",
@@ -345,7 +345,7 @@
           }, {
             "classes": "product__materials--poly",
             "title": "Polypropylene",
-            "title_classes": "ls-56-mt ls-67-lg",
+            "title_classes": "ls-56-mt ls-67-lg lh-175-mt",
             "title_parts": {
               "mobile": [
                 "POLY-",
