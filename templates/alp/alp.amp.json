@@ -47,7 +47,10 @@
       }
     },
     "form": {
-      "title": "Contact us for a free consultation",
+      "heading": {
+        "classes": "block mb4",
+        "text": "Contact us for a free consultation"
+      },
       "method": "GET",
       "action": "/",
       "inputs": [
