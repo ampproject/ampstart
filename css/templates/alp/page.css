@@ -38,11 +38,6 @@
   max-width: 340px;
 }
 
-.alp-form-container legend {
-  font-size: var(--h3);
-  font-weight: bold;
-}
-
 .alp-page .ampstart-input {
   width: 100%;
 }
@@ -74,5 +69,3 @@
     position: static;
   }
 }
-
-

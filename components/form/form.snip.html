@@ -19,9 +19,14 @@ limitations under the License.
 {{#form}}
 <form method="{{method}}" {{#action}}action="{{{.}}}"{{/action}}{{#action-xhr}}action-xhr="{{{.}}}"{{/action-xhr}} target="_top" {{novalidate}} class="p0 m0 px3 mb4">
   <fieldset class="border-none p0 m0">
-    {{#title}}
-    <legend class="h2 block mb4">{{.}}</legend>
-    {{/title}}
+    {{#heading}}
+      {{#level}}
+        <h{{.}} class="{{classes}}">{{text}}</h{{.}}>
+      {{/level}}
+      {{^level}}
+        <h2 class="{{classes}}">{{text}}</h2>
+      {{/level}}
+    {{/heading}}
     {{#form-text}}
       <p>{{.}}</p>
     {{/form-text}}
