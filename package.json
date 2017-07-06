@@ -18,6 +18,7 @@
     "child_process": "^1.0.2",
     "cssbeautify": "^0.3.1",
     "cssnano": "^3.8.1",
+    "deepmerge": "^1.4.4",
     "del": "^2.2.2",
     "fs-extra": "^2.0.0",
     "gulp": "^3.9.1",
