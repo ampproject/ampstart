@@ -48,7 +48,7 @@
     },
     "form": {
       "heading": {
-        "classes": "block mb4",
+        "classes": "h3 block mb4",
         "text": "Contact us for a free consultation"
       },
       "method": "GET",
