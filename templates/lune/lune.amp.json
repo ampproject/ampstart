@@ -17,7 +17,7 @@
       "name": "AMP Lune template",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
-      "href": "#",
+      "href": "lune.amp.html",
       "logo": {
          "name": "LUNE",
          "classes": "h3 xs-hide"
@@ -35,13 +35,13 @@
       "faq": {
         "links": [
           {
-            "link": {"url": "#blanc", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>"}
+            "link": {"url": "product-blanc.amp.html", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>"}
           },
           {
-            "link": {"url": "#noir", "text": "<span>N</span><span>o</span><span>i</span><span>r</span>"}
+            "link": {"url": "product-noir.amp.html", "text": "<span>N</span><span>o</span><span>i</span><span>r</span>"}
           },
           {
-            "link": {"url": "#store", "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>"}
+            "link": {"url": "store.amp.html", "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>"}
           },
           {
             "link": {"url": "mailto:contact@lune.com", "text": "contact@lune.com"}
