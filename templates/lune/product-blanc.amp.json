@@ -1,53 +1,14 @@
 {
-  "lune-product": {
+  "lune": {
     "head-tag": {
-      "title": "AMP Lune template",
-      "canonical-path": "templates/lune.amp",
+      "title": "LUNE BLANC",
+      "canonical-path": "templates/product-blanc.amp",
       "extensions": [
         "amp-sidebar",
         "amp-fx-flying-carpet",
         "amp-accordion"
       ],
-      "font-stylesheets": [
-        "https://fonts.googleapis.com/css?family=Lato:400,700,900"
-      ],
       "css-path": "templates/lune/products.css"
-    },
-    "navbar": {
-      "name": "AMP Lune template",
-      "sidebar-id": "header-sidebar",
-      "sidebaronly": true,
-      "href": "lune.amp.html",
-      "logo": {
-         "name": "LUNE",
-         "classes": "h3 xs-hide"
-      },
-      "fixeditems": [
-        {
-          "links": [{
-            "link": {
-              "url": "mailto:contact@lune.com",
-              "text": "contact@lune.com"
-            }
-          }]
-        }
-      ],
-      "faq": {
-        "links": [
-          {
-            "link": {"url": "product-blanc.amp.html", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>"}
-          },
-          {
-            "link": {"url": "product-noir.amp.html", "text": "<span>N</span><span>o</span><span>i</span><span>r</span>"}
-          },
-          {
-            "link": {"url": "store.amp.html", "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>"}
-          },
-          {
-            "link": {"url": "mailto:contact@lune.com", "text": "contact@lune.com"}
-          }
-        ]
-      }
     },
 
     "products": [{
