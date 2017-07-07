@@ -57,14 +57,14 @@ limitations under the License.
     </nav>
     {{/sidebaronly}}
     {{#fixeditems}}
-    <div class="ampstart-headerbar-fixed center m0 p0 mr2 flex justify-center nowrap">
-      <div class="ml1">
+    <div class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap">
+      <div class="mr2">
         {{#calltracking}}
           {{> ../calltracking/calltracking.snip.html}}
         {{/calltracking}}
       </div>
       {{#link}}
-        <a href="{{{url}}}" class="text-decoration-none ml1 {{classes}}" {{#target}}target={{.}}{{/target}}>{{text}}</a>
+        <a href="{{{url}}}" class="text-decoration-none mr2 {{classes}}" {{#target}}target={{.}}{{/target}}>{{text}}</a>
       {{/link}}
     </div>
     {{/fixeditems}}
