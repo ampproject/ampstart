@@ -48,13 +48,13 @@
   margin-top: 0;
 }
 
-.lune-page[id="noir"]:target ~ .ampstart-headerbar {
+.lune--noir .ampstart-headerbar {
   background-color: var(--color-bg-dark-m);
   color: var(--color-light-1);
 }
 
 @media (--breakpoint-mt) {
-  .lune-page[id="noir"]:target ~ .ampstart-headerbar {
+  .lune--noir .ampstart-headerbar {
     background-color: var(--color-bg-dark-d);
   }
 }
