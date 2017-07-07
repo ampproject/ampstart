@@ -14,25 +14,25 @@
  * limitations under the License.
  */
 
-module.exports = {
-  src: {
-    components: 'components/**/*.*',
-    templates: [
-      '{templates, dummy}/**/*.html',
-      '!templates/e-commerce/partials/hero/*.html'
-    ],
-    www_pages: 'www/**/*.html',
-    hl_partials: 'hl-partials/**/*.html',
-    css: ['css/**/*.css', '!css/ampstart-base/**/*.css'],
-    data: '*/**/*.json',
-    img: 'img/**',
-  },
-  dest: {
-    default: 'dist',
-    templates: 'dist',
-    www_pages: 'dist',
-    hl_partials: 'dist/hl-partials',
-    css: 'dist/css/',
-    img: 'dist/img/',
-  },
-};
+:root {
+  --color-font-accent: #ff8888;
+  --color-primary: #000;
+  --color-secondary: #222;
+  --color-font-default: #666;
+  --font-family: 'Open Sans Condensed', sans-serif;
+  --font-family-secondary: 'Cardo', serif;
+  --button-font-size: .8rem;
+  --caps-letter-spacing: 0;
+  --content-max-width: none;
+  --sidebar-width: 350px;
+  --color-font-secondary: var(--color-font-accent);
+
+  /* Narrow custom properties */
+  --narrow-page-padding: var(--space-3);
+  --narrow-nav-item-height: 3.5rem;
+  --narrow-body-font-size: .9rem;
+
+  /* Wide custom properties */
+  --wide-nav-item-height: 5rem;
+  --wide-body-font-size: 1rem;
+}

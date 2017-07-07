@@ -85,7 +85,10 @@
       "time": {"text": "December 13, 2016", "value":"2016-12-13"}
     },
     "form": {
-      "title": "Get our newsletter",
+      "heading": {
+        "classes": "block mb4",
+        "text": "Get our newsletter"
+      },
       "method": "GET",
       "action": "/",
       "inputs": [
