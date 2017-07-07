@@ -23,7 +23,7 @@ const through = require('through2');
 function escape() {
   return gulp.src(config.src.hl_partials)
     .pipe(rename(function(path) {
-      path.basename += "-esc";
+      path.basename = `esc-${path.basename}`;
     }))
     .pipe(through.obj(function(file, enc, cb) {
       if (file.isNull()) {
