@@ -8,8 +8,6 @@
  */
 .lune-chapter-name,
 .lune-chapter-number {
-  font-size: 0.5625rem;
-
   /* Width is one letter wide */
   width: 1em;
 

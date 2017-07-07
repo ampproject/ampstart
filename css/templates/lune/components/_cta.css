@@ -11,8 +11,6 @@
 
   min-width: 14em;
 
-  font-size: .75rem; /* 12px */
-
   text-transform: uppercase;
 
   background: transparent;
@@ -30,7 +28,5 @@
 @media (--breakpoint-mt) {
   .lune-cta {
     padding: 1.36em 4.5em;
-
-    font-size: .6875rem; /* 11px */
   }
 }

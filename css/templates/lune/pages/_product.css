@@ -85,25 +85,8 @@
 /*******************************************************************************
  * Intro & Specs
  ******************************************************************************/
-.product__specs-title,
-.product__specs-figure,
-.product__specs-unit {
-  font-size: .875rem; /* 14px */
-}
 
 @media (--breakpoint-md) {
-  .product__specs-title {
-    font-size: 1.375rem; /* 22px */
-  }
-
-  .product__specs-figure {
-    font-size: 2rem; /* 32px */;
-  }
-
-  .product__specs-unit {
-    font-size: 1.375rem; /* 22px */
-  }
-
   .product__details li {
     padding: 2rem 0;
   }
@@ -182,8 +165,6 @@
   .product__materials--poly .product__materials__title {
     text-align: left;
 
-    font-size: 57px;
-
     margin-bottom: 200px;
   }
 
@@ -208,24 +189,9 @@
   }
 }
 
-@media (--breakpoint-lg) {
-  .product__materials--poly .product__materials__title {
-    font-size: 70px;
-  }
-}
-
-@media (--breakpoint-vld) {
-  .product__materials--poly .product__materials__title {
-    font-size: 90px;
-  }
-}
-
-
 .lune .product__more-hotspot {
   width: 82px;
   height: 82px;
-
-  font-size: 0.5625rem; /* 9px */
 
   border-radius: 50%;
 

@@ -4,8 +4,6 @@
  * To be used in comination with 'caps bold ls-26' classes
  */
 .lune-scroll-indicator {
-  font-size: .75rem; /* 12px */
-
   padding-bottom: 3.125rem;
 }
 
@@ -22,10 +20,4 @@
   transform: translateX(-50%);
 
   content: '';
-}
-
-@media (--breakpoint-mt) {
-  .lune-scroll-indicator {
-    font-size: 0.8125rem; /* 13px */
-  }
 }

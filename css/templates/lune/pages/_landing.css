@@ -112,8 +112,6 @@
 
 .landing__title-big {
   display: inline-block;
-
-  font-size: var(--h2);
 }
 
 .landing__title-big--top-left {
@@ -131,8 +129,6 @@
 }
 
 .landing__title-small {
-  font-size: var(--h5);
-
   top: 39%;
   left: var(--landing-title-offset-h-m);
   right: var(--landing-title-offset-h-m);
@@ -145,10 +141,6 @@
 
   .landing__content {
     margin-bottom: 4rem;
-  }
-
-  .landing__title-big {
-    font-size: var(--h3-lg);
   }
 
   .landing__title-big--top-left {
@@ -170,10 +162,6 @@
   .landing__section.lune-theme--dark .landing__title-big--bottom-right {
     right: calc(var(--landing-title-offset-common) +
         0.8 * var(--landing-title-offset-h-t));
-  }
-
-  .landing__title-small {
-    font-size: var(--h5-lg);
   }
 }
 

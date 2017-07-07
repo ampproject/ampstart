@@ -274,57 +274,114 @@
 }
 
 /*******************************************************************************
- * Title font-sizes
+ * Font sizes
  ******************************************************************************/
 
+.lune .fs-0 {
+  font-size: 0;
+}
+
+.lune .fs-56 {
+  font-size: 0.5625rem; /* 9px */
+}
+
+.lune .fs-75 {
+  font-size: .75rem; /* 12px */
+}
+
+.lune .fs-87 {
+  font-size: .875rem; /* 14px */
+}
+
+.lune .fs-125 {
+  font-size: 1.125rem; /* 18px */
+}
+
+.lune .fs-137 {
+  font-size: 1.375rem; /* 22px */
+}
+
+.lune .fs-218 {
+  font-size: 2.1875rem; /* 35px */
+}
+
+.lune .fs-375 {
+  font-size: 3.75rem; /* 60px */
+}
+
+.lune .fs-500 {
+  font-size: 5rem; /* 80px */
+}
+
+
+@media (--breakpoint-mt) {
+  .lune .fs-68-mt {
+    font-size: .6875rem; /* 11px */
+  }
+
+  .lune .fs-81-mt {
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .lune .fs-312-mt {
+    font-size: 3.125rem; /* 50px */
+  }
+
+  .lune .fs-356-mt {
+    font-size: 3.5625rem; /* 57px */
+  }
+
+  .lune .fs-435-mt {
+    font-size: 4.375rem; /* 70px */
+  }
+
+  .lune .fs-700-mt {
+    font-size: 7rem; /* 112px */
+  }
+}
+
+
 @media (--breakpoint-md) {
-  .lune .h1-md {
-    font-size: var(--h1-md);
+
+  .lune .fs-137-md {
+    font-size: 1.375rem; /* 22px */
   }
 
-  .lune .h2-md {
-    font-size: var(--h2-md);
+  .lune .fs-200-md {
+    font-size: 2rem; /* 32px */;
   }
 
-  .lune .h3-md {
-    font-size: var(--h3-md);
+  .lune .fs-750-md {
+    font-size: 7.5rem; /* 120px */
   }
 
-  .lune .h4-md {
-    font-size: var(--h4-md);
+  .lune .fs-500-md {
+    font-size: 5rem; /* 80px */
   }
 
-  .lune .h5-md {
-    font-size: var(--h5-md);
-  }
-
-  .lune .h6-md {
-    font-size: var(--h6-md);
+  .lune .fs-312-md {
+    font-size: 3.125rem; /* 50px */
   }
 }
 
 @media (--breakpoint-lg) {
-  .lune .h1-lg {
-    font-size: var(--h1-lg);
+
+  .lune .fs-437-lg {
+    font-size: 4.375rem; /* 70px */
   }
 
-  .lune .h2-lg {
-    font-size: var(--h2-lg);
+  .lune .fs-1125-lg {
+    font-size: 11.25rem; /* 180px */
+  }
+}
+
+
+@media (--breakpoint-vld) {
+  .lune .fs-562-vld {
+    font-size: 5.625rem; /* 90px */
   }
 
-  .lune .h3-lg {
-    font-size: var(--h3-lg);
-  }
-
-  .lune .h4-lg {
-    font-size: var(--h4-lg);
-  }
-
-  .lune .h5-lg {
-    font-size: var(--h5-lg);
-  }
-
-  .lune .h6-lg {
-    font-size: var(--h6-lg);
+  .lune .fs-750-vld {
+    font-size: 7.5rem; /* 120px */
   }
 }

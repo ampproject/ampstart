@@ -19,10 +19,6 @@
   max-width: 36rem;
 }
 
-.store__title {
-  font-size: var(--h6);
-}
-
 .store__image {
   width: 15.625rem;
   height: 22rem;
@@ -30,14 +26,6 @@
 
 .store__image amp-img img {
   object-fit: cover;
-}
-
-.store__lune {
-  font-size: var(--h3);
-}
-
-.store__address {
-  font-size: var(--body-font-size-m);
 }
 
 @media (--breakpoint-mt) {
@@ -53,10 +41,6 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
-  }
-
-  .store__lune {
-    font-size: var(--h6-md);
   }
 
   .store__image {
@@ -97,8 +81,6 @@
     position: absolute;
     bottom: 0;
     left: 0;
-
-    font-size: var(--h2-lg);
   }
 
   .store__image-wrapper {

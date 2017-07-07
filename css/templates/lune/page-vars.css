@@ -41,20 +41,6 @@
   --h5: 2.1875rem; /* 35px */
   --h6: 1.375rem; /* 22px */
 
-  --h1-md: 11.25rem; /* 180px */
-  --h2-md: 7.5rem; /* 120px */
-  --h3-md: 7rem; /* 112px */
-  --h4-md: 5rem; /* 80px */
-  --h5-md: 4.375rem; /* 70px */
-  --h6-md: 3.125rem; /* 50px */
-
-  --h1-lg: 11.25rem; /* 180px */
-  --h2-lg: 7.5rem; /* 120px */
-  --h3-lg: 7rem; /* 112px */
-  --h4-lg: 5rem; /* 80px */
-  --h5-lg: 4.375rem; /* 70px */
-  --h6-lg: 3.125rem; /* 50px */
-
   /** Overrides basscss rule */
   --line-height-1: 1em;
 
