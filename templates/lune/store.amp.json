@@ -1,0 +1,91 @@
+{
+  "lune-store": {
+    "head-tag": {
+      "title": "AMP Lune template",
+      "canonical-path": "templates/lune.amp",
+      "extensions": [
+        "amp-sidebar",
+        "amp-fx-flying-carpet",
+        "amp-accordion"
+      ],
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Lato:400,700,900"
+      ],
+      "css-path": "templates/lune/page.css"
+    },
+    "navbar": {
+      "name": "AMP Lune template",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "href": "#",
+      "logo": {
+         "name": "LUNE",
+         "classes": "h3 xs-hide"
+      },
+      "fixeditems": [
+        {
+          "links": [{
+            "link": {
+              "url": "mailto:contact@lune.com",
+              "text": "contact@lune.com"
+            }
+          }]
+        }
+      ],
+      "faq": {
+        "links": [
+          {
+            "link": {"url": "#blanc", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>"}
+          },
+          {
+            "link": {"url": "#noir", "text": "<span>N</span><span>o</span><span>i</span><span>r</span>"}
+          },
+          {
+            "link": {"url": "#store", "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>"}
+          },
+          {
+            "link": {"url": "mailto:contact@lune.com", "text": "contact@lune.com"}
+          }
+        ]
+      }
+    },
+
+    "store-page": {
+      "title": "Visit us",
+      "subtitle": "Lune",
+      "hero-images": [
+        {
+          "srcset": "../../img/lune/store-hero-m@1x.jpg, ../../img/lune/store-hero-m@2x.jpg 2x",
+          "width": "250",
+          "height": "352",
+          "media": "(max-width: 719px)",
+          "layout": "fixed"
+        }, {
+          "srcset": "../../img/lune/store-hero-d@1x.jpg, ../../img/lune/store-hero-d@2x.jpg 2x",
+          "media": "(min-width: 720px)",
+          "layout": "fill"
+        }
+      ],
+      "address-lines": [
+        "<span>24, Rue de Sèvres</span><br>",
+        "<span>75007 Paris</span><br>",
+        "<a class=\"underline\" href=\"tel:+330144398000\">(+33) 01 44 39 80 00<a><br>",
+        "<a class=\"underline\" href=\"https://L-U-N-E.com\">L-U-N-E.com</a>"
+      ],
+      "body-paragraphs": [
+        {
+          "text": "Maecenas id turpis at ante blandit interdum nec eu erat. Quisque in diam in lacus tempor rutrum. Proin vel arcu a orci tristique porta sed ac tellus. Donec elementum rutrum libero. In at volutpat nunc, sed pharetra enim. Donec pharetra, nibh et efficitur pharetra.",
+          "classes": "mb2"
+        },
+        {
+          "text": "Nunc rutrum sollicitudin bibendum. Curabitur dui lacus, euismod ac tortor vitae, dignissim condimentum sapien. Vivamus hendrerit non dui eu sollicitudin.",
+          "classes": "flex flex-column align-center",
+          "cta": {
+            "href": "https://L-U-N-E.com",
+            "text": "Find a reseller"
+          }
+        }
+      ]
+    }
+  }
+}
