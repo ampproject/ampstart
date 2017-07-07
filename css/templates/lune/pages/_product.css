@@ -2,6 +2,9 @@
 
 :root {
   --hero-title-min-height: 238px;
+
+  --product-anim-delay-start: .4s;
+  --product-anim-delay-step: .08s;
 }
 
 @media (--breakpoint-md) {
@@ -274,4 +277,26 @@
   .products__bottom-cta {
     padding: 60px 0;
   }
+}
+
+
+/*******************************************************************************
+ * Enter animation (image, text and ).
+ * Animations keyframes are defined in ../_pages.css
+ ******************************************************************************/
+
+.lune .hero__chair {
+  animation: fade-in-move-up
+             2s
+             calc(var(--product-anim-delay-start) +
+                5 * var(--product-anim-delay-step))
+             cubic-bezier(0.41, 0.01, 0.27, 1)
+             both;
+}
+
+.lune .hero__title-wrapper {
+  animation: fade-in-move-up
+             1.2s
+             var(--product-anim-delay-start)
+             cubic-bezier(0.41, 0.01, 0.27, 1) both;
 }
