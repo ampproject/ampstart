@@ -7,6 +7,7 @@
   --product-anim-delay-step: .08s;
 }
 
+/* Set medium resolution make each section a minimum height of 100vh */
 @media (--breakpoint-md) {
   .lune .lune-page--product section {
     min-height: calc(100vh - var(--layout-header-height-d));

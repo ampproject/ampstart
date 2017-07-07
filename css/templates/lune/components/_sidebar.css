@@ -14,7 +14,7 @@
   }
 }
 
-/* hide the amp-sidebar without failing validation ¯\_(ツ)_/¯ */
+/* hide the amp-sidebar without failing validation */
 .lune div[class*='sidebar-mask'] {
   opacity: 0;
 }

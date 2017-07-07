@@ -8,7 +8,6 @@
 @import 'components/_type';
 @import 'components/_sidebar';
 @import 'components/_header';
-@import 'components/_hero';
 @import 'components/_cta';
 
 @import '_pages';
