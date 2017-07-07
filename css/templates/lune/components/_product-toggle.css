@@ -41,22 +41,22 @@
 }
 
 
-.lune-page[id="blanc"]:target ~ .product-toggle--noir {
+.lune--blanc .product-toggle--noir {
   display: block;
 
   background: var(--color-light-1)
 }
 
-.lune-page[id="blanc"]:target ~ .product-toggle--noir::after {
+.lune--blanc .product-toggle--noir::after {
   background: var(--color-dark-grey);
 }
 
-.lune-page[id="noir"]:target ~ .product-toggle--blanc {
+.lune--noir .product-toggle--blanc {
   display: block;
 
   background: var(--color-dark-grey);
 }
 
-.lune-page[id="noir"]:target ~ .product-toggle--blanc::after {
+.lune--noir .product-toggle--blanc::after {
   background: var(--color-light-1)
 }
