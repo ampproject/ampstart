@@ -56,6 +56,7 @@
     },
     "fullpage-hero": {
       "heading-html": "Most Beautiful Hikes in Alaska",
+      "alt": "Most Beautiful Hikes in Alaska",
       "narrow-img": "../../img/thescenic/cropped_hero.jpg",
       "wide-img": "../../img/thescenic/hero.jpg",
       "readmore": {
@@ -80,7 +81,8 @@
             "width": "1280",
             "height": "853",
             "url": "../../img/thescenic/carousel2.jpg",
-            "heading-html": "<h2>Somewhere in Alaska</h2>"
+            "heading-html": "<h2>Somewhere in Alaska</h2>",
+            "alt": "Snowy terrain and mountains"
           }
         },
         {
@@ -88,7 +90,8 @@
             "width": "1280",
             "height": "853",
             "url": "../../img/thescenic/carousel1.jpg",
-            "heading-html": "<h2>Somewhere in Alaska</h2>"
+            "heading-html": "<h2>Somewhere in Alaska</h2>",
+            "alt": "Canoe drifting inside a sea tunnel"
           }
         },
         {
@@ -96,7 +99,8 @@
             "width": "1280",
             "height": "853",
             "url": "../../img/thescenic/carousel3.jpg",
-            "heading-html": "<h2>Somewhere in Alaska</h2>"
+            "heading-html": "<h2>Somewhere in Alaska</h2>",
+            "alt": "Highway road with mountains in background."
           }
         }
       ]
