@@ -11,7 +11,7 @@
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Lato:400,700,900"
       ],
-      "css-path": "templates/lune/page.css"
+      "css-path": "templates/lune/products.css"
     },
     "navbar": {
       "name": "AMP Lune template",
