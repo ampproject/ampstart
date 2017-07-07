@@ -42,7 +42,7 @@ limitations under the License.
             </div>
             <div class="store__content-lower mx-auto pt4">
               <div class="store__address-wrapper mb2">
-                <p class="store__address black lh-200 ls-12">
+                <p class="store__address black lh-200 ls-12 lh-175-vld">
                   {{#address-lines}}
                     {{{.}}}
                   {{/address-lines}}
@@ -52,7 +52,7 @@ limitations under the License.
                 {{#body-paragraphs}}
                   <div class="store__body {{classes}}">
                     {{#text}}
-                      <p class="regular">{{{.}}}</p>
+                      <p class="regular lh-200-vld">{{{.}}}</p>
                     {{/text}}
                     {{#cta}}
                       <a href="{{href}}" target="_blank" rel="noopener noreferrer" class="ampstart-btn ampstart-btn-secondary lune-cta ls-26 bold caps center mt4 self-center store__cta">{{{text}}}</a>

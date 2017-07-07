@@ -126,8 +126,6 @@
 
   .store__address {
     margin-top: .25rem;
-
-    line-height: var(--body-line-height-d);
   }
 
   .store__body-wrapper {
@@ -143,10 +141,6 @@
 
     padding-right: 2.25rem;
     margin-top: 0;
-  }
-
-  .store__body p {
-    line-height: 2;
   }
 
   .store__cta {
