@@ -1,112 +1,13 @@
 @import "page-vars";
 
-/* We are positioning pages absolutely and using the z-index to control which page
-   is visible. This is done so we can have page transitions without breaking amp-img.
-
-   We have 3 main z-indexes:
-      1. hidden pages
-      2. lune-background: used so hidden pages are not visible and to control the fade colour
-      3. The visible page
-*/
-
-
-/* This hides the rest of the pages, as well as controls the fade colour */
-/*.lune-background {
-  background: #fff;
-
-  z-index: var(--z2);
-}*/
-/*
-.lune-page[id="noir"]:target ~ .lune-background {
-  background: var(--color-bg-dark-m);
+.lune-page {
+  padding-top: var(--layout-header-height-m);
 }
 
-@media (--breakpoint-md) {
-  .lune-page[id="noir"]:target ~ .lune-background {
-    background: var(--color-bg-dark-d);
-  }
-}*/
-
-
-/* Show / hide pages based on URL Fragment.
-  Home (default) is a special case for when there is no fragment defined. */
-/*.lune-page {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  z-index: var(--z1);
-
-  width: 100vw;
-  min-height: 100vh;
-  max-height: 100vh;
-
-  opacity: 0;
-
-  overflow: hidden;
-}*/
 
 .lune-page .lune-page__wrapper {
   margin: 0 auto;
   max-width: 80rem;
-}
-
-/* The home page needs to be hidden if another page or another overlay are the :target */
-/*.lune-page:target ~ .lune-page--default,
-.lune-overlay:target ~ .lune-page--default {
-  z-index: 0;
-
-  max-height: 100vh;
-
-  opacity: 0;
-
-  overflow: hidden;
-}*/
-
-/* A page is shown when it's the :target
-   The home page can be shown even when it's not the :target (e.g. URL=`/`) */
-/*.lune-page--default,
-.lune-page:target,*/
-/* Ad-hoc rules to keep a page visible when an associated overlay is the :target
-   Associated overlays' ids share the same prefix as the pages they are associated to.
-   e.g page: id="blanc" --- overlay: id="blanc-specs" */
-/*.lune-overlay[id^="home"]:target ~ .lune-page[id="home"],
-.lune-overlay[id^="blanc"]:target ~ .lune-page[id="blanc"],
-.lune-overlay[id^="noir"]:target ~ .lune-page[id="noir"],
-.lune-overlay[id^="store"]:target ~ .lune-page[id="store"] {
-  z-index: var(--z3);
-  max-height: none;
-
-  animation: page-animation-in .6s .2s forwards;
-}
-
-@media (--breakpoint-mt) {
-  .lune-page--default,
-  .lune-page:target,
-  .lune-overlay[id^="home"]:target ~ .lune-page[id="home"],
-  .lune-overlay[id^="blanc"]:target ~ .lune-page[id="blanc"],
-  .lune-overlay[id^="noir"]:target ~ .lune-page[id="noir"],
-  .lune-overlay[id^="store"]:target ~ .lune-page[id="store"] {
-    padding-top: var(--layout-header-height-d);
-  }
-}*/
-
-/*@keyframes page-animation-in {
-  from {
-    opacity: 0;
-
-    transform: translateY(10px);
-  }
-
-  to {
-    opacity: 1;
-
-    transform: none;
-  }
-}*/
-
-.lune-page {
-  padding-top: var(--layout-header-height-m);
 }
 
 
@@ -115,12 +16,12 @@
 }
 
 @media (--breakpoint-mt) {
-  .page-min-height {
-    min-height: calc(100vh - var(--layout-header-height-d));
-  }
-
   .lune-page {
     padding-top: var(--layout-header-height-d);
+  }
+
+  .page-min-height {
+    min-height: calc(100vh - var(--layout-header-height-d));
   }
 }
 

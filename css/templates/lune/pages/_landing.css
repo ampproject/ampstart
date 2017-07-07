@@ -20,16 +20,6 @@
  * Enter animation (image, text and cta buttons).
  * Animations keyframes are defined in ../_pages.css
  ******************************************************************************/
-.lune-page:target ~ .lune-page--landing .landing__image,
-.lune-overlay:target ~ .lune-page--landing .landing__image,
-.lune-page:target ~ .lune-page--landing .landing__title-big,
-.lune-overlay:target ~ .lune-page--landing .landing__title-big,
-.lune-page:target ~ .lune-page--landing .landing__title-small,
-.lune-overlay:target ~ .lune-page--landing .landing__title-small,
-.lune-page:target ~ .lune-page--landing .lune-cta,
-.lune-overlay:target ~ .lune-page--landing .lune-cta {
-  animation: none;
-}
 
 .lune-page--landing .landing__image {
   animation: fade-in-scale-up 2s var(--landing-anim-delay-start) ease-out both;
@@ -77,20 +67,6 @@
 
 .landing__section.lune-theme--dark {
   position: fixed;
-}
-
-/*
- * Swtich back to relative position and 0 height when the landing page is not
- * in view. Avoids the fixed section to be in front of other top-level pages.
- */
-.lune-page:target ~ .lune-page--landing,
-.lune-overlay:target ~ .lune-page--landing {
-  height: 0;
-}
-
-.lune-page:target ~ .lune-page--landing .landing__section.lune-theme--dark,
-.lune-overlay:target ~ .lune-page--landing .landing__section.lune-theme--dark {
-  position: relative;
 }
 
 /*
