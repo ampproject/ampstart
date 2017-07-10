@@ -4,7 +4,7 @@
   --hero-title-min-height: 238px;
 
   --product-anim-delay-start: .4s;
-  --product-anim-delay-step: .08s;
+  --product-anim-delay-step: .5s;
 }
 
 /* Set medium resolution make each section a minimum height of 100vh */
@@ -253,17 +253,11 @@
  ******************************************************************************/
 
 .lune .hero__chair {
-  animation: fade-in-move-up
-             2s
-             calc(var(--product-anim-delay-start) +
-                5 * var(--product-anim-delay-step))
-             cubic-bezier(0.41, 0.01, 0.27, 1)
-             both;
+  animation: fade-in-scale-up 2s var(--product-anim-delay-start) ease-out both;
 }
 
 .lune .hero__title-wrapper {
-  animation: fade-in-move-up
-             1.2s
-             var(--product-anim-delay-start)
-             cubic-bezier(0.41, 0.01, 0.27, 1) both;
+  animation: fade-in-move-up .8s
+      calc(var(--product-anim-delay-start) + var(--product-anim-delay-step))
+      cubic-bezier(0.41, 0.01, 0.27, 1) both;
 }
