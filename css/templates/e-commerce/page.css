@@ -240,13 +240,7 @@ amp-selector [option][selected] {
 /* HEADER */
 .main {
   overflow: hidden;
-  /*margin-top: calc(var(--navbar-height) + var(--space-2));*/
 }
-/*
-.ampstart-headerbar + *:not(amp-sidebar),
-.ampstart-headerbar + amp-sidebar + * {
-  margin-top: calc(var(--navbar-height) + var(--space-2));
-}*/
 
 @media (--breakpoint-md) {
   .ampstart-headerbar + *:not(amp-sidebar),
@@ -466,7 +460,7 @@ amp-selector [option][selected] {
 }
 
 .commerce-product-color-white {
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .commerce-product-color-green {
