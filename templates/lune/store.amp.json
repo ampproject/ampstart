@@ -29,7 +29,7 @@
         "<span>24, Rue de Sèvres</span><br>",
         "<span>75007 Paris</span><br>",
         "<a class=\"underline\" href=\"tel:+330144398000\">(+33) 01 44 39 80 00<a><br>",
-        "<a class=\"underline\" href=\"https://L-U-N-E.com\">L-U-N-E.com</a>"
+        "<a class=\"underline\" href=\"https://L-U-N-E.com\" target=\"_blank\" rel=\"nopener noreferrer\">L-U-N-E.com</a>"
       ],
       "body-paragraphs": [
         {
