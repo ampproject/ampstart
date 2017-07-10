@@ -39,6 +39,7 @@
     },
     "fullpage-hero": {
       "heading-html": "<span class=\"h6 block caps\">Welcome to</span><span class=\"h1 block bold caps my1\">Beck & Galo</span><span class=\"h6 block caps\">Modern American Cuisine</span>",
+      "alt": "Welcome to Beck & Galo Modern American Cuisine",
       "narrow-img": "../../img/themes_2/hero.jpg",
       "wide-img": "../../img/themes_2/hero.jpg",
       "cta": {
@@ -70,7 +71,8 @@
               "width": "600",
               "height": "450",
               "url": "../../img/themes_2/bar.jpg",
-              "heading-html": "<h2 class=\"h1 bold\">Happy Hour</h2><p class=\"h4\">Mon-Fri 5PM</p>"
+              "heading-html": "<h2 class=\"h1 bold\">Happy Hour</h2><p class=\"h4\">Mon-Fri 5PM</p>",
+              "alt": "Happy Hour Monday through Friday 5 PM"
             }
           }
         },

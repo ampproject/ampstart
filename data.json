@@ -1,28 +1,141 @@
 {
   "www-render": {
+    "body-copy": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Body Copy",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
     "buttons": {
       "head-tag": {
-        "title": "AMP Start - UI Components - Buttons",
+        "title": "AMP Start - UI Components - Primary Buttons",
         "extensions": [],
         "css-path": "www/render/page.css"
       }
     },
-    "lists": {
+    "secondary-buttons": {
       "head-tag": {
-        "title": "AMP Start - UI Components - Lists",
+        "title": "AMP Start - UI Components - Secondary Buttons",
         "extensions": [],
         "css-path": "www/render/page.css"
       }
     },
-    "inputs": {
+    "byline": {
       "head-tag": {
-        "title": "AMP Start - UI Components - Inputs",
+        "title": "AMP Start - UI Components - Byline",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "byline": {
+        "image": "../../img/oval.png",
+        "author": {"text": "Jacinda B", "url": "#"},
+        "time": {"text": "Sept 10, 2016 @12:15 pm", "value":"2016-09-18T12:15"}
+      }
+    },
+    "media-heading-carousel": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Carousel with Heading",
+        "extensions": ["amp-carousel"],
+        "css-path": "www/render/page.css"
+      },
+      "carousel": {
+        "type": "slides",
+        "layout": "responsive",
+        "width": "1280",
+        "height": "853",
+        "images": [
+          {
+            "image-with-heading": {
+              "width": "1280",
+              "height": "853",
+              "url": "../../img/components/nasa-45074.jpg",
+              "alt:": "Image 1",
+              "heading-html": "<h3 class=\"h1\">Image 1</h3>"
+            }
+          },
+          {
+            "image-with-heading": {
+              "width": "1280",
+              "height": "853",
+              "url": "../../img/components/nasa-45068.jpg",
+              "caption": "Bright red flower. ",
+              "alt:": "Image 2",
+              "heading-html": "<h3 class=\"h1\">Image 2</h3>"
+            }
+          },
+          {
+            "image-with-heading": {
+              "width": "1280",
+              "height": "853",
+              "alt:": "Image 3",
+              "url": "../../img/components/nasa-45076.jpg",
+              "heading-html": "<h3 class=\"h1\">Image 3</h3>"
+            }
+          }
+        ]
+      }
+    },
+    "media-caption-carousel": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Carousel with Caption",
+        "extensions": ["amp-carousel"],
+        "css-path": "www/render/page.css"
+      },
+      "carousel": {
+        "type": "slides",
+        "layout": "responsive",
+        "width": "1280",
+        "height": "870",
+        "images": [
+          {
+            "image-with-caption": {
+              "width": "1280",
+              "height": "753",
+              "url": "../../img/components/nasa-45076.jpg",
+              "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
+              "credit": {
+                "credit-prefix": "Taken by ",
+                "author": {"text": "J.T. Lee", "url": "#"}
+              }
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "1280",
+              "height": "753",
+              "url": "../../img/components/nasa-45074.jpg",
+              "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
+              "credit": {
+                "credit-prefix": "Taken by ",
+                "author": {"text": "Mali D.", "url": "#"}
+              }
+            }
+          },
+          {
+            "image-with-caption": {
+              "width": "1280",
+              "height": "753",
+              "url": "../../img/components/nasa-45068.jpg",
+              "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
+              "credit": {
+                "credit-prefix": "Taken by ",
+                "author": {"text": "L. Fischer", "url": "#"}
+              }
+            }
+          }
+        ]
+      }
+    },
+    "checkbox": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Checkbox",
         "extensions": [
           "amp-form"
         ],
         "css-path": "www/render/page.css"
       },
-      "checkboxes": [
+      "elements": [
         {
           "label": "On",
           "checkbox": {
@@ -52,8 +165,302 @@
             "disabled": "disabled"
           }
         }
-      ],
-      "radios": [
+      ]
+    },
+    "dropcap": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Dropcap",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "footer": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Footer",
+        "extensions": [
+          "amp-social-share"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "footer": {
+        "social-follow": {
+          "links": [
+            {"twitter": "#"},
+            {"facebook": "#"},
+            {"pinterest": "#"},
+            {"email": "#"}
+          ]
+        },
+        "faq-links": {
+          "links": [
+            {"text": "About", "url": "#"},
+            {"text": "Contact", "url": "#"},
+            {"text": "Terms", "url": "#"}
+          ]
+        },
+        "copyright": {
+          "text": "© Your Company, 2016"
+        }
+      }
+    },
+    "fullpage-hero": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Full Page Hero",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "fullpage-hero": {
+        "heading-html": "Life on a space shuttle",
+        "alt": "Life on a space shuttle",
+        "narrow-img": "../../img/components/nasa-53885.jpg",
+        "wide-img": "../../img/components/nasa-53885.jpg",
+        "credit": {
+          "credit-prefix": "By",
+          "author": {"text": "D.F. Roy", "url": "#"},
+          "credit-suffix": "January 14, 2017"
+        },
+        "readmore": {
+          "text": "Read more",
+          "content-id": "content"
+        }
+      }
+    },
+    "headings": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Headings",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "img-heading": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Images with Headings",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "image-with-heading": {
+        "width": "1280",
+        "height": "853",
+        "url": "../../img/components/nasa-43564.jpg",
+        "heading-html": "<h1>Views from Space</h1>",
+        "alt": "Views from Space"
+      }
+    },
+    "img-caption": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Images with Captions",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "image-with-caption": {
+        "width": "1078",
+        "height": "1024",
+        "url": "../../img/components/nasa-89125.jpg",
+        "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
+        "credit": {
+          "credit-prefix": "Taken by ",
+          "author": {"text": "J.T. Lee", "url": "#"}
+        }
+      }
+    },
+    "initialcap": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Initialcap",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "ordered-list": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Ordered List",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "unordered-list": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Unordered List",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "navbar-sidebar-only": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Navigation Bar - Sidebar Only",
+        "extensions": [
+          "amp-accordion",
+          "amp-sidebar"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "navbar": {
+        "logo": {
+          "url": "../img/components/sidebar-example-logo.png",
+          "alt": "Example logo image",
+          "width": "110",
+          "height": "33"
+        },
+        "name": "The Blog",
+        "sidebar-id": "header-sidebar",
+        "sidebaronly": true,
+        "nav": [
+          {
+            "dropdown": {
+              "heading": "Fashion",
+              "options": [
+                {
+                  "link": {"url": "#", "text": "Styling Tips"}
+                },
+                {
+                  "link": {"url": "#", "text": "Designers"}
+                }
+              ]
+            }
+          },
+
+          {
+            "link": {"url": "#", "text": "Travel"}
+          },
+
+          {
+            "dropdown": {
+              "heading": "Food",
+              "options": [
+                {
+                  "link": {"url": "#", "text": "Recipes"}
+                },
+                {
+                  "link": {"url": "#", "text": "Hosting Tips"}
+                }
+              ]
+            }
+          },
+
+          {
+            "link": {"url": "#", "text": "Beauty"}
+          },
+
+          {
+            "link": {"url": "#", "text": "Shop"}
+          }
+        ],
+        "social-follow": {
+          "links": [
+            {"twitter": "#"},
+            {"facebook": "#"},
+            {"instagram": "#"},
+            {"pinterest": "#"},
+            {"email": "#"}
+          ]
+        },
+        "faq": {
+          "links": [
+            {
+              "link": {"url": "#", "text": "About"}
+            },
+            {
+              "link": {"url": "#", "text": "Contact"}
+            }
+          ]
+        }
+      }
+    },
+    "navbar-with-sidebar": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Navigation Bar - Sidebar Only",
+        "extensions": [
+          "amp-accordion",
+          "amp-sidebar"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "navbar": {
+        "logo": {
+          "url": "../img/components/sidebar-example-logo.png",
+          "alt": "Example logo image",
+          "width": "110",
+          "height": "33"
+        },
+        "name": "The Blog",
+        "sidebar-id": "header-sidebar",
+        "nav": [
+          {
+            "dropdown": {
+              "heading": "Fashion",
+              "options": [
+                {
+                  "link": {"url": "#", "text": "Styling Tips"}
+                },
+                {
+                  "link": {"url": "#", "text": "Designers"}
+                }
+              ]
+            }
+          },
+
+          {
+            "link": {"url": "#", "text": "Travel"}
+          },
+
+          {
+            "dropdown": {
+              "heading": "Food",
+              "options": [
+                {
+                  "link": {"url": "#", "text": "Recipes"}
+                },
+                {
+                  "link": {"url": "#", "text": "Hosting Tips"}
+                }
+              ]
+            }
+          },
+
+          {
+            "link": {"url": "#", "text": "Beauty"}
+          },
+
+          {
+            "link": {"url": "#", "text": "Shop"}
+          }
+        ],
+        "social-follow": {
+          "links": [
+            {"twitter": "#"},
+            {"facebook": "#"},
+            {"instagram": "#"},
+            {"pinterest": "#"},
+            {"email": "#"}
+          ]
+        },
+        "faq": {
+          "links": [
+            {
+              "link": {"url": "#", "text": "About"}
+            },
+            {
+              "link": {"url": "#", "text": "Contact"}
+            }
+          ]
+        }
+      }
+    },
+    "pullquote": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Pull Quote",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "radio": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Radio Inputs",
+        "extensions": [
+          "amp-form"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "elements": [
         {
           "label": "On",
           "radio": {
@@ -83,8 +490,207 @@
             "disabled": "disabled"
           }
         }
-      ],
-      "textboxes": [
+      ]
+    },
+    "rangeinput": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Range Inputs",
+        "extensions": [
+          "amp-form"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "elements": [
+        {
+          "label": "Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11",
+            "name": "name11"
+          }
+        },
+        {
+          "label": "Disabled Range Input",
+          "input": {
+            "type": "range",
+            "placeholder": "Select a range",
+            "id": "ip11a",
+            "name": "name11",
+            "disabled": "disabled"
+          }
+        }
+      ]
+    },
+    "related-article": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Related Article",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "section-heading": {
+        "level": "2",
+        "text": "Related article"
+      },
+      "hero-img": {
+        "width": "1280",
+        "height": "720",
+        "url": "../../img/components/nasa-43568.jpg",
+        "alt": "Grey box"
+      },
+      "article-heading": {
+        "level": "3",
+        "text": "Incredible views from space"
+      },
+      "content-text": "Nam semper tristique aliquet. Fusce et mauris elit. Nunc pharetra, felis pretium semper malesuada, tortor libero tincidunt arcu, sit amet fringilla magna ante sit amet magna. Praesent sem leo, fringilla at dolor eu, blandit malesuada dolor.",
+      "article-link": {"text": "Read more", "url": "#"}
+    },
+    "related-section": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Related Section",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      },
+      "heading": {
+        "level": "2",
+        "classes": "h3",
+        "text": "Recommended for you"
+      },
+      "images-with-caption": [
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../../img/components/nasa-45068.jpg",
+            "caption": "Imagine: life on the moon"
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../../img/components/nasa-43567.jpg",
+            "caption": "A satellite's view"
+          }
+        },
+        {
+          "image-with-caption": {
+            "width": "233",
+            "height": "202",
+            "url": "../../img/components/nasa-53885.jpg",
+            "caption": "Out-of-this-world space tech"
+          }
+        }
+      ]
+    },
+    "select": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Select",
+        "extensions": [
+          "amp-form"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "elements": [
+        {
+          "label": "Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12",
+            "name": "name12"
+          }
+        },
+        {
+          "label": "Disabled Select",
+          "select": {
+            "placeholder": "Select a fruit",
+            "options": [
+              "Apple", "Orange", "Lemon", "Grape"
+            ],
+            "id": "ip12a",
+            "name": "name12",
+            "disabled": "disabled"
+          }
+        }
+      ]
+    },
+    "sizes": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Sizes",
+        "extensions": [],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "social-follow": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Social Follow",
+        "extensions": [
+          "amp-social-share"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"pinterest": "#"},
+          {"instagram": "#"},
+          {"gplus": "#"},
+          {"email": "#"}
+        ]
+      }
+    },
+    "social-share": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Social Share",
+        "extensions": [
+          "amp-social-share"
+        ],
+        "css-path": "www/render/page.css"
+      }
+    },
+    "textarea": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Text Area",
+        "extensions": [
+          "amp-form"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "elements": [
+        {
+          "label": "Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "Write your story",
+            "id": "ip13",
+            "name": "name13"
+          }
+        },
+        {
+          "label": "Disabled Textarea",
+          "textarea": {
+            "rows": 5,
+            "placeholder": "This input is disabled",
+            "id": "ip13a",
+            "name": "name13",
+            "disabled": "disabled"
+          }
+        }
+      ]
+    },
+    "textbox": {
+      "head-tag": {
+        "title": "AMP Start - UI Components - Inputs",
+        "extensions": [
+          "amp-form"
+        ],
+        "css-path": "www/render/page.css"
+      },
+      "elements": [
         {
           "label": "Textbox",
           "input": {
@@ -126,460 +732,7 @@
             "name": "name4"
           }
         }
-      ],
-      "rangeinputs": [
-        {
-          "label": "Range Input",
-          "input": {
-            "type": "range",
-            "placeholder": "Select a range",
-            "id": "ip11",
-            "name": "name11"
-          }
-        },
-        {
-          "label": "Disabled Range Input",
-          "input": {
-            "type": "range",
-            "placeholder": "Select a range",
-            "id": "ip11a",
-            "name": "name11",
-            "disabled": "disabled"
-          }
-        }
-      ],
-      "textareas": [
-        {
-          "label": "Textarea",
-          "textarea": {
-            "rows": 5,
-            "placeholder": "Write your story",
-            "id": "ip13",
-            "name": "name13"
-          }
-        },
-        {
-          "label": "Disabled Textarea",
-          "textarea": {
-            "rows": 5,
-            "placeholder": "This input is disabled",
-            "id": "ip13a",
-            "name": "name13",
-            "disabled": "disabled"
-          }
-        }
-      ],
-      "selects": [
-        {
-          "label": "Select",
-          "select": {
-            "placeholder": "Select a fruit",
-            "options": [
-              "Apple", "Orange", "Lemon", "Grape"
-            ],
-            "id": "ip12",
-            "name": "name12"
-          }
-        },
-        {
-          "label": "Disabled Select",
-          "select": {
-            "placeholder": "Select a fruit",
-            "options": [
-              "Apple", "Orange", "Lemon", "Grape"
-            ],
-            "id": "ip12a",
-            "name": "name12",
-            "disabled": "disabled"
-          }
-        }
       ]
-    },
-    "typography": {
-      "head-tag": {
-        "title": "AMP Start - UI Components - Buttons",
-        "extensions": [],
-        "css-path": "www/render/page.css"
-      }
-    },
-    "media": {
-      "head-tag": {
-        "title": "AMP Start - UI Components - Buttons",
-        "extensions": [],
-        "css-path": "www/render/page.css"
-      },
-      "fullpage-hero": {
-        "heading-html": "Life on a space shuttle",
-        "narrow-img": "../../img/components/nasa-53885.jpg",
-        "wide-img": "../../img/components/nasa-53885.jpg",
-        "credit": {
-          "credit-prefix": "By",
-          "author": {"text": "D.F. Roy", "url": "#"},
-          "credit-suffix": "January 14, 2017"
-        },
-        "readmore": {
-          "text": "Read more",
-          "content-id": "content"
-        }
-      },
-      "img-heading": {
-        "image-with-heading": {
-          "width": "1280",
-          "height": "853",
-          "url": "../../img/components/nasa-43564.jpg",
-          "heading-html": "<h1>Views from Space</h1>"
-        }
-      },
-      "img-caption": {
-        "image-with-caption": {
-          "width": "1078",
-          "height": "1024",
-          "url": "../../img/components/nasa-89125.jpg",
-          "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
-          "credit": {
-            "credit-prefix": "Taken by ",
-            "author": {"text": "J.T. Lee", "url": "#"}
-          }
-        }
-      },
-      "byline": {
-        "image": "../../img/oval.png",
-        "author": {"text": "Jacinda B", "url": "#"},
-        "time": {"text": "Sept 10, 2016 @12:15 pm", "value":"2016-09-18T12:15"}
-      },
-      "related-section": {
-        "heading": {
-          "level": "2",
-          "classes": "h3",
-          "text": "Recommended for you"
-        },
-        "images-with-caption": [
-          {
-            "image-with-caption": {
-              "width": "233",
-              "height": "202",
-              "url": "../../img/components/nasa-45068.jpg",
-              "caption": "Imagine: life on the moon"
-            }
-          },
-          {
-            "image-with-caption": {
-              "width": "233",
-              "height": "202",
-              "url": "../../img/components/nasa-43567.jpg",
-              "caption": "A satellite's view"
-            }
-          },
-          {
-            "image-with-caption": {
-              "width": "233",
-              "height": "202",
-              "url": "../../img/components/nasa-53885.jpg",
-              "caption": "Out-of-this-world space tech"
-            }
-          }
-        ]
-      },
-      "related-article": {
-        "section-heading": {
-          "level": "2",
-          "text": "Related article"
-        },
-        "hero-img": {
-          "width": "1280",
-          "height": "720",
-          "url": "../../img/components/nasa-43568.jpg",
-          "alt": "Grey box"
-        },
-        "article-heading": {
-          "level": "3",
-          "text": "Incredible views from space"
-        },
-        "content-text": "Nam semper tristique aliquet. Fusce et mauris elit. Nunc pharetra, felis pretium semper malesuada, tortor libero tincidunt arcu, sit amet fringilla magna ante sit amet magna. Praesent sem leo, fringilla at dolor eu, blandit malesuada dolor.",
-        "article-link": {"text": "Read more", "url": "#"}
-      }
-    },
-    "media-carousel": {
-      "head-tag": {
-        "title": "AMP Start - UI Components - Buttons",
-        "extensions": ["amp-carousel"],
-        "css-path": "www/render/page.css"
-      },
-      "img-heading-carousel": {
-        "carousel": {
-          "type": "slides",
-          "layout": "responsive",
-          "width": "1280",
-          "height": "853",
-          "images": [
-            {
-              "image-with-heading": {
-                "width": "1280",
-                "height": "853",
-                "url": "../../img/components/nasa-45074.jpg",
-                "heading-html": "<h3 class=\"h1\">Image 1</h3>"
-              }
-            },
-            {
-              "image-with-heading": {
-                "width": "1280",
-                "height": "853",
-                "url": "../../img/components/nasa-45068.jpg",
-                "caption": "Bright red flower. ",
-                "heading-html": "<h3 class=\"h1\">Image 2</h3>"
-              }
-            },
-            {
-              "image-with-heading": {
-                "width": "1280",
-                "height": "853",
-                "url": "../../img/components/nasa-45076.jpg",
-                "heading-html": "<h3 class=\"h1\">Image 3</h3>"
-              }
-            }
-          ]
-        }
-      },
-      "img-caption-carousel": {
-        "carousel": {
-          "type": "slides",
-          "layout": "responsive",
-          "width": "1280",
-          "height": "870",
-          "images": [
-            {
-              "image-with-caption": {
-                "width": "1280",
-                "height": "753",
-                "url": "../../img/components/nasa-45076.jpg",
-                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
-                "credit": {
-                  "credit-prefix": "Taken by ",
-                  "author": {"text": "J.T. Lee", "url": "#"}
-                }
-              }
-            },
-            {
-              "image-with-caption": {
-                "width": "1280",
-                "height": "753",
-                "url": "../../img/components/nasa-45074.jpg",
-                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
-                "credit": {
-                  "credit-prefix": "Taken by ",
-                  "author": {"text": "Mali D.", "url": "#"}
-                }
-              }
-            },
-            {
-              "image-with-caption": {
-                "width": "1280",
-                "height": "753",
-                "url": "../../img/components/nasa-45068.jpg",
-                "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
-                "credit": {
-                  "credit-prefix": "Taken by ",
-                  "author": {"text": "L. Fischer", "url": "#"}
-                }
-              }
-            }
-          ]
-        }
-      }
-    },
-    "navigation": {
-      "head-tag": {
-        "title": "AMP Start - UI Components - Buttons",
-        "extensions": [
-          "amp-accordion",
-          "amp-sidebar"
-        ],
-        "css-path": "www/render/page.css"
-      },
-      "navbar-sidebar-only": {
-        "navbar": {
-          "logo": {
-            "url": "../img/components/sidebar-example-logo.png",
-            "alt": "Example logo image",
-            "width": "110",
-            "height": "33"
-          },
-          "name": "The Blog",
-          "sidebar-id": "header-sidebar",
-          "sidebaronly": true,
-          "nav": [
-            {
-              "dropdown": {
-                "heading": "Fashion",
-                "options": [
-                  {
-                    "link": {"url": "#", "text": "Styling Tips"}
-                  },
-                  {
-                    "link": {"url": "#", "text": "Designers"}
-                  }
-                ]
-              }
-            },
-
-            {
-              "link": {"url": "#", "text": "Travel"}
-            },
-
-            {
-              "dropdown": {
-                "heading": "Food",
-                "options": [
-                  {
-                    "link": {"url": "#", "text": "Recipes"}
-                  },
-                  {
-                    "link": {"url": "#", "text": "Hosting Tips"}
-                  }
-                ]
-              }
-            },
-
-            {
-              "link": {"url": "#", "text": "Beauty"}
-            },
-
-            {
-              "link": {"url": "#", "text": "Shop"}
-            }
-          ],
-          "social-follow": {
-            "links": [
-              {"twitter": "#"},
-              {"facebook": "#"},
-              {"instagram": "#"},
-              {"pinterest": "#"},
-              {"email": "#"}
-            ]
-          },
-          "faq": {
-            "links": [
-              {
-                "link": {"url": "#", "text": "About"}
-              },
-              {
-                "link": {"url": "#", "text": "Contact"}
-              }
-            ]
-          }
-        }
-      },
-      "navbar-with-sidebar": {
-        "navbar": {
-          "logo": {
-            "url": "../img/components/sidebar-example-logo.png",
-            "alt": "Example logo image",
-            "width": "110",
-            "height": "33"
-          },
-          "name": "The Blog",
-          "sidebar-id": "header-sidebar",
-          "nav": [
-            {
-              "dropdown": {
-                "heading": "Fashion",
-                "options": [
-                  {
-                    "link": {"url": "#", "text": "Styling Tips"}
-                  },
-                  {
-                    "link": {"url": "#", "text": "Designers"}
-                  }
-                ]
-              }
-            },
-
-            {
-              "link": {"url": "#", "text": "Travel"}
-            },
-
-            {
-              "dropdown": {
-                "heading": "Food",
-                "options": [
-                  {
-                    "link": {"url": "#", "text": "Recipes"}
-                  },
-                  {
-                    "link": {"url": "#", "text": "Hosting Tips"}
-                  }
-                ]
-              }
-            },
-
-            {
-              "link": {"url": "#", "text": "Beauty"}
-            },
-
-            {
-              "link": {"url": "#", "text": "Shop"}
-            }
-          ],
-          "social-follow": {
-            "links": [
-              {"twitter": "#"},
-              {"facebook": "#"},
-              {"instagram": "#"},
-              {"pinterest": "#"},
-              {"email": "#"}
-            ]
-          },
-          "faq": {
-            "links": [
-              {
-                "link": {"url": "#", "text": "About"}
-              },
-              {
-                "link": {"url": "#", "text": "Contact"}
-              }
-            ]
-          }
-        }
-      }
-    },
-    "other": {
-      "head-tag": {
-        "title": "AMP Start - UI Components - Buttons",
-        "extensions": [
-          "amp-social-share"
-        ],
-        "css-path": "www/render/page.css"
-      },
-      "social-follow": {
-        "links": [
-          {"twitter": "#"},
-          {"facebook": "#"},
-          {"pinterest": "#"},
-          {"instagram": "#"},
-          {"gplus": "#"},
-          {"email": "#"}
-        ]
-      },
-      "footer": {
-        "social-follow": {
-          "links": [
-            {"twitter": "#"},
-            {"facebook": "#"},
-            {"pinterest": "#"},
-            {"email": "#"}
-          ]
-        },
-        "faq-links": {
-          "links": [
-            {"text": "About", "url": "#"},
-            {"text": "Contact", "url": "#"},
-            {"text": "Terms", "url": "#"}
-          ]
-        },
-        "copyright": {
-          "text": "© Your Company, 2016"
-        }
-      }
     }
   }
 }

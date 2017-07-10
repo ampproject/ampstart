@@ -1,0 +1,87 @@
+{
+  "home": {
+    "head-tag": {
+      "title": "branding",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
+      ]
+    },
+    "navbar": {
+      "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path fill='none' d='M0 0h24v24H0z'/><path fill='currentColor' d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/></svg>",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "logo": {
+        "href": "/",
+        "name": "E-Commerce",
+        "classes": "h3 caps"
+      },
+      "nav": [
+        {
+          "link": {
+            "url": "#",
+            "text": "Products"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "About us"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "Blog"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "Contact us"
+          }
+        },
+        {
+          "link": {
+            "url": "#",
+            "text": "Bike register"
+          }
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {
+            "facebook": "#"
+          },
+          {
+            "instagram": "#"
+          },
+          {
+            "twitter": "#"
+          }
+        ]
+      },
+      "faq": {
+        "links": [
+          {
+            "link": {
+              "url": "#",
+              "text": "Size Guide"
+            }
+          },
+          {
+            "link": {
+              "url": "#",
+              "text": "Returns Policy"
+            }
+          },
+          {
+            "link": {
+              "url": "#",
+              "text": "Cookie & privacy policy"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

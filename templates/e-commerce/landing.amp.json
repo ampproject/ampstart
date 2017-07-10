@@ -1,91 +1,11 @@
 {
   "home": {
     "head-tag": {
-      "title": "branding",
-      "canonical-path": "templates/themes/3/home.amp",
+      "canonical-path": "templates/e-commerce/landing.amp",
       "extensions": [
         "amp-sidebar"
       ],
-      "font-stylesheets": [
-        "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700"
-      ],
       "css-path": "templates/e-commerce/page.css"
-    },
-    "navbar": {
-      "sidebar-id": "header-sidebar",
-      "sidebaronly": true,
-      "logo": {
-        "href": "/",
-        "name": "E-Commerce",
-        "classes": "h3 caps"
-      },
-      "nav": [
-        {
-          "link": {
-            "url": "#",
-            "text": "Products"
-          }
-        },
-        {
-          "link": {
-            "url": "#",
-            "text": "About us"
-          }
-        },
-        {
-          "link": {
-            "url": "#",
-            "text": "Blog"
-          }
-        },
-        {
-          "link": {
-            "url": "#",
-            "text": "Contact us"
-          }
-        },
-        {
-          "link": {
-            "url": "#",
-            "text": "Bike register"
-          }
-        }
-      ],
-      "social-follow": {
-        "links": [
-          {
-            "facebook": "#"
-          },
-          {
-            "instagram": "#"
-          },
-          {
-            "twitter": "#"
-          }
-        ]
-      },
-      "faq": {
-        "links": [
-          {
-            "link": {
-              "url": "#",
-              "text": "Size Guide"
-            }
-          },
-          {
-            "link": {
-              "url": "#",
-              "text": "Returns Policy"
-            }
-          },
-          {
-            "link": {
-              "url": "#",
-              "text": "Cookie & privacy policy"
-            }
-          }
-        ]
-      }
     },
     "main": {
       "heros": [
