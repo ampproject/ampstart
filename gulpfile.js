@@ -169,7 +169,9 @@ gulp.task('watch', 'watch stuff', ['build'], function() {
         config.src.components, config.src.templates, config.src.www_pages,
         config.src.css, config.src.data, config.src.img
       ],
-      ['img', 'postcss', 'posthtml', 'www', 'validate']);
+      function(event) {
+        runSequence(['img', 'postcss'], ['www', 'posthtml'], 'validate');
+      });
 });
 
 gulp.task('default', ['build']);
