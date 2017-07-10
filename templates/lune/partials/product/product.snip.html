@@ -191,20 +191,20 @@
             <div class="product__materials flex flex-column {{classes}}">
 
               {{#title_parts}}
-                <h3 class="caps lh-100 fs-356-mt fs-437-lg fs-562-vld product__materials__title product__materials__title--split black relative md-hide lg-hide {{title_classes}}">
+                <h3 amp-fx-parallax="{{title-parallax-factor}}" class="caps lh-100 fs-356-mt fs-437-lg fs-562-vld product__materials__title product__materials__title--split black relative md-hide lg-hide {{title_classes}}">
                   {{#mobile}}
                     <span>{{.}}</span>
                   {{/mobile}}
                 </h3>
 
-                <h3 class="caps lh-100 fs-356-mt fs-437-lg fs-562-vld product__materials__title product__materials__title--split black relative xs-hide sm-hide  {{title_classes}}">
+                <h3 amp-fx-parallax="{{title-parallax-factor}}" class="caps lh-100 fs-356-mt fs-437-lg fs-562-vld product__materials__title product__materials__title--split black relative xs-hide sm-hide  {{title_classes}}">
                   {{#desktop}}
                     <span>{{.}}</span>
                   {{/desktop}}
                 </h3>
               {{/title_parts}}
               {{^title_parts}}
-                <h3 class="caps lh-100 fs-356-mt fs-437-lg fs-562-vld product__materials__title black relative  {{title_classes}}">{{title}}</h3>
+                <h3 amp-fx-parallax="{{title-parallax-factor}}" class="caps lh-100 fs-356-mt fs-437-lg fs-562-vld product__materials__title black relative  {{title_classes}}">{{title}}</h3>
               {{/title_parts}}
 
               {{#images}}
@@ -212,6 +212,7 @@
                 <div class="product__materials__image relative {{classes}}">
                   <!-- TODO - Add srcset -->
                   <amp-img
+                      amp-fx-parallax="{{image-parallax-factor}}"
                       src="{{src}}"
                       width="{{width}}"
                       height="{{height}}"

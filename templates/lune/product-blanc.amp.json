@@ -6,7 +6,8 @@
       "extensions": [
         "amp-sidebar",
         "amp-fx-flying-carpet",
-        "amp-accordion"
+        "amp-accordion",
+        "amp-fx-parallax"
       ],
       "css-path": "templates/lune/products.css"
     },
@@ -64,17 +65,20 @@
         "title_parts": [],
         "list": [{
           "title": "Oak",
+          "title-parallax-factor": "0.85",
           "images": [{
             "src": "../../img/lune/blanc-product-materials-oak-01@2x.jpg",
             "classes": "col-11 product__materials__img--1",
             "width": 561,
             "height": 656,
+            "image-parallax-factor": "0.9",
             "hotspots": []
           }, {
             "src": "../../img/lune/blanc-product-materials-oak-02@2x.jpg",
             "classes": "col-10 self-end product__materials__img--2",
             "width": 500,
             "height": 785,
+            "image-parallax-factor": "1.1",
             "hotspots": [{
               "title": "More",
               "url": "#blanc-oak",
@@ -84,6 +88,7 @@
         }, {
           "classes": "product__materials--poly",
           "title": "Polypropylene",
+          "title-parallax-factor": "0.9",
           "title_classes": "ls-56-mt ls-67-lg lh-175-mt",
           "title_parts": {
             "mobile": [
@@ -101,6 +106,7 @@
             "classes": "product__materials__img--3 col-11 self-center",
             "width": 563,
             "height": 785,
+            "image-parallax-factor": "1.2",
             "hotspots": [{
               "title": "More",
               "url": "#blanc-polypropylene",
