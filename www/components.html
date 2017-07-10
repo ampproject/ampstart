@@ -74,11 +74,13 @@ limitations under the License.
             {{#code-file}}
             <div class="www-example-code mb4">
               <amp-accordion disable-session-states>
-                <section>
+                <section aria-label="Collapsed HTML Code for Amp Start UI Component">
                   <h3 class="caps h4 border-none py2">HTML</h3>
                   <!-- HTML markup used to render the element/component -->
                   <div class="pb2">
-                  <include src="dist/hl-partials/{{.}}.html"></include>
+                    <div aria-hidden="true"><include aria-hidden src="dist/hl-partials/{{.}}.html"></include></div>
+                    <!-- a11y readbale/selectable code -->
+                    <code class="hide"><include src="dist/hl-partials/esc-{{.}}.html"></include></code>
                   </div>
                 </section>
               </amp-accordion>

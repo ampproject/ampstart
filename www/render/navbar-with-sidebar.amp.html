@@ -17,13 +17,11 @@ limitations under the License.
 }}
 
 <!doctype html>
-{{#www-render.navigation}}
+{{#www-render.navbar-with-sidebar}}
 <html ⚡>
 {{> ../../utils/amp-page-head.snip.html}}
 <body>
-  {{#navbar-with-sidebar}}
   {{> ../../components/navbar/navbar.snip.html}}
-  {{/navbar-with-sidebar}}
   <main class="flex flex-wrap justify-around align-item items-center">
     <div class="flex flex-column items-center">
       <label class="www-example-label bold mb3"></label>
@@ -31,4 +29,4 @@ limitations under the License.
   </main>
 </body>
 </html>
-{{/www-render.navigation}}
+{{/www-render.navbar-with-sidebar}}

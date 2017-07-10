@@ -16,4 +16,5 @@
 
 require('./validate');
 require('./highlight');
+require('./escape');
 require('./bundle');

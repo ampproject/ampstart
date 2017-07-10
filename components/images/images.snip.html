@@ -19,7 +19,7 @@ limitations under the License.
 {{#image-with-heading}}
   <!-- Start Image with heading -->
   <figure class="ampstart-image-with-heading  m0 relative mb4">
-    <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="responsive"></amp-img>
+    <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" alt="{{alt}}" layout="responsive"></amp-img>
     <figcaption class="absolute right-0 bottom-0 left-0">
       <header class="ampstart-image-heading px2 py2 line-height-4">{{{heading-html}}}</header>
     </figcaption>
@@ -30,7 +30,7 @@ limitations under the License.
 {{#image-with-caption}}
   <!-- Start Image with Caption -->
   <figure class="ampstart-image-with-caption m0 relative mb4">
-    <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="responsive" class=""></amp-img>
+    <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" alt="{{#alt}}{{.}}{{/alt}}{{^alt}}{{caption}}{{/alt}}" layout="responsive" class=""></amp-img>
     <figcaption class="h5 mt1 px3">
       {{caption}}
       {{#credit}}
