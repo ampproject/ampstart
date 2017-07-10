@@ -4,7 +4,8 @@
       "title": "LUNE STORE",
       "canonical-path": "templates/store.amp",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-fx-parallax"
       ],
       "css-path": "templates/lune/store.css"
     },
