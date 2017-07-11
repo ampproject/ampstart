@@ -1,0 +1,377 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import './base-page';
+
+.ampstart-gallery-landing-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 80vw;
+  padding: 1rem;
+  /*
+   * The title font size is linear equation as a function of screen size:
+   *   font-size = max(3.625rem, 2rem + 1/32 * screen-size)
+   * The max is achieved by setting a breakpoint at the screen size where the
+   * equation equals the max size. (see next style declaration below)
+   */
+  font-size: calc(2rem + (1 / 32) * 100vw);
+  pointer-events: none;
+  /* Pull abovove sibling relative-positioned elements. */
+  z-index: 1;
+}
+
+.ampstart-gallery-landing-wall {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ampstart-gallery-landing-wall-scroll {
+  height: 100%;
+  width: 177.7vh;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
+@keyframes hover-one {
+  0% {transform: translateY(-2vh)}
+  50% {transform: translateY(2vh)}
+  100% {transform: translateY(-2vh)}
+}
+
+@keyframes hover-two {
+  0% {transform: translateY(-1vh)}
+  50% {transform: translateY(1vh)}
+  100% {transform: translateY(-1vh)}
+}
+
+[class^="ampstart-gallery-landing-image-wrap-"] {
+  width: 25vh;
+  position: absolute;
+  display: block;
+  transform-origin: 0px 0px 0px;
+
+  animation-name: hover-one;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+
+[class^="ampstart-gallery-landing-image-wrap-"]:nth-child(odd) {
+  animation-name: hover-two;
+}
+
+[class^="ampstart-gallery-landing-image-wrap-"] amp-img {
+  background: #ccc;
+  object-fit: cover;
+  box-shadow: 1vh 6vh 5vh var(--color-shadow);
+  transition: transform 300ms;
+  pointer-events: none;
+}
+
+[class^="ampstart-gallery-landing-image-wrap-"]:hover amp-img {
+  transform: scale(1.05);
+  transition: transform 200ms ease-out;
+}
+
+.ampstart-gallery-landing-image-wrap-0 {
+  animation-delay: 0s;
+  width: 24vh;
+  top: -1vh;
+  left: 14vh;
+}
+.ampstart-gallery-landing-image-wrap-0 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.521661, 0.127984, 0, 0.001017,
+                     0.082592, 1.496461, 0, 0.000351,
+                     0, 0, 1, 0,
+                     -56.643176, -55.187345, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-1 {
+  animation-delay: -2s;
+  width: 25vh;
+  top: -10vh;
+  left: 35vh;
+}
+.ampstart-gallery-landing-image-wrap-1 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.444379, 0.138817, 0, 0.000882,
+                   0.246091, 1.473779, 0, 0.000905,
+                   0, 0, 1, 0,
+                   -53.107588, -45.240566, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-2 {
+  animation-delay: -1s;
+  width: 46vh;
+  top: 48vh;
+  left:-1vh;
+}
+.ampstart-gallery-landing-image-wrap-2 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.104404, -0.050629, 0, 0.000115,
+                   0.223984, 1.35379, 0, 0.000809,
+                   0, 0, 1, 0,
+                   -24.574335, -22.172093, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-3 {
+  animation-delay: -3s;
+  width: 34vh;
+  top: 38vh;
+  left: 46vh;
+}
+.ampstart-gallery-landing-image-wrap-3 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.312456, 0.098572, 0, 0.000644,
+                     0.116002, 1.323502, 0, 0.000588,
+                     0, 0, 1, 0,
+                     -28.539579, -27.456328, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-4 {
+  animation-delay: -2s;
+  width: 23vh;
+  top: 69vh;
+  left: 7vh;
+}
+.ampstart-gallery-landing-image-wrap-4 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(0.998783, -0.044528, 0, 0.000032,
+                     0.07285, 1.139849, 0, 0.000198,
+                     0, 0, 1, 0,
+                     -4.515098, -5.430712, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-5 {
+  animation-delay: -4s;
+  width: 35vh;
+  top: 82vh;
+  left: 44vh;
+}
+.ampstart-gallery-landing-image-wrap-5 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.534047, 0.12295, 0, 0.001049,
+                    0.081503, 1.335949, 0, 0.000489,
+                    0, 0, 1, 0,
+                    -49.863192, -29.415962, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-6 {
+  animation-delay: -4s;
+  width: 39vh;
+  top: 13vh;
+  left: 65vh;
+}
+.ampstart-gallery-landing-image-wrap-6 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.208845, 0.004968, 0, 0.000161,
+                   0.169136, 1.372948, 0, 0.000839,
+                   0, 0, 1, 0,
+                   -32.627194, -29.944317, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-7 {
+  animation-delay: -6s;
+  width: 34vh;
+  top: 5vh;
+  left: 106vh;
+}
+.ampstart-gallery-landing-image-wrap-7 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(0.819634, -0.109733, 0, -0.000154,
+                   -0.11382, 0.81154, 0, -0.000399,
+                   0, 0, 1, 0,
+                   33.10833, 33.633254, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-8 {
+  animation-delay: -5s;
+  width: 30vh;
+  top: 1vh;
+  left: 137vh;
+}
+.ampstart-gallery-landing-image-wrap-8 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.193897, 0.087705, 0, 0.000467,
+                    0.076065, 1.194052, 0, 0.000205,
+                    0, 0, 1, 0,
+                    -21.152673, -20.648401, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-9 {
+  animation-delay: -7s;
+  width: 42vh;
+  top: 52vh;
+  left: 108vh;
+}
+.ampstart-gallery-landing-image-wrap-9 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(0.819634, -0.109733, 0, -0.000154,
+                   -0.11382, 0.81154, 0, -0.000399,
+                   0, 0, 1, 0,
+                   33.10833, 33.633254, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-10 {
+  animation-delay: -6s;
+  width: 30vh;
+  top: 62vh;
+  left: 85vh;
+}
+.ampstart-gallery-landing-image-wrap-10 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(0.89571, -0.038726, 0, 0.000055,
+                    -0.083272, 0.894952, 0, -0.000429,
+                    0, 0, 1, 0,
+                    23.268295, 11.492843, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-11 {
+  animation-delay: -9s;
+  width: 42vh;
+  top: 66vh;
+  left: 189vh;
+}
+.ampstart-gallery-landing-image-wrap-11 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(0.867716, -0.079118, 0, -0.000161,
+                   -0.106942, 1.015822, 0, -0.00004,
+                   0, 0, 1, 0,
+                   34.862638, 3.24487, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-12 {
+  animation-delay: -8s;
+  width: 25vh;
+  top: -3vh;
+  left: 88vh;
+}
+.ampstart-gallery-landing-image-wrap-12 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(0.962128, 0.072648, 0, 0.000217,
+                   -0.14266, 0.787403, 0, -0.000634,
+                   0, 0, 1, 0,
+                   25.055509, 10.224789, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-13 {
+  animation-delay: -10s;
+  width: 39vh;
+  top: -2vh;
+  left: 182vh;
+}
+.ampstart-gallery-landing-image-wrap-13 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.212487, 0.110254, 0, 0.000537,
+                    -0.037257, 1.077496, 0, -0.000037,
+                    0, 0, 1, 0,
+                    -12.026806, -13.900956, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-14 {
+  animation-delay: -9s;
+  width: 29vh;
+  top: 71vh;
+  left: 126vh;
+}
+.ampstart-gallery-landing-image-wrap-14 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(0.91049, -0.084392, 0, -0.000021,
+                   0.048552, 0.930481, 0, -0.000257,
+                   0, 0, 1, 0,
+                   0.486161, 14.78311, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-15 {
+  animation-delay: -11s;
+  width: 28vh;
+  top: 27vh;
+  left: 172vh;
+}
+.ampstart-gallery-landing-image-wrap-15 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.020174, -0.024515, 0, 0.000056,
+                   0.074137, 1.131994, 0, 0.000252,
+                   0, 0, 1, 0,
+                   -6.0324, -7.678183, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-16 {
+  animation-delay: -10s;
+  width: 42vh;
+  top: 47vh;
+  left: 204vh;
+}
+.ampstart-gallery-landing-image-wrap-16 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.017658, 0.047053, 0, 0.000139,
+                   -0.070528, 0.886048, 0, -0.000278,
+                   0, 0, 1, 0,
+                   5.477972, 7.254419, 0, 1);
+}
+
+.ampstart-gallery-landing-image-wrap-17 {
+  animation-delay: -12s;
+  width: 30vh;
+  top: 54vh;
+  left: 162vh;
+}
+.ampstart-gallery-landing-image-wrap-17 .ampstart-gallery-landing-image-transform {
+  width: 100%;
+  height: 100%;
+  transform: matrix3d(1.240996, 0.134028, 0, 0.000724,
+                    0.045148, 0.984221, 0, -0.000332,
+                    0, 0, 1, 0,
+                    -27.79074, -7.127927, 0, 1);
+}
+
+[class^="ampstart-gallery-landing-image-wrap-"] .ampstart-gallery-landing-image-transform {
+  transform-origin: 0px 0px 0px;
+}

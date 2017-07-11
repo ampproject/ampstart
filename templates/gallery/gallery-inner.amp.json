@@ -1,0 +1,125 @@
+{
+  "gallery": {
+    "head-tag": {
+      "title": "Gallery Template",
+      "canonical-path": "templates/gallery-inner.amp",
+      "extensions": [
+        "amp-iframe",
+        "amp-carousel",
+        "amp-sidebar"
+      ],
+      "css-path": "templates/gallery/inner.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Poppins:400,500",
+        "https://fonts.googleapis.com/css?family=Oswald:400"
+      ]
+    },
+    "header": {
+      "heading": "Museum of Contemporary Art",
+      "href": "./gallery.amp.html",
+      "mobile-header": true,
+      "invert": true
+    },
+    "sidebar": {
+      "links": [{
+        "text": "Home",
+        "href": "./gallery.amp.html"
+      }, {
+        "text": "Untitled<br/>Evan Ondre",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "../../img/gallery/1429886_200.jpg",
+          "2x": "../../img/gallery/1429886_400.jpg"
+        }
+      }, {
+        "text": "Cage<br/>Ellen Doe",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=834",
+          "2x": "https://unsplash.it/200/200/?image=834"
+        }
+      }, {
+        "text": "Living Tree<br/>David Beck",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=764",
+          "2x": "https://unsplash.it/200/200/?image=764"
+        }
+      }, {
+        "text": "Untitled<br/>Anna Moss",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=682",
+          "2x": "https://unsplash.it/200/200/?image=682"
+        }
+      }, {
+        "text": "Living Tree<br/>David Beck",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=679",
+          "2x": "https://unsplash.it/200/200/?image=679"
+        }
+      }, {
+        "text": "Untitled<br/>Anna Moss",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=677",
+          "2x": "https://unsplash.it/200/200/?image=677"
+        }
+      }]
+    },
+    "hero": {
+      "heading": "Living Tree",
+      "subheading": "<time datetime=\"2017-08-24\">Sept 24</time>-<time datetime=\"2017-08-29\">29</time> / Anna Moss",
+      "button": {
+        "text": "Buy Tickets"
+      },
+      "carousel": {
+        "height": 316,
+        "images": [{
+          "width": 472,
+          "height": 316,
+          "src": "../../img/gallery/1429886_200.jpg",
+          "2x": "../../img/gallery/1429886_400.jpg"
+        }, {
+          "width": 516,
+          "height": 316,
+          "src": "../../img/gallery/1431916_200.jpg",
+          "2x": "../../img/gallery/1431916_400.jpg"
+        }, {
+          "width": 211,
+          "height": 316,
+          "src": "../../img/gallery/1097005_200.jpg",
+          "2x": "../../img/gallery/1097005_400.jpg"
+        }, {
+          "width": 316,
+          "height": 316,
+          "src": "../../img/gallery/1028245_200.jpg",
+          "2x": "../../img/gallery/1028245_400.jpg"
+        }, {
+          "width": 361,
+          "height": 316,
+          "src": "../../img/gallery/1196479_200.jpg",
+          "2x": "../../img/gallery/1196479_400.jpg"
+        }, {
+          "width": 472,
+          "height": 316,
+          "src": "../../img/gallery/1008988_200.jpg",
+          "2x": "../../img/gallery/1008988_400.jpg"
+        }]
+      },
+      "content": "<blockquote>Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu in. Tellus at ut. Ac mi varius ut.</blockquote>"
+    },
+    "map": {
+      "heading": "Visit the exhibition from <time datetime=\"2017-08-24\">Sept 24</time>-<time datetime=\"2017-08-29\">29</time>",
+      "subheading": "123 St Name <br/>City, State 12345",
+      "button": {
+        "text": "Buy Tickets"
+      },
+      "marker": {
+        "lat": 37.422,
+        "lng": -122.084
+      }
+    }
+  }
+}
