@@ -1,0 +1,61 @@
+@import "../page-vars";
+
+.lune amp-sidebar {
+  width: 80vw;
+}
+
+.lune amp-sidebar .ampstart-navbar-trigger  {
+  padding-top: .625rem; /* 10px */
+}
+
+/* On large device the width should be set to 50vw */
+@media (--breakpoint-lg) {
+  .lune amp-sidebar {
+    width: 50vw;
+  }
+}
+
+/* The design has a transparent mask, this selector passes the validator */
+.lune div[class*='sidebar-mask'] {
+  opacity: 0;
+}
+
+.lune .ampstart-sidebar-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 100%;
+
+  transform: translate(-50%, -50%);
+}
+
+.lune .ampstart-nav-item {
+  display: block;
+
+  width: 80%;
+  max-width: 7.5em;
+
+  margin: auto;
+
+  font-size: 1.5rem; /* 24px */
+  font-weight: var(--font-weight-black);
+
+  line-height: 3.84;
+
+  text-transform: uppercase;
+}
+
+.lune .ampstart-nav-item a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lune .ampstart-nav-item:last-child a {
+  font-size: 1.125rem; /* 18px */
+
+  letter-spacing: .12em;
+
+  text-decoration: underline;
+  text-transform: lowercase;
+}
