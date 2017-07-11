@@ -18,26 +18,26 @@
       "colours": [{
           "name": "white",
           "thumb": {
-            "image1": "/img/e-commerce/product/light-small-1.jpg",
-            "image2": "/img/e-commerce/product/light-small-2.jpg",
-            "image3": "/img/e-commerce/product/light-small-3.jpg"
+            "image1": "../../img/e-commerce/product/light-small-1.jpg",
+            "image2": "../../img/e-commerce/product/light-small-2.jpg",
+            "image3": "../../img/e-commerce/product/light-small-3.jpg"
           },
           "large": {
-            "image1": "/img/e-commerce/product/light-large-1.jpg",
-            "image2": "/img/e-commerce/product/light-large-2.jpg",
-            "image3": "/img/e-commerce/product/light-large-3.jpg"
+            "image1": "../../img/e-commerce/product/light-large-1.jpg",
+            "image2": "../../img/e-commerce/product/light-large-2.jpg",
+            "image3": "../../img/e-commerce/product/light-large-3.jpg"
           }
         },{
           "name": "green",
           "thumb": {
-            "image1": "/img/e-commerce/product/dark-small-1.jpg",
-            "image2": "/img/e-commerce/product/dark-small-2.jpg",
-            "image3": "/img/e-commerce/product/dark-small-3.jpg"
+            "image1": "../../img/e-commerce/product/dark-small-1.jpg",
+            "image2": "../../img/e-commerce/product/dark-small-2.jpg",
+            "image3": "../../img/e-commerce/product/dark-small-3.jpg"
           },
           "large": {
-            "image1": "/img/e-commerce/product/dark-large-1.jpg",
-            "image2": "/img/e-commerce/product/dark-large-2.jpg",
-            "image3": "/img/e-commerce/product/dark-large-3.jpg"
+            "image1": "../../img/e-commerce/product/dark-large-1.jpg",
+            "image2": "../../img/e-commerce/product/dark-large-2.jpg",
+            "image3": "../../img/e-commerce/product/dark-large-3.jpg"
           }
         }
       ],
