@@ -1,0 +1,18 @@
+{
+  "home": {
+    "head-tag": {
+      "canonical-path": "templates/e-commerce/product-details.amp",
+      "extensions": [
+        "amp-sidebar",
+        "amp-list",
+        "amp-bind"
+      ],
+      "templates": [
+        "amp-mustache"
+      ]
+    },
+    "main": {
+
+    }
+  }
+}

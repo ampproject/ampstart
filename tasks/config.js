@@ -21,15 +21,17 @@ module.exports = {
       '{templates, dummy}/**/*.html',
       '!templates/e-commerce/partials/hero/*.html'
     ],
+    templateData: 'templates/*/data/*.json',
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
     css: ['css/**/*.css', '!css/ampstart-base/**/*.css'],
-    data: '*/**/*.json',
+    data: ['*/**/*.json', '!templates/*/data/*.json'],
     img: 'img/**',
   },
   dest: {
     default: 'dist',
     templates: 'dist',
+    templateData: 'dist/templates',
     www_pages: 'dist',
     hl_partials: 'dist/hl-partials',
     css: 'dist/css/',

@@ -1,0 +1,25 @@
+{
+	"items": [
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 437,
+			"image": "/img/e-commerce/product/product.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 443,
+			"image": "/img/e-commerce/product/product.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 604,
+			"image": "/img/e-commerce/product/product.jpg",
+			"category": "womens"
+		}
+	]
+}
