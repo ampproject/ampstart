@@ -117,7 +117,7 @@ limitations under the License.
         <hr class="xs-hide sm-hide mt4" />
         <div class="col-12 md-col-6 px2 md-pl7 commerce-product-desc">
           <section class="pt4 pb4 md-pt6 md-px4">
-            <h5 class="md-h4">Overview</h5>
+            <h2 class="h5 md-h4">Overview</h2>
             <p class="mt2">Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus
               ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin
               fermentum odio, odio arcu in eu wisi. </p>
@@ -126,7 +126,7 @@ limitations under the License.
         </div>
         <div class="col-12 md-col-5 md-pr7 md-pl5 commerce-panel-filled">
           <section class="pt4 pb4 px2 md-pt6">
-            <h5 class="md-h4">Size Guide</h5>
+            <h2 class="h5 md-h4">Size Guide</h2>
             <div class="mt2">
               <table class="commerce-table center">
                 <thead class="commerce-table-header h7">
@@ -157,21 +157,17 @@ limitations under the License.
           </section>
           <hr class="md-hide lg-hide" />
           <section class="pt4 pb4 px2 commerce-panel-empty md-commerce-panel-filled">
-            <h5 class="md-h4">Full spec</h5>
+            <h2 class="h5 md-h4">Full spec</h2>
             <div class="mt2">
-              <table class="commerce-table commerce-table-vertical left-align">
+              <dl class="flex flex-wrap">
                 {{#specs}}
-                <tr>
-                  <th>{{header}}</th>
-                  <td>{{body}}</td>
-                </tr>
+                <dt class="h7 col-4 sm-col-3 md-col-5 lg-col-4 pb1">{{header}}</dt>
+                <dd class="m0 col-8 sm-col-9 md-col-7 lg-col-8 pb1">{{body}}</dd>
                 {{/specs}}
-              </table>
+              </dl>
             </div>
           </section>
         </div>
-
-        <div class="reviews"></div>
       </div>
     </section>
     {{/product-details}}

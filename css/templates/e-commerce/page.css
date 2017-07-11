@@ -1,4 +1,5 @@
 @import '../../core';
+@import 'basscss-responsive-type-scale';
 @import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
@@ -21,46 +22,14 @@ body {
 h1, h2, h3, h4, h5, h6, h7,
 .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
   line-height: normal;
-  letter-spacing: 0;
+  letter-spacing: normal;
   font-family: var(--title-font);
   text-transform: uppercase;
   font-weight: bold;
   color: var(--color-black);
 }
 
-.mb5 {
-  margin-bottom: var(--space-6);
-}
-
-.pb5 {
-  padding-bottom: var(--space-6);
-}
-
 @media (--breakpoint-md) {
-  .md-h1 {
-    font-size: var(--h1);
-  }
-
-  .md-h2 {
-    font-size: var(--h2);
-  }
-
-  .md-h3 {
-    font-size: var(--h3);
-  }
-
-  .md-h4 {
-    font-size: var(--h4);
-  }
-
-  .md-h5 {
-    font-size: var(--h5);
-  }
-
-  .md-h6 {
-    font-size: var(--h6);
-  }
-
   .md-h7 {
     font-size: var(--h7);
   }
@@ -99,6 +68,7 @@ h1, h2, h3, h4, h5, h6, h7,
 
 /* ELEMENTS */
 hr {
+  /* Allows separator to be full width outside of main container padding */
   width: calc(100% + 2 * var(--space-3));
   height: 1px;
   background-color: var(--color-separator);
@@ -113,6 +83,12 @@ hr {
   }
 }
 
+dd:after {
+  content: '';
+  display: block;
+}
+
+/* TODO: Merge with existing amp-start select component */
 .commerce-select-wrapper {
   display: inline-block;
   position: relative;
@@ -214,26 +190,6 @@ amp-selector [option][selected] {
 
 .commerce-table td:first-child {
   width: 50%;
-}
-
-/* Vertical table */
-.commerce-table-vertical td,
-.commerce-table-vertical th {
-  border: none;
-  line-height: var(--space-3);
-  width: auto;
-}
-
-.commerce-table-vertical th {
-  width: 30%;
-  vertical-align: top;
-}
-
-.commerce-table-vertical td {
-  font-family: var(--font-family);
-  font-weight: normal;
-  text-transform: none;
-  background-color: initial;
 }
 
 
