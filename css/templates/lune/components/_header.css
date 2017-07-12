@@ -1,10 +1,7 @@
 @import "../page-vars";
 
 .ampstart-headerbar {
-  display: flex;
-  align-items: center;
-
-  height: var(--layout-header-height-m);
+  height: var(--layout-header-height-mobile);
 
   box-shadow: none;
 
@@ -40,7 +37,7 @@
   }
 
   .ampstart-headerbar {
-    height: var(--layout-header-height-d);
+    height: var(--layout-header-height-desktop);
   }
 }
 
