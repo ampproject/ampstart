@@ -3,8 +3,10 @@
 .ampstart-headerbar {
   height: var(--layout-header-height-mobile);
 
+  /* Override ampstart default box shadow styles */
   box-shadow: none;
 
+  /* header is fixed so should be moved onto a new GPU layer */
   will-change: transform;
 }
 
