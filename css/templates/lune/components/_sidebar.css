@@ -3,11 +3,22 @@
 
 .ampstart-sidebar {
   width: 80vw;
+  /* Keep the header bar visible when the sidebar is open */
+  height: calc(100vh - var(--layout-header-height-mobile));
+  margin-top: var(--layout-header-height-mobile);
+  padding-bottom: calc(var(--layout-header-height-mobile) / 2);
 
   display: flex;
   align-items: center;
 }
 
+@media (--breakpoint-mt) {
+  .ampstart-sidebar {
+    /* Keep the header bar visible when the sidebar is open */
+    margin-top: var(--layout-header-height-desktop);
+    height: calc(100vh - var(--layout-header-height-desktop));
+    padding-bottom: calc(var(--layout-header-height-desktop) / 2);
+  }
 }
 
 /* On large device the width should be set to 50vw */
