@@ -29,6 +29,11 @@ h1, h2, h3, h4, h5, h6, h7,
   color: var(--color-black);
 }
 
+
+/**
+ * TODO: BassCSS addon works for space 1 - 4, however we need it for space 5+.
+ * this approach should be revised.
+ */
 @media (--breakpoint-md) {
   .md-h7 {
     font-size: var(--h7);
