@@ -1,4 +1,5 @@
 @import '../../core';
+@import 'basscss-addons/modules/responsive-type-scale';
 @import '../../../components/images/images';
 @import '../../../components/navbar/navbar';
 @import 'page-vars';
