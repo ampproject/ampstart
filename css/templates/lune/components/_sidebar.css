@@ -15,11 +15,6 @@
   }
 }
 
-/* The design has a transparent mask, this selector passes the validator */
-div[class*='sidebar-mask'] {
-  opacity: 0;
-}
-
 .ampstart-sidebar-nav {
   position: absolute;
   top: 50%;
