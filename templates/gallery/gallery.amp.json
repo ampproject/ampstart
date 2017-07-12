@@ -1,0 +1,67 @@
+{
+  "gallery": {
+    "head-tag": {
+      "title": "Gallery Template",
+      "canonical-path": "templates/gallery.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "css-path": "templates/gallery/landing.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Poppins:400,500"
+      ]
+    },
+    "header": {
+      "heading": "Museum of Contemporary&nbsp;Art",
+      "invert": true
+    },
+    "sidebar": {
+      "links": [{
+        "text": "Home",
+        "href": "./gallery.amp.html"
+      }, {
+        "text": "Untitled<br/>Evan Ondre",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=821",
+          "2x": "https://unsplash.it/200/200/?image=821"
+        }
+      }, {
+        "text": "Cage<br/>Ellen Doe",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=834",
+          "2x": "https://unsplash.it/200/200/?image=834"
+        }
+      }, {
+        "text": "Living Tree<br/>David Beck",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=764",
+          "2x": "https://unsplash.it/200/200/?image=764"
+        }
+      }, {
+        "text": "Untitled<br/>Anna Moss",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=682",
+          "2x": "https://unsplash.it/200/200/?image=682"
+        }
+      }, {
+        "text": "Living Tree<br/>David Beck",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=679",
+          "2x": "https://unsplash.it/200/200/?image=679"
+        }
+      }, {
+        "text": "Untitled<br/>Anna Moss",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "https://unsplash.it/100/100/?image=677",
+          "2x": "https://unsplash.it/200/200/?image=677"
+        }
+      }]
+    }
+  }
+}

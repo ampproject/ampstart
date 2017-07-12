@@ -1,0 +1,160 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import './base-page';
+
+.ampstart-gallery-base-section {
+  font-size: 1.12rem;
+}
+
+.ampstart-gallery-inner-offset-img {
+  margin-left: 0;
+}
+
+@media (--breakpoint-sm) {
+  .ampstart-gallery-inner-offset-img {
+    margin-left: calc(-(100 / 16) * 1rem);
+  }
+}
+
+.ampstart-gallery-inner-background-1 {
+  position: absolute;
+  width: calc(20vmin + (200 / 16) * 1rem);
+  left: calc(20vw - (160 / 16) * 1rem);
+  top: 140vh;
+}
+
+.ampstart-gallery-inner-background-2 {
+  position: absolute;
+  width: calc(100vmin + (400 / 16) * 1rem);
+  left: 40vw;
+  top: 10vh;
+}
+
+.ampstart-gallery-inner-perspective {
+  perspective: 2500px;
+  transform-style: preserve-3d;
+}
+
+.ampstart-gallery-inner-3d-row {
+  padding-bottom: 120%;
+  position: relative;
+}
+
+@media (--breakpoint-md) {
+  .ampstart-gallery-inner-3d-row {
+    padding-bottom: 40%;
+  }
+}
+
+.ampstart-gallery-inner-3d-row-img-left,
+.ampstart-gallery-inner-3d-row-img-center,
+.ampstart-gallery-inner-3d-row-img-right {
+  position: absolute;
+  transition: transform 0.5s;
+}
+
+.ampstart-gallery-inner-3d-row-img-left amp-img,
+.ampstart-gallery-inner-3d-row-img-center amp-img,
+.ampstart-gallery-inner-3d-row-img-right amp-img {
+  transition: box-shadow 0.5s;
+  box-shadow: 0 30px 60px var(--color-shadow);
+}
+
+.ampstart-gallery-inner-3d-row-img-left {
+  width: 80%;
+  left: -10%;
+  top: -10%;
+  transform: rotateX(-12deg) rotateY(20deg) rotateZ(2deg);
+}
+
+.ampstart-gallery-inner-3d-row-img-center {
+  width: 90%;
+  left: 3%;
+  top: 50%;
+  z-index: 1;
+  transform: translateZ(120px) rotateX(-6deg) rotateY(-1deg);
+}
+
+.ampstart-gallery-inner-3d-row-img-right {
+  width: 65%;
+  right: -10%;
+  top: 20%;
+  transform: translateZ(60px) rotateY(-40deg);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-gallery-inner-3d-row-img-left {
+    width: 40%;
+    left: -20%;
+    top: -18%;
+  }
+
+  .ampstart-gallery-inner-3d-row-img-center {
+    width: 40%;
+    left: 5%;
+    top: 10%;
+  }
+
+  .ampstart-gallery-inner-3d-row-img-right {
+    width: 30%;
+    right: 3%;
+    top: -25%;
+  }
+}
+
+.ampstart-gallery-inner-3d-row-img-left:hover,
+.ampstart-gallery-inner-3d-row-img-center:hover,
+.ampstart-gallery-inner-3d-row-img-right:hover {
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.ampstart-gallery-inner-3d-row-img-left:hover {
+  transform: translateZ(200px);
+}
+
+.ampstart-gallery-inner-3d-row-img-center:hover {
+  transform: translateZ(200px);
+}
+
+.ampstart-gallery-inner-3d-row-img-right:hover {
+  transform: translateZ(200px);
+}
+
+.ampstart-gallery-inner-3d-row-img-left:hover amp-img,
+.ampstart-gallery-inner-3d-row-img-center:hover amp-img,
+.ampstart-gallery-inner-3d-row-img-right:hover amp-img {
+  transition: box-shadow 0.25s;
+  box-shadow: 0 30px 80px var(--color-shadow);
+}
+
+
+@media (--breakpoint-md) {
+  .ampstart-gallery-inner-img-right {
+    margin-left: calc((-90 / 16) * 1rem);
+  }
+}
+
+.ampstart-gallery-inner-img-right-small {
+  margin-top: calc((-60 / 16) * 1rem);
+  float: right;
+}
+
+@media (--breakpoint-sm) {
+  .ampstart-gallery-inner-img-right-small {
+    margin-top: 0;
+  }
+}

@@ -14,20 +14,15 @@
  * limitations under the License.
  */
 
-const gulp = require('gulp-help')(require('gulp'));
-const validator = require('gulp-amphtml-validator');
-const config = require('./config');
-
-function validate() {
-  return gulp.src([
-        `${config.dest.templates}/**/*.amp.html`,
-        `${config.dest.www_pages}/**/*.amp.html`,
-        `!${config.dest.templates}/components/**/*.html`,
-        `!${config.dest.hl_partials}/**/*.html`,
-      ])
-      .pipe(validator.validate())
-      .pipe(validator.format())
-      .pipe(validator.failAfterError());
+:root {
+  --font-size: 16;
+  --font-color-primary: #000;
+  --font-family-primary: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  --font-family-secondary: "Oswald", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+  --color-primary: #3F4AE6;
+  --color-secondary: #FF5774;
+  --color-secondary-inverted: #00A88B;
+  --color-shadow: rgba(6, 7, 22, 0.15);
+  --line-height: 1.6;
+  --footer-height: calc((50 / 16) * 1rem);
 }
-
-gulp.task('validate', validate);

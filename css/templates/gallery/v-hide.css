@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-const gulp = require('gulp-help')(require('gulp'));
-const validator = require('gulp-amphtml-validator');
-const config = require('./config');
+@import './bass-override-vars';
 
-function validate() {
-  return gulp.src([
-        `${config.dest.templates}/**/*.amp.html`,
-        `${config.dest.www_pages}/**/*.amp.html`,
-        `!${config.dest.templates}/components/**/*.html`,
-        `!${config.dest.hl_partials}/**/*.html`,
-      ])
-      .pipe(validator.validate())
-      .pipe(validator.format())
-      .pipe(validator.failAfterError());
+@media (--breakpoint-v-xs) {
+  .v-xs-hide { display: none }
 }
 
-gulp.task('validate', validate);
+@media (--breakpoint-v-sm-md) {
+  .v-sm-hide { display: none }
+}
+
+@media (--breakpoint-v-md-lg) {
+  .v-md-hide { display: none }
+}
+
+@media (--breakpoint-v-lg) {
+  .v-lg-hide { display: none }
+}

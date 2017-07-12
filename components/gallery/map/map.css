@@ -14,20 +14,26 @@
  * limitations under the License.
  */
 
-const gulp = require('gulp-help')(require('gulp'));
-const validator = require('gulp-amphtml-validator');
-const config = require('./config');
-
-function validate() {
-  return gulp.src([
-        `${config.dest.templates}/**/*.amp.html`,
-        `${config.dest.www_pages}/**/*.amp.html`,
-        `!${config.dest.templates}/components/**/*.html`,
-        `!${config.dest.hl_partials}/**/*.html`,
-      ])
-      .pipe(validator.validate())
-      .pipe(validator.format())
-      .pipe(validator.failAfterError());
+.ampstart-gallery-component-map {
+  margin-top: calc(180 / 16rem);
 }
 
-gulp.task('validate', validate);
+.ampstart-gallery-component-map .ampstart-gallery-component-map-heading {
+  width: calc((240 / 16) * 1rem);
+  margin-bottom: 3rem;
+}
+
+.ampstart-gallery-component-map .ampstart-gallery-component-button {
+  margin-left: calc(3.5vw + 1rem);
+}
+
+@media (--breakpoint-lg) {
+  .ampstart-gallery-component-map-button {
+    margin-left: calc((40 / 16) * 1rem);
+  }
+}
+
+.ampstart-gallery-component-map-frame {
+  margin-top: calc((120 / 16) * 1rem);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%, rgba(0,0,0,1) calc((140 / 16) * 1rem));
+}
