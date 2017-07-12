@@ -53,12 +53,33 @@
   text-transform: uppercase;
 }
 
-.ampstart-nav-item a {
+.ampstart-nav-link {
+  position: relative;
+
   display: flex;
   justify-content: space-between;
 }
 
-.ampstart-nav-item:last-child a {
+/* Strikethrough effect on hover */
+.ampstart-nav-link::before {
+  position: absolute;
+  top: 50%;
+  left: -4px;
+  right: -4px;
+  height: 2px;
+  content: '';
+  background: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
+}
+
+.ampstart-nav-link:hover::before {
+  transform: none;
+}
+
+.ampstart-nav-item:last-child .ampstart-nav-link {
   font-size: 1.125rem; /* 18px */
 
   letter-spacing: .12em;
