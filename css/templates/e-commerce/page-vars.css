@@ -15,7 +15,8 @@
  */
 
 :root {
-  --color-font-accent: #ff8888;
+  --color-font-accent: var(--color-primary);
+  --color-input-secondary: var(--color-white);
   --color-primary: #000;
   --color-secondary: #222;
   --color-font-default: #666;

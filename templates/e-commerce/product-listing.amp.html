@@ -34,23 +34,30 @@ limitations under the License.
     </script>
   </amp-state>
 
-  <h1 class="h3">Products</h1>
 
-  <select class="mt4" on="change: AMP.setState({products: {category: event.value}})">
-    <option value="all">All</option>
-    <option value="mens">Mens</option>
-    <option value="womens">Womens</option>
-    <option value="kids">Kids</option>
-  </select>
 
-  <select on="change: AMP.setState({products: {filter: event.value}})">
-    <option value="" selected>High - low</option>
-    <option value="low-high-">Low - high</option>
-  </select>
+  <section class="flex flex-wrap">
+    <h1 class="h3">Products</h1>
 
-  <h1 class="h3">Products</h1>
-  <section>
-    <amp-list [src]="'data/' + products.filter + products.category + '-products.json'" src="data/all-products.json" height="500" width="300" layout="responsive" template="product-listing">
+    {{#filters}}
+    <div class="col-12">
+      <select class="mt4 md-hide lg-hide" on="change: AMP.setState({products: {category: event.value}})">
+        {{#radio}}
+        <option value="{{id}}">{{label}}</option>
+        {{/radio}}
+      </select>
+
+      <select on="change: AMP.setState({products: {filter: event.value}})">
+        <option value="" selected>High - low</option>
+        <option value="low-high-">Low - high</option>
+      </select>
+    </div>
+
+    <div class="col-3 xs-hide sm-hide commerce-panel-filled flex flex-column">
+      {{> ../../components/inputs/inputs.snip.html}}
+    </div>
+    {{/filters}}
+    <amp-list class="col-12 md-col-8" [src]="'data/' + products.filter + products.category + '-products.json'" src="data/all-products.json" height="500" width="300" layout="responsive" template="product-listing">
       <template id="product-listing" type="amp-mustache">
         <div class="col col-6 md-col-2 p1">
           <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>

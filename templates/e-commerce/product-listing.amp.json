@@ -12,7 +12,35 @@
       ]
     },
     "main": {
-
+      "filters": {
+        "radio": [
+          {
+            "name": "category",
+            "id": "all",
+            "label": "All",
+            "on": "change: AMP.setState({products: {category: 'all'}})",
+            "checked": "checked"
+          },
+          {
+            "name": "category",
+            "id": "mens",
+            "label": "Mens",
+            "on": "change: AMP.setState({products: {category: 'mens'}})"
+          },
+          {
+            "name": "category",
+            "id": "womens",
+            "label": "Womens",
+            "on": "change: AMP.setState({products: {category: 'womens'}})"
+          },
+          {
+            "name": "category",
+            "id": "kids",
+            "label": "Kids",
+            "on": "change: AMP.setState({products: {category: 'kids'}})"
+          }
+        ]
+      }
     }
   }
 }
