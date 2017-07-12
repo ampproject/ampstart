@@ -1,6 +1,8 @@
 @import "../page-vars";
 
 .ampstart-headerbar {
+  justify-content: space-between
+
   height: var(--layout-header-height-mobile);
 
   /* Override ampstart default box shadow styles */
@@ -10,11 +12,14 @@
   will-change: transform;
 }
 
-.ampstart-headerbar-title {
+.ampstart-headerbar-home-link {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.ampstart-headerbar-title {
   font-size: var(--h4);
   font-weight: var(--font-weight-black);
 
@@ -23,8 +28,6 @@
 
   /* Using same indent as the letter spacing to make the text properly centered. */
   text-indent: var(--letter-spacing-4);
-
-  transform: translate(-50%, -50%);
 }
 
 .ampstart-navbar-trigger {
