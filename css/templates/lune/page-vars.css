@@ -17,12 +17,31 @@
   --font-weight-black: 900;
 
   /* Responsive headings type scale */
-  --h1: 5.625rem; /* 90px */
-  --h2: 5rem; /* 80px */
-  --h3: 3.75rem; /* 60px */
-  --h4: 3.125rem; /* 50px */
-  --h5: 2.1875rem; /* 35px */
-  --h6: 1.375rem; /* 22px */
+  --h00: 6.875rem; /* 110px */
+  --h0: 5rem; /* 80px */
+  --h1: 4.0625rem; /* 65px */
+  --h2: 3.125rem; /* 50px */
+  --h3: 2.1875rem; /* 35px */
+  --h4: 1.375rem; /* 22px */
+  --h5: 1.125rem; /* 18px */
+  --h6: .875rem; /* 14px */
+  --h7: .75rem; /* 12px */
+
+
+  /* Letter spacing */
+  --letter-spacing-1: .02em;
+  --letter-spacing-2: .1em;
+  --letter-spacing-3: .26em;
+  --letter-spacing-4: .48em;
+  --letter-spacing-5: .56em;
+
+  /* Line heights */
+  --line-height-1: 1;
+  --line-height-2: 1.5;
+  --line-height-3: 1.75;
+  --line-height-4: 2;
+  --line-height-5: 3.63;
+
 
 
   /* Colours */

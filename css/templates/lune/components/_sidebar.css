@@ -1,4 +1,3 @@
-@import "../../../ampstart-base/bass-override-vars";
 @import "../page-vars";
 
 .ampstart-sidebar {
@@ -39,10 +38,10 @@ div[class*='sidebar-mask'] {
 
   margin: auto;
 
-  font-size: 1.5rem; /* 24px */
+  font-size: var(--h4);
   font-weight: var(--font-weight-black);
 
-  line-height: 3.84;
+  line-height: var(--line-height-5);
 
   text-transform: uppercase;
 }
@@ -53,10 +52,21 @@ div[class*='sidebar-mask'] {
 }
 
 .ampstart-nav-item:last-child a {
-  font-size: 1.125rem; /* 18px */
+  font-size: var(--h5);
 
-  letter-spacing: .12em;
+  letter-spacing: var(--letter-spacing-2);
 
   text-decoration: underline;
   text-transform: lowercase;
+}
+
+@media (--breakpoint-md) {
+  .ampstart-sidebar .ampstart-nav-item {
+    font-size: var(--h2);
+  }
+
+  /* Hide the contact email on desktop resolutions */
+  .ampstart-nav-item:last-child {
+    display: none;
+  }
 }
