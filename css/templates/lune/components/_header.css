@@ -1,6 +1,6 @@
 @import "../page-vars";
 
-.lune .ampstart-headerbar {
+.ampstart-headerbar {
   display: flex;
   align-items: center;
 
@@ -11,7 +11,7 @@
   will-change: transform;
 }
 
-.lune .ampstart-headerbar-title {
+.ampstart-headerbar-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,24 +28,24 @@
   transform: translate(-50%, -50%);
 }
 
-.lune .ampstart-navbar-trigger {
+.ampstart-navbar-trigger {
   padding-left: 0.3125rem; /* 5px */
 
   font-size: 2.5rem; /* 40px */
 }
 
 @media (--breakpoint-mt) {
-  .lune .ampstart-navbar-trigger {
+  .ampstart-navbar-trigger {
     padding-left: 1.25rem; /* 40px */
   }
 
-  .lune .ampstart-headerbar {
+  .ampstart-headerbar {
     height: var(--layout-header-height-d);
   }
 }
 
 /* Remove the default margin top from amp-sidebar and navbar */
-.lune .ampstart-headerbar+:not(amp-sidebar),
-.lune .ampstart-headerbar+amp-sidebar+* {
+.ampstart-headerbar+:not(amp-sidebar),
+.ampstart-headerbar+amp-sidebar+* {
   margin-top: 0;
 }
