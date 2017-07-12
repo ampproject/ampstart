@@ -1,135 +1,138 @@
 {
-  "home": {
+  "header": {
     "head-tag": {
       "canonical-path": "templates/e-commerce/landing.amp",
       "extensions": [
         "amp-sidebar"
-      ],
-      "css-path": "templates/e-commerce/page.css"
-    },
-    "main": {
-      "heros": [
-        {
-          "hero": {
-            "text-theme": "primary",
-            "title": "Headline",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "see more"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-01.png",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },{
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-01.png",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hero": {
-            "text-theme": "primary",
-            "title": "Headline",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "see more"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-02.png",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },{
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-02.png",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hero": {
-            "text-theme": "secondary",
-            "title": "Headline",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "see more"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-03.png",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },{
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-03.png",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hero": {
-            "text-theme": "primary",
-            "title": "Headline",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "see more"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-01.png",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },{
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-04.png",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        }
       ]
     }
+  },
+  "main": {
+    "heros": [
+      {
+        "hero": {
+          "text-theme": "primary",
+          "title": "Headline",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "see more"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-01.png",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-01.png",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "hero": {
+          "text-theme": "primary",
+          "title": "Headline",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "see more"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-02.png",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-02.png",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "hero": {
+          "text-theme": "secondary",
+          "title": "Headline",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "see more"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-03.png",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-03.png",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "hero": {
+          "text-theme": "primary",
+          "title": "Headline",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "see more"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-01.png",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-04.png",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }
