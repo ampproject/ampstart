@@ -163,29 +163,18 @@ gulp.task('www', function() {
       .pipe(gulp.dest(config.dest.www_pages))
 });
 
-gulp.task('watchwww', 'watch stuff, similar to watchdev, but includes bundling and validation', ['build'], function() {
+gulp.task('watch:www', 'watch stuff, similar to watchdev, but includes bundling and validation', ['build'], function() {
   return gulp.watch(
       [
         config.src.components, config.src.templates, config.src.www_pages,
         config.src.css, config.src.data, config.src.img
       ],
       function(event) {
-        runSequence('clean', ['img', 'postcss'], ['www', 'posthtml'], 'validate', 'bundle');
+        runSequence(['img', 'postcss'], ['www', 'posthtml'], 'validate', 'bundle');
       });
 });
 
-gulp.task('watchdev', 'watch stuff, minimal watching for development', ['build'], function() {
-  return gulp.watch(
-      [
-        config.src.components, config.src.templates, config.src.www_pages,
-        config.src.css, config.src.data, config.src.img
-      ],
-      function(event) {
-        runSequence(['img', 'postcss'], ['www', 'posthtml'], 'validate');
-      });
-});
-
-gulp.task('watch', 'watch stuff', ['build'], function() {
+gulp.task('watch:dev', 'watch stuff, minimal watching for development', ['build'], function() {
   return gulp.watch(
       [
         config.src.components, config.src.templates, config.src.www_pages,
@@ -232,14 +221,14 @@ gulp.task('postcss', 'build postcss files', function() {
       .pipe(gulp.dest(config.dest.css))
 });
 
-gulp.task('serve', 'Host a livereloading webserver for the project', ['watchwww'], function() {
+gulp.task('serve', 'Host a livereloading webserver for the project', ['watch:www'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
 
-gulp.task('servedev', 'Host a livereloading webserver for the project', ['watchdev'], function() {
+gulp.task('serve:dev', 'Host a livereloading webserver for the project', ['watch:dev'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     directoryListing: {enable: true, path: 'dist'},
