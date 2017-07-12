@@ -1,3 +1,4 @@
+@import "../../../ampstart-base/bass-override-vars";
 @import "../page-vars";
 
 amp-sidebar {
@@ -5,7 +6,7 @@ amp-sidebar {
 }
 
 amp-sidebar .ampstart-navbar-trigger  {
-  padding-top: .625rem; /* 10px */
+  padding-top: var(--space-1);
 }
 
 /* On large device the width should be set to 50vw */

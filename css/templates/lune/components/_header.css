@@ -1,3 +1,4 @@
+@import "../../../ampstart-base/bass-override-vars";
 @import "../page-vars";
 
 .ampstart-headerbar {
@@ -28,14 +29,14 @@
 }
 
 .ampstart-navbar-trigger {
-  padding-left: 0.3125rem; /* 5px */
+  padding-left: var(--space-1);
 
   font-size: 2.5rem; /* 40px */
 }
 
 @media (--breakpoint-mt) {
   .ampstart-navbar-trigger {
-    padding-left: 1.25rem; /* 40px */
+    padding-left: var(--space-3);
   }
 
   .ampstart-headerbar {
