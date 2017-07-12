@@ -1,0 +1,25 @@
+{
+  "lune": {
+    "head-tag": {
+      "title": "AMP Lune template",
+      "canonical-path": "templates/lune.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "css-path": "templates/lune/landing.css"
+    },
+
+    "landing-sections": [
+      {
+        "classes": "z1 lune-theme--light",
+        "product_name": "blanc",
+        "product_name_split": ["b", "l", "a", "n", "c"]
+      },
+      {
+        "classes": "top-0 left-0 right-0 lune-theme--dark",
+        "product_name": "noir",
+        "product_name_split": ["n", "o", "i", "r"]
+      }
+    ]
+  }
+}

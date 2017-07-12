@@ -1,0 +1,49 @@
+@import '../../ampstart-base/bass-override-vars';
+@import "page-vars";
+
+p {
+  font-size: var(--body-font-size-m);
+  letter-spacing: var(--body-letter-spacing);
+  line-height: var(--body-line-height-m);
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (--breakpoint-md) {
+  p {
+    font-size: var(--body-font-size-d);
+    line-height: var(--body-line-height-d);
+  }
+}
+
+.position-center {
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.position-center-v {
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.position-center-h {
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+.a11y-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}

@@ -1,0 +1,23 @@
+@import "../page-vars";
+
+/*
+ * To be used in comination with 'caps bold ls-26' classes
+ */
+.lune-scroll-indicator {
+  padding-bottom: 3.125rem;
+}
+
+.lune-scroll-indicator::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: .125rem;
+  height: 2.1874rem;
+
+  background: currentColor;
+
+  transform: translateX(-50%);
+
+  content: '';
+}

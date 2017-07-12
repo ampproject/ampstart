@@ -1,0 +1,263 @@
+@import "../page-vars";
+
+:root {
+  --hero-title-min-height: 238px;
+
+  --product-anim-delay-start: .4s;
+  --product-anim-delay-step: .5s;
+}
+
+/* Set medium resolution make each section a minimum height of 100vh */
+@media (--breakpoint-md) {
+  .lune .lune-page--product section {
+    min-height: calc(100vh - var(--layout-header-height-d));
+  }
+}
+
+/*******************************************************************************
+ * HERO
+ ******************************************************************************/
+.lune .hero__content h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+}
+
+.lune .hero__chair {
+  max-width: 21.125rem; /* 338px */
+}
+
+.lune .has-mobile-hyphen:after {
+  content: '-';
+}
+
+.lune .hero__title-wrapper {
+  margin-bottom: -1.9em;
+
+  min-height: var(--hero-title-min-height);
+}
+
+@media (--breakpoint-mt) {
+  .lune .hero__content h1 {
+    display: inline;
+
+    padding: 0;
+  }
+
+  .lune .hero__title-wrapper {
+    display: flex;
+  }
+
+  .lune .hero__chair {
+    margin-top: -0.5em;
+  }
+
+  .lune .has-mobile-hyphen:after {
+    content: none;
+  }
+}
+
+@media (--breakpoint-mt) {
+  .lune .hero__title-wrapper {
+    margin-bottom: -1em;
+  }
+}
+
+@media (--breakpoint-md) {
+  .lune .hero__chair {
+    margin-top: 0;
+
+  }
+
+  .lune-page--product .hero__image-wrapper {
+    position: fixed;
+
+    top: calc(var(--layout-header-height-d) + (var(--hero-title-min-height) / 2));
+    left: 0;
+
+    width: 100%;
+
+    will-change: transform;
+  }
+}
+
+
+/*******************************************************************************
+ * Intro & Specs
+ ******************************************************************************/
+
+@media (--breakpoint-md) {
+  .product__details li {
+    padding: 2rem 0;
+  }
+}
+
+.product__details .divider {
+  flex-grow: 1;
+
+  border-bottom: 1px solid currentColor;
+}
+
+@media (--breakpoint-md) {
+  .section--intro {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    min-height: 100vh;
+  }
+
+  .intro__wrapper {
+    width: 18.75rem; /* 300px */
+  }
+
+  .product__details .divider {
+    border-bottom-style: dashed;
+  }
+}
+
+
+/*******************************************************************************
+ * Materials
+ ******************************************************************************/
+
+.section--materials {
+  background: inherit;
+}
+
+.product__materials__title {
+  z-index: 1;
+
+  margin: 0 0 0 30px;
+
+  white-space: nowrap;
+}
+
+.product__materials__title--split span {
+  display: block;
+}
+
+.product__materials__img--1 {
+  margin-top: -30px;
+}
+
+.product__materials__img--2 {
+  margin-top: -155px;
+  margin-bottom: 50px;
+}
+
+.product__materials__img--3 {
+  margin-top: -100px;
+}
+
+@media (--breakpoint-mt) {
+  .section--materials .product__title-2 {
+    display: none;
+  }
+
+  .product__materials__title {
+    margin-top: 170px;
+    margin-bottom: -120px;
+
+    text-align: center;
+  }
+
+  .product__materials--poly .product__materials__title {
+    text-align: left;
+
+    margin-bottom: 200px;
+  }
+
+  .product__materials__img--1 {
+    align-self: flex-end;
+
+    width: 45%;
+  }
+
+  .product__materials__img--2 {
+    align-self: flex-start;
+
+    width: 45%;
+  }
+
+  .product__materials__img--3 {
+    align-self: flex-end;
+
+    width: 50%;
+
+    margin-top: 0;
+  }
+}
+
+.lune .product__more-hotspot {
+  width: 82px;
+  height: 82px;
+
+  border-radius: 50%;
+
+  color: var(--color-light-1);
+
+  background: var(--color-bg-dark-m);
+
+  cursor: pointer;
+}
+
+.lune .product__more-hotspot:hover,
+.lune .product__more-hotspot:focus {
+  color: var(--color-dark-grey);
+
+  background: var(--color-light-1);
+}
+
+.lune-theme--dark .product__more-hotspot {
+  color: var(--color-bg-dark-m);
+
+  background: var(--color-light-1);
+}
+
+.lune-theme--dark .product__more-hotspot:hover,
+.lune-theme--dark .product__more-hotspot:focus {
+  color: var(--color-light-1);
+
+  background: var(--color-dark-grey);
+}
+
+.product__more-hotspot--1 {
+  top: 53%;
+  left: 23%;
+}
+
+.product__more-hotspot--2 {
+  top: 42%;
+  left: 36%;
+}
+
+.products__bottom-cta {
+  position: relative;
+  z-index: 2;
+
+  background: inherit;
+}
+
+@media (--breakpoint-md) {
+  .products__bottom-cta {
+    padding: 60px 0;
+  }
+}
+
+
+/*******************************************************************************
+ * Enter animation (image, text and ).
+ * Animations keyframes are defined in ../_pages.css
+ ******************************************************************************/
+
+.lune .hero__chair {
+  animation: fade-in-scale-up 2s var(--product-anim-delay-start) ease-out both;
+}
+
+.lune .hero__title-wrapper {
+  animation: fade-in-move-up .8s
+      calc(var(--product-anim-delay-start) + var(--product-anim-delay-step))
+      cubic-bezier(0.41, 0.01, 0.27, 1) both;
+}

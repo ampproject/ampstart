@@ -1,0 +1,163 @@
+@import "../page-vars";
+
+:root {
+  --store-anim-delay-start: .4s;
+  --store-anim-delay-step: .08s;
+}
+
+/*******************************************************************************
+ * Layout
+ ******************************************************************************/
+.lune-page--store .lune-page__wrapper {
+  min-height: calc(100vh - var(--layout-header-height-m));
+  padding-bottom: var(--layout-header-height-m);
+}
+
+.store__title,
+.store__content-upper,
+.store__content-lower {
+  max-width: 36rem;
+}
+
+.store__image {
+  width: 15.625rem;
+  height: 22rem;
+}
+
+.store__image amp-img img {
+  object-fit: cover;
+}
+
+@media (--breakpoint-mt) {
+  .lune-page--store .lune-page__wrapper {
+    min-height: calc(100vh - var(--layout-header-height-d));
+    padding-bottom: var(--layout-header-height-d);
+  }
+
+  .store__title {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .store__image {
+    width: calc(100% - 3rem);
+  }
+}
+
+@media (--breakpoint-vld) {
+  .store__title,
+  .store__content-upper,
+  .store__content-lower {
+    max-width: none;
+  }
+
+  .store__content-upper,
+  .store__content-lower {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .store__content-upper {
+    height: 25rem;
+  }
+
+  .store__content-lower {
+    padding-top: 6rem;
+  }
+
+  .store__lune-wrapper {
+    order: 1;
+
+    position: relative;
+
+    flex: 0 0 19.5rem;
+  }
+
+  .store__lune {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .store__image-wrapper {
+    display: flex;
+
+    order: 2;
+
+    flex: 1 0;
+  }
+  .store__image {
+    width: 90%;
+    height: 100%;
+    max-width: 45rem;
+
+    margin: 0;
+  }
+
+  .store__address-wrapper {
+    order: 3;
+
+    flex: 0 0 19.5rem;
+
+    margin-top: 0;
+  }
+
+  .store__address {
+    margin-top: .25rem;
+  }
+
+  .store__body-wrapper {
+    display: flex;
+
+    order: 4;
+
+    flex: 1 0;
+  }
+
+  .store__body {
+    width: 50%;
+
+    padding-right: 2.25rem;
+    margin-top: 0;
+  }
+
+  .store__cta {
+    align-self: flex-start;
+  }
+}
+
+
+/*******************************************************************************
+ * Enter animation (image, text and cta buttons).
+ * Animations keyframes are defined in ../_pages.css
+ ******************************************************************************/
+
+.lune-page--store .store__image {
+  animation: fade-in-scale-up 2s var(--store-anim-delay-start) ease-out both;
+}
+
+.lune-page--store .store__lune-wrapper,
+.lune-page--store .store__address-wrapper,
+.lune-page--store .store__body-wrapper {
+  animation: fade-in-move-up .8s var(--store-anim-delay-start)
+      cubic-bezier(0.41, 0.01, 0.27, 1) both;
+}
+
+.lune-page--store .store__lune-wrapper {
+  animation-delay: calc(var(--store-anim-delay-start) +
+    var(--store-anim-delay-step));
+}
+
+.lune-page--store .store__address-wrapper {
+  animation-delay: calc(var(--store-anim-delay-start) +
+      2 * var(--store-anim-delay-step));
+}
+
+.lune-page--store .store__body-wrapper {
+  animation-delay: calc(var(--store-anim-delay-start) +
+      2 * var(--store-anim-delay-step));
+}

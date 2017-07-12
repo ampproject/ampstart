@@ -1,0 +1,387 @@
+@import "../page-vars";
+
+/* An extra layer on top of bass css to allow responsive type scale */
+
+/*******************************************************************************
+ * Additional font weights
+ ******************************************************************************/
+.lune .black {
+  font-weight: var(--font-weight-black);
+}
+
+.lune .bold {
+  font-weight: 700;
+}
+
+.lune .regular {
+  font-weight: 400;
+}
+
+/*******************************************************************************
+ * Letter spacing
+ ******************************************************************************/
+.lune .ls-0 {
+  letter-spacing: 0;
+}
+
+.lune .ls-02 {
+  letter-spacing: .02em;
+}
+
+.lune .ls-12 {
+  letter-spacing: .12em;
+}
+
+.lune .ls-26 {
+  letter-spacing: .26em;
+}
+
+.lune .ls-46 {
+  letter-spacing: .46em;
+}
+
+.lune .ls-48 {
+  letter-spacing: .48em;
+}
+
+.lune .ls-52 {
+  letter-spacing: .52em;
+}
+
+.lune .ls-56 {
+  letter-spacing: .56em;
+}
+
+.lune .ls-67 {
+  letter-spacing: .67em;
+}
+
+.lune .ls-100 {
+  letter-spacing: 1em;
+}
+
+@media (--breakpoint-md) {
+  .lune .ls-0-md {
+    letter-spacing: 0;
+  }
+
+  .lune .ls-02-md {
+    letter-spacing: .02em;
+  }
+
+  .lune .ls-12-md {
+    letter-spacing: .12em;
+  }
+
+  .lune .ls-26-md {
+    letter-spacing: .26em;
+  }
+
+  .lune .ls-46-md {
+    letter-spacing: .46em;
+  }
+
+  .lune .ls-48-md {
+    letter-spacing: .48em;
+  }
+
+  .lune .ls-52-md {
+    letter-spacing: .52em;
+  }
+
+  .lune .ls-56-md {
+    letter-spacing: .56em;
+  }
+
+  .lune .ls-67-md {
+    letter-spacing: .67em;
+  }
+
+  .lune .ls-100-md {
+    letter-spacing: 1em;
+  }
+}
+
+@media (--breakpoint-mt) {
+  .lune .ls-0-mt {
+    letter-spacing: 0;
+  }
+
+  .lune .ls-02-mt {
+    letter-spacing: .02em;
+  }
+
+  .lune .ls-12-mt {
+    letter-spacing: .12em;
+  }
+
+  .lune .ls-26-mt {
+    letter-spacing: .26em;
+  }
+
+  .lune .ls-46-mt {
+    letter-spacing: .46em;
+  }
+
+  .lune .ls-48-mt {
+    letter-spacing: .48em;
+  }
+
+  .lune .ls-52-mt {
+    letter-spacing: .52em;
+  }
+
+  .lune .ls-56-mt {
+    letter-spacing: .56em;
+  }
+
+  .lune .ls-67-mt {
+    letter-spacing: .67em;
+  }
+
+  .lune .ls-100-mt {
+    letter-spacing: 1em;
+  }
+}
+
+@media (--breakpoint-lg) {
+  .lune .ls-0-lg {
+    letter-spacing: 0;
+  }
+
+  .lune .ls-02-lg {
+    letter-spacing: .02em;
+  }
+
+  .lune .ls-12-lg {
+    letter-spacing: .12em;
+  }
+
+  .lune .ls-26-lg {
+    letter-spacing: .26em;
+  }
+
+  .lune .ls-46-lg {
+    letter-spacing: .46em;
+  }
+
+  .lune .ls-48-lg {
+    letter-spacing: .48em;
+  }
+
+  .lune .ls-52-lg {
+    letter-spacing: .52em;
+  }
+
+  .lune .ls-56-lg {
+    letter-spacing: .56em;
+  }
+
+  .lune .ls-67-lg {
+    letter-spacing: .67em;
+  }
+
+  .lune .ls-100-lg {
+    letter-spacing: 1em;
+  }
+}
+
+/*******************************************************************************
+ * Text indent
+ ******************************************************************************/
+
+.lune .ti-26 {
+  text-indent: .26em;
+}
+
+.lune .ti-48 {
+  text-indent: .48em;
+}
+
+@media (--breakpoint-md) {
+  .lune .ti-26-md {
+    text-indent: .26em;
+  }
+}
+
+/*******************************************************************************
+ * Line height
+ ******************************************************************************/
+.lune .lh-0 {
+  line-height: 0;
+}
+
+.lune .lh-50 {
+  line-height: .5;
+}
+
+.lune .lh-100 {
+  line-height: 1;
+}
+
+.lune .lh-133 {
+  line-height: 1.33;
+}
+
+.lune .lh-175 {
+  line-height: 1.75;
+}
+
+.lune .lh-200 {
+  line-height: 2;
+}
+
+@media (--breakpoint-md) {
+  .lune .lh-0-md {
+    line-height: 0;
+  }
+
+  .lune .lh-50-md {
+    line-height: .5;
+  }
+
+  .lune .lh-100-md {
+    line-height: 1;
+  }
+
+  .lune .lh-133-md {
+    line-height: 1.33;
+  }
+
+  .lune .lh-175-md {
+    line-height: 1.75;
+  }
+
+  .lune .lh-200-md {
+    line-height: 2;
+  }
+}
+
+@media (--breakpoint-mt) {
+  .lune .lh-175-mt {
+    line-height: 1.75;
+  }
+}
+
+@media (--breakpoint-vld) {
+  .lune .lh-175-vld {
+    line-height: 1.75;
+  }
+
+  .lune .lh-200-vld {
+    line-height: 2;
+  }
+}
+
+/*******************************************************************************
+ * Font sizes
+ ******************************************************************************/
+
+.lune .fs-0 {
+  font-size: 0;
+}
+
+.lune .fs-56 {
+  font-size: 0.5625rem; /* 9px */
+}
+
+.lune .fs-75 {
+  font-size: .75rem; /* 12px */
+}
+
+.lune .fs-87 {
+  font-size: .875rem; /* 14px */
+}
+
+.lune .fs-125 {
+  font-size: 1.125rem; /* 18px */
+}
+
+.lune .fs-137 {
+  font-size: 1.375rem; /* 22px */
+}
+
+.lune .fs-218 {
+  font-size: 2.1875rem; /* 35px */
+}
+
+.lune .fs-375 {
+  font-size: 3.75rem; /* 60px */
+}
+
+.lune .fs-500 {
+  font-size: 5rem; /* 80px */
+}
+
+
+@media (--breakpoint-mt) {
+  .lune .fs-68-mt {
+    font-size: .6875rem; /* 11px */
+  }
+
+  .lune .fs-81-mt {
+    font-size: 0.8125rem; /* 13px */
+  }
+
+  .lune .fs-312-mt {
+    font-size: 3.125rem; /* 50px */
+  }
+
+  .lune .fs-356-mt {
+    font-size: 3.5625rem; /* 57px */
+  }
+
+  .lune .fs-435-mt {
+    font-size: 4.375rem; /* 70px */
+  }
+
+  .lune .fs-700-mt {
+    font-size: 7rem; /* 112px */
+  }
+}
+
+
+@media (--breakpoint-md) {
+
+  .lune .fs-137-md {
+    font-size: 1.375rem; /* 22px */
+  }
+
+  .lune .fs-200-md {
+    font-size: 2rem; /* 32px */;
+  }
+
+  .lune .fs-750-md {
+    font-size: 7.5rem; /* 120px */
+  }
+
+  .lune .fs-500-md {
+    font-size: 5rem; /* 80px */
+  }
+
+  .lune .fs-312-md {
+    font-size: 3.125rem; /* 50px */
+  }
+}
+
+@media (--breakpoint-lg) {
+
+  .lune .fs-437-lg {
+    font-size: 4.375rem; /* 70px */
+  }
+
+  .lune .fs-1125-lg {
+    font-size: 11.25rem; /* 180px */
+  }
+}
+
+
+@media (--breakpoint-vld) {
+  .lune .fs-562-vld {
+    font-size: 5.625rem; /* 90px */
+  }
+
+  .lune .fs-750-vld {
+    font-size: 7.5rem; /* 120px */
+  }
+}

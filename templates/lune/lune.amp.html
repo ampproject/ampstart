@@ -1,0 +1,61 @@
+<!doctype html>
+
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain magna copy of the License at
+      http://www.apache.org/licenses/LICENSE-2.0
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+{{#lune}}
+
+<html ⚡>
+  {{> ../../utils/amp-page-head.snip.html}}
+  <body class="lune">
+
+
+    <!-- LANDING PAGE -->
+    <div class="lune-page lune-page--landing lune-page--default" id="landing">
+      {{#landing-sections}}
+        <!-- LANDING SECTION -->
+        <section class="landing__section flex flex-column items-center justify-center {{classes}}">
+          <h1 class="a11y-visually-hidden">Lune {{product_name}}</h1>
+          <div class="landing__content relative flex items-center justify-center">
+            <div class="absolute landing__image-wrapper position-center">
+              <!-- LU- -->
+              <span class="landing__title-big landing__title-big--top-left absolute caps black ls-26 ti-26 lh-100 fs-500 fs-700-mt" aria-hidden="true">lu-</span>
+              <!-- CHAIR IMAGE -->
+              <amp-img
+                class="landing__image"
+                alt=""
+                srcset="../../img/lune/{{product_name}}-landing-hero@1x.png, ../../img/lune/{{product_name}}-landing-hero@2x.png 2x"
+                width="1"
+                height="1.37"
+                layout="responsive"></amp-img>
+              <!-- BLANC/NOIR -->
+              <span class="flex justify-between landing__title-small ls-0 lh-100 fs-218 fs-435-mt absolute caps black" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+              <!-- -NE -->
+              <span class="landing__title-big landing__title-big--bottom-right absolute caps black ls-26 ti-26 lh-100 fs-500 fs-700-mt" aria-hidden="true">-ne</span>
+            </div>
+            <!-- DISCOVER CTA -->
+            <div class="absolute bottom-0 left-0 right-0 center">
+              <a href="product-{{product_name}}.amp.html" class="ampstart-btn ampstart-btn-secondary lune-cta ls-26 fs-75 fs-68-mt bold caps"><span>Discover {{product_name}}</span></a>
+            </div>
+          </div>
+          <!-- SCROLL INDICATOR -->
+          <p class="lune-scroll-indicator ti-26 ls-26 fs-75 fs-81-mt absolute bottom-0 m0 position-center-h caps bold">Scroll</p>
+        </section>
+
+      {{/landing-sections}}
+    </div>
+
+    {{> ../../components/navbar/navbar.snip.html}}
+
+  </body>
+</html>
+{{/lune}}
