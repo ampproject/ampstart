@@ -30,7 +30,7 @@ body {
   font-size: var(--button-font-size);
   font-family: var(--font-family);
   font-weight: var(--bold-font-weight);
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-1) var(--space-4);
 }
 
 /* HEADER */
