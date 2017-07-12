@@ -25,16 +25,18 @@ limitations under the License.
   <main id="content" role="main" class="main">
   {{#main}}
 
-<amp-state id="products">
-  <script type="application/json">
-    {
-      "category": "all",
-      "filter": ""
-    }
-  </script>
-</amp-state>
+  <amp-state id="products">
+    <script type="application/json">
+      {
+        "category": "all",
+        "filter": ""
+      }
+    </script>
+  </amp-state>
 
-  <select on="change: AMP.setState({products: {category: event.value}})">
+  <h1 class="h3">Products</h1>
+
+  <select class="mt4" on="change: AMP.setState({products: {category: event.value}})">
     <option value="all">All</option>
     <option value="mens">Mens</option>
     <option value="womens">Womens</option>
@@ -50,7 +52,7 @@ limitations under the License.
   <section>
     <amp-list [src]="'data/' + products.filter + products.category + '-products.json'" src="data/all-products.json" height="500" width="300" layout="responsive" template="product-listing">
       <template id="product-listing" type="amp-mustache">
-        <div class="col col-6 p1">
+        <div class="col col-6 md-col-2 p1">
           <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>
           <h2 class="h6"><% name %></h2>
           <% description %>
