@@ -3,10 +3,11 @@
 
 .ampstart-sidebar {
   width: 80vw;
+
+  display: flex;
+  align-items: center;
 }
 
-.ampstart-sidebar .ampstart-navbar-trigger  {
-  padding-top: var(--space-1);
 }
 
 /* On large device the width should be set to 50vw */
@@ -16,14 +17,13 @@
   }
 }
 
+/* Hide the close button, as the hamburger icon animates when the sidebar open/closes */
+.ampstart-sidebar-header  {
+  display: none;
+}
+
 .ampstart-sidebar-nav {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-
   width: 100%;
-
-  transform: translate(-50%, -50%);
 }
 
 .ampstart-sidebar .ampstart-nav-item {
