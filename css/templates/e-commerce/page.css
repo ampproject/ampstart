@@ -36,12 +36,14 @@ body {
 /* HEADER */
 .ampstart-headerbar {
   color: var(--color-font-accent);
+  padding-right: var(--space-2);
   background-color: var(--color-white);
   height: var(--narrow-nav-item-height);
   z-index: var(--z1);
 }
 
 .ampstart-navbar-trigger {
+  position: absolute;
   color: var(--color-font-accent);
 }
 
@@ -81,6 +83,23 @@ body {
   text-align: center;
 }
 
+@media (--breakpoint-md) {
+  .ampstart-sidebar {
+    width: 75%;
+  }
+
+  .ampstart-sidebar-nav {
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+
+.ampstart-sidebar-nav-image {
+  width: 50%;
+}
+
 .ampstart-sidebar-header {
   position: relative;
   z-index: var(--z1);
@@ -90,10 +109,11 @@ body {
   margin-top: var(--space-2);
   font-size: var(--space-3);
   line-height: normal;
+  top: 0;
 }
 
 .ampstart-nav {
-  margin: var(--space-3) 0 var(--space-4) 0;
+  margin-bottom: var(--space-4);
 }
 
 .ampstart-nav a {
@@ -104,12 +124,15 @@ body {
   color: var(--color-font-accent);
 }
 
+.ampstart-sidebar .ampstart-nav-item {
+  margin-bottom: var(--space-2);
+}
+
 .ampstart-nav-link {
-  font-size: var(--h3);
+  font-size: var(--h5);
   font-weight: var(--bold-font-weight);
   line-height: normal;
   display: block;
-  margin-bottom: var(--space-3);
 }
 
 .ampstart-sidebar .ampstart-faq-item {

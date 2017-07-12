@@ -11,21 +11,22 @@
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "logo": {
-        "href": "/",
-        "name": "E-Commerce",
-        "classes": "h3 caps"
+        "url": "../../img/e-commerce/logo.png",
+        "width": 96,
+        "height": 28
+      },
+      "sidebarimage": {
+        "url": "../../img/e-commerce/logo-nav.png",
+        "width": 279,
+        "height": 175,
+        "alt": "Company logo",
+        "classes": "inline-block mb4"
       },
       "nav": [
         {
           "link": {
             "url": "#",
             "text": "Products"
-          }
-        },
-        {
-          "link": {
-            "url": "#",
-            "text": "About us"
           }
         },
         {
@@ -39,15 +40,14 @@
             "url": "#",
             "text": "Contact us"
           }
-        },
-        {
-          "link": {
-            "url": "#",
-            "text": "Bike register"
-          }
         }
       ],
       "social-follow": {
+        "header": {
+          "text": "follow us",
+          "classes": "caps bold pt3"
+        },
+        "title": "follow us",
         "links": [
           {
             "facebook": "#"
