@@ -129,11 +129,6 @@ dd:after {
   margin-bottom: var(--space-1);
 }
 
-.ampstart-input-radio input[type="radio"] {
-  width: 15px;
-  height: 15px;
-}
-
 .ampstart-input-radio label {
   font-size: var(--h6);
   cursor: pointer;

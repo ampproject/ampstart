@@ -44,6 +44,7 @@
   --content-max-width: none;
   --sidebar-width: 350px;
   --color-font-secondary: var(--color-font-accent);
+  --input-checkbox-radio-size: 15px;
 
   /* Narrow custom properties */
   --narrow-page-padding: var(--space-3);

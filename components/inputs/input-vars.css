@@ -20,4 +20,5 @@
   --color-input-font-primary: var(--color-font-primary);
   --color-input-secondary: var(--color-secondary);
   --color-input-font-secondary: var(--color-font-secondary);
+  --input-checkbox-radio-size: 20px;
 }

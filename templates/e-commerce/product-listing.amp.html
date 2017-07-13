@@ -20,10 +20,8 @@ limitations under the License.
 {{#header}} {{> ../../utils/amp-page-head.snip.html}}
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
-
   <main id="content" role="main" class="main">
   {{#main}}
-
   <amp-state id="products">
     <script type="application/json">
       {
@@ -39,28 +37,27 @@ limitations under the License.
     {{/banner.image}}
 
     {{#filters}}
-
-    <div class="col-3 ml-3 pt4 pl5 xs-hide sm-hide flex flex-column items-center commerce-panel-filled">
+    <div class="col-3 pt4 pl5 xs-hide sm-hide flex flex-column items-center commerce-panel-filled">
       <div class="pr7">
         <h2 class="h5 mb2">Categories</h2>
         {{#categories}}
-        {{> ../../components/inputs/inputs.snip.html}}
+          {{> ../../components/inputs/inputs.snip.html}}
         {{/categories}}
       </div>
     </div>
 
-    <div class="col-12 md-col-7 mb2 commerce-listing-wrapper">
+    <div class="commerce-listing-wrapper col-12 md-col-7 mb2">
       <div class="commerce-listing-header relative md-flex flex-wrap items-center md-mb2">
         <h1 class="h3 mb1 ml3 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
-        <div class="mr2 inline-block ml3">
+        <div class="inline-block ml3 mr2">
           {{#categories}} {{> partials/select.snip.html}} {{/categories}}
         </div>
         {{#price}} {{> partials/select.snip.html}} {{/price}}
       </div>
 
-      <amp-list class="mx1 md-mxn1" [src]="'data/' + products.filter + '-' + products.category + '-products.json'" src="data/high-low-all-products.json" height="500" width="300" layout="responsive" template="product-listing">
-        <template id="product-listing" type="amp-mustache">
-          <div class="inline-block col-6 md-col-3 px1 commerce-listing-product-item">
+      <amp-list class="mx1 md-mxn1" [src]="'data/' + products.filter + '-' + products.category + '-products.json'" src="data/high-low-all-products.json" height="100" width="100" layout="responsive">
+        <template type="amp-mustache">
+          <div class="commerce-listing-product-item inline-block col-6 md-col-3 px1">
             <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>
             <h2 class="h6"><% name %></h2>
             <% description %>
