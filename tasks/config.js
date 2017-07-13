@@ -19,7 +19,7 @@ module.exports = {
     components: 'components/**/*.*',
     templates: [
       '{templates, dummy}/**/*.html',
-      '!templates/e-commerce/partials/hero/*.html'
+      '!templates/*/partials/*.html'
     ],
     templateData: 'templates/*/data/*.json',
     www_pages: 'www/**/*.html',

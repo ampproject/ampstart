@@ -19,6 +19,7 @@ const productCategories = {
 };
 
 const outputFile = 'products.json';
+const highToLowName = 'high-low';
 const lowToHighName = 'low-high';
 let tempData;
 let pageNumber = 0;
@@ -52,7 +53,7 @@ function lowToHigh(productA, productB) {
 }
 
 function saveProducts() {
-  let fileName = `${currentWorkingDirectory}/all-${outputFile}`;
+  let fileName = `${currentWorkingDirectory}/${highToLowName}-all-${outputFile}`;
   products.items.sort(highToLow);
   fs.writeFileSync(fileName, JSON.stringify(products, null, '\t'));
 
@@ -72,7 +73,7 @@ function saveCategories() {
       items: productCategories[categoryName]
     };
 
-    let fileName = `${currentWorkingDirectory}/${categoryName}-${outputFile}`;
+    let fileName = `${currentWorkingDirectory}/${highToLowName}-${categoryName}-${outputFile}`;
     fs.writeFileSync(fileName, JSON.stringify(data, null, '\t'));
 
     productCategories[categoryName].sort(lowToHigh);

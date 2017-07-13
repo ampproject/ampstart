@@ -3,23 +3,16 @@
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 604,
+			"price": 438,
 			"image": "/img/e-commerce/product/product.jpg",
-			"category": "womens"
+			"category": "kids"
 		},
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 443,
+			"price": 433,
 			"image": "/img/e-commerce/product/product.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 437,
-			"image": "/img/e-commerce/product/product.jpg",
-			"category": "womens"
+			"category": "kids"
 		}
 	]
 }

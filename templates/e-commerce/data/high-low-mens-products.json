@@ -3,42 +3,49 @@
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 732,
+			"price": 976,
 			"image": "/img/e-commerce/product/product.jpg",
 			"category": "mens"
 		},
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 713,
+			"price": 946,
 			"image": "/img/e-commerce/product/product.jpg",
 			"category": "mens"
 		},
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 666,
+			"price": 916,
 			"image": "/img/e-commerce/product/product.jpg",
 			"category": "mens"
 		},
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 561,
+			"price": 874,
 			"image": "/img/e-commerce/product/product.jpg",
 			"category": "mens"
 		},
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 540,
+			"price": 728,
 			"image": "/img/e-commerce/product/product.jpg",
 			"category": "mens"
 		},
 		{
 			"name": "Product Name",
 			"description": "Mauris tincidunt.",
-			"price": 438,
+			"price": 687,
+			"image": "/img/e-commerce/product/product.jpg",
+			"category": "mens"
+		},
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 637,
 			"image": "/img/e-commerce/product/product.jpg",
 			"category": "mens"
 		}

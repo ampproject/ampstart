@@ -16,11 +16,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-{{#home}}
 <html ⚡>
-{{> ../../utils/amp-page-head.snip.html}}
+{{#header}} {{> ../../utils/amp-page-head.snip.html}}
 <body>
-  {{> ../../components/navbar/navbar.snip.html}}
+  {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
   <main id="content" role="main" class="main">
   {{#main}}
@@ -29,47 +28,50 @@ limitations under the License.
     <script type="application/json">
       {
         "category": "all",
-        "filter": ""
+        "filter": "high-low"
       }
     </script>
   </amp-state>
 
-
-
   <section class="flex flex-wrap">
-    <h1 class="h3">Products</h1>
+    {{#banner.image}}
+      <amp-img class="xs-hide sm-hide commerce-listing-banner" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" alt="{{alt}}"></amp-img>
+    {{/banner.image}}
 
     {{#filters}}
-    <div class="col-12">
-      <select class="mt4 md-hide lg-hide" on="change: AMP.setState({products: {category: event.value}})">
-        {{#radio}}
-        <option value="{{id}}">{{label}}</option>
-        {{/radio}}
-      </select>
 
-      <select on="change: AMP.setState({products: {filter: event.value}})">
-        <option value="" selected>High - low</option>
-        <option value="low-high-">Low - high</option>
-      </select>
+    <div class="col-3 ml-3 pt4 pl5 xs-hide sm-hide flex flex-column items-center commerce-panel-filled">
+      <div class="pr7">
+        <h2 class="h5 mb2">Categories</h2>
+        {{#categories}}
+        {{> ../../components/inputs/inputs.snip.html}}
+        {{/categories}}
+      </div>
     </div>
 
-    <div class="col-3 xs-hide sm-hide commerce-panel-filled flex flex-column">
-      {{> ../../components/inputs/inputs.snip.html}}
+    <div class="col-12 md-col-7 mb2 commerce-listing-wrapper">
+      <div class="commerce-listing-header relative md-flex flex-wrap items-center md-mb2">
+        <h1 class="h3 mb1 ml3 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
+        <div class="mr2 inline-block ml3">
+          {{#categories}} {{> partials/select.snip.html}} {{/categories}}
+        </div>
+        {{#price}} {{> partials/select.snip.html}} {{/price}}
+      </div>
+
+      <amp-list class="mx1 md-mxn1" [src]="'data/' + products.filter + '-' + products.category + '-products.json'" src="data/high-low-all-products.json" height="500" width="300" layout="responsive" template="product-listing">
+        <template id="product-listing" type="amp-mustache">
+          <div class="inline-block col-6 md-col-3 px1 commerce-listing-product-item">
+            <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>
+            <h2 class="h6"><% name %></h2>
+            <% description %>
+            <div class="h6"><% price %></div>
+          </div>
+        </template>
+      </amp-list>
     </div>
     {{/filters}}
-    <amp-list class="col-12 md-col-8" [src]="'data/' + products.filter + products.category + '-products.json'" src="data/all-products.json" height="500" width="300" layout="responsive" template="product-listing">
-      <template id="product-listing" type="amp-mustache">
-        <div class="col col-6 md-col-2 p1">
-          <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>
-          <h2 class="h6"><% name %></h2>
-          <% description %>
-          <div class="h6"><% price %></div>
-        </div>
-      </template>
-    </amp-list>
   </section>
   {{/main}}
   </main>
 </body>
 </html>
-{{/home}}

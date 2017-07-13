@@ -1,0 +1,127 @@
+{
+  "header": {
+    "head-tag": {
+      "canonical-path": "templates/themes/e-commerce/product-details.amp",
+      "extensions": [
+        "amp-sidebar",
+        "amp-bind",
+        "amp-carousel",
+        "amp-selector"
+      ]
+    }
+  },
+  "main": {
+    "product-details": {
+      "name": "Bike 1",
+      "price": "£470",
+      "colourFilterName": "colours",
+      "colours": [{
+          "name": "white",
+          "thumb": {
+            "image1": "../../img/e-commerce/product/light-small-1.jpg",
+            "image2": "../../img/e-commerce/product/light-small-2.jpg",
+            "image3": "../../img/e-commerce/product/light-small-3.jpg"
+          },
+          "large": {
+            "image1": "../../img/e-commerce/product/light-large-1.jpg",
+            "image2": "../../img/e-commerce/product/light-large-2.jpg",
+            "image3": "../../img/e-commerce/product/light-large-3.jpg"
+          }
+        },{
+          "name": "green",
+          "thumb": {
+            "image1": "../../img/e-commerce/product/dark-small-1.jpg",
+            "image2": "../../img/e-commerce/product/dark-small-2.jpg",
+            "image3": "../../img/e-commerce/product/dark-small-3.jpg"
+          },
+          "large": {
+            "image1": "../../img/e-commerce/product/dark-large-1.jpg",
+            "image2": "../../img/e-commerce/product/dark-large-2.jpg",
+            "image3": "../../img/e-commerce/product/dark-large-3.jpg"
+          }
+        }
+      ],
+      "sizes": {
+        "label": "Sizes",
+        "select": {
+          "placeholder": "Select a size",
+          "options": [
+            "61cm", "62cm", "63cm", "64cm"
+          ],
+          "id": "sizes",
+          "name": "sizes"
+        }
+      },
+      "specs": [
+        {
+          "header": "frame",
+          "body": "Hi-Ten steel"
+        },
+        {
+          "header": "handlebars",
+          "body": "Chrome plated"
+        },
+        {
+          "header": "stem",
+          "body": "Alloy quill stem"
+        },
+        {
+          "header": "grips",
+          "body": "Duracork"
+        },
+        {
+          "header": "gear shifter",
+          "body": "Shimano rapidfire"
+        },
+        {
+          "header": "gears",
+          "body": "Shimano Tourney 7 speed"
+        },
+        {
+          "header": "chainset",
+          "body": "Steel"
+        },
+        {
+          "header": "crank",
+          "body": "Alloy"
+        },
+        {
+          "header": "pedals",
+          "body": "Alloy rat trap"
+        },
+        {
+          "header": "brakes",
+          "body": "Tektro side pull"
+        },
+        {
+          "header": "rims",
+          "body": "Double wall alloy 20\""
+        },
+        {
+          "header": "tyres",
+          "body": "Kenda Brown with cream wall 20\"x1\""
+        },
+        {
+          "header": "saddle",
+          "body": "Bobbin vinyl saddle"
+        },
+        {
+          "header": "seatpost",
+          "body": "Alloy icroadjust 600mm"
+        },
+        {
+          "header": "kickstand",
+          "body": "Alloy"
+        },
+        {
+          "header": "mudguards",
+          "body": "Hammered alloy"
+        },
+        {
+          "header": "carrier",
+          "body": "Chrome steel front"
+        }
+      ]
+    }
+  }
+}
