@@ -1,0 +1,178 @@
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!doctype html>
+<html ⚡>
+{{#header}} {{> ../../utils/amp-page-head.snip.html}} {{/header}}
+
+<body>
+  {{#header}}{{> ../../components/navbar/navbar.snip.html}} {{/header}} {{#main}}
+  <main id="content" role="main" class="main">
+    {{#product-details}}
+    <amp-state id="product">
+      <script type="application/json">
+        {
+        "price": "{{price}}",
+        "selectedColor": "white",
+        {{#colours}}
+          "{{name}}": {
+            "thumb": {
+              "image1": "{{{thumb.image1}}}",
+              "image2": "{{{thumb.image2}}}",
+              "image3": "{{{thumb.image3}}}"
+            },
+            "large": {
+              "image1": "{{{large.image1}}}",
+              "image2": "{{{large.image2}}}",
+              "image3": "{{{large.image3}}}"
+            }
+          },
+        {{/colours}}
+        "selectedSlide": 0
+      }
+      </script>
+    </amp-state>
+
+    <section class="flex flex-wrap">
+      <div class="col-12 md-col-6 px2 md-pl7 md-pt5 pt2">
+        <amp-carousel width="1280" height="720" layout="responsive" type="slides" [slide]="product.selectedSlide" on="slideChange: AMP.setState({product: {selectedSlide: event.index}})">
+          <amp-img [src]="product[product.selectedColor].large.image1" src="{{colours.0.large.image1}}" width="1280" height="720" layout="responsive"
+            role="button" tabindex="0" alt="product image"></amp-img>
+          <amp-img [src]="product[product.selectedColor].large.image2" src="{{colours.0.large.image2}}" width="1280" height="720" layout="responsive"
+            role="button" tabindex="0" alt="product image"></amp-img>
+          <amp-img [src]="product[product.selectedColor].large.image3" src="{{colours.0.large.image3}}" width="1280" height="720" layout="responsive"
+            role="button" tabindex="0" alt="product image"></amp-img>
+        </amp-carousel>
+
+        <amp-selector class="center" [selected]="product.selectedSlide" on="select:AMP.setState({product: {selectedSlide: event.targetOption}})">
+          <ul class="list-reset inline-block">
+            <li class="inline-block commerce-product-thumb">
+              <amp-img option="0" layout="responsive" selected="selected" [src]="product[product.selectedColor].thumb.image1" src="{{colours.0.thumb.image1}}"
+                width="320" height="180" alt="thumbnail"></amp-img>
+            </li>
+            <li class="inline-block commerce-product-thumb">
+              <amp-img option="1" layout="responsive" [src]="product[product.selectedColor].thumb.image2" src="{{colours.0.thumb.image2}}"
+                width="320" height="180" alt="thumbnail"></amp-img>
+            </li>
+            <li class="inline-block commerce-product-thumb">
+              <amp-img option="2" layout="responsive" [src]="product[product.selectedColor].thumb.image3" src="{{colours.0.thumb.image3}}"
+                width="320" height="180" alt="thumbnail"></amp-img>
+            </li>
+          </ul>
+        </amp-selector>
+      </div>
+      <div class="col-12 md-col-6 flex flex-wrap content-start px2 md-pl5 md-pr7 md-pt5">
+        <div class="col-6 self-start pb2">
+          <h1 class="h3 md-h2">{{name}}</h1>
+          <div class="h4 md-h3">{{price}}</div>
+        </div>
+        <div class="col-6 self-start right-align">
+          <h2 class="h7 block pb1">Reviews</h2>
+          {{> partials/rating.snip.html}}
+        </div>
+        <div class="col-12 self-start pb4">
+          Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.
+        </div>
+        <hr class="mb4" />
+        <div class="col-6 md-col-3 self-start pb4">
+          <span class="h6 align-top pr2">colour</span>
+          <amp-selector class="inline-block" name="color" layout="container" [selected]="product.selectedColor" on="select:AMP.setState({
+                              product: {
+                                selectedColor: event.targetOption
+                              }
+                            })">
+            <ul class="m0 list-reset inline-block">
+              <li class="inline-block">
+                <div option="{{colours.0.name}}" selected="selected" class="commerce-product-color-swatch commerce-product-color-{{colours.0.name}}"></div>
+              </li>
+              <li class="inline-block">
+                <div option="{{colours.1.name}}" class="commerce-product-color-swatch commerce-product-color commerce-product-color-{{colours.1.name}}"></div>
+              </li>
+            </ul>
+          </amp-selector>
+        </div>
+        <div class="col-6 self-start pb4">
+          {{#sizes}} {{> partials/select.snip.html}} {{/sizes}}
+        </div>
+        <hr class="mb4" />
+        <div class="col-12 self-start mb4 commerce-product-btn-wrapper">
+          <a href="{{url}}" class="ampstart-btn ampstart-btn-secondary caps">Add to cart</a>
+        </div>
+        <hr class="md-hide lg-hide" />
+      </div>
+      <div class="col-12 flex flex-wrap">
+        <hr class="xs-hide sm-hide mt4" />
+        <div class="col-12 md-col-6 px2 md-pl7 commerce-product-desc">
+          <section class="pt4 pb4 md-pt6 md-px4">
+            <h2 class="h5 md-h4">Overview</h2>
+            <p class="mt2">Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus
+              ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin
+              fermentum odio, odio arcu in eu wisi. </p>
+          </section>
+          <hr class="md-hide lg-hide" />
+        </div>
+        <div class="col-12 md-col-5 md-pr7 md-pl5 commerce-panel-filled">
+          <section class="pt4 pb4 px2 md-pt6">
+            <h2 class="h5 md-h4">Size Guide</h2>
+            <div class="mt2">
+              <table class="commerce-table center">
+                <thead class="commerce-table-header h7">
+                  <tr>
+                    <th>Rider Height</th>
+                    <th colspan="2">Suggested Size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>160cm-168cm</td>
+                    <td>47-48cm</td>
+                    <td>xx-small</td>
+                  </tr>
+                  <tr>
+                    <td>152cm-160cm</td>
+                    <td>49-50cm</td>
+                    <td>x-small</td>
+                  </tr>
+                  <tr>
+                    <td>148cm-152cm</td>
+                    <td>49-50cm</td>
+                    <td>x-small</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <hr class="md-hide lg-hide" />
+          <section class="pt4 pb4 px2 commerce-panel-empty md-commerce-panel-filled">
+            <h2 class="h5 md-h4">Full spec</h2>
+            <div class="mt2">
+              <dl class="flex flex-wrap">
+                {{#specs}}
+                <dt class="h7 col-4 sm-col-3 md-col-5 lg-col-4 pb1">{{header}}</dt>
+                <dd class="m0 col-8 sm-col-9 md-col-7 lg-col-8 pb1">{{body}}</dd>
+                {{/specs}}
+              </dl>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+    {{/product-details}}
+  </main>
+  {{/main}} {{> ../../components/footer/footer.snip.html}}
+</body>
+
+</html>
