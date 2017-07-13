@@ -18,7 +18,7 @@
 
 .ampstart-headerbar-title {
   font-size: var(--h4);
-  font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-heavy);
   letter-spacing: var(--letter-spacing-4);
   line-height: var(--line-height-1);
   /* Using same indent as the letter spacing to make the text properly centered. */

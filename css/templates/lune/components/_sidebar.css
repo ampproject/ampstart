@@ -38,7 +38,7 @@
   max-width: 7.5em;
   margin: auto;
   font-size: var(--h4);
-  font-weight: var(--font-weight-black);
+  font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-5);
   text-transform: uppercase;
 }

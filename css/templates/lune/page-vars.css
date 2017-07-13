@@ -14,7 +14,7 @@
 
   /* Type */
   --font-family: "Lato", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", Arial, sans-serif;
-  --font-weight-black: 900;
+  --font-weight-heavy: 900;
 
   /* Responsive headings type scale */
   --h00: 6.875rem; /* 110px */
