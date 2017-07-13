@@ -15,12 +15,27 @@
  */
 
 :root {
+  --h1: 3.5rem;
+  --h2: 2.2rem;
+  --h3: 1.75rem;
+  --h4: 1.38rem;
+  --h5: 1.125rem;
+  --h6: 1rem;
+  --h7: .875rem;
+
+  --space-5: 2.5rem;
+  --space-6: 3rem;
+  --space-7: 5rem;
+
+  --body-font-size: var(--h7);
   --color-font-accent: #ff8888;
-  --color-primary: #000;
-  --color-secondary: #222;
+  --color-primary: #222;
   --color-font-default: #666;
-  --font-family: 'Open Sans Condensed', sans-serif;
-  --font-family-secondary: 'Cardo', serif;
+  --color-table-border: #e9e9e9;
+  --color-separator: #dadada;
+  --color-panel: #f4f4f3;
+  --title-font: 'Open Sans Condensed', sans-serif;
+  --font-family: 'Cardo', serif;
   --button-font-size: .8rem;
   --caps-letter-spacing: 0;
   --content-max-width: none;
@@ -29,10 +44,8 @@
 
   /* Narrow custom properties */
   --narrow-page-padding: var(--space-3);
-  --narrow-nav-item-height: 3.5rem;
-  --narrow-body-font-size: .9rem;
+  --navbar-height: 3.5rem;
 
   /* Wide custom properties */
-  --wide-nav-item-height: 5rem;
-  --wide-body-font-size: 1rem;
+  --wide-navbar-height: 5rem;
 }
