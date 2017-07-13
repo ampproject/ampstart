@@ -18,12 +18,12 @@
 .ampstart-sidebar-header {
   position: absolute;
   top: 0;
-  height: var(--layout-header-height-mobile);
+  height: var(--layout-header-height-narrow);
 }
 
 @media (--breakpoint-mt) {
   .ampstart-sidebar-header {
-    height: var(--layout-header-height-desktop);
+    height: var(--layout-header-height-wide);
   }
 }
 

@@ -3,7 +3,7 @@
 .ampstart-headerbar {
   justify-content: space-between;
 
-  height: var(--layout-header-height-mobile);
+  height: var(--layout-header-height-narrow);
 
   /* Override ampstart default box shadow styles */
   box-shadow: none;
@@ -42,7 +42,7 @@
   }
 
   .ampstart-headerbar {
-    height: var(--layout-header-height-desktop);
+    height: var(--layout-header-height-wide);
   }
 }
 

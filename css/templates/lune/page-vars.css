@@ -7,8 +7,8 @@
   --z4: 4; /* sidebar */
   --z5: 5; /* header */
 
-  --layout-header-height-mobile: 4.375rem; /* 70px */
-  --layout-header-height-desktop: 5.75rem; /* 92px */
+  --layout-header-height-narrow: 4.375rem; /* 70px */
+  --layout-header-height-wide: 5.75rem; /* 92px */
 
 
 
@@ -52,8 +52,8 @@
   --color-light-2: #f9f9f9;
 
   /* Backgrounds */
-  --color-background-dark-mobile: var(--color-dark-grey-1);
-  --color-background-dark-desktop: var(--color-dark-grey-2);
+  --color-background-dark-narrow: var(--color-dark-grey-1);
+  --color-background-dark-wide: var(--color-dark-grey-2);
   --color-background-light: var(--color-light-1);
   --color-overlay-1: var(--color-light-1);
   --color-overlay-2: var(--color-light-2);
