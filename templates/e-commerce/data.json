@@ -12,8 +12,10 @@
       "css-path": "templates/e-commerce/page.css"
     },
     "navbar": {
+      "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' class='block'><path fill='none' d='M0 0h24v24H0z'/><path fill='currentColor' d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/></svg>",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
+      "sidebarclasses": "md-flex flex-column justify-content items-center justify-center",
       "logo": {
         "url": "../../img/e-commerce/logo.png",
         "width": 96,
@@ -49,7 +51,7 @@
       "social-follow": {
         "header": {
           "text": "follow us",
-          "classes": "caps bold pt3"
+          "classes": "h7 pt3"
         },
         "title": "follow us",
         "links": [

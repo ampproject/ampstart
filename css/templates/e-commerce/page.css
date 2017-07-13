@@ -215,6 +215,7 @@ amp-selector [option][selected] {
   padding-right: var(--space-2);
   background-color: var(--color-white);
   z-index: var(--z1);
+  height: var(--navbar-height);
 }
 
 .ampstart-navbar-trigger {
@@ -224,8 +225,8 @@ amp-selector [option][selected] {
 }
 
 @media (--breakpoint-md) {
-  .ampstart-navbar-trigger {
-    line-height: var(--wide-navbar-height);
+  .ampstart-headerbar {
+    height: var(--wide-navbar-height);
   }
   .ampstart-headerbar .ampstart-navbar-trigger {
     padding: 0;
@@ -259,6 +260,10 @@ amp-selector [option][selected] {
 }
 
 @media (--breakpoint-md) {
+  .ampstart-sidebar {
+    width: 25%;
+  }
+
   .ampstart-sidebar-nav {
     display: inline-block;
     text-align: center;
@@ -266,7 +271,8 @@ amp-selector [option][selected] {
 }
 
 .ampstart-sidebar-nav-image {
-  width: 100%;
+  width: 50%;
+  min-width: 150px;
 }
 
 .ampstart-sidebar .ampstart-icon {
@@ -276,6 +282,14 @@ amp-selector [option][selected] {
 .ampstart-sidebar-header {
   position: relative;
   z-index: var(--z1);
+}
+
+@media (--breakpoint-md) {
+  .ampstart-sidebar .ampstart-sidebar-header {
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-4);
+  }
 }
 
 .ampstart-sidebar .ampstart-navbar-trigger {
@@ -337,9 +351,6 @@ amp-selector [option][selected] {
 
 .ampstart-social-follow li {
   display: inline-block;
-}
-
-.ampstart-social-follow li:last-child {
   margin-right: 0;
 }
 

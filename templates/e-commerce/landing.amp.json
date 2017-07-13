@@ -6,134 +6,134 @@
         "amp-sidebar"
       ],
       "css-path": "templates/e-commerce/page.css"
-    },
-    "main": {
-      "heros": [
-        {
-          "hero": {
-            "text-theme": "secondary",
-            "title": "latest products",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "shop"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-01.jpg",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },
-              {
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-01.jpg",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hero": {
-            "text-theme": "primary",
-            "title": "lost highways",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "read"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-02.jpg",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },
-              {
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-02.jpg",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hero": {
-            "text-theme": "secondary",
-            "title": "highland",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "shop"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-03.jpg",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },
-              {
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-03.jpg",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        },
-        {
-          "hero": {
-            "text-theme": "primary",
-            "title": "no sleep 'til brooklyn",
-            "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
-            "link": {
-              "url": "#",
-              "text": "read"
-            },
-            "images": [
-              {
-                "image": {
-                  "url": "../../img/e-commerce/narrow-landing-01.jpg",
-                  "width": 750,
-                  "height": 460,
-                  "media": "(max-width: 52.06rem)",
-                  "alt": "Hero Landing 1"
-                }
-              },
-              {
-                "image": {
-                  "url": "../../img/e-commerce/wide-landing-04.jpg",
-                  "width": 2560,
-                  "height": 800,
-                  "media": "(min-width: 52.07rem)",
-                  "alt": "Hero Landing 1"
-                }
-              }
-            ]
-          }
-        }
-      ]
     }
+  },
+  "main": {
+    "heros": [
+      {
+        "hero": {
+          "text-theme": "secondary",
+          "title": "latest products",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "shop"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-01.jpg",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-01.jpg",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "hero": {
+          "text-theme": "primary",
+          "title": "lost highways",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "read"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-02.jpg",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-02.jpg",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "hero": {
+          "text-theme": "secondary",
+          "title": "highland",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "shop"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-03.jpg",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-03.jpg",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "hero": {
+          "text-theme": "primary",
+          "title": "no sleep 'til brooklyn",
+          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "link": {
+            "url": "#",
+            "text": "read"
+          },
+          "images": [
+            {
+              "image": {
+                "url": "../../img/e-commerce/narrow-landing-01.jpg",
+                "width": 750,
+                "height": 460,
+                "media": "(max-width: 52.06rem)",
+                "alt": "Hero Landing 1"
+              }
+            },
+            {
+              "image": {
+                "url": "../../img/e-commerce/wide-landing-04.jpg",
+                "width": 2560,
+                "height": 800,
+                "media": "(min-width: 52.07rem)",
+                "alt": "Hero Landing 1"
+              }
+            }
+          ]
+        }
+      }
+    ]
   }
 }
