@@ -27,6 +27,9 @@
       ],
       "nav": [
         {
+          "link": {"url": "lune.amp.html", "text": "<span>H</span><span>o</span><span>m</span><span>e</span>", "aria-label": "Home"}
+        },
+        {
           "link": {"url": "product-blanc.amp.html", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>", "aria-label": "Blanc"}
         },
         {

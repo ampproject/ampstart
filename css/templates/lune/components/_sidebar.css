@@ -2,38 +2,36 @@
 
 .ampstart-sidebar {
   width: 80vw;
-  /* Keep the header bar visible when the sidebar is open */
-  height: calc(100vh - var(--layout-header-height-mobile));
-  margin-top: var(--layout-header-height-mobile);
-  padding-bottom: calc(var(--layout-header-height-mobile) / 2);
 
   display: flex;
   align-items: center;
 }
-
-@media (--breakpoint-mt) {
-  .ampstart-sidebar {
-    /* Keep the header bar visible when the sidebar is open */
-    margin-top: var(--layout-header-height-desktop);
-    height: calc(100vh - var(--layout-header-height-desktop));
-    padding-bottom: calc(var(--layout-header-height-desktop) / 2);
-  }
-}
-
 /* On large device the width should be set to 50vw */
 @media (--breakpoint-lg) {
   .ampstart-sidebar {
-    width: 50vw;
+    width: 60vw;
   }
 }
 
-/* Hide the close button, as the hamburger icon animates when the sidebar open/closes */
-.ampstart-sidebar-header  {
-  display: none;
+/* Position the close button at the top of the sidebar */
+/* Make it the same height as the header in order to align the close and hamburger icons */
+.ampstart-sidebar-header {
+  position: absolute;
+  top: 0;
+
+  height: var(--layout-header-height-mobile);
+}
+
+@media (--breakpoint-mt) {
+  .ampstart-sidebar-header {
+    height: var(--layout-header-height-desktop);
+  }
 }
 
 .ampstart-sidebar-nav {
   width: 100%;
+
+  margin: auto;
 }
 
 .ampstart-sidebar .ampstart-nav-item {
