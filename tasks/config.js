@@ -19,7 +19,7 @@ module.exports = {
     components: 'components/**/*.*',
     templates: [
       '{templates, dummy}/**/*.html',
-      '!templates/*/partials/*.html'
+      '!templates/**/partials/**/*.html'
     ],
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
