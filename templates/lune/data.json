@@ -9,7 +9,7 @@
       ]
     },
     "navbar": {
-      "name": "AMP Lune template",
+      "name": "Lune",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "href": "lune.amp.html",
