@@ -45,21 +45,21 @@
 
 
   /* Colours */
-  --color-dark-grey: #202125;
+  --color-dark-grey-1: #202125;
   --color-dark-grey-2: #33353c;
 
   --color-light-1: #fff;
   --color-light-2: #f9f9f9;
 
   /* Backgrounds */
-  --color-bg-dark-m: var(--color-dark-grey);
-  --color-bg-dark-d: var(--color-dark-grey-2);
-  --color-bg-light: var(--color-light-1);
+  --color-background-dark-mobile: var(--color-dark-grey-1);
+  --color-background-dark-desktop: var(--color-dark-grey-2);
+  --color-background-light: var(--color-light-1);
   --color-overlay-1: var(--color-light-1);
   --color-overlay-2: var(--color-light-2);
 
   /* Foregrounds */
-  --color-font-primary: var(--color-dark-grey);
+  --color-font-primary: var(--color-dark-grey-1);
   --color-font-secondary: var(--color-font-primary);
 
   /* Extra breakpoints */
