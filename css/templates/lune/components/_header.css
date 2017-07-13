@@ -51,3 +51,18 @@
 .ampstart-headerbar+amp-sidebar+* {
   margin-top: 0;
 }
+
+/* Target links on in the right fixed container of the navbar,
+   These should not be visible on mobile */
+.ampstart-headerbar-fixed a {
+  display: none;
+}
+
+@media (--breakpoint-mt) {
+  .ampstart-headerbar-fixed a {
+    display: inline-block;
+
+    font-size: var(--h6);
+    font-weight: bold;
+  }
+}
