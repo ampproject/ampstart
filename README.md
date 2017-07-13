@@ -18,8 +18,8 @@ AMP Start is built on top of [Basscss](http://basscss.com/) a low-level CSS tool
 | `npm run clean`                                                            | Removes build output.                                                 |
 | `npm run www`                                                              | Recompile www to build directory.                                     |
 | `npm run highlight`                                                        | Build HTML for code highlighting.                                     |
-| `npm run watch`<sup>[[1]](#footnote-1)</sup>                               | Watches for changes in files, re-build.                               |
-| `npm run serve`                                                            | Serves content in repo root dir over http://localhost:8000/.|
+| `npm run watch`<sup>[[1]](#footnote-1)</sup>                               | Watches for changes in files, re-builds development files.             |
+| `npm run serve`                                                            | Serves content in repo dist/ dir over http://localhost:8000/. Also, watches/livereloads for file changes. |
 
 <a id="footnote-1">[1]</a> On Windows, this command must be run as administrator.
 
