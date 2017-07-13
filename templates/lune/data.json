@@ -27,13 +27,13 @@
       ],
       "nav": [
         {
-          "link": {"url": "product-blanc.amp.html", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>"}
+          "link": {"url": "product-blanc.amp.html", "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>", "aria-label": "Blanc"}
         },
         {
-          "link": {"url": "product-noir.amp.html", "text": "<span>N</span><span>o</span><span>i</span><span>r</span>"}
+          "link": {"url": "product-noir.amp.html", "text": "<span>N</span><span>o</span><span>i</span><span>r</span>", "aria-label": "Noir"}
         },
         {
-          "link": {"url": "store.amp.html", "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>"}
+          "link": {"url": "store.amp.html", "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>", "aria-label": "Store"}
         },
         {
           "link": {"url": "mailto:contact@lune.com", "text": "contact@lune.com"}
