@@ -60,10 +60,10 @@
 /* Strikethrough effect on hover */
 .ampstart-nav-link::before {
   position: absolute;
-  top: 50%;
-  left: -4px;
-  right: -4px;
-  height: 2px;
+  top: calc(50% - .05em);
+  left: -.2em;
+  right: -.2em;
+  height: .1em;
   content: '';
   background: currentColor;
 
@@ -72,7 +72,8 @@
   transition: transform .2s ease;
 }
 
-.ampstart-nav-link:hover::before {
+.ampstart-nav-link:hover::before,
+.ampstart-nav-link:focus::before {
   transform: none;
 }
 
