@@ -2,12 +2,9 @@
 
 .ampstart-headerbar {
   justify-content: space-between;
-
   height: var(--layout-header-height-mobile);
-
   /* Override ampstart default box shadow styles */
   box-shadow: none;
-
   /* header is fixed so should be moved onto a new GPU layer */
   will-change: transform;
 }
@@ -22,17 +19,14 @@
 .ampstart-headerbar-title {
   font-size: var(--h4);
   font-weight: var(--font-weight-black);
-
   letter-spacing: var(--letter-spacing-4);
   line-height: var(--line-height-1);
-
   /* Using same indent as the letter spacing to make the text properly centered. */
   text-indent: var(--letter-spacing-4);
 }
 
 .ampstart-navbar-trigger {
   padding-left: var(--space-1);
-
   font-size: var(--h3);
 }
 
@@ -61,7 +55,6 @@
 @media (--breakpoint-mt) {
   .ampstart-headerbar-fixed a {
     display: inline-block;
-
     font-size: var(--h6);
     font-weight: bold;
   }
