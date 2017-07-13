@@ -135,7 +135,8 @@ dd:after {
 }
 
 .ampstart-input-radio label {
-  font-size: var(--h7);
+  font-size: var(--h6);
+  cursor: pointer;
 }
 
 .ampstart-btn {
