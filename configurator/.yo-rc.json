@@ -1,0 +1,17 @@
+{
+  "generator-fountain-react": {
+    "version": "1.0.0",
+    "props": {
+      "framework": "react",
+      "modules": "webpack",
+      "js": "babel",
+      "ci": "",
+      "css": "css",
+      "resolved": "/Users/torchh/.nvm/versions/node/v6.10.3/lib/node_modules/generator-fountain-webapp/node_modules/generator-fountain-react/generators/app/index.js",
+      "namespace": "fountain-react:app",
+      "_": [],
+      "sample": "hello",
+      "router": "none"
+    }
+  }
+}
