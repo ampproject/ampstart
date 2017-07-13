@@ -1,7 +1,7 @@
 @import "../page-vars";
 
 .ampstart-headerbar {
-  justify-content: space-between
+  justify-content: space-between;
 
   height: var(--layout-header-height-mobile);
 
