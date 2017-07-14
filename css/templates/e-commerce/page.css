@@ -285,7 +285,7 @@ amp-selector [option][selected] {
 }
 
 @media (--breakpoint-md) {
-  .ampstart-sidebar .ampstart-sidebar-header {
+  .ampstart-sidebar-header {
     position: absolute;
     top: var(--space-2);
     left: var(--space-4);
