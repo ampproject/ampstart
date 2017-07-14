@@ -116,7 +116,7 @@ function getPartials(acc, embedderDir, template) {
 
 gulp.task('build', 'build', function(cb) {
   runSequence(
-      'clean', 'highlight', 'escape', 'img', 'templatedata', 'postcss', 'posthtml', 'www', 'validate',
+      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', 'validate',
       'bundle', cb);
 });
 
@@ -130,8 +130,8 @@ gulp.task('img', function() {
   return gulp.src(config.src.img).pipe(gulp.dest(config.dest.img));
 });
 
-gulp.task('templatedata', function() {
-  return gulp.src(config.src.templateData).pipe(gulp.dest(config.dest.templateData));
+gulp.task('templateapi', function() {
+  return gulp.src(config.src.templateApi).pipe(gulp.dest(config.dest.templateApi));
 });
 
 function inlineCheckScript(node) {

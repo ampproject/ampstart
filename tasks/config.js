@@ -21,7 +21,7 @@ module.exports = {
       '{templates, dummy}/**/*.html',
       '!templates/*/partials/*.html'
     ],
-    templateData: 'templates/*/api/*.json',
+    templateApi: 'templates/*/api/*.json',
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
     css: ['css/**/*.css', '!css/ampstart-base/**/*.css'],
@@ -31,7 +31,7 @@ module.exports = {
   dest: {
     default: 'dist',
     templates: 'dist',
-    templateData: 'dist/templates',
+    templateApi: 'dist/templates',
     www_pages: 'dist',
     hl_partials: 'dist/hl-partials',
     css: 'dist/css/',
