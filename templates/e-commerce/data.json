@@ -49,11 +49,10 @@
         }
       ],
       "social-follow": {
-        "header": {
+        "heading": {
           "text": "follow us",
-          "classes": "h7 pt3"
+          "classes": "h7 block pt3"
         },
-        "title": "follow us",
         "links": [
           {
             "facebook": "#"
