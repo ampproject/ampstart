@@ -131,7 +131,7 @@ dd:after {
   font-size: var(--button-font-size);
   font-family: var(--title-font);
   font-weight: var(--bold-font-weight);
-  padding: var(--space-1) var(--space-3);
+  padding: var(--space-1) var(--space-4);
 }
 
 .ampstart-btn-secondary:visited {
@@ -212,18 +212,21 @@ amp-selector [option][selected] {
 
 .ampstart-headerbar {
   color: var(--color-font-accent);
+  padding-right: var(--space-2);
   background-color: var(--color-white);
   z-index: var(--z1);
+  height: var(--navbar-height);
 }
 
 .ampstart-navbar-trigger {
+  position: absolute;
   color: var(--color-primary);
   font-size: var(--h4);
 }
 
 @media (--breakpoint-md) {
-  .ampstart-navbar-trigger {
-    line-height: var(--wide-navbar-height);
+  .ampstart-headerbar {
+    height: var(--wide-navbar-height);
   }
   .ampstart-headerbar .ampstart-navbar-trigger {
     padding: 0;
@@ -256,6 +259,22 @@ amp-selector [option][selected] {
   text-align: center;
 }
 
+@media (--breakpoint-md) {
+  .ampstart-sidebar {
+    width: 25%;
+  }
+
+  .ampstart-sidebar-nav {
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.ampstart-sidebar-nav-image {
+  width: 50%;
+  min-width: 150px;
+}
+
 .ampstart-sidebar .ampstart-icon {
   fill: var(--color-primary);
 }
@@ -265,14 +284,23 @@ amp-selector [option][selected] {
   z-index: var(--z1);
 }
 
+@media (--breakpoint-md) {
+  .ampstart-sidebar-header {
+    position: absolute;
+    top: var(--space-2);
+    left: var(--space-4);
+  }
+}
+
 .ampstart-sidebar .ampstart-navbar-trigger {
   margin-top: var(--space-2);
   font-size: var(--space-3);
   line-height: normal;
+  top: 0;
 }
 
 .ampstart-nav {
-  margin: var(--space-3) 0 var(--space-4) 0;
+  margin-bottom: var(--space-4);
 }
 
 .ampstart-nav a {
@@ -283,15 +311,18 @@ amp-selector [option][selected] {
   color: var(--color-primary);
 }
 
+.ampstart-sidebar .ampstart-nav-item {
+  margin-bottom: var(--space-2);
+}
+
 .ampstart-nav-link {
+  font-family: var(--title-font);
   font-size: var(--h3);
   font-weight: var(--bold-font-weight);
   line-height: normal;
   display: block;
   margin-bottom: var(--space-3);
-  font-family: var(--title-font);
 }
-
 
 .ampstart-sidebar .ampstart-faq-item {
   margin: 0;
@@ -320,9 +351,6 @@ amp-selector [option][selected] {
 
 .ampstart-social-follow li {
   display: inline-block;
-}
-
-.ampstart-social-follow li:last-child {
   margin-right: 0;
 }
 
