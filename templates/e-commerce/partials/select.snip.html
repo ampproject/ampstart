@@ -1,9 +1,9 @@
 {{#select}}
-<div class="commerce-select-wrapper">
-  <label for="{{id}}" class="bold caps h6 pr2">{{placeholder}}</label>
-  <select name="{{name}}" id="{{id}}" class="commerce-select h6">
+<div class="commerce-select-wrapper inline-block {{classes}}">
+  <label for="{{id}}" class="bold caps h6">{{placeholder}}</label>
+  <select name="{{name}}" id="{{id}}" class="commerce-select h6" {{#on}}on="{{on}}"{{/on}}>
     {{#options}}
-      <option value="{{value}}">{{.}}</option>
+      <option value="{{.}}">{{.}}</option>
     {{/options}}
   </select>
 </div>
