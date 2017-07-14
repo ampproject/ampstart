@@ -1,8 +1,12 @@
 import {hello} from './app/hello';
 import './index.css';
 
-console.log('sup!');
-hello();
+let templatesPath = '';
+if (process.env.NODE_ENV === 'production') {
+  templatesPath = '../templates/';
+} else {
+  templatesPath = 'testTemplates/';
+}
 
 // Can only apply styles to iframe if on same domain
 // https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe
@@ -33,9 +37,10 @@ class AmpConfigurator {
 }
 
 // require('postcss-custom-properties')({preserve: true}),
-
 const configurator = new AmpConfigurator();
 configurator.setSrc('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
-configurator.setSrc('templates/article/article.amp.html#amp=1', () => {
+configurator.setSrc(templatesPath + 'article/article.amp.html#amp=1', () => {
   configurator.setStyle();
 });
+
+hello();
