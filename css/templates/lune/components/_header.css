@@ -27,8 +27,8 @@
 }
 
 /* Remove the default margin top from amp-sidebar and navbar */
-.ampstart-headerbar+:not(amp-sidebar),
-.ampstart-headerbar+amp-sidebar+* {
+.ampstart-headerbar + :not(amp-sidebar),
+.ampstart-headerbar + amp-sidebar + * {
   margin-top: 0;
 }
 
