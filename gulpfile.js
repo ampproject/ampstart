@@ -213,6 +213,7 @@ gulp.task('postcss', 'build postcss files', function() {
 gulp.task('serve', 'Host a livereloading webserver for the project', ['watch:www'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
+    host: '0.0.0.0',
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
