@@ -27,7 +27,7 @@ class AmpConfigurator {
 
   setStyle() {
     this.style = this.iframe.contentDocument.createElement('style');
-    this.style.textContent = 'body, html { padding-left: 100px !important; }';
+    this.style.textContent = 'body { padding-left: 100px !important; }';
     this.iframe.contentDocument.head.appendChild(this.style);
   }
 }
