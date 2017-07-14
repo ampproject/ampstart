@@ -1,5 +1,6 @@
 @import '../../core';
 @import 'basscss-responsive-type-scale';
+@import 'basscss-responsive-margin';
 @import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
@@ -27,6 +28,10 @@ h1, h2, h3, h4, h5, h6, h7,
   text-transform: uppercase;
   font-weight: bold;
   color: var(--color-black);
+}
+
+.pr7 {
+  padding-right: var(--space-7);
 }
 
 
@@ -95,15 +100,14 @@ dd:after {
 
 /* TODO: Merge with existing amp-start select component */
 .commerce-select-wrapper {
-  display: inline-block;
   position: relative;
-  padding-right: 20px;
+  padding-right: 13px;
 }
 
 .commerce-select-wrapper::after {
   position: absolute;
   right: 0;
-  top: 8px;
+  bottom: 8px;
   content: '';
   display: block;
   width: 0;
@@ -118,6 +122,15 @@ dd:after {
   border: none;
   border-radius: 0;
   background: none;
+}
+
+.ampstart-input-radio {
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
+.ampstart-input-radio label {
+  font-size: var(--h6);
 }
 
 .ampstart-btn {
@@ -161,6 +174,12 @@ amp-selector [option][selected] {
   .md-commerce-panel-filled {
     background-color: #F4F4F3;
   }
+
+  .md-commerce-header {
+    margin-top: var(--space-3);
+    border-top: 1px solid var(--color-separator);
+    border-bottom: 1px solid var(--color-separator);
+  }
 }
 
 /* Classic Table */
@@ -201,9 +220,14 @@ amp-selector [option][selected] {
 /* HEADER */
 .main {
   overflow: hidden;
+  margin-top: var(--navbar-height);
 }
 
 @media (--breakpoint-md) {
+  .main {
+    margin-top: var(--wide-navbar-height);
+  }
+
   .ampstart-headerbar + *:not(amp-sidebar),
   .ampstart-headerbar + amp-sidebar + * {
     margin-top: var(--wide-navbar-height);
@@ -474,5 +498,17 @@ amp-selector [option][selected] {
 @media (--breakpoint-md) {
   .commerce-product-desc {
     margin-right: calc(1/12 * 100%);
+  }
+}
+
+
+/* PRODUCT LISTING */
+.commerce-listing-banner {
+  width: 100%;
+}
+
+@media (--breakpoint-md) {
+  .commerce-listing-wrapper {
+    margin-left: calc(1/12 * 100%);
   }
 }
