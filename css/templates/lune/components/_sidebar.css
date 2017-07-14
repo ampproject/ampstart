@@ -6,13 +6,6 @@
   align-items: center;
 }
 
-/* On large device the width should be set to 60vw */
-@media (--breakpoint-lg) {
-  .ampstart-sidebar {
-    width: 60vw;
-  }
-}
-
 /* Position the close button at the top of the sidebar */
 /* Make it the same height as the header in order to align the close and hamburger icons */
 .ampstart-sidebar-header {
