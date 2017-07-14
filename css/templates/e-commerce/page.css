@@ -174,6 +174,12 @@ amp-selector [option][selected] {
   .md-commerce-panel-filled {
     background-color: #F4F4F3;
   }
+
+  .md-commerce-header {
+    margin-top: var(--space-3);
+    border-top: 1px solid var(--color-separator);
+    border-bottom: 1px solid var(--color-separator);
+  }
 }
 
 /* Classic Table */
@@ -474,12 +480,6 @@ amp-selector [option][selected] {
 }
 
 @media (--breakpoint-md) {
-  .commerce-listing-header {
-    margin-top: var(--space-3);
-    border-top: 1px solid var(--color-separator);
-    border-bottom: 1px solid var(--color-separator);
-  }
-
   .commerce-listing-wrapper {
     margin-left: calc(1/12 * 100%);
   }
