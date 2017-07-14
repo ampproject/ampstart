@@ -32,6 +32,8 @@ class AmpConfigurator {
   }
 }
 
+// require('postcss-custom-properties')({preserve: true}),
+
 const configurator = new AmpConfigurator();
 configurator.setSrc('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
 configurator.setSrc('templates/article/article.amp.html#amp=1', () => {
