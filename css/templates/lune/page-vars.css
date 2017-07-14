@@ -1,0 +1,86 @@
+:root {
+  --content-max-width: 100%;
+
+  --z1: 1; /* body */
+  --z2: 2; /* overlay */
+  --z3: 3; /* sidebar mask */
+  --z4: 4; /* sidebar */
+  --z5: 5; /* header */
+
+  --navbar-height: 4.375rem; /* 70px */
+  --wide-navbar-height: 5.75rem; /* 92px */
+
+
+
+  /* Type */
+  --font-family: "Lato", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", Arial, sans-serif;
+  --font-weight-heavy: 900;
+
+  /* Responsive headings type scale */
+  --h00: 6.875rem; /* 110px */
+  --h0: 5rem; /* 80px */
+  --h1: 4.0625rem; /* 65px */
+  --h2: 3.125rem; /* 50px */
+  --h3: 2.1875rem; /* 35px */
+  --h4: 1.375rem; /* 22px */
+  --h5: 1.125rem; /* 18px */
+  --h6: .875rem; /* 14px */
+  --h7: .75rem; /* 12px */
+
+
+  /* Letter spacing */
+  --letter-spacing-1: .02em;
+  --letter-spacing-2: .1em;
+  --letter-spacing-3: .26em;
+  --letter-spacing-4: .48em;
+  --letter-spacing-5: .56em;
+
+  /* Line heights */
+  --line-height-1: 1;
+  --line-height-2: 1.5;
+  --line-height-3: 1.75;
+  --line-height-4: 2;
+  --line-height-5: 3;
+
+
+
+  /* Colours */
+  --color-dark-grey-1: #202125;
+  --color-dark-grey-2: #33353c;
+
+  --color-light-1: #fff;
+  --color-light-2: #f9f9f9;
+
+  /* Backgrounds */
+  --color-background-dark-narrow: var(--color-dark-grey-1);
+  --color-background-dark-wide: var(--color-dark-grey-2);
+  --color-background-light: var(--color-light-1);
+  --color-overlay-1: var(--color-light-1);
+  --color-overlay-2: var(--color-light-2);
+
+  /* Foregrounds */
+  --color-font-primary: var(--color-dark-grey-1);
+  --color-font-secondary: var(--color-font-primary);
+
+  /*
+   * Copying these @custom-media rules and the --space-* variables from
+   * bass-override-vars.css. This is a temporary solution, until we merge
+   * all the CSS into one file.
+   */
+  @custom-media --breakpoint-xs (max-width: 40rem);
+  @custom-media --breakpoint-sm (min-width: 40.06rem);
+  @custom-media --breakpoint-md (min-width: 52.06rem);
+  @custom-media --breakpoint-lg (min-width: 64.06rem);
+  @custom-media --breakpoint-sm-md (min-width: 40.06rem) and (max-width: 52rem);
+  @custom-media --breakpoint-md-lg (min-width: 52.06rem) and (max-width: 64rem);
+  --space-1: .5rem; /* 8px */
+  --space-2: 1rem; /* 16px */
+  --space-3: 1.5rem; /* 24px */
+  --space-4: 2rem; /* 32px */
+
+  /* Extra breakpoints */
+  /* Breakpoint for very large desktops */
+  @custom-media --breakpoint-vld (min-width: 77.5rem); /* 1240px */
+  /* Breakpoint for tablet devices */
+  @custom-media --breakpoint-mt (min-width: 45rem); /* 720px */
+}

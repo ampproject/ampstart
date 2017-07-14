@@ -1,0 +1,58 @@
+@import "../page-vars";
+
+.ampstart-sidebar {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+}
+
+/* Position the close button at the top of the sidebar */
+/* Make it the same height as the header in order to align the close and hamburger icons */
+.ampstart-sidebar-header {
+  position: absolute;
+  top: 0;
+  height: var(--navbar-height);
+}
+
+@media (--breakpoint-mt) {
+  .ampstart-sidebar-header {
+    height: var(--wide-navbar-height);
+  }
+}
+
+.ampstart-sidebar-nav {
+  width: 100%;
+  margin: auto;
+}
+
+.ampstart-sidebar .ampstart-nav-item {
+  max-width: 7.5em;
+  margin: auto;
+  font-weight: var(--font-weight-heavy);
+  line-height: var(--line-height-5);
+}
+
+.ampstart-nav-link {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Strikethrough effect on hover */
+.ampstart-nav-link::before {
+  position: absolute;
+  top: calc(50% - .05em);
+  left: -.2em;
+  right: -.2em;
+  height: .1em;
+  content: '';
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .2s ease;
+}
+
+.ampstart-nav-link:hover::before,
+.ampstart-nav-link:focus::before {
+  transform: none;
+}
