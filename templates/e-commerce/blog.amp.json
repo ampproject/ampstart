@@ -1,13 +1,11 @@
 {
-  "home": {
+  "header": {
     "head-tag": {
-      "canonical-path": "templates/e-commerce/landing.amp",
+      "canonical-path": "templates/e-commerce/blog.amp",
       "extensions": [
-        "amp-sidebar"
-      ],
-      "css-path": "templates/e-commerce/page.css"
-    },
-    "main": {
+        "amp-sidebar",
+        "amp-social-share"
+      ]
     }
   }
 }

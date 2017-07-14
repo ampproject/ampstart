@@ -3,6 +3,7 @@
 @import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
+@import '../../../components/socialbox/socialbox';
 @import 'page-vars';
 
 body {
@@ -34,6 +35,11 @@ h1, h2, h3, h4, h5, h6, h7,
  * TODO: BassCSS addon works for space 1 - 4, however we need it for space 5+.
  * this approach should be revised.
  */
+
+.mb5 {
+  margin-bottom: var(--space-5);
+}
+
 @media (--breakpoint-md) {
   .md-h7 {
     font-size: var(--h7);
@@ -161,6 +167,19 @@ amp-selector [option][selected] {
   .md-commerce-panel-filled {
     background-color: #F4F4F3;
   }
+}
+
+.commerce-blockquote {
+  font-size: var(--h2);
+  margin: var(--space-3) 0 var(--space-2) 0;
+  line-height: 1.2;
+}
+
+.commerce-blockquote-quoter {
+  font-family: var(--title-font);
+  font-size: var(--h6);
+  font-weight: var(--bold-font-weight);
+  margin-bottom: var(--space-3);
 }
 
 /* Classic Table */

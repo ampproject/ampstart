@@ -22,12 +22,17 @@ limitations under the License.
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
-  <main id="content" role="main" class="main flex flex-wrap commerce-panel-filled">
-    <div class="col-12 md-col-8 color-white commerce-blog-wrapper">
-      {{#blog}}
-        {{> partials/blog-preview.html}}
-      {{/blog}}
-    </div>
+  <main id="content" role="main" class="main commerce-panel-filled">
+    <section class="col-12 md-col-8 commerce-blog-wrapper">
+      <div class="commerce-blog">
+        <div class="xs-hide sm-hide md-commerce-header md-mb2">
+          <h1 class="h3 mb1 ml3 mt2 md-mt2 md-mb2 md-ml0">featured posts</h1>
+        </div>
+        {{#blog}}
+          {{> partials/blog-preview.html}}
+        {{/blog}}
+      </div>
+    </section>
   </main>
 </body>
 </html>

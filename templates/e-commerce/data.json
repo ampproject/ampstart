@@ -107,15 +107,15 @@
           "narrow": "../../img/e-commerce/blog-narrow-01.png",
           "wide": "../../img/e-commerce/blog-wide-01.png"
         },{
-          "narrow": "../../img/e-commerce/blog-narrow-01.png",
-          "wide": "../../img/e-commerce/blog-wide-01.png"
+          "narrow": "../../img/e-commerce/blog-narrow-05.png",
+          "wide": "../../img/e-commerce/blog-wide-05.png"
         },{
-          "narrow": "../../img/e-commerce/blog-narrow-01.png",
-          "wide": "../../img/e-commerce/blog-wide-01.png"
+          "narrow": "../../img/e-commerce/blog-narrow-06.png",
+          "wide": "../../img/e-commerce/blog-wide-06.png"
         }
         ],
         "quote": {
-          "quoter": "name of quoter",
+          "quoter": "Name of quoter",
           "text": "Maecenas neque mi, tempus ut commodo eget, commodo sit amet mauris."
         }
       },
