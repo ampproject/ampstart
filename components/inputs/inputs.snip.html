@@ -78,7 +78,7 @@ limitations under the License.
 
 {{#radio}}
 <!-- Start Radio -->
-<div class="ampstart-input ampstart-input-radio inline-block relative m0 p0 mb3 {{classes}}">
+<div class="ampstart-input ampstart-input-radio inline-block relative m0 p0 mb3 {{classes}}" {{#on}}on="{{.}}"{{/on}}>
     <input type="radio" value="{{value}}" name="{{name}}" id="{{id}}" class="relative" {{checked}} {{disabled}}/>
     <label for="{{id}}" class="" aria-hidden="true">{{label}}</label>
 </div>

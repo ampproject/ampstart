@@ -213,6 +213,14 @@ basscss-position@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/basscss-position/-/basscss-position-2.0.3.tgz#467180a1f8f386e9072ed8d08294d2a6e0ba4305"
 
+basscss-responsive-margin@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/basscss-responsive-margin/-/basscss-responsive-margin-1.1.0.tgz#2243bcbd00d1d56008496dedb4be2b3cb329d920"
+
+basscss-responsive-type-scale@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/basscss-responsive-type-scale/-/basscss-responsive-type-scale-1.0.1.tgz#ab02e2b3e6eb8084ff2893aa2e3eec0f6387d62d"
+
 basscss-type-scale@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/basscss-type-scale/-/basscss-type-scale-1.0.5.tgz#23bf5e41c9d142c8061cf9829ccf23e9b3258ec7"
