@@ -4,6 +4,10 @@ import './index.css';
 console.log('sup!');
 hello();
 
+// Can only apply styles to iframe if on same domain
+// https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe
+// https://stackoverflow.com/questions/6494721/css-override-body-style-for-content-in-iframe
+
 class AmpConfigurator {
   constructor() {
     this.iframe = document.createElement('iframe');
@@ -15,18 +19,16 @@ class AmpConfigurator {
   setSrc(path, iframeLoadedCallback) {
     this.iframe.src = path;
     this.iframe.addEventListener('load', () => {
-      iframeLoadedCallback();
+      if (iframeLoadedCallback) {
+        iframeLoadedCallback();
+      }
     });
   }
 
   setStyle() {
-    const style = this.iframe.contentDocument.createElement('style');
-    style.textContent = 'body, html { padding-left: 100px !important; }';
-    this.iframe.contentDocument.head.appendChild(style);
-    console.log(this.iframe.contentDocument.body.offsetWidth);
-    console.log(this.iframe.contentDocument);
-    console.log(this.iframe.contentDocument.head);
-    console.log(style);
+    this.style = this.iframe.contentDocument.createElement('style');
+    this.style.textContent = 'body, html { padding-left: 100px !important; }';
+    this.iframe.contentDocument.head.appendChild(this.style);
   }
 }
 
