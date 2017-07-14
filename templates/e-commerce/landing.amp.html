@@ -16,20 +16,21 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-{{#home}}
 <html ⚡>
+{{#header}}
 {{> ../../utils/amp-page-head.snip.html}}
 <body>
   {{> ../../components/navbar/navbar.snip.html}}
+  {{/header}}
 
   <main id="content" role="main" class="main">
   {{#main}}
 
   {{#heros}}
-    {{> partials/hero/hero.snip.html}}
+    {{> partials/hero.snip.html}}
   {{/heros}}
   {{/main}}
   </main>
 </body>
 </html>
-{{/home}}
+

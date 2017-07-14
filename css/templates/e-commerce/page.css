@@ -1,55 +1,230 @@
 @import '../../core';
+@import 'basscss-responsive-type-scale';
 @import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
 @import 'page-vars';
 
 body {
-  font-size: var(--narrow-body-font-size);
-}
-
-@media (--breakpoint-md) {
-  body {
-    font-size: var(--wide-body-font-size);
-  }
+  font-size: var(--body-font-size);
+  line-height: initial;
 }
 
 /* TYPOGRAPHY */
 .h3 {
   color: var(--color-primary);
+}
+
+.h7 {
+  font-size: var(--h7);
+}
+
+h1, h2, h3, h4, h5, h6, h7,
+.h1, .h2, .h3, .h4, .h5, .h6, .h7 {
   line-height: normal;
-  padding-bottom: var(--space-1);
+  letter-spacing: normal;
+  font-family: var(--title-font);
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--color-black);
+}
+
+
+/**
+ * TODO: BassCSS addon works for space 1 - 4, however we need it for space 5+.
+ * this approach should be revised.
+ */
+@media (--breakpoint-md) {
+  .md-h7 {
+    font-size: var(--h7);
+  }
+
+  .md-px4 {
+    padding-left: var(--space-4);
+    padding-right: var(--space-4);
+  }
+
+  .md-pt5 {
+    padding-top: var(--space-5);
+  }
+
+  .md-pl5 {
+    padding-left: var(--space-5);
+  }
+
+  .md-pt6 {
+    padding-top: var(--space-6);
+  }
+
+  .md-pl7 {
+    padding-left: var(--space-7);
+  }
+
+  .md-pr7 {
+    padding-right: var(--space-7);
+  }
+
+  .md-px7 {
+    padding-left: var(--space-7);
+    padding-right: var(--space-7);
+  }
 }
 
 
 /* ELEMENTS */
+hr {
+  /* Allows separator to be full width outside of main container padding */
+  width: calc(100% + 2 * var(--space-3));
+  height: 1px;
+  background-color: var(--color-separator);
+  border: none;
+  margin: 0 -var(--space-3);
+}
+
+@media (--breakpoint-md) {
+  hr {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+dd:after {
+  content: '';
+  display: block;
+}
+
+/* TODO: Merge with existing amp-start select component */
+.commerce-select-wrapper {
+  display: inline-block;
+  position: relative;
+  padding-right: 20px;
+}
+
+.commerce-select-wrapper::after {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--color-primary);
+}
+
+.commerce-select {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 0;
+  background: none;
+}
+
+.ampstart-btn {
+  display: inline-block;
+}
+
 .ampstart-btn-secondary {
   background-color: var(--color-white);
-  color: var(--color-font-accent);
-  border-color: var(--color-font-accent);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
   font-size: var(--button-font-size);
-  font-family: var(--font-family);
+  font-family: var(--title-font);
   font-weight: var(--bold-font-weight);
   padding: var(--space-1) var(--space-3);
 }
 
+.ampstart-btn-secondary:visited {
+  color: var(--color-primary);
+}
+
+amp-selector [option] {
+  outline: 1px solid var(--color-separator);
+}
+
+amp-selector [option][selected] {
+  outline-color: var(--color-primary);
+}
+
+.amp-carousel-button {
+  display: none;
+}
+
+.commerce-panel-empty {
+  background-color: var(--color-white);
+}
+
+.commerce-panel-filled {
+  background-color: #F4F4F3;
+}
+@media (--breakpoint-md) {
+  .md-commerce-panel-filled {
+    background-color: #F4F4F3;
+  }
+}
+
+/* Classic Table */
+.commerce-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 300px;
+  max-width: 500px;
+  font-family: var(--title-font);
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+  color: var(--color-primary);
+}
+
+.commerce-table-header {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.commerce-table td,
+.commerce-table th {
+  padding: 0;
+  border: 1px solid var(--color-black);
+  line-height: var(--space-6);
+}
+
+.commerce-table td {
+  border: 1px solid var(--color-table-border);
+  width: 25%;
+  background-color: var(--color-white);
+}
+
+.commerce-table td:first-child {
+  width: 50%;
+}
+
+
 /* HEADER */
+.main {
+  overflow: hidden;
+}
+
+@media (--breakpoint-md) {
+  .ampstart-headerbar + *:not(amp-sidebar),
+  .ampstart-headerbar + amp-sidebar + * {
+    margin-top: var(--wide-navbar-height);
+  }
+}
+
 .ampstart-headerbar {
   color: var(--color-font-accent);
   background-color: var(--color-white);
-  height: var(--narrow-nav-item-height);
   z-index: var(--z1);
 }
 
 .ampstart-navbar-trigger {
-  color: var(--color-font-accent);
+  color: var(--color-primary);
+  font-size: var(--h4);
 }
 
 @media (--breakpoint-md) {
-  .ampstart-headerbar {
-    height: var(--wide-nav-item-height);
+  .ampstart-navbar-trigger {
+    line-height: var(--wide-navbar-height);
   }
-
   .ampstart-headerbar .ampstart-navbar-trigger {
     padding: 0;
     margin-left: var(--space-1);
@@ -60,7 +235,7 @@ body {
   font-size: var(--h4);
   font-weight: var(--bold-font-weight);
   line-height: normal;
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 @media (--breakpoint-md) {
@@ -79,6 +254,10 @@ body {
   width: var(--sidebar-width);
   margin-bottom: var(--space-3);
   text-align: center;
+}
+
+.ampstart-sidebar .ampstart-icon {
+  fill: var(--color-primary);
 }
 
 .ampstart-sidebar-header {
@@ -101,7 +280,7 @@ body {
 }
 
 .ampstart-nav-item {
-  color: var(--color-font-accent);
+  color: var(--color-primary);
 }
 
 .ampstart-nav-link {
@@ -110,7 +289,9 @@ body {
   line-height: normal;
   display: block;
   margin-bottom: var(--space-3);
+  font-family: var(--title-font);
 }
+
 
 .ampstart-sidebar .ampstart-faq-item {
   margin: 0;
@@ -118,8 +299,8 @@ body {
 
 .ampstart-sidebar-faq {
   width: 100%;
-  color: var(--color-secondary);
-  font-family: var(--font-family-secondary);
+  color: var(--color-primary);
+  font-family: var(--font-family);
   padding-top: var(--space-2);
 }
 
@@ -145,16 +326,6 @@ body {
   margin-right: 0;
 }
 
-.main {
-  margin-top: var(--narrow-nav-item-height);
-}
-
-@media (--breakpoint-md) {
-  .main {
-    margin-top: calc(var(--wide-nav-item-height));
-  }
-}
-
 
 /* HERO */
 .commerce-hero-content {
@@ -162,8 +333,8 @@ body {
 }
 
 .commerce-hero-content-body {
-  padding-bottom: var(--space-3);
-  font-family: var(--font-family-secondary);
+  padding: var(--space-1) 0 var(--space-2);
+  font-family: var(--font-family);
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
@@ -202,16 +373,78 @@ body {
     background-color: var(--color-white);
     border: none;
     color: var(--color-primary);
-    font-size: var(--h5);
+    font-size: var(--h7);
   }
 
   .commerce-hero-content-theme-secondary,
   .commerce-hero-content-theme-secondary .commerce-hero-content-title {
-    color: var(--color-secondary);
+    color: var(--color-primary);
   }
 
   .commerce-hero-content-theme-secondary .ampstart-btn {
     color: var(--color-white);
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
+  }
+}
+
+
+/* PRODUCT DETAILS */
+.icon-star,
+.icon-star-empty {
+  height: 14px;
+  width: 14px;
+  color: var(--color-font-accent);
+}
+
+.icon-star-empty {
+  color: #dadada;
+}
+
+.commerce-product-btn-wrapper {
+  text-align: center;
+}
+
+@media (--breakpoint-md) {
+  .commerce-product-btn-wrapper {
+    text-align: initial;
+  }
+}
+
+.commerce-product-color-swatch {
+  height: 24px;
+  width: 24px;
+  margin-left: var(--space-1);
+}
+
+.commerce-product-color-swatch:first-child {
+  margin-left: 0;
+}
+
+.commerce-product-color-white {
+  background-color: var(--color-white);
+}
+
+.commerce-product-color-green {
+  background-color: #243d1e;
+}
+
+.commerce-product-thumb {
+  width: 43px;
+  margin-left: var(--space-1);
+}
+
+.commerce-product-thumb:first-child {
+  margin-left: 0;
+}
+
+@media (--breakpoint-md) {
+  .commerce-product-thumb {
+    width: 80px;
+  }
+}
+
+@media (--breakpoint-md) {
+  .commerce-product-desc {
+    margin-right: calc(1/12 * 100%);
   }
 }
