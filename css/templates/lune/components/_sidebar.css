@@ -33,14 +33,10 @@
 }
 
 .ampstart-sidebar .ampstart-nav-item {
-  display: block;
-  width: 80%;
   max-width: 7.5em;
   margin: auto;
-  font-size: var(--h4);
   font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-5);
-  text-transform: uppercase;
 }
 
 .ampstart-nav-link {
@@ -66,22 +62,4 @@
 .ampstart-nav-link:hover::before,
 .ampstart-nav-link:focus::before {
   transform: none;
-}
-
-.ampstart-nav-item:last-child .ampstart-nav-link {
-  font-size: var(--h5);
-  letter-spacing: var(--letter-spacing-2);
-  text-decoration: underline;
-  text-transform: lowercase;
-}
-
-@media (--breakpoint-md) {
-  .ampstart-sidebar .ampstart-nav-item {
-    font-size: var(--h2);
-  }
-
-  /* Hide the contact email on desktop resolutions */
-  .ampstart-nav-item:last-child {
-    display: none;
-  }
 }
