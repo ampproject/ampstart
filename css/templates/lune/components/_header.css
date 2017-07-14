@@ -2,7 +2,6 @@
 
 .ampstart-headerbar {
   justify-content: space-between;
-  height: var(--layout-header-height-narrow);
   /* Override ampstart default box shadow styles */
   box-shadow: none;
   /* header is fixed so should be moved onto a new GPU layer */
@@ -32,8 +31,19 @@
     padding-left: var(--space-3);
   }
 
-  .ampstart-headerbar {
-    height: var(--layout-header-height-wide);
+  .ampstart-headerbar + *:not(amp-sidebar),
+  .ampstart-headerbar + amp-sidebar + * {
+    margin-top: var(--wide-navbar-height);
+  }
+
+  .ampstart-headerbar-nav,
+  .ampstart-navbar-trigger {
+    line-height: var(--wide-navbar-height);
+  }
+
+  .ampstart-sidebar-header {
+    line-height: var(--wide-navbar-height);
+    min-height: var(--wide-navbar-height);
   }
 }
 

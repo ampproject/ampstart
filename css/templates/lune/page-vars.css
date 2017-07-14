@@ -7,8 +7,8 @@
   --z4: 4; /* sidebar */
   --z5: 5; /* header */
 
-  --layout-header-height-narrow: 4.375rem; /* 70px */
-  --layout-header-height-wide: 5.75rem; /* 92px */
+  --navbar-height: 4.375rem; /* 70px */
+  --wide-navbar-height: 5.75rem; /* 92px */
 
 
 
