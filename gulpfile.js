@@ -211,6 +211,7 @@ gulp.task('postcss', 'build postcss files', function() {
 gulp.task('serve', function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
+    host: '0.0.0.0',
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
