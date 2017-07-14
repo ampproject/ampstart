@@ -26,11 +26,22 @@
   justify-content: flex-end;
 }
 
+/* Remove the default margin top from amp-sidebar and navbar */
+.ampstart-headerbar+:not(amp-sidebar),
+.ampstart-headerbar+amp-sidebar+* {
+  margin-top: 0;
+}
+
+
 @media (--breakpoint-mt) {
   .ampstart-navbar-trigger {
     padding-left: var(--space-3);
   }
 
+  /*
+   * Override styles based on --navbar-height with the
+   * responsive value for wide screens
+   */
   .ampstart-headerbar + *:not(amp-sidebar),
   .ampstart-headerbar + amp-sidebar + * {
     margin-top: var(--wide-navbar-height);
@@ -45,10 +56,4 @@
     line-height: var(--wide-navbar-height);
     min-height: var(--wide-navbar-height);
   }
-}
-
-/* Remove the default margin top from amp-sidebar and navbar */
-.ampstart-headerbar+:not(amp-sidebar),
-.ampstart-headerbar+amp-sidebar+* {
-  margin-top: 0;
 }
