@@ -9,13 +9,6 @@
   will-change: transform;
 }
 
-.ampstart-headerbar-home-link {
-  /* Ensures horizontal centering */
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .ampstart-headerbar-title {
   font-size: var(--h4);
   font-weight: var(--font-weight-heavy);
@@ -28,6 +21,10 @@
 .ampstart-navbar-trigger {
   padding-left: var(--space-1);
   font-size: var(--h3);
+}
+
+.ampstart-headerbar-fixed {
+  justify-content: flex-end;
 }
 
 @media (--breakpoint-mt) {
