@@ -31,13 +31,13 @@
       "nav": [
         {
           "link": {
-            "url": "#",
+            "url": "product-listing.amp.html",
             "text": "Products"
           }
         },
         {
           "link": {
-            "url": "#",
+            "url": "blog-listing.amp.html",
             "text": "Blog"
           }
         },
