@@ -1,0 +1,26 @@
+@import "page-vars";
+
+.lune-theme--dark {
+  background-color: var(--color-background-dark-narrow);
+  color: var(--color-light-1);
+}
+@media (--breakpoint-mt) {
+  .lune-theme--dark {
+    background-color: var(--color-background-dark-wide);
+  }
+}
+
+.lune-theme--light {
+  background-color: var(--color-background-light);
+  color: var(--color-font-primary);
+}
+
+.lune-theme--overlay-1 {
+  background-color: var(--color-overlay-1);
+  color: var(--color-font-primary);
+}
+
+.lune-theme--overlay-2 {
+  background-color: var(--color-overlay-2);
+  color: var(--color-font-primary);
+}
