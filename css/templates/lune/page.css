@@ -1,22 +1,28 @@
+/* NOTE FOR REVIEW: We understand that imports should not be used and everything
+should be kept in one CSS file.
+Our plan is to use imports for now for review only to avoid merge conflicts.
+For our final submission, we will remove the imports and merge everything into
+one file.
+*/
+
 @import '../../core';
+
+/*
+ * Custom typography needs to be imported before the responsive-type-scale plugin,
+ * otherwise our h7 class gets overridden. Will be fixed once we switch from
+ * imports to all styles in the same css file.
+ *
+ */
+@import "_type";
 @import 'basscss-addons/modules/responsive-type-scale';
 @import '../../../components/images/images';
 @import '../../../components/navbar/navbar';
 @import 'page-vars';
 
-/* NOTE FOR REVIEW: We understand that imports should not be used and everything
-   should be kept in one CSS file.
-   Our plan is to use imports for now for review only to avoid merge conflicts.
-   For our final submission, we will remove the imports and merge everything into
-   one file.
-*/
-
-
 
 /* //////////////////////////////////////////////////////
    LUNE TYPOGRAPHY
 ///////////////////////////////////////////////////////*/
-
 
 
 

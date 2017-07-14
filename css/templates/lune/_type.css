@@ -1,0 +1,11 @@
+@import 'page-vars';
+
+.h7 {
+  font-size: var(--h7);
+}
+
+@media (--breakpoint-md) {
+  .md-h7 {
+    font-size: var(--h7);
+  }
+}
