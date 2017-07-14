@@ -8,7 +8,7 @@
     "clean": "gulp clean",
     "www": "gulp www",
     "highlight": "gulp highlight",
-    "watch": "gulp watch",
+    "watch": "gulp watch:www",
     "serve": "gulp serve"
   },
   "private": true,
