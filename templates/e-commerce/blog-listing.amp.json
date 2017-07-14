@@ -1,0 +1,13 @@
+{
+  "home": {
+    "head-tag": {
+      "canonical-path": "templates/e-commerce/landing.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "css-path": "templates/e-commerce/page.css"
+    },
+    "main": {
+    }
+  }
+}

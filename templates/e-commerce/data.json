@@ -82,6 +82,56 @@
           }
         ]
       }
+    },
+    "blog": {
+      "articles": [
+        {
+          "title": "no sleep 'til brooklyn",
+          "date": "31st March 2017",
+          "datetime": "2017-03-31T00:00",
+          "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+          "paragraphs": [
+            "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. osuere. Vestibulum at neque diam. Donec sed tempus dui. Maecenas in enim vel lorem pellentesque feugiat. Curabitur in congue sem. Ut feugiat egestas neque, a scelerisque est accumsan eu. Integer hendrerit, risus ac sodales bibendum, orci orci sollicitudin odio, quis pulvinar nibh ante in sem. Sed nec pharetra ante, non pharetra nisl. Maecenas congue facilisis magna eget tempus. Nam tincidunt facilisis urna, nec imperdiet libero sagittis sed. Etiam malesuada mi quis diam facilisis tempor.",
+            "Curabitur aliquet elementum nunc nec venenatis. Morbi nec ullamcorper nibh. Fusce pellentesque fermentum lacus ut placerat. Sed imperdiet augue nisi, vitae consectetur leo posuere nec. Suspendisse potenti. Nulla facilisi. Mauris sit amet imperdiet ex. Suspendisse lorem neque, gravida quis justo et, dapibus posuere nunc. In mi nisi, tempor id purus nec, convallis vehicula dolor. Donec id laoreet quam, ut placerat massa. Phasellus et euismod neque, facilisis semper dui. Donec vestibulum, orci et pulvinar ultrices, justo diam fermentum orci, eget tempus libero nunc vel sem. Quisque euismod sapien vel orci commodo condimentum. Suspendisse et elementum risus.",
+            "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. osuere. Vestibulum at neque diam. Donec sed tempus dui. Maecenas in enim vel lorem pellentesque feugiat. Curabitur in congue sem. Ut feugiat egestas neque, a scelerisque est accumsan eu. Integer hendrerit, risus ac sodales bibendum, orci orci sollicitudin odio, quis pulvinar nibh ante in sem. Sed nec pharetra ante, non pharetra nisl. Maecenas congue facilisis magna eget tempus. Nam tincidunt facilisis urna, nec imperdiet libero sagittis sed. Etiam malesuada mi quis diam facilisis tempor.",
+            "Curabitur aliquet elementum nunc nec venenatis. Morbi nec ullamcorper nibh. Fusce pellentesque fermentum lacus ut placerat. Sed imperdiet augue nisi, vitae consectetur leo posuere nec. Suspendisse potenti. Nulla facilisi. Mauris sit amet imperdiet ex. Suspendisse lorem neque, gravida quis justo et, dapibus posuere nunc. In mi nisi, tempor id purus nec, convallis vehicula dolor. Donec id laoreet quam ut placerat massa. Phasellus et euismod neque, facilisis semper dui. Donec vestibulum, orci et pulvinar ultrices, justo diam fermentum orci, eget tempus libero nunc vel sem. Quisque euismod sapien vel orci commodo condimentum. Suspendisse et elementum risus."
+          ],
+          "imageWidth": 750,
+          "imageHeight": 427,
+          "images": [
+            "../../img/e-commerce/wide-landing-01.png",
+            "../../img/e-commerce/wide-landing-02.png",
+            "../../img/e-commerce/wide-landing-03.png"
+          ],
+          "quote": {
+            "quoter": "name of quoter",
+            "text": "Maecenas neque mi, tempus ut commodo eget, commodo sit amet mauris."
+          }
+        },
+        {
+          "title": "no sleep 'til brooklyn",
+          "date": "31st March 2017",
+          "datetime": "2017-03-31T00:00",
+          "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+          "paragraphs": [
+            "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. osuere. Vestibulum at neque diam. Donec sed tempus dui. Maecenas in enim vel lorem pellentesque feugiat. Curabitur in congue sem. Ut feugiat egestas neque, a scelerisque est accumsan eu. Integer hendrerit, risus ac sodales bibendum, orci orci sollicitudin odio, quis pulvinar nibh ante in sem. Sed nec pharetra ante, non pharetra nisl. Maecenas congue facilisis magna eget tempus. Nam tincidunt facilisis urna, nec imperdiet libero sagittis sed. Etiam malesuada mi quis diam facilisis tempor.",
+            "Curabitur aliquet elementum nunc nec venenatis. Morbi nec ullamcorper nibh. Fusce pellentesque fermentum lacus ut placerat. Sed imperdiet augue nisi, vitae consectetur leo posuere nec. Suspendisse potenti. Nulla facilisi. Mauris sit amet imperdiet ex. Suspendisse lorem neque, gravida quis justo et, dapibus posuere nunc. In mi nisi, tempor id purus nec, convallis vehicula dolor. Donec id laoreet quam, ut placerat massa. Phasellus et euismod neque, facilisis semper dui. Donec vestibulum, orci et pulvinar ultrices, justo diam fermentum orci, eget tempus libero nunc vel sem. Quisque euismod sapien vel orci commodo condimentum. Suspendisse et elementum risus.",
+            "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. osuere. Vestibulum at neque diam. Donec sed tempus dui. Maecenas in enim vel lorem pellentesque feugiat. Curabitur in congue sem. Ut feugiat egestas neque, a scelerisque est accumsan eu. Integer hendrerit, risus ac sodales bibendum, orci orci sollicitudin odio, quis pulvinar nibh ante in sem. Sed nec pharetra ante, non pharetra nisl. Maecenas congue facilisis magna eget tempus. Nam tincidunt facilisis urna, nec imperdiet libero sagittis sed. Etiam malesuada mi quis diam facilisis tempor.",
+            "Curabitur aliquet elementum nunc nec venenatis. Morbi nec ullamcorper nibh. Fusce pellentesque fermentum lacus ut placerat. Sed imperdiet augue nisi, vitae consectetur leo posuere nec. Suspendisse potenti. Nulla facilisi. Mauris sit amet imperdiet ex. Suspendisse lorem neque, gravida quis justo et, dapibus posuere nunc. In mi nisi, tempor id purus nec, convallis vehicula dolor. Donec id laoreet quam ut placerat massa. Phasellus et euismod neque, facilisis semper dui. Donec vestibulum, orci et pulvinar ultrices, justo diam fermentum orci, eget tempus libero nunc vel sem. Quisque euismod sapien vel orci commodo condimentum. Suspendisse et elementum risus."
+          ],
+          "imageWidth": 750,
+          "imageHeight": 427,
+          "images": [
+            "../../img/e-commerce/wide-landing-01.png",
+            "../../img/e-commerce/wide-landing-02.png",
+            "../../img/e-commerce/wide-landing-03.png"
+          ],
+          "quote": {
+            "quoter": "name of quoter",
+            "text": "Maecenas neque mi, tempus ut commodo eget, commodo sit amet mauris."
+          }
+        }
+      ]
     }
   }
 }
