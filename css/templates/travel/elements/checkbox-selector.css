@@ -1,0 +1,92 @@
+/**
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+  These imports are only necessary since the build script unnecessarily treats
+  this as an entry file.
+ */
+@import '../bass-override-vars';
+@import '../page-vars';
+
+/**
+ * checkbox-selector
+ *
+ * Style an <amp-selector> element as a list of labeled checkboxes.
+ */
+.checkbox-selector {
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+}
+
+.checkbox-selector [option] {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.checkbox-selector [option] > span {
+  display: flex;
+  align-items: center;
+}
+
+/* Override core amp [option][selected] styles. */
+.checkbox-selector [option][selected] {
+  cursor: pointer;
+  outline: none;
+}
+
+.checkbox-selector [option] amp-img {
+  width: calc(28 / 16rem);
+  height: calc(28 / 16rem);
+  margin-right: calc(10 / 16rem);
+  background: var(--silver);
+  border-radius: 50%;
+}
+
+.checkbox-selector [option]::before,
+.checkbox-selector [option]::after {
+  width: calc(18 / 16rem);
+  height: calc(18 / 16rem);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+.checkbox-selector [option]::before {
+  content: "";
+  display: block;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--silver);
+}
+
+.checkbox-selector [option]::after {
+  content: "✔";
+  text-align: center;
+  display: none;
+  color: var(--purple);
+}
+
+.checkbox-selector [option][selected]::after {
+  display: block;
+}
+.checkbox-selector [option]:focus {
+  outline: none;
+}
