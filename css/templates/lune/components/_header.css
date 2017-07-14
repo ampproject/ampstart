@@ -32,7 +32,6 @@
   margin-top: 0;
 }
 
-
 @media (--breakpoint-mt) {
   .ampstart-navbar-trigger {
     padding-left: var(--space-3);
