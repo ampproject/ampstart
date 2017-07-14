@@ -1,0 +1,39 @@
+{
+	"items": [
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 502,
+			"image": "/img/e-commerce/product/product-3.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 629,
+			"image": "/img/e-commerce/product/product-1.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 747,
+			"image": "/img/e-commerce/product/product-3.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 771,
+			"image": "/img/e-commerce/product/product-9.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Product Name",
+			"description": "Mauris tincidunt.",
+			"price": 944,
+			"image": "/img/e-commerce/product/product-8.jpg",
+			"category": "kids"
+		}
+	]
+}

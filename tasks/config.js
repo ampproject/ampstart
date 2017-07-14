@@ -21,7 +21,7 @@ module.exports = {
       '{templates, dummy}/**/*.html',
       '!templates/*/partials/*.html'
     ],
-    templateData: 'templates/*/data/*.json',
+    templateData: 'templates/*/api/*.json',
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
     css: ['css/**/*.css', '!css/ampstart-base/**/*.css'],

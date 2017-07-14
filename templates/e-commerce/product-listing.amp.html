@@ -49,13 +49,13 @@ limitations under the License.
     <div class="commerce-listing-wrapper col-12 md-col-7 mb2">
       <div class="commerce-listing-header relative md-flex flex-wrap items-center md-mb2">
         <h1 class="h3 mb1 ml3 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
-        <div class="inline-block ml3 mr2">
+        <div class="inline-block ml3 mr2 mb1 md-mb0">
           {{#categories}} {{> partials/select.snip.html}} {{/categories}}
         </div>
         {{#price}} {{> partials/select.snip.html}} {{/price}}
       </div>
 
-      <amp-list class="mx1 md-mxn1" [src]="'data/' + products.filter + '-' + products.category + '-products.json'" src="data/high-low-all-products.json" height="500" width="300" layout="responsive">
+      <amp-list class="mx1 md-mxn1" [src]="'api/' + products.filter + '-' + products.category + '-products.json'" src="api/high-low-all-products.json" height="500" width="300" layout="responsive">
         <template type="amp-mustache">
           <div class="commerce-listing-product-item inline-block col-6 md-col-3 px1 mb2 md-mb4">
             <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>
