@@ -1,0 +1,12 @@
+{
+  "lune": {
+    "head-tag": {
+      "title": "LUNE NOIR",
+      "canonical-path": "templates/product-blanc.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "css-path": "templates/lune/page.css"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "lune": {
+    "head-tag": {
+      "title": "LUNE STORE",
+      "canonical-path": "templates/store.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "css-path": "templates/lune/page.css"
+    }
+  }
+}
