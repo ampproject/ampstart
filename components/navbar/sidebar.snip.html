@@ -30,15 +30,15 @@ limitations under the License.
       {{/sidebarimage}}
       {{#nav}}
         {{#link}}
-          <li class="ampstart-nav-item"><a class="ampstart-nav-link" href="{{{url}}}">{{text}}</a></li>
+          <li class="ampstart-nav-item {{nav-item-classes}}"><a {{#aria-label}}aria-label="{{.}}"{{/aria-label}} class="ampstart-nav-link" href="{{{url}}}">{{{text}}}</a></li>
         {{/link}}
         {{#dropdown}}
-          <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+          <li class="ampstart-nav-item ampstart-nav-dropdown relative {{nav-item-classes}}">
             {{> ../dropdown/dropdown-inline.snip.html}}
           </li>
         {{/dropdown}}
         {{#search}}
-          <li  class="ampstart-nav-item ampstart-nav-search">
+          <li  class="ampstart-nav-item ampstart-nav-search {{nav-item-classes}}">
             <input type="text" placeholder="{{text}}"></input>
           </li>
         {{/search}}
