@@ -116,7 +116,7 @@ function getPartials(acc, embedderDir, template) {
 
 gulp.task('build', 'build', function(cb) {
   runSequence(
-      'clean', 'highlight', 'escape', 'img', 'postcss', 'posthtml', 'www', 'validate',
+      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', 'validate',
       'bundle', cb);
 });
 
@@ -128,6 +128,10 @@ gulp.task('clean', function() {
 
 gulp.task('img', function() {
   return gulp.src(config.src.img).pipe(gulp.dest(config.dest.img));
+});
+
+gulp.task('templateapi', function() {
+  return gulp.src(config.src.templateApi).pipe(gulp.dest(config.dest.templateApi));
 });
 
 function inlineCheckScript(node) {
@@ -163,13 +167,15 @@ gulp.task('www', function() {
       .pipe(gulp.dest(config.dest.www_pages))
 });
 
-gulp.task('watch', 'watch stuff', ['build'], function() {
+gulp.task('watch:www', 'watch stuff, minimal watching for development', ['build'], function() {
   return gulp.watch(
       [
         config.src.components, config.src.templates, config.src.www_pages,
         config.src.css, config.src.data, config.src.img
       ],
-      ['build']);
+      function(event) {
+        runSequence(['img', 'postcss'], ['www', 'posthtml'], 'validate');
+      });
 });
 
 gulp.task('default', ['build']);
@@ -208,9 +214,10 @@ gulp.task('postcss', 'build postcss files', function() {
       .pipe(gulp.dest(config.dest.css))
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', 'Host a livereloading webserver for the project', ['watch:www'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
+    host: '0.0.0.0',
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
