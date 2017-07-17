@@ -13,7 +13,8 @@
   "landing-sections": [
     {
       "classes": "z1 relative lune-theme-light",
-      "product_name": "blanc",
+      "full_title": "Lune blanc",
+      "product_image_srcset": "../../img/lune/landing-hero-blanc@1x.png, ../../img/lune/landing-hero-blanc@2x.png 2x",
       "product_name_split": ["b", "l", "a", "n", "c"],
       "cta": {
         "text": "Discover blanc",
@@ -26,7 +27,8 @@
     },
     {
       "classes": "z0 relative top-0 left-0 right-0 bottom-0 lune-theme-dark",
-      "product_name": "noir",
+      "full_title": "Lune noir",
+      "product_image_srcset": "../../img/lune/landing-hero-noir@1x.png, ../../img/lune/landing-hero-noir@2x.png 2x",
       "product_name_split": ["n", "o", "i", "r"],
       "cta": {
         "text": "Discover noir",

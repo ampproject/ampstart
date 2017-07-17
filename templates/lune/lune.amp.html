@@ -37,14 +37,14 @@ limitations under the License.
         <section class="lune-landing-section {{classes}}">
           <div class="lune-landing-wrapper absolute left-0 bottom-0 right-0 flex flex-column items-center justify-center">
             <!-- Used by screen reader / document outline, not visible -->
-            <h1 class="hide">Lune {{product_name}}</h1>
+            <h2 class="hide">{{full_title}}</h2>
             <div class="lune-landing-content relative flex items-center justify-center flex-auto mb4">
               <div class="lune-landing-image-wrapper relative col-12">
                 <!-- Chair image -->
                 <amp-img
                   class="lune-anim-scale-up z1"
                   alt=""
-                  srcset="../../img/lune/landing-hero-{{product_name}}@1x.png, ../../img/lune/landing-hero-{{product_name}}@2x.png 2x"
+                  srcset="{{product_image_srcset}}"
                   width="1"
                   height="1.37"
                   layout="responsive"></amp-img>
