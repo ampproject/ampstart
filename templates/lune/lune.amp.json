@@ -8,5 +8,34 @@
       ],
       "css-path": "templates/lune/page.css"
     }
-  }
+  },
+
+  "landing-sections": [
+    {
+      "classes": "z1 relative lune-theme--light",
+      "product_name": "blanc",
+      "product_name_split": ["b", "l", "a", "n", "c"],
+      "cta": {
+        "text": "Discover blanc",
+        "href": "product-blanc.amp.html",
+        "classes": ""
+      },
+      "scroll-indicator": {
+        "classes": "relative"
+      }
+    },
+    {
+      "classes": "z0 fixed top-0 left-0 right-0 bottom-0 lune-theme--dark",
+      "product_name": "noir",
+      "product_name_split": ["n", "o", "i", "r"],
+      "cta": {
+        "text": "Discover noir",
+        "href": "product-noir.amp.html",
+        "classes": ""
+      },
+      "scroll-indicator": {
+        "classes": "relative"
+      }
+    }
+  ]
 }

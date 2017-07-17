@@ -1,3 +1,177 @@
 /* //////////////////////////////////////////////////////
    LANDING PAGE
 ///////////////////////////////////////////////////////*/
+
+@import "../page-vars";
+
+:root {
+  --landing-title-offset-common: -0.26em; /* matches the letter-spacing */
+  --landing-title-offset-h-m: -6%;
+  --landing-title-offset-h-t: -32%;
+  --landing-title-offset-h-d: -38%;
+
+  --landing-page-height: 100vh;
+  --landing-page-min-height: 37.5rem;
+
+  --landing-anim-delay-start: .4s;
+  --landing-anim-delay-step: .08s;
+
+  @custom-media --breakpoint-landing-min-height (max-height: 37.4375rem); /* 720px */
+}
+
+
+/*******************************************************************************
+ * Enter animation (image, text and cta buttons).
+ * Animations keyframes are defined in ../_pages.css
+ ******************************************************************************/
+
+.lune-page--landing .landing__image {
+  animation: fade-in-scale-up 2s var(--landing-anim-delay-start) ease-out both;
+}
+
+.lune-page--landing .landing__title-big,
+.lune-page--landing .landing__title-small,
+.lune-page--landing .lune-cta {
+  animation: fade-in-move-up .8s var(--landing-anim-delay-start)
+      cubic-bezier(0.41, 0.01, 0.27, 1) both;
+}
+
+.lune-page--landing .landing__title-small {
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      var(--landing-anim-delay-step));
+}
+
+.lune-page--landing .landing__title-big--bottom-right {
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      2 * var(--landing-anim-delay-step));
+}
+
+.lune-page--landing .lune-cta {
+  animation-delay: calc(var(--landing-anim-delay-start) +
+      3 * var(--landing-anim-delay-step));
+}
+
+/*******************************************************************************
+ * Layout & typography
+ ******************************************************************************/
+.lune-page--landing {
+  padding-top: 0;
+
+  height: calc(2 * var(--landing-page-height));
+}
+
+.landing__section {
+  height: var(--landing-page-height);
+  min-height: var(--landing-page-min-height);
+}
+
+.landing__wrapper {
+  top: var(--layout-header-height-narrow);
+}
+
+.lune-clippath-wrapper {
+  height: 0;
+  width: 0;
+}
+
+/* Only implement this visual improvement if clip-path exists */
+@supports (clip-path: inset(1px 0)) {
+  .landing__section.lune-theme--light {
+    clip-path: url(#svgPath);
+    height: 102vh;
+  }
+
+  .landing__wrapper {
+    position: fixed;
+  }
+}
+
+.lune-page--landing .lune-cta {
+  min-width: 16rem;
+}
+
+/*
+ * Swtich back to relative position and auto height when there is not enough
+ * estate in the viewport for a section to be fully displayed.
+ */
+@media (--breakpoint-landing-min-height) {
+  .lune-page--landing {
+    height: auto;
+  }
+
+  .landing__section.lune-theme--dark {
+    position: relative;
+  }
+}
+
+.landing__content {
+  width: 60vmin;
+  min-width: 17.5rem;
+  max-width: 28.125rem;
+
+  margin-bottom: 2rem;
+
+  flex: 1 0 auto;
+}
+
+.landing__image-wrapper {
+  top: calc(50% + 1rem);
+  width: 100%;
+}
+
+.landing__title-big {
+  display: inline-block;
+}
+
+.landing__title-big--top-left {
+  left: calc(var(--landing-title-offset-common) +
+      var(--landing-title-offset-h-m));
+  top: 4%;
+
+  z-index: 1;
+}
+
+.landing__title-big--bottom-right {
+  right: calc(var(--landing-title-offset-common) +
+      var(--landing-title-offset-h-m));
+  top: 64%;
+}
+
+.landing__title-small {
+  top: 39%;
+  left: var(--landing-title-offset-h-m);
+  right: var(--landing-title-offset-h-m);
+}
+
+@media (--breakpoint-mt) {
+  .landing__wrapper {
+    top: var(--layout-header-height-wide);
+  }
+
+  .landing__content {
+    margin-bottom: 4rem;
+  }
+
+  .landing__title-big--top-left {
+    left: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-t));
+    z-index: initial;
+  }
+
+  .landing__title-big--bottom-right {
+    right: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-t));
+  }
+}
+
+@media (--breakpoint-md) {
+  .landing__title-big--top-left {
+    left: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-d));
+  }
+
+  .landing__title-big--bottom-right {
+    right: calc(var(--landing-title-offset-common) +
+        var(--landing-title-offset-h-d));
+  }
+}
