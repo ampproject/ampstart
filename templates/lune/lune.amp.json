@@ -1,0 +1,9 @@
+{
+  "lune": {
+    "head-tag": {
+      "title": "AMP Lune template",
+      "canonical-path": "templates/lune.amp",
+      "css-path": "templates/lune/page.css"
+    }
+  }
+}

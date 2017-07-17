@@ -1,0 +1,75 @@
+{
+  "header": {
+    "head-tag": {
+      "canonical-path": "templates/e-commerce/product-details.amp",
+      "extensions": [
+        "amp-sidebar",
+        "amp-list",
+        "amp-bind"
+      ],
+      "templates": [
+        "amp-mustache"
+      ]
+    }
+  },
+  "main": {
+    "banner": {
+      "image": {
+        "url": "../../img/e-commerce/wide-landing-01.jpg",
+        "width": 2560,
+        "height": 800,
+        "alt": "Product listing"
+      }
+    },
+    "filters": {
+      "categories": {
+        "radio": [
+          {
+            "name": "category",
+            "id": "all",
+            "label": "All",
+            "on": "change: AMP.setState({products: {category: 'all'}})",
+            "checked": "checked"
+          },
+          {
+            "name": "category",
+            "id": "mens",
+            "label": "Mens",
+            "on": "change: AMP.setState({products: {category: 'mens'}})"
+          },
+          {
+            "name": "category",
+            "id": "womens",
+            "label": "Womens",
+            "on": "change: AMP.setState({products: {category: 'womens'}})"
+          },
+          {
+            "name": "category",
+            "id": "kids",
+            "label": "Kids",
+            "on": "change: AMP.setState({products: {category: 'kids'}})"
+          }
+        ],
+        "select": {
+          "classes": "md-hide lg-hide",
+          "on": "change: AMP.setState({products: {category: event.value}})",
+          "placeholder": "Show:",
+          "options": [
+            "all", "mens", "womens", "kids"
+          ],
+          "id": "categories",
+          "name": "categories"
+        }
+      },
+      "price": {
+        "select": {
+          "on": "change: AMP.setState({products: {filter: event.value}})",
+          "placeholder": "Sort by:",
+          "options": ["high-low", "low-high"],
+          "id": "price",
+          "name": "price"
+        }
+      }
+    }
+  }
+}
