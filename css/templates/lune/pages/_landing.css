@@ -74,6 +74,10 @@
   @supports (clip-path: inset(1px 0)) {
     .lune-landing-section.lune-theme-light {
       clip-path: url(#svgPath);
+      /*
+       * We need the height to be a bit more than its normal value (hence the 1.02 factor),
+       * as the clip-path mask can't clip the entire surface.
+       */
       height: calc(var(--lune-landing-page-height) * 1.02);
     }
 
@@ -83,16 +87,21 @@
   }
 }
 
+/*
+ * Because amp-img can't be resized in a responsive way through changing its height,
+ * we can achieve a similar behaviour by setting the width/max-width of its container
+ * in units that depend on the viewport height.
+ */
 .lune-landing-content {
   width: 60vmin;
   min-width: 17.5rem;
-  max-width: 28.125rem;
+  max-width: 50vh;
 }
 
 .lune-landing-title-top {
   left: calc(var(--lune-landing-title-offset-horizontal-narrow) -
       var(--letter-spacing-3));
-  top: 4%;
+  top: 0%;
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   line-height: var(--line-height-1);
