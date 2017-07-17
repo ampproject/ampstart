@@ -11,9 +11,10 @@
   --lune-landing-title-offset-horizontal-wide: -38%;
 
   --lune-landing-page-height: 100vh;
-  --lune-landing-page-min-height: 37.5rem;
+  --lune-landing-page-min-height: 37.5rem; /* 600px */
 
-  @custom-media --breakpoint-landing-min-height (max-height: 37.4375rem); /* 720px */
+  /* 600px, same as the landing page mixed min height */
+  @custom-media --lune-breakpoint-landing-min-height (min-height: 37.5rem);
 }
 
 
@@ -40,8 +41,7 @@
  ******************************************************************************/
 .lune-page-landing {
   padding-top: 0;
-
-  height: calc(2 * var(--lune-landing-page-height));
+  height: auto;
 }
 
 .lune-landing-section {
@@ -53,42 +53,43 @@
   top: var(--layout-header-height-narrow);
 }
 
-/* Only implement this visual improvement if clip-path exists */
-@supports (clip-path: inset(1px 0)) {
-  .lune-landing-section.lune-theme-light {
-    clip-path: url(#svgPath);
-    height: 102vh;
-  }
-
-  .lune-landing-wrapper {
-    position: fixed;
-  }
-}
-
 .lune-page-landing .lune-component-cta {
   min-width: 16rem;
 }
 
 /*
- * Swtich back to relative position and auto height when there is not enough
- * estate in the viewport for a section to be fully displayed.
+ * When there is enough estate in the viewport, set a fixed height for the page
+ * and fixed position on the lower section, in order to achieve a "reveal" effect.
  */
 @media (--lune-breakpoint-landing-min-height) {
   .lune-page-landing {
-    height: auto;
+    height: calc(2 * var(--lune-landing-page-height));
   }
 
   .lune-landing-section.lune-theme-dark {
-    position: relative;
+    position: fixed;
+  }
+
+  /*
+   * Only implement this enhancement if clip-path is supported
+   * and the viewport is high enough.
+   */
+  @supports (clip-path: inset(1px 0)) {
+    .lune-landing-section.lune-theme-light {
+      clip-path: url(#svgPath);
+      height: calc(var(--lune-landing-page-height) * 1.02);
+    }
+
+    .lune-landing-wrapper {
+      position: fixed;
+    }
   }
 }
 
 .lune-landing-content {
-  flex: 1 0 auto;
   width: 60vmin;
   min-width: 17.5rem;
   max-width: 28.125rem;
-  margin-bottom: 2rem;
 }
 
 .lune-landing-title-top {

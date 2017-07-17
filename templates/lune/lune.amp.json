@@ -18,20 +18,20 @@
       "cta": {
         "text": "Discover blanc",
         "href": "product-blanc.amp.html",
-        "classes": ""
+        "classes": "lune-anim-move-up z2"
       },
       "scroll-indicator": {
         "classes": "relative"
       }
     },
     {
-      "classes": "z0 fixed top-0 left-0 right-0 bottom-0 lune-theme-dark",
+      "classes": "z0 relative top-0 left-0 right-0 bottom-0 lune-theme-dark",
       "product_name": "noir",
       "product_name_split": ["n", "o", "i", "r"],
       "cta": {
         "text": "Discover noir",
         "href": "product-noir.amp.html",
-        "classes": "lune-anim-move-up"
+        "classes": "lune-anim-move-up z2"
       },
       "scroll-indicator": {
         "classes": "relative"
