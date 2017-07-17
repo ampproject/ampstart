@@ -23,22 +23,16 @@ limitations under the License.
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
   <main id="content" role="main" class="main">
-    <section class="mx2 flex flex-column">
-      <h1 class="h3">Contact Us</h1>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor
-        ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-        {{#contact}}
-          <h2 class="h7">{{title}}</h2>
-          {{#select}}
-            {{> partials/select.snip.html}}
-          {{/select}}
-          {{^select}}
+    <section class="mt2 md-col-6 commerce-contact">
+      <div class="flex flex-column">
+        <h1 class="h3 mb2">Contact Us</h1>
+        <p class="mb2">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor
+          ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
+          {{#contact}}
             {{> ../../components/inputs/inputs.snip.html}}
-          {{/select}}
-        {{/contact}}
-
-      <button type="submit" class="col-8 self-center ampstart-btn ampstart-btn-secondary caps">send</button>
+          {{/contact}}
+        <button type="submit" class="col-8 ampstart-btn ampstart-btn-secondary caps">send</button>
+      </div>
     </section>
   </main>
 </body>

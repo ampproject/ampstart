@@ -9,43 +9,27 @@
   },
   "contact": [
     {
-      "title": "how can we help?",
-      "select": {
-        "placeholder": "choose a topic",
-        "options": [
-          "topic a",
-          "topic b",
-          "topic c",
-          "topic d"
-        ],
-        "classes": "flex flex-wrap",
-        "id": "sizes",
-        "name": "sizes"
-      }
-    },
-    {
-      "title": "how can we help?",
       "input": {
         "type": "text",
-        "placeholder": "enter your full name",
+        "placeholder": "Full name",
         "name": "name",
         "id": "name"
       }
     },
     {
-      "title": "where shall we reply?",
       "input": {
         "type": "text",
-        "placeholder": "enter your email address",
+        "placeholder": "E-Mail address",
         "name": "email",
         "id": "email"
       }
     },
     {
-      "title": "type your message below",
       "textarea": {
         "name": "mesage",
-        "id": "message"
+        "id": "message",
+        "placeholder": "Type your message below",
+        "rows": 2
       }
     }
   ]
