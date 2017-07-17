@@ -152,8 +152,8 @@
 .ampstart-input input[type="radio"] {
   margin-top: 0;
   appearance: none;
-  width: 20px;
-  height: 20px;
+  width: var(--input-checkbox-radio-size);
+  height: var(--input-checkbox-radio-size);
   border: 1px solid var(--color-input-primary);
   vertical-align: middle;
   margin-right: var(--space-1);
@@ -161,7 +161,7 @@
 }
 
 .ampstart-input input[type="radio"] {
-  border-radius: 20px;
+  border-radius: var(--input-checkbox-radio-size);
 }
 
 .ampstart-input input[type="checkbox"]:not([disabled]) + label,
@@ -170,6 +170,7 @@
   animation: none;
   vertical-align: middle;
   opacity: 1;
+  cursor: pointer;
 }
 
 
