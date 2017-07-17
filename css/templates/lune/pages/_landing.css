@@ -121,10 +121,6 @@
     top: var(--layout-header-height-wide);
   }
 
-  .lune-landing-content {
-    margin-bottom: 4rem;
-  }
-
   .lune-landing-title-top {
     left: calc(var(--lune-landing-title-offset-common) +
         var(--lune-landing-title-offset-horizontal-tablet));
