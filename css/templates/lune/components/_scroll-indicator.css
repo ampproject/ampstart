@@ -4,13 +4,13 @@
 
 @import "../page-vars";
 
-.lune-scroll-indicator {
+.lune-component-scroll-indicator {
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   color: inherit;
 }
 
-.lune-scroll-indicator::after {
+.lune-component-scroll-indicator::after {
   width: .125rem;
   height: 2.1874rem;
   background: currentColor;
