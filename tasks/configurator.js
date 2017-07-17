@@ -16,8 +16,10 @@
 
 const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
+const util = require('gulp-util');
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
+const csstree = require('css-tree');
 const extReplace = require('gulp-ext-replace');
 const intercept = require('gulp-intercept');
 
@@ -41,9 +43,19 @@ function postcsswithvars() {
       .pipe(gulp.dest(config.dest.configurator.css))
 }
 
+//https://runkit.com/embed/y3tqui45muc5
 function cssvarsjson() {
   return gulp.src(config.dest.configurator.css + '/**/*')
-
+      .pipe(intercept(function(file) {
+        if(file.contents) {
+          const ast = csstree.parse(file.contents.toString());
+          csstree.walk(ast, function(node) {
+            if(node.type === 'Declaration' && node.property.indexOf('--') === 0) {
+              console.log(node.property);
+            }
+          });
+        }
+      }))
       .pipe(extReplace('.json'))
       .pipe(gulp.dest(config.dest.configurator.css))
 }

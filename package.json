@@ -18,6 +18,7 @@
     "basscss-responsive-margin": "^1.1.0",
     "basscss-responsive-type-scale": "^1.0.1",
     "child_process": "^1.0.2",
+    "css-tree": "1.0.0-alpha19",
     "cssbeautify": "^0.3.1",
     "cssnano": "^3.8.1",
     "deepmerge": "^1.4.4",
