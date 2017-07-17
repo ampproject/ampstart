@@ -18,6 +18,8 @@ const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
+const extReplace = require('gulp-ext-replace');
+const intercept = require('gulp-intercept');
 
 function postcsswithvars() {
   const plugins = [
@@ -40,7 +42,10 @@ function postcsswithvars() {
 }
 
 function cssvarsjson() {
+  return gulp.src(config.dest.configurator.css + '/**/*')
 
+      .pipe(extReplace('.json'))
+      .pipe(gulp.dest(config.dest.configurator.css))
 }
 
 gulp.task('configurator:css', postcsswithvars);
