@@ -20,19 +20,19 @@
 /*******************************************************************************
  * Tweaking the delay for the entering animations defined in _pages.css
  ******************************************************************************/
-.lune-landing-title-small {
-  animation-delay: calc(var(--lune-landing-anim-delay-start) +
-      var(--lune-landing-anim-delay-step));
+.lune-landing-title-middle {
+  animation-delay: calc(var(--animation-delay-start) +
+      var(--animation-delay-step));
 }
 
-.lune-landing-title-big-bottom-right {
-  animation-delay: calc(var(--lune-landing-anim-delay-start) +
-      2 * var(--lune-landing-anim-delay-step));
+.lune-landing-title-bottom {
+  animation-delay: calc(var(--animation-delay-start) +
+      2 * var(--animation-delay-step));
 }
 
 .lune-page-landing .lune-component-cta {
-  animation-delay: calc(var(--lune-landing-anim-delay-start) +
-      3 * var(--lune-landing-anim-delay-step));
+  animation-delay: calc(var(--animation-delay-start) +
+      3 * var(--animation-delay-step));
 }
 
 /*******************************************************************************
@@ -51,11 +51,6 @@
 
 .lune-landing-wrapper {
   top: var(--layout-header-height-narrow);
-}
-
-.lune-clippath-wrapper {
-  height: 0;
-  width: 0;
 }
 
 /* Only implement this visual improvement if clip-path exists */
@@ -96,24 +91,19 @@
   margin-bottom: 2rem;
 }
 
-.lune-landing-image-wrapper {
-  top: calc(50% + 1rem);
-}
-
-.lune-landing-title-big-top-left {
+.lune-landing-title-top {
   left: calc(var(--lune-landing-title-offset-common) +
       var(--lune-landing-title-offset-horizontal-narrow));
   top: 4%;
-  z-index: var(--z1);
 }
 
-.lune-landing-title-big-bottom-right {
+.lune-landing-title-bottom {
   right: calc(var(--lune-landing-title-offset-common) +
       var(--lune-landing-title-offset-horizontal-narrow));
   top: 64%;
 }
 
-.lune-landing-title-small {
+.lune-landing-title-middle {
   top: 39%;
   left: var(--lune-landing-title-offset-horizontal-narrow);
   right: var(--lune-landing-title-offset-horizontal-narrow);
@@ -128,25 +118,25 @@
     margin-bottom: 4rem;
   }
 
-  .lune-landing-title-big-top-left {
+  .lune-landing-title-top {
     left: calc(var(--lune-landing-title-offset-common) +
         var(--lune-landing-title-offset-horizontal-tablet));
     z-index: initial;
   }
 
-  .lune-landing-title-big-bottom-right {
+  .lune-landing-title-bottom {
     right: calc(var(--lune-landing-title-offset-common) +
         var(--lune-landing-title-offset-horizontal-tablet));
   }
 }
 
 @media (--breakpoint-md) {
-  .lune-landing-title-big-top-left {
+  .lune-landing-title-top {
     left: calc(var(--lune-landing-title-offset-common) +
         var(--lune-landing-title-offset-horizontal-wide));
   }
 
-  .lune-landing-title-big-bottom-right {
+  .lune-landing-title-bottom {
     right: calc(var(--lune-landing-title-offset-common) +
         var(--lune-landing-title-offset-horizontal-wide));
   }
