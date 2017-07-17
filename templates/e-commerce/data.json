@@ -116,10 +116,9 @@
           "wide": "../../img/e-commerce/blog-wide-06.png"
         }
         ],
-        "pullquote": {
+        "quote": {
           "quoter": "Name of quoter",
-          "text": "Maecenas neque mi, tempus ut commodo eget, commodo sit amet mauris.",
-          "responsive-layout-classes": "md-col-8"
+          "text": "Maecenas neque mi, tempus ut commodo eget, commodo sit amet mauris."
         }
       },
       {
