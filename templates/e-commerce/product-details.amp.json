@@ -6,8 +6,7 @@
         "amp-sidebar",
         "amp-bind",
         "amp-carousel",
-        "amp-selector",
-        "amp-list"
+        "amp-selector"
       ],
       "templates": [
         "amp-mustache"
