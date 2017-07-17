@@ -4,7 +4,8 @@
 
 @import "../page-vars";
 
-.lune-cta {
+/* Override properties from ampstart-button. */
+.lune-component-cta {
   min-width: 14em;
   padding: 1.2em 1.6em;
   background: transparent;
@@ -12,11 +13,11 @@
   font-weight: 700;
 }
 
-.lune-cta,
-.lune-cta:active,
-.lune-cta:focus,
-.lune-cta:hover,
-.lune-cta:visited {
+.lune-component-cta,
+.lune-component-cta:active,
+.lune-component-cta:focus,
+.lune-component-cta:hover,
+.lune-component-cta:visited {
   border-color: inherit;
   color: inherit;
 }
@@ -24,63 +25,53 @@
 /*
  * Hover/Focus effect
  */
-
- .lune-cta::before {
-  z-index: 0;
-
+ .lune-component-cta::before {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-
+  z-index: var(--z0);
   background-color: var(--color-font-primary);
-
   opacity: 0;
   transition: opacity .3s;
-
   content: '';
 }
 
-.lune-cta:hover::before,
-.lune-cta:focus::before {
+.lune-component-cta:hover::before,
+.lune-component-cta:focus::before {
   opacity: 1;
   transition-delay: .3s;
 }
 
-.lune-cta > span {
-  animation: lune-cta-text-out .3s forwards cubic-bezier(0.75, 0, 0.125, 1);
+.lune-component-cta > span {
+  animation: lune-component-cta-text-out .3s forwards cubic-bezier(0.75, 0, 0.125, 1);
 }
 
-.lune-cta:hover > span,
-.lune-cta:focus > span {
-  animation: lune-cta-text-in .3s both cubic-bezier(0.75, 0, 0.125, 1);
-
+.lune-component-cta:hover > span,
+.lune-component-cta:focus > span {
+  animation: lune-component-cta-text-in .3s both cubic-bezier(0.75, 0, 0.125, 1);
   color: var(--color-light-1);
 }
 
-.lune-cta::after {
-  z-index: 1;
-
+.lune-component-cta::after {
   position: absolute;
   left: -50%;
   top: -50%;
+  z-index: var(--z1);
   width: 200%;
   height: 200%;
-
   background-color: var(--color-font-primary);
-
   transform: translate3d(0, -100%, 0) rotate3d(0, 0, 1, -10deg);
-
   content: '';
 }
 
-.lune-cta:hover::after,
-.lune-cta:focus::after {
-  animation: lune-cta-background-fade 0.3s forwards ease-in;
+.lune-component-cta:hover::after,
+.lune-component-cta:focus::after {
+  animation: lune-component-cta-background-fade 0.3s forwards ease-in;
 }
 
-@keyframes lune-cta-background-fade {
+@keyframes lune-component-cta-background-fade {
 	50% {
 		transform: translate3d(0, -50%, 0) rotate3d(0, 0, 1, -10deg);
 		animation-timing-function: ease-out;
@@ -90,39 +81,37 @@
 	}
 }
 
-@keyframes lune-cta-text-in {
+@keyframes lune-component-cta-text-in {
 	from {
     transform: translateY(-3rem);
   }
-
 	100% {
 		transform: none;
 	}
 }
 
-@keyframes lune-cta-text-out {
+@keyframes lune-component-cta-text-out {
 	from {
     transform: translateY(3rem);
   }
-
 	100% {
 		transform: none;
 	}
 }
 
-.lune-theme--dark .lune-cta::before,
-.lune-theme--dark .lune-cta::after {
+.lune-theme--dark .lune-component-cta::before,
+.lune-theme--dark .lune-component-cta::after {
   background-color: var(--color-light-1);
 }
 
-.lune-theme--dark .lune-cta:hover > span,
-.lune-theme--dark .lune-cta:focus > span {
+.lune-theme--dark .lune-component-cta:hover > span,
+.lune-theme--dark .lune-component-cta:focus > span {
   color: var(--color-background-dark-narrow);
 }
 
 @media (--breakpoint-mt) {
-  .lune-theme--dark .lune-cta:hover > span,
-  .lune-theme--dark .lune-cta:focus > span {
+  .lune-theme--dark .lune-component-cta:hover > span,
+  .lune-theme--dark .lune-component-cta:focus > span {
     color: var(--color-background-dark-wide);
   }
 }

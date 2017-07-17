@@ -1,6 +1,7 @@
 :root {
   --content-max-width: 100%;
 
+  --z0: 0;
   --z1: 1; /* body */
   --z2: 2; /* overlay */
   --z3: 3; /* sidebar mask */
