@@ -196,13 +196,15 @@ amp-selector [option][selected] {
   }
 }
 
-.commerce-blockquote {
+.ampstart-pullquote {
   font-size: var(--h2);
   margin: var(--space-3) 0 var(--space-2) 0;
   line-height: 1.2;
+  border-left: none;
+  padding-left: 0;
 }
 
-.commerce-blockquote-quoter {
+.commerce-pullquote-quoter {
   font-family: var(--title-font);
   font-size: var(--h6);
   font-weight: var(--bold-font-weight);
