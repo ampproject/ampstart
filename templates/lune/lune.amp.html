@@ -41,13 +41,27 @@ limitations under the License.
             <div class="lune-landing-content relative flex items-center justify-center flex-auto mb4">
               <div class="lune-landing-image-wrapper relative col-12">
                 <!-- Chair image -->
-                <amp-img
-                  class="lune-anim-scale-up z1"
-                  alt=""
-                  srcset="{{product_image_srcset}}"
-                  width="1"
-                  height="1.37"
-                  layout="responsive"></amp-img>
+                {{#product_image}}
+                  <!-- WebP image -->
+                  <amp-img
+                    class="lune-anim-scale-up z1"
+                    alt="{{alt}}"
+                    srcset="{{webp_srcset}}"
+                    width="{{width}}"
+                    height="{{height}}"
+                    layout="responsive">
+                      <!-- PNG Fallback -->
+                      <amp-img
+                        fallback
+                        class="lune-anim-scale-up z1"
+                        alt="{{alt}}"
+                        srcset="{{fallback_srcset}}"
+                        width="{{width}}"
+                        height="{{height}}"
+                        layout="responsive">
+                      </amp-img>
+                  </amp-img>
+                {{/product_image}}
                 <!-- Product name -->
                 <span class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1 font-weight-heavy" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
                 <!-- LU- -->
