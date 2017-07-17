@@ -13,29 +13,13 @@
   --lune-landing-page-height: 100vh;
   --lune-landing-page-min-height: 37.5rem;
 
-  --lune-landing-anim-delay-start: .4s;
-  --lune-landing-anim-delay-step: .08s;
-
-  @custom-media --lune-breakpoint-landing-min-height (max-height: 37.4375rem); /* 720px */
+  @custom-media --breakpoint-landing-min-height (max-height: 37.4375rem); /* 720px */
 }
 
 
 /*******************************************************************************
- * Enter animation (image, text and cta buttons).
- * Animations keyframes are defined in ../_pages.css
+ * Tweaking the delay for the entering animations defined in _pages.css
  ******************************************************************************/
-
-.lune-landing-image {
-  animation: fade-in-scale-up 2s var(--lune-landing-anim-delay-start) ease-out both;
-}
-
-.lune-landing-title-big,
-.lune-landing-title-small,
-.lune-lune-component-cta {
-  animation: fade-in-move-up .8s var(--lune-landing-anim-delay-start)
-      cubic-bezier(0.41, 0.01, 0.27, 1) both;
-}
-
 .lune-landing-title-small {
   animation-delay: calc(var(--lune-landing-anim-delay-start) +
       var(--lune-landing-anim-delay-step));

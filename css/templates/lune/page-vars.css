@@ -63,6 +63,10 @@
   --color-font-primary: var(--color-dark-grey-1);
   --color-font-secondary: var(--color-font-primary);
 
+  /* Animations  */
+  --animation-delay-start: .4s;
+  --animation-delay-step: .1s;
+
   /*
    * Copying these @custom-media rules and the --space-* variables from
    * bass-override-vars.css. This is a temporary solution, waiting for a

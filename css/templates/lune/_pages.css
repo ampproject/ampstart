@@ -29,6 +29,14 @@
  * In-page animations
  ******************************************************************************/
 
+.lune-anim-scale-up {
+  animation: fade-in-scale-up 2s var(--animation-delay-start) ease-out both;
+}
+
+.lune-anim-move-up {
+  animation: fade-in-move-up .8s var(--animation-delay-start) cubic-bezier(0.41, 0.01, 0.27, 1) both;
+}
+
 @keyframes fade-in-scale-up {
   from {
     opacity: 0;
