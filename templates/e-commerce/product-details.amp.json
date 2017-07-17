@@ -6,7 +6,11 @@
         "amp-sidebar",
         "amp-bind",
         "amp-carousel",
-        "amp-selector"
+        "amp-selector",
+        "amp-list"
+      ],
+      "templates": [
+        "amp-mustache"
       ]
     }
   },
@@ -15,7 +19,8 @@
       "name": "Bike 1",
       "price": "£470",
       "colourFilterName": "colours",
-      "colours": [{
+      "colours": [
+        {
           "name": "white",
           "thumb": {
             "image1": "../../img/e-commerce/product/light-small-1.jpg",
@@ -27,7 +32,8 @@
             "image2": "../../img/e-commerce/product/light-large-2.jpg",
             "image3": "../../img/e-commerce/product/light-large-3.jpg"
           }
-        },{
+        },
+        {
           "name": "green",
           "thumb": {
             "image1": "../../img/e-commerce/product/dark-small-1.jpg",
@@ -46,7 +52,10 @@
         "select": {
           "placeholder": "Select a size",
           "options": [
-            "61cm", "62cm", "63cm", "64cm"
+            "61cm",
+            "62cm",
+            "63cm",
+            "64cm"
           ],
           "id": "sizes",
           "name": "sizes"
@@ -120,6 +129,56 @@
         {
           "header": "carrier",
           "body": "Chrome steel front"
+        }
+      ],
+      "related": [
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "/img/e-commerce/product/related-product.png"
         }
       ]
     }
