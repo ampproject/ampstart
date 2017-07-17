@@ -46,7 +46,7 @@
 }
 
 .lune-landing-wrapper {
-  top: var(--layout-header-height-narrow);
+  top: var(--navbar-height);
 }
 
 .lune-page-landing .lune-component-cta {
@@ -124,7 +124,7 @@
 
 @media (--breakpoint-mt) {
   .lune-landing-wrapper {
-    top: var(--layout-header-height-wide);
+    top: var(--wide-navbar-height);
   }
 
   .lune-landing-title-top {

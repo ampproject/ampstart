@@ -1,12 +1,12 @@
 @import "page-vars";
 
 .lune-page {
-  padding-top: var(--layout-header-height-narrow);
+  padding-top: var(--navbar-height);
 }
 
 @media (--breakpoint-mt) {
   .lune-page {
-    padding-top: var(--layout-header-height-wide);
+    padding-top: var(--wide-navbar-height);
   }
 }
 
