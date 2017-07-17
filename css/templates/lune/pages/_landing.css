@@ -11,9 +11,6 @@
 
   --lune-landing-page-height: 100vh;
   --lune-landing-page-min-height: 37.5rem; /* 600px */
-
-  /* 600px, same as the landing page mixed min height */
-  @custom-media --lune-breakpoint-landing-min-height (min-height: 37.5rem);
 }
 
 
@@ -59,8 +56,9 @@
 /*
  * When there is enough estate in the viewport, set a fixed height for the page
  * and fixed position on the lower section, in order to achieve a "reveal" effect.
+ * Threshold is 600px, same as --lune-landing-page-height.
  */
-@media (--lune-breakpoint-landing-min-height) {
+@media (min-height: 37.5rem) {
   .lune-page-landing {
     height: calc(2 * var(--lune-landing-page-height));
   }
