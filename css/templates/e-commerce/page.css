@@ -1,6 +1,7 @@
 @import '../../core';
 @import 'basscss-responsive-type-scale';
 @import 'basscss-responsive-margin';
+@import 'basscss-responsive-padding';
 @import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
@@ -168,11 +169,11 @@ amp-selector [option][selected] {
 }
 
 .commerce-panel-filled {
-  background-color: #F4F4F3;
+  background-color: var(--color-panel);
 }
 @media (--breakpoint-md) {
   .md-commerce-panel-filled {
-    background-color: #F4F4F3;
+    background-color: var(--color-panel);
   }
 
   .md-commerce-header {
@@ -510,5 +511,26 @@ amp-selector [option][selected] {
 @media (--breakpoint-md) {
   .commerce-listing-wrapper {
     margin-left: calc(1/12 * 100%);
+  }
+}
+
+
+/* CART */
+.commerce-cart-icon {
+  color: var(--color-font-accent);
+}
+
+.commerce-cart-total {
+  border-top: 1px solid var(--color-separator);
+  border-bottom: 1px solid var(--color-separator);
+}
+
+@media (--breakpoint-md) {
+  .commerce-cart-item {
+    border-bottom: 1px solid var(--color-separator);
+  }
+
+  .commerce-cart-button {
+    align-self: flex-start;
   }
 }
