@@ -71,7 +71,7 @@
   }
 
   /*
-   * Only implement this enhancement if clip-path is supported
+   * Only apply this enhancement if clip-path is supported
    * and the viewport is high enough.
    */
   @supports (clip-path: inset(1px 0)) {
