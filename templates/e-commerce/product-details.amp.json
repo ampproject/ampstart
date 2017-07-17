@@ -48,7 +48,6 @@
           "options": [
             "61cm", "62cm", "63cm", "64cm"
           ],
-          "classes": "flex flex-wrap",
           "id": "sizes",
           "name": "sizes"
         }

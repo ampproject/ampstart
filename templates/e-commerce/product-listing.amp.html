@@ -1,0 +1,74 @@
+<!doctype html>
+
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html ⚡>
+{{#header}} {{> ../../utils/amp-page-head.snip.html}}
+<body>
+  {{> ../../components/navbar/navbar.snip.html}} {{/header}}
+  <main id="content" role="main" class="main">
+  {{#main}}
+  <amp-state id="products">
+    <script type="application/json">
+      {
+        "category": "all",
+        "filter": "high-low"
+      }
+    </script>
+  </amp-state>
+
+  <section class="flex flex-wrap">
+    {{#banner.image}}
+      <amp-img class="xs-hide sm-hide commerce-listing-banner" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" alt="{{alt}}"></amp-img>
+    {{/banner.image}}
+
+    {{#filters}}
+    <div class="col-3 pt4 pl5 xs-hide sm-hide flex flex-column items-center commerce-panel-filled">
+      <div class="pr7">
+        <h2 class="h5 mb2">Categories</h2>
+        {{#categories}}
+          {{> ../../components/inputs/inputs.snip.html}}
+        {{/categories}}
+      </div>
+    </div>
+
+    <div class="commerce-listing-wrapper col-12 md-col-7 mb2">
+      <div class="md-commerce-header relative md-flex flex-wrap items-center md-mb2">
+        <h1 class="h3 mb1 ml3 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
+        <div class="inline-block ml3 mr2 mb1 md-mb0">
+          {{#categories}} {{> partials/select.snip.html}} {{/categories}}
+        </div>
+        {{#price}} {{> partials/select.snip.html}} {{/price}}
+      </div>
+
+      <amp-list class="mx1 md-mxn1" [src]="'api/' + products.filter + '-' + products.category + '-products.json'" src="api/high-low-all-products.json" height="500" width="300" layout="responsive">
+        <template type="amp-mustache">
+          <a href="product-details.amp.html" class="commerce-listing-product-item text-decoration-none inline-block col-6 md-col-3 px1 mb2 md-mb4">
+            <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>
+            <h2 class="h6"><% name %></h2>
+            <% description %>
+            <div class="h6">&#163;<% price %></div>
+          </a>
+        </template>
+      </amp-list>
+    </div>
+    {{/filters}}
+  </section>
+  {{/main}}
+  </main>
+</body>
+</html>
