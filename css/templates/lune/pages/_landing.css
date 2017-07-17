@@ -96,12 +96,18 @@
   left: calc(var(--lune-landing-title-offset-common) +
       var(--lune-landing-title-offset-horizontal-narrow));
   top: 4%;
+  letter-spacing: var(--letter-spacing-3);
+  text-indent: var(--letter-spacing-3);
+  line-height: var(--line-height-1);
 }
 
 .lune-landing-title-bottom {
   right: calc(var(--lune-landing-title-offset-common) +
       var(--lune-landing-title-offset-horizontal-narrow));
   top: 64%;
+  letter-spacing: var(--letter-spacing-3);
+  text-indent: var(--letter-spacing-3);
+  line-height: var(--line-height-1);
 }
 
 .lune-landing-title-middle {
