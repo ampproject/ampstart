@@ -92,7 +92,7 @@ function mustacheStream() {
 }
 
 function getPartials(acc, embedderDir, template) {
-// Assume {{}} as mustache start/end tags
+  // Assume {{}} as mustache start/end tags
   const partialRegexp = new RegExp('{{>\\s*(\\S+)\\s*}}', 'g');
   var partialMatch = null;
   var partialPath = null;
@@ -104,8 +104,6 @@ function getPartials(acc, embedderDir, template) {
     if (!acc[partialPath]) {
       try {
         partialTemplate = fs.readFileSync(absPathToTemplate).toString();
-        if (absPathToTemplate === '/Users/gurmukh/Sites/github/ampstart-forked/components/navbar/sidebar.snip.html') {
-        }
       } catch (e) {
         util.log(util.colors.red(e.message));
       }
@@ -117,21 +115,19 @@ function getPartials(acc, embedderDir, template) {
 }
 
 gulp.task('build', 'build', function(cb) {
-  runSequence('clean', 'templateapi', 'img', 'postcss', 'posthtml', cb);
+  runSequence(
+      'clean', 'highlight', 'escape', 'img', 'postcss', 'posthtml', 'www', 'validate',
+      'bundle', cb);
 });
 
 gulp.task('clean', function() {
+  // Clears partials map so changes to components are rebuilt in watch task.
   partialsMap = {};
-  return del(['dist/css', 'dist/templates']);
+  return del(['dist']);
 });
 
 gulp.task('img', function() {
-  return gulp.src(config.src.img)
-      .pipe(gulp.dest(config.dest.img));
-});
-
-gulp.task('templateapi', function() {
-  return gulp.src(config.src.templateApi).pipe(gulp.dest(config.dest.templateApi));
+  return gulp.src(config.src.img).pipe(gulp.dest(config.dest.img));
 });
 
 function inlineCheckScript(node) {
@@ -150,13 +146,11 @@ const inlineTransformation = {
   style: {
     check: inlineCheckStyle,
   }
-}
+};
 
 gulp.task('www', function() {
   const plugins = [
-    require('posthtml-include')({
-      encoding: 'utf-8'
-    }),
+    require('posthtml-include')({encoding: 'utf-8'}),
     require('posthtml-inline-assets')({
       from: config.dest.www_pages,
       inline: inlineTransformation,
@@ -164,30 +158,19 @@ gulp.task('www', function() {
   ];
   const options = {};
   return gulp.src(config.src.www_pages)
-    .pipe(mustacheStream())
-    .pipe(posthtml(plugins, options))
-    .pipe(gulp.dest(config.dest.www_pages))
+      .pipe(mustacheStream())
+      .pipe(posthtml(plugins, options))
+      .pipe(gulp.dest(config.dest.www_pages))
 });
 
 gulp.task('watch', 'watch stuff', ['build'], function() {
-  // return gulp.watch([
-  //   config.src.components,
-  //   config.src.templates,
-  //   config.src.www_pages,
-  //   config.src.css,
-  //   config.src.data,
-  //   config.src.img],
-  //     ['build']);
-
-    return gulp.watch([
-    config.src.components,
-    config.src.templates,
-    config.src.css,
-    config.src.data], ['build'], { verbose: true });
+  return gulp.watch(
+      [
+        config.src.components, config.src.templates, config.src.www_pages,
+        config.src.css, config.src.data, config.src.img
+      ],
+      ['build']);
 });
-
-
-
 
 gulp.task('default', ['build']);
 
@@ -197,13 +180,13 @@ gulp.task('posthtml', 'build kickstart files', function() {
       from: config.dest.templates,
       inline: inlineTransformation,
     }),
-    require('posthtml-include')({ encoding: 'utf-8' }),
+    require('posthtml-include')({encoding: 'utf-8'}),
   ];
   const options = {};
-  return gulp.src('templates/e-commerce/*.html')
-    .pipe(mustacheStream())
-    .pipe(posthtml(plugins, options))
-    .pipe(gulp.dest('dist/templates/e-commerce'))
+  return gulp.src(config.src.templates)
+      .pipe(mustacheStream())
+      .pipe(posthtml(plugins, options))
+      .pipe(gulp.dest(config.dest.templates))
 });
 
 gulp.task('postcss', 'build postcss files', function() {
@@ -219,20 +202,15 @@ gulp.task('postcss', 'build postcss files', function() {
   ];
   const replace = require('gulp-replace');
   const options = {};
-  return gulp.src('css/templates/e-commerce/*.css')
-    .pipe(postcss(plugins, options))
-    .pipe(replace('!important', ''))
-    .pipe(gulp.dest('dist/css/templates/e-commerce'))
+  return gulp.src(config.src.css)
+      .pipe(postcss(plugins, options))
+      .pipe(replace('!important', ''))
+      .pipe(gulp.dest(config.dest.css))
 });
 
 gulp.task('serve', function() {
-  gulp.src(config.dest.default)
-    .pipe(server({
-      livereload: true,
-      host: '0.0.0.0',
-      directoryListing: {
-        enable: true,
-        path: 'dist'
-      },
-    }));
+  gulp.src(config.dest.default).pipe(server({
+    livereload: true,
+    directoryListing: {enable: true, path: 'dist'},
+  }));
 });
