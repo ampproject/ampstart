@@ -1,5 +1,25 @@
 @import 'page-vars';
 
+/* Bass CSS responsive typescale does not provide h0 and h00
+  below 640px screens. So we defined them here.
+  TODO: Raise issue with base css to get this fixed. */
+
+.h00 {
+  font-size: var(--h00);
+}
+
+.h0 {
+  font-size: var(--h0);
+}
+
+
+/* Heavy (AKA Black) is 2 weights above bold, not defined by Bass CSS */
+.font-weight-heavy {
+  font-weight: var(--font-weight-heavy);
+}
+
+
+/* Base CSS is limited to 6 heading styles. We need one extra */
 .h7 {
   font-size: var(--h7);
 }
