@@ -204,7 +204,7 @@ amp-selector [option][selected] {
   padding-left: 0;
 }
 
-.commerce-pullquote-quoter {
+.commerce-pullquote-author {
   font-family: var(--title-font);
   font-size: var(--h6);
   font-weight: var(--bold-font-weight);
