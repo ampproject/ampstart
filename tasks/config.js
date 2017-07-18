@@ -36,9 +36,7 @@ module.exports = {
     hl_partials: 'dist/hl-partials',
     css: 'dist/css/',
     img: 'dist/img/',
-    configurator: {
-      default: 'dist/configurator',
-      css: 'dist/configurator/css'
-    }
+    configurator_app: 'dist/configurator',
+    uncompiled_css: 'dist/configurator/uncompiledCss'
   },
 };

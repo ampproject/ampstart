@@ -40,11 +40,11 @@ function postcsswithvars() {
   return gulp.src(config.src.css)
       .pipe(postcss(plugins, options))
       .pipe(replace('!important', ''))
-      .pipe(gulp.dest(config.dest.configurator.css))
+      .pipe(gulp.dest(config.dest.uncompiled_css))
 }
 
 function cssvarsjson() {
-  return gulp.src(config.dest.configurator.css + '/**/*.css')
+  return gulp.src(config.dest.uncompiled_css + '/**/*.css')
       .pipe(intercept(function(file) {
         if(file.contents) {
           const cssVarObj = {};
@@ -62,7 +62,7 @@ function cssvarsjson() {
         }
       }))
       .pipe(extReplace('.json'))
-      .pipe(gulp.dest(config.dest.configurator.css))
+      .pipe(gulp.dest(config.dest.uncompiled_css))
 }
 
 gulp.task('configurator:css', postcsswithvars);
