@@ -217,6 +217,10 @@ basscss-responsive-margin@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/basscss-responsive-margin/-/basscss-responsive-margin-1.1.0.tgz#2243bcbd00d1d56008496dedb4be2b3cb329d920"
 
+basscss-responsive-padding@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/basscss-responsive-padding/-/basscss-responsive-padding-1.1.0.tgz#cecf9eb36b7b1f6f257a54739e6c3aa33de6f1f5"
+
 basscss-responsive-type-scale@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/basscss-responsive-type-scale/-/basscss-responsive-type-scale-1.0.1.tgz#ab02e2b3e6eb8084ff2893aa2e3eec0f6387d62d"
