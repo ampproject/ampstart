@@ -2,7 +2,7 @@ const conf = require('./gulp.conf');
 
 module.exports = function (config) {
   const configuration = {
-    basePath: '../',
+    basePath: '../../../',
     singleRun: true,
     autoWatch: false,
     logLevel: 'INFO',

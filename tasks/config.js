@@ -27,7 +27,7 @@ module.exports = {
     css: ['css/**/*.css'],
     css_ignore: ['!css/**/_*.css', '!css/ampstart-base/**/*.css'],
     data: ['*/**/*.json', '!templates/*/data/*.json'],
-    img: 'img/**',
+    img: 'img/**'
   },
   dest: {
     default: 'dist',
@@ -39,5 +39,5 @@ module.exports = {
     img: 'dist/img/',
     configurator_app: 'dist/configurator',
     uncompiled_css: 'dist/configurator/uncompiledCss'
-  },
+  }
 };

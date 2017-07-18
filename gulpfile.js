@@ -116,8 +116,8 @@ function getPartials(acc, embedderDir, template) {
 
 gulp.task('build', 'build', function(cb) {
   runSequence(
-      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', 'validate',
-      'bundle', cb);
+      'clean', 'highlight', 'escape', 'img', 'postcss', 'posthtml', 'www', 'validate',
+      'bundle', 'build:configurator', cb);
 });
 
 gulp.task('clean', 'Delete the dist/ directory to allow for clean re-builds', () => {
