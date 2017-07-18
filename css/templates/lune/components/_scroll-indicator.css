@@ -14,39 +14,41 @@
   height: 2.1874rem;
   background: currentColor;
   transform-origin: center top;
-  animation: animate-scroll-line 3s ease-out infinite;
+  animation: animate-scroll-line 6s calc(var(--animation-delay-start) * 3) ease-out infinite both;
+  will-change: transform;
   content: '';
 }
 
 .lune-component-scroll-indicator span {
   display: block;
-  animation: animate-scroll-text 3s ease-out infinite;
+  animation: animate-scroll-text 6s calc(var(--animation-delay-start) * 3) ease-out infinite both;
+  will-change: transform;
 }
 
 
 @keyframes animate-scroll-line {
-  0%, 8% {
+  0%, 2% {
     transform-origin: center top;
     transform: scaleY(0) translateY(-20px);
   }
 
-  16% {
+  2.5% {
     transform: scaleY(.5) translateY(0);
   }
 
-  32% {
+  5% {
     transform-origin: center top;
     transform: scaleY(1);
   }
-  32.1% {
+  5.1% {
     transform-origin: center bottom;
   }
 
-  48% {
+  75% {
     transform: scaleY(1);
   }
 
-  64%, 80% {
+  78%, 80% {
     transform: scaleY(0);
   }
 
@@ -65,12 +67,12 @@
     transform: translateY(-20px);
   }
 
-  16%, 48% {
+  4%, 78% {
     opacity: 1;
     transform: translateY(0);
   }
 
-  64%, 100% {
+  81%, 100% {
     opacity: 0;
     transform: translateY(20px);
   }
