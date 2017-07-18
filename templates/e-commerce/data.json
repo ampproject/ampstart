@@ -90,6 +90,7 @@
       }
     }
   },
+<<<<<<< HEAD
   "footer": {
     "links": [
       {
@@ -132,6 +133,24 @@
       }
     ]
   },
+=======
+  "cart": [
+    {
+      "name": "product 1",
+      "description": "Mauris tincidunt justo convallis.",
+      "price": "349",
+      "quantity": 1,
+      "thumbnail": "../../img/e-commerce/product/product-cart.png"
+    },
+    {
+      "name": "product 1",
+      "description": "Mauris tincidunt justo convallis.",
+      "price": "349",
+      "quantity": 1,
+      "thumbnail": "../../img/e-commerce/product/product-cart.png"
+    }
+  ],
+>>>>>>> ampproject/master
   "blog": {
     "articles": [
       {
