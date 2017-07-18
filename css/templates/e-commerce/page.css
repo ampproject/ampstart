@@ -557,3 +557,8 @@ amp-selector [option][selected] {
     margin-left: calc(1/12 * 100%);
   }
 }
+
+/** CHECKOUT */
+.commerce-checkout-steps {
+  color: #cdcccd;
+}
