@@ -26,7 +26,9 @@ limitations under the License.
       <h1 class="h3 mb2">Your Basket</h1>
       {{#cart}}
         <div class="flex flex-wrap mb2 md-mt3 md-pb3 commerce-cart-item">
-          <amp-img class="col-2" src="{{thumbnail}}" width="130" height="158" layout="responsive" alt="{{name}}"></amp-img>
+          <div class="col-2">
+            <amp-img class="commerce-cart-item-image" src="{{thumbnail}}" width="130" height="158" layout="responsive" alt="{{name}}"></amp-img>
+          </div>
           <div class="px1 col-7">
             <div class="h6 mb1">{{name}}</div>
             <div>{{description}}</div>
