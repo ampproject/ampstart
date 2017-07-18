@@ -29,7 +29,7 @@
   top: 0;
   bottom: 0;
   right: 0;
-  z-index: var(--z0);
+  z-index: var(--z1);
   background-color: var(--color-font-primary);
   opacity: 0;
   transition: opacity .3s;
@@ -56,7 +56,7 @@
   position: absolute;
   left: -50%;
   top: -50%;
-  z-index: var(--z1);
+  z-index: var(--z2);
   width: 200%;
   height: 200%;
   background-color: var(--color-font-primary);
