@@ -8,7 +8,7 @@
   --lune-landing-title-offset-horizontal-wide: -38%;
 
   --lune-landing-page-height: 100vh;
-  --lune-landing-page-min-height: 37.5rem; /* 600px */
+  --lune-landing-page-min-height: 28.75rem; /* 460px */
 }
 
 
@@ -51,18 +51,55 @@
   min-width: 16rem;
 }
 
+.lune-landing-title-top {
+  left: calc(var(--lune-landing-title-offset-horizontal-narrow) -
+  var(--letter-spacing-3));
+  top: 0%;
+  font-size: var(--h0);
+  letter-spacing: var(--letter-spacing-3);
+  text-indent: var(--letter-spacing-3);
+  line-height: var(--line-height-1);
+  font-weight: var(--font-weight-heavy);
+}
+
+.lune-landing-title-bottom {
+  right: calc(var(--lune-landing-title-offset-horizontal-narrow) -
+  var(--letter-spacing-3));
+  top: 52%;
+  font-size: var(--h0);
+  letter-spacing: var(--letter-spacing-3);
+  text-indent: var(--letter-spacing-3);
+  line-height: var(--line-height-1);
+  font-weight: var(--font-weight-heavy);
+}
+
+.lune-landing-title-middle {
+  top: 28%;
+  left: var(--lune-landing-title-offset-horizontal-narrow);
+  right: var(--lune-landing-title-offset-horizontal-narrow);
+  font-weight: var(--font-weight-heavy);
+}
+
 /*
  * When there is enough estate in the viewport, set a fixed height for the page
  * and fixed position on the lower section, in order to achieve a "reveal" effect.
  * Threshold is 600px, same as --lune-landing-page-height.
  */
-@media (min-height: 37.5rem) {
+@media (min-height: 28.75rem) {
   .lune-page-landing {
     height: calc(2 * var(--lune-landing-page-height));
   }
 
   .lune-landing-section.lune-theme-dark {
     position: fixed;
+  }
+
+  .lune-landing-title-middle {
+    top: 32%;
+  }
+
+  .lune-landing-title-bottom {
+    top: 56%;
   }
 
   /*
@@ -93,37 +130,8 @@
 .lune-landing-content {
   /* vmin ensures that both viewport width and height limit the content size. */
   width: 60vmin;
-  min-width: 17.5rem;
+  min-width: 15rem;
   max-width: 50vh;
-}
-
-.lune-landing-title-top {
-  left: calc(var(--lune-landing-title-offset-horizontal-narrow) -
-      var(--letter-spacing-3));
-  top: 0%;
-  font-size: var(--h0);
-  letter-spacing: var(--letter-spacing-3);
-  text-indent: var(--letter-spacing-3);
-  line-height: var(--line-height-1);
-  font-weight: var(--font-weight-heavy);
-}
-
-.lune-landing-title-bottom {
-  right: calc(var(--lune-landing-title-offset-horizontal-narrow) -
-      var(--letter-spacing-3));
-  top: 64%;
-  font-size: var(--h0);
-  letter-spacing: var(--letter-spacing-3);
-  text-indent: var(--letter-spacing-3);
-  line-height: var(--line-height-1);
-  font-weight: var(--font-weight-heavy);
-}
-
-.lune-landing-title-middle {
-  top: 39%;
-  left: var(--lune-landing-title-offset-horizontal-narrow);
-  right: var(--lune-landing-title-offset-horizontal-narrow);
-  font-weight: var(--font-weight-heavy);
 }
 
 @media (--breakpoint-mt) {
@@ -151,8 +159,8 @@
   }
 
   .lune-landing-title-bottom {
-    right: var(--lune-landing-title-offset-horizontal-wide) -
-        calc(var(--letter-spacing-3));
+    right: calc(var(--lune-landing-title-offset-horizontal-wide) -
+        var(--letter-spacing-3));
     font-size: var(--h00);
   }
 }

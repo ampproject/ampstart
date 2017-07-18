@@ -40,6 +40,11 @@
   justify-content: space-between;
 }
 
+.ampstart-sidebar .lune-nav-contact .ampstart-nav-link {
+  display: inline-block;
+  text-transform: lowercase;
+}
+
 /* Strikethrough effect on hover */
 .ampstart-nav-link::before {
   position: absolute;
