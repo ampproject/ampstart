@@ -14,13 +14,3 @@
   background-color: var(--color-background-light);
   color: var(--color-font-primary);
 }
-
-.lune-theme--overlay-1 {
-  background-color: var(--color-overlay-1);
-  color: var(--color-font-primary);
-}
-
-.lune-theme--overlay-2 {
-  background-color: var(--color-overlay-2);
-  color: var(--color-font-primary);
-}
