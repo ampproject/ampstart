@@ -116,16 +116,20 @@ limitations under the License.
       <div class="col-12 flex flex-wrap">
         <hr class="xs-hide sm-hide mt4" />
         <div class="col-12 md-col-6 px2 md-pl7 commerce-product-desc">
-          <section class="pt4 pb4 md-pt6 md-px4">
+          <section class="pt3 md-pt6 md-px4">
             <h2 class="h5 md-h4">Overview</h2>
-            <p class="mt2">Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus
+            <p class="mt2 mb3">Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus
               ut, sodales id. Velit lacus, fermentum neque et sagittis, ac venenatis volutpat, dolore neque feugiat proin
               fermentum odio, odio arcu in eu wisi. </p>
+              <hr/>
+              <div class="pt3 md-pt4 md-pb4">
+                <h2 class="h5 md-h4 mb2">Reviews</h2>
+                {{> partials/review.snip.html}}
+              </div>
           </section>
-          <hr class="md-hide lg-hide" />
         </div>
         <div class="col-12 md-col-5 md-pr7 md-pl5 commerce-panel-filled">
-          <section class="pt4 pb4 px2 md-pt6">
+          <section class=" pt3 pb3 md-pt4 md-pb4 px2 md-pt6">
             <h2 class="h5 md-h4">Size Guide</h2>
             <div class="mt2">
               <table class="commerce-table center">
@@ -156,7 +160,7 @@ limitations under the License.
             </div>
           </section>
           <hr class="md-hide lg-hide" />
-          <section class="pt4 pb4 px2 commerce-panel-empty md-commerce-panel-filled">
+          <section class="pt3 pb3 md-pt4 md-pb4 px2 commerce-panel-empty md-commerce-panel-filled">
             <h2 class="h5 md-h4">Full spec</h2>
             <div class="mt2">
               <dl class="flex flex-wrap">
@@ -168,11 +172,11 @@ limitations under the License.
             </div>
           </section>
         </div>
+        {{> partials/related-products.snip.html}}
       </div>
     </section>
     {{/product-details}}
   </main>
   {{/main}} {{> ../../components/footer/footer.snip.html}}
 </body>
-
 </html>

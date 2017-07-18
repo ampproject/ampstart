@@ -1,0 +1,58 @@
+@import "../page-vars";
+
+.ampstart-headerbar {
+  justify-content: space-between;
+  /* Override ampstart default box shadow styles */
+  box-shadow: none;
+  /* header is fixed so should be moved onto a new GPU layer */
+  will-change: transform;
+}
+
+.ampstart-headerbar-title {
+  font-size: var(--h4);
+  font-weight: var(--font-weight-heavy);
+  letter-spacing: var(--letter-spacing-4);
+  line-height: var(--line-height-1);
+  /* Using same indent as the letter spacing to make the text properly centered. */
+  text-indent: var(--letter-spacing-4);
+}
+
+.ampstart-navbar-trigger {
+  padding-left: var(--space-1);
+  font-size: var(--h3);
+}
+
+.ampstart-headerbar-fixed {
+  justify-content: flex-end;
+}
+
+/* Remove the default margin top from amp-sidebar and navbar */
+.ampstart-headerbar + :not(amp-sidebar),
+.ampstart-headerbar + amp-sidebar + * {
+  margin-top: 0;
+}
+
+@media (--breakpoint-mt) {
+  .ampstart-navbar-trigger {
+    padding-left: var(--space-3);
+  }
+
+  /*
+   * Override styles based on --navbar-height with the
+   * responsive value for wide screens
+   */
+  .ampstart-headerbar + *:not(amp-sidebar),
+  .ampstart-headerbar + amp-sidebar + * {
+    margin-top: var(--wide-navbar-height);
+  }
+
+  .ampstart-headerbar-nav,
+  .ampstart-navbar-trigger {
+    line-height: var(--wide-navbar-height);
+  }
+
+  .ampstart-sidebar-header {
+    line-height: var(--wide-navbar-height);
+    min-height: var(--wide-navbar-height);
+  }
+}
