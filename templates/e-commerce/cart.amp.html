@@ -1,0 +1,61 @@
+<!doctype html>
+
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html ⚡>
+{{#header}} {{> ../../utils/amp-page-head.snip.html}}
+
+<body>
+  {{> ../../components/navbar/navbar.snip.html}} {{/header}}
+  <main id="content" role="main" class="main flex flex-wrap">
+    <section class="px2 mt2 md-px4 md-mt4 col-12 md-col-8">
+      <h1 class="h3 mb2">Your Basket</h1>
+      {{#cart}}
+        <div class="flex flex-wrap mb2 md-mt3 md-pb3 commerce-cart-item">
+          <div class="col-2">
+            <amp-img class="commerce-cart-item-image" src="{{thumbnail}}" width="130" height="158" layout="responsive" alt="{{name}}"></amp-img>
+          </div>
+          <div class="px1 col-7">
+            <div class="h6 mb1">{{name}}</div>
+            <div>{{description}}</div>
+          </div>
+          <div class="col-3 h6 flex flex-wrap justify-between items-start">
+            <span>£{{price}}</span>
+            <span>{{quantity}}</span>
+            <div role="button" class="inline-block commerce-cart-icon" tabindex="0">✕</div>
+          </div>
+        </div>
+      {{/cart}}
+    </section>
+    <section class="px2 pt3 pb4 md-px3 md-pt4 col-12 md-col-4 md-commerce-panel-filled commerce-cart-summary">
+      <h2 class="h5 md-mt3">Order Summary</h2>
+      <dl class="flex flex-wrap">
+        <dt class="col-10">Subtotal</dt>
+        <dd class="m0 col-2 pb1 right-align">&#163;1018</dd>
+        <dt class="col-10 pb1">Shipping</dt>
+        <dd class="m0 col-2 pb1 right-align">&#163;25</dd>
+        <dt class="commerce-cart-total col-10 pt2 pb2 bold">Total</dt>
+        <dd class="commerce-cart-total m0 col-2 pt2 pb2 right-align bold">&#163;1043</dd>
+      </dl>
+      <p class="pb3">Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+      <div class="commerce-cart-button center">
+        <a href="#" class="ampstart-btn ampstart-btn-secondary caps">checkout</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

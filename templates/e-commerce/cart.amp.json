@@ -1,0 +1,10 @@
+{
+  "header": {
+    "head-tag": {
+      "canonical-path": "templates/e-commerce/cart.amp",
+      "extensions": [
+        "amp-sidebar"
+      ]
+    }
+  }
+}
