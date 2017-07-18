@@ -29,27 +29,27 @@
 @keyframes animate-scroll-line {
   0%, 2% {
     transform-origin: center top;
-    transform: scaleY(0) translateY(-20px);
+    transform: scale3d(1, 0, 1) translate3d(0, -20px, 0);
   }
 
   2.5% {
-    transform: scaleY(.5) translateY(0);
+    transform: scale3d(1, .5, 1) translate3d(0, 0, 0);
   }
 
   5% {
     transform-origin: center top;
-    transform: scaleY(1);
+    transform: scale3d(1, 1, 1);
   }
   5.1% {
     transform-origin: center bottom;
   }
 
   75% {
-    transform: scaleY(1);
+    transform: scale3d(1, 1, 1);
   }
 
   78%, 80% {
-    transform: scaleY(0);
+    transform: scale3d(1, 1, 1);
   }
 
   99.9% {
@@ -57,23 +57,23 @@
   }
   100% {
     transform-origin: center top;
-    transform: scaleY(0);
+    transform: scale3d(1, 0, 1);
   }
 }
 
 @keyframes animate-scroll-text {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translate3d(0, -20px, 0);
   }
 
   4%, 78% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0);
   }
 
   81%, 100% {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translate3d(0, 20px, 0);
   }
 }
