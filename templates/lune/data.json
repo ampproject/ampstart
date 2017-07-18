@@ -10,6 +10,7 @@
     },
     "navbar": {
       "name": "Lune",
+      "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12' viewBox='0 0 18 12' class='block'><path fill='currentColor' d='M0 0h18v2H0zM0 5h18v2H0zM0 10h18v2H0z'/></svg>",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "trigger-layout-classes": "col-3",
@@ -24,7 +25,7 @@
           "link": {
             "url": "mailto:contact@lune.com",
             "text": "—contact@lune.com",
-            "classes": "xs-small sm-hide h6 bold"
+            "classes": "xs-hide sm-hide h6 bold"
           }
         }
       ],
@@ -65,7 +66,7 @@
           "link": {
             "url": "mailto:contact@lune.com",
             "text": "contact@lune.com",
-            "nav-item-classes": "block col-10 h6 underline md-hide lg-hide"
+            "nav-item-classes": "lune-nav-contact block col-10 h6 underline md-hide lg-hide center"
           }
         }
       ]

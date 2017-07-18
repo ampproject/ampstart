@@ -18,6 +18,70 @@ limitations under the License.
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
     {{> ../../components/navbar/navbar.snip.html}}
+
+    <!-- The clipPath is used in the CSS `clip-path` property; it's used to achieve a
+      clipping effect while scrolling the page (see mocks/lune/landing-page-clipping.gif) -->
+    <div class="hide">
+      <svg width="0" height="0">
+          <defs>
+            <clipPath id="svgClipPath" clipPathUnits="objectBoundingBox">
+              <rect y="0" x="0" width="1" height="0.99"/>
+            </clipPath>
+          </defs>
+      </svg>
+    </div>
+
+    <!-- Landing page -->
+    <div class="lune-page lune-page-landing">
+      {{#landing-sections}}
+        <!-- Landing section -->
+        <section class="lune-landing-section {{classes}}">
+          <div class="lune-landing-wrapper absolute left-0 bottom-0 right-0 flex flex-column items-center justify-center">
+            <!-- Used by screen reader / document outline, not visible -->
+            <h2 class="hide">{{full_title}}</h2>
+            <div class="lune-landing-content relative flex items-center justify-center flex-auto mb2">
+              <div class="lune-landing-image-wrapper relative col-12">
+                <!-- Chair image -->
+                {{#product_image}}
+                  <!-- WebP image -->
+                  <amp-img
+                    class="lune-anim-scale-up z1"
+                    alt="{{alt}}"
+                    srcset="{{webp_srcset}}"
+                    width="{{width}}"
+                    height="{{height}}"
+                    layout="responsive">
+                      <!-- PNG Fallback -->
+                      <amp-img
+                        fallback
+                        class="lune-anim-scale-up z1"
+                        alt="{{alt}}"
+                        srcset="{{fallback_srcset}}"
+                        width="{{width}}"
+                        height="{{height}}"
+                        layout="responsive">
+                      </amp-img>
+                  </amp-img>
+                {{/product_image}}
+                <!-- Product name -->
+                <span class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+                <!-- LU- -->
+                <span class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">lu-</span>
+                <!-- -NE -->
+                <span class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">-ne</span>
+              </div>
+              <!-- Dictover CTA -->
+              <div class="absolute bottom-0 left-0 right-0 center z1 flex justify-center">
+                {{> partials/components/cta.snip.html}}
+              </div>
+            </div>
+            <!-- Scroll indicator -->
+            {{> partials/components/scroll-indicator.snip.html}}
+          </div>
+        </section>
+
+      {{/landing-sections}}
+    </div>
   </body>
 </html>
 {{/lune}}
