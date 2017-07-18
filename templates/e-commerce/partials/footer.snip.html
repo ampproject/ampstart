@@ -1,0 +1,40 @@
+{{#footer}}
+<footer class="commerce-footer pt3 pb3 center">
+  <nav>
+    <amp-img class="md-hide lg-hide" src="../../img/e-commerce/narrow-footer-logo.png" width="96" height="28" layout="fixed" alt="logo"></amp-img>
+    <ul class="list-reset flex flex-wrap md-pl4 md-pr4">
+    {{#links}}
+      <li class="pt3 md-pt0 col-12 md-col-3">
+        <h2 class="commerce-footer-header h7 pb2">{{header}}</h2>
+        <ul class="list-reset col-8 ml-auto mr-auto md-mx0 pb3">
+          {{#phone}}
+            <li>
+              <a class="text-decoration-none" href="tel:{{number}}">{{text}}</a>
+            </li>
+          {{/phone}}
+          {{#email}}
+            <li>
+              <a class="text-decoration-none" href="mailto:{{address}}">{{text}}</a>
+            </li>
+          {{/email}}
+          {{#url}}
+            <li>
+              <a class="text-decoration-none" href="{{url}}" target="_blank">{{text}}</a>
+            </li>
+          {{/url}}
+        </ul>
+        <hr class="md-hide lg-hide"/>
+      </li>
+    {{/links}}
+      <li class="pt3 md-pt0 col-12 md-col-3">
+        {{/footer}}
+        {{#header.navbar}}
+          {{> ../../../components/social-follow/social-follow.snip.html}}
+        {{/header.navbar}}
+      </li>
+      <li class="flex-auto right-align">
+        <amp-img class="xs-hide sm-hide" src="../../img/e-commerce/wide-footer-logo.png" width="153" height="96" layout="fixed" alt="logo"></amp-img>
+      </li>
+    </ul>
+  </nav>
+</footer>
