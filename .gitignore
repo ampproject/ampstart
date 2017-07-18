@@ -3,6 +3,7 @@
 build
 dist
 node_modules
+.tmp
 **/node_modules
 npm-debug.log
 .tm_properties
