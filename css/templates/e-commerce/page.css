@@ -582,6 +582,12 @@ amp-selector [option][selected] {
 }
 
 
+/** CHECKOUT */
+.commerce-checkout-steps {
+  color: #cdcccd;
+}
+
+
 /* CART */
 .commerce-cart-icon {
   color: var(--color-font-accent);
@@ -609,6 +615,7 @@ amp-selector [option][selected] {
     height: calc(100vh - var(--wide-navbar-height));
   }
 }
+
 
 /* RELATED PRODUCTS */
 .commerce-related-products {
