@@ -102,24 +102,29 @@
   left: calc(var(--lune-landing-title-offset-horizontal-narrow) -
       var(--letter-spacing-3));
   top: 0%;
+  font-size: var(--h0);
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   line-height: var(--line-height-1);
+  font-weight: var(--font-weight-heavy);
 }
 
 .lune-landing-title-bottom {
   right: calc(var(--lune-landing-title-offset-horizontal-narrow) -
       var(--letter-spacing-3));
   top: 64%;
+  font-size: var(--h0);
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   line-height: var(--line-height-1);
+  font-weight: var(--font-weight-heavy);
 }
 
 .lune-landing-title-middle {
   top: 39%;
   left: var(--lune-landing-title-offset-horizontal-narrow);
   right: var(--lune-landing-title-offset-horizontal-narrow);
+  font-weight: var(--font-weight-heavy);
 }
 
 @media (--breakpoint-mt) {
@@ -143,10 +148,12 @@
   .lune-landing-title-top {
     left: calc(var(--lune-landing-title-offset-horizontal-wide) -
         var(--letter-spacing-3));
+    font-size: var(--h00);
   }
 
   .lune-landing-title-bottom {
     right: var(--lune-landing-title-offset-horizontal-wide) -
         calc(var(--letter-spacing-3));
+    font-size: var(--h00);
   }
 }
