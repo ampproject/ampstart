@@ -2,8 +2,6 @@
    CTAs
 ///////////////////////////////////////////////////////*/
 
-@import "../page-vars";
-
 /* Override properties from ampstart-button. */
 .ampstart-btn {
   min-width: 14em;
