@@ -17,15 +17,15 @@
 const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
 const escapehtml = require('escape-html');
-const rename = require('gulp-rename')
+const rename = require('gulp-rename');
 const through = require('through2');
 
 function escape() {
   return gulp.src(config.src.hl_partials)
-    .pipe(rename(function(path) {
+    .pipe(rename(path => {
       path.basename = `esc-${path.basename}`;
     }))
-    .pipe(through.obj(function(file, enc, cb) {
+    .pipe(through.obj((file, enc, cb) => {
       if (file.isNull()) {
         cb(null, file);
         return;
@@ -36,4 +36,4 @@ function escape() {
     .pipe(gulp.dest(config.dest.hl_partials));
 }
 
-gulp.task('escape', escape);
+gulp.task('escape', 'Build Escaped HTML for a11y on code snippets', escape);

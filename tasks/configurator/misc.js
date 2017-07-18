@@ -1,17 +1,11 @@
 const path = require('path');
 
-const gulp = require('gulp');
-const del = require('del');
+const gulp = require('gulp-help')(require('gulp'));
 const filter = require('gulp-filter');
 
 const conf = require('../conf/gulp.conf');
 
-gulp.task('clean', clean);
-gulp.task('other', other);
-
-function clean() {
-  return del([conf.paths.dist, conf.paths.tmp]);
-}
+gulp.task('other', 'Copy Remaining Files to dist/', other);
 
 function other() {
   const fileFilter = filter(file => file.stat.isFile());

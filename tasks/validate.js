@@ -20,12 +20,12 @@ const config = require('./config');
 
 function validate() {
   return gulp.src([
-        `${config.dest.templates}/**/*.html`,
-        `!${config.dest.hl_partials}/**/*.html`,
-      ])
+    `${config.dest.templates}/**/*.html`,
+    `!${config.dest.hl_partials}/**/*.html`
+  ])
       .pipe(validator.validate())
       .pipe(validator.format())
       .pipe(validator.failAfterError());
 }
 
-gulp.task('validate', validate);
+gulp.task('validate', 'Run all HTML files through the AMP validator', validate);

@@ -120,13 +120,13 @@ gulp.task('build', 'build', function(cb) {
       'bundle', cb);
 });
 
-gulp.task('clean', function() {
+gulp.task('clean', 'Delete the dist/ directory to allow for clean re-builds', () => {
   // Clears partials map so changes to components are rebuilt in watch task.
   partialsMap = {};
   return del(['dist']);
 });
 
-gulp.task('img', function() {
+gulp.task('img', 'Copy Image assets to dist/', () => {
   return gulp.src(config.src.img).pipe(gulp.dest(config.dest.img));
 });
 
@@ -152,7 +152,7 @@ const inlineTransformation = {
   }
 };
 
-gulp.task('www', function() {
+gulp.task('www', 'Translate Mustach files to AMP HTML', () => {
   const plugins = [
     require('posthtml-include')({encoding: 'utf-8'}),
     require('posthtml-inline-assets')({
@@ -214,10 +214,52 @@ gulp.task('postcss', 'build postcss files', function() {
       .pipe(gulp.dest(config.dest.css))
 });
 
-gulp.task('serve', 'Host a livereloading webserver for the project', ['watch:www'], function() {
+gulp.task('serve', 'Host the AMP Start website, and livereload for changes', ['watch:www'], () => {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     host: '0.0.0.0',
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
+
+/** ****************************************************************************
+*
+* Configurator
+*
+***************************************************************************** */
+const browserSync = require('browser-sync');
+const conf = require('./tasks/configurator/conf/gulp.conf');
+require('./tasks/configurator');
+
+gulp.task('build:configurator', 'builds the configurator app', () => {
+  runSequence(['other', 'webpack:dist']);
+});
+
+gulp.task('test', 'Run Tests for the AMP Start Configurator', () => {
+  runSequence(['karma:single-run']);
+});
+
+gulp.task('test:auto', 'Run Tests for the AMP Start Configurator', () => {
+  runSequence(['karma:auto-run']);
+});
+
+gulp.task('serve:configurator', 'Host the Configurator and livereload for changes', () => {
+  runSequence('webpack:watch', 'watch:configurator', 'browsersync');
+});
+
+gulp.task('serve:configurator:dist', 'Host a built (dist/) Configurator', () => {
+  runSequence('default', 'browsersync:dist');
+});
+
+gulp.task('watch:configurator', 'Watch files in the configurator for changes and rebuild', watchConfigurator);
+
+function reloadBrowserSync(cb) {
+  browserSync.reload();
+  cb();
+}
+
+function watchConfigurator(done) {
+  gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
+  done();
+}
+>>>>>>> Wrote gulp help for every gulp task

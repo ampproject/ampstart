@@ -1,4 +1,4 @@
-const gulp = require('gulp');
+const gulp = require('gulp-help')(require('gulp'));
 const gutil = require('gulp-util');
 
 const webpack = require('webpack');
@@ -6,15 +6,15 @@ const webpackConf = require('../conf/webpack.conf');
 const webpackDistConf = require('../conf/webpack-dist.conf');
 const gulpConf = require('../conf/gulp.conf');
 
-gulp.task('webpack:dev', done => {
+gulp.task('webpack:dev', 'Bundle Configurator using dev webpack config', done => {
   webpackWrapper(false, webpackConf, done);
 });
 
-gulp.task('webpack:watch', done => {
+gulp.task('webpack:watch', 'Watch files for changes, and bundle when changes occur', done => {
   webpackWrapper(true, webpackConf, done);
 });
 
-gulp.task('webpack:dist', done => {
+gulp.task('webpack:dist', 'Bundle Configurator using dist webpack config', done => {
   process.env.NODE_ENV = 'production';
   webpackWrapper(false, webpackDistConf, done);
 });

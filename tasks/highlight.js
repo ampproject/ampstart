@@ -22,7 +22,7 @@ const through = require('through2');
 
 function highlight() {
   return gulp.src(config.src.hl_partials)
-    .pipe(through.obj(function(file, enc, cb) {
+    .pipe(through.obj((file, enc, cb) => {
       if (file.isNull()) {
         cb(null, file);
         return;
@@ -36,4 +36,4 @@ function highlight() {
     .pipe(gulp.dest(config.dest.hl_partials));
 }
 
-gulp.task('highlight', highlight);
+gulp.task('highlight', 'Run Code snippets through a syntax highlighter', highlight);
