@@ -1,0 +1,141 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+/* Colors Basscss Addon */
+:root {
+  /*--aqua:  #7FDBFF;*/
+  /*--blue:  #0074D9;*/
+  /*--navy:  #001F3F;*/
+  /*--teal:  #39CCCC;*/
+  --green: #47B074;
+  /*--olive: #3D9970;*/
+  --lime:  #67E497;
+
+  /*--yellow:  #FFDC00;*/
+  --orange:  #EC8936;
+  /*--red:     #FF4136;*/
+  --fuchsia: #AA5EFD;
+  --purple:  #8B58E3;
+  /*--maroon:  #85144B;*/
+
+  --white:  #FFFFFF;
+  --black:  #312E4E;
+
+  --gray:   color(var(--black) l(60%) s(10%));
+  --silver: color(var(--black) l(90%) s(10%));
+}
+
+:root {
+/*;
+
+
+
+
+
+
+  --bold-font-weight: bold;
+
+  --width-1: 24rem;
+  --width-2: 32rem;
+  --width-3: 48rem;
+  --width-4: 64rem;
+
+  --z1: 1;
+  --z2: 2;
+  --z3: 3;
+  --z4: 4;
+
+  --letter-spacing: 1;
+  --caps-letter-spacing: .2em;
+
+  */
+  --border-width: 1px;
+  --border-radius: calc(4 / 16rem);
+
+  --line-height-1: 1;
+  --line-height-2: 1.2;
+  --line-height-3: 1.6;
+  --line-height-4: 2;
+
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
+
+  --space-1: 1rem;
+  --space-2: 1.5rem;
+  --space-3: 3rem;
+  --space-4: 5rem;
+
+  --width-sm: 40rem; /* 640px */
+  --width-md: 52rem; /* 832px */
+  --width-lg: 72rem; /* 1552 */
+
+  @custom-media --breakpoint-xs (max-width: 40rem);
+  @custom-media --breakpoint-v-xs (max-height: 40rem);
+  @custom-media --breakpoint-sm (min-width: 40.06rem);
+  @custom-media --breakpoint-v-sm (min-height: 40.06rem);
+  @custom-media --breakpoint-md (min-width: 52.06rem);
+  @custom-media --breakpoint-v-md (min-height: 52.06rem);
+  @custom-media --breakpoint-lg (min-width: 72.06rem);
+  @custom-media --breakpoint-v-lg (min-height: 72.06rem);
+  @custom-media --breakpoint-sm-md (min-width: 40.06rem) and (max-width: 52rem);
+  @custom-media --breakpoint-v-sm-md (min-height: 40.06rem) and (max-height: 52rem);
+  @custom-media --breakpoint-md-lg (min-width: 52.06rem) and (max-width: 72rem);
+  @custom-media --breakpoint-v-md-lg (min-height: 52.06rem) and (max-height: 72rem);
+}
+
+/* Btn Basscss Addon */
+:root {
+  --bold-font-weight: 600;
+  /*--button-font-family: inherit;*/
+  /*--button-font-size: inherit;*/
+  /*--button-font-weight: var(--bold-font-weight);*/
+  --button-line-height: 1.125rem;
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+  /*--darken-2: rgba(0, 0, 0, .125);*/
+  /*--darken-3: rgba(0, 0, 0, .25);*/
+}
+
+/* Btn Outline Basscss Addon */
+:root {
+  /*--darken-1: rgba(0, 0, 0, .0625);*/
+  /*--darken-2: rgba(0, 0, 0, .125);*/
+  --darken-3: rgba(0, 0, 0, .125);
+}
+
+/* Btn Primary Basscss Addon */
+:root {
+  /*--blue: #0074d9;*/
+  /*--button-color: #fff;*/
+  --button-background-color: var(--purple);
+  /*--darken-1: rgba(0, 0, 0, .0625);*/
+  /*--darken-2: rgba(0, 0, 0, .125);*/
+  /*--darken-3: rgba(0, 0, 0, .25);*/
+}
+
+/* Btn Sizes Basscss Addon */
+:root {
+  --button-small-padding-y: .25rem;
+  --button-small-padding-x: .5rem;
+  --button-big-padding-y: 1rem;
+  --button-big-padding-x: 1.25rem;
+  --button-narrow-padding-x: .5rem;
+}

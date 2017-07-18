@@ -1,0 +1,322 @@
+{{!
+<!---
+Copyright 2016 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
+{{#filter-bar}}
+<section class="ampstart-travel__filter-bar">
+  <div class="flex border-bottom border-silver mxn1 px1 md-px2">
+    <div class="flex flex-auto border-right border-silver">
+      <div class="px1 py2 nowrap">
+        <span class="pointer" role="button" tabindex="-1" on="tap:AMP.setState({ui_filterPane: !ui_filterPane, ui_sortPane: false})">
+          <span class="bold">Filters</span>
+          <span class="gray">{{> ../icon/caret-down-small.snip.html}}</span>
+        </span>
+      </div>
+
+      <div class="pl1 py2 nowrap">
+        <span class="gray">Price</span>
+      </div>
+
+      <div class="min-0">
+        <div class="fade-right pr1 py2">
+          <span
+            class="badge gray"
+            [class]="query_maxPrice < 801 ? 'badge green' : 'badge gray'"
+            [text]="query_maxPrice < 801 ? 'Up to $' + round(query_maxPrice) : 'Any price'"
+          >Any price</span>
+        </div>
+      </div>
+
+      <div class="pl1 py2 nowrap">
+        <span class="gray">Type</span>
+      </div>
+
+      <div class="min-0">
+        <div class="fade-right pr1 py2">
+          <span
+            class="badge gray"
+            [class]="'badge gray' + (query_type.length > 0 && query_type.length < {{data.types.length}} ? ' hide' : '')"
+          >All types</span>
+
+          {{#data.types}}<span class="badge green hide" [class]="'badge green' + (query_type.includes('{{value}}') ? '' : ' hide')">{{text}}</span>{{/data.types}}
+        </div>
+      </div>
+
+      <div class="pl1 py2 nowrap">
+        <span class="gray">City</span>
+      </div>
+
+      <div class="flex-auto min-0">
+        <div class="fade-right pr1 py2">
+          <amp-list
+            class="inline-list"
+            layout="flex-item"
+            {{> ../util/list-src.snip.html}}
+          >
+            <template type="amp-mustache">
+              {{=[[ ]]=}}
+              {{#stats.allCities}}<span class="badge gray">All cities</span>{{/stats.allCities}}
+              {{^stats.allCities}}
+              {{#stats.cities}}{{#isSelected}}<span class="badge green">{{name}}</span>{{/isSelected}}{{/stats.cities}}
+              {{/stats.allCities}}
+              [[={{ }}=]]
+            </template>
+          </amp-list>
+        </div>
+      </div>
+
+      <div class="px1 md-pr2 py2 nowrap">
+        <amp-list
+          class="inline-list"
+          layout="flex-item"
+          {{> ../util/list-src.snip.html}}
+        >
+          <template type="amp-mustache">
+            {{=[[ ]]=}}
+            <span class="purple">{{stats.resultCount}} <span class="sm-hide xs-hide md-hide">Tours &amp; Activities</span> Found</span>
+            [[={{ }}=]]
+          </template>
+        </amp-list>
+      </div>
+    </div>
+
+    <div class="px1 py2 md-pl2 nowrap">
+      <span role="button" tabindex="-1"  class="pointer" on="tap:AMP.setState({ui_filterPane: false, ui_sortPane: !ui_sortPane})">
+        <span class="gray">Sort by</span>
+        <span class="bold">
+          {{#data.sort}}
+            <span {{^selected}}class="hide"{{/selected}} [class]="fields_sort == '{{value}}' ? '' : 'hide'">
+              {{text}}
+            </span>
+          {{/data.sort}}
+        </span>
+        <span class="gray">{{> ../icon/caret-down-small.snip.html}}</span>
+      </span>
+    </div>
+  </div>
+
+  <!-- Filter pane -->
+  <div class="pane" [class]="'pane' + (ui_filterPane ? ' pane-visible' : '')">
+    <div class="pane-overflow left-0 right-0 ">
+      <div class="pane-content bg-white border-bottom border-silver z1">
+        <div class="container px1 md-px2 py1">
+          <div class="clearfix mxn2 py1">
+            <div class="col col-4 px2">
+              <div class="h5 gray mb1">MAX PRICE</div>
+              <div class="h1" [text]="fields_maxPrice_live < 801 ? '$' + round(fields_maxPrice_live) : '$800+'">
+                $800+
+              </div>
+              <svg viewBox="0 0 800 100" class="lime layout-fill block">
+                <defs>
+                  <linearGradient x1="0" y1="0" x2="0" y2="120%" id="price-gradient">
+                    <stop offset="0%" stop-color="currentColor"></stop>
+                    <stop offset="200%" stop-color="#FFF"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#price-gradient)" d="m0,100 S12.5 100,25 100 S62.5 91.477,75 82.955 S112.5 64.204,125 62.5 S162.5 55.966,175 52.841 S212.5 41.477,225 36.364 S262.5 28.125,275 30.113 S312.5 43.466,325 52.841 S362.5 76.421,375 81.25 S412.5 85.227,425 79.546 S462.5 51.137,475 34.091 S512.5 1.421,525 2.841 S562.5 15.057,575 24.432 S612.5 45.881,625 48.579 S662.5 56.108,675 58.239 S712.5 71.875,725 81.25 S762.5 100,775 100 S800 100,800 100"></path>
+              </svg>
+              <div class="mb1 pb2">
+                <input
+                  type="range"
+                  class="input-range layout-fill"
+                  name="maxPrice"
+                  step="1"
+                  min="1"
+                  max="801"
+                  value="801"
+                  [value]="'' + fields_maxPrice"
+                  on="
+                    change:AMP.setState({
+                      fields_maxPrice: event.value,
+                      fields_maxPrice_live: event.value,
+                      fields_maxPrice_edited: event.value != query_maxPrice
+                    });
+                    input-debounced:AMP.setState({
+                      fields_maxPrice_live: event.value
+                    });
+                  "
+                >
+              </div>
+              <div class="h3 gray line-height-3">
+                <amp-list
+                  class="inline-list"
+                  layout="flex-item"
+                  {{> ../util/list-src.snip.html}}
+                >
+                  <template type="amp-mustache">
+                    {{=[[ ]]=}}
+                    Average Price for activites in {{stats.location}} is between ${{stats.price.average.min}} and ${{stats.price.average.max}}.
+                    [[={{ }}=]]
+                  </template>
+                </amp-list>
+              </div>
+            </div>
+            <div class="col col-4 px2">
+              <div class="h5 gray mb2">TYPE</div>
+              <amp-selector
+                class="button-selector clearfix"
+                layout="container"
+                name="type"
+                multiple
+                on="
+                  select:AMP.setState({
+                    fields_type: fields_type.includes(event.targetOption)
+                      ? copyAndSplice(fields_type, fields_type.indexOf(event.targetOption), 1)
+                      : fields_type.concat([event.targetOption]),
+                    fields_type_edited: true
+                  })
+                "
+                [selected]="fields_type"
+              >
+                {{#data.types}}
+                  <div class="col col-6">
+                    <div option="{{value}}">
+                      <span>
+                        {{> ../icon/icon.snip.html}}
+                        {{text}}
+                      </span>
+                    </div>
+                  </div>
+                {{/data.types}}
+              </amp-selector>
+            </div>
+            <div class="col col-4 px2">
+              <div class="h5 gray mb2">CITY</div>
+              <amp-list
+                class="block-list"
+                layout="flex-item"
+                {{> ../util/list-src.snip.html}}
+              >
+                <template type="amp-mustache">
+                  {{=[[ ]]=}}
+                    <amp-selector
+                      class="checkbox-selector"
+                      layout="container"
+                      name="city"
+                      multiple
+                      on="
+                        select:
+                          AMP.setState({
+                            fields_city: fields_city.includes(event.targetOption)
+                              ? copyAndSplice(fields_city, fields_city.indexOf(event.targetOption), 1)
+                              : fields_city.concat([event.targetOption]),
+                            fields_city_edited: true
+                          })
+                      "
+                      [selected]="fields_city"
+                    >
+                      {{#stats.cities}}
+                        <!--
+                          "The attribute 'option' may not appear in tag 'div'."
+                          see: https://github.com/ampproject/amphtml/pull/9585
+                        -->
+                        {{#isSelected}}<div option="{{name}}" selected>{{/isSelected}}
+                        {{^isSelected}}<div option="{{name}}">{{/isSelected}}
+                          <span>
+                            <amp-img layout="flex-item" src="{{img}}"></amp-img>
+                            {{name}}
+                          </span>
+                        </div>
+                      {{/stats.cities}}
+                    </amp-selector>
+                  [[={{ }}=]]
+                </template>
+              </amp-list>
+            </div>
+          </div>
+        </div>
+        <div class="mx1 md-mx2 border-top border-silver"></div>
+        <div class="container px1 md-px2 py1 center">
+          <button
+            class="btn"
+            on="
+              tap:AMP.setState({
+                ui_filterPane: false,
+                query_maxPrice: fields_maxPrice_initial,
+                fields_maxPrice: fields_maxPrice_initial,
+                fields_maxPrice_live: fields_maxPrice_initial,
+                fields_maxPrice_edited: false,
+                query_city: fields_city_initial,
+                fields_city: fields_city_initial,
+                fields_city_edited: false,
+                query_type: fields_type_initial,
+                fields_type: fields_type_initial,
+                fields_type_edited: false
+              })
+            "
+          >
+            Reset Filters
+          </button>
+          <button
+            class="btn white bg-purple"
+            on="
+              tap:AMP.setState({
+                ui_filterPane: false,
+                query_query: fields_query,
+                fields_query_edited: false,
+                query_departure: fields_departure,
+                fields_departure_edited: false,
+                query_return: fields_return,
+                fields_return_edited: false,
+                query_maxPrice: fields_maxPrice,
+                fields_maxPrice_edited: false,
+                query_city: fields_city,
+                fields_city_edited: false,
+                query_type: fields_type,
+                fields_type_edited: false,
+                query_sort: fields_sort,
+                fields_sort_edited: false
+              })
+            "
+            disabled
+            [disabled]="!fields_maxPrice_edited && !fields_city_edited && !fields_type_edited"
+          >
+            Apply Filters
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Filter pane -->
+
+  <!-- Sort pane -->
+  <div class="pane" [class]="'pane' + (ui_sortPane ? ' pane-visible' : '')">
+    <div class="pane-overflow right-0">
+      <div class="pane-content bg-white border-bottom border-left border-silver z1">
+        <div class="p1">
+          <amp-selector
+            layout="container"
+            name="sort"
+            on="
+              select:AMP.setState({
+                query_sort: event.targetOption,
+                fields_sort: event.targetOption
+              })
+            "
+            [selected]="fields_sort"
+          >
+            {{#data.sort}}
+              <div option="{{value}}"{{#selected}} selected{{/selected}}>{{text}}</div>
+            {{/data.sort}}
+          </amp-selector>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Sort pane -->
+</section>
+{{/filter-bar}}

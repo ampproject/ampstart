@@ -5,6 +5,9 @@
   "hosting": {
     "public": "dist",
     "cleanUrls": true,
-    "redirects": []
+    "redirects": [],
+    "rewrites": [ {
+      "source": "/api/search", "function": "search"
+    }]
   }
 }

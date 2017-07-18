@@ -1,0 +1,223 @@
+[
+  {
+    "id": "xxx-xxx-xx0",
+    "name": "Sail Around the Eastern Mexican Coast",
+    "price": {
+      "value": 92,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "La Paz",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 4,
+      "count": 34
+    },
+    "flags": [
+      
+    ],
+    "types": [
+      "active",
+      "tours",
+      "water",
+      "nature"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx1",
+    "name": "A Tour of the Beaches of Canc\u00fan with a Local",
+    "price": {
+      "value": 70,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Canc\u00fan",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 5,
+      "count": 12
+    },
+    "flags": [
+      "new"
+    ],
+    "types": [
+      "active",
+      "tours",
+      "water",
+      "nature"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx2",
+    "name": "Roads of the City",
+    "price": {
+      "value": 199,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Mexico City",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": null,
+      "count": 0
+    },
+    "flags": [
+      "new"
+    ],
+    "types": [
+      "tours",
+      "nightlife"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx3",
+    "name": "Beer Excursion of Mexico City",
+    "price": {
+      "value": 40,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Mexico City",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 3,
+      "count": 1
+    },
+    "flags": [
+      "new"
+    ],
+    "types": [
+      "bus",
+      "tours",
+      "food",
+      "drinks"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx4",
+    "name": "Surf Day. Board and Wetsuits Included in Price!",
+    "price": {
+      "value": 100,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Oaxaca",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 5,
+      "count": 241
+    },
+    "flags": [
+      
+    ],
+    "types": [
+      "active",
+      "water"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx5",
+    "name": "Parque Zoologico",
+    "price": {
+      "value": 20,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Mexico City",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 4.5,
+      "count": 104
+    },
+    "flags": [
+      
+    ],
+    "types": [
+      "tours",
+      "nature"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx6",
+    "name": "The Best Coffee in Mexico. Free Coffee for 2 hours",
+    "price": {
+      "value": 5,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Tijuana",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 5,
+      "count": 2
+    },
+    "flags": [
+      "new"
+    ],
+    "types": [
+      "food",
+      "drinks"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx7",
+    "name": "Top Fashion Spots with Instagram Blogger",
+    "price": {
+      "value": 45,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Mexico City",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 4,
+      "count": 66
+    },
+    "flags": [
+      
+    ],
+    "types": [
+      "fashion",
+      "artistic"
+    ]
+  },
+  {
+    "id": "xxx-xxx-xx8",
+    "name": "Mexican Meat Market",
+    "price": {
+      "value": 19,
+      "currency": "USD"
+    },
+    "location": {
+      "city": "Mexico City",
+      "lat": 0,
+      "lng": 0
+    },
+    "reviews": {
+      "averageRaiting": 2,
+      "count": 11
+    },
+    "flags": [
+      
+    ],
+    "types": [
+      "food"
+    ]
+  }
+]
