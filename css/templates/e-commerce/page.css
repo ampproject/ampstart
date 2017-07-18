@@ -143,6 +143,27 @@ dd:after {
   margin-bottom: var(--space-1);
 }
 
+.ampstart-input label,
+.ampstart-input input::placeholder,
+.ampstart-input input[type="text"] {
+  font-size: var(--h7);
+  font-family: var(--title-font);
+  color: var(--color-primary);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ampstart-input > label::after {
+  height: 1px;
+  background: var(--color-separator);
+}
+
+.ampstart-input > input,
+.ampstart-input > textarea {
+  border-bottom: 1px dashed var(--color-separator);
+}
+
+
 .ampstart-input-radio label {
   font-size: var(--h6);
 }
@@ -553,7 +574,9 @@ amp-selector [option][selected] {
 }
 
 @media (--breakpoint-md) {
-  .commerce-listing-wrapper {
+  .commerce-listing-wrapper,
+  .commerce-contact,
+  .commerce-checkout {
     margin-left: calc(1/12 * 100%);
   }
 }
