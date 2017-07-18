@@ -1,5 +1,3 @@
-@import "../page-vars";
-
 .ampstart-sidebar {
   width: 80vw;
   display: flex;
@@ -32,10 +30,19 @@
   line-height: var(--line-height-5);
 }
 
+.ampstart-sidebar .lune-nav-contact {
+  max-width: 10.625rem;
+}
+
 .ampstart-nav-link {
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+
+.ampstart-sidebar .lune-nav-contact .ampstart-nav-link {
+  display: inline-block;
+  text-transform: lowercase;
 }
 
 /* Strikethrough effect on hover */
