@@ -117,7 +117,7 @@
         }
         ],
         "quote": {
-          "quoter": "Name of quoter",
+          "author": "Name of quoter",
           "text": "Maecenas neque mi, tempus ut commodo eget, commodo sit amet mauris."
         }
       },
