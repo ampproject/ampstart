@@ -1,0 +1,17 @@
+<section class="px2 md-mt5 col-12 commerce-related-products md-pl7">
+    <div class="col-12 md-col-6 md-px4 mt3 md-mt4">
+      <h2 class="h5 md-h4">You may also like</h2>
+      <amp-carousel height="150" layout="fixed-height" type="carousel">
+        <ul class="list-reset">
+          {{#related-products}}
+              <li class="commerce-related-product inline-block mr2">
+                <a href="#" class="text-decoration-none">
+                  <amp-img class="mb2" src="{{image}}" width="142" height="114" layout="responsive" alt="{{name}}"></amp-img>
+                  <h2 class="h6">{{name}}</h2>
+                </a>
+              </li>
+          {{/related-products}}
+        </ul>
+      </amp-carousel>
+    </div>
+</section>

@@ -1,0 +1,13 @@
+{
+  "header": {
+    "head-tag": {
+      "canonical-path": "templates/e-commerce/checkout-success.amp",
+      "extensions": [
+        "amp-sidebar"
+      ]
+    }
+  },
+  "checkout": [
+
+  ]
+}
