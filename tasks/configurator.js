@@ -23,7 +23,7 @@ const csstree = require('css-tree');
 const extReplace = require('gulp-ext-replace');
 const intercept = require('gulp-intercept');
 
-function postcsswithvars() {
+function postCssWithVars() {
   const plugins = [
     require('postcss-import')(),
     require('autoprefixer')(),
@@ -31,7 +31,7 @@ function postcsswithvars() {
     require('postcss-color-function')(),
     require('postcss-custom-properties')({
       preserve: true,
-      appendVariables: true
+      appendVariables: true,
     }),
     require('postcss-discard-comments')(),
     require('postcss-custom-media')(),
@@ -43,10 +43,10 @@ function postcsswithvars() {
       .pipe(gulp.dest(config.dest.uncompiled_css))
 }
 
-function cssvarsjson() {
+function cssVarsJson() {
   return gulp.src(config.dest.uncompiled_css + '/**/*.css')
       .pipe(intercept(function(file) {
-        if(file.contents) {
+        if (file.contents) {
           const cssVarObj = {};
           const ast = csstree.parse(file.contents.toString());
           csstree.walk(ast, function(node) {
@@ -65,5 +65,5 @@ function cssvarsjson() {
       .pipe(gulp.dest(config.dest.uncompiled_css))
 }
 
-gulp.task('configurator:css', postcsswithvars);
-gulp.task('configurator:json', cssvarsjson);
+gulp.task('configurator:css', postCssWithVars);
+gulp.task('configurator:json', cssVarsJson);
