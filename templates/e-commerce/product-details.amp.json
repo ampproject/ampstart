@@ -7,6 +7,9 @@
         "amp-bind",
         "amp-carousel",
         "amp-selector"
+      ],
+      "templates": [
+        "amp-mustache"
       ]
     }
   },
@@ -15,7 +18,8 @@
       "name": "Bike 1",
       "price": "£470",
       "colourFilterName": "colours",
-      "colours": [{
+      "colours": [
+        {
           "name": "white",
           "thumb": {
             "image1": "../../img/e-commerce/product/light-small-1.jpg",
@@ -27,7 +31,8 @@
             "image2": "../../img/e-commerce/product/light-large-2.jpg",
             "image3": "../../img/e-commerce/product/light-large-3.jpg"
           }
-        },{
+        },
+        {
           "name": "green",
           "thumb": {
             "image1": "../../img/e-commerce/product/dark-small-1.jpg",
@@ -46,7 +51,10 @@
         "select": {
           "placeholder": "Select a size",
           "options": [
-            "61cm", "62cm", "63cm", "64cm"
+            "61cm",
+            "62cm",
+            "63cm",
+            "64cm"
           ],
           "id": "sizes",
           "name": "sizes"
@@ -120,6 +128,73 @@
         {
           "header": "carrier",
           "body": "Chrome steel front"
+        }
+      ],
+      "related-products": [
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        },
+        {
+          "name": "Product Name",
+          "image": "../../img/e-commerce/product/related-product.png"
+        }
+      ],
+      "reviews": [
+        {
+          "author": "Tom",
+          "country": "UK",
+          "review": "Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna."
+        },
+        {
+          "author": "Jerry",
+          "country": "UK",
+          "review": "Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna."
+        },
+        {
+          "author": "Arthur",
+          "country": "UK",
+          "review": "Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna."
         }
       ]
     }

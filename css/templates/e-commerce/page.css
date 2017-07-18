@@ -557,3 +557,11 @@ amp-selector [option][selected] {
     margin-left: calc(1/12 * 100%);
   }
 }
+
+.commerce-related-products {
+  border-top: 1px solid var(--color-separator);
+}
+
+.commerce-related-product {
+  width: 105px;
+}
