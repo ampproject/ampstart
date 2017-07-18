@@ -1,5 +1,3 @@
-@import "page-vars";
-
 .lune-page {
   padding-top: var(--navbar-height);
 }

@@ -2,8 +2,6 @@
    LANDING PAGE
 ///////////////////////////////////////////////////////*/
 
-@import "../page-vars";
-
 :root {
   --lune-landing-title-offset-horizontal-narrow: -6%;
   --lune-landing-title-offset-horizontal-tablet: -32%;
