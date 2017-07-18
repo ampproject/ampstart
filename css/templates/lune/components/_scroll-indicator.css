@@ -2,8 +2,6 @@
    SCROLL INDICATOR
 ///////////////////////////////////////////////////////*/
 
-@import "../page-vars";
-
 .lune-component-scroll-indicator {
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);

@@ -208,7 +208,7 @@ gulp.task('postcss', 'build postcss files', function() {
   ];
   const replace = require('gulp-replace');
   const options = {};
-  return gulp.src(config.src.css)
+  return gulp.src(config.src.css.concat(config.src.css_ignore))
       .pipe(postcss(plugins, options))
       .pipe(replace('!important', ''))
       .pipe(gulp.dest(config.dest.css))
