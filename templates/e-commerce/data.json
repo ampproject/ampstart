@@ -90,7 +90,6 @@
       }
     }
   },
-<<<<<<< HEAD
   "footer": {
     "links": [
       {
@@ -133,7 +132,6 @@
       }
     ]
   },
-=======
   "cart": [
     {
       "name": "product 1",
@@ -150,7 +148,6 @@
       "thumbnail": "../../img/e-commerce/product/product-cart.png"
     }
   ],
->>>>>>> ampproject/master
   "blog": {
     "articles": [
       {
