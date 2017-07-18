@@ -106,6 +106,7 @@
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   line-height: var(--line-height-1);
+  font-weight: var(--font-weight-heavy);
 }
 
 .lune-landing-title-bottom {
@@ -116,12 +117,14 @@
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   line-height: var(--line-height-1);
+  font-weight: var(--font-weight-heavy);
 }
 
 .lune-landing-title-middle {
   top: 39%;
   left: var(--lune-landing-title-offset-horizontal-narrow);
   right: var(--lune-landing-title-offset-horizontal-narrow);
+  font-weight: var(--font-weight-heavy);
 }
 
 @media (--breakpoint-mt) {

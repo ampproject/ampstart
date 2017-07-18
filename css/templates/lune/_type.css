@@ -1,11 +1,5 @@
 @import 'page-vars';
 
-/* Heavy (AKA Black) is 2 weights above bold, not defined by Bass CSS */
-.font-weight-heavy {
-  font-weight: var(--font-weight-heavy);
-}
-
-
 /* Base CSS is limited to 6 heading styles. We need one extra */
 .h7 {
   font-size: var(--h7);
