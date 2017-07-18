@@ -204,7 +204,7 @@ amp-selector [option][selected] {
   padding-left: 0;
 }
 
-.commerce-pullquote-quoter {
+.commerce-pullquote-author {
   font-family: var(--title-font);
   font-size: var(--h6);
   font-weight: var(--bold-font-weight);
@@ -593,4 +593,14 @@ amp-selector [option][selected] {
   .commerce-footer .ampstart-social-follow li:first-child a {
     padding-left: 0;
   }
+}
+
+
+/* RELATED PRODUCTS */
+.commerce-related-products {
+  border-top: 1px solid var(--color-separator);
+}
+
+.commerce-related-product {
+  width: 105px;
 }
