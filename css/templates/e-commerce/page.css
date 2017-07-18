@@ -586,3 +586,12 @@ amp-selector [option][selected] {
     height: calc(100vh - var(--wide-navbar-height));
   }
 }
+
+/* RELATED PRODUCTS */
+.commerce-related-products {
+  border-top: 1px solid var(--color-separator);
+}
+
+.commerce-related-product {
+  width: 105px;
+}
