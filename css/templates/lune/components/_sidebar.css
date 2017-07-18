@@ -30,6 +30,10 @@
   line-height: var(--line-height-5);
 }
 
+.ampstart-sidebar .lune-nav-contact {
+  max-width: 10.625rem;
+}
+
 .ampstart-nav-link {
   position: relative;
   display: flex;

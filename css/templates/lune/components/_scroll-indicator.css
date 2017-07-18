@@ -10,8 +10,68 @@
 
 .lune-component-scroll-indicator::after {
   display: block;
-  width: .125rem;
+  width: .065rem;
   height: 2.1874rem;
   background: currentColor;
+  transform-origin: center top;
+  animation: animate-scroll-line 3s ease-out infinite;
   content: '';
+}
+
+.lune-component-scroll-indicator span {
+  display: block;
+  animation: animate-scroll-text 3s ease-out infinite;
+}
+
+
+@keyframes animate-scroll-line {
+  0%, 8% {
+    transform-origin: center top;
+    transform: scaleY(0) translateY(-20px);
+  }
+
+  16% {
+    transform: scaleY(.5) translateY(0);
+  }
+
+  32% {
+    transform-origin: center top;
+    transform: scaleY(1);
+  }
+  32.1% {
+    transform-origin: center bottom;
+  }
+
+  48% {
+    transform: scaleY(1);
+  }
+
+  64%, 80% {
+    transform: scaleY(0);
+  }
+
+  99.9% {
+    transform-origin: center bottom;
+  }
+  100% {
+    transform-origin: center top;
+    transform: scaleY(0);
+  }
+}
+
+@keyframes animate-scroll-text {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  16%, 48% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  64%, 100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
