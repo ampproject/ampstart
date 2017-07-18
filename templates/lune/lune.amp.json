@@ -12,7 +12,7 @@
 
   "landing-sections": [
     {
-      "classes": "z1 relative lune-theme-light",
+      "classes": "z2 relative lune-theme-light",
       "full_title": "Lune blanc",
       "product_image": {
         "alt": "Lune Blanc",
@@ -32,7 +32,7 @@
       }
     },
     {
-      "classes": "z0 relative top-0 left-0 right-0 bottom-0 lune-theme-dark",
+      "classes": "z1 relative top-0 left-0 right-0 bottom-0 lune-theme-dark",
       "full_title": "Lune noir",
       "product_image": {
         "alt": "Lune Noir",

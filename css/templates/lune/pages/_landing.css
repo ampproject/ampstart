@@ -91,6 +91,7 @@
  * in units that depend on the viewport height.
  */
 .lune-landing-content {
+  /* vmin ensures that both viewport width and height limit the content size. */
   width: 60vmin;
   min-width: 17.5rem;
   max-width: 50vh;

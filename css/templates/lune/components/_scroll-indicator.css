@@ -9,6 +9,7 @@
 }
 
 .lune-component-scroll-indicator::after {
+  display: block;
   width: .065rem;
   height: 2.1874rem;
   background: currentColor;
