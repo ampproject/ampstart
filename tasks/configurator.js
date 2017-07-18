@@ -43,17 +43,22 @@ function postcsswithvars() {
       .pipe(gulp.dest(config.dest.configurator.css))
 }
 
-//https://runkit.com/embed/y3tqui45muc5
 function cssvarsjson() {
-  return gulp.src(config.dest.configurator.css + '/**/*')
+  return gulp.src(config.dest.configurator.css + '/**/*.css')
       .pipe(intercept(function(file) {
         if(file.contents) {
+          const cssVarObj = {};
           const ast = csstree.parse(file.contents.toString());
           csstree.walk(ast, function(node) {
             if(node.type === 'Declaration' && node.property.indexOf('--') === 0) {
-              console.log(node.property);
+              cssVarObj[node.property] = {
+                value: node.value.value
+              }
             }
           });
+          // Place the json into the file
+          file.contents = new Buffer(JSON.stringify(cssVarObj, null, 2));
+          return file;
         }
       }))
       .pipe(extReplace('.json'))
