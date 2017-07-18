@@ -574,11 +574,15 @@ amp-selector [option][selected] {
     border-bottom: 1px solid var(--color-separator);
   }
 
+  .commerce-cart-button {
+    text-align: left;
+  }
+
   .commerce-cart-item-image {
     max-width: 100px;
   }
 
-  .commerce-cart-button {
-    align-self: flex-start;
+  .commerce-cart-summary {
+    height: calc(100vh - var(--wide-navbar-height));
   }
 }

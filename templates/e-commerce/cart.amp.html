@@ -22,7 +22,7 @@ limitations under the License.
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
   <main id="content" role="main" class="main flex flex-wrap">
-    <section class="px2 mt2 md-px4 col-12 md-col-8">
+    <section class="px2 mt2 md-px4 md-mt4 col-12 md-col-8">
       <h1 class="h3 mb2">Your Basket</h1>
       {{#cart}}
         <div class="flex flex-wrap mb2 md-mt3 md-pb3 commerce-cart-item">
@@ -33,7 +33,7 @@ limitations under the License.
             <div class="h6 mb1">{{name}}</div>
             <div>{{description}}</div>
           </div>
-          <div class="col-3 h6 flex flex-wrap justify-between">
+          <div class="col-3 h6 flex flex-wrap justify-between items-start">
             <span>£{{price}}</span>
             <span>{{quantity}}</span>
             <div role="button" class="inline-block commerce-cart-icon" tabindex="0">✕</div>
@@ -41,8 +41,8 @@ limitations under the License.
         </div>
       {{/cart}}
     </section>
-    <section class="px2 pt3 pb4 md-px3 col-12 md-col-4 flex flex-column md-commerce-panel-filled">
-      <h2 class="h5">Order Summary</h2>
+    <section class="px2 pt3 pb4 md-px3 md-pt4 col-12 md-col-4 md-commerce-panel-filled commerce-cart-summary">
+      <h2 class="h5 md-mt3">Order Summary</h2>
       <dl class="flex flex-wrap">
         <dt class="col-10">Subtotal</dt>
         <dd class="m0 col-2 pb1 right-align">£1018</dd>
@@ -52,7 +52,9 @@ limitations under the License.
         <dd class="commerce-cart-total m0 col-2 pt2 pb2 right-align bold">£1043</dd>
       </dl>
       <p class="pb3">Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <a href="#" class="ampstart-btn ampstart-btn-secondary caps col-8 self-center center commerce-cart-button">checkout</a>
+      <div class="commerce-cart-button center">
+        <a href="#" class="ampstart-btn ampstart-btn-secondary caps">checkout</a>
+      </div>
     </section>
   </main>
 </body>
