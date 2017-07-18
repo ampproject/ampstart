@@ -19,11 +19,12 @@ limitations under the License.
   <body class="lune">
     {{> ../../components/navbar/navbar.snip.html}}
 
-    <!-- Used to achieve the clipping effect when scrolling the page -->
+    <!-- The clipPath is used in the CSS `clip-path` property; it's used to achieve a
+      clipping effect while scrolling the page (see mocks/lune/landing-page-clipping.gif) -->
     <div class="hide">
       <svg width="0" height="0">
           <defs>
-            <clipPath id="svgPath" clipPathUnits="objectBoundingBox">
+            <clipPath id="svgClipPath" clipPathUnits="objectBoundingBox">
               <rect y="0" x="0" width="1" height="0.99"/>
             </clipPath>
           </defs>

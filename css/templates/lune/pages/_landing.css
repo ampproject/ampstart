@@ -108,7 +108,7 @@
    */
   @supports (clip-path: inset(1px 0)) {
     .lune-landing-section.lune-theme-light {
-      clip-path: url(#svgPath);
+      clip-path: url(#svgClipPath);
       /*
        * We need the height to be a bit more than its normal value (hence the 1.02 factor),
        * as the clip-path mask can't clip the entire surface.
