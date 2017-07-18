@@ -16,6 +16,7 @@
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "sidebarclasses": "md-flex flex-column justify-content items-center justify-center",
+      "href": "landing.amp.html",
       "logo": {
         "url": "../../img/e-commerce/logo.png",
         "width": 96,
@@ -88,5 +89,74 @@
         ]
       }
     }
+  },
+  "blog": {
+    "articles": [
+      {
+        "title": "no sleep 'til brooklyn",
+        "date": "31st March 2017",
+        "datetime": "2017-03-31T00:00",
+        "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+        "paragraphs": [
+          "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. osuere. Vestibulum at neque diam. Donec sed tempus dui. Maecenas in enim vel lorem pellentesque feugiat. Curabitur in congue sem. Ut feugiat egestas neque, a scelerisque est accumsan eu. Integer hendrerit, risus ac sodales bibendum, orci orci sollicitudin odio, quis pulvinar nibh ante in sem. Sed nec pharetra ante, non pharetra nisl. Maecenas congue facilisis magna eget tempus. Nam tincidunt facilisis urna, nec imperdiet libero sagittis sed. Etiam malesuada mi quis diam facilisis tempor.",
+          "Curabitur aliquet elementum nunc nec venenatis. Morbi nec ullamcorper nibh. Fusce pellentesque fermentum lacus ut placerat. Sed imperdiet augue nisi, vitae consectetur leo posuere nec. Suspendisse potenti. Nulla facilisi. Mauris sit amet imperdiet ex. Suspendisse lorem neque, gravida quis justo et, dapibus posuere nunc. In mi nisi, tempor id purus nec, convallis vehicula dolor. Donec id laoreet quam, ut placerat massa. Phasellus et euismod neque, facilisis semper dui. Donec vestibulum, orci et pulvinar ultrices, justo diam fermentum orci, eget tempus libero nunc vel sem. Quisque euismod sapien vel orci commodo condimentum. Suspendisse et elementum risus.",
+          "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. osuere. Vestibulum at neque diam. Donec sed tempus dui. Maecenas in enim vel lorem pellentesque feugiat. Curabitur in congue sem. Ut feugiat egestas neque, a scelerisque est accumsan eu. Integer hendrerit, risus ac sodales bibendum, orci orci sollicitudin odio, quis pulvinar nibh ante in sem. Sed nec pharetra ante, non pharetra nisl. Maecenas congue facilisis magna eget tempus. Nam tincidunt facilisis urna, nec imperdiet libero sagittis sed. Etiam malesuada mi quis diam facilisis tempor.",
+          "Curabitur aliquet elementum nunc nec venenatis. Morbi nec ullamcorper nibh. Fusce pellentesque fermentum lacus ut placerat. Sed imperdiet augue nisi, vitae consectetur leo posuere nec. Suspendisse potenti. Nulla facilisi. Mauris sit amet imperdiet ex. Suspendisse lorem neque, gravida quis justo et, dapibus posuere nunc. In mi nisi, tempor id purus nec, convallis vehicula dolor. Donec id laoreet quam ut placerat massa. Phasellus et euismod neque, facilisis semper dui. Donec vestibulum, orci et pulvinar ultrices, justo diam fermentum orci, eget tempus libero nunc vel sem. Quisque euismod sapien vel orci commodo condimentum. Suspendisse et elementum risus."
+        ],
+        "imageWidth": 750,
+        "imageHeight": 427,
+        "images": [{
+          "narrow": "../../img/e-commerce/blog-narrow-01.png",
+          "wide": "../../img/e-commerce/blog-wide-01.png"
+        },{
+          "narrow": "../../img/e-commerce/blog-narrow-05.png",
+          "wide": "../../img/e-commerce/blog-wide-05.png"
+        },{
+          "narrow": "../../img/e-commerce/blog-narrow-06.png",
+          "wide": "../../img/e-commerce/blog-wide-06.png"
+        }
+        ],
+        "quote": {
+          "quoter": "Name of quoter",
+          "text": "Maecenas neque mi, tempus ut commodo eget, commodo sit amet mauris."
+        }
+      },
+      {
+        "title": "no sleep 'til brooklyn",
+        "date": "31st March 2017",
+        "datetime": "2017-03-31T00:00",
+        "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+        "imageWidth": 750,
+        "imageHeight": 427,
+        "images": [{
+          "narrow": "../../img/e-commerce/blog-narrow-02.png",
+          "wide": "../../img/e-commerce/blog-wide-02.png"
+        }]
+      },
+      {
+        "title": "no sleep 'til brooklyn",
+        "date": "31st March 2017",
+        "datetime": "2017-03-31T00:00",
+        "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+        "imageWidth": 750,
+        "imageHeight": 427,
+        "images": [{
+          "narrow": "../../img/e-commerce/blog-narrow-03.png",
+          "wide": "../../img/e-commerce/blog-wide-03.png"
+        }]
+      },
+      {
+        "title": "no sleep 'til brooklyn",
+        "date": "31st March 2017",
+        "datetime": "2017-03-31T00:00",
+        "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+        "imageWidth": 750,
+        "imageHeight": 427,
+        "images": [{
+          "narrow": "../../img/e-commerce/blog-narrow-04.png",
+          "wide": "../../img/e-commerce/blog-wide-04.png"
+        }]
+      }
+    ]
   }
 }

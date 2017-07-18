@@ -1,0 +1,74 @@
+{
+  "lune": {
+    "head-tag": {
+      "extensions": [
+        "amp-sidebar"
+      ],
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Lato:400,700,900"
+      ]
+    },
+    "navbar": {
+      "name": "Lune",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "trigger-layout-classes": "col-3",
+      "href": "lune.amp.html",
+      "logo": {
+         "name": "LUNE",
+         "classes": "h3 xs-hide col-6 center"
+      },
+      "fixeditems-layout-classes": "col-3",
+      "fixeditems": [
+        {
+          "link": {
+            "url": "mailto:contact@lune.com",
+            "text": "—contact@lune.com",
+            "classes": "xs-small sm-hide h6 bold"
+          }
+        }
+      ],
+      "nav": [
+        {
+          "link": {
+            "url": "lune.amp.html",
+            "text": "<span>H</span><span>o</span><span>m</span><span>e</span>",
+            "aria-label": "Home",
+            "nav-item-classes": "block col-10 h4 md-h2 caps"
+          }
+        },
+        {
+          "link": {
+            "url": "product-blanc.amp.html",
+            "text": "<span>B</span><span>l</span><span>a</span><span>n</span><span>c</span>",
+            "aria-label": "Blanc",
+            "nav-item-classes": "block col-10 h4 md-h2 caps"
+          }
+        },
+        {
+          "link": {
+            "url": "product-noir.amp.html",
+            "text": "<span>N</span><span>o</span><span>i</span><span>r</span>",
+            "aria-label": "Noir",
+            "nav-item-classes": "block col-10 h4 md-h2 caps"
+          }
+        },
+        {
+          "link": {
+            "url": "store.amp.html",
+            "text": "<span>S</span><span>t</span><span>o</span><span>r</span><span>e</span>",
+            "aria-label": "Store",
+            "nav-item-classes": "block col-10 h4 md-h2 caps"
+          }
+        },
+        {
+          "link": {
+            "url": "mailto:contact@lune.com",
+            "text": "contact@lune.com",
+            "nav-item-classes": "block col-10 h6 underline md-hide lg-hide"
+          }
+        }
+      ]
+    }
+  }
+}
