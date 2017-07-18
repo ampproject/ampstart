@@ -19,7 +19,7 @@ limitations under the License.
 {{#navbar}}
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4">
-    <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2">{{#svg-trigger}}{{{.}}}{{/svg-trigger}}{{^svg-trigger}}☰{{/svg-trigger}}
+    <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2 {{trigger-layout-classes}}">{{#svg-trigger}}{{{.}}}{{/svg-trigger}}{{^svg-trigger}}☰{{/svg-trigger}}
     </div>
     {{#logo}}
       {{#href}}
@@ -57,7 +57,21 @@ limitations under the License.
     </nav>
     {{/sidebaronly}}
     {{#fixeditems}}
-    <div class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap">
+    <!-- TODO: currently "fixeditems" is an array, therefore it's not possible to add additional classes to it. An alternative solution would be to make it an oject, with a "classes" and
+     "items" sub-properties:
+     
+     "fixeditems": {
+       "classes": "col-3",
+       "items": [{
+         "link": {
+           "url": "mailto:contact@lune.com",
+           "text": "—contact@lune.com",
+           "classes": "xs-small sm-hide h6 bold"
+         }
+       }]
+     }
+     -->
+    <div class="ampstart-headerbar-fixed center m0 p0 flex justify-center nowrap {{fixeditems-layout-classes}}">
       <div class="mr2">
         {{#calltracking}}
           {{> ../calltracking/calltracking.snip.html}}
