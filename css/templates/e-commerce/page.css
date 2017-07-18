@@ -620,6 +620,12 @@ amp-selector [option][selected] {
 }
 
 
+/** CHECKOUT */
+.commerce-checkout-steps {
+  color: #cdcccd;
+}
+
+
 /* CART */
 .commerce-cart-icon {
   color: var(--color-font-accent);
