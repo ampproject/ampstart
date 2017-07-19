@@ -1,3 +1,13 @@
 /* //////////////////////////////////////////////////////
    ACCORDION
 ///////////////////////////////////////////////////////*/
+
+.lune amp-accordion section[expanded] .show-more {
+  display: none;
+}
+.lune amp-accordion section:not([expanded]) .show-less {
+  display: none;
+}
+.lune amp-accordion h4 {
+  background: none;
+}

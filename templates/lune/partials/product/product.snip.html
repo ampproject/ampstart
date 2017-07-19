@@ -43,6 +43,32 @@
         </section>
       {{/hero}}
 
+      {{#intro}}
+        <section class="product-section product-section-intro relative flex flex-column items-end justify-center p3 z2">
+          <div class="intro-wrapper col-12 md-col-5 lg-col-4">
+            <h2 class="product-intro-title mb2 caps h4 md-h0">{{title}}</h2>
+
+            {{#body}}
+              <p class="product-body h5 mb2">{{.}}</p>
+            {{/body}}
+
+            {{#accordion}}
+              <div class="md-hide lg-hide">
+                <amp-accordion disable-session-states>
+                  <section>
+                    <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
+                    <p class="product-body h5 mb2">{{text}}</p>
+                  </section>
+                </amp-accordion>
+              </div>
+
+              <p class="xs-hide sm-hide product-body h5 mb2">{{text}}</p>
+            {{/accordion}}
+
+          </div>
+        </section>
+
+      {{/intro}}
     </div>
   </div>
 {{/product}}

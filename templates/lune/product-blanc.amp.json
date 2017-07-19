@@ -4,7 +4,8 @@
       "title": "LUNE BLANC",
       "canonical-path": "templates/product-blanc.amp",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-accordion"
       ],
       "css-path": "templates/lune/page.css"
     },
@@ -27,6 +28,19 @@
         "scroll-indicator": {
           "classes": "absolute bottom-0 col-12 md-mt2"
         }
+      },
+      "intro": {
+        "title": "Lune Blanc",
+        "body": [
+          "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
+          "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+        ],
+        "accordion": {
+          "more": "Read more +",
+          "less": "Read less -",
+          "text": "Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id."
+        }
+      },
       }
     }
   }
