@@ -43,7 +43,22 @@
 .ampstart-nav-link {
   position: relative;
   display: flex;
-  justify-content: space-between;
+}
+
+/*
+ * Using margin: auto instead of justify-items: space-between, see
+ * https://stackoverflow.com/questions/36006173/exclude-element-with-fixed-positioning-from-justify-content-in-flex-layout/36102124#36102124
+ */
+.ampstart-nav-link > span {
+  margin: auto;
+}
+
+.ampstart-nav-link > span:first-child {
+  margin-left: 0;
+}
+
+.ampstart-nav-link > span:last-child {
+  margin-right: 0;
 }
 
 .ampstart-sidebar .lune-nav-contact .ampstart-nav-link {
