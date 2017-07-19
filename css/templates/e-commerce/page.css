@@ -163,7 +163,6 @@ dd:after {
   border-bottom: 1px dashed var(--color-separator);
 }
 
-
 .ampstart-input-radio label {
   font-size: var(--h6);
 }
@@ -431,6 +430,12 @@ amp-selector [option][selected] {
 }
 
 
+/* LANDING */
+.commerce-landing,
+.commerce-listing {
+  max-width: none;
+}
+
 /* HERO */
 .commerce-hero-content {
   padding: calc(var(--space-4) + var(--space-1)) var(--narrow-page-padding);
@@ -557,12 +562,6 @@ amp-selector [option][selected] {
   background-color: var(--color-white);
 }
 
-@media (--breakpoint-md) {
-  .commerce-blog-wrapper {
-    padding-left: calc(1/12 * 100%);
-  }
-}
-
 .commerce-blog p {
   line-height: 1.6;
 }
@@ -573,12 +572,8 @@ amp-selector [option][selected] {
   width: 100%;
 }
 
-@media (--breakpoint-md) {
-  .commerce-listing-wrapper,
-  .commerce-contact,
-  .commerce-checkout {
-    margin-left: calc(1/12 * 100%);
-  }
+.commerce-listing-content {
+  max-width: var(--content-max-width);
 }
 
 
@@ -599,6 +594,10 @@ amp-selector [option][selected] {
 
 .commerce-footer hr {
   background-color: #4a4a4a;
+}
+
+.commerce-footer nav {
+  max-width: var(--content-max-width);
 }
 
 .commerce-footer .ampstart-icon {
