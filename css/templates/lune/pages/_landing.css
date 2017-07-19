@@ -46,6 +46,18 @@
   top: var(--navbar-height);
 }
 
+/*
+ * Because amp-img can't be resized in a responsive way through changing its height,
+ * we can achieve a similar behaviour by setting the width/max-width of its container
+ * in units that depend on the viewport height.
+ */
+ .lune-landing-content {
+  /* vmin ensures that both viewport width and height limit the content size. */
+  width: 60vmin;
+  min-width: 15rem;
+  max-width: 50vh;
+}
+
 .lune-page-landing .ampstart-btn {
   min-width: 16rem;
 }
@@ -119,18 +131,6 @@
       position: fixed;
     }
   }
-}
-
-/*
- * Because amp-img can't be resized in a responsive way through changing its height,
- * we can achieve a similar behaviour by setting the width/max-width of its container
- * in units that depend on the viewport height.
- */
-.lune-landing-content {
-  /* vmin ensures that both viewport width and height limit the content size. */
-  width: 60vmin;
-  min-width: 15rem;
-  max-width: 50vh;
 }
 
 @media (--breakpoint-mt) {
