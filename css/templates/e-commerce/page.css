@@ -1,7 +1,7 @@
-@import '../../core';
 @import 'basscss-responsive-type-scale';
 @import 'basscss-responsive-margin';
 @import 'basscss-responsive-padding';
+@import '../../core';
 @import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
