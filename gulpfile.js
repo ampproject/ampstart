@@ -229,7 +229,6 @@ gulp.task('serve', 'Host the AMP Start website, and livereload for changes', ['w
 ***************************************************************************** */
 const browserSync = require('browser-sync');
 const conf = require('./tasks/configurator/conf/gulp.conf');
-require('./tasks/configurator');
 
 gulp.task('build:configurator', 'builds the configurator app', () => {
   runSequence(['other', 'webpack:dist']);
