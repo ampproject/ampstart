@@ -18,9 +18,14 @@ limitations under the License.
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune lune-blanc">
 
-    {{> partials/product/product.snip.html }}
+    {{#product}}
+      {{> partials/product/product.snip.html }}
 
-    {{> ../../components/navbar/navbar.snip.html}}
+      <!-- product toggle -->
+      {{> partials/components/product-toggle.snip.html }}
+    {{/product}}
+
+    {{> ../../components/navbar/navbar.snip.html }}
 
   </body>
 </html>

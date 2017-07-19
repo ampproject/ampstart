@@ -1,94 +1,92 @@
-{{#product}}
-  <div class="lune-page lune-page-product {{classes}}">
-    <div class="md-col-9 mx-auto">
+<div class="lune-page lune-page-product {{classes}}">
+  <div class="md-col-9 mx-auto">
 
-      {{#hero}}
-        <section class="product-section product-section-hero relative z1 flex">
-          <div class="hero-content col-12 flex flex-column items-center justify-center">
-            <div class="hero-title-wrapper">
-              <h1 class="relative caps m0 px3 z1 {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}" aria-label="{{full_title}}">{{title_parts.0}}</h1>
-              {{#title_parts.1}}
-                <h1 class="caps m0 relative px3 z4" aria-hidden>{{.}}</h1>
-              {{/title_parts.1}}
-            </div>
-
-            <div class="hero-image-wrapper z3 flex justify-center col-12">
-              {{#image}}
-                <!-- WebP image -->
-                <amp-img
-                  class="lune-anim-scale-up hero-image z2 col-7"
-                  alt="{{alt}}"
-                  srcset="{{webp_srcset}}"
-                  width="{{width}}"
-                  height="{{height}}"
-                  layout="responsive">
-                    <!-- PNG Fallback -->
-                    <amp-img
-                      fallback
-                      class="lune-anim-scale-up hero-image z2 col-7"
-                      alt="{{alt}}"
-                      srcset="{{fallback_srcset}}"
-                      width="{{width}}"
-                      height="{{height}}"
-                      layout="responsive">
-                    </amp-img>
-                </amp-img>
-              {{/image}}
-            </div>
+    {{#hero}}
+      <section class="product-section product-section-hero relative z1 flex">
+        <div class="hero-content col-12 flex flex-column items-center justify-center">
+          <div class="hero-title-wrapper">
+            <h1 class="relative caps m0 px3 z1 {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}" aria-label="{{full_title}}">{{title_parts.0}}</h1>
+            {{#title_parts.1}}
+              <h1 class="caps m0 relative px3 z4" aria-hidden>{{.}}</h1>
+            {{/title_parts.1}}
           </div>
 
-          <!-- Scroll indicator -->
-          {{> ../components/scroll-indicator.snip.html}}
-
-        </section>
-      {{/hero}}
-
-      {{#intro}}
-        <section class="product-section product-section-intro relative flex flex-column items-end justify-center p3 z2">
-          <div class="intro-wrapper col-12 md-col-5 lg-col-4">
-            <h2 class="product-intro-title mb2 caps h4 md-h0">{{title}}</h2>
-
-            {{#body}}
-              <p class="product-body h5 mb2">{{.}}</p>
-            {{/body}}
-
-            {{#accordion}}
-              <div class="md-hide lg-hide">
-                <amp-accordion disable-session-states>
-                  <section>
-                    <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
-                    <p class="product-body h5 mb2">{{text}}</p>
-                  </section>
-                </amp-accordion>
-              </div>
-
-              <p class="xs-hide sm-hide product-body h5 mb2">{{text}}</p>
-            {{/accordion}}
-
+          <div class="hero-image-wrapper z3 flex justify-center col-12">
+            {{#image}}
+              <!-- WebP image -->
+              <amp-img
+                class="lune-anim-scale-up hero-image z2 col-7"
+                alt="{{alt}}"
+                srcset="{{webp_srcset}}"
+                width="{{width}}"
+                height="{{height}}"
+                layout="responsive">
+                  <!-- PNG Fallback when WebP is not supported -->
+                  <amp-img
+                    fallback
+                    class="lune-anim-scale-up hero-image z2 col-7"
+                    alt="{{alt}}"
+                    srcset="{{fallback_srcset}}"
+                    width="{{width}}"
+                    height="{{height}}"
+                    layout="responsive">
+                  </amp-img>
+              </amp-img>
+            {{/image}}
           </div>
-        </section>
+        </div>
 
-      {{/intro}}
+        <!-- Scroll indicator -->
+        {{> ../components/scroll-indicator.snip.html}}
 
-      {{#specs}}
-        <section class="product-section relative flex flex-column justify-center p3">
-          <h2 class="product-specs-title caps h4 mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
+      </section>
+    {{/hero}}
 
-          <p class="product-body h5 mb4 md-hide lg-hide">{{body}}</p>
+    {{#intro}}
+      <section class="product-section product-section-intro relative flex flex-column items-end justify-center p3 z2">
+        <div class="intro-wrapper col-12 md-col-5 lg-col-4">
+          <h2 class="product-intro-title mb2 caps h4 md-h0">{{title}}</h2>
 
-          <ul class="p0 m0">
-            {{#details}}
-              <li class="flex items-end pb3 md-py2">
-                <span class="product-details-title h6 md-h4 caps">{{title}}</span>
-                <div class="product-details-divider mx1"></div>
-                <span class="product-details-figure h6 md-h3 caps">{{value}}</span>
-                <span class="product-details-unit h6 md-h4 caps">{{unit}}</span>
-              </li>
-            {{/details}}
-          </ul>
-        </section>
-      {{/specs}}
+          {{#body}}
+            <p class="product-body h5 mb2">{{.}}</p>
+          {{/body}}
 
-    </div>
+          {{#accordion}}
+            <div class="md-hide lg-hide">
+              <amp-accordion disable-session-states>
+                <section>
+                  <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
+                  <p class="product-body h5 mb2">{{text}}</p>
+                </section>
+              </amp-accordion>
+            </div>
+
+            <p class="xs-hide sm-hide product-body h5 mb2">{{text}}</p>
+          {{/accordion}}
+
+        </div>
+      </section>
+
+    {{/intro}}
+
+    {{#specs}}
+      <section class="product-section relative flex flex-column justify-center p3">
+        <h2 class="product-specs-title caps h4 mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
+
+        <p class="product-body h5 mb4 md-hide lg-hide">{{body}}</p>
+
+        <ul class="p0 m0">
+          {{#details}}
+            <li class="flex items-end pb3 md-py2">
+              <span class="product-details-title h6 md-h4 caps">{{title}}</span>
+              <div class="product-details-divider mx1"></div>
+              <span class="product-details-figure h6 md-h3 caps">{{value}}</span>
+              <span class="product-details-unit h6 md-h4 caps">{{unit}}</span>
+            </li>
+          {{/details}}
+        </ul>
+      </section>
+    {{/specs}}
+
   </div>
-{{/product}}
+</div>
