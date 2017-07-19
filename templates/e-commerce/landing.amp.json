@@ -16,7 +16,7 @@
           "title": "latest products",
           "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
           "link": {
-            "url": "#",
+            "url": "product-listing.amp.html",
             "text": "shop"
           },
           "images": [
@@ -78,7 +78,7 @@
           "title": "highland",
           "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
           "link": {
-            "url": "#",
+            "url": "product-listing.amp.html",
             "text": "shop"
           },
           "images": [
