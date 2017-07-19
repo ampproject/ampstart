@@ -41,6 +41,26 @@
           "text": "Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id."
         }
       },
+      "specs": {
+        "title": "Specs",
+        "body": "Engineered for extremes. Titanium flat-yarn and breathable fibres transfer heat away. Aluminium spheres create an instant cool feeling.",
+        "details": [{
+          "title": "Height",
+          "value": "81",
+          "unit": "cm"
+        }, {
+          "title": "Width",
+          "value": "45",
+          "unit": "cm"
+        }, {
+          "title": "Depth",
+          "value": "55",
+          "unit": "cm"
+        }, {
+          "title": "Seat Height",
+          "value": "41",
+          "unit": "cm"
+        }]
       }
     }
   }

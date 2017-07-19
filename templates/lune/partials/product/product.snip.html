@@ -69,6 +69,26 @@
         </section>
 
       {{/intro}}
+
+      {{#specs}}
+        <section class="product-section relative flex flex-column justify-center p3">
+          <h2 class="product-specs-title caps h4 mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
+
+          <p class="product-body h5 mb4 md-hide lg-hide">{{body}}</p>
+
+          <ul class="p0 m0">
+            {{#details}}
+              <li class="flex items-end pb3 md-py2">
+                <span class="product-details-title h6 md-h4 caps">{{title}}</span>
+                <div class="product-details-divider mx1"></div>
+                <span class="product-details-figure h6 md-h3 caps">{{value}}</span>
+                <span class="product-details-unit h6 md-h4 caps">{{unit}}</span>
+              </li>
+            {{/details}}
+          </ul>
+        </section>
+      {{/specs}}
+
     </div>
   </div>
 {{/product}}
