@@ -15,7 +15,7 @@
   "main": {
     "banner": {
       "image": {
-        "url": "../../img/e-commerce/listings-hero.jpg",
+        "url": "../../img/e-commerce/wide-listings-hero.jpg",
         "width": 2560,
         "height": 400,
         "alt": "Product listing"
