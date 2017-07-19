@@ -20,7 +20,7 @@ limitations under the License.
 {{#header}} {{> ../../utils/amp-page-head.snip.html}}
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
-  <main id="content" role="main" class="main">
+  <main id="content" role="main" class="main commerce-listing">
   {{#main}}
   <amp-state id="products">
     <script type="application/json">
@@ -30,15 +30,13 @@ limitations under the License.
       }
     </script>
   </amp-state>
-
-  <section class="flex flex-wrap">
-    {{#banner.image}}
-      <amp-img class="xs-hide sm-hide commerce-listing-banner" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" alt="{{alt}}"></amp-img>
-    {{/banner.image}}
-
+  {{#banner.image}}
+    <amp-img class="commerce-listing-banner xs-hide sm-hide" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" alt="{{alt}}"></amp-img>
+  {{/banner.image}}
+  <section class="commerce-listing-content mx-auto flex flex-wrap">
     {{#filters}}
-    <div class="col-3 pt4 pl5 xs-hide sm-hide flex flex-column items-center commerce-panel-filled">
-      <div class="pr7">
+    <div class="commerce-panel-filled col-3 xs-hide sm-hide flex flex-column">
+      <div class="px2 pt2 pb3 md-px4 md-pt4 md-pb7">
         <h2 class="h5 mb2">Categories</h2>
         {{#categories}}
           {{> ../../components/inputs/inputs.snip.html}}
@@ -46,16 +44,16 @@ limitations under the License.
       </div>
     </div>
 
-    <div class="commerce-listing-wrapper col-12 md-col-7 mb2">
-      <div class="md-commerce-header relative md-flex flex-wrap items-center md-mb2">
-        <h1 class="h3 mb1 ml3 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
-        <div class="inline-block ml3 mr2 mb1 md-mb0">
+    <div class="col-12 md-col-7 px2 pt2 pb3 md-px4 md-pt1 md-pb7">
+      <div class="md-commerce-header relative md-flex flex-wrap items-center mx1 md-mb2">
+        <h1 class="h3 mb1 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
+        <div class="inline-block mr1 mb1 md-mb0">
           {{#categories}} {{> partials/select.snip.html}} {{/categories}}
         </div>
         {{#price}} {{> partials/select.snip.html}} {{/price}}
       </div>
 
-      <amp-list class="mx1 md-mxn1" [src]="'api/' + products.filter + '-' + products.category + '-products.json'" src="api/high-low-all-products.json" height="500" width="300" layout="responsive">
+      <amp-list class="md-mxn1" [src]="'api/' + products.filter + '-' + products.category + '-products.json'" src="api/high-low-all-products.json" height="500" width="300" layout="responsive">
         <template type="amp-mustache">
           <a href="product-details.amp.html" class="commerce-listing-product-item text-decoration-none inline-block col-6 md-col-3 px1 mb2 md-mb4">
             <amp-img src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>"></amp-img>
