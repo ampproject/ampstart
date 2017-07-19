@@ -209,6 +209,7 @@ amp-selector [option][selected] {
 .commerce-panel-filled {
   background-color: var(--color-panel);
 }
+
 @media (--breakpoint-md) {
   .md-commerce-panel-filled {
     background-color: var(--color-panel);
@@ -666,9 +667,7 @@ amp-selector [option][selected] {
   border-radius: 50%;
   background-color: var(--color-font-accent);
   color: var(--color-white);
-  font-size: var(--h7);
-  font-family: var(--title-font);
-  font-weight: var(--bold-font-weight);
+  font: var(--bold-font-weight) var(--h7) var(--title-font);
   opacity: 0;
   animation: fade-in .5s forwards;
 }
@@ -688,7 +687,7 @@ amp-selector [option][selected] {
     border-bottom: 1px solid var(--color-separator);
   }
 
-  .commerce-cart-button {
+  .commerce-cart-actions {
     text-align: left;
   }
 
