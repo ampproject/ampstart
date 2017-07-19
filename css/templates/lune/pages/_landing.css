@@ -88,6 +88,14 @@
 }
 
 /*
+ * visibilty:hidden makes sure that the scroll indicator still pushes the
+ * content of the page up even if it's not visible.
+ */
+.lune-landing-section.lune-theme-dark .lune-component-scroll-indicator {
+  visibility: hidden;
+}
+
+/*
  * When there is enough estate in the viewport, set a fixed height for the page
  * and fixed position on the lower section, in order to achieve a "reveal" effect.
  * Threshold is 600px, same as --lune-landing-page-height.
