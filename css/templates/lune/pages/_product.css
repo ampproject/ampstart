@@ -1,3 +1,85 @@
 /* //////////////////////////////////////////////////////
    PRODUCT
 ///////////////////////////////////////////////////////*/
+
+:root {
+  --hero-title-min-height: 238px;
+}
+
+/* Set medium resolution make each section a minimum height of 100vh */
+@media (--breakpoint-md) {
+  .lune-page-product section {
+    min-height: calc(100vh - var(--wide-navbar-height));
+  }
+}
+
+/* On some titles the titles are split on multiple lines. Apply a hyphen at the end. */
+.lune-title-has-mobile-hyphen:after {
+  content: '-';
+}
+
+/* Hero */
+
+.hero-content {
+  letter-spacing: var(--letter-spacing-3);
+  text-indent: var(--letter-spacing-3);
+  line-height: var(--line-height-2);
+  font-size: var(--h0);
+  font-weight: var(--font-weight-heavy);
+}
+
+.hero-image {
+  margin-top: -0.5em;
+  max-width: 21.125rem; /* 338px */
+}
+
+.hero-content h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  text-indent: 0;
+}
+
+.hero-title-wrapper {
+  min-height: var(--hero-title-min-height);
+  margin-bottom: -1.9em;
+}
+
+@media (--breakpoint-md) {
+  .hero-content {
+    font-size: 11.25rem; /* 180px */
+  }
+
+  .hero-content h1 {
+    display: inline;
+    padding: 0;
+  }
+
+  .lune-title-has-mobile-hyphen:after {
+    content: none;
+    text-indent: inherit;
+  }
+
+  /* On desktop the chair should be fixed to the viewport */
+  .lune-page-product .hero-image-wrapper {
+    position: fixed;
+    top: calc(var(--wide-navbar-height) + (var(--hero-title-min-height) / 2));
+    left: 0;
+    width: 100%;
+    will-change: transform;
+  }
+
+  .hero-image {
+    margin-top: 0;
+  }
+
+  .hero-title-wrapper {
+    display: flex;
+  }
+
+  .hero-title-wrapper h1:last-of-type {
+    z-index: var(--z1);
+  }
+
+}

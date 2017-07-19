@@ -7,6 +7,24 @@
         "amp-sidebar"
       ],
       "css-path": "templates/lune/page.css"
+    },
+
+    "product": {
+      "classes": "lune-theme-light",
+      "full_title": "BLANC",
+      "title_parts": [
+        "BLA",
+        "NC"
+      ],
+      "hero": {
+        "image": {
+          "alt": "Lune Blanc",
+          "webp_srcset": "../../img/lune/product-hero-blanc@1x.webp, ../../img/lune/product-hero-blanc@2x.webp 2x",
+          "fallback_srcset": "../../img/lune/product-hero-blanc@1x.png, ../../img/lune/product-hero-blanc@2x.png 2x",
+          "width": 706,
+          "height": 1134
+        }
+      }
     }
   }
 }

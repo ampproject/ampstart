@@ -1,0 +1,46 @@
+{{#product}}
+  <div class="lune-page lune-page-product {{classes}}">
+    <div class="md-col-9 mx-auto">
+
+      {{#hero}}
+        <section class="relative z1">
+          <div class="hero-content col-12 flex flex-column items-center justify-center">
+            <div class="hero-title-wrapper">
+              <h1 class="relative caps m0 px3 z1 {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}" aria-label="{{full_title}}">{{title_parts.0}}</h1>
+              {{#title_parts.1}}
+                <h1 class="caps m0 relative px3 z4" aria-hidden>{{.}}</h1>
+              {{/title_parts.1}}
+            </div>
+
+            <div class="hero-image-wrapper z3 flex justify-center col-12">
+              <!-- TODO - Add srcset -->
+
+              {{#image}}
+                <!-- WebP image -->
+                <amp-img
+                  class="lune-anim-scale-up hero-image z2 col-7"
+                  alt="{{alt}}"
+                  srcset="{{webp_srcset}}"
+                  width="{{width}}"
+                  height="{{height}}"
+                  layout="responsive">
+                    <!-- PNG Fallback -->
+                    <amp-img
+                      fallback
+                      class="lune-anim-scale-up hero-image z2 col-7"
+                      alt="{{alt}}"
+                      srcset="{{fallback_srcset}}"
+                      width="{{width}}"
+                      height="{{height}}"
+                      layout="responsive">
+                    </amp-img>
+                </amp-img>
+              {{/image}}
+            </div>
+          </div>
+        </section>
+      {{/hero}}
+
+    </div>
+  </div>
+{{/product}}
