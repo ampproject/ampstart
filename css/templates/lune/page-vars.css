@@ -1,15 +1,8 @@
 :root {
   --content-max-width: 100%;
 
-  --z1: 1; /* body */
-  --z2: 2; /* overlay */
-  --z3: 3; /* sidebar mask */
-  --z4: 4; /* sidebar */
-  --z5: 5; /* header */
-
   --navbar-height: 4.375rem; /* 70px */
   --wide-navbar-height: 5.75rem; /* 92px */
-
 
 
   /* Type */
@@ -62,21 +55,9 @@
   --color-font-primary: var(--color-dark-grey-1);
   --color-font-secondary: var(--color-font-primary);
 
-  /*
-   * Copying these @custom-media rules and the --space-* variables from
-   * bass-override-vars.css. This is a temporary solution, until we merge
-   * all the CSS into one file.
-   */
-  @custom-media --breakpoint-xs (max-width: 40rem);
-  @custom-media --breakpoint-sm (min-width: 40.06rem);
-  @custom-media --breakpoint-md (min-width: 52.06rem);
-  @custom-media --breakpoint-lg (min-width: 64.06rem);
-  @custom-media --breakpoint-sm-md (min-width: 40.06rem) and (max-width: 52rem);
-  @custom-media --breakpoint-md-lg (min-width: 52.06rem) and (max-width: 64rem);
-  --space-1: .5rem; /* 8px */
-  --space-2: 1rem; /* 16px */
-  --space-3: 1.5rem; /* 24px */
-  --space-4: 2rem; /* 32px */
+  /* Animations  */
+  --animation-delay-start: .4s;
+  --animation-delay-step: .1s;
 
   /* Extra breakpoints */
   /* Breakpoint for very large desktops */

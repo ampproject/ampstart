@@ -90,6 +90,48 @@
       }
     }
   },
+  "footer": {
+    "links": [
+      {
+        "header": "About us",
+        "url": [
+          {
+            "text": "Size Guide",
+            "url": "#"
+          },
+          {
+            "text": "Returns Policy",
+            "url": "#"
+          },
+          {
+            "text": "Cookie & privacy policy",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "header": "Contact Us",
+        "phone": [
+          {
+            "number": "+440000000000",
+            "text": "+44(0)000 000 0000"
+          }
+        ],
+        "email": [
+          {
+            "address": "info@BS-LDN",
+            "text": "info@BS-LDN"
+          }
+        ],
+        "url": [
+          {
+            "text": "Find a Store",
+            "url": "#"
+          }
+        ]
+      }
+    ]
+  },
   "cart": [
     {
       "name": "product 1",
@@ -121,16 +163,19 @@
         ],
         "imageWidth": 750,
         "imageHeight": 427,
-        "images": [{
-          "narrow": "../../img/e-commerce/blog-narrow-01.png",
-          "wide": "../../img/e-commerce/blog-wide-01.png"
-        },{
-          "narrow": "../../img/e-commerce/blog-narrow-05.png",
-          "wide": "../../img/e-commerce/blog-wide-05.png"
-        },{
-          "narrow": "../../img/e-commerce/blog-narrow-06.png",
-          "wide": "../../img/e-commerce/blog-wide-06.png"
-        }
+        "images": [
+          {
+            "narrow": "../../img/e-commerce/blog-narrow-01.png",
+            "wide": "../../img/e-commerce/blog-wide-01.png"
+          },
+          {
+            "narrow": "../../img/e-commerce/blog-narrow-05.png",
+            "wide": "../../img/e-commerce/blog-wide-05.png"
+          },
+          {
+            "narrow": "../../img/e-commerce/blog-narrow-06.png",
+            "wide": "../../img/e-commerce/blog-wide-06.png"
+          }
         ],
         "quote": {
           "author": "Name of quoter",
@@ -144,10 +189,12 @@
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
         "imageWidth": 750,
         "imageHeight": 427,
-        "images": [{
-          "narrow": "../../img/e-commerce/blog-narrow-02.png",
-          "wide": "../../img/e-commerce/blog-wide-02.png"
-        }]
+        "images": [
+          {
+            "narrow": "../../img/e-commerce/blog-narrow-02.png",
+            "wide": "../../img/e-commerce/blog-wide-02.png"
+          }
+        ]
       },
       {
         "title": "no sleep 'til brooklyn",
@@ -156,10 +203,12 @@
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
         "imageWidth": 750,
         "imageHeight": 427,
-        "images": [{
-          "narrow": "../../img/e-commerce/blog-narrow-03.png",
-          "wide": "../../img/e-commerce/blog-wide-03.png"
-        }]
+        "images": [
+          {
+            "narrow": "../../img/e-commerce/blog-narrow-03.png",
+            "wide": "../../img/e-commerce/blog-wide-03.png"
+          }
+        ]
       },
       {
         "title": "no sleep 'til brooklyn",
@@ -168,10 +217,12 @@
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
         "imageWidth": 750,
         "imageHeight": 427,
-        "images": [{
-          "narrow": "../../img/e-commerce/blog-narrow-04.png",
-          "wide": "../../img/e-commerce/blog-wide-04.png"
-        }]
+        "images": [
+          {
+            "narrow": "../../img/e-commerce/blog-narrow-04.png",
+            "wide": "../../img/e-commerce/blog-wide-04.png"
+          }
+        ]
       }
     ]
   }

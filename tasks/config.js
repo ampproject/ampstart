@@ -24,7 +24,8 @@ module.exports = {
     templateApi: 'templates/*/api/*.json',
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
-    css: ['css/**/*.css', '!css/ampstart-base/**/*.css'],
+    css: ['css/**/*.css'],
+    css_ignore: ['!css/**/_*.css', '!css/ampstart-base/**/*.css'],
     data: ['*/**/*.json', '!templates/*/data/*.json'],
     img: 'img/**',
   },
@@ -36,5 +37,7 @@ module.exports = {
     hl_partials: 'dist/hl-partials',
     css: 'dist/css/',
     img: 'dist/img/',
+    configurator_app: 'dist/configurator',
+    uncompiled_css: 'dist/configurator/uncompiledCss'
   },
 };

@@ -582,6 +582,44 @@ amp-selector [option][selected] {
 }
 
 
+/* FOOTER */
+.commerce-footer {
+  background-color: var(--color-primary);
+}
+
+.commerce-footer h3 {
+  padding-top: 0;
+}
+
+.commerce-footer,
+.commerce-footer-header ,
+.commerce-footer h3 {
+  color: var(--color-white);
+}
+
+.commerce-footer hr {
+  background-color: #4a4a4a;
+}
+
+.commerce-footer .ampstart-icon {
+  fill: #6a6a6a;
+}
+
+.commerce-footer .ampstart-social-follow {
+  margin-bottom: 0;
+}
+
+@media (--breakpoint-md) {
+  .commerce-footer {
+    text-align: initial;
+  }
+
+  .commerce-footer .ampstart-social-follow li:first-child a {
+    padding-left: 0;
+  }
+}
+
+
 /** CHECKOUT */
 .commerce-checkout-steps {
   color: #cdcccd;

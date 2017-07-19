@@ -1,11 +1,10 @@
-@import "../page-vars";
-
 .ampstart-headerbar {
   justify-content: space-between;
   /* Override ampstart default box shadow styles */
   box-shadow: none;
   /* header is fixed so should be moved onto a new GPU layer */
   will-change: transform;
+  height: var(--navbar-height);
 }
 
 .ampstart-headerbar-title {
@@ -19,7 +18,7 @@
 
 .ampstart-navbar-trigger {
   padding-left: var(--space-1);
-  font-size: var(--h3);
+  font-size: var(--h4);
 }
 
 .ampstart-headerbar-fixed {
@@ -35,6 +34,10 @@
 @media (--breakpoint-mt) {
   .ampstart-navbar-trigger {
     padding-left: var(--space-3);
+  }
+
+  .ampstart-headerbar {
+    height: var(--wide-navbar-height);
   }
 
   /*
