@@ -116,7 +116,7 @@ function getPartials(acc, embedderDir, template) {
 
 gulp.task('build', 'build', cb => {
   runSequence(
-      'clean', 'highlight', 'escape', 'img', 'postcss', 'posthtml', 'www', 'validate',
+      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', 'validate',
       'bundle', 'build:configurator', cb);
 });
 
