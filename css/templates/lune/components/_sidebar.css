@@ -33,6 +33,7 @@
   margin: auto;
   font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-5);
+  color: var(--color-font-primary);
 }
 
 .ampstart-sidebar .lune-nav-contact {
