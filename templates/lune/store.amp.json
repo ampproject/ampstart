@@ -1,10 +1,11 @@
 {
   "lune": {
     "head-tag": {
-      "title": "LUNE STORE",
+      "title": "Store - Lune",
       "canonical-path": "templates/store.amp",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-fx-parallax"
       ],
       "css-path": "templates/lune/page.css"
     }
