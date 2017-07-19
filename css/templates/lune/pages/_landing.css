@@ -42,10 +42,6 @@
   min-height: var(--lune-landing-page-min-height);
 }
 
-.lune-landing-wrapper {
-  top: var(--navbar-height);
-}
-
 /*
  * Because amp-img can't be resized in a responsive way through changing its height,
  * we can achieve a similar behaviour by setting the width/max-width of its container
@@ -121,10 +117,11 @@
     .lune-landing-section.lune-theme-light {
       clip-path: url(#svgClipPath);
       /*
-       * We need the height to be a bit more than its normal value (hence the 1.02 factor),
-       * as the clip-path mask can't clip the entire surface.
+       * We need the height to be a bit more than its normal value (hence the 0.99 factor),
+       * as the clip-path mask can't clip the entire surface. See the "height" attribute
+       * of the #svgClipPath in lune.amp.html
        */
-      height: calc(var(--lune-landing-page-height) * 1.02);
+      height: calc(var(--lune-landing-page-height) / 0.99);
     }
 
     .lune-landing-wrapper {
@@ -134,10 +131,6 @@
 }
 
 @media (--breakpoint-mt) {
-  .lune-landing-wrapper {
-    top: var(--wide-navbar-height);
-  }
-
   .lune-landing-title-top {
     left: calc(50% - var(--lune-landing-title-offset-horizontal-tablet));
     z-index: initial;
