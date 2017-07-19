@@ -19,20 +19,30 @@ const config = require('./config');
 const rename = require('gulp-rename');
 const through = require('through2');
 
-function escape() {
+//Define our Byte Sizes
+const byteSizes = ["B", "KB", "MB", "GB", "TB"];
+
+function countCss() {
   return gulp.src(config.src.css)
-    .pipe(rename(function(path) {
-      path.basename = `esc-${path.basename}`;
-    }))
     .pipe(through.obj(function(file, enc, cb) {
       if (file.isNull()) {
         cb(null, file);
         return;
       }
-      file.contents = new Buffer(escapehtml(file.contents.toString()));
+
+      // Count the number of Characters/Bytes in the file
+      const numChars = file.contents.toString().length;
+      const exponent = Math.min(Math.floor(Math.log10(numChars) / 3), byteSizes.length - 1);
+      const size = Number(numChars / Math.pow(1000, exponent)).toPrecision(4);
+      file.contents =
+        new Buffer(`Number of characters: ${numChars}\nSize: ${size} ${byteSizes[exponent]}`);
       cb(null, file);
     }))
-    .pipe(gulp.dest(config.dest.hl_partials));
+    .pipe(rename(function(path) {
+      path.basename = `size-${path.basename}`;
+      path.extname = ".txt";
+    }))
+    .pipe(gulp.dest(config.dest.css));
 }
 
-gulp.task('countcss', escape);
+gulp.task('countcss', 'Count the amount of characters in the CSS of pages and templates.', countCss);
