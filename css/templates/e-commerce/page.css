@@ -332,7 +332,7 @@ amp-selector [option][selected] {
   text-indent: -var(--space-2);
 }
 
-.ampstart-headerbar-fixed-link-wrapper {
+.ampstart-headerbar-icon-wrapper {
   width: 25px;
 }
 

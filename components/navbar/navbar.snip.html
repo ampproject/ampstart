@@ -78,17 +78,19 @@ limitations under the License.
           {{> ../calltracking/calltracking.snip.html}}
         {{/calltracking}}
       </div>
-      {{#state}}
-        <div class="ampstart-headerbar-fixed-link-wrapper" [class]="{{bind-classes}}">
-      {{/state}}
       {{#link}}
         <a href="{{{url}}}" class="text-decoration-none mr2 ampstart-headerbar-fixed-link {{classes}}" {{#target}}target={{.}}{{/target}}>
-          {{text}}{{{svg}}}
+          {{text}}
+          {{#state}}
+            <div class="ampstart-headerbar-icon-wrapper" [class]="{{bind-classes}}">
+          {{/state}}
+          {{{svg}}}
+          {{#state-wrapper}}
+            </div>
+          {{/state-wrapper}}
         </a>
       {{/link}}
-      {{#state-wrapper}}
-        </div>
-      {{/state-wrapper}}
+
     </div>
     {{/fixeditems}}
   </header>
