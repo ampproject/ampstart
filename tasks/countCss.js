@@ -20,7 +20,7 @@ const rename = require('gulp-rename');
 const through = require('through2');
 
 function escape() {
-  return gulp.src(config.src.hl_partials)
+  return gulp.src(config.src.css)
     .pipe(rename(function(path) {
       path.basename = `esc-${path.basename}`;
     }))

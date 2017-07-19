@@ -20,7 +20,7 @@ const util = require('gulp-util');
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const csstree = require('css-tree');
-const extReplace = require('gulp-ext-replace');
+const rename = require('gulp-rename');
 const through = require('through2');
 
 function postCssWithVars() {
@@ -63,7 +63,9 @@ function cssVarsJson() {
         file.contents = new Buffer(JSON.stringify(cssVarObj, null, 2));
         cb(null, file);
       }))
-      .pipe(extReplace('.json'))
+      .pipe(rename(function(path) {
+        path.extname = ".json";
+      }))
       .pipe(gulp.dest(config.dest.uncompiled_css))
 }
 
