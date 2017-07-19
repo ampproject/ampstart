@@ -81,13 +81,7 @@ limitations under the License.
       {{#link}}
         <a href="{{{url}}}" class="text-decoration-none mr2 ampstart-headerbar-fixed-link {{classes}}" {{#target}}target={{.}}{{/target}}>
           {{text}}
-          {{#state}}
-            <div class="ampstart-headerbar-icon-wrapper" [class]="{{bind-classes}}">
-          {{/state}}
-          {{{svg}}}
-          {{#state-wrapper}}
-            </div>
-          {{/state-wrapper}}
+          <div class="ampstart-headerbar-icon-wrapper">{{{svg}}}</div>
         </a>
       {{/link}}
 
