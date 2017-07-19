@@ -57,9 +57,10 @@ limitations under the License.
     </nav>
     {{/sidebaronly}}
     {{#fixeditems}}
-    <!-- TODO: currently "fixeditems" is an array, therefore it's not possible to add additional classes to it. An alternative solution would be to make it an oject, with a "classes" and
-     "items" sub-properties:
-     
+    <!--
+      TODO: currently "fixeditems" is an array, therefore it's not possible to
+      add additional classes to it. An alternative solution would be to make it
+      an oject, with a "classes" and "items" sub-properties:
      "fixeditems": {
        "classes": "col-3",
        "items": [{
@@ -77,9 +78,17 @@ limitations under the License.
           {{> ../calltracking/calltracking.snip.html}}
         {{/calltracking}}
       </div>
+      {{#state}}
+        <div class="ampstart-headerbar-fixed-link-wrapper" [class]="{{bind-classes}}">
+      {{/state}}
       {{#link}}
-        <a href="{{{url}}}" class="text-decoration-none mr2 {{classes}}" {{#target}}target={{.}}{{/target}}>{{text}}</a>
+        <a href="{{{url}}}" class="text-decoration-none mr2 ampstart-headerbar-fixed-link {{classes}}" {{#target}}target={{.}}{{/target}}>
+          {{text}}{{{svg}}}
+        </a>
       {{/link}}
+      {{#state-wrapper}}
+        </div>
+      {{/state-wrapper}}
     </div>
     {{/fixeditems}}
   </header>

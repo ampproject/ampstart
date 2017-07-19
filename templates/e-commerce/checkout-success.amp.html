@@ -22,19 +22,20 @@ limitations under the License.
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
-  <main id="content" role="main" class="main">
-    <section class="mx2 mt2 md-col-6 commerce-checkout">
+  <main id="content" role="main" class="main flex flex-wrap">
+    <section class="px2 mt2 mb4 md-px4 md-mt4 col-12 md-col-8">
       <div class="flex flex-column">
         <h1 class="h3 mb2">Success</h1>
         <p class="mb2">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor
           ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
         <div class="h2 mb3">832874JDB</div>
         <div>
-          <button type="submit" class="ampstart-btn ampstart-btn-secondary caps">continue shopping</button>
+          <a href="product-listing.amp.html" class="ampstart-btn ampstart-btn-secondary caps">continue shopping</a>
         </div>
       </div>
     </section>
+    <section class="xs-hide sm-hide px2 pt3 pb4 md-px3 md-pt4 col-12 md-col-4 md-commerce-panel-filled"></section>
   </main>
+  {{> partials/footer.snip.html}}
 </body>
-
 </html>
