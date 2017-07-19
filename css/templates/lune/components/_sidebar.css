@@ -1,6 +1,7 @@
 .ampstart-sidebar {
   width: 80vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -9,6 +10,7 @@
 .ampstart-sidebar-header {
   position: absolute;
   top: 0;
+  left: var(--space-3);
   height: var(--navbar-height);
 }
 
