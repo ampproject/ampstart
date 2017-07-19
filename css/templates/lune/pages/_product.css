@@ -62,7 +62,6 @@
 
   .hero-content h1 {
     display: inline;
-    padding: 0;
   }
 
   .lune-title-has-mobile-hyphen:after {
@@ -75,7 +74,6 @@
     position: fixed;
     top: calc(var(--wide-navbar-height) + (var(--hero-title-min-height) / 2));
     left: 0;
-    width: 100%;
     will-change: transform;
   }
 
