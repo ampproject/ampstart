@@ -3,7 +3,7 @@
     <div class="md-col-9 mx-auto">
 
       {{#hero}}
-        <section class="relative z1">
+        <section class="product-section product-section-hero relative z1 flex">
           <div class="hero-content col-12 flex flex-column items-center justify-center">
             <div class="hero-title-wrapper">
               <h1 class="relative caps m0 px3 z1 {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}" aria-label="{{full_title}}">{{title_parts.0}}</h1>
@@ -13,8 +13,6 @@
             </div>
 
             <div class="hero-image-wrapper z3 flex justify-center col-12">
-              <!-- TODO - Add srcset -->
-
               {{#image}}
                 <!-- WebP image -->
                 <amp-img
@@ -38,6 +36,10 @@
               {{/image}}
             </div>
           </div>
+
+          <!-- Scroll indicator -->
+          {{> ../components/scroll-indicator.snip.html}}
+
         </section>
       {{/hero}}
 
