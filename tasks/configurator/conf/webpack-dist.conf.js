@@ -7,7 +7,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const FailPlugin = require('webpack-fail-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
-const pkg = require('../package.json');
+const pkg = require('../../../package.json');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -69,6 +69,6 @@ module.exports = {
   },
   entry: {
     app: `./${conf.path.src('index')}`,
-    vendor: Object.keys(pkg.dependencies)
+    vendor: pkg.configuratorDependencies
   }
 };

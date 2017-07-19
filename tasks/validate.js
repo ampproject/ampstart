@@ -21,6 +21,7 @@ const config = require('./config');
 function validate() {
   return gulp.src([
     `${config.dest.default}/**/*.html`,
+    `!${config.dest.hl_partials}/**/*.html`,
     `!${config.dest.configurator_app}/**/*.html`
   ])
       .pipe(validator.validate())

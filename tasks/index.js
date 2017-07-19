@@ -19,3 +19,7 @@ require('./highlight');
 require('./escape');
 require('./configurator');
 require('./bundle');
+require('./configurator/browsersync');
+require('./configurator/karma');
+require('./configurator/misc');
+require('./configurator/webpack');

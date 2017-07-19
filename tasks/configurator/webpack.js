@@ -2,9 +2,9 @@ const gulp = require('gulp-help')(require('gulp'));
 const gutil = require('gulp-util');
 
 const webpack = require('webpack');
-const webpackConf = require('../conf/webpack.conf');
-const webpackDistConf = require('../conf/webpack-dist.conf');
-const gulpConf = require('../conf/gulp.conf');
+const webpackConf = require('./conf/webpack.conf');
+const webpackDistConf = require('./conf/webpack-dist.conf');
+const gulpConf = require('./conf/gulp.conf');
 
 gulp.task('webpack:dev', 'Bundle Configurator using dev webpack config', done => {
   webpackWrapper(false, webpackConf, done);

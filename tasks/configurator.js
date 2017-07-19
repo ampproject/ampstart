@@ -16,7 +16,6 @@
 
 const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
-const util = require('gulp-util');
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const csstree = require('css-tree');
@@ -31,29 +30,29 @@ function postCssWithVars() {
     require('postcss-color-function')(),
     require('postcss-custom-properties')({
       preserve: true,
-      appendVariables: true,
+      appendVariables: true
     }),
     require('postcss-discard-comments')(),
-    require('postcss-custom-media')(),
+    require('postcss-custom-media')()
   ];
   const options = {};
   return gulp.src(config.src.css)
       .pipe(postcss(plugins, options))
       .pipe(replace('!important', ''))
-      .pipe(gulp.dest(config.dest.uncompiled_css))
+      .pipe(gulp.dest(config.dest.uncompiled_css));
 }
 
 function cssVarsJson() {
   return gulp.src(config.dest.uncompiled_css + '/**/*.css')
-      .pipe(intercept(function(file) {
+      .pipe(intercept(file => {
         if (file.contents) {
           const cssVarObj = {};
           const ast = csstree.parse(file.contents.toString());
-          csstree.walk(ast, function(node) {
-            if(node.type === 'Declaration' && node.property.indexOf('--') === 0) {
+          csstree.walk(ast, node => {
+            if (node.type === 'Declaration' && node.property.indexOf('--') === 0) {
               cssVarObj[node.property] = {
                 value: node.value.value
-              }
+              };
             }
           });
           // Place the json into the file
@@ -62,7 +61,7 @@ function cssVarsJson() {
         }
       }))
       .pipe(extReplace('.json'))
-      .pipe(gulp.dest(config.dest.uncompiled_css))
+      .pipe(gulp.dest(config.dest.uncompiled_css));
 }
 
 gulp.task('configurator:css', postCssWithVars);

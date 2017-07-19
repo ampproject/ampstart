@@ -101,6 +101,10 @@
     "camelcase": "^4.1.0",
     "pretty-bytes": "^4.0.2"
   },
+  "configuratorDependencies": [
+    "camelcase",
+    "pretty-bytes"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {

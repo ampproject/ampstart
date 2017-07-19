@@ -3,7 +3,7 @@ const path = require('path');
 const gulp = require('gulp-help')(require('gulp'));
 const filter = require('gulp-filter');
 
-const conf = require('../conf/gulp.conf');
+const conf = require('./conf/gulp.conf');
 
 gulp.task('other', 'Copy Remaining Files to dist/', other);
 

@@ -15,13 +15,13 @@ function karmaFinishHandler(done) {
 }
 
 function karmaSingleRun(done) {
-  const configFile = path.join(process.cwd(), 'conf', 'karma.conf.js');
+  const configFile = path.join(process.cwd(), 'tasks/configurator/conf', 'karma.conf.js');
   const karmaServer = new karma.Server({configFile}, karmaFinishHandler(done));
   karmaServer.start();
 }
 
 function karmaAutoRun(done) {
-  const configFile = path.join(process.cwd(), 'conf', 'karma-auto.conf.js');
+  const configFile = path.join(process.cwd(), 'tasks/configurator/conf', 'karma-auto.conf.js');
   const karmaServer = new karma.Server({configFile}, karmaFinishHandler(done));
   karmaServer.start();
 }
