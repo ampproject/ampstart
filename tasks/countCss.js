@@ -28,7 +28,10 @@ const byteSizes = ["B", "KB", "MB", "GB", "TB"];
 const fileSizes = [];
 
 function countCss() {
-  return gulp.src(config.dest.css + '**/*.css')
+  return gulp.src([
+    config.dest.css + '**/page.css',
+    config.dest.css + 'core.css'
+  ])
     .pipe(through.obj(function(file, enc, cb) {
       if (file.isNull()) {
         cb(null, file);
