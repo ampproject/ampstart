@@ -1,5 +1,5 @@
 <div class="lune-page lune-page-product {{classes}}">
-  <div class="md-col-9 mx-auto">
+  <div class="md-col-9 mx-auto {{classes}}">
 
     {{#hero}}
       <section class="lune-product-section lune-product-section-hero relative z1 flex">
@@ -47,7 +47,7 @@
     {{#intro}}
       <section class="lune-product-section lune-product-section-intro relative flex flex-column items-end justify-center p3 z2">
         <div class="col-12 md-col-5 lg-col-4">
-          <h2 class="lune-product-intro-title mb2 caps h4 md-h0">{{title}}</h2>
+          <h2 class="lune-product-section-title mb2 caps h4 md-h0">{{title}}</h2>
 
           {{#body}}
             <p class="lune-product-body h5 mb2">{{.}}</p>
@@ -78,7 +78,7 @@
 
     {{#specs}}
       <section class="lune-product-section relative flex flex-column justify-center p3">
-        <h2 class="lune-product-specs-title caps h4 mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
+        <h2 class="lune-product-section-title caps h4 mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
 
         <p class="lune-product-body h5 mb4 md-hide lg-hide">{{body}}</p>
 
@@ -98,6 +98,78 @@
         {{> ../components/chapter-number.snip.html}}
       </section>
     {{/specs}}
+
+    {{#materials}}
+      <section class="relative p3 z1 lune-section-materials">
+        <h2 class="lune-product-section-title caps h4 mb2 flex items-center lune-line-after md-hide lg-hide">{{title}}</h2>
+
+        {{#list}}
+
+          <div class="flex flex-column {{classes}}">
+            {{#title_parts}}
+              <h3 class="product-material-name relative caps z1 sm-hide md-hide lg-hide {{title_classes}}">
+                {{#mobile}}
+                  <span class="block">{{.}}</span>
+                {{/mobile}}
+              </h3>
+
+              <h3 class="product-material-name relative caps z1 xs-hide {{title_classes}}">
+                {{#desktop}}
+                  <span class="block">{{.}}</span>
+                {{/desktop}}
+              </h3>
+            {{/title_parts}}
+            {{^title_parts}}
+              <h3 class="product-material-name relative caps z1 {{title_classes}}">{{title}}</h3>
+            {{/title_parts}}
+
+            {{#images}}
+
+              <div class="relative {{classes}}">
+                <!-- TODO - Add srcset -->
+                <!-- WebP image -->
+                <amp-img
+                  alt="{{alt}}"
+                  srcset="{{webp_srcset}}"
+                  width="{{width}}"
+                  height="{{height}}"
+                  layout="responsive">
+                    <!-- PNG Fallback when WebP is not supported -->
+                    <amp-img
+                      fallback
+                      alt="{{alt}}"
+                      srcset="{{fallback_srcset}}"
+                      width="{{width}}"
+                      height="{{height}}"
+                      layout="responsive">
+                    </amp-img>
+                </amp-img>
+
+                {{#hotspots}}
+                  <a href="{{url}}" class="lune-product-hotspot ampstart-btn ampstart-btn-secondary absolute inline-block flex items-center justify-center center overflow-hidden caps h7 {{classes}}">
+                    <span class="relative block z3">{{text}}</span>
+                  </a>
+                {{/hotspots}}
+              </div>
+
+            {{/images}}
+
+          </div>
+
+        {{/list}}
+
+        <!-- Chapter indicators -->
+        {{> ../components/chapter-name.snip.html}}
+        {{> ../components/chapter-number.snip.html}}
+
+      </section>
+
+    {{/materials}}
+
+
+    <div class="lune-products-bottom-cta relative z1 flex justify-center">
+      {{> ../components/cta.snip.html}}
+    </div>
 
   </div>
 </div>

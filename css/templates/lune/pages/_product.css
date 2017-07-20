@@ -96,8 +96,7 @@
    INTRO AND SPECS
 ///////////////////////////////////////////////////////*/
 
-.lune-product-intro-title,
-.lune-product-specs-title {
+.lune-product-section-title {
   font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-1);
   letter-spacing: var(--letter-spacing-3);
@@ -133,5 +132,134 @@
 
   .lune-product-details-divider {
     border-bottom-style: dashed;
+  }
+}
+
+
+/* //////////////////////////////////////////////////////
+   MATERIALS
+///////////////////////////////////////////////////////*/
+
+.lune-section-materials {
+  background: inherit;
+}
+
+.product-material-name {
+  line-height: var(--line-height-1);
+  font-weight: var(--font-weight-heavy);
+  white-space: nowrap;
+}
+
+.lune-product-material-name-poly {
+  line-height: var(--line-height-2);
+  margin-bottom: -150px;
+}
+
+.lune-product-material-image-oak-1 {
+  margin-top: -30px;
+}
+
+.lune-product-material-image-oak-2 {
+  margin-top: -155px;
+  margin-bottom: 50px;
+}
+
+.lune-products-bottom-cta {
+  padding: 45px 0 150px;
+  background: inherit;
+}
+
+.lune-product-hotspot {
+  border-radius: 50%;
+  width: 4.375rem; /* 70px */
+  height: 4.375rem; /* 70px */
+  min-width: 0;
+  text-indent: var(--letter-spacing-3);
+  border: 0;
+}
+
+.lune-theme-light .lune-product-hotspot {
+  background-color: var(--color-background-dark-narrow);
+  color: var(--color-light-1);
+}
+
+.lune-theme-dark .lune-product-hotspot {
+  background-color: var(--color-light-1);
+  color: var(--color-background-dark-narrow);
+}
+
+.lune-theme-light .lune-product-hotspot::before,
+.lune-theme-light .lune-product-hotspot::after {
+  background-color: var(--color-light-1);
+}
+
+.lune-theme-light .lune-product-hotspot:hover > span,
+.lune-theme-light .lune-product-hotspot:focus > span {
+  color: var(--color-background-dark-narrow);
+}
+
+.lune-theme-dark .lune-product-hotspot::before,
+.lune-theme-dark .lune-product-hotspot::after {
+  background-color: var(--color-background-dark-narrow);
+}
+
+.lune-theme-dark .lune-product-hotspot:hover > span,
+.lune-theme-dark .lune-product-hotspot:focus > span {
+  color: var(--color-light-1);
+}
+
+.lune-product-hotspot-oak {
+  top: 53%;
+  left: 38%;
+}
+
+.lune-product-hotspot-poly {
+  top: 32%;
+  left: 56%;
+}
+
+@media (--breakpoint-sm) {
+  .lune-product-material-name-poly {
+    letter-spacing: .4em;
+  }
+
+  .lune-product-material-name-poly span:first-of-type {
+    letter-spacing: .55em;
+  }
+}
+
+@media (--breakpoint-md) {
+  .product-material-name {
+    margin-top: 170px;
+    margin-bottom: -120px;
+    text-align: center;
+  }
+
+  .lune-product-material-name-poly {
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+
+  .lune-product-material-name-oak {
+    letter-spacing: var(--letter-spacing-5);
+  }
+
+  .lune-product-material-image-oak-1 {
+    align-self: flex-end;
+  }
+
+  .lune-product-material-image-oak-2 {
+    align-self: flex-start;
+  }
+
+  .lune-product-material-image-poly {
+    align-self: flex-end;
+  }
+}
+
+@media (--breakpoint-lg) {
+  .lune-product-material-name-poly {
+    margin-top: 60px;
+    margin-bottom: 130px;
   }
 }
