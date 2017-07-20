@@ -4,8 +4,7 @@
 
 :root {
   --lune-landing-title-offset-horizontal-narrow: -6%;
-  --lune-landing-title-offset-horizontal-tablet: -32%;
-  --lune-landing-title-offset-horizontal-wide: -38%;
+  --lune-landing-title-offset-horizontal-tablet: 3.3em;
 
   --lune-landing-page-height: 100vh;
   --lune-landing-page-min-height: 28.75rem; /* 460px */
@@ -16,18 +15,15 @@
  * Tweaking the delay for the entering animations defined in _pages.css
  ******************************************************************************/
 .lune-landing-title-middle {
-  animation-delay: calc(var(--animation-delay-start) +
-      var(--animation-delay-step));
+  animation-delay: calc(var(--animation-delay-start) + var(--animation-delay-step));
 }
 
 .lune-landing-title-bottom {
-  animation-delay: calc(var(--animation-delay-start) +
-      2 * var(--animation-delay-step));
+  animation-delay: calc(var(--animation-delay-start) + 2 * var(--animation-delay-step));
 }
 
 .lune-page-landing .ampstart-btn {
-  animation-delay: calc(var(--animation-delay-start) +
-      3 * var(--animation-delay-step));
+  animation-delay: calc(var(--animation-delay-start) + 3 * var(--animation-delay-step));
 }
 
 /*******************************************************************************
@@ -43,8 +39,16 @@
   min-height: var(--lune-landing-page-min-height);
 }
 
-.lune-landing-wrapper {
-  top: var(--navbar-height);
+/*
+ * Because amp-img can't be resized in a responsive way through changing its height,
+ * we can achieve a similar behaviour by setting the width/max-width of its container
+ * in units that depend on the viewport height.
+ */
+ .lune-landing-content {
+  /* vmin ensures that both viewport width and height limit the content size. */
+  width: 60vmin;
+  min-width: 15rem;
+  max-width: 50vh;
 }
 
 .lune-page-landing .ampstart-btn {
@@ -52,8 +56,7 @@
 }
 
 .lune-landing-title-top {
-  left: calc(var(--lune-landing-title-offset-horizontal-narrow) -
-  var(--letter-spacing-3));
+  left: calc(var(--lune-landing-title-offset-horizontal-narrow) - var(--letter-spacing-3));
   top: 0%;
   font-size: var(--h0);
   letter-spacing: var(--letter-spacing-3);
@@ -63,8 +66,7 @@
 }
 
 .lune-landing-title-bottom {
-  right: calc(var(--lune-landing-title-offset-horizontal-narrow) -
-  var(--letter-spacing-3));
+  right: calc(var(--lune-landing-title-offset-horizontal-narrow) - var(--letter-spacing-3));
   top: 52%;
   font-size: var(--h0);
   letter-spacing: var(--letter-spacing-3);
@@ -78,6 +80,14 @@
   left: var(--lune-landing-title-offset-horizontal-narrow);
   right: var(--lune-landing-title-offset-horizontal-narrow);
   font-weight: var(--font-weight-heavy);
+}
+
+/*
+ * visibilty:hidden makes sure that the scroll indicator still pushes the
+ * content of the page up even if it's not visible.
+ */
+.lune-landing-section.lune-theme-dark .lune-component-scroll-indicator {
+  visibility: hidden;
 }
 
 /*
@@ -110,10 +120,11 @@
     .lune-landing-section.lune-theme-light {
       clip-path: url(#svgClipPath);
       /*
-       * We need the height to be a bit more than its normal value (hence the 1.02 factor),
-       * as the clip-path mask can't clip the entire surface.
+       * We need the height to be a bit more than its normal value (hence the 0.99 factor),
+       * as the clip-path mask can't clip the entire surface. See the "height" attribute
+       * of the #svgClipPath in lune.amp.html
        */
-      height: calc(var(--lune-landing-page-height) * 1.02);
+      height: calc(var(--lune-landing-page-height) / 0.99);
     }
 
     .lune-landing-wrapper {
@@ -122,45 +133,23 @@
   }
 }
 
-/*
- * Because amp-img can't be resized in a responsive way through changing its height,
- * we can achieve a similar behaviour by setting the width/max-width of its container
- * in units that depend on the viewport height.
- */
-.lune-landing-content {
-  /* vmin ensures that both viewport width and height limit the content size. */
-  width: 60vmin;
-  min-width: 15rem;
-  max-width: 50vh;
-}
-
 @media (--breakpoint-mt) {
-  .lune-landing-wrapper {
-    top: var(--wide-navbar-height);
-  }
-
   .lune-landing-title-top {
-    left: calc(var(--lune-landing-title-offset-horizontal-tablet) -
-        var(--letter-spacing-3));
+    left: calc(50% - var(--lune-landing-title-offset-horizontal-tablet));
     z-index: initial;
   }
 
   .lune-landing-title-bottom {
-    right: calc(var(--lune-landing-title-offset-horizontal-tablet) -
-        var(--letter-spacing-3));
+    right: calc(50% - var(--lune-landing-title-offset-horizontal-tablet));
   }
 }
 
 @media (--breakpoint-md) {
   .lune-landing-title-top {
-    left: calc(var(--lune-landing-title-offset-horizontal-wide) -
-        var(--letter-spacing-3));
     font-size: var(--h00);
   }
 
   .lune-landing-title-bottom {
-    right: calc(var(--lune-landing-title-offset-horizontal-wide) -
-        var(--letter-spacing-3));
     font-size: var(--h00);
   }
 }
