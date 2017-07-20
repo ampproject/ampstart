@@ -138,6 +138,6 @@
   line-height: inherit;
 }
 
-.ampstart-headerbar .ampstart-navbar-trigger svg {
+.ampstart-navbar-trigger svg {
   pointer-events: none;
 }
