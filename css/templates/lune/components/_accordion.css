@@ -6,6 +6,6 @@ amp-accordion section[expanded] .show-more,
 amp-accordion section:not([expanded]) .show-less {
   display: none;
 }
-amp-accordion h4 {
+amp-accordion > section > :first-child {
   background: none;
 }
