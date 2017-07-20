@@ -35,7 +35,9 @@ function countCss() {
       const exponent = Math.min(Math.floor(Math.log10(numChars) / 3), byteSizes.length - 1);
       const size = Number(numChars / Math.pow(1000, exponent)).toPrecision(4);
       file.contents =
-        new Buffer(`Number of characters: ${numChars}\nSize: ${size} ${byteSizes[exponent]}`);
+        new Buffer(`File name: ${file.relative}\n` +
+          `Number of characters: ${numChars}\n` +
+          `Size: ${size} ${byteSizes[exponent]}`);
       cb(null, file);
     }))
     .pipe(rename(function(path) {
