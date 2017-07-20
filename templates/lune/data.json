@@ -15,7 +15,7 @@
       "href": "lune.amp.html",
       "logo": {
          "name": "LUNE",
-         "classes": "h3 xs-hide col-6 center"
+         "classes": "h3 col-6 center"
       },
       "fixeditems-layout-classes": "col-3",
       "fixeditems": [
