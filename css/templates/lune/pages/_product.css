@@ -51,6 +51,7 @@
 .lune-hero-title-wrapper {
   min-height: var(--hero-title-min-height);
   margin-bottom: -1.9em;
+  animation-delay: calc(var(--animation-delay-start) * 2);
 }
 
 @media (--breakpoint-md) {
