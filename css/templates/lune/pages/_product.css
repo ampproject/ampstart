@@ -46,18 +46,18 @@
   max-width: 21.125rem; /* 338px */
 }
 
-.lune-hero-content h1 {
+.lune-hero-title {
   font-size: inherit;
   font-weight: inherit;
   letter-spacing: inherit;
   line-height: inherit;
   text-indent: 0;
+  animation-delay: calc(var(--animation-delay-start) * 2);
 }
 
 .lune-hero-title-wrapper {
   min-height: var(--hero-title-min-height);
   margin-bottom: -1.9em;
-  animation-delay: calc(var(--animation-delay-start) * 2);
 }
 
 @media (--breakpoint-md) {
@@ -67,7 +67,7 @@
     justify-content: flex-start;
   }
 
-  .lune-hero-content h1 {
+  .lune-hero-title {
     display: inline;
   }
 
@@ -81,7 +81,7 @@
       letter-spacing: var(--letter-spacing-5);
     }
 
-    .lune-hero-content h1:first-of-type {
+    .lune-hero-title:first-of-type {
       text-indent: var(--letter-spacing-5);
     }
   }
@@ -103,7 +103,7 @@
     display: flex;
   }
 
-  .lune-hero-title-wrapper h1:last-of-type {
+  .lune-hero-title:last-of-type {
     z-index: var(--z1);
   }
 
