@@ -198,14 +198,15 @@ amp-selector [option][selected] {
 }
 
 .commerce-panel-empty {
-  background-color: var(--color-white);
+  background-color: initial;
 }
 
 .commerce-panel-filled {
   background-color: var(--color-panel);
 }
+
 @media (--breakpoint-md) {
-  .md-commerce-panel-filled {
+  .commerce-side-panel {
     background-color: var(--color-panel);
   }
 
