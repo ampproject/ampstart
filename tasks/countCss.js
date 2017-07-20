@@ -28,7 +28,7 @@ const byteSizes = ["B", "KB", "MB", "GB", "TB"];
 const fileSizes = [];
 
 function countCss() {
-  return gulp.src(config.src.css)
+  return gulp.src(config.dest.css + '**/*.css')
     .pipe(through.obj(function(file, enc, cb) {
       if (file.isNull()) {
         cb(null, file);
@@ -37,11 +37,15 @@ function countCss() {
 
       // Count the number of Characters/Bytes in the file
       const numChars = file.contents.toString().length;
-      const exponent = Math.min(Math.floor(Math.log10(numChars) / 3), byteSizes.length - 1);
-      const size = Number(numChars / Math.pow(1000, exponent)).toPrecision(4);
+      let size = 0;
+      let exponent = 0;
+      if(numChars > 0) {
+        exponent = Math.min(Math.floor(Math.log10(numChars) / 3), byteSizes.length - 1);
+        size = Number(numChars / Math.pow(1000, exponent)).toPrecision(4);
+      }
 
       // Add to our fileSizes
-      const filePath = file.path.replace(`${file.cwd}/css/`, '');
+      const filePath = file.path.replace(`${file.cwd}/dist/css/`, '');
       fileSizes.push([
         filePath,
         `${numChars}`,
