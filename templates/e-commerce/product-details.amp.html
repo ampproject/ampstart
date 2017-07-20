@@ -94,18 +94,18 @@ limitations under the License.
           Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.
         </div>
         <hr class="mb4" />
-        <div class="col-6 md-col-3 self-start pb4">
-          <span class="h6 align-top pr2">colour</span>
+        <div class="col-6 self-start pb4">
+          <span class="h6 align-top pr2">colour:</span>
           <amp-selector class="inline-block" name="color" layout="container" [selected]="product.selectedColor" on="select:AMP.setState({
                               product: {
                                 selectedColor: event.targetOption
                               }
                             })">
             <ul class="m0 list-reset inline-block">
-              <li class="inline-block">
+              <li class="inline-block mr1">
                 <div option="{{colours.0.name}}" selected="selected" class="commerce-product-color-swatch commerce-product-color-{{colours.0.name}}"></div>
               </li>
-              <li class="inline-block">
+              <li class="inline-block mr1">
                 <div option="{{colours.1.name}}" class="commerce-product-color-swatch commerce-product-color commerce-product-color-{{colours.1.name}}"></div>
               </li>
             </ul>
@@ -166,8 +166,7 @@ limitations under the License.
               </table>
             </div>
           </section>
-          <hr class="md-hide lg-hide" />
-          <section class="pt3 pb3 md-pt4 md-pb4 px2 commerce-panel-empty">
+          <section class="pt3 pb3 md-pt4 md-pb4 px2 commerce-panel-empty md-commerce-panel-filled">
             <h2 class="h5 md-h4">Full spec</h2>
             <div class="mt2">
               <dl class="flex flex-wrap">
