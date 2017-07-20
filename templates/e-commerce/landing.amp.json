@@ -23,8 +23,8 @@
             {
               "image": {
                 "url": "../../img/e-commerce/narrow-landing-01.jpg",
-                "width": 750,
-                "height": 460,
+                "width": 737,
+                "height": 563,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }
@@ -47,15 +47,15 @@
           "title": "lost highways",
           "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
           "link": {
-            "url": "#",
+            "url": "blog-listing.amp.html",
             "text": "read"
           },
           "images": [
             {
               "image": {
                 "url": "../../img/e-commerce/narrow-landing-02.jpg",
-                "width": 750,
-                "height": 460,
+                "width": 737,
+                "height": 563,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }
@@ -85,8 +85,8 @@
             {
               "image": {
                 "url": "../../img/e-commerce/narrow-landing-03.jpg",
-                "width": 750,
-                "height": 460,
+                "width": 737,
+                "height": 563,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }
@@ -109,15 +109,15 @@
           "title": "no sleep 'til brooklyn",
           "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
           "link": {
-            "url": "#",
+            "url": "blog-listing.amp.html",
             "text": "read"
           },
           "images": [
             {
               "image": {
-                "url": "../../img/e-commerce/narrow-landing-01.jpg",
-                "width": 750,
-                "height": 460,
+                "url": "../../img/e-commerce/narrow-landing-04.jpg",
+                "width": 737,
+                "height": 563,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }
