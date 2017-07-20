@@ -33,10 +33,10 @@ limitations under the License.
           <h2 class="lune-store-title lune-line-after flex items-center caps h4 mb2 col-12 md-hide lg-hide">{{title}}</h2>
           <!-- IMAGE  -->
           {{#hero-image}}
-            <div class="lune-store-image-wrapper relative z1 col-12 flex justify-center overflow-hidden" {{#parallax-amount}}amp-fx-parallax="{{parallax-amount}}"{{/parallax-amount}}>
+            <div class="lune-store-image-wrapper lune-anim-scale-up relative z1 col-12 flex justify-center overflow-hidden" {{#parallax-amount}}amp-fx-parallax="{{parallax-amount}}"{{/parallax-amount}}>
               <div class="lune-store-image flex-none">
                 <amp-img
-                  class="lune-anim-scale-up {{classes}}"
+                  class="{{classes}}"
                   alt="{{alt}}"
                   srcset="{{webp_srcset}}"
                   width="{{width}}"
@@ -45,7 +45,7 @@ limitations under the License.
                     <!-- Fallback -->
                     <amp-img
                       fallback
-                      class="lune-anim-scale-up {{classes}}"
+                      class="{{classes}}"
                       alt="{{alt}}"
                       srcset="{{fallback_srcset}}"
                       width="{{width}}"
