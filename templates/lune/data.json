@@ -1,23 +1,21 @@
 {
   "lune": {
     "head-tag": {
-      "extensions": [
-        "amp-sidebar"
-      ],
+      "extensions": [],
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Lato:400,700,900"
       ]
     },
     "navbar": {
       "name": "Lune",
-      "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' width='18' height='12' viewBox='0 0 18 12' class='block'><path fill='currentColor' d='M0 0h18v2H0zM0 5h18v2H0zM0 10h18v2H0z'/></svg>",
+      "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' class='block'><path fill='currentColor' d='M9 12h18v2H9zM9 17h18v2H9zM9 22h18v2H9z'/></svg>",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "trigger-layout-classes": "col-3",
       "href": "lune.amp.html",
       "logo": {
          "name": "LUNE",
-         "classes": "h3 xs-hide col-6 center"
+         "classes": "h3 col-6 center"
       },
       "fixeditems-layout-classes": "col-3",
       "fixeditems": [
