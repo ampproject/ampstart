@@ -81,7 +81,7 @@
       letter-spacing: var(--letter-spacing-5);
     }
 
-    .lune-hero-title:first-of-type {
+    .lune-hero-title:first-child {
       text-indent: var(--letter-spacing-5);
     }
   }
