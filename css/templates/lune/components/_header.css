@@ -25,12 +25,6 @@
   justify-content: flex-end;
 }
 
-/* Remove the default margin top from amp-sidebar and navbar */
-.ampstart-headerbar + :not(amp-sidebar),
-.ampstart-headerbar + amp-sidebar + * {
-  margin-top: 0;
-}
-
 @media (--breakpoint-mt) {
   .ampstart-navbar-trigger {
     padding-left: var(--space-3);
