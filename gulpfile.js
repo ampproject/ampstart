@@ -116,7 +116,7 @@ function getPartials(acc, embedderDir, template) {
 
 gulp.task('build', 'build', cb => {
   runSequence(
-      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', 'validate',
+      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'countcss', 'posthtml', 'www', 'validate',
       'bundle', 'build:configurator', cb);
 });
 
@@ -227,6 +227,7 @@ gulp.task('serve', 'Host the AMP Start website, and livereload for changes', ['w
 * Configurator
 *
 ***************************************************************************** */
+
 const browserSync = require('browser-sync');
 const conf = require('./tasks/configurator/conf/gulp.conf');
 

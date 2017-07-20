@@ -17,6 +17,7 @@
 require('./validate');
 require('./highlight');
 require('./escape');
+require('./countCss');
 require('./configurator');
 require('./bundle');
 require('./configurator/browsersync');

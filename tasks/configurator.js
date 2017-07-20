@@ -19,8 +19,8 @@ const config = require('./config');
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const csstree = require('css-tree');
-const extReplace = require('gulp-ext-replace');
-const intercept = require('gulp-intercept');
+const rename = require('gulp-rename');
+const through = require('through2');
 
 function postCssWithVars() {
   const plugins = [
@@ -44,23 +44,27 @@ function postCssWithVars() {
 
 function cssVarsJson() {
   return gulp.src(config.dest.uncompiled_css + '/**/*.css')
-      .pipe(intercept(file => {
-        if (file.contents) {
-          const cssVarObj = {};
-          const ast = csstree.parse(file.contents.toString());
-          csstree.walk(ast, node => {
-            if (node.type === 'Declaration' && node.property.indexOf('--') === 0) {
-              cssVarObj[node.property] = {
-                value: node.value.value
-              };
-            }
-          });
-          // Place the json into the file
-          file.contents = new Buffer(JSON.stringify(cssVarObj, null, 2));
-          return file;
+      .pipe(through.obj((file, enc, cb) => {
+        if (file.isNull()) {
+          cb(null, file);
+          return;
         }
+        const cssVarObj = {};
+        const ast = csstree.parse(file.contents.toString());
+        csstree.walk(ast, node => {
+          if (node.type === 'Declaration' && node.property.indexOf('--') === 0) {
+            cssVarObj[node.property] = {
+              value: node.value.value
+            };
+          }
+        });
+        // Place the json into the file
+        file.contents = new Buffer(JSON.stringify(cssVarObj, null, 2));
+        cb(null, file);
       }))
-      .pipe(extReplace('.json'))
+      .pipe(rename(path => {
+        path.extname = '.json';
+      }))
       .pipe(gulp.dest(config.dest.uncompiled_css));
 }
 
