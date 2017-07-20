@@ -17,9 +17,73 @@ limitations under the License.
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
-
     {{> ../../components/navbar/navbar.snip.html}}
 
+    <!--
+      To enable the parallax effect on the image, edit store.amp.json:
+        1. Add "amp-fx-parallax" to the list of the extensions
+        2. Change the value of "parallax-amount" to a number (e.g. 0.7)
+    -->
+
+    <!-- STORE PAGE -->
+    {{#store-page}}
+      <div class="lune-page lune-page--store">
+        <div class="lune-store-wrapper lune-theme--light col-12 md-col-9 p3 mx-auto flex items-stretch content-center justify-center flex-wrap">
+          <!-- TITLE  -->
+          <h2 class="lune-store-title lune-line-after flex items-center caps h4 mb2 col-12 md-hide lg-hide">{{title}}</h2>
+          <!-- IMAGE  -->
+          {{#hero-image}}
+            <div class="lune-store-image-wrapper relative z1 col-12 flex justify-center overflow-hidden" {{#parallax-amount}}amp-fx-parallax="{{parallax-amount}}"{{/parallax-amount}}>
+              <div class="lune-store-image flex-none">
+                <amp-img
+                  class="lune-anim-scale-up {{classes}}"
+                  alt="{{alt}}"
+                  srcset="{{webp_srcset}}"
+                  width="{{width}}"
+                  height="{{height}}"
+                  layout="{{layout}}">
+                    <!-- Fallback -->
+                    <amp-img
+                      fallback
+                      class="lune-anim-scale-up {{classes}}"
+                      alt="{{alt}}"
+                      srcset="{{fallback_srcset}}"
+                      width="{{width}}"
+                      height="{{height}}"
+                      layout="responsive">
+                  </amp-img>
+                </amp-img>
+              </div>
+            </div>
+          {{/hero-image}}
+          <!-- SUBTITLE  -->
+          <div class="lune-store-subtitle-wrapper lune-anim-move-up z2 relative col-12">
+            <h3 class="lune-store-subtitle absolute bottom-0 left-0 h2 sm-h1 lg-h00 caps">{{subtitle}}</h3>
+          </div>
+          <!-- ADDRESS  -->
+          <div class="lune-store-address-wrapper lune-anim-move-up z2 relative col-12 pt4 mb3 lg-mt3">
+            <p class="lune-store-address h5 lg-h7">
+              {{#address-lines}}{{{.}}}{{/address-lines}}
+            </p>
+          </div>
+          <!-- BODY COPY  -->
+          <div class="lune-store-body-wrapper z2 relatice col-12 lg-mt3 lg-pt4 flex flex-wrap">
+            <div class="col-12 lg-col-6 lg-pr2">
+              {{#body-paragraphs}}
+                {{#text}}
+                  <p class="lune-store-body lune-anim-move-up regular h5 lg-h6 {{classes}}">{{{.}}}</p>
+                {{/text}}
+              {{/body-paragraphs}}
+            </div>
+            <div class="col-12 lg-col-6 lg-pl2 mt4 lg-mt0 flex flex-column items-center">
+              {{> partials/components/cta.snip.html}}
+            </div>
+          </div>
+        </div>
+        <!-- CHAPTER NAME -->
+        {{> ./partials/components/chapter-name.snip.html}}
+      </div>
+    {{/store-page}}
   </body>
 </html>
 {{/lune}}
