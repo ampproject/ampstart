@@ -1,0 +1,19 @@
+{{#cart}}
+  <h1 class="h3 mb2 {{header.responsive-layout-classes}}">Your Basket</h1>
+  {{#items}}
+    <div class="flex flex-wrap mb2 md-mt3 md-pb3 commerce-cart-item">
+      <div class="col-2">
+        <amp-img class="commerce-cart-item-image" src="{{thumbnail}}" width="130" height="158" layout="responsive" alt="{{name}}"></amp-img>
+      </div>
+      <div class="px1 col-7">
+        <div class="h6 mb1">{{name}}</div>
+        <div>{{description}}</div>
+      </div>
+      <div class="col-3 h6 flex flex-wrap justify-between items-start">
+        <span>£{{price}}</span>
+        <span>{{quantity}}</span>
+        <div role="button" class="inline-block commerce-cart-icon" tabindex="0">✕</div>
+      </div>
+    </div>
+  {{/items}}
+{{/cart}}

@@ -63,6 +63,10 @@ h1, h2, h3, h4, h5, h6, h7,
     padding-top: var(--space-5);
   }
 
+  .md-pb5 {
+    padding-bottom: var(--space-5);
+  }
+
   .md-pl5 {
     padding-left: var(--space-5);
   }
@@ -196,6 +200,7 @@ amp-selector [option][selected] {
 .commerce-panel-filled {
   background-color: var(--color-panel);
 }
+
 @media (--breakpoint-md) {
   .md-commerce-panel-filled {
     background-color: var(--color-panel);
@@ -318,6 +323,14 @@ amp-selector [option][selected] {
 
 .ampstart-headerbar-home-link {
   padding-bottom: 0;
+}
+
+.ampstart-headerbar-icon-wrapper {
+  width: 25px;
+}
+
+.ampstart-headerbar-fixed-link {
+  margin-right: 0;
 }
 
 .ampstart-sidebar {
@@ -579,6 +592,10 @@ amp-selector [option][selected] {
   padding-top: 0;
 }
 
+.amp-mode-mouse .commerce-footer a:hover {
+  text-decoration: underline;
+}
+
 .commerce-footer,
 .commerce-footer-header ,
 .commerce-footer h3 {
@@ -615,8 +632,12 @@ amp-selector [option][selected] {
 /** CHECKOUT */
 .commerce-checkout-steps {
   color: #cdcccd;
+  max-width: 350px;
 }
 
+.commerce-checkout .commerce-cart-icon {
+  display: none;
+}
 
 /* CART */
 .commerce-cart-icon {
@@ -628,12 +649,38 @@ amp-selector [option][selected] {
   border-bottom: 1px solid var(--color-separator);
 }
 
+.commerce-cart-added .ampstart-headerbar-icon-wrapper:after {
+  content: '1';
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+  background-color: var(--color-font-accent);
+  color: var(--color-white);
+  font: var(--bold-font-weight) var(--h7) var(--title-font);
+  opacity: 0;
+  animation: fade-in .5s forwards;
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+.commerce-cart .commerce-related-products {
+  border-top: none;
+}
+
 @media (--breakpoint-md) {
   .commerce-cart-item {
     border-bottom: 1px solid var(--color-separator);
   }
 
-  .commerce-cart-button {
+  .commerce-cart-actions {
     text-align: left;
   }
 
@@ -642,7 +689,7 @@ amp-selector [option][selected] {
   }
 
   .commerce-cart-summary {
-    height: calc(100vh - var(--wide-navbar-height));
+    min-height: calc(100vh - var(--wide-navbar-height));
   }
 }
 
