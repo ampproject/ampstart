@@ -656,7 +656,7 @@ amp-selector [option][selected] {
   border-bottom: 1px solid var(--color-separator);
 }
 
-.commerce-cart-added:after {
+.commerce-cart-added .ampstart-headerbar-icon-wrapper:after {
   content: '1';
   display: block;
   width: 20px;
