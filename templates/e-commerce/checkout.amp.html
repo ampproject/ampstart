@@ -21,8 +21,8 @@ limitations under the License.
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
-  <main id="content" role="main" class="main px2">
-    <section>
+  <main id="content" role="main" class="main">
+    <section class="px2 pt2 pb3 md-px4 md-pt4 md-pb7">
       <h1 class="h3 mb2">Checkout</h1>
 
       <ul class="list-reset flex flex-wrap justify-between h7 commerce-checkout-steps mb3">
@@ -43,10 +43,11 @@ limitations under the License.
           {{> ../../components/inputs/inputs.snip.html}}
         {{/delivery-method}}
         <div class="center">
-          <a href="#" class="ampstart-btn ampstart-btn-secondary caps mt3">Continue</a>
+          <a href="checkout-success.amp.html" class="ampstart-btn ampstart-btn-secondary caps mt3">Continue</a>
         </div>
       {{/checkout}}
     </section>
   </main>
+  {{> partials/footer.snip.html}}
 </body>
 </html>

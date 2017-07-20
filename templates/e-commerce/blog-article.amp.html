@@ -22,21 +22,21 @@ limitations under the License.
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
-  <main id="content" role="main" class="main flex flex-wrap commerce-panel-filled">
+  <main id="content" role="main" class="main commerce-panel-filled flex flex-wrap">
     {{#blog.articles.0}}
-    <article class="col-12 md-col-8 commerce-blog-wrapper pt2 md-pt4">
-      <amp-img class="md-col-10" src="{{images.0.narrow}}" srcset="{{images.0.narrow}} 750w,{{images.0.wide}} 1280w" width="{{imageWidth}}"
+    <article class="commerce-blog-wrapper col-12 md-col-8 px2 pt2 pb3 md-px4 md-pt4 md-pb7">
+      <amp-img src="{{images.0.narrow}}" srcset="{{images.0.narrow}} 750w,{{images.0.wide}} 1280w" width="{{imageWidth}}"
         height="{{imageHeight}}" layout="responsive" alt="{{title}}"></amp-img>
-      <div class="md-col-10 px2 mt3">
+      <div class="mt3">
         <h1 class="h3">{{title}}</h1>
         <time datetime="{{datetime}}" class="block mb2">{{date}}</time>
         <p class="mb5">{{paragraphs.0}}</p>
       </div>
-      <amp-img class="mb3 md-col-10" src="{{images.1.narrow}}" srcset="{{images.1.narrow}} 750w,{{images.1.wide}} 1280w" width="{{imageWidth}}"
+      <amp-img class="mb3" src="{{images.1.narrow}}" srcset="{{images.1.narrow}} 750w,{{images.1.wide}} 1280w" width="{{imageWidth}}"
         height="{{imageHeight}}" layout="responsive" alt="{{title}}"></amp-img>
-      <amp-img class="mb5 md-col-10" src="{{images.2.narrow}}" srcset="{{images.2.narrow}} 750w,{{images.2.wide}} 1280w" width="{{imageWidth}}"
+      <amp-img class="mb5" src="{{images.2.narrow}}" srcset="{{images.2.narrow}} 750w,{{images.2.wide}} 1280w" width="{{imageWidth}}"
         height="{{imageHeight}}" layout="responsive" alt="{{title}}"></amp-img>
-      <div class="md-col-10 px2 mb4">
+      <div>
         <p>{{paragraphs.1}}</p>
         <blockquote class="ampstart-pullquote commerce-pullquote md-col-8">{{quote.text}}</blockquote>
         <div class="commerce-pullquote-author">- {{quote.author}}</div>
