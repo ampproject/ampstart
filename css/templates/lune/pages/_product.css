@@ -35,6 +35,12 @@
   margin-top: -var(--navbar-height);
 }
 
+.lune-hero-image-wrapper {
+  width: 100vmin;
+  min-width: 15rem;
+  max-width: 60vh;
+}
+
 .lune-hero-image {
   margin-top: -0.5em;
   max-width: 21.125rem; /* 338px */
@@ -84,8 +90,9 @@
   .lune-page-product .lune-hero-image-wrapper {
     position: fixed;
     top: calc(var(--wide-navbar-height) + (var(--hero-title-min-height) / 2));
-    left: 0;
+    left: 50%;
     will-change: transform;
+    transform: translateX(-50%);
   }
 
   .lune-hero-image {
