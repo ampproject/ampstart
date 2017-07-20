@@ -69,6 +69,16 @@
     text-indent: inherit;
   }
 
+  @media (--breakpoint-vld) {
+    .lune-hero-content {
+      letter-spacing: var(--letter-spacing-5);
+    }
+
+    .lune-hero-content h1:first-of-type {
+      text-indent: var(--letter-spacing-5);
+    }
+  }
+
   /* On desktop the chair should be fixed to the viewport */
   .lune-page-product .lune-hero-image-wrapper {
     position: fixed;
