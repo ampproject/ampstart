@@ -20,7 +20,14 @@ limitations under the License.
 
 <body>
   {{#header}}{{> ../../components/navbar/navbar.snip.html}} {{/header}} {{#main}}
-  <main id="content" role="main" class="main">
+  <amp-state id="cart">
+    <script type="application/json">
+      {
+        "added": false
+      }
+    </script>
+  </amp-state>
+  <main id="content" role="main" class="main" [class]="cart.added ? 'main commerce-cart-added' : 'main'">
     {{#product-details}}
     <amp-state id="product">
       <script type="application/json">
@@ -109,7 +116,7 @@ limitations under the License.
         </div>
         <hr class="mb4" />
         <div class="col-12 self-start mb4 commerce-product-btn-wrapper">
-          <button class="ampstart-btn ampstart-btn-secondary caps">Add to cart</button>
+          <button class="ampstart-btn ampstart-btn-secondary caps" on="tap:AMP.setState({cart: {added: true}})">Add to cart</button>
         </div>
         <hr class="md-hide lg-hide" />
       </div>
