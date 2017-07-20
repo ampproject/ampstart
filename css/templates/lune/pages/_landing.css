@@ -15,18 +15,15 @@
  * Tweaking the delay for the entering animations defined in _pages.css
  ******************************************************************************/
 .lune-landing-title-middle {
-  animation-delay: calc(var(--animation-delay-start) +
-      var(--animation-delay-step));
+  animation-delay: calc(var(--animation-delay-start) + var(--animation-delay-step));
 }
 
 .lune-landing-title-bottom {
-  animation-delay: calc(var(--animation-delay-start) +
-      2 * var(--animation-delay-step));
+  animation-delay: calc(var(--animation-delay-start) + 2 * var(--animation-delay-step));
 }
 
 .lune-page-landing .ampstart-btn {
-  animation-delay: calc(var(--animation-delay-start) +
-      3 * var(--animation-delay-step));
+  animation-delay: calc(var(--animation-delay-start) + 3 * var(--animation-delay-step));
 }
 
 /*******************************************************************************
@@ -59,8 +56,7 @@
 }
 
 .lune-landing-title-top {
-  left: calc(var(--lune-landing-title-offset-horizontal-narrow) -
-      var(--letter-spacing-3));
+  left: calc(var(--lune-landing-title-offset-horizontal-narrow) - var(--letter-spacing-3));
   top: 0%;
   font-size: var(--h0);
   letter-spacing: var(--letter-spacing-3);
@@ -70,8 +66,7 @@
 }
 
 .lune-landing-title-bottom {
-  right: calc(var(--lune-landing-title-offset-horizontal-narrow) -
-      var(--letter-spacing-3));
+  right: calc(var(--lune-landing-title-offset-horizontal-narrow) - var(--letter-spacing-3));
   top: 52%;
   font-size: var(--h0);
   letter-spacing: var(--letter-spacing-3);
