@@ -46,8 +46,8 @@ limitations under the License.
       </script>
     </amp-state>
 
-    <section class="flex flex-wrap">
-      <div class="col-12 md-col-6 px2 md-pl7 md-pt5 pt2">
+    <section class="flex flex-wrap pb3 md-pb7">
+      <div class="col-12 md-col-6 px2 pt2 md-pl7 md-pt4">
         <amp-carousel width="1280" height="720" layout="responsive" type="slides" [slide]="product.selectedSlide" on="slideChange: AMP.setState({product: {selectedSlide: event.index}})">
           <amp-img [src]="product[product.selectedColor].large.image1" src="{{colours.0.large.image1}}" width="1280" height="720" layout="responsive"
             role="button" tabindex="0" alt="product image"></amp-img>
@@ -74,7 +74,7 @@ limitations under the License.
           </ul>
         </amp-selector>
       </div>
-      <div class="col-12 md-col-6 flex flex-wrap content-start px2 md-pl5 md-pr7 md-pt5">
+      <div class="col-12 md-col-6 flex flex-wrap content-start px2 md-pl5 md-pr7 md-pt4">
         <div class="col-6 self-start pb2">
           <h1 class="h3 md-h2">{{name}}</h1>
           <div class="h4 md-h3">{{price}}</div>
@@ -109,7 +109,7 @@ limitations under the License.
         </div>
         <hr class="mb4" />
         <div class="col-12 self-start mb4 commerce-product-btn-wrapper">
-          <a href="{{url}}" class="ampstart-btn ampstart-btn-secondary caps">Add to cart</a>
+          <a href="cart.amp.html" class="ampstart-btn ampstart-btn-secondary caps">Add to cart</a>
         </div>
         <hr class="md-hide lg-hide" />
       </div>

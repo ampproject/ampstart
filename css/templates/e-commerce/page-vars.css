@@ -41,7 +41,7 @@
   --font-family: 'Cardo', serif;
   --button-font-size: .8rem;
   --caps-letter-spacing: 0;
-  --content-max-width: none;
+  --content-max-width: 1440px;
   --sidebar-width: 350px;
   --color-font-secondary: var(--color-font-accent);
   --input-checkbox-radio-size: 15px;
