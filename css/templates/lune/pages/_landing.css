@@ -118,6 +118,11 @@
    */
   @supports (clip-path: inset(1px 0)) {
     .lune-landing-section.lune-theme-light {
+      /*
+       * Using the old clip spec too, as it works better in some browser.
+       * Requires the element to have position:absolute.
+       */
+      clip: rect(0 auto auto 0);
       clip-path: url(#svgClipPath);
       /*
        * We need the height to be a bit more than its normal value (hence the 0.99 factor),
@@ -127,8 +132,18 @@
       height: calc(var(--lune-landing-page-height) / 0.99);
     }
 
-    .lune-landing-wrapper {
+    .lune-landing-content {
       position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .lune-page-landing .lune-component-scroll-indicator {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
     }
   }
 }
