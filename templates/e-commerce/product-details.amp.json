@@ -49,7 +49,7 @@
       "sizes": {
         "label": "Sizes",
         "select": {
-          "placeholder": "Select a size",
+          "placeholder": "Select a size: ",
           "options": [
             "61cm",
             "62cm",

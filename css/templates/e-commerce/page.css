@@ -88,6 +88,10 @@ h1, h2, h3, h4, h5, h6, h7,
     padding-right: var(--space-7);
   }
 
+  .md-pt7 {
+    padding-top: var(--space-7);
+  }
+
   .md-pb7 {
     padding-bottom: var(--space-7);
   }
@@ -122,24 +126,12 @@ dd:after {
   padding-right: 13px;
 }
 
-.commerce-select-wrapper::after {
-  position: absolute;
-  right: 0;
-  bottom: 8px;
-  content: '';
-  display: block;
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid var(--color-primary);
-}
-
 .commerce-select {
   -webkit-appearance: none;
   border: none;
   border-radius: 0;
   background: none;
+  color: var(--color-secondary);
 }
 
 .ampstart-input-radio {
@@ -313,6 +305,7 @@ amp-carousel {
   z-index: var(--z1);
   height: var(--navbar-height);
   box-shadow: none;
+  border-bottom: 1px solid #f3f3f3;
 }
 
 .ampstart-navbar-trigger {
@@ -324,8 +317,9 @@ amp-carousel {
 @media (--breakpoint-md) {
   .ampstart-headerbar {
     height: var(--wide-navbar-height);
-    border-bottom: 1px solid var(--color-separator);
+    border-bottom-color: var(--color-separator);
   }
+
   .ampstart-headerbar .ampstart-navbar-trigger {
     padding: 0;
     margin-left: var(--space-1);
@@ -347,7 +341,6 @@ amp-carousel {
 
 .ampstart-headerbar-home-link {
   padding-bottom: 0;
-  text-indent: -var(--space-2);
 }
 
 .ampstart-headerbar-icon-wrapper {
@@ -427,7 +420,7 @@ amp-carousel {
   font-weight: var(--bold-font-weight);
   line-height: normal;
   display: block;
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-2);
 }
 
 .ampstart-sidebar .ampstart-faq-item {
