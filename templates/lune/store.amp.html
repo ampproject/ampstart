@@ -27,14 +27,14 @@ limitations under the License.
 
     <!-- STORE PAGE -->
     {{#store-page}}
-      <div class="lune-page lune-page--store">
-        <div class="lune-store-wrapper lune-theme-light col-12 md-col-9 p3 mx-auto flex items-stretch content-center justify-center flex-wrap">
+      <main role="main" class="lune-page lune-page--store">
+        <section class="lune-store-wrapper lune-theme-light col-12 md-col-9 p3 mx-auto flex items-stretch content-center justify-center flex-wrap">
           <!-- TITLE  -->
-          <h2 class="lune-store-title lune-line-after flex items-center caps h4 mb2 col-12 md-hide lg-hide">{{title}}</h2>
+          <h1 class="lune-store-title lune-line-after lune-anim-move-up flex items-center caps h4 mb2 col-12 md-hide lg-hide">{{title}}</h1>
           <!-- IMAGE  -->
           {{#hero-image}}
             <div class="lune-store-image-wrapper lune-anim-scale-up relative z1 col-12 flex justify-center overflow-hidden" {{#parallax-amount}}amp-fx-parallax="{{parallax-amount}}"{{/parallax-amount}}>
-              <div class="lune-store-image flex-none">
+              <figure class="lune-store-image flex-none m0 p0">
                 <amp-img
                   class="{{classes}}"
                   alt="{{alt}}"
@@ -53,21 +53,19 @@ limitations under the License.
                       layout="responsive">
                   </amp-img>
                 </amp-img>
-              </div>
+              </figure>
             </div>
           {{/hero-image}}
           <!-- SUBTITLE  -->
-          <div class="lune-store-subtitle-wrapper lune-anim-move-up z2 relative col-12">
-            <h3 class="lune-store-subtitle absolute bottom-0 left-0 h2 sm-h1 lg-h00 caps">{{subtitle}}</h3>
-          </div>
+          <h2 class="lune-store-subtitle lune-anim-move-up z2 relative col-12 h2 sm-h1 lg-h00 caps">{{subtitle}}</h2>
           <!-- ADDRESS  -->
-          <div class="lune-store-address-wrapper lune-anim-move-up z2 relative col-12 pt4 mb3 lg-mt3">
+          <address class="lune-store-address-wrapper lune-anim-move-up z2 relative col-12 pt4 mb3 lg-mt3">
             <p class="lune-store-address h5 lg-h7">
               {{#address-lines}}{{{.}}}{{/address-lines}}
             </p>
-          </div>
+          </address>
           <!-- BODY COPY  -->
-          <div class="lune-store-body-wrapper z2 relatice col-12 lg-mt3 lg-pt4 flex flex-wrap">
+          <article class="lune-store-body-wrapper z2 relatice col-12 lg-mt3 lg-pt4 flex flex-wrap">
             <div class="col-12 lg-col-6 lg-pr2">
               {{#body-paragraphs}}
                 {{#text}}
@@ -78,11 +76,11 @@ limitations under the License.
             <div class="col-12 lg-col-6 lg-pl2 mt4 lg-mt0 flex flex-column items-center">
               {{> partials/components/cta.snip.html}}
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
         <!-- CHAPTER NAME -->
-        {{> ./partials/components/chapter-name.snip.html}}
-      </div>
+        {{> ./partials/components/chapter.snip.html}}
+      </main>
     {{/store-page}}
   </body>
 </html>

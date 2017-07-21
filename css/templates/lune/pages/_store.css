@@ -43,6 +43,7 @@
   font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-4);
   letter-spacing: var(--letter-spacing-2);
+  font-style: normal;
 }
 
 .lune-store-body {
@@ -67,19 +68,20 @@
 }
 
 @media (--breakpoint-lg) {
-  .lune-store-subtitle-wrapper,
+  .lune-store-subtitle,
   .lune-store-address-wrapper {
-    flex-basis: var(--lune-store-left-col-width-wide);
+    width: var(--lune-store-left-col-width-wide);
   }
 
   .lune-store-image-wrapper,
   .lune-store-body-wrapper {
-    flex-basis: calc(100% - var(--lune-store-left-col-width-wide));
+    width: calc(100% - var(--lune-store-left-col-width-wide));
   }
 
   /* A negative order makes sure that this occupies the first slot */
-  .lune-store-subtitle-wrapper {
+  .lune-store-subtitle {
     order: -1;
+    align-self: flex-end;
   }
 
   .lune-store-image {
@@ -99,7 +101,7 @@
 /*******************************************************************************
  * Tweaking the delay for the entering animations defined in _pages.css
  ******************************************************************************/
-.lune-store-subtitle-wrapper {
+.lune-store-subtitle {
   animation-delay: calc(var(--animation-delay-start) + var(--animation-delay-step));
 }
 
