@@ -1,4 +1,4 @@
-<div class="lune-page lune-page-product {{classes}}">
+<main role="main" class="lune-page lune-page-product {{classes}}">
   <div class="lune-page-product-wrapper md-col-9 mx-auto">
 
     {{#hero}}
@@ -11,8 +11,8 @@
             {{/title_parts.1}}
           </div>
 
-          <div class="lune-hero-image-wrapper z3 flex justify-center col-12">
-            {{#image}}
+          {{#image}}
+            <figure class="lune-hero-image-wrapper z3 flex justify-center col-12 m0">
               <!-- WebP image -->
               <amp-img
                 class="lune-anim-scale-up lune-hero-image z2 col-7 md-mt0"
@@ -32,8 +32,8 @@
                     layout="responsive">
                   </amp-img>
               </amp-img>
-            {{/image}}
-          </div>
+            </figure>
+          {{/image}}
         </div>
 
         <!-- Scroll indicator -->
@@ -45,7 +45,7 @@
 
     {{#intro}}
       <section class="lune-product-section lune-product-section-intro relative flex flex-column items-end justify-center p3 z2">
-        <div class="col-12 md-col-5 lg-col-4">
+        <article class="col-12 md-col-5 lg-col-4">
           <h2 class="lune-product-section-title mb2 caps h4 md-h0">{{title}}</h2>
 
           {{#body}}
@@ -65,7 +65,7 @@
             <p class="xs-hide sm-hide lune-product-body h5 mb2">{{text}}</p>
           {{/accordion}}
 
-        </div>
+        </article>
 
         <!-- Chapter indicators -->
         {{> ../components/chapter.snip.html}}
@@ -122,8 +122,7 @@
 
             {{#images}}
 
-              <div class="relative {{classes}}">
-                <!-- TODO - Add srcset -->
+              <figure class="relative {{classes}} m0">
                 <!-- WebP image -->
                 <amp-img
                   alt="{{alt}}"
@@ -143,11 +142,11 @@
                 </amp-img>
 
                 {{#hotspots}}
-                  <a href="{{url}}" class="lune-product-hotspot ampstart-btn ampstart-btn-secondary absolute inline-block flex items-center justify-center center overflow-hidden caps h7 {{classes}}">
+                  <a href="{{url}}" class="lune-product-hotspot ampstart-btn ampstart-btn-secondary absolute z1 inline-block flex items-center justify-center center overflow-hidden caps h7 {{classes}}">
                     <span class="relative block z3">{{text}}</span>
                   </a>
                 {{/hotspots}}
-              </div>
+              </figure>
 
             {{/images}}
 
@@ -168,4 +167,4 @@
     </div>
 
   </div>
-</div>
+</main>
