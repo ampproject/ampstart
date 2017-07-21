@@ -29,9 +29,13 @@
           "classes": "absolute bottom-0 col-12 md-mt2"
         },
         "chapter": {
-          "name": ["Chapter", "one"],
-          "current": 1,
-          "total": 4
+          "name": {
+            "parts": ["Chapter", "one"]
+          },
+          "number": {
+            "current": 1,
+            "total": 4
+          }
         }
       },
       "intro": {
@@ -46,9 +50,13 @@
           "text": "Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id."
         },
         "chapter": {
-          "name": ["Chapter", "two"],
-          "current": 2,
-          "total": 4
+          "name": {
+            "parts": ["Chapter", "two"]
+          },
+          "number": {
+            "current": 2,
+            "total": 4
+          }
         }
       },
       "specs": {
@@ -72,9 +80,13 @@
           "unit": "cm"
         }],
         "chapter": {
-          "name": ["Chapter", "three"],
-          "current": 3,
-          "total": 4
+          "name": {
+            "parts": ["Chapter", "three"]
+          },
+          "number": {
+            "current": 3,
+            "total": 4
+          }
         }
       },
       "materials": {
@@ -140,9 +152,13 @@
           }]
         }],
         "chapter": {
-          "name": ["Chapter", "four"],
-          "current": 4,
-          "total": 4
+          "name": {
+            "parts": ["Chapter", "four"]
+          },
+          "number": {
+            "current": 4,
+            "total": 4
+          }
         }
       },
       "cta": {
