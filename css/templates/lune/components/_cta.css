@@ -9,6 +9,8 @@
   background: transparent;
   letter-spacing: var(--letter-spacing-3);
   font-weight: 700;
+  /* Force a new GPU layer — fixes some glitches */
+  backface-visibility: hidden;
 }
 
 .ampstart-btn,
