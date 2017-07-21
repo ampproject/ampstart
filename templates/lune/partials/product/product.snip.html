@@ -25,7 +25,7 @@
                     <!-- PNG Fallback when WebP is not supported -->
                     <amp-img
                       fallback
-                      class="lune-anim-scale-up lune-hero-image z2 col-7"
+                      class="lune-anim-scale-up"
                       alt="{{alt}}"
                       srcset="{{fallback_srcset}}"
                       width="{{width}}"
@@ -105,20 +105,20 @@
 
             <div class="flex flex-column {{classes}}">
               {{#title_parts}}
-                <h3 class="product-material-name relative caps z1 sm-hide md-hide lg-hide {{title_classes}}">
+                <h3 class="product-material-name relative caps z2 sm-hide md-hide lg-hide {{title_classes}}">
                   {{#mobile}}
                     <span class="block">{{.}}</span>
                   {{/mobile}}
                 </h3>
 
-                <h3 class="product-material-name relative caps z1 xs-hide {{title_classes}}">
+                <h3 class="product-material-name relative caps z2 xs-hide {{title_classes}}">
                   {{#desktop}}
                     <span class="block">{{.}}</span>
                   {{/desktop}}
                 </h3>
               {{/title_parts}}
               {{^title_parts}}
-                <h3 class="product-material-name relative caps z1 {{title_classes}}">{{title}}</h3>
+                <h3 class="product-material-name relative caps z2 {{title_classes}}">{{title}}</h3>
               {{/title_parts}}
 
               {{#images}}
