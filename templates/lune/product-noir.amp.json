@@ -149,7 +149,9 @@
         "text": "Visit us"
       },
       "product-toggle": {
-        "target": "blanc"
+        "text": "To Blanc",
+        "href": "product-blanc.amp.html",
+        "classes": "lune-product-toggle-blanc"
       }
     }
   }

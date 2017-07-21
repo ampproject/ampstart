@@ -166,7 +166,9 @@
         "text": "Visit us"
       },
       "product-toggle": {
-        "target": "noir"
+        "text": "To Noir",
+        "href": "product-noir.amp.html",
+        "classes": "lune-product-toggle-noir"
       }
     }
   }
