@@ -3,8 +3,12 @@
     "head-tag": {
       "canonical-path": "templates/e-commerce/cart.amp",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-carousel"
       ]
     }
+  },
+  "related-products": {
+    "responsive-display-classes": "xs-hide sm-hide"
   }
 }

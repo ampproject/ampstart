@@ -1,6 +1,7 @@
 .ampstart-sidebar {
   width: 80vw;
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -9,6 +10,7 @@
 .ampstart-sidebar-header {
   position: absolute;
   top: 0;
+  left: var(--space-3);
   height: var(--navbar-height);
 }
 
@@ -23,11 +25,17 @@
   margin: auto;
 }
 
+/* Makes the clickable area around the close button bigger and easier to hit */
+.ampstart-navbar-trigger {
+  padding: 1.5rem;
+}
+
 .ampstart-sidebar .ampstart-nav-item {
   max-width: 7.5em;
   margin: auto;
   font-weight: var(--font-weight-heavy);
   line-height: var(--line-height-5);
+  color: var(--color-font-primary);
 }
 
 .ampstart-sidebar .lune-nav-contact {
@@ -37,7 +45,22 @@
 .ampstart-nav-link {
   position: relative;
   display: flex;
-  justify-content: space-between;
+}
+
+/*
+ * Using margin: auto instead of justify-items: space-between, see
+ * https://stackoverflow.com/questions/36006173/exclude-element-with-fixed-positioning-from-justify-content-in-flex-layout/36102124#36102124
+ */
+.ampstart-nav-link > span {
+  margin: auto;
+}
+
+.ampstart-nav-link > span:first-child {
+  margin-left: 0;
+}
+
+.ampstart-nav-link > span:last-child {
+  margin-right: 0;
 }
 
 .ampstart-sidebar .lune-nav-contact .ampstart-nav-link {

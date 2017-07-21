@@ -137,3 +137,7 @@
 .ampstart-sidebar .ampstart-navbar-trigger {
   line-height: inherit;
 }
+
+.ampstart-navbar-trigger svg {
+  pointer-events: none;
+}

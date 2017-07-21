@@ -17,8 +17,6 @@ limitations under the License.
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
-    {{> ../../components/navbar/navbar.snip.html}}
-
     <!-- The clipPath is used in the CSS `clip-path` property; it's used to achieve a
       clipping effect while scrolling the page (see mocks/lune/landing-page-clipping.gif) -->
     <div class="hide">
@@ -36,7 +34,7 @@ limitations under the License.
       {{#landing-sections}}
         <!-- Landing section -->
         <section class="lune-landing-section {{classes}}">
-          <div class="lune-landing-wrapper absolute left-0 bottom-0 right-0 flex flex-column items-center justify-center">
+          <div class="lune-landing-wrapper absolute top-0 left-0 bottom-0 right-0 flex flex-column items-center justify-center">
             <!-- Used by screen reader / document outline, not visible -->
             <h2 class="hide">{{full_title}}</h2>
             <div class="lune-landing-content relative flex items-center justify-center flex-auto mb2">
