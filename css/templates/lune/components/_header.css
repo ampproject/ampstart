@@ -39,7 +39,7 @@
   color: var(--color-light-1);
 }
 
-@media (--breakpoint-md) {
+@media (--breakpoint-mt) {
   .lune-noir .ampstart-headerbar {
     background: var(--color-background-dark-wide);
   }
