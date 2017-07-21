@@ -198,6 +198,7 @@
   min-width: 0;
   text-indent: var(--letter-spacing-3);
   border: 0;
+  backface-visibility: hidden;
 }
 
 .lune-theme-light .lune-product-hotspot {
