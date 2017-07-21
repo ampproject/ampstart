@@ -14,14 +14,14 @@
   height: 2.1874rem;
   background: currentColor;
   transform-origin: center top;
-  animation: animate-scroll-line 6s calc(var(--animation-delay-start) * 3) ease-out infinite both;
+  animation: animate-scroll-line 8s calc(var(--animation-delay-start) * 4) ease-in-out infinite both;
   will-change: transform;
   content: '';
 }
 
 .lune-component-scroll-indicator span {
   display: block;
-  animation: animate-scroll-text 6s calc(var(--animation-delay-start) * 3) ease-out infinite both;
+  animation: animate-scroll-text 8s calc(var(--animation-delay-start) * 4) ease-in-out infinite both;
   will-change: transform;
 }
 
@@ -49,7 +49,7 @@
   }
 
   78%, 80% {
-    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 0, 1);
   }
 
   99.9% {
@@ -67,7 +67,12 @@
     transform: translate3d(0, -20px, 0);
   }
 
-  4%, 78% {
+  5% {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  9%, 78% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }

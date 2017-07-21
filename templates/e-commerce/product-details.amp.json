@@ -49,7 +49,7 @@
       "sizes": {
         "label": "Sizes",
         "select": {
-          "placeholder": "Select a size",
+          "placeholder": "Select a size: ",
           "options": [
             "61cm",
             "62cm",
@@ -128,56 +128,6 @@
         {
           "header": "carrier",
           "body": "Chrome steel front"
-        }
-      ],
-      "related-products": [
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
-        },
-        {
-          "name": "Product Name",
-          "image": "../../img/e-commerce/product/related-product.png"
         }
       ],
       "reviews": [

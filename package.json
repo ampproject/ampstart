@@ -37,6 +37,7 @@
     "gulp-webserver": "^0.9.1",
     "highlights": "^2.1.1",
     "jsdom": "^9.11.0",
+    "markdown-table": "^1.1.1",
     "mustache": "2.3.0",
     "path": "^0.12.7",
     "postcss": "5.0.14",

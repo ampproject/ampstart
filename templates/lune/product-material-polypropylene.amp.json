@@ -3,6 +3,9 @@
     "head-tag": {
       "title": "LUNE MATERIAL - POLYPROPYLENE",
       "canonical-path": "templates/product-material-polypropylene.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
       "css-path": "templates/lune/page.css"
     }
   }

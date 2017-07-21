@@ -5,6 +5,8 @@
   /* header is fixed so should be moved onto a new GPU layer */
   will-change: transform;
   height: var(--navbar-height);
+  /* In order to have the title perfectly centered, the navbar needs to have identical values for padding left and right */
+  padding: 0 var(--space-2);
 }
 
 .ampstart-headerbar-title {

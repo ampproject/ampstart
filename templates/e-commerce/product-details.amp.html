@@ -20,7 +20,14 @@ limitations under the License.
 
 <body>
   {{#header}}{{> ../../components/navbar/navbar.snip.html}} {{/header}} {{#main}}
-  <main id="content" role="main" class="main">
+  <amp-state id="cart">
+    <script type="application/json">
+      {
+        "added": false
+      }
+    </script>
+  </amp-state>
+  <main id="content" role="main" class="main" [class]="cart.added ? 'main commerce-cart-added' : 'main'">
     {{#product-details}}
     <amp-state id="product">
       <script type="application/json">
@@ -87,18 +94,18 @@ limitations under the License.
           Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.
         </div>
         <hr class="mb4" />
-        <div class="col-6 md-col-3 self-start pb4">
-          <span class="h6 align-top pr2">colour</span>
+        <div class="col-6 self-start pb4">
+          <span class="h6 align-top pr2">colour:</span>
           <amp-selector class="inline-block" name="color" layout="container" [selected]="product.selectedColor" on="select:AMP.setState({
                               product: {
                                 selectedColor: event.targetOption
                               }
                             })">
             <ul class="m0 list-reset inline-block">
-              <li class="inline-block">
+              <li class="inline-block mr1">
                 <div option="{{colours.0.name}}" selected="selected" class="commerce-product-color-swatch commerce-product-color-{{colours.0.name}}"></div>
               </li>
-              <li class="inline-block">
+              <li class="inline-block mr1">
                 <div option="{{colours.1.name}}" class="commerce-product-color-swatch commerce-product-color commerce-product-color-{{colours.1.name}}"></div>
               </li>
             </ul>
@@ -109,7 +116,7 @@ limitations under the License.
         </div>
         <hr class="mb4" />
         <div class="col-12 self-start mb4 commerce-product-btn-wrapper">
-          <a href="cart.amp.html" class="ampstart-btn ampstart-btn-secondary caps">Add to cart</a>
+          <button class="ampstart-btn ampstart-btn-secondary caps" on="tap:AMP.setState({cart: {added: true}})">Add to cart</button>
         </div>
         <hr class="md-hide lg-hide" />
       </div>
@@ -128,8 +135,8 @@ limitations under the License.
               </div>
           </section>
         </div>
-        <div class="col-12 md-col-5 md-pr7 md-pl5 commerce-panel-filled">
-          <section class=" pt3 pb3 md-pt4 md-pb4 px2 md-pt6">
+        <div class="col-12 md-col-5 md-pr7 md-pl5 commerce-side-panel">
+          <section class=" pt3 pb3 md-pt4 md-pb4 px2 md-pt6 commerce-panel-filled">
             <h2 class="h5 md-h4">Size Guide</h2>
             <div class="mt2">
               <table class="commerce-table center">
@@ -159,7 +166,6 @@ limitations under the License.
               </table>
             </div>
           </section>
-          <hr class="md-hide lg-hide" />
           <section class="pt3 pb3 md-pt4 md-pb4 px2 commerce-panel-empty md-commerce-panel-filled">
             <h2 class="h5 md-h4">Full spec</h2>
             <div class="mt2">
