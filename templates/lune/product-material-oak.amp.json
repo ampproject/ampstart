@@ -3,6 +3,9 @@
     "head-tag": {
       "title": "LUNE OAK",
       "canonical-path": "templates/product-material-oak.amp",
+      "extensions": [
+        "amp-sidebar"
+      ],
       "css-path": "templates/lune/page.css"
     }
   }

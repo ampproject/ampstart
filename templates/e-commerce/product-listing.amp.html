@@ -36,7 +36,7 @@ limitations under the License.
   <section class="commerce-listing-content mx-auto flex flex-wrap">
     {{#filters}}
     <div class="commerce-panel-filled col-3 xs-hide sm-hide flex flex-column">
-      <div class="px2 pt2 pb3 md-px4 md-pt4 md-pb7">
+      <div class="pt4 pr4 self-center">
         <h2 class="h5 mb2">Categories</h2>
         {{#categories}}
           {{> ../../components/inputs/inputs.snip.html}}
@@ -45,9 +45,9 @@ limitations under the License.
     </div>
 
     <div class="col-12 md-col-7 px2 pt2 pb3 md-px4 md-pt1 md-pb7">
-      <div class="md-commerce-header relative md-flex flex-wrap items-center mx1 md-mb2">
+      <div class="md-commerce-header relative md-flex flex-wrap items-center mx1 md-mx0 md-mb2">
         <h1 class="h3 mb1 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
-        <div class="inline-block mr1 mb1 md-mb0">
+        <div class="inline-block mr1 mb3 md-mb0">
           {{#categories}} {{> partials/select.snip.html}} {{/categories}}
         </div>
         {{#price}} {{> partials/select.snip.html}} {{/price}}

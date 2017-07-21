@@ -21,41 +21,12 @@ limitations under the License.
 
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
-  <main id="content" role="main" class="main flex flex-wrap">
+  <main id="content" role="main" class="main flex flex-wrap commerce-cart">
     <section class="col-12 md-col-8 px2 pt2 pb3 md-px4 md-pt4 md-pb7">
-      <h1 class="h3 mb2">Your Basket</h1>
-      {{#cart}}
-        <div class="commerce-cart-item flex flex-wrap mb2 md-mt3 md-pb3">
-          <div class="col-2">
-            <amp-img class="commerce-cart-item-image" src="{{thumbnail}}" width="130" height="158" layout="responsive" alt="{{name}}"></amp-img>
-          </div>
-          <div class="px1 col-7">
-            <div class="h6 mb1">{{name}}</div>
-            <div>{{description}}</div>
-          </div>
-          <div class="col-3 h6 flex flex-wrap justify-between items-start">
-            <span>£{{price}}</span>
-            <span>{{quantity}}</span>
-            <div role="button" class="commerce-cart-icon inline-block" tabindex="0">✕</div>
-          </div>
-        </div>
-      {{/cart}}
+      {{> partials/cart-items.snip.html}}
+      {{> partials/related-products.snip.html}}
     </section>
-    <section class="commerce-content-wrapper commerce-cart-summary md-commerce-panel-filled px2 pt3 pb4 md-px4 md-pt4 col-12 md-col-4">
-      <h2 class="h5">Order Summary</h2>
-      <dl class="flex flex-wrap">
-        <dt class="col-10">Subtotal</dt>
-        <dd class="m0 col-2 pb1 right-align">&#163;1018</dd>
-        <dt class="col-10 pb1">Shipping</dt>
-        <dd class="m0 col-2 pb1 right-align">&#163;25</dd>
-        <dt class="commerce-cart-total col-10 pt2 pb2 bold">Total</dt>
-        <dd class="commerce-cart-total m0 col-2 pt2 pb2 right-align bold">&#163;1043</dd>
-      </dl>
-      <p class="pb3">Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.</p>
-      <div class="commerce-cart-button center">
-        <a href="checkout.amp.html" class="ampstart-btn ampstart-btn-secondary caps">checkout</a>
-      </div>
-    </section>
+    {{> partials/cart-summary.snip.html}}
   </main>
   {{> partials/footer.snip.html}}
 </body>
