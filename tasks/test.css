@@ -1,0 +1,24 @@
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+#main {
+    border: 1px solid black;
+    margin: 20px !important;
+}
+
+ul li {
+	padding: 5px;
+}
+
+
+ul li::after {
+	border: 5px;
+  display:block;
+}
+
+ul li:hover {
+	background: red;
+}

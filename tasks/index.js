@@ -20,3 +20,4 @@ require('./escape');
 require('./countCss');
 require('./configurator');
 require('./bundle');
+require('./replace-important');
