@@ -50,8 +50,9 @@
             "on": "change: AMP.setState({products: {category: 'kids'}})"
           }
         ],
-        "select": {
-          "classes": "md-hide lg-hide",
+        "commerce-select": {
+          "spacing-classes": "mr1 pl2",
+          "responsive-display-classes": "md-hide lg-hide",
           "on": "change: AMP.setState({products: {category: event.value}})",
           "placeholder": "Show:",
           "options": [
@@ -62,7 +63,7 @@
         }
       },
       "price": {
-        "select": {
+        "commerce-select": {
           "on": "change: AMP.setState({products: {filter: event.value}})",
           "placeholder": "Sort by:",
           "options": ["high-low", "low-high"],
