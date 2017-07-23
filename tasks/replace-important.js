@@ -26,8 +26,8 @@ var selectorList = [];
 
 
 function replaceImportant() {
-  // return gulp.src(config.dest.css + '**/page.css')
-  return gulp.src('tasks/test.css')
+  return gulp.src(config.dest.css + '**/page.css')
+  //return gulp.src('tasks/test.css')
   .pipe(through.obj(function(file, enc, cb) {
     const cssVarObj = {};
     var ast = csstree.parse(
@@ -35,16 +35,14 @@ function replaceImportant() {
       {parseSelector: false, parseValue: false});
     ast = csstree.toPlainObject(ast);
     processChildren(ast.children);
-    console.log('Finished isolating !important rules');
     ast = csstree.fromPlainObject(ast);
-    console.log('Writing AST to file');
     file.contents = new Buffer(
         csstree.translate(ast)
           .split('~~~~PLACEHOLDER~~~~').join(getPlaceholder()));
     cb(null, file);
   }))
-  .pipe(gulp.dest('tasks/op/'));
-  //.pipe(gulp.dest(config.dest.css + '**/page_.css'));
+  //.pipe(gulp.dest('tasks/op/'));
+  .pipe(gulp.dest(config.dest.css));
 }
 
 function processChildren(childrenArr) {
