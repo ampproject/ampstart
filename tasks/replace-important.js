@@ -19,32 +19,124 @@ const replace = require('gulp-replace');
 const csstree = require('css-tree');
 const rename = require('gulp-rename');
 const through = require('through2');
+const fs = require('fs');
+const specificity = require('specificity');
+const config = require('./config');
+var selectorList = [];
 
 
 function replaceImportant() {
-  return gulp.src('test.css')
+  // return gulp.src(config.dest.css + '**/page.css')
+  return gulp.src('tasks/test.css')
   .pipe(through.obj(function(file, enc, cb) {
-    if(file.isNull()) {
-      cb(null, file);
-      return;
-    }
     const cssVarObj = {};
-    const ast = csstree.parse(file.contents.toString());
-    // csstree.walk(ast, function(node) {
-    //   if(node.type === 'Declaration' && node.property.indexOf('--') === 0) {
-    //     cssVarObj[node.property] = {
-    //       value: node.value.value
-    //     }
-    //   }
-    // });
-    // Place the json into the file
-    file.contents = new Buffer(JSON.stringify(ast, null, 2));
+    var ast = csstree.parse(
+      file.contents.toString(),
+      {parseSelector: false, parseValue: false});
+    ast = csstree.toPlainObject(ast);
+    processChildren(ast.children);
+    console.log('Finished isolating !important rules');
+    ast = csstree.fromPlainObject(ast);
+    console.log('Writing AST to file');
+    file.contents = new Buffer(
+        csstree.translate(ast)
+          .split('~~~~PLACEHOLDER~~~~').join(getPlaceholder()));
     cb(null, file);
   }))
-  .pipe(rename(function(path) {
-    path.extname = ".json";
-  }))
-  .pipe(gulp.dest('ast/'))
+  .pipe(gulp.dest('tasks/op/'));
+  //.pipe(gulp.dest(config.dest.css + '**/page_.css'));
 }
+
+function processChildren(childrenArr) {
+  const newRules = [];
+  childrenArr.forEach(function(child) {
+    if (child.type) {
+      if (child.type == "Rule") {
+        selectorList = selectorList.concat(child.selector.value.split(','));
+        const importantProperties = child.block.children.filter(function(property) {
+            return property.important;
+        });
+
+        child.block.children = child.block.children.filter(function(property) {
+            return !property.important;
+        });
+
+        importantProperties.forEach(function(property) {
+          property.important = false;
+        });
+
+        if (importantProperties.length > 0) {
+          var selectorValue = child.selector.value.split(',').map(function(sel) {
+            return sel.trim();
+          }).join(',~~~~PLACEHOLDER~~~~ ')
+          var newRule = {
+            "type": "Rule",
+            "loc": child.loc,
+            "selector": {
+              "type": child.selector.type,
+              "loc": child.selector.loc,
+              "value": "~~~~PLACEHOLDER~~~~ " + selectorValue
+            },
+            "block": {
+              "type": "Block",
+              "loc": null,
+              "children": importantProperties
+            }
+          };
+          newRules.push(newRule);
+        }
+      } else {
+        if (child.block && child.block.children) {
+          processChildren(child.block.children);
+        }
+      }
+    }
+  });
+  newRules.forEach(function(rule) {
+    childrenArr.push(rule);
+  });
+}
+
+function getPlaceholder() {
+  //console.log('Computing placeholder');
+  var specificityArr = specificity.calculate(highestSpecificity(selectorList))[0].specificity;
+  var placeholder = ":root:not(#FK_ID)";
+  //console.log(specificityArr);
+  // Example array [0,1,0,1] - details -https://specificity.keegan.st/
+  // Ignore specificityArr[0] - iniline styles - These can only be added by
+  // AMP Runtime.
+  if (specificityArr[1] > 0) {
+    for (var i=0; i < specificityArr[1]; i++ ) {
+      placeholder += ":not(#FK_ID)"
+    }
+  }
+  if (specificityArr[2] > 0) {
+    placeholder += ":not(#FK_ID)"
+  }
+
+  if (specificityArr[3] > 0) {
+    placeholder += ":not(#FK_ID)"
+  }
+
+  //console.log('END Computing placeholder');
+  return placeholder;
+}
+
+
+function highestSpecificity() {
+  //console.log('Computing highest Specificity');
+  try {
+    selectorList = selectorList.map(function (selector) {
+      return selector.trim();
+    });
+    selectorList.sort(specificity.compare);
+  } catch (e) {
+    console.log(e);
+  }
+
+  //console.log('END Computing highest Specificity');
+  return selectorList[selectorList.length - 1];
+}
+
 
 gulp.task('replace-important', replaceImportant);
