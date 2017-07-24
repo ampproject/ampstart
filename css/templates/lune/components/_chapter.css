@@ -1,3 +1,54 @@
 /* //////////////////////////////////////////////////////
    CHAPTER INDICATORS
 ///////////////////////////////////////////////////////*/
+
+/*
+ * .lune-chapter-name usually used in combination with basscss 'center absolute
+ *  caps position-center-v ls-0' classes.
+ * .lune-chapter-number usually used in combination with basscss 'center flex
+ *  flex-column justify-between absolute caps position-center-v ls-0' classes.
+ */
+.lune-chapter-name,
+.lune-chapter-number {
+  /* Width is one letter wide */
+  width: 1em;
+  word-wrap: break-word;
+  letter-spacing: 0;
+  /* Position the chapter vertically in the centre */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.lune-chapter-name span:not(:last-child) {
+  margin-bottom: 1em;
+}
+
+/*
+ * This positioning makes sure that the chapter name is always 30px away
+ * from the left edge of the viewport.
+ */
+.lune-chapter-name {
+  left: calc(((100% - 100vw) / 2) + 30px);
+}
+
+/*
+ * This positioning makes sure that the chapter number is always 30px away
+ * from the right edge of the viewport.
+ */
+.lune-chapter-number {
+  right: calc(((100% - 100vw) / 2) + 30px);
+  height: 5.56em;
+}
+
+/* Fraction bar */
+.lune-chapter-number::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.67em;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  background: currentColor;
+  content: '';
+}

@@ -15,6 +15,7 @@ one file.
  */
 @import "_type";
 @import 'basscss-addons/modules/responsive-margin';
+@import 'basscss-addons/modules/responsive-padding';
 @import 'basscss-addons/modules/responsive-type-scale';
 @import '../../../components/images/images';
 @import '../../../components/navbar/navbar';
@@ -52,6 +53,9 @@ one file.
 
 /* LUNE SCROLL INDICATOR */
 @import "components/_scroll-indicator";
+
+/* LUNE LINE AFTER*/
+@import "components/_line-after";
 
 
 

@@ -21,38 +21,40 @@ limitations under the License.
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
-  <main id="content" role="main" class="main flex flex-wrap">
-    <section class="px2 pt2 pb3 md-px4 md-pt4 md-pb7 col-12 md-col-8">
-      <h1 class="h3 mb2">Checkout</h1>
-      <ul class="list-reset flex flex-wrap justify-between h7 commerce-checkout-steps mb3">
+  <main id="content" role="main" class="main flex flex-wrap pb3">
+    <section class="pt2 pb3 md-px4 md-pt4 md-pb7 col-12 md-col-8 md-px2">
+      <h1 class="h3 mb2 px2">Checkout</h1>
+      <ul class="list-reset flex flex-wrap justify-around h7 commerce-checkout-steps pt2 pb2 md-ml2">
         <li><h2 class="h7">Shipping</h2></li>
         <li>Billing</li>
         <li>Payment</li>
         <li>Confirmation</li>
       </ul>
-      <hr class="xs-hide sm-hide mt2 mb2"/>
-      <h3 class="h5 mb2">Delivery</h3>
-      {{#checkout}}
-        <div class="flex flex-wrap mxn2">
-          {{#address}}
-            <div class="col-12 md-col-6 px2">
-              {{> ../../components/inputs/inputs.snip.html}}
-            </div>
-          {{/address}}
-
-          <div class="px2 pb3 flex flex-wrap col-12 md-pt3 md-pb3">
-            <h4 class="h5 mt2 mb2 col-12">Select Delivery Method</h4>
-            <div class="col-12">
-              {{#delivery-method}}
+      <hr class="xs-hide sm-hide mt2 mb1 ml2"/>
+      <div class="px2 md-mt3">
+        <h3 class="h5 mb2">Delivery</h3>
+        {{#checkout}}
+          <div class="flex flex-wrap mxn2">
+            {{#address}}
+              <div class="col-12 md-col-6 px2">
                 {{> ../../components/inputs/inputs.snip.html}}
-              {{/delivery-method}}
-              <a href="checkout-success.amp.html" class="ampstart-btn ampstart-btn-secondary caps mt3">Continue</a>
+              </div>
+            {{/address}}
+
+            <div class="px2 pb3 flex flex-wrap col-12 md-pt3 md-pb3">
+              <h4 class="h5 mt2 mb2 col-12">Select Delivery Method</h4>
+              <div class="col-12">
+                {{#delivery-method}}
+                  {{> ../../components/inputs/inputs.snip.html}}
+                {{/delivery-method}}
+                <a href="checkout-success.amp.html" class="ampstart-btn ampstart-btn-secondary caps mt3">Continue</a>
+              </div>
             </div>
           </div>
-        </div>
-      {{/checkout}}
-      <hr class="xs-hide sm-hide mt2"/>
-      <div class="mt2">
+        {{/checkout}}
+      </div>
+      <hr class="xs-hide sm-hide mt2 ml2"/>
+      <div class="mt2 px2">
         {{> partials/cart-items.snip.html}}
       </div>
     </section>
