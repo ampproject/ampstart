@@ -51,13 +51,23 @@
           }
         ],
         "commerce-select": {
-          "spacing-classes": "mr1 pl2",
+          "spacing-classes": "md-mr1 pl2",
           "responsive-display-classes": "md-hide lg-hide",
           "on": "change: AMP.setState({products: {category: event.value}})",
           "placeholder": "Show:",
-          "options": [
-            "all", "mens", "womens", "kids"
-          ],
+          "options": [{
+            "value": "all",
+            "text": "all"
+          }, {
+            "value": "mens",
+            "text": "mens"
+          }, {
+            "value": "womens",
+            "text": "womens"
+          }, {
+            "value": "kids",
+            "text": "kids"
+          }],
           "id": "categories",
           "name": "categories"
         }
@@ -66,7 +76,13 @@
         "commerce-select": {
           "on": "change: AMP.setState({products: {filter: event.value}})",
           "placeholder": "Sort by:",
-          "options": ["high-low", "low-high"],
+          "options": [{
+            "value": "high-low",
+            "text": "Price: High-Low"
+          },{
+            "value": "low-high",
+            "text": "Price: Low-High"
+          }],
           "id": "price",
           "name": "price"
         }
