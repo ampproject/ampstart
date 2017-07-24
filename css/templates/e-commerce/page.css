@@ -469,7 +469,7 @@ amp-carousel {
   transition: transform 1s;
 }
 
-.amp-mode-mouse .commerce-hero-image:hover {
+.amp-mode-mouse .commerce-hero-content-wrapper:hover .commerce-hero-image {
   transform: scale(1.05);
 }
 
