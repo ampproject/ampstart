@@ -1,9 +1,7 @@
 {{#product}}
-  <main role="main" class="lune-page lune-page-product {{classes}}">
-    <div class="lune-page-product-wrapper md-col-9 mx-auto">
-
+  <main role="main" class="lune-page lune-page-product md-col-9 mx-auto">
       {{#hero}}
-        <section class="lune-product-section lune-product-section-hero relative z1 flex">
+        <header class="lune-product-section lune-product-section-hero relative z1 flex">
           <div class="lune-hero-content col-12 md-mt0 flex flex-column items-center justify-center">
             <h1 class="lune-hero-title" aria-label="{{full_title}}">
               <span class="relative block caps m0 px3 md-p0 z1 lune-anim-move-up {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}">{{title_parts.0}}</span>
@@ -41,7 +39,7 @@
           {{> ../components/scroll-indicator.snip.html}}
           <!-- Chapter indicators -->
           {{> ../components/chapter.snip.html}}
-        </section>
+        </header>
       {{/hero}}
 
       {{#intro}}
@@ -167,7 +165,6 @@
         {{> ../components/cta.snip.html}}
       </div>
 
-    </div>
   </main>
 
   {{> ../components/product-toggle.snip.html }}
