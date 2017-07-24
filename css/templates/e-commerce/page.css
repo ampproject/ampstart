@@ -128,7 +128,7 @@ dd:after {
 }
 
 .commerce-select {
-  -webkit-appearance: none;
+  appearance: none;
   border: none;
   border-radius: 0;
   background: none;
@@ -297,7 +297,6 @@ amp-selector [option][selected] {
   color: var(--color-font-accent);
   padding-right: var(--space-2);
   background-color: var(--color-white);
-  z-index: var(--z1);
   height: var(--navbar-height);
   box-shadow: none;
   border-bottom: 1px solid #f3f3f3;
