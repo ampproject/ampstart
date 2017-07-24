@@ -377,6 +377,7 @@ amp-selector [option][selected] {
   min-width: 150px;
 }
 
+.ampstart-icon,
 .ampstart-sidebar .ampstart-icon {
   fill: var(--color-primary);
 }
@@ -591,6 +592,10 @@ amp-selector [option][selected] {
 
 .commerce-blog p {
   line-height: 1.6;
+}
+
+.commerce-blog-sidebar .ampstart-social-follow li:first-child a {
+  margin-left: -var(--space-1);
 }
 
 
