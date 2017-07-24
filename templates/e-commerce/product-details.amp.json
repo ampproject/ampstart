@@ -48,7 +48,7 @@
       ],
       "sizes": {
         "label": "Sizes",
-        "select": {
+        "commerce-select": {
           "placeholder": "Select a size: ",
           "options": [
             "61cm",
