@@ -1,14 +1,3 @@
-.lune-page {
-  padding-top: var(--navbar-height);
-  background: inherit;
-}
-
-@media (--breakpoint-mt) {
-  .lune-page {
-    padding-top: var(--wide-navbar-height);
-  }
-}
-
 /*******************************************************************************
  * In-page animations
  ******************************************************************************/

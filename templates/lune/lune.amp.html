@@ -30,7 +30,7 @@ limitations under the License.
     </div>
 
     <!-- Landing page -->
-    <div class="lune-page lune-page-landing">
+    <main role="main" class="lune-page lune-page-landing">
       {{#landing-sections}}
         <!-- Landing section -->
         <section class="lune-landing-section top-0 left-0 right-0 {{classes}}">
@@ -38,7 +38,7 @@ limitations under the License.
             <!-- Used by screen reader / document outline, not visible -->
             <h2 class="hide">{{full_title}}</h2>
             <div class="lune-landing-content relative flex items-center justify-center flex-auto mb2">
-              <div class="lune-landing-image-wrapper relative col-12">
+              <figure class="lune-landing-image-wrapper relative col-12 m0">
                 <!-- Chair image -->
                 {{#product_image}}
                   <!-- WebP image -->
@@ -67,7 +67,7 @@ limitations under the License.
                 <span class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">lu-</span>
                 <!-- -NE -->
                 <span class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">-ne</span>
-              </div>
+              </figure>
               <!-- Dictover CTA -->
               <div class="absolute bottom-0 left-0 right-0 center z1 flex justify-center">
                 {{> partials/components/cta.snip.html}}
@@ -79,7 +79,7 @@ limitations under the License.
         </section>
 
       {{/landing-sections}}
-    </div>
+    </main>
   </body>
 </html>
 {{/lune}}

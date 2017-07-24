@@ -27,13 +27,6 @@
   justify-content: flex-end;
 }
 
-/* Remove the default margin top from amp-sidebar and navbar */
-.ampstart-headerbar + :not(amp-sidebar),
-.ampstart-headerbar + amp-sidebar + * {
-  margin-top: 0;
-}
-
-
 .lune-noir .ampstart-headerbar {
   background: var(--color-background-dark-narrow);
   color: var(--color-light-1);
