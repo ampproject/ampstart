@@ -4,11 +4,7 @@
 | templates/alp/page.css        | 24682                | 24.68 KB |
 | templates/article/page.css    | 24211                | 24.21 KB |
 | templates/blog/page.css       | 24454                | 24.45 KB |
-<<<<<<< HEAD
-| templates/e-commerce/page.css | 37052                | 37.05 KB |
-=======
 | templates/e-commerce/page.css | 37769                | 37.77 KB |
->>>>>>> ampproject/master
 | templates/lune/page.css       | 31334                | 31.33 KB |
 | templates/test/page.css       | 24297                | 24.30 KB |
 | templates/themes_1/page.css   | 25879                | 25.88 KB |

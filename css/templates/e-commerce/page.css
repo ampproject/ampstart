@@ -469,6 +469,14 @@ amp-selector [option][selected] {
   padding: var(--space-6) var(--narrow-page-padding);
 }
 
+.amp-mode-mouse .commerce-hero-image {
+  transition: transform 1s;
+}
+
+.amp-mode-mouse .commerce-hero-content-wrapper:hover .commerce-hero-image {
+  transform: scale(1.05);
+}
+
 .commerce-hero-content-body {
   padding: var(--space-1) 0 var(--space-2);
   font-family: var(--font-family);
@@ -492,18 +500,26 @@ amp-selector [option][selected] {
     font-size: var(--h1);
     color: var(--color-white);
     font-weight: var(--bold-font-weight);
+    line-height: 1;
   }
 
   .commerce-hero-content-body {
-    margin: 0;
+    font-size: var(--h6);
+    max-width: none;
+  }
+
+  .commerce-hero-align {
+    width: 100%;
+    max-width: var(--content-max-width);
   }
 
   .commerce-hero-content {
     position: absolute;
     top: 0;
-    left: var(--space-2);
-    width: 500px;
+    left: 0;
+    width: 100%;
     height: 100%;
+    padding: 0;
   }
 
   .commerce-hero-content-wrapper .ampstart-btn {
