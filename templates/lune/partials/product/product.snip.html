@@ -51,18 +51,16 @@
               <p class="lune-product-body h5 mb2">{{.}}</p>
             {{/product-desc}}
 
-            {{#accordion}}
-              <div class="md-hide lg-hide">
-                <amp-accordion disable-session-states>
-                  <section>
-                    <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
-                    <p class="lune-product-body h5 mb2">{{text}}</p>
-                  </section>
-                </amp-accordion>
-              </div>
+            {{#product-desc-extra}}
+              <amp-accordion disable-session-states class="md-hide lg-hide">
+                <section>
+                  <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
+                  <p class="lune-product-body h5 mb2">{{text}}</p>
+                </section>
+              </amp-accordion>
 
               <p class="xs-hide sm-hide lune-product-body h5 mb2">{{text}}</p>
-            {{/accordion}}
+            {{/product-desc-extra}}
 
           </div>
 
