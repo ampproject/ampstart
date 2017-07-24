@@ -4,9 +4,171 @@
       "title": "LUNE BLANC",
       "canonical-path": "templates/product-blanc.amp",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-accordion"
       ],
       "css-path": "templates/lune/page.css"
+    },
+
+    "product": {
+      "full_title": "BLANC",
+      "title_parts": [
+        "BLA",
+        "NC"
+      ],
+      "hero": {
+        "image": {
+          "alt": "Lune Blanc",
+          "webp_srcset": "../../img/lune/product-hero-blanc@1x.webp, ../../img/lune/product-hero-blanc@2x.webp 2x",
+          "fallback_srcset": "../../img/lune/product-hero-blanc@1x.png, ../../img/lune/product-hero-blanc@2x.png 2x",
+          "width": 706,
+          "height": 1134
+        },
+        "scroll-indicator": {
+          "classes": "absolute bottom-0 left-0 col-12 md-mt2"
+        },
+        "chapter": {
+          "name": {
+            "parts": ["Chapter", "one"]
+          },
+          "number": {
+            "current": 1,
+            "total": 4
+          }
+        }
+      },
+      "intro": {
+        "title": "Lune Blanc",
+        "product-desc": [
+          "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
+          "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+        ],
+        "product-desc-extra": {
+          "more": "Read more +",
+          "less": "Read less -",
+          "text": "Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id."
+        },
+        "chapter": {
+          "name": {
+            "parts": ["Chapter", "two"]
+          },
+          "number": {
+            "current": 2,
+            "total": 4
+          }
+        }
+      },
+      "specs": {
+        "title": "Specs",
+        "body": "Engineered for extremes. Titanium flat-yarn and breathable fibres transfer heat away. Aluminium spheres create an instant cool feeling.",
+        "details": [{
+          "title": "Height",
+          "value": "81",
+          "unit": "cm"
+        }, {
+          "title": "Width",
+          "value": "45",
+          "unit": "cm"
+        }, {
+          "title": "Depth",
+          "value": "55",
+          "unit": "cm"
+        }, {
+          "title": "Seat Height",
+          "value": "41",
+          "unit": "cm"
+        }],
+        "chapter": {
+          "name": {
+            "parts": ["Chapter", "three"]
+          },
+          "number": {
+            "current": 3,
+            "total": 4
+          }
+        }
+      },
+      "materials": {
+        "classes": "",
+        "title": "Materials",
+        "title_parts": [],
+        "list": [{
+          "title": "Oak",
+          "title-parallax-factor": "0.85",
+          "title_classes": "lune-product-material-name-oak h1 sm-h0 md-h00 pl3 mt1 sm-mt3 md-pl0",
+          "images": [{
+            "alt": "Oak",
+            "webp_srcset": "../../img/lune/product-materials-blanc-oak-1@1x.webp, ../../img/lune/product-materials-blanc-oak-1@2x.webp 2x",
+            "fallback_srcset": "../../img/lune/product-materials-blanc-oak-1@1x.jpg, ../../img/lune/product-materials-blanc-oak-1@2x.jpg 2x",
+            "classes": "lune-product-material-image-oak-1 col-11 md-col-6 md-p2",
+            "width": 561,
+            "height": 656,
+            "image-parallax-factor": "0.9",
+            "hotspots": []
+          }, {
+            "alt": "Oak",
+            "webp_srcset": "../../img/lune/product-materials-blanc-oak-2@1x.webp, ../../img/lune/product-materials-blanc-oak-2@2x.webp 2x",
+            "fallback_srcset": "../../img/lune/product-materials-blanc-oak-2@1x.jpg, ../../img/lune/product-materials-blanc-oak-2@2x.jpg 2x",
+            "classes": "lune-product-material-image-oak-2 col-10 md-col-6 md-p2 self-end",
+            "width": 500,
+            "height": 785,
+            "image-parallax-factor": "1.1",
+            "hotspots": [{
+              "text": "More",
+              "url": "product-material-oak.html",
+              "classes": "lune-product-hotspot-oak"
+            }]
+          }]
+        }, {
+          "classes": "product__materials--poly",
+          "title": "Polypropylene",
+          "title-parallax-factor": "0.9",
+          "title_classes": "lune-product-material-name-poly h1 sm-h0 md-h0 lg-h00",
+          "title_parts": {
+            "mobile": [
+              "POLY-",
+              "-PROP-",
+              "-YLENE"
+            ],
+            "desktop": [
+              "POLYPR-",
+              "-OPYLENE"
+            ]
+          },
+          "images": [{
+            "alt": "Polypropylene",
+            "webp_srcset": "../../img/lune/product-materials-blanc-poly@1x.webp, ../../img/lune/product-materials-blanc-poly@2x.webp 2x",
+            "fallback_srcset": "../../img/lune/product-materials-blanc-poly@1x.jpg, ../../img/lune/product-materials-blanc-poly@2x.jpg 2x",
+            "classes": "lune-product-material-image-poly col-11 md-col-6 self-center",
+            "width": 563,
+            "height": 785,
+            "image-parallax-factor": "1.2",
+            "hotspots": [{
+              "text": "More",
+              "url": "product-material-polypropylene.html",
+              "classes": "lune-product-hotspot-poly"
+            }]
+          }]
+        }],
+        "chapter": {
+          "name": {
+            "parts": ["Chapter", "four"]
+          },
+          "number": {
+            "current": 4,
+            "total": 4
+          }
+        }
+      },
+      "cta": {
+        "href": "store.amp.html",
+        "text": "Visit us"
+      },
+      "product-toggle": {
+        "text": "To Noir",
+        "href": "product-noir.amp.html",
+        "classes": "lune-product-toggle-noir"
+      }
     }
   }
 }

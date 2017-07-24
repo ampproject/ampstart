@@ -33,6 +33,18 @@
   margin-top: 0;
 }
 
+
+.lune-noir .ampstart-headerbar {
+  background: var(--color-background-dark-narrow);
+  color: var(--color-light-1);
+}
+
+@media (--breakpoint-mt) {
+  .lune-noir .ampstart-headerbar {
+    background: var(--color-background-dark-wide);
+  }
+}
+
 @media (--breakpoint-mt) {
   .ampstart-navbar-trigger {
     padding-left: var(--space-3);

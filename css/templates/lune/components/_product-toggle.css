@@ -1,3 +1,45 @@
 /* //////////////////////////////////////////////////////
    PRODUCT TOGGLE
 ///////////////////////////////////////////////////////*/
+
+.lune-product-toggle {
+  width: 3.125rem; /* 50px */
+  height: 3.125rem; /* 50px */
+  border-radius: 50%;
+  box-shadow: 0 3px 12px -3px rgba(0, 0, 0, .5);
+  font-size: 0;
+}
+
+.lune-product-toggle::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  transform-origin: 50%;
+  transform: scale(.5);
+  transition: transform .2s ease-out;
+  content: '';
+}
+
+.lune-product-toggle:hover::after,
+.lune-product-toggle:focus::after {
+  transform: scale(.6);
+}
+
+.lune-product-toggle-noir {
+  background: var(--color-light-1)
+}
+
+.lune-product-toggle-noir::after {
+  background: var(--color-dark-grey);
+}
+
+.lune-product-toggle-blanc {
+  background: var(--color-dark-grey);
+}
+
+.lune-product-toggle-blanc::after {
+  background: var(--color-light-1)
+}
