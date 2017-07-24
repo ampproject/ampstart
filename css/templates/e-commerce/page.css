@@ -140,6 +140,10 @@ dd:after {
   margin-bottom: var(--space-1);
 }
 
+.ampstart-input {
+  width: 100%;
+}
+
 .ampstart-input label,
 .ampstart-input input::placeholder,
 .ampstart-input input[type="text"] {
@@ -148,6 +152,13 @@ dd:after {
   color: var(--color-primary);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.ampstart-input-radio label {
+  font-family: var(--font-family);
+  font-weight: initial;
+  text-transform: none;
+  color: var(--color-secondary);
 }
 
 .ampstart-input > label::after {
