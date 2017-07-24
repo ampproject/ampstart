@@ -5,12 +5,12 @@
       {{#hero}}
         <section class="lune-product-section lune-product-section-hero relative z1 flex">
           <div class="lune-hero-content col-12 md-mt0 flex flex-column items-center justify-center">
-            <div class="lune-hero-title-wrapper">
-              <h1 class="lune-hero-title relative caps m0 px3 md-p0 z1 lune-anim-move-up {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}" aria-label="{{full_title}}">{{title_parts.0}}</h1>
+            <h1 class="lune-hero-title" aria-label="{{full_title}}">
+              <span class="relative block caps m0 px3 md-p0 z1 lune-anim-move-up {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}">{{title_parts.0}}</span>
               {{#title_parts.1}}
-                <p class="lune-hero-title caps m0 relative px3 md-p0 z4 lune-anim-move-up" aria-hidden>{{.}}</p>
+                <span class="block caps m0 relative px3 md-p0 z4 lune-anim-move-up">{{.}}</span>
               {{/title_parts.1}}
-            </div>
+            </h1>
 
             {{#image}}
               <figure class="lune-hero-image-wrapper z3 flex justify-center col-12 m0">
