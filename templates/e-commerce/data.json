@@ -16,6 +16,7 @@
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "sidebarclasses": "md-flex flex-column justify-content items-center justify-center",
+      "responsive-layout-classes": "pt2 md-pt0",
       "href": "landing.amp.html",
       "logo": {
         "url": "../../img/e-commerce/logo.png",

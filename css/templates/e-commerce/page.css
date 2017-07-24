@@ -1,7 +1,8 @@
+@import '../../core';
 @import 'basscss-responsive-type-scale';
 @import 'basscss-responsive-margin';
 @import 'basscss-responsive-padding';
-@import '../../core';
+@import '../../ampstart-base/bass-override-vars';
 @import '../../../components/navbar/navbar';
 @import '../../../components/inputs/inputs';
 @import '../../../components/social-follow/social-follow';
@@ -189,26 +190,9 @@ amp-selector [option][selected] {
   outline-color: var(--color-primary);
 }
 
-amp-carousel {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.amp-carousel-button {
-  background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="#000000"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/><path d="M0-.5h24v24H0z" fill="none"/></svg>') 30px 30px transparent;
-  cursor: pointer;
-  height: 36px;
-  width: 36px;
-  top: 40%;
-}
-
-.amp-carousel-button-prev {
-  left: 0;
-}
-
+.amp-carousel-button-prev,
 .amp-carousel-button-next {
-  right: 0;
-  transform: translateY(-50%) rotate(180deg);
+  display: none;
 }
 
 .commerce-panel-empty {
@@ -374,7 +358,8 @@ amp-carousel {
   min-width: 150px;
 }
 
-.ampstart-sidebar .ampstart-icon {
+.ampstart-sidebar .ampstart-icon,
+.ampstart-icon {
   fill: var(--color-primary);
 }
 
@@ -590,6 +575,10 @@ amp-carousel {
   line-height: 1.6;
 }
 
+.commerce-blog-sidebar .ampstart-social-follow li:first-child a {
+  margin-left: -var(--space-1);
+}
+
 
 /* PRODUCT LISTING */
 .commerce-listing-banner {
@@ -715,6 +704,33 @@ amp-carousel {
 /* RELATED PRODUCTS */
 .commerce-related-products {
   border-top: 1px solid var(--color-separator);
+}
+
+.commerce-related-products amp-carousel {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.commerce-related-products .amp-carousel-button {
+  background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="#000000"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/><path d="M0-.5h24v24H0z" fill="none"/></svg>') 30px 30px transparent;
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  top: 40%;
+}
+
+.commerce-related-products .amp-carousel-button-prev,
+.commerce-related-products .amp-carousel-button-next {
+  display: initial;
+}
+
+.commerce-related-products .amp-carousel-button-prev {
+  left: 0;
+}
+
+.commerce-related-products .amp-carousel-button-next {
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
 }
 
 .commerce-related-product {
