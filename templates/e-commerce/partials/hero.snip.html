@@ -1,18 +1,20 @@
 {{#hero}}
-<section class="commerce-hero-content-wrapper center">
+<section class="commerce-hero-content-wrapper center overflow-hidden">
+  <a href="{{link.url}}" class="text-decoration-none block">
   {{#images}}
     {{#image}}
-      <amp-img src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" media="{{media}}" alt="{{alt}}"></amp-img>
+      <amp-img class="commerce-hero-image" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" media="{{media}}" alt="{{alt}}"></amp-img>
     {{/image}}
   {{/images}}
-  <div class="commerce-hero-content commerce-hero-content-theme-{{text-theme}} flex justify-center flex-column">
-    <div>
-      <h2 class="commerce-hero-content-title h4 md-h1 caps">{{title}}</h2>
-      <p class="commerce-hero-content-body">{{body}}</p>
+  <div class="commerce-hero-content commerce-hero-content-theme-{{text-theme}} flex justify-center flex-column md-mx-auto md-p0">
+    <div class="commerce-hero-align md-mx-auto md-pl4">
+      <h2 class="commerce-hero-content-title h4 md-h1 caps md-mb2">{{title}}</h2>
+      <p class="commerce-hero-content-body md-mb4">{{body}}</p>
       {{#link}}
-        <a href="{{url}}" class="ampstart-btn ampstart-btn-secondary caps">{{text}}</a>
+        <div class="ampstart-btn ampstart-btn-secondary caps">{{text}}</div>
       {{/link}}
     </div>
   </div>
+  </a>
 </section>
 {{/hero}}
