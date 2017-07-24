@@ -43,6 +43,7 @@
       "cta": {
         "text": "Discover noir",
         "href": "product-noir.amp.html",
+        "external": false,
         "classes": "lune-anim-move-up z2"
       },
       "scroll-indicator": {
