@@ -1,5 +1,3 @@
-@import "page-vars";
-
 .lune-theme-dark {
   background-color: var(--color-background-dark-narrow);
   color: var(--color-light-1);
