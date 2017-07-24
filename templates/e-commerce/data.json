@@ -16,13 +16,15 @@
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
       "sidebarclasses": "md-flex flex-column justify-content items-center justify-center",
+      "responsive-layout-classes": "pt2 md-pt0",
       "href": "landing.amp.html",
       "logo": {
         "url": "../../img/e-commerce/logo.png",
         "width": 96,
-        "height": 28
+        "height": 28,
+        "spacing-classes": "mb1 md-mb0"
       },
-      "fixeditems-layout-classes": "absolute right-0 pr3",
+      "fixeditems-layout-classes": "absolute top-0 right-0 pt2 pr3",
       "fixeditems": [
         {
           "link": {
@@ -144,18 +146,18 @@
   "cart": {
     "items": [
       {
-        "name": "product 1",
+        "name": "Product 1",
         "description": "Mauris tincidunt justo convallis.",
         "price": "349",
         "quantity": 1,
-        "thumbnail": "../../img/e-commerce/product/product-cart.png"
+        "thumbnail": "../../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "product 1",
+        "name": "Product 2",
         "description": "Mauris tincidunt justo convallis.",
         "price": "349",
         "quantity": 1,
-        "thumbnail": "../../img/e-commerce/product/product-cart.png"
+        "thumbnail": "../../../img/e-commerce/product/product-9.jpg"
       }
     ]
   },
@@ -241,51 +243,51 @@
     "items": [
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-1.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-2.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-3.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-4.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-5.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-6.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-7.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-8.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-9.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-1.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-2.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/related-product.png"
+        "image": "../../img/e-commerce/product/product-3.jpg"
       }
     ]
   }
