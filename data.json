@@ -50,7 +50,7 @@
               "width": "1280",
               "height": "853",
               "url": "../../img/components/nasa-45074.jpg",
-              "alt:": "Image 1",
+              "alt:": "Astronaut reparing space shuttle",
               "heading-html": "<h3 class=\"h1\">Image 1</h3>"
             }
           },
@@ -59,7 +59,7 @@
               "width": "1280",
               "height": "853",
               "url": "../../img/components/nasa-45068.jpg",
-              "caption": "Bright red flower. ",
+              "caption": "Surface of the moon from space.",
               "alt:": "Image 2",
               "heading-html": "<h3 class=\"h1\">Image 2</h3>"
             }
@@ -70,6 +70,7 @@
               "height": "853",
               "alt:": "Image 3",
               "url": "../../img/components/nasa-45076.jpg",
+              "alt": "Closeup of astronauts helmet.",
               "heading-html": "<h3 class=\"h1\">Image 3</h3>"
             }
           }
@@ -93,6 +94,7 @@
               "width": "1280",
               "height": "753",
               "url": "../../img/components/nasa-45076.jpg",
+              "alt": "Closeup of astronauts helmet.",
               "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
               "credit": {
                 "credit-prefix": "Taken by ",
@@ -105,6 +107,7 @@
               "width": "1280",
               "height": "753",
               "url": "../../img/components/nasa-45074.jpg",
+              "alt:": "Astronaut reparing space shuttle",
               "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
               "credit": {
                 "credit-prefix": "Taken by ",
@@ -117,6 +120,7 @@
               "width": "1280",
               "height": "753",
               "url": "../../img/components/nasa-45068.jpg",
+              "caption": "Surface of the moon from space.",
               "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
               "credit": {
                 "credit-prefix": "Taken by ",
@@ -211,7 +215,7 @@
       },
       "fullpage-hero": {
         "heading-html": "Life on a space shuttle",
-        "alt": "Life on a space shuttle",
+        "alt": "Inside view of a space shuttle",
         "narrow-img": "../../img/components/nasa-53885.jpg",
         "wide-img": "../../img/components/nasa-53885.jpg",
         "credit": {
@@ -243,7 +247,7 @@
         "height": "853",
         "url": "../../img/components/nasa-43564.jpg",
         "heading-html": "<h1>Views from Space</h1>",
-        "alt": "Views from Space"
+        "alt": "Space telescope orbiting around the Earth"
       }
     },
     "img-caption": {
@@ -256,6 +260,7 @@
         "width": "1078",
         "height": "1024",
         "url": "../../img/components/nasa-89125.jpg",
+        "alt": "Beautiful space photo, with multiple colors",
         "caption": "Duis nec dolor et quam vulputate sagittis. Nam arcu ex, suscipit nec cursus a, volutpat sit amet felis.",
         "credit": {
           "credit-prefix": "Taken by ",
@@ -536,7 +541,7 @@
         "width": "1280",
         "height": "720",
         "url": "../../img/components/nasa-43568.jpg",
-        "alt": "Grey box"
+        "alt": "Looking out of a window inside of a space shuttle, with a view of Earth"
       },
       "article-heading": {
         "level": "3",
@@ -562,6 +567,7 @@
             "width": "233",
             "height": "202",
             "url": "../../img/components/nasa-45068.jpg",
+            "alt": "Surface of the moon from space",
             "caption": "Imagine: life on the moon"
           }
         },
@@ -570,6 +576,7 @@
             "width": "233",
             "height": "202",
             "url": "../../img/components/nasa-43567.jpg",
+            "alt": "Telescope on a space shuttle pointed at the Earth",
             "caption": "A satellite's view"
           }
         },
@@ -578,6 +585,7 @@
             "width": "233",
             "height": "202",
             "url": "../../img/components/nasa-53885.jpg",
+            "alt": "Inside of a space shuttle",
             "caption": "Out-of-this-world space tech"
           }
         }
