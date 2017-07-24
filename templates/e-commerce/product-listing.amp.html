@@ -33,7 +33,7 @@ limitations under the License.
   {{#banner.image}}
     <amp-img class="commerce-listing-banner xs-hide sm-hide" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" alt="{{alt}}"></amp-img>
   {{/banner.image}}
-  <section class="commerce-listing-content mx-auto flex flex-wrap">
+  <section class="commerce-listing-content mx-auto flex flex-wrap pb4">
     {{#filters}}
     <div class="commerce-panel-filled col-3 xs-hide sm-hide flex flex-column">
       <div class="pt4 pr4 self-center">
@@ -44,13 +44,13 @@ limitations under the License.
       </div>
     </div>
 
-    <div class="col-12 md-col-7 px2 pt2 pb3 md-px4 md-pt1 md-pb7">
-      <div class="md-commerce-header relative md-flex flex-wrap items-center mx1 md-mx0 md-mb2">
-        <h1 class="h3 mb1 mt2 md-mt2 md-mb2 md-ml0 flex-auto">Products</h1>
-        <div class="inline-block mr1 mb3 md-mb0">
+    <div class="col-12 md-col-7 pt2 pb3 md-px4 md-pt1 md-pb7">
+      <div class="md-commerce-header relative md-flex flex-wrap items-center md-mx0 md-mb2">
+        <h1 class="h3 mb2 md-mt2 md-mb2 md-ml0 flex-auto px2">Products</h1>
+        <div class="commerce-listing-filters pt2 pb2 mb3 md-mb0">
           {{#categories}} {{> partials/select.snip.html}} {{/categories}}
+          {{#price}} {{> partials/select.snip.html}} {{/price}}
         </div>
-        {{#price}} {{> partials/select.snip.html}} {{/price}}
       </div>
 
       <amp-list class="md-mxn1" [src]="'api/' + products.filter + '-' + products.category + '-products.json'" src="api/high-low-all-products.json" height="500" width="300" layout="responsive">
