@@ -16,6 +16,7 @@
 
  const gulp = require('gulp-help')(require('gulp'));
  const config = require('./config');
+ const path = require('path');
  const source = require('vinyl-source-stream');
  const browserify = require('browserify');
  //https://github.com/babel/babelify
@@ -28,10 +29,19 @@
     entries: entryPoint,
     debug: true
   });
-  
+
    return gulpBrowserify.bundle()
      .pipe(source('bundle.js'))
      .pipe(gulp.dest(config.dest.configurator_app));
  }
 
+ function configuratorCopy() {
+   return gulp.src([
+     path.join(config.src.configurator_app, '/**/*'),
+     path.join(`!${config.src.configurator_app}`, '/**/*.{css,js}')
+   ])
+   .pipe(gulp.dest(config.dest.configurator_app));
+ }
+
  gulp.task('configurator:bundle', 'Bundle dependencies for the configurator using browserify', configuratorBundle);
+ gulp.task('configurator:copy', 'Copy static files to the built configurator directory', configuratorCopy);
