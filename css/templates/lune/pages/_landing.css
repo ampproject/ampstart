@@ -30,12 +30,25 @@
  * Layout & typography
  ******************************************************************************/
 .lune-page-landing {
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.lune-landing-page-wrapper {
   height: auto;
 }
 
 .lune-landing-section {
   height: var(--lune-landing-page-height);
   min-height: var(--lune-landing-page-min-height);
+  /* Required to get the overflow:scroll on .lune-page-landing working */
+  pointer-events: none;
+}
+
+/* As a consequence of setting pointer-events: none, to make CTA tappable/hoverable */
+.lune-page-landing .ampstart-btn {
+  pointer-events: all;
 }
 
 /*
@@ -95,7 +108,7 @@
  * Threshold is 600px, same as --lune-landing-page-height.
  */
 @media (min-height: 28.75rem) {
-  .lune-page-landing {
+  .lune-landing-page-wrapper {
     height: calc(2 * var(--lune-landing-page-height));
   }
 
@@ -105,6 +118,8 @@
 
   .lune-landing-section.lune-theme-dark {
     position: fixed;
+    /* Makes sure that this section doesn't overlap the scrollbar */
+    z-index: -1;
   }
 
   .lune-landing-title-middle {
