@@ -19,7 +19,7 @@
   content: '';
 }
 
-.lune-component-scroll-indicator span {
+.lune-component-scroll-indicator p {
   display: block;
   animation: animate-scroll-text 8s calc(var(--animation-delay-start) * 4) ease-in-out infinite both;
   will-change: transform;
