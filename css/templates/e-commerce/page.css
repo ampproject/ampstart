@@ -151,6 +151,7 @@ dd:after {
 .ampstart-input label,
 .ampstart-input input::placeholder,
 .ampstart-input input[type="text"],
+.ampstart-input input[type="email"],
 textarea {
   font-size: var(--h7);
   font-family: var(--title-font);
@@ -159,7 +160,8 @@ textarea {
   text-transform: uppercase;
 }
 
-.ampstart-input input[type="text"] {
+.ampstart-input input[type="text"],
+.ampstart-input input[type="email"] {
   margin-top: var(--space-3);
 }
 
