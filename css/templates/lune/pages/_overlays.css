@@ -4,6 +4,7 @@
 
 .lune-overlay {
   margin-top: var(--navbar-height);
+  color: var(--color-font-primary);
 }
 
 @media (--breakpoint-mt) {
