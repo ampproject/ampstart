@@ -698,10 +698,6 @@ amp-selector [option][selected] {
 
 
 /** CHECKOUT */
-.commerce-checkout-actions {
-  text-align: center;
-}
-
 .commerce-checkout-steps {
   color: #cdcccd;
 }
