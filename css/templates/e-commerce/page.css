@@ -285,6 +285,8 @@ amp-selector [option][selected] {
 @media (--breakpoint-md) {
   .main {
     margin-top: var(--wide-navbar-height);
+    /* Allows short pages to be at least full height, minus the footer and navbar */
+    min-height: calc(100vh - 181px - var(--wide-navbar-height));
   }
 
   .ampstart-headerbar + *:not(amp-sidebar),
@@ -759,18 +761,15 @@ amp-selector [option][selected] {
 /* RELATED PRODUCTS */
 .commerce-related-products {
   border-top: 1px solid var(--color-separator);
-}
-
-.commerce-related-products amp-carousel {
-  padding-left: 40px;
-  padding-right: 40px;
+  /* Carousel is a maximum width of 5 products plus the equally spaced arrows and padding */
+  max-width: calc(5 * 121px + 4 * var(--space-4));
 }
 
 .commerce-related-products .amp-carousel-button {
   background: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24" fill="#000000"><path d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"/><path d="M0-.5h24v24H0z" fill="none"/></svg>') 30px 30px transparent;
   cursor: pointer;
-  height: 36px;
-  width: 36px;
+  height: 30px;
+  width: 30px;
   top: 40%;
 }
 
