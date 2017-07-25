@@ -44,7 +44,6 @@
   --caps-letter-spacing: 0;
   --content-max-width: 1280px;
   --sidebar-width: 350px;
-  --carousel-image-width: 121px;
   --color-font-secondary: var(--color-font-accent);
   --input-checkbox-radio-size: 15px;
 
@@ -54,5 +53,4 @@
 
   /* Wide custom properties */
   --wide-navbar-height: 5rem;
-  --wide-footer-height: 181px;
 }
