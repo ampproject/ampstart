@@ -106,12 +106,5 @@
 
 .lune-theme-dark .ampstart-btn:hover > span,
 .lune-theme-dark .ampstart-btn:focus > span {
-  color: var(--color-background-dark-narrow);
-}
-
-@media (--breakpoint-mt) {
-  .lune-theme-dark .ampstart-btn:hover > span,
-  .lune-theme-dark .ampstart-btn:focus > span {
-    color: var(--color-background-dark-wide);
-  }
+  color: var(--color-background-dark);
 }

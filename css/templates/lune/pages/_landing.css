@@ -141,7 +141,7 @@
     width: 100%;
     height: 100vh;
     content: '';
-    background-color: var(--color-background-dark-narrow);
+    background-color: var(--color-background-dark);
   }
 
   /* See the comment just above */
@@ -196,10 +196,6 @@
 
   .lune-landing-title-bottom {
     right: calc(50% - var(--lune-landing-title-offset-horizontal-tablet));
-  }
-
-  .lune-landing-page-wrapper::after {
-    background-color: var(--color-background-dark-wide);
   }
 }
 
