@@ -505,6 +505,8 @@ amp-selector [option][selected] {
   .commerce-hero-content-body {
     font-size: var(--h6);
     max-width: none;
+    margin-bottom: var(--space-4);
+    padding-left: var(--space-4);
   }
 
   .commerce-hero-align {
