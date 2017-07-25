@@ -52,6 +52,17 @@
 }
 
 /*
+ * This pseudo-element is used to space evenly the rest of the content in the page,
+ * in combination with the `justify-between` and `flex-column` classes applied on it container
+ */
+.lune-landing-section-wrapper::before {
+  content: '';
+  position: relative;
+  width: 100%;
+  height: 1px;
+}
+
+/*
  * Because amp-img can't be resized in a responsive way through changing its height,
  * we can achieve a similar behaviour by setting the width/max-width of its container
  * in units that depend on the viewport height.
@@ -150,18 +161,8 @@
       height: calc(var(--lune-landing-page-height) / 0.99);
     }
 
-    .lune-landing-content {
+    .lune-landing-section-wrapper {
       position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .lune-page-landing .lune-component-scroll-indicator {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%);
     }
   }
 }
