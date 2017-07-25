@@ -31,7 +31,8 @@
  ******************************************************************************/
 .lune-page-landing {
   height: 100vh;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -123,14 +124,34 @@
     height: calc(2 * var(--lune-landing-page-height));
   }
 
-  .lune-landing-section.lune-theme-light {
+  /*
+   * This pseudo element is used as a background for the Noir section as a fix.
+   * The bug is caused by the Noir section that, being `position: fixed`, would
+   * overlap the scrollbar in most browsers with its background-color. We can't
+   * set a negative z-index on the Noir section either, as it would prevent pointer
+   * events from working on the CTA button.
+   * The fix is to set the background-color for the Noir section to transparent
+   * and use this pseudo element instead.
+   */
+  .lune-landing-page-wrapper::after {
+    z-index: -1;
     position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    content: '';
+    background-color: var(--color-background-dark-narrow);
   }
 
+  /* See the comment just above */
   .lune-landing-section.lune-theme-dark {
     position: fixed;
-    /* Makes sure that this section doesn't overlap the scrollbar */
-    z-index: -1;
+    background-color: transparent;
+  }
+
+  .lune-landing-section.lune-theme-light {
+    position: absolute;
   }
 
   .lune-landing-title-middle {
@@ -175,6 +196,10 @@
 
   .lune-landing-title-bottom {
     right: calc(50% - var(--lune-landing-title-offset-horizontal-tablet));
+  }
+
+  .lune-landing-page-wrapper::after {
+    background-color: var(--color-background-dark-wide);
   }
 }
 
