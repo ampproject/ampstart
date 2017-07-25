@@ -22,12 +22,16 @@ module.exports = {
       '!templates/**/partials/**/*.html'
     ],
     templateApi: 'templates/*/api/*.json',
-    www_pages: 'www/**/*.html',
+    www_pages: [
+      'www/**/*.html',
+      '!www/configurator/**/*.html'
+    ],
     hl_partials: 'hl-partials/**/*.html',
     css: ['css/**/*.css'],
     css_ignore: ['!css/**/_*.css', '!css/ampstart-base/**/*.css'],
     data: ['*/**/*.json', '!templates/*/data/*.json'],
     img: 'img/**',
+    configurator_app: 'www/configurator/src',
   },
   dest: {
     default: 'dist',

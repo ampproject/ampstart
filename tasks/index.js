@@ -19,4 +19,5 @@ require('./highlight');
 require('./escape');
 require('./countCss');
 require('./configurator');
+require('./configuratorBundle');
 require('./bundle');
