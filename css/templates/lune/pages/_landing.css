@@ -99,6 +99,10 @@
     height: calc(2 * var(--lune-landing-page-height));
   }
 
+  .lune-landing-section.lune-theme-light {
+    position: absolute;
+  }
+
   .lune-landing-section.lune-theme-dark {
     position: fixed;
   }
