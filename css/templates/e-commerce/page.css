@@ -285,6 +285,7 @@ amp-selector [option][selected] {
 @media (--breakpoint-md) {
   .main {
     margin-top: var(--wide-navbar-height);
+    /* Allows short pages to be at least full height, minus the footer and navbar */
     min-height: calc(100vh - 181px - var(--wide-navbar-height));
   }
 
@@ -760,6 +761,7 @@ amp-selector [option][selected] {
 /* RELATED PRODUCTS */
 .commerce-related-products {
   border-top: 1px solid var(--color-separator);
+  /* Carousel is a maximum width of 5 products plus the equally spaced arrows and padding */
   max-width: calc(5 * 121px + 4 * var(--space-4));
 }
 
