@@ -13,8 +13,8 @@
       {
         "hero": {
           "text-theme": "secondary",
-          "title": "latest products",
-          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "title": "The Essentials",
+          "body": "These are the key frames, clothing and accessories every rider needs.",
           "link": {
             "url": "product-listing.amp.html",
             "text": "shop"
@@ -23,8 +23,8 @@
             {
               "image": {
                 "url": "../../img/e-commerce/narrow-landing-01.jpg",
-                "width": 737,
-                "height": 563,
+                "width": 750,
+                "height": 573,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }
@@ -44,8 +44,8 @@
       {
         "hero": {
           "text-theme": "primary",
-          "title": "lost highways",
-          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "title": "Lost Highways",
+          "body": "Go the distance and discover new levels of endurance along the way. Explore the world’s 10 toughest randonnées.",
           "link": {
             "url": "blog-listing.amp.html",
             "text": "read"
@@ -54,8 +54,8 @@
             {
               "image": {
                 "url": "../../img/e-commerce/narrow-landing-02.jpg",
-                "width": 737,
-                "height": 563,
+                "width": 750,
+                "height": 573,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }
@@ -75,8 +75,8 @@
       {
         "hero": {
           "text-theme": "secondary",
-          "title": "highland",
-          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "title": "Highland 3 Series",
+          "body": "The steel-framed complete bike that combines peerless performance with timeless style.",
           "link": {
             "url": "product-listing.amp.html",
             "text": "shop"
@@ -85,8 +85,8 @@
             {
               "image": {
                 "url": "../../img/e-commerce/narrow-landing-03.jpg",
-                "width": 737,
-                "height": 563,
+                "width": 750,
+                "height": 573,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }
@@ -106,8 +106,8 @@
       {
         "hero": {
           "text-theme": "primary",
-          "title": "no sleep 'til brooklyn",
-          "body": "Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.",
+          "title": "No Sleep 'til Brooklyn",
+          "body": "Early mornings, black coffee, carbs. We spend a week on the road with New York's Five Borough Cycle Club.",
           "link": {
             "url": "blog-listing.amp.html",
             "text": "read"
@@ -116,8 +116,8 @@
             {
               "image": {
                 "url": "../../img/e-commerce/narrow-landing-04.jpg",
-                "width": 737,
-                "height": 563,
+                "width": 750,
+                "height": 573,
                 "media": "(max-width: 52.06rem)",
                 "alt": "Hero Landing 1"
               }

@@ -18,7 +18,7 @@ limitations under the License.
 <html ⚡>
 {{#header}} {{> ../../utils/amp-page-head.snip.html}} {{/header}}
 
-<body>
+<body [class]="cart.added ? 'commerce-cart-added' : ''">
   {{#header}}{{> ../../components/navbar/navbar.snip.html}} {{/header}} {{#main}}
   <amp-state id="cart">
     <script type="application/json">
@@ -27,7 +27,7 @@ limitations under the License.
       }
     </script>
   </amp-state>
-  <main id="content" role="main" class="main" [class]="cart.added ? 'main commerce-cart-added' : 'main'">
+  <main id="content" role="main" class="main">
     {{#product-details}}
     <amp-state id="product">
       <script type="application/json">

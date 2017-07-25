@@ -25,7 +25,12 @@ limitations under the License.
     <ul class="list-reset m0 p0 ampstart-label">
       {{#sidebarimage}}
         <li>
+          {{#svg}}
+            <div class="ampstart-sidebar-nav-image {{classes}}">{{{.}}}</div>
+          {{/svg}}
+          {{^svg}}
           <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="responsive" class="ampstart-sidebar-nav-image {{classes}}" alt="{{alt}}"></amp-img>
+          {{/svg}}
         </li>
       {{/sidebarimage}}
       {{#nav}}
