@@ -50,12 +50,22 @@
         "label": "Sizes",
         "commerce-select": {
           "placeholder": "Select a size: ",
-          "options": [
-            "61cm",
-            "62cm",
-            "63cm",
-            "64cm"
-          ],
+          "options": [{
+            "value": "61cm",
+            "text": "62cm"
+          },
+          {
+            "value": "63cm",
+            "text": "63cm"
+          },
+          {
+            "value": "64cm",
+            "text": "64cm"
+          },
+          {
+            "value": "65cm",
+            "text": "65cm"
+          }],
           "id": "sizes",
           "name": "sizes"
         }
@@ -147,6 +157,14 @@
           "review": "Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna."
         }
       ]
+    }
+  },
+  "cart": {
+    "item": {
+      "spacing-classes": "m0 p2"
+    },
+    "header": {
+      "classes": "display-none"
     }
   }
 }
