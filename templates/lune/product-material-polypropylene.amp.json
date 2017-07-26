@@ -15,7 +15,7 @@
         "cta": {
           "text": "Meet the makers",
           "href": "#",
-          "classes": "lune-anim-move-up"
+          "classes": "lune-anim-move-up lune-theme-light lune-transparent"
         },
         "image": {
           "mobile": {
@@ -89,7 +89,7 @@
         "cta": {
           "text": "Visit us",
           "href": "store.amp.html",
-          "classes": "my2"
+          "classes": "my2 lune-theme-light lune-transparent"
         }
       },
       "scroll-indicator": {

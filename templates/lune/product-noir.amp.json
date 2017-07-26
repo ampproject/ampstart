@@ -115,7 +115,7 @@
             "hotspots": [{
               "text": "More",
               "url": "product-material-oak.html",
-              "classes": "lune-product-hotspot-oak"
+              "classes": "lune-product-hotspot-oak lune-theme-light"
             }]
           }]
         }, {
@@ -145,7 +145,7 @@
             "hotspots": [{
               "text": "More",
               "url": "product-material-polypropylene.html",
-              "classes": "lune-product-hotspot-poly"
+              "classes": "lune-product-hotspot-poly lune-theme-light"
             }]
           }]
         }],
@@ -161,7 +161,8 @@
       },
       "cta": {
         "href": "store.amp.html",
-        "text": "Visit us"
+        "text": "Visit us",
+        "classes": "lune-theme-dark lune-transparent"
       },
       "product-toggle": {
         "text": "To Blanc",
