@@ -3,17 +3,11 @@
 ///////////////////////////////////////////////////////*/
 
 .lune-overlay {
-  margin-top: var(--navbar-height);
   color: var(--color-font-primary);
 }
 
-@media (--breakpoint-mt) {
-  .lune-overlay {
-    margin-top: var(--wide-navbar-height);
-  }
-}
-
 .lune-overlay-close {
+  top: var(--navbar-height);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -23,6 +17,12 @@
   letter-spacing: 0;
   font-size: var(--h6);
   padding: 0;
+}
+
+@media (--breakpoint-mt) {
+  .lune-overlay-close {
+    top: var(--wide-navbar-height);
+  }
 }
 
 .lune-overlay-hero {
