@@ -6,7 +6,6 @@
 .ampstart-btn {
   min-width: 14em;
   padding: 1.2em 1.6em;
-  background: transparent;
   letter-spacing: var(--letter-spacing-3);
   font-weight: 700;
   /* Force a new GPU layer — fixes some glitches */
@@ -99,12 +98,41 @@
 	}
 }
 
-.lune-theme-dark .ampstart-btn::before,
-.lune-theme-dark .ampstart-btn::after {
+.lune-theme-dark.ampstart-btn {
+  background-color: var(--color-font-primary);
+  color: var(--color-light-1);
+}
+
+.lune-theme-light.ampstart-btn {
+  background-color: var(--color-light-1);
+  color: var(--color-font-primary);
+}
+
+.lune-theme-dark.ampstart-btn::before,
+.lune-theme-dark.ampstart-btn::after {
   background-color: var(--color-light-1);
 }
 
-.lune-theme-dark .ampstart-btn:hover > span,
-.lune-theme-dark .ampstart-btn:focus > span {
-  color: var(--color-background-dark);
+.lune-theme-dark.ampstart-btn:hover > span,
+.lune-theme-dark.ampstart-btn:focus > span {
+  color: var(--color-font-primary);
+}
+
+.lune-theme-light.ampstart-btn {
+  background-color: var(--color-light-1);
+  color: var(--color-font-primary);
+}
+
+.lune-theme-light.ampstart-btn::before,
+.lune-theme-light.ampstart-btn::after {
+  background-color: var(--color-font-primary);
+}
+
+.lune-theme-light.ampstart-btn:hover > span,
+.lune-theme-light.ampstart-btn:focus > span {
+  color: var(--color-light-1);
+}
+
+.lune-transparent.ampstart-btn {
+  background-color: transparent;
 }
