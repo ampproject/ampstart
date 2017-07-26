@@ -105,6 +105,7 @@
             "image-parallax-factor": "0.9",
             "hotspots": []
           }, {
+            "id": "oak",
             "alt": "Oak",
             "webp_srcset": "../../img/lune/product-materials-noir-oak-2@1x.webp, ../../img/lune/product-materials-noir-oak-2@2x.webp 2x",
             "fallback_srcset": "../../img/lune/product-materials-noir-oak-2@1x.jpg, ../../img/lune/product-materials-noir-oak-2@2x.jpg 2x",
@@ -135,6 +136,7 @@
             ]
           },
           "images": [{
+            "id": "polypropylene",
             "alt": "Polypropylene",
             "webp_srcset": "../../img/lune/product-materials-noir-poly@1x.webp, ../../img/lune/product-materials-noir-poly@2x.webp 2x",
             "fallback_srcset": "../../img/lune/product-materials-noir-poly@1x.jpg, ../../img/lune/product-materials-noir-poly@2x.jpg 2x",
