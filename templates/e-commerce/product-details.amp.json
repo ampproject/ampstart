@@ -148,5 +148,13 @@
         }
       ]
     }
+  },
+  "cart": {
+    "header": {
+      "responsive-layout-classes": "display-none"
+    },
+    "item": {
+      "classes": "m0 p2"
+    }
   }
 }
