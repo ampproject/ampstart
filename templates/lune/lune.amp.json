@@ -17,7 +17,8 @@
         "webp_srcset": "../../img/lune/landing-hero-blanc@1x.webp, ../../img/lune/landing-hero-blanc@2x.webp 2x",
         "fallback_srcset": "../../img/lune/landing-hero-blanc@1x.png, ../../img/lune/landing-hero-blanc@2x.png 2x",
         "width": 1,
-        "height": 1.37
+        "height": 1.37,
+        "placeholder_classes": "lune-theme-light"
       },
       "product_name_split": ["b", "l", "a", "n", "c"],
       "cta": {
@@ -37,7 +38,8 @@
         "webp_srcset": "../../img/lune/landing-hero-noir@1x.webp, ../../img/lune/landing-hero-noir@2x.webp 2x",
         "fallback_srcset": "../../img/lune/landing-hero-noir@1x.png, ../../img/lune/landing-hero-noir@2x.png 2x",
         "width": 1,
-        "height": 1.37
+        "height": 1.37,
+        "placeholder_classes": "lune-theme-dark"
       },
       "product_name_split": ["n", "o", "i", "r"],
       "cta": {
