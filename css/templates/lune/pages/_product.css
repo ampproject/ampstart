@@ -11,7 +11,7 @@
 }
 
 /* Set medium resolution make each section a minimum height of 100vh */
-@media (--breakpoint-md) {
+@media (--breakpoint-mt) {
   .lune-product-section {
     min-height: calc(100vh - var(--wide-navbar-height));
   }

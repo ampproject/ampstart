@@ -16,8 +16,15 @@
   letter-spacing: 0;
   /* Position the chapter vertically in the centre */
   position: absolute;
-  top: 50%;
+  top: calc((100% - var(--navbar-height)) / 2);
   transform: translateY(-50%);
+}
+
+@media (--breakpoint-mt) {
+  .lune-chapter-name,
+  .lune-chapter-number {
+    top: calc((100% - var(--wide-navbar-height)) / 2);
+  }
 }
 
 .lune-chapter-name span:not(:last-child) {
