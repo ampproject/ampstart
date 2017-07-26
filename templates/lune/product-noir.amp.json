@@ -105,6 +105,7 @@
             "image-parallax-factor": "0.9",
             "hotspots": []
           }, {
+            "id": "oak",
             "alt": "Oak",
             "webp_srcset": "../../img/lune/product-materials-noir-oak-2@1x.webp, ../../img/lune/product-materials-noir-oak-2@2x.webp 2x",
             "fallback_srcset": "../../img/lune/product-materials-noir-oak-2@1x.jpg, ../../img/lune/product-materials-noir-oak-2@2x.jpg 2x",
@@ -114,8 +115,8 @@
             "image-parallax-factor": "1.1",
             "hotspots": [{
               "text": "More",
-              "url": "product-material-oak.html",
-              "classes": "lune-product-hotspot-oak"
+              "url": "product-material-oak-noir.amp.html",
+              "classes": "lune-product-hotspot-oak lune-theme-light"
             }]
           }]
         }, {
@@ -135,6 +136,7 @@
             ]
           },
           "images": [{
+            "id": "polypropylene",
             "alt": "Polypropylene",
             "webp_srcset": "../../img/lune/product-materials-noir-poly@1x.webp, ../../img/lune/product-materials-noir-poly@2x.webp 2x",
             "fallback_srcset": "../../img/lune/product-materials-noir-poly@1x.jpg, ../../img/lune/product-materials-noir-poly@2x.jpg 2x",
@@ -144,8 +146,8 @@
             "image-parallax-factor": "1.2",
             "hotspots": [{
               "text": "More",
-              "url": "product-material-polypropylene.html",
-              "classes": "lune-product-hotspot-poly"
+              "url": "product-material-polypropylene-noir.amp.html",
+              "classes": "lune-product-hotspot-poly lune-theme-light"
             }]
           }]
         }],
@@ -161,7 +163,8 @@
       },
       "cta": {
         "href": "store.amp.html",
-        "text": "Visit us"
+        "text": "Visit us",
+        "classes": "lune-theme-dark lune-transparent"
       },
       "product-toggle": {
         "text": "To Blanc",

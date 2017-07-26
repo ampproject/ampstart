@@ -46,8 +46,8 @@
   /* Backgrounds */
   --color-background-dark: var(--color-dark-grey-1);
   --color-background-light: var(--color-light-1);
-  --color-overlay-1: var(--color-light-1);
-  --color-overlay-2: var(--color-light-2);
+  --color-overlay-oak: #fcefef;
+  --color-overlay-polypropylene: #f9f9f9;
 
   /* Foregrounds */
   --color-font-primary: var(--color-dark-grey-1);
