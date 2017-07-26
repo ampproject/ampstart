@@ -224,7 +224,8 @@ amp-selector [option][selected] {
 
 @media (--breakpoint-md) {
   .commerce-side-panel {
-    background-color: var(--color-panel);
+    position: sticky;
+    top: calc(var(--navbar-height) + var(--space-2));
   }
 
   .md-commerce-header {
@@ -286,7 +287,6 @@ amp-selector [option][selected] {
 
 /* HEADER */
 .main {
-  overflow: hidden;
   margin-top: var(--navbar-height);
 }
 
