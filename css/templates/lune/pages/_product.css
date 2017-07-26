@@ -11,7 +11,7 @@
 }
 
 /* Set medium resolution make each section a minimum height of 100vh */
-@media (--breakpoint-md) {
+@media (--breakpoint-mt) {
   .lune-product-section {
     min-height: calc(100vh - var(--wide-navbar-height));
   }
@@ -201,13 +201,13 @@
 }
 
 .lune-theme-light .lune-product-hotspot {
-  background-color: var(--color-background-dark-narrow);
+  background-color: var(--color-background-dark);
   color: var(--color-light-1);
 }
 
 .lune-theme-dark .lune-product-hotspot {
   background-color: var(--color-light-1);
-  color: var(--color-background-dark-narrow);
+  color: var(--color-background-dark);
 }
 
 .lune-theme-light .lune-product-hotspot::before,
@@ -217,12 +217,12 @@
 
 .lune-theme-light .lune-product-hotspot:hover > span,
 .lune-theme-light .lune-product-hotspot:focus > span {
-  color: var(--color-background-dark-narrow);
+  color: var(--color-background-dark);
 }
 
 .lune-theme-dark .lune-product-hotspot::before,
 .lune-theme-dark .lune-product-hotspot::after {
-  background-color: var(--color-background-dark-narrow);
+  background-color: var(--color-background-dark);
 }
 
 .lune-theme-dark .lune-product-hotspot:hover > span,
