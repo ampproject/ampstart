@@ -631,7 +631,7 @@ amp-selector [option][selected] {
 
 @media (--breakpoint-md) {
   .commerce-cart-notification {
-    top: 4rem;
+    top: calc(var(--wide-navbar-height) - var(--space-2));
     width: auto;
   }
 

@@ -10,7 +10,7 @@
   },
   "cart": {
     "item": {
-      "classes": "mx2 mb2 md-mx4 md-mt3 md-pb3"
+      "spacing-classes": "mx2 mb2 md-mx4 md-mt3 md-pb3"
     }
   },
   "related-products": {

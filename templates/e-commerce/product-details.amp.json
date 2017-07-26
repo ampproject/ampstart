@@ -150,11 +150,11 @@
     }
   },
   "cart": {
-    "header": {
-      "responsive-layout-classes": "display-none"
-    },
     "item": {
-      "classes": "m0 p2"
+      "spacing-classes": "m0 p2"
+    },
+    "header": {
+      "classes": "display-none"
     }
   }
 }
