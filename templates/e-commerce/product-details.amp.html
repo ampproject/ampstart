@@ -20,6 +20,7 @@ limitations under the License.
 
 <body [class]="cart.added ? 'commerce-cart-added' : ''">
   {{#header}}{{> ../../components/navbar/navbar.snip.html}} {{/header}} {{#main}}
+
   <amp-state id="cart">
     <script type="application/json">
       {
@@ -27,7 +28,16 @@ limitations under the License.
       }
     </script>
   </amp-state>
+
   <main id="content" role="main" class="main">
+    <div class="commerce-cart-notification fixed col-12 right-0 mx0 md-mx2">
+      {{> partials/cart-items.snip.html}}
+      <div class="flex p2 mxn1">
+        <a href="#" class="ampstart-btn ampstart-btn-secondary caps center col col-6 mx1">send</a>
+        <a href="checkout.amp.html" class="ampstart-btn caps center col col-6 mx1">checkout</a>
+      </div>
+    </div>
+
     {{#product-details}}
     <amp-state id="product">
       <script type="application/json">

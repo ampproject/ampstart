@@ -153,11 +153,11 @@
         "thumbnail": "../../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Product 2",
-        "description": "Mauris tincidunt justo convallis.",
-        "price": "349",
+        "name": "Bike 1",
+        "description": "Donec id elit non mi porta gravida at eget metus.",
+        "price": "470",
         "quantity": 1,
-        "thumbnail": "../../../img/e-commerce/product/product-9.jpg"
+        "thumbnail": "../../../img/e-commerce/product/product-1.jpg"
       }
     ]
   },

@@ -158,5 +158,13 @@
         }
       ]
     }
+  },
+  "cart": {
+    "item": {
+      "spacing-classes": "m0 p2"
+    },
+    "header": {
+      "classes": "display-none"
+    }
   }
 }
