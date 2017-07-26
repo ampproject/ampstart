@@ -30,55 +30,53 @@ limitations under the License.
     </div>
 
     <!-- Landing page -->
-    <main role="main" class="lune-page lune-page-landing">
+    <main role="main" class="lune-page lune-page-landing relative">
+      <div class="lune-landing-page-wrapper relative">
       {{#landing-sections}}
         <!-- Landing section -->
-        <section class="lune-landing-section top-0 left-0 right-0 {{classes}}">
-          <div class="lune-landing-wrapper absolute top-0 left-0 bottom-0 right-0 flex flex-column items-center justify-center">
+        <section class="lune-landing-section relative top-0 left-0 right-0 {{classes}}">
+          <div class="lune-landing-section-wrapper absolute top-0 left-0 bottom-0 right-0 flex flex-column items-center justify-between">
             <!-- Used by screen reader / document outline, not visible -->
             <h2 class="hide">{{full_title}}</h2>
-            <div class="lune-landing-content relative flex items-center justify-center flex-auto mb2">
-              <figure class="lune-landing-image-wrapper relative col-12 m0">
-                <!-- Chair image -->
-                {{#product_image}}
-                  <!-- WebP image -->
-                  <amp-img
-                    class="lune-anim-scale-up z1"
-                    alt="{{alt}}"
-                    srcset="{{webp_srcset}}"
-                    width="{{width}}"
-                    height="{{height}}"
-                    layout="responsive">
-                      <!-- PNG Fallback -->
-                      <amp-img
-                        fallback
-                        class="lune-anim-scale-up z1"
-                        alt="{{alt}}"
-                        srcset="{{fallback_srcset}}"
-                        width="{{width}}"
-                        height="{{height}}"
-                        layout="responsive">
-                      </amp-img>
-                  </amp-img>
-                {{/product_image}}
-                <!-- Product name -->
-                <span class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
-                <!-- LU- -->
-                <span class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">lu-</span>
-                <!-- -NE -->
-                <span class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">-ne</span>
-              </figure>
-              <!-- Dictover CTA -->
-              <div class="absolute bottom-0 left-0 right-0 center z1 flex justify-center">
-                {{> partials/components/cta.snip.html}}
-              </div>
-            </div>
+            <figure class="lune-landing-content relative col-12 m0 flex-none">
+              <!-- Chair image -->
+              {{#product_image}}
+                <!-- WebP image -->
+                <amp-img
+                  class="lune-anim-scale-up z1"
+                  alt="{{alt}}"
+                  srcset="{{webp_srcset}}"
+                  width="{{width}}"
+                  height="{{height}}"
+                  layout="responsive">
+                    <!-- PNG Fallback -->
+                    <amp-img
+                      fallback
+                      class="lune-anim-scale-up z1"
+                      alt="{{alt}}"
+                      srcset="{{fallback_srcset}}"
+                      width="{{width}}"
+                      height="{{height}}"
+                      layout="responsive">
+                    </amp-img>
+                </amp-img>
+              {{/product_image}}
+              <!-- Product name -->
+              <span class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
+              <!-- LU- -->
+              <span class="lune-landing-title-top lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">lu-</span>
+              <!-- -NE -->
+              <span class="lune-landing-title-bottom lune-anim-move-up absolute inline-block z1 caps" aria-hidden="true">-ne</span>
+            </figure>
+            <!-- Dictover CTA -->
+            {{> partials/components/cta.snip.html}}
             <!-- Scroll indicator -->
             {{> partials/components/scroll-indicator.snip.html}}
           </div>
         </section>
 
       {{/landing-sections}}
+      </div>
     </main>
   </body>
 </html>

@@ -44,7 +44,9 @@
         "classes": "lune-anim-move-up col-12"
       },
       "chapter": {
-        "name": ["Store"]
+        "name": {
+          "parts": ["Store"]
+        }
       }
     }
   }

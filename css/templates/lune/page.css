@@ -18,6 +18,7 @@ one file.
 @import 'basscss-addons/modules/responsive-margin';
 @import 'basscss-addons/modules/responsive-padding';
 @import 'basscss-addons/modules/responsive-type-scale';
+@import '../../ampstart-base/bass-override-vars';
 @import '../../../components/images/images';
 @import '../../../components/navbar/navbar';
 @import 'page-vars';
