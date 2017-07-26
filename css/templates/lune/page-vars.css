@@ -39,14 +39,12 @@
 
   /* Colours */
   --color-dark-grey-1: #202125;
-  --color-dark-grey-2: #33353c;
 
   --color-light-1: #fff;
   --color-light-2: #f9f9f9;
 
   /* Backgrounds */
-  --color-background-dark-narrow: var(--color-dark-grey-1);
-  --color-background-dark-wide: var(--color-dark-grey-2);
+  --color-background-dark: var(--color-dark-grey-1);
   --color-background-light: var(--color-light-1);
   --color-overlay-1: var(--color-light-1);
   --color-overlay-2: var(--color-light-2);
