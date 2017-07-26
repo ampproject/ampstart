@@ -45,7 +45,7 @@
  */
 .lune-chapter-number {
   right: calc(((100% - 100vw) / 2) + 30px);
-  height: 5.56em;
+  height: 5em;
 }
 
 /* Fraction bar */
