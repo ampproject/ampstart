@@ -18,7 +18,7 @@ limitations under the License.
 <html ⚡ lang="en">
 {{#header}} {{> ../../utils/amp-page-head.snip.html}} {{/header}}
 
-<body>
+<body [class]="cart.added ? 'commerce-cart-added' : ''">
   {{#header}}{{> ../../components/navbar/navbar.snip.html}} {{/header}} {{#main}}
 
   <amp-state id="cart">
@@ -28,7 +28,8 @@ limitations under the License.
       }
     </script>
   </amp-state>
-  <main id="content" role="main" class="main" [class]="cart.added ? 'main commerce-cart-added' : 'main'">
+
+  <main id="content" role="main" class="main">
     <div class="commerce-cart-notification fixed col-12 right-0 mx0 md-mx2">
       {{> partials/cart-items.snip.html}}
       <div class="flex p2 mxn1">
@@ -104,7 +105,7 @@ limitations under the License.
         </div>
         <hr class="mb4" />
         <div class="col-6 self-start pb4">
-          <span class="h6 align-top pr2">colour:</span>
+          <span class="h6 md-h7 align-top pr2">colour:</span>
           <amp-selector class="inline-block" name="color" layout="container" [selected]="product.selectedColor" on="select:AMP.setState({
                               product: {
                                 selectedColor: event.targetOption

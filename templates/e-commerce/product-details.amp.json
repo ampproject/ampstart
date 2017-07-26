@@ -50,12 +50,22 @@
         "label": "Sizes",
         "commerce-select": {
           "placeholder": "Select a size: ",
-          "options": [
-            "61cm",
-            "62cm",
-            "63cm",
-            "64cm"
-          ],
+          "options": [{
+            "value": "61cm",
+            "text": "62cm"
+          },
+          {
+            "value": "63cm",
+            "text": "63cm"
+          },
+          {
+            "value": "64cm",
+            "text": "64cm"
+          },
+          {
+            "value": "65cm",
+            "text": "65cm"
+          }],
           "id": "sizes",
           "name": "sizes"
         }

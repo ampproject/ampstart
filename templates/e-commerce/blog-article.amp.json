@@ -3,8 +3,7 @@
     "head-tag": {
       "canonical-path": "templates/e-commerce/blog.amp",
       "extensions": [
-        "amp-sidebar",
-        "amp-ad"
+        "amp-sidebar"
       ]
     }
   }

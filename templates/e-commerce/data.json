@@ -21,7 +21,7 @@
       "logo": {
         "url": "../../img/e-commerce/logo.png",
         "width": 96,
-        "height": 28,
+        "height": 27,
         "spacing-classes": "mb1 md-mb0"
       },
       "fixeditems-layout-classes": "absolute top-0 right-0 pt2 pr3",
@@ -279,15 +279,15 @@
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/product-1.jpg"
+        "image": "../../img/e-commerce/product/product-10.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/product-2.jpg"
+        "image": "../../img/e-commerce/product/product-11.jpg"
       },
       {
         "name": "Product Name",
-        "image": "../../img/e-commerce/product/product-3.jpg"
+        "image": "../../img/e-commerce/product/product-12.jpg"
       }
     ]
   }
