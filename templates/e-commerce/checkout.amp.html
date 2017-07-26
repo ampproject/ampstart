@@ -20,18 +20,25 @@ limitations under the License.
 {{#header}} {{> ../../utils/amp-page-head.snip.html}}
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
-
-  <main id="content" role="main" class="main flex flex-wrap pb3">
+  <amp-state id="cart">
+    <script type="application/json">
+      {
+        "total": 723,
+        "shipping": 0
+      }
+    </script>
+  </amp-state>
+  <main id="content" role="main" class="main commerce-checkout flex flex-wrap pb3">
     <section class="pt2 pb3 md-px4 md-pt4 md-pb7 col-12 md-col-8 md-px2">
       <h1 class="h3 mb2 px2">Checkout</h1>
-      <ul class="list-reset flex flex-wrap justify-around h7 commerce-checkout-steps pt2 pb2 md-ml2">
+      <ul class="list-reset flex flex-wrap justify-between h7 commerce-checkout-steps px2 pt2 pb2 md-ml2 md-px0">
         <li><h2 class="h7">Shipping</h2></li>
         <li>Billing</li>
         <li>Payment</li>
         <li>Confirmation</li>
       </ul>
       <hr class="xs-hide sm-hide mt2 mb1 ml2"/>
-      <div class="px2 md-mt3">
+      <div class="px2 mt4 md-mt3">
         <h3 class="h5 mb2">Delivery</h3>
         {{#checkout}}
           <div class="flex flex-wrap mxn2">
@@ -47,7 +54,6 @@ limitations under the License.
                 {{#delivery-method}}
                   {{> ../../components/inputs/inputs.snip.html}}
                 {{/delivery-method}}
-                <a href="checkout-success.amp.html" class="ampstart-btn ampstart-btn-secondary caps mt3">Continue</a>
               </div>
             </div>
           </div>
@@ -56,6 +62,9 @@ limitations under the License.
       <hr class="xs-hide sm-hide mt2 ml2"/>
       <div class="mt2 px2">
         {{> partials/cart-items.snip.html}}
+        <div class="commerce-checkout-actions center">
+          <a href="checkout-success.amp.html" class="ampstart-btn ampstart-btn-secondary caps mt3">Continue</a>
+        </div>
       </div>
     </section>
     {{> partials/cart-summary.snip.html}}

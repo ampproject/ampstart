@@ -4,12 +4,24 @@
     <dt class="col-10">Subtotal</dt>
     <dd class="m0 col-2 pb1 right-align">&#163;698</dd>
     <dt class="col-10 pb1">Shipping</dt>
-    <dd class="m0 col-2 pb1 right-align">&#163;25</dd>
+    {{#cart.dynamic}}
+      <dd class="m0 col-2 pb1 right-align" [text]="'£' + cart.shipping">&#163;0</dd>
+    {{/cart.dynamic}}
+    {{^cart.dynamic}}
+      <dd class="m0 col-2 pb1 right-align">&#163;30</dd>
+    {{/cart.dynamic}}
     <dt class="commerce-cart-total col-10 pt2 pb2 bold mt3 mb2">Total</dt>
-    <dd class="commerce-cart-total m0 col-2 pt2 pb2 right-align bold mt3 mb2">&#163;723</dd>
+    {{#cart.dynamic}}
+      <dd class="commerce-cart-total m0 col-2 pt2 pb2 right-align bold mt3 mb2" [text]="'£' + cart.total">&#163;723</dd>
+    {{/cart.dynamic}}
+    {{^cart.dynamic}}
+      <dd class="commerce-cart-total m0 col-2 pt2 pb2 right-align bold mt3 mb2">&#163;753</dd>
+    {{/cart.dynamic}}
   </dl>
   <p class="pb3">Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.</p>
+  {{#cart.showCartActions}}
   <div class="commerce-cart-actions center">
     <a href="checkout.amp.html" class="ampstart-btn ampstart-btn-secondary caps">checkout</a>
   </div>
+  {{/cart.showCartActions}}
 </section>
