@@ -21,7 +21,7 @@
   --h4: 1.38rem;
   --h5: 1.125rem;
   --h6: 1rem;
-  --h7: .875rem;
+  --h7: .94rem;
 
   --space-5: 2.5rem;
   --space-6: 3rem;
@@ -33,7 +33,7 @@
   --color-secondary: #666;
   --color-font-default: var(--color-primary);
   --color-table-border: #e9e9e9;
-  --color-separator: #dadada;
+  --color-separator: #f3f3f3;
   --color-panel: #fcfcfb;
   --color-input-primary: var(--color-primary);
   --color-input-secondary: var(--color-white);

@@ -3,7 +3,8 @@
     "head-tag": {
       "canonical-path": "templates/e-commerce/checkout.amp",
       "extensions": [
-        "amp-sidebar"
+        "amp-sidebar",
+        "amp-bind"
       ]
     }
   },
@@ -72,19 +73,23 @@
           "name": "delivery-method",
           "id": "standard",
           "label": "Standard (arrives in 2-3 days) - FREE",
-          "checked": "checked"
+          "checked": "checked",
+          "on": "change:AMP.setState({cart: {total: 723, shipping: 0}})"
         },
         {
           "name": "delivery-method",
           "id": "express",
-          "label": "Express (arrives next day) - £30"
+          "label": "Express (arrives next day) - £30",
+          "on": "change:AMP.setState({cart: {total: 753, shipping: 30}})"
         }
       ]
     }
   },
   "cart": {
     "header": {
-      "responsive-layout-classes": "xs-hide sm-hide"
-    }
+      "responsive-layout-classes": "xs-hide sm-hide",
+      "classes": "h5"
+    },
+    "dynamic": true
   }
 }
