@@ -139,11 +139,6 @@ dd:after {
   color: var(--color-secondary);
 }
 
-.ampstart-input-radio {
-  display: block;
-  margin-bottom: var(--space-1);
-}
-
 .ampstart-input {
   width: 100%;
 }
@@ -165,13 +160,6 @@ textarea {
   margin-top: var(--space-3);
 }
 
-.ampstart-input-radio label {
-  font-family: var(--font-family);
-  font-weight: initial;
-  text-transform: none;
-  color: var(--color-secondary);
-}
-
 .ampstart-input > label::after {
   height: 1px;
   background: var(--color-separator);
@@ -182,8 +170,17 @@ textarea {
   border-bottom: 1px dashed var(--color-separator);
 }
 
+.ampstart-input-radio {
+  display: block;
+  margin-bottom: var(--space-1);
+}
+
 .ampstart-input-radio label {
-  font-size: var(--h6);
+  font-family: var(--font-family);
+  font-weight: initial;
+  text-transform: none;
+  color: var(--color-primary);
+  font-size: var(--h7);
 }
 
 .ampstart-btn {
@@ -413,6 +410,13 @@ amp-selector [option][selected] {
   top: 0;
 }
 
+@media (--breakpoint-md) {
+  .ampstart-sidebar .ampstart-navbar-trigger {
+    margin-top: var(--space-1);
+    padding-top: 0;
+  }
+}
+
 .ampstart-nav {
   margin-bottom: var(--space-4);
 }
@@ -560,7 +564,7 @@ amp-selector [option][selected] {
 .icon-star-empty {
   height: 14px;
   width: 14px;
-  color: var(--color-font-accent);
+  color: #f9ab00;
 }
 
 .icon-star-empty {
@@ -722,6 +726,10 @@ amp-selector [option][selected] {
   display: none;
 }
 
+.commerce-checkout .commerce-cart-item {
+  margin-left: 0;
+}
+
 /* CART */
 .commerce-cart-icon {
   color: var(--color-font-accent);
@@ -764,6 +772,7 @@ amp-selector [option][selected] {
   border-top: none;
 }
 
+
 @media (--breakpoint-md) {
   .commerce-cart-item {
     border-bottom: 1px solid var(--color-separator);
@@ -776,18 +785,12 @@ amp-selector [option][selected] {
   .commerce-cart-item-image {
     max-width: 100px;
   }
-
-  .commerce-cart-summary {
-    min-height: calc(100vh - var(--wide-navbar-height));
-  }
 }
 
 
 /* RELATED PRODUCTS */
 .commerce-related-products {
   border-top: 1px solid var(--color-separator);
-  /* Carousel is a maximum width of 5 products plus the equally spaced arrows and padding */
-  max-width: calc(5 * 121px + 4 * var(--space-4));
 }
 
 .commerce-related-products .amp-carousel-button {

@@ -87,7 +87,8 @@
   },
   "cart": {
     "header": {
-      "responsive-layout-classes": "xs-hide sm-hide"
+      "responsive-layout-classes": "xs-hide sm-hide",
+      "classes": "h5"
     },
     "dynamic": true
   }

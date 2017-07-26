@@ -12,6 +12,11 @@
     "responsive-display-classes": "xs-hide sm-hide"
   },
   "cart": {
-    "showCartActions": true
+    "showCartActions": true,
+    "header": {
+      "classes": "h3",
+      "spacing-classes": "mb2 mx2",
+      "responsive-layout-classes": "md-mx4"
+    }
   }
 }

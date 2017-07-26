@@ -22,9 +22,9 @@ limitations under the License.
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
 
-  <main id="content" role="main" class="main commerce-panel-filled flex flex-wrap">
+  <main id="content" role="main" class="main flex flex-wrap">
     {{#blog.articles.0}}
-    <article class="commerce-blog-wrapper col-12 md-col-8 px2 pt2 pb3 md-px4 md-pt4 md-pb7">
+    <article class="commerce-blog-wrapper col-12 md-col-8 px2 pt2 pb3 md-px4 md-pt6 md-pb7">
       <amp-img src="{{images.0.narrow}}" srcset="{{images.0.narrow}} 750w,{{images.0.wide}} 1280w" width="{{imageWidth}}"
         height="{{imageHeight}}" layout="responsive" alt="{{title}}"></amp-img>
       <div class="mt3">
@@ -43,6 +43,7 @@ limitations under the License.
         <p class="mb2">{{paragraphs.2}}</p>
         <p class="mb2">{{paragraphs.3}}</p>
       </div>
+      <a href="blog-listing.amp.html" class="ampstart-btn ampstart-btn-secondary inline-block h7 pt3 mt4 md-mb4">Back to Blog</a>
     </article>
     {{/blog.articles.0}}
     {{> partials/blog-sidebar.snip.html}}
