@@ -9,7 +9,13 @@
       "css-path": "templates/lune/page.css"
     },
 
-    "oak": {
+    "cta": {
+      "href": "product-blanc.amp.html",
+      "text": "x",
+      "classes": "lune-overlay-close fixed flex items-center justify-center right-0 mt3 mr3 p0 z1 text-decoration-none lune-theme-dark z2"
+    },
+
+    "material": {
       "hero": {
         "title": "Moulded Seat",
         "cta": {

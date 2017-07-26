@@ -115,7 +115,7 @@
             "image-parallax-factor": "1.1",
             "hotspots": [{
               "text": "More",
-              "url": "product-material-oak.html",
+              "url": "product-material-oak.amp.html",
               "classes": "lune-product-hotspot-oak lune-theme-dark"
             }]
           }]
@@ -145,7 +145,7 @@
             "image-parallax-factor": "1.2",
             "hotspots": [{
               "text": "More",
-              "url": "product-material-polypropylene.html",
+              "url": "product-material-polypropylene.amp.html",
               "classes": "lune-product-hotspot-poly lune-theme-dark"
             }]
           }]

@@ -13,6 +13,18 @@
   }
 }
 
+.lune-overlay-close {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: var(--h4);
+  min-width: 0;
+  font-weight: 100;
+  letter-spacing: 0;
+  font-size: var(--h6);
+  padding: 0;
+}
+
 .lune-overlay-hero {
   height: calc(100vh - (var(--navbar-height)));
 }
