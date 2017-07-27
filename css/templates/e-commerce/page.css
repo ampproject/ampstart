@@ -628,7 +628,7 @@ amp-selector [option][selected] {
 }
 
 .commerce-cart-added .commerce-cart-notification {
-  animation: fade-in-out 2.5s;
+  animation: fade-in-out 2.5s 0s;
   pointer-events: auto;
 }
 
@@ -636,7 +636,7 @@ amp-selector [option][selected] {
   0%, 100% {
     opacity: 0;
   }
-  15%, 85% {
+  10%, 90% {
     opacity: 1;
   }
 }
