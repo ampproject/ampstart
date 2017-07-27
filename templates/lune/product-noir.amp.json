@@ -4,17 +4,21 @@
       "title": "LUNE NOIR",
       "canonical-path": "templates/product-noir.amp",
       "extensions": [
-        "amp-sidebar",
-        "amp-accordion"
+        "amp-sidebar"
       ],
       "css-path": "templates/lune/page.css"
     },
 
     "product": {
-      "full_title": "NOIR",
-      "title_parts": [
-        "NOIR"
-      ],
+      "product-title": {
+        "full_title": "NOIR",
+        "parts": [
+          "NOIR"
+        ]
+      },
+      "scroll-indicator": {
+        "classes": "fixed bottom-0 left-0 col-12 md-mt2"
+      },
       "hero": {
         "image": {
           "alt": "Lune Noir",
@@ -23,12 +27,9 @@
           "width": 706,
           "height": 1134
         },
-        "scroll-indicator": {
-          "classes": "absolute bottom-0 left-0 col-12 md-mt2"
-        },
         "chapter": {
           "name": {
-            "parts": ["Chapter", "one"]
+            "parts": ["Overview"]
           },
           "number": {
             "current": 1,
@@ -39,17 +40,11 @@
       "intro": {
         "title": "Lune Noir",
         "product-desc": [
-          "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
-          "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+          "The simplicity of Lune’s form belies the attention to detail in its construction. A clean silhouette unifies the chair’s armrests and curved back into a single flowing line, while the wooden base provides functional support and adds a textural counterpoint."
         ],
-        "product-desc-extra": {
-          "more": "Read more +",
-          "less": "Read less -",
-          "text": "Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id."
-        },
         "chapter": {
           "name": {
-            "parts": ["Chapter", "two"]
+            "parts": ["Philosophy"]
           },
           "number": {
             "current": 2,
@@ -59,7 +54,7 @@
       },
       "specs": {
         "title": "Specs",
-        "body": "Engineered for extremes. Titanium flat-yarn and breathable fibres transfer heat away. Aluminium spheres create an instant cool feeling.",
+        "body": "Designed to last a lifetime, Lune is crafted from a one-piece polypropylene shell and a molded oak base.",
         "details": [{
           "title": "Height",
           "value": "81",
@@ -79,7 +74,7 @@
         }],
         "chapter": {
           "name": {
-            "parts": ["Chapter", "three"]
+            "parts": ["Specifications"]
           },
           "number": {
             "current": 3,
@@ -99,7 +94,7 @@
             "alt": "Oak",
             "webp_srcset": "../../img/lune/product-materials-noir-oak-1@1x.webp, ../../img/lune/product-materials-noir-oak-1@2x.webp 2x",
             "fallback_srcset": "../../img/lune/product-materials-noir-oak-1@1x.jpg, ../../img/lune/product-materials-noir-oak-1@2x.jpg 2x",
-            "classes": "lune-product-material-image-oak-1 col-11 md-col-6 md-p2",
+            "classes": "lune-product-material-image-oak-1 col-11 sm-col-8 md-col-6 md-p2",
             "width": 561,
             "height": 656,
             "image-parallax-factor": "0.9",
@@ -109,7 +104,7 @@
             "alt": "Oak",
             "webp_srcset": "../../img/lune/product-materials-noir-oak-2@1x.webp, ../../img/lune/product-materials-noir-oak-2@2x.webp 2x",
             "fallback_srcset": "../../img/lune/product-materials-noir-oak-2@1x.jpg, ../../img/lune/product-materials-noir-oak-2@2x.jpg 2x",
-            "classes": "lune-product-material-image-oak-2 col-10 md-col-6 md-p2 self-end",
+            "classes": "lune-product-material-image-oak-2 col-10 sm-col-8 md-col-6 md-p2 self-end",
             "width": 500,
             "height": 785,
             "image-parallax-factor": "1.1",
@@ -153,7 +148,7 @@
         }],
         "chapter": {
           "name": {
-            "parts": ["Chapter", "four"]
+            "parts": ["Materials"]
           },
           "number": {
             "current": 4,

@@ -11,7 +11,7 @@
 .lune-chapter-name,
 .lune-chapter-number {
   /* Width is one letter wide */
-  width: 1em;
+  width: .7em;
   word-wrap: break-word;
   letter-spacing: 0;
   /* Position the chapter vertically in the centre */

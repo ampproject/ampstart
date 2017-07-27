@@ -61,6 +61,16 @@
   }
 }
 
+/* The padding on the bottom of the wrapper is used to center the content with
+   the navbar taken into account. This extra padding can cause scrollbars on screens
+   less that 800px high. In this case the padding is not needed, so remove it.
+*/
+@media (max-height: 800px) {
+  .lune-store-wrapper {
+    padding-bottom: 0;
+  }
+}
+
 @media (--breakpoint-md) {
   .lune-store-wrapper {
     max-width: 70rem;

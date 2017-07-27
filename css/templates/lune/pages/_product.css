@@ -22,8 +22,22 @@
   content: '-';
 }
 
-.lune-page-product-wrapper {
+.lune-page-product {
   background: inherit;
+}
+
+/*
+  The product background will start at 100vh, and continue to the bottom of the page.
+  It sits behind the main content, but in front of the scroll indicator. This allows
+  the scroll indiciator to be hidden when scrolling beyond 100vh. */
+.lune-background {
+  top: 100vh;
+  background: inherit;
+  z-index: 0;
+}
+
+.lune-page-product .lune-scroll-indicator {
+  z-index: 0;
 }
 
 /* //////////////////////////////////////////////////////
@@ -32,6 +46,7 @@
 
 .lune-hero-content {
   margin-top: -var(--navbar-height);
+  min-height: 390px;
 }
 
 .lune-hero-image-wrapper {
@@ -45,9 +60,9 @@
   max-width: 21.125rem; /* 338px */
 }
 
-.lune-hero-title {
+.lune-product-title {
   min-height: var(--hero-title-min-height);
-  margin-bottom: -1.9em;
+  margin-bottom: -2.1em;
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   line-height: var(--line-height-2);
@@ -55,9 +70,15 @@
   font-weight: var(--font-weight-heavy);
 }
 
-.lune-hero-title span {
+.lune-product-title span {
   text-indent: 0;
   animation-delay: calc(var(--animation-delay-start) * 2);
+}
+
+@media (--breakpoint-sm) {
+  .lune-product-title {
+    font-size: var(--h00);
+  }
 }
 
 @media (--breakpoint-md) {
@@ -66,11 +87,11 @@
     margin-top: 0;
   }
 
-  .lune-hero-title {
+  .lune-product-title {
     font-size: 11.25rem; /* 180px */
   }
 
-  .lune-hero-title span {
+  .lune-product-title span {
     display: inline;
   }
 
@@ -80,11 +101,11 @@
   }
 
   @media (--breakpoint-vld) {
-    .lune-hero-title span {
+    .lune-product-title span {
       letter-spacing: var(--letter-spacing-5);
     }
 
-    .lune-hero-title span:first-child {
+    .lune-product-title span:first-child {
       text-indent: var(--letter-spacing-5);
     }
   }
@@ -102,11 +123,11 @@
     margin-top: 0;
   }
 
-  .lune-hero-title {
+  .lune-product-title {
     display: flex;
   }
 
-  .lune-hero-title span:last-of-type {
+  .lune-product-title span:last-of-type {
     z-index: var(--z1);
   }
 
@@ -130,7 +151,7 @@
 
 .lune-product-details-divider {
   flex-grow: 1;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1px dashed currentColor;
 }
 
 .lune-product-details-title,
@@ -150,20 +171,12 @@
   .lune-product-details-unit {
     letter-spacing: var(--letter-spacing-2);
   }
-
-  .lune-product-details-divider {
-    border-bottom-style: dashed;
-  }
 }
 
 
 /* //////////////////////////////////////////////////////
    MATERIALS
 ///////////////////////////////////////////////////////*/
-
-.lune-section-materials {
-  background: inherit;
-}
 
 .product-material-name {
   line-height: var(--line-height-1);
@@ -185,10 +198,7 @@
   margin-bottom: 50px;
 }
 
-.lune-products-bottom-cta {
-  padding: 45px 0 150px;
-  background: inherit;
-}
+
 
 .lune-product-hotspot {
   border-radius: 50%;
@@ -198,6 +208,7 @@
   text-indent: var(--letter-spacing-3);
   border: 0;
   backface-visibility: hidden;
+  padding: 0;
 }
 
 .lune-product-hotspot-oak {
@@ -255,3 +266,27 @@
     margin-bottom: 130px;
   }
 }
+
+
+/* //////////////////////////////////////////////////////
+   FOOTER
+///////////////////////////////////////////////////////*/
+
+/* Added min height to give white space for the fixed chair to show through. */
+.lune-title-bottom {
+  height: 100vmin;
+  min-height: 15rem;
+  max-height: 75vh;
+  z-index: 0;
+}
+
+.lune-title-bottom .lune-product-title {
+  margin: 0;
+  justify-content: center;
+}
+
+
+.lune-products-bottom-cta {
+  padding: 45px 0;
+}
+
