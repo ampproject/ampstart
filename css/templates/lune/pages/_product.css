@@ -196,7 +196,7 @@
 }
 
 .lune-products-bottom-cta {
-  padding: 45px 0 150px;
+  padding: 45px 0;
 }
 
 .lune-product-hotspot {
@@ -231,6 +231,13 @@
 }
 
 @media (--breakpoint-md) {
+
+  /* On medium resolutions up, there should be white space above the CTA to make space for
+     the fixed chair */
+  .lune-products-bottom-cta {
+    padding-top: 650px;
+  }
+
   .product-material-name {
     margin-top: 170px;
     margin-bottom: -120px;
