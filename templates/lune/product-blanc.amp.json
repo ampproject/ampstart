@@ -11,11 +11,13 @@
     },
 
     "product": {
-      "full_title": "BLANC",
-      "title_parts": [
-        "BLA",
-        "NC"
-      ],
+      "product-title": {
+        "full_title": "BLANC",
+        "parts": [
+          "BLA",
+          "NC"
+        ]
+      },
       "scroll-indicator": {
         "classes": "fixed bottom-0 left-0 col-12 md-mt2"
       },

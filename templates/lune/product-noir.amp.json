@@ -11,10 +11,12 @@
     },
 
     "product": {
-      "full_title": "NOIR",
-      "title_parts": [
-        "NOIR"
-      ],
+      "product-title": {
+        "full_title": "NOIR",
+        "parts": [
+          "NOIR"
+        ]
+      },
       "scroll-indicator": {
         "classes": "fixed bottom-0 left-0 col-12 md-mt2"
       },
