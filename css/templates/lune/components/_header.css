@@ -23,6 +23,21 @@
   font-size: var(--h4);
 }
 
+/* Animate the hamburger menu when focused and hovered over */
+.ampstart-headerbar .ampstart-navbar-trigger path {
+  transition: transform .25s ease-out;
+}
+
+.ampstart-headerbar .ampstart-navbar-trigger:hover path:first-of-type,
+.ampstart-headerbar .ampstart-navbar-trigger:focus path:first-of-type {
+  transform: translateY(-1px);
+}
+
+.ampstart-headerbar .ampstart-navbar-trigger:hover path:last-of-type,
+.ampstart-headerbar .ampstart-navbar-trigger:focus path:last-of-type {
+  transform: translateY(1px);
+}
+
 .ampstart-headerbar-fixed {
   justify-content: flex-end;
 }

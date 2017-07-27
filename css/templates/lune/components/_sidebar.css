@@ -25,9 +25,25 @@
   margin: auto;
 }
 
-/* Makes the clickable area around the close button bigger and easier to hit */
 .ampstart-navbar-trigger {
+  /* Makes the clickable area around the close button bigger and easier to hit */
   padding: 1.5rem;
+  transition: transform .25s ease-out;
+}
+
+.ampstart-sidebar .ampstart-navbar-trigger {
+  line-height: var(--line-height-1);
+}
+
+.ampstart-sidebar .ampstart-navbar-trigger:hover,
+.ampstart-sidebar .ampstart-navbar-trigger:focus {
+  transform: rotate(180deg);
+  transition-timing-function: ease-in;
+}
+
+.ampstart-navbar-trigger:focus svg,
+.ampstart-sidebar .ampstart-navbar-trigger:focus {
+  background-color: var(--color-light-2);
 }
 
 .ampstart-sidebar .ampstart-nav-item {
