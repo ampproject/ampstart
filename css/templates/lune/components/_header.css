@@ -27,6 +27,11 @@
   justify-content: flex-end;
 }
 
+.ampstart-headerbar-fixed-link {
+  letter-spacing: var(--letter-spacing-3);
+  line-height: var(--line-height-5);
+}
+
 .lune-noir .ampstart-headerbar {
   background: var(--color-background-dark);
   color: var(--color-light-1);
