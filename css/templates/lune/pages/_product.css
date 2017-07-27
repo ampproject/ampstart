@@ -198,6 +198,7 @@
   text-indent: var(--letter-spacing-3);
   border: 0;
   backface-visibility: hidden;
+  padding: 0;
 }
 
 .lune-product-hotspot-oak {
