@@ -624,10 +624,12 @@ amp-selector [option][selected] {
   display: block;
   z-index: 1000;
   opacity: 0;
+  pointer-events: none;
 }
 
 .commerce-cart-added .commerce-cart-notification {
   animation: fade-in-out 2.5s;
+  pointer-events: auto;
 }
 
 @keyframes fade-in-out {
