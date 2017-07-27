@@ -139,6 +139,11 @@ dd:after {
   color: var(--color-secondary);
 }
 
+.amp-mode-mouse .commerce-select:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
 .ampstart-input {
   width: 100%;
 }
