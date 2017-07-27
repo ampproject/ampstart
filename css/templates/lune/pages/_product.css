@@ -144,7 +144,7 @@
 
 .lune-product-details-divider {
   flex-grow: 1;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 1px dashed currentColor;
 }
 
 .lune-product-details-title,
@@ -163,10 +163,6 @@
   .lune-product-details-figure,
   .lune-product-details-unit {
     letter-spacing: var(--letter-spacing-2);
-  }
-
-  .lune-product-details-divider {
-    border-bottom-style: dashed;
   }
 }
 
