@@ -46,6 +46,7 @@
 
 .lune-hero-content {
   margin-top: -var(--navbar-height);
+  min-height: 390px;
 }
 
 .lune-hero-image-wrapper {
