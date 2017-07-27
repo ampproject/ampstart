@@ -192,9 +192,7 @@
   margin-bottom: 50px;
 }
 
-.lune-products-bottom-cta {
-  padding: 45px 0;
-}
+
 
 .lune-product-hotspot {
   border-radius: 50%;
@@ -228,13 +226,6 @@
 }
 
 @media (--breakpoint-md) {
-
-  /* On medium resolutions up, there should be white space above the CTA to make space for
-     the fixed chair */
-  .lune-products-bottom-cta {
-    padding-top: 650px;
-  }
-
   .product-material-name {
     margin-top: 170px;
     margin-bottom: -120px;
@@ -269,3 +260,27 @@
     margin-bottom: 130px;
   }
 }
+
+
+/* //////////////////////////////////////////////////////
+   FOOTER
+///////////////////////////////////////////////////////*/
+
+/* Added min height to give white space for the fixed chair to show through. */
+.lune-title-bottom {
+  height: 100vmin;
+  min-height: 15rem;
+  max-height: 75vh;
+  z-index: 0;
+}
+
+.lune-title-bottom .lune-product-title {
+  margin: 0;
+  justify-content: center;
+}
+
+
+.lune-products-bottom-cta {
+  padding: 45px 0;
+}
+
