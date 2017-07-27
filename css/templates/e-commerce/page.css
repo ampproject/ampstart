@@ -140,7 +140,7 @@ dd:after {
 }
 
 .amp-mode-mouse .commerce-select:hover {
-  color: var(--primary-color);
+  color: var(--color-primary);
   cursor: pointer;
 }
 
@@ -186,6 +186,10 @@ textarea {
   text-transform: none;
   color: var(--color-primary);
   font-size: var(--h7);
+}
+
+.amp-mode-mouse .ampstart-input-radio label:hover {
+  text-decoration: underline;
 }
 
 .ampstart-btn {
@@ -709,6 +713,9 @@ amp-selector [option][selected] {
   border-bottom: 1px dashed #dadada;
 }
 
+.amp-mode-mouse .commerce-listing-product:hover > .commerce-listing-product-name {
+  text-decoration: underline;
+}
 
 /* FOOTER */
 .commerce-footer {
