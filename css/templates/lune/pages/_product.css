@@ -62,7 +62,7 @@
 
 .lune-product-title {
   min-height: var(--hero-title-min-height);
-  margin-bottom: -1.9em;
+  margin-bottom: -2.1em;
   letter-spacing: var(--letter-spacing-3);
   text-indent: var(--letter-spacing-3);
   line-height: var(--line-height-2);
@@ -73,6 +73,12 @@
 .lune-product-title span {
   text-indent: 0;
   animation-delay: calc(var(--animation-delay-start) * 2);
+}
+
+@media (--breakpoint-sm) {
+  .lune-product-title {
+    font-size: var(--h00);
+  }
 }
 
 @media (--breakpoint-md) {
