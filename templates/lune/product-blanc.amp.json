@@ -168,9 +168,9 @@
         "classes": "lune-theme-light lune-transparent"
       },
       "product-toggle": {
-        "text": "To Noir",
+        "text": "Switch to Noir",
         "href": "product-noir.amp.html",
-        "classes": "lune-product-toggle-noir"
+        "classes": "lune-theme-light"
       }
     }
   }

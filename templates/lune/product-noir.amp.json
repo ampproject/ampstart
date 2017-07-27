@@ -167,9 +167,9 @@
         "classes": "lune-theme-dark lune-transparent"
       },
       "product-toggle": {
-        "text": "To Blanc",
+        "text": "Switch to Blanc",
         "href": "product-blanc.amp.html",
-        "classes": "lune-product-toggle-blanc"
+        "classes": "lune-theme-dark"
       }
     }
   }

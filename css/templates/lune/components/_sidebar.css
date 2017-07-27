@@ -67,22 +67,3 @@
   display: inline-block;
   text-transform: lowercase;
 }
-
-/* Strikethrough effect on hover */
-.ampstart-nav-link::before {
-  position: absolute;
-  top: calc(50% - .05em);
-  left: -.2em;
-  right: -.2em;
-  height: .1em;
-  content: '';
-  background: currentColor;
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform .2s ease;
-}
-
-.ampstart-nav-link:hover::before,
-.ampstart-nav-link:focus::before {
-  transform: none;
-}
