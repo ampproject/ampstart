@@ -54,12 +54,16 @@
             {{/product-desc}}
 
             {{#product-desc-extra}}
-              <amp-accordion disable-session-states class="md-hide lg-hide">
-                <section>
-                  <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
-                  <p class="lune-product-body h5 mb2">{{text}}</p>
-                </section>
-              </amp-accordion>
+              <!-- Wrapper div needed here so md-hide and lg-hide can take effect.
+                   amp-accordion has display: block !important and overrides hide styles -->
+              <div class="md-hide lg-hide">
+                <amp-accordion disable-session-states class="md-hide lg-hide">
+                  <section>
+                    <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
+                    <p class="lune-product-body h5 mb2">{{text}}</p>
+                  </section>
+                </amp-accordion>
+              </div>
 
               <p class="xs-hide sm-hide lune-product-body h5 mb2">{{text}}</p>
             {{/product-desc-extra}}
