@@ -22,8 +22,22 @@
   content: '-';
 }
 
-.lune-page-product-wrapper {
+.lune-page-product {
   background: inherit;
+}
+
+/*
+  The product background will start at 100vh, and continue to the bottom of the page.
+  It sits behind the main content, but in front of the scroll indicator. This allows
+  the scroll indiciator to be hidden when scrolling beyond 100vh. */
+.lune-background {
+  top: 100vh;
+  background: inherit;
+  z-index: 0;
+}
+
+.lune-page-product .lune-scroll-indicator {
+  z-index: 0;
 }
 
 /* //////////////////////////////////////////////////////
@@ -161,10 +175,6 @@
    MATERIALS
 ///////////////////////////////////////////////////////*/
 
-.lune-section-materials {
-  background: inherit;
-}
-
 .product-material-name {
   line-height: var(--line-height-1);
   font-weight: var(--font-weight-heavy);
@@ -187,7 +197,6 @@
 
 .lune-products-bottom-cta {
   padding: 45px 0 150px;
-  background: inherit;
 }
 
 .lune-product-hotspot {

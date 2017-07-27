@@ -16,6 +16,9 @@
         "BLA",
         "NC"
       ],
+      "scroll-indicator": {
+        "classes": "fixed bottom-0 left-0 col-12 md-mt2"
+      },
       "hero": {
         "image": {
           "alt": "Lune Blanc",
@@ -23,9 +26,6 @@
           "fallback_srcset": "../../img/lune/product-hero-blanc@1x.png, ../../img/lune/product-hero-blanc@2x.png 2x",
           "width": 706,
           "height": 1134
-        },
-        "scroll-indicator": {
-          "classes": "absolute bottom-0 left-0 col-12 md-mt2"
         },
         "chapter": {
           "name": {

@@ -1,5 +1,9 @@
 {{#product}}
   <main role="main" class="lune-page lune-page-product md-col-9 mx-auto">
+    <!-- Scroll indicator -->
+    {{> ../components/scroll-indicator.snip.html}}
+    <!-- This div is used to hide the scroll indicator when scrolling past the first viewport -->
+    <div class="lune-background absolute right-0 bottom-0 left-0"></div>
       {{#hero}}
         <header class="lune-product-section lune-product-section-hero relative z1 flex">
           <div class="lune-hero-content col-12 md-mt0 flex flex-column items-center justify-center">
@@ -35,8 +39,6 @@
             {{/image}}
           </div>
 
-          <!-- Scroll indicator -->
-          {{> ../components/scroll-indicator.snip.html}}
           <!-- Chapter indicators -->
           {{> ../components/chapter.snip.html}}
         </header>
