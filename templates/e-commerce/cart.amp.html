@@ -21,11 +21,13 @@ limitations under the License.
 
 <body>
   {{> ../../components/navbar/navbar.snip.html}} {{/header}}
-  <main id="content" role="main" class="main flex flex-wrap items-start commerce-cart pb3 md-pb7 md-mb3">
-    <section class="col-12 md-col-8 pt2 pb3 md-pt4 md-pb7">
-      {{> partials/cart-items.snip.html}}
-    </section>
-    {{> partials/cart-summary.snip.html}}
+  <main id="content" role="main" class="main items-start commerce-cart pb3 md-pb7 md-mb3">
+    <div class="flex flex-wrap">
+      <section class="col-12 md-col-8 pt2 pb3 md-pt4 md-pb7">
+        {{> partials/cart-items.snip.html}}
+      </section>
+      {{> partials/cart-summary.snip.html}}
+    </div>
     {{> partials/related-products.snip.html}}
   </main>
   {{> partials/footer.snip.html}}
