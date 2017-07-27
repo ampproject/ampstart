@@ -87,11 +87,12 @@
   },
   "cart": {
     "item": {
-      "spacing-classes": "mx2 mb2 md-mx4 md-mt3 md-pb3"
+      "spacing-classes": "mx2 mb2",
+      "responsive-spacing-classes": "md-mx4 md-mt3 md-pb3"
     },
     "header": {
-      "responsive-layout-classes": "xs-hide sm-hide",
-      "classes": "h5"
+      "classes": "h5",
+      "responsive-layout-classes": "xs-hide sm-hide"
     },
     "dynamic": true
   }
