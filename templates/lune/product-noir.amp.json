@@ -30,7 +30,7 @@
         },
         "chapter": {
           "name": {
-            "parts": ["Chapter", "one"]
+            "parts": ["Overview"]
           },
           "number": {
             "current": 1,
@@ -41,17 +41,11 @@
       "intro": {
         "title": "Lune Noir",
         "product-desc": [
-          "The chair was designed using technology for molding plywood that the Eames developed before and during the Second World War.",
-          "A modern reedition of the historic model created in 1944 by the “Société Nouvelle des Etablissements JUMO”."
+          "The simplicity of Lune’s form belies the attention to detail in its construction. A clean silhouette unifies the chair’s armrests and curved back into a single flowing line, while the wooden base provides functional support and adds a textural counterpoint."
         ],
-        "product-desc-extra": {
-          "more": "Read more +",
-          "less": "Read less -",
-          "text": "Id lacus amet. Aliquam eos nunc ut scelerisque lacinia, eu rutrum id, vestibulum aliqua vivamus luctus eu rhoncus ut, sodales id."
-        },
         "chapter": {
           "name": {
-            "parts": ["Chapter", "two"]
+            "parts": ["Philosophy"]
           },
           "number": {
             "current": 2,
@@ -61,7 +55,7 @@
       },
       "specs": {
         "title": "Specs",
-        "body": "Engineered for extremes. Titanium flat-yarn and breathable fibres transfer heat away. Aluminium spheres create an instant cool feeling.",
+        "body": "Designed to last a lifetime, Lune is crafted from a one-piece polypropylene shell and a molded oak base.",
         "details": [{
           "title": "Height",
           "value": "81",
@@ -81,7 +75,7 @@
         }],
         "chapter": {
           "name": {
-            "parts": ["Chapter", "three"]
+            "parts": ["Specifications"]
           },
           "number": {
             "current": 3,
@@ -155,7 +149,7 @@
         }],
         "chapter": {
           "name": {
-            "parts": ["Chapter", "four"]
+            "parts": ["Materials"]
           },
           "number": {
             "current": 4,
