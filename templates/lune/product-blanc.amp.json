@@ -4,8 +4,7 @@
       "title": "LUNE BLANC",
       "canonical-path": "templates/product-blanc.amp",
       "extensions": [
-        "amp-sidebar",
-        "amp-accordion"
+        "amp-sidebar"
       ],
       "css-path": "templates/lune/page.css"
     },

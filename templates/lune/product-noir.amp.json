@@ -4,8 +4,7 @@
       "title": "LUNE NOIR",
       "canonical-path": "templates/product-noir.amp",
       "extensions": [
-        "amp-sidebar",
-        "amp-accordion"
+        "amp-sidebar"
       ],
       "css-path": "templates/lune/page.css"
     },
