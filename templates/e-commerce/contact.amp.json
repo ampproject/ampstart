@@ -29,7 +29,8 @@
         "name": "mesage",
         "id": "message",
         "placeholder": "Type your message below",
-        "rows": 2
+        "rows": 2,
+        "classes": "mt3 mb5"
       }
     }
   ]
