@@ -86,6 +86,9 @@
     }
   },
   "cart": {
+    "item": {
+      "spacing-classes": "mx2 mb2 md-mx4 md-mt3 md-pb3"
+    },
     "header": {
       "responsive-layout-classes": "xs-hide sm-hide",
       "classes": "h5"
