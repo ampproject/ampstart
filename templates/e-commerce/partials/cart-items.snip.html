@@ -1,7 +1,7 @@
 {{#cart}}
-  <h1 class="{{header.classes}} {{header.spacing-classes}} {{header.responsive-layout-classes}}">Your Basket</h1>
+  <h1 class="{{header.classes}} {{header.spacing-classes}} {{header.responsive-spacing-classes}} {{header.responsive-layout-classes}}">Your Basket</h1>
   {{#items}}
-    <div class="commerce-cart-item flex flex-wrap {{cart.item.spacing-classes}}">
+    <div class="commerce-cart-item flex flex-wrap {{cart.item.spacing-classes}} {{cart.item.responsive-spacing-classes}}">
       <div class="col-2">
         <amp-img class="commerce-cart-item-image" src="{{thumbnail}}" width="1" height="1" layout="responsive" alt="{{name}}"></amp-img>
       </div>

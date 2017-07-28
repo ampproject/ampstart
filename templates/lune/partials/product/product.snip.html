@@ -1,14 +1,13 @@
 {{#product}}
   <main role="main" class="lune-page lune-page-product md-col-9 mx-auto">
+    <!-- Scroll indicator -->
+    {{> ../components/scroll-indicator.snip.html}}
+    <!-- This div is used to hide the scroll indicator when scrolling past the first viewport -->
+    <div class="lune-background absolute right-0 bottom-0 left-0"></div>
       {{#hero}}
         <header class="lune-product-section lune-product-section-hero relative z1 flex">
           <div class="lune-hero-content col-12 md-mt0 flex flex-column items-center justify-center">
-            <h1 class="lune-hero-title" aria-label="{{full_title}}">
-              <span class="relative block caps m0 px3 md-p0 z1 lune-anim-move-up {{#title_parts.1}}lune-title-has-mobile-hyphen{{/title_parts.1}}">{{title_parts.0}}</span>
-              {{#title_parts.1}}
-                <span class="block caps m0 relative px3 md-p0 z4 lune-anim-move-up">{{.}}</span>
-              {{/title_parts.1}}
-            </h1>
+            {{> ../components/product-title.snip.html}}
 
             {{#image}}
               <figure class="lune-hero-image-wrapper z3 flex justify-center col-12 m0">
@@ -35,8 +34,6 @@
             {{/image}}
           </div>
 
-          <!-- Scroll indicator -->
-          {{> ../components/scroll-indicator.snip.html}}
           <!-- Chapter indicators -->
           {{> ../components/chapter.snip.html}}
         </header>
@@ -52,12 +49,16 @@
             {{/product-desc}}
 
             {{#product-desc-extra}}
-              <amp-accordion disable-session-states class="md-hide lg-hide">
-                <section>
-                  <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
-                  <p class="lune-product-body h5 mb2">{{text}}</p>
-                </section>
-              </amp-accordion>
+              <!-- Wrapper div needed here so md-hide and lg-hide can take effect.
+                   amp-accordion has display: block !important and overrides hide styles -->
+              <div class="md-hide lg-hide">
+                <amp-accordion disable-session-states class="md-hide lg-hide">
+                  <section>
+                    <h4 class="border-none"><span class="show-more h5 bold">{{more}}</span> <span class="show-less h5 bold">{{less}}</span></h4>
+                    <p class="lune-product-body h5 mb2">{{text}}</p>
+                  </section>
+                </amp-accordion>
+              </div>
 
               <p class="xs-hide sm-hide lune-product-body h5 mb2">{{text}}</p>
             {{/product-desc-extra}}
@@ -159,6 +160,9 @@
 
       {{/materials}}
 
+      <div class="lune-title-bottom relative xs-hide sm-hide">
+        {{> ../components/product-title.snip.html}}
+      </div>
 
       <div class="lune-products-bottom-cta relative z1 flex justify-center">
         {{> ../components/cta.snip.html}}
