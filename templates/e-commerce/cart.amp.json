@@ -14,12 +14,13 @@
   "cart": {
     "showCartActions": true,
     "item": {
-      "spacing-classes": "mx2 mb2 md-mx4 md-mt3 md-pb3"
+      "spacing-classes": "mx2 mb2",
+      "responsive-spacing-classes": "md-mx4 md-mt3 md-pb3"
     },
     "header": {
       "classes": "h3",
       "spacing-classes": "mb2 mx2",
-      "responsive-layout-classes": "md-mx4"
+      "responsive-spacing-classes": "md-mx4"
     }
   }
 }
