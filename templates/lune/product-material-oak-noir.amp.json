@@ -96,9 +96,6 @@
           "href": "store.amp.html",
           "classes": "my2 lune-theme-light lune-transparent"
         }
-      },
-      "scroll-indicator": {
-        "classes": "absolute bottom-0 z1"
       }
     }
   }

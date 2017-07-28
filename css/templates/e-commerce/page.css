@@ -214,18 +214,12 @@ amp-selector [option][selected] {
   display: none;
 }
 
-.commerce-panel-empty {
-  background-color: initial;
-}
-
-.commerce-panel-filled {
-  background-color: var(--color-panel);
-}
-
 @media (--breakpoint-md) {
   .commerce-side-panel {
     position: sticky;
-    top: calc(var(--navbar-height) + var(--space-2));
+    top: var(--wide-navbar-height);
+    /* Prevents added top: miscalculation https://github.com/ampproject/amphtml/issues/10664 */
+    margin-top: -1px;
   }
 
   .md-commerce-header {
@@ -626,20 +620,23 @@ amp-selector [option][selected] {
 .commerce-cart-notification {
   background-color: var(--color-white);
   border: 1px solid var(--color-separator);
+  box-shadow: 0 6px 12px -3px var(--color-primary);
   display: block;
   z-index: 1000;
   opacity: 0;
+  pointer-events: none;
 }
 
 .commerce-cart-added .commerce-cart-notification {
-  animation: fade-in-out 2.5s;
+  animation: fade-in-out 2.5s 0s;
+  pointer-events: auto;
 }
 
 @keyframes fade-in-out {
   0%, 100% {
     opacity: 0;
   }
-  15%, 85% {
+  10%, 90% {
     opacity: 1;
   }
 }

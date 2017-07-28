@@ -59,6 +59,12 @@ one file.
 /* LUNE LINE AFTER*/
 @import "components/_line-after";
 
+/* UNDERLINE STRIKE HOVER EFFECT */
+@import "components/_underline-strike";
+
+/* PLACEHOLDER */
+@import "components/_placeholder";
+
 
 
 /* //////////////////////////////////////////////////////
