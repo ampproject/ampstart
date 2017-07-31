@@ -14,35 +14,25 @@
  * limitations under the License.
  */
 
-const gulp = require('gulp-help')(require('gulp'));
-const replace = require('gulp-replace');
 const csstree = require('css-tree');
-const rename = require('gulp-rename');
-const through = require('through2');
 const fs = require('fs');
 const specificity = require('specificity');
 const config = require('./config');
-var selectorList = [];
+const selectorList = [];
 
 
 function replaceImportant() {
-  return gulp.src(config.dest.css + '**/page.css')
-  //return gulp.src('tasks/test.css')
-  .pipe(through.obj(function(file, enc, cb) {
-    const cssVarObj = {};
-    var ast = csstree.parse(
-      file.contents.toString(),
-      {parseSelector: false, parseValue: false});
-    ast = csstree.toPlainObject(ast);
-    processChildren(ast.children);
-    ast = csstree.fromPlainObject(ast);
-    file.contents = new Buffer(
-        csstree.translate(ast)
-          .split('~~~~PLACEHOLDER~~~~').join(getPlaceholder()));
-    cb(null, file);
-  }))
-  //.pipe(gulp.dest('tasks/op/'));
-  .pipe(gulp.dest(config.dest.css));
+  const file = /* fs.getFileSync() */ {};
+  const cssVarObj = {};
+  var ast = csstree.parse(
+    file.contents.toString(),
+    {parseSelector: false, parseValue: false});
+  ast = csstree.toPlainObject(ast);
+  processChildren(ast.children);
+  ast = csstree.fromPlainObject(ast);
+  file.contents = new Buffer(
+      csstree.translate(ast)
+        .split('~~~~PLACEHOLDER~~~~').join(getPlaceholder()));
 }
 
 function processChildren(childrenArr) {
@@ -135,6 +125,3 @@ function highestSpecificity() {
   //console.log('END Computing highest Specificity');
   return selectorList[selectorList.length - 1];
 }
-
-
-gulp.task('replace-important', replaceImportant);
