@@ -21,18 +21,16 @@ const config = require('./config');
 const selectorList = [];
 
 
-function replaceImportant() {
-  const file = /* fs.getFileSync() */ {};
+function replaceImportant(cssString) {
   const cssVarObj = {};
   var ast = csstree.parse(
-    file.contents.toString(),
+    cssString,
     {parseSelector: false, parseValue: false});
   ast = csstree.toPlainObject(ast);
   processChildren(ast.children);
   ast = csstree.fromPlainObject(ast);
-  file.contents = new Buffer(
-      csstree.translate(ast)
-        .split('~~~~PLACEHOLDER~~~~').join(getPlaceholder()));
+  return csstree.translate(ast)
+    .split('~~~~PLACEHOLDER~~~~').join(getPlaceholder());
 }
 
 function processChildren(childrenArr) {
@@ -125,3 +123,6 @@ function highestSpecificity() {
   //console.log('END Computing highest Specificity');
   return selectorList[selectorList.length - 1];
 }
+
+// Testing code
+fs.readFileSync('')
