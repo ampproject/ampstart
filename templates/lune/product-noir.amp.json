@@ -88,7 +88,7 @@
         "title_parts": [],
         "list": [{
           "title": "Oak",
-          "title-parallax-factor": "0.85",
+          "title-parallax-factor": "0.9",
           "title_classes": "lune-product-material-name-oak h1 sm-h0 md-h00 pl3 mt1 sm-mt3 md-pl0",
           "images": [{
             "alt": "Oak",
@@ -97,7 +97,7 @@
             "classes": "lune-product-material-image-oak-1 col-11 sm-col-8 md-col-6 md-p2",
             "width": 561,
             "height": 656,
-            "image-parallax-factor": "0.9",
+            "image-parallax-factor": "0.85",
             "hotspots": []
           }, {
             "id": "oak",
@@ -117,7 +117,7 @@
         }, {
           "classes": "product__materials--poly",
           "title": "Polypropylene",
-          "title-parallax-factor": "0.9",
+          "title-parallax-factor": "1.3",
           "title_classes": "lune-product-material-name-poly h1 sm-h0 md-h0 lg-h00",
           "title_parts": {
             "mobile": [

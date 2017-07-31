@@ -26,7 +26,7 @@
         "image": {
           "mobile": {
             "webp_srcset": "../../img/lune/overlay-oak-hero-mobile@1x.webp, ../../img/lune/overlay-oak-hero-mobile@2x.webp 2x",
-            "fallback_srcset": "../../img/lune/overlay-oak-hero-mobile@1x.png, ../../img/lune/overlay-oak-hero-mobile@2x.png 2x",
+            "fallback_srcset": "../../img/lune/overlay-oak-hero-mobile@1x.jpg, ../../img/lune/overlay-oak-hero-mobile@2x.jpg 2x",
             "width": 1250,
             "height": 2135
           },

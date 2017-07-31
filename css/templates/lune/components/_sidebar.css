@@ -56,6 +56,7 @@
 
 .ampstart-sidebar .lune-nav-contact {
   max-width: 10.625rem;
+  letter-spacing: var(--letter-spacing-3);
 }
 
 .ampstart-nav-link {
