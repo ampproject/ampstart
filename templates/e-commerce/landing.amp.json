@@ -6,6 +6,10 @@
         "amp-sidebar"
       ],
       "css-path": "templates/e-commerce/page.css"
+    },
+    "navbar": {
+      "trigger-layout-classes": "absolute top-0",
+      "trigger-spacing-classes": "pr0 mr2 mt2"
     }
   },
   "main": {
