@@ -17,15 +17,17 @@
 const csstree = require('css-tree');
 const fs = require('fs');
 const specificity = require('specificity');
-const config = require('./config');
-const selectorList = [];
+let selectorList = [];
 
 
 function replaceImportant(cssString) {
   const cssVarObj = {};
-  var ast = csstree.parse(
-    cssString,
-    {parseSelector: false, parseValue: false});
+  var ast = csstree.parse(cssString,
+    {
+      parseSelector: false,
+      parseValue: false
+    }
+  );
   ast = csstree.toPlainObject(ast);
   processChildren(ast.children);
   ast = csstree.fromPlainObject(ast);
@@ -125,5 +127,5 @@ function highestSpecificity() {
 }
 
 // Testing code
-const file = fs.readFileSync('test.css')
-fs.writefileSync(replaceImportant('output.css', file.contents.toString(), 'utf8'));
+const file = fs.readFileSync('test.css');
+fs.writeFileSync('output.css', replaceImportant(file.toString()), 'utf8');
