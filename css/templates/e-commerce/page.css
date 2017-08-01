@@ -175,6 +175,7 @@ textarea {
 .ampstart-input > input,
 .ampstart-input > textarea {
   border-bottom: 1px dashed var(--color-separator);
+  color: var(--color-primary);
 }
 
 .ampstart-input-radio {
