@@ -19,8 +19,8 @@
     "CSS",
     "AMP"
   ],
-  "author": "Sriram Krishnan",
-  "license": "MIT",
+  "author": "The AMP HTML Authors",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/camelburrito/gulp-replace-important/issues"
   },
