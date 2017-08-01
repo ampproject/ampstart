@@ -148,15 +148,15 @@
   "cart": {
     "items": [
       {
-        "name": "Product 1",
-        "description": "Mauris tincidunt justo convallis.",
+        "name": "Farringdon cap",
+        "description": "Water resistant and breathable.",
         "price": "349",
         "quantity": 1,
         "thumbnail": "../../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Bike 1",
-        "description": "Donec id elit non mi porta gravida at eget metus.",
+        "name": "Highland",
+        "description": "Timeless style in Reynolds 531 tubing",
         "price": "470",
         "quantity": 1,
         "thumbnail": "../../../img/e-commerce/product/product-1.jpg"
@@ -166,7 +166,7 @@
   "blog": {
     "articles": [
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "No sleep 'til Brooklyn",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -198,7 +198,7 @@
         }
       },
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "Chasing Cumbrian nirvana",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -212,7 +212,7 @@
         ]
       },
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "At home with Paul Smith",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -226,7 +226,7 @@
         ]
       },
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "Choosing your vintage",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -244,39 +244,39 @@
   "related-products": {
     "items": [
       {
-        "name": "Product Name",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-1.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-2.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-3.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-4.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-5.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Highland",
         "image": "../../img/e-commerce/product/product-6.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Estuary",
         "image": "../../img/e-commerce/product/product-7.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Beacon",
         "image": "../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-9.jpg"
       },
       {

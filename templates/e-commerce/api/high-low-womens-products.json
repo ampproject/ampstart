@@ -1,17 +1,31 @@
 {
 	"items": [
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 964,
+			"name": "Highland",
+			"description": "Timeless style in Reynolds 531 tubing",
+			"price": 860,
+			"image": "/img/e-commerce/product/product-1.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 757,
 			"image": "/img/e-commerce/product/product-7.jpg",
 			"category": "womens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 564,
-			"image": "/img/e-commerce/product/product-1.jpg",
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 747,
+			"image": "/img/e-commerce/product/product-11.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 464,
+			"image": "/img/e-commerce/product/product-5.jpg",
 			"category": "womens"
 		}
 	]

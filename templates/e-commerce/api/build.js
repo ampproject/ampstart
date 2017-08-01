@@ -3,8 +3,39 @@ const path = require('path');
 
 const currentWorkingDirectory = path.dirname(process.argv[1]);
 const totalProducts = 12;
-const title = 'Product Name';
-const subtitle = 'Mauris tincidunt.';
+const titles = {
+  'gloves': {
+    'name': 'Pointer gloves',
+    'description': 'Fingerless with lightweight construction'
+  },
+  'cap': {
+    'name': 'Farringdon cap',
+    'description': 'Water resistant and breathable'
+  },
+  'bike1': {
+    'name': 'Highland',
+    'description': 'Timeless style in Reynolds 531 tubing'
+  },
+  'bike2': {
+    'name': 'Estuary',
+    'description': 'Relaxed geometry for comfortable commuting'
+  },
+  'bike3': {
+    'name': 'Beacon',
+    'description': 'Full carbon frameset, designed to climb'
+  },
+  'bike4':{
+    'name': 'Herne Hill',
+    'description': 'Built for the track, at home on the street'
+  },
+  'bike5': {
+    'name': 'Pennine',
+    'description': 'Full-featured tourer for long-distance rides'
+  }
+};
+const titleListing = [
+  titles.bike1, titles.bike2, titles.bike3, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.bike4
+];
 const minPrice = 400;
 const maxPrice = 999;
 const imagesFolder = '/img/e-commerce/product/';
@@ -101,8 +132,8 @@ function saveCategories() {
 function generateProducts() {
   for (let i = 0; i < totalProducts; i++) {
     products.items.push({
-      name: title,
-      description: subtitle,
+      name: titleListing[i].name,
+      description: titleListing[i].description,
       price: getRandomPrice(),
       image: getNextImage(),
       category: getRandomCategory()

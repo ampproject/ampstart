@@ -1,45 +1,24 @@
 {
 	"items": [
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 511,
-			"image": "/img/e-commerce/product/product-2.jpg",
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 400,
+			"image": "/img/e-commerce/product/product-4.jpg",
 			"category": "kids"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 564,
+			"name": "Beacon",
+			"description": "Full carbon frameset, designed to climb",
+			"price": 639,
 			"image": "/img/e-commerce/product/product-3.jpg",
 			"category": "kids"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 722,
-			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 908,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 927,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 937,
-			"image": "/img/e-commerce/product/product-11.jpg",
+			"name": "Estuary",
+			"description": "Relaxed geometry for comfortable commuting",
+			"price": 705,
+			"image": "/img/e-commerce/product/product-2.jpg",
 			"category": "kids"
 		}
 	]

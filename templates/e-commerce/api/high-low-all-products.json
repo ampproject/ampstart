@@ -1,88 +1,88 @@
 {
 	"items": [
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 989,
-			"image": "/img/e-commerce/product/product-8.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 964,
-			"image": "/img/e-commerce/product/product-7.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 937,
-			"image": "/img/e-commerce/product/product-11.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 927,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 908,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 733,
-			"image": "/img/e-commerce/product/product-12.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 722,
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 992,
 			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 708,
-			"image": "/img/e-commerce/product/product-5.jpg",
 			"category": "mens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 564,
-			"image": "/img/e-commerce/product/product-3.jpg",
-			"category": "kids"
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 967,
+			"image": "/img/e-commerce/product/product-10.jpg",
+			"category": "mens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 564,
+			"name": "Highland",
+			"description": "Timeless style in Reynolds 531 tubing",
+			"price": 860,
 			"image": "/img/e-commerce/product/product-1.jpg",
 			"category": "womens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 511,
+			"name": "Herne Hill",
+			"description": "Built for the track, at home on the street",
+			"price": 843,
+			"image": "/img/e-commerce/product/product-12.jpg",
+			"category": "mens"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 757,
+			"image": "/img/e-commerce/product/product-7.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 747,
+			"image": "/img/e-commerce/product/product-11.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Estuary",
+			"description": "Relaxed geometry for comfortable commuting",
+			"price": 705,
 			"image": "/img/e-commerce/product/product-2.jpg",
 			"category": "kids"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 465,
-			"image": "/img/e-commerce/product/product-4.jpg",
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 657,
+			"image": "/img/e-commerce/product/product-8.jpg",
 			"category": "mens"
+		},
+		{
+			"name": "Beacon",
+			"description": "Full carbon frameset, designed to climb",
+			"price": 639,
+			"image": "/img/e-commerce/product/product-3.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 549,
+			"image": "/img/e-commerce/product/product-9.jpg",
+			"category": "mens"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 464,
+			"image": "/img/e-commerce/product/product-5.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 400,
+			"image": "/img/e-commerce/product/product-4.jpg",
+			"category": "kids"
 		}
 	]
 }
