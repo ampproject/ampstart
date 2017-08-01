@@ -149,7 +149,7 @@
     "items": [
       {
         "name": "Farringdon cap",
-        "description": "Water resistant and breathable.",
+        "description": "Water resistant and breathable",
         "price": "349",
         "quantity": 1,
         "thumbnail": "../../../img/e-commerce/product/product-8.jpg"
@@ -244,51 +244,51 @@
   "related-products": {
     "items": [
       {
-        "name": "Pointer gloves",
+        "name": "Highland",
         "image": "../../img/e-commerce/product/product-1.jpg"
       },
       {
-        "name": "Farringdon cap",
+        "name": "Estuary",
         "image": "../../img/e-commerce/product/product-2.jpg"
       },
       {
-        "name": "Farringdon cap",
+        "name": "Beacon",
         "image": "../../img/e-commerce/product/product-3.jpg"
       },
       {
-        "name": "Farringdon cap",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-4.jpg"
       },
       {
-        "name": "Pointer gloves",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-5.jpg"
       },
       {
-        "name": "Highland",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-6.jpg"
       },
       {
-        "name": "Estuary",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-7.jpg"
       },
       {
-        "name": "Beacon",
+        "name": "Poitner gloves",
         "image": "../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Pointer gloves",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-9.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-10.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-11.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Herne Hill",
         "image": "../../img/e-commerce/product/product-12.jpg"
       }
     ]
