@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+const replaceImportant = require('../lib/index.js');
+const fs = require('fs');
+// Using minimist for CLI parsing
+// Nice cheat sheet for parsing args: http://ricostacruz.com/cheatsheets/minimist.html
+var argv = require('minimist')(process.argv.slice(2), {
+  string: ['output'],
+  boolean: ['help'],
+  alias: {
+    h: 'help',
+    o: 'output'
+  },
+});
+
+/**
+* Function to print the CLI Usage
+*/
+function printUsage() {
+  console.log(`
+    Usage:
+      replace-important file.css [OPTIONS]
+
+      Options:
+        -h, --help          Print usage information
+        -o, --output        Specify output file (Default: output.css)
+  `);
+  process.exit();
+}
+
+// Print Usage for any of these cases
+if(argv.help || argv._.length != 1 || !argv._[0].endsWith('.css')) {
+  printUsage();
+}
+
+// Read the file, and store as a string
+const css = fs.readFileSync(argv._[0]).toString();
+// Get our output directory
+let outputPath = 'output.css';
+if(argv.output) {
+  outputPath = argv.output;
+}
+fs.writeFileSync(outputPath, replaceImportant(css), 'utf8');
