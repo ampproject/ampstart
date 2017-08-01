@@ -126,6 +126,4 @@ function highestSpecificity() {
   return selectorList[selectorList.length - 1];
 }
 
-// Testing code
-const file = fs.readFileSync('test.css');
-fs.writeFileSync('output.css', replaceImportant(file.toString()), 'utf8');
+module.exports = replaceImportant;

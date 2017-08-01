@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+require('../lib/index.js');
+
+console.log('Hello world!');
