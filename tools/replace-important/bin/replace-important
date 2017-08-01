@@ -1,4 +1,14 @@
 #!/usr/bin/env node
 require('../lib/index.js');
+// Using minimist for CLI parsing
+// Nice cheat sheet for parsing args: http://ricostacruz.com/cheatsheets/minimist.html
+var argv = require('minimist')(process.argv.slice(2), {
+  string: ['output'],
+  boolean: ['help'],
+  alias: {
+    h: 'help',
+    o: 'output'
+  },
+});
 
-console.log('Hello world!');
+console.log(argv);
