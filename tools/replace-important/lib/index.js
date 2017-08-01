@@ -15,7 +15,6 @@
  */
 
 const csstree = require('css-tree');
-const fs = require('fs');
 const specificity = require('specificity');
 let selectorList = [];
 
