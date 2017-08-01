@@ -125,4 +125,5 @@ function highestSpecificity() {
 }
 
 // Testing code
-fs.readFileSync('')
+const file = fs.readFileSync('test.css')
+fs.writefileSync(replaceImportant('output.css', file.contents.toString(), 'utf8'));
