@@ -24,6 +24,7 @@ function printUsage() {
         -h, --help          Print usage information
         -o, --output        Specify output file (Default: output.css)
   `);
+  process.exit();
 }
 
 // Print Usage for any of these cases
