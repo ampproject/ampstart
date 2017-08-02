@@ -1,32 +1,37 @@
-{
-	"items": [
-		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 464,
-			"image": "/img/e-commerce/product/product-5.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 747,
-			"image": "/img/e-commerce/product/product-11.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 757,
-			"image": "/img/e-commerce/product/product-7.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Highland",
-			"description": "Timeless style in Reynolds 531 tubing",
-			"price": 860,
-			"image": "/img/e-commerce/product/product-1.jpg",
-			"category": "womens"
-		}
-	]
-}
+[
+	{
+		"name": "Beacon",
+		"description": "Full carbon frameset, designed to climb",
+		"price": 478,
+		"image": "/img/e-commerce/product/product-3.jpg",
+		"category": "womens"
+	},
+	{
+		"name": "Pointer gloves",
+		"description": "Fingerless with lightweight construction",
+		"price": 693,
+		"image": "/img/e-commerce/product/product-4.jpg",
+		"category": "womens"
+	},
+	{
+		"name": "Farringdon cap",
+		"description": "Water resistant and breathable",
+		"price": 716,
+		"image": "/img/e-commerce/product/product-5.jpg",
+		"category": "womens"
+	},
+	{
+		"name": "Farringdon cap",
+		"description": "Water resistant and breathable",
+		"price": 732,
+		"image": "/img/e-commerce/product/product-9.jpg",
+		"category": "womens"
+	},
+	{
+		"name": "Farringdon cap",
+		"description": "Water resistant and breathable",
+		"price": 963,
+		"image": "/img/e-commerce/product/product-7.jpg",
+		"category": "womens"
+	}
+]

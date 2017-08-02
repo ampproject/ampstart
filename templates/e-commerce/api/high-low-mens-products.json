@@ -1,39 +1,16 @@
-{
-	"items": [
-		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 992,
-			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 967,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Herne Hill",
-			"description": "Built for the track, at home on the street",
-			"price": 843,
-			"image": "/img/e-commerce/product/product-12.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 657,
-			"image": "/img/e-commerce/product/product-8.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 549,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "mens"
-		}
-	]
-}
+[
+	{
+		"name": "Pointer gloves",
+		"description": "Fingerless with lightweight construction",
+		"price": 967,
+		"image": "/img/e-commerce/product/product-6.jpg",
+		"category": "mens"
+	},
+	{
+		"name": "Estuary",
+		"description": "Relaxed geometry for comfortable commuting",
+		"price": 638,
+		"image": "/img/e-commerce/product/product-2.jpg",
+		"category": "mens"
+	}
+]

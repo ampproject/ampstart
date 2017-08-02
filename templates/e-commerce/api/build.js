@@ -1,3 +1,8 @@
+/*
+ * Builds a collection of products and writes JSON files sorted by price and 
+ * category.
+ */
+
 const fs = require('fs');
 const path = require('path');
 
@@ -94,15 +99,20 @@ function lowToHigh(productA, productB) {
   return 0;
 }
 
-function saveProducts() {
-  let fileName =
-      `${currentWorkingDirectory}/${highToLowName}-all-${outputFile}`;
-  products.items.sort(highToLow);
-  fs.writeFileSync(fileName, JSON.stringify(products, null, '\t'));
+function writeFile(sortName, sortFunction, products, categoryName = 'all') {
+  products.sort(sortFunction);
+  let data = products;
+  
+  if (categoryName !== 'all') {
+    data = {items: products};
+  }
+  let fileName = `${currentWorkingDirectory}/${sortName}-${categoryName}-${outputFile}`;
+  fs.writeFileSync(fileName, JSON.stringify(products, null, '\t')); 
+}
 
-  products.items.sort(lowToHigh);
-  fileName = `${currentWorkingDirectory}/${lowToHighName}-all-${outputFile}`;
-  fs.writeFileSync(fileName, JSON.stringify(products, null, '\t'));
+function saveProducts() {
+  writeFile(highToLowName, highToLow, products.items);
+  writeFile(lowToHighName, lowToHigh, products.items);
 }
 
 function saveCategories() {
@@ -111,21 +121,10 @@ function saveCategories() {
   });
 
   categories.forEach((categoryName) => {
-    productCategories[categoryName].sort(highToLow);
-    let data = {items: productCategories[categoryName]};
-
-    let fileName = `${currentWorkingDirectory}/${
-                                                 highToLowName
-                                               }-${categoryName}-${outputFile}`;
-    fs.writeFileSync(fileName, JSON.stringify(data, null, '\t'));
-
-    productCategories[categoryName].sort(lowToHigh);
-    data = {items: productCategories[categoryName]};
-
-    fileName = `${currentWorkingDirectory}/${lowToHighName}-${
-                                                              categoryName
-                                                            }-${outputFile}`;
-    fs.writeFileSync(fileName, JSON.stringify(data, null, '\t'));
+    writeFile(highToLowName, highToLow, productCategories[categoryName],
+        categoryName);
+    writeFile(lowToHighName, lowToHigh, productCategories[categoryName],
+        categoryName);
   });
 }
 
