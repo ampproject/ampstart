@@ -1,11 +1,8 @@
 {
-  "name": "replace-important",
+  "name": "gulp-replace-important",
   "version": "1.0.0",
-  "description": "Package for removing !important from css rules from selectors and replacing them inside similar selectors - the new selectors will have the highest specificity in the CSS file.",
-  "main": "lib/index.js",
-  "bin": {
-    "replace-important": "bin/replace-important"
-  },
+  "description": "Gulp Wrapper for the replace-important module",
+  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
@@ -26,11 +23,11 @@
   },
   "homepage": "https://github.com/ampproject/ampstart#readme",
   "dependencies": {
-    "css-tree": "1.0.0-alpha19",
-    "minimist": "^1.2.0",
-    "specificity": "^0.3.1"
+    "replace-important": "file:///Users/torchh/Source/ampstart/tools/replace-important",
+    "through2": "^2.0.3"
   },
   "devDependencies": {
-    "mocha": "^3.5.0"
+    "mocha": "^3.5.0",
+    "vinyl": "^2.1.0"
   }
 }

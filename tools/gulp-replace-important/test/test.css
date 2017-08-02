@@ -1,0 +1,27 @@
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightgreen;
+        display: block !important;
+    }
+}
+
+#main,
+.class > .class2 + p {
+    border: 1px solid black;
+    margin: 20px !important;
+}
+
+ul li {
+	padding: 5px;
+}
+
+
+ul li::after,
+.class > .class2 + p {
+	border: 5px;
+  display:block;
+}
+
+ul li:hover {
+	background: red;
+}
