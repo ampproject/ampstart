@@ -1,0 +1,149 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.ampstart-gallery-component-header {
+  height: calc(18 / 16rem);
+  width: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: calc(18 / 16rem);
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+
+.ampstart-gallery-component-header .ampstart-gallery-component-nav {
+  display: none;
+  flex-direction: column;
+  flex: none;
+}
+
+/*
+ * Increase the header margin when _both_ the screen width and height are large
+ * enough. This keeps margins tight on small screens rotated to landscape.
+ */
+@media (--breakpoint-sm) and (--breakpoint-v-sm) {
+  .ampstart-gallery-component-header {
+    margin: calc(30 / 16rem);
+    margin-right: 0;
+  }
+}
+
+.ampstart-gallery-component-header-menu-button {
+  flex: none;
+  cursor: pointer;
+  padding: calc(10 / 16rem);
+  margin: calc(-10 / 16rem);
+  transition: 150ms background-color ease-in;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.ampstart-gallery-component-header-menu-button:hover {
+  background: #fff;
+}
+
+.ampstart-gallery-component-header-menu-button:active,
+.ampstart-gallery-component-header-menu-button:focus {
+  background: #aaa;
+  outline: none;
+}
+
+.ampstart-gallery-component-header-menu-button:hover svg g {
+  fill: #000;
+}
+
+.ampstart-gallery-component-header-menu-button svg {
+  display: block;
+  width: calc(18 / 16rem);
+  height: calc(18 / 16rem);
+}
+
+.ampstart-gallery-component-header-menu-button::before {
+  bottom: calc(5 / 16rem);
+}
+
+.ampstart-gallery-component-header-menu-button::after {
+  top: calc(5 / 16rem);
+}
+
+.ampstart-gallery-component-header-rotate {
+  display: none;
+  flex: none;
+  white-space: nowrap;
+  margin: 0 0 0 1rem;
+}
+
+.ampstart-gallery-component-mobile-header .ampstart-gallery-component-header-rotate {
+  display: block;
+}
+
+/*
+  Trigger the heading rotation to vertical at the small breakpoint.
+ */
+@media (--breakpoint-sm) {
+  .ampstart-gallery-component-header {
+    position: fixed;
+    flex-direction: column;
+    width: calc(18 / 16rem);
+    height: auto;
+  }
+
+  .ampstart-gallery-component-header-rotate {
+    display: block;
+    margin: 1rem 0;
+    transform: rotate(-90deg) translateY(calc(-50% + (18 / 16rem) / 2));
+  }
+
+  .ampstart-gallery-component-header-rotate::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% - 1.125rem);
+  }
+}
+
+/*
+ * Increase the margin above the heading if the screen is taller than the small
+ * breakpoint.
+ */
+@media (--breakpoint-sm) and (--breakpoint-v-sm) {
+  .ampstart-gallery-component-header-rotate  {
+    margin: calc(28 / 16rem) 0;
+  }
+}
+
+/*
+ * Hide the sticky footer and display the header nav.
+ */
+@media (--breakpoint-sm) and (--breakpoint-v-sm) {
+  .ampstart-gallery-component-header .ampstart-gallery-component-nav {
+    display: flex;
+  }
+}
+
+.ampstart-gallery-component-header-heading {
+  margin: 0;
+  font-size: calc(13.5 / 16rem);
+  line-height: calc(18 / 16rem);
+}
+
+.ampstart-gallery-component-header-heading a {
+  color: inherit;
+  text-decoration: none;
+}

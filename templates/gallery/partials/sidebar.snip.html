@@ -1,0 +1,75 @@
+{{!
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
+{{#sidebar}}
+  <amp-sidebar
+    id="sidebar"
+    class="ampstart-gallery-component-sidebar"
+    layout="nodisplay"
+  >
+    <div class="ampstart-gallery-component-sidebar-content">
+      <div class="ampstart-gallery-component-sidebar-header">
+        <div
+          on="tap:sidebar.close"
+          tabindex="-1"
+          role="button"
+          class="ampstart-gallery-component-sidebar-close-button"
+        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <g fill="none" stroke="currentColor">
+            <polyline points="84.243 84.243 15 15 15 15"/>
+            <path d="M15,84.2426407 L84.2426407,15 L15,84.2426407 Z"/>
+          </g>
+        </svg></div>
+        <div class="ampstart-gallery-component-sidebar-heading">
+          {{#header.href}}<a href="{{header.href}}">{{/header.href}}
+          Current Exhibitions
+          {{#header.href}}<a/>{{/header.href}}
+        </div>
+      </div>
+      <nav class="ampstart-gallery-component-sidebar-nav">
+        {{#links}}
+        <a
+          class="ampstart-gallery-component-sidebar-nav-item"
+          href="{{href}}"
+        >
+          <div class="ampstart-gallery-component-sidebar-nav-item-text">
+            {{{text}}}
+          </div>
+          {{#image}}
+          <amp-img
+            class="ampstart-gallery-component-sidebar-nav-item-image"
+            width="1"
+            height="1"
+            layout="responsive"
+            src="{{src}}"
+            {{#2x}}
+            srcset="{{src}} 1x, {{2x}} 2x"
+            {{/2x}}
+          ></amp-img>
+          {{/image}}
+          <div class="ampstart-gallery-component-sidebar-nav-item-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+              <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"/>
+            </svg>
+          </div>
+        </a>
+        {{/links}}
+      </nav>
+    </div>
+  </amp-sidebar>
+{{/sidebar}}

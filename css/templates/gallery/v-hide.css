@@ -13,40 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import 'base-page-vars';
 
-*, *::before, *::after {
-  box-sizing: border-box;
+@import './bass-override-vars';
+
+@media (--breakpoint-v-xs) {
+  .v-xs-hide { display: none }
 }
 
-/* Body */
-body {
-  background: var(--color-body-background);
-  color: var(--color-font-default);
-  font-family: var(--font-family);
-  min-width: var(--body-min-width);
-  overflow-x: hidden;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
+@media (--breakpoint-v-sm-md) {
+  .v-sm-hide { display: none }
 }
 
-main {
-  max-width: var(--content-max-width);
-  margin: 0 auto;
+@media (--breakpoint-v-md-lg) {
+  .v-md-hide { display: none }
 }
 
-p {
-  padding: 0;
-  margin: 0;
-}
-
-
-/* Accents */
-.ampstart-accent {
-  color: var(--color-font-accent);
-}
-
-#content:target {
-  margin-top: calc(0px - var(--navbar-height));
-  padding-top: var(--navbar-height);
+@media (--breakpoint-v-lg) {
+  .v-lg-hide { display: none }
 }

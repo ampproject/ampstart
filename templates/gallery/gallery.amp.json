@@ -1,0 +1,68 @@
+{
+  "gallery": {
+    "head-tag": {
+      "title": "Gallery Template",
+      "canonical-path": "templates/gallery.amp",
+      "extensions": [
+        "amp-sidebar",
+        "amp-carousel"
+      ],
+      "css-path": "templates/gallery/landing.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Poppins:300,400,600"
+      ]
+    },
+    "header": {
+      "heading": "Gallery of Modern&nbsp;Art",
+      "invert": true
+    },
+    "sidebar": {
+      "links": [{
+        "text": "Home",
+        "href": "./gallery.amp.html"
+      }, {
+        "text": "Untitled<br/>Evan Ondre",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "../../img/gallery/1429886_200.jpg",
+          "2x": "../../img/gallery/1429886_400.jpg"
+        }
+      }, {
+        "text": "Cage<br/>Ellen Doe",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "../../img/gallery/915599_200.jpg",
+          "2x": "../../img/gallery/915599_400.jpg"
+        }
+      }, {
+        "text": "Living Tree<br/>David Beck",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "../../img/gallery/780149_200.jpg",
+          "2x": "../../img/gallery/780149_400.jpg"
+        }
+      }, {
+        "text": "Short Circuit<br/>Anna Moss",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "../../img/gallery/1097005_200.jpg",
+          "2x": "../../img/gallery/1097005_400.jpg"
+        }
+      }, {
+        "text": "Geo Breakfast<br/>Terra Morales",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "../../img/gallery/1028245_200.jpg",
+          "2x": "../../img/gallery/1028245_400.jpg"
+        }
+      }, {
+        "text": "Flying Pigs<br/>Brad Parker",
+        "href": "./gallery-inner.amp.html",
+        "image": {
+          "src": "../../img/gallery/1431916_200.jpg",
+          "2x": "../../img/gallery/1431916_400.jpg"
+        }
+      }]
+    }
+  }
+}
