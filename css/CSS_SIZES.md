@@ -1,17 +1,18 @@
 | Filename                      | Number of Characters | Size     |
 | ----------------------------- | -------------------- | -------- |
-| core.css                      | 13784                | 13.78 KB |
-| templates/alp/page.css        | 24682                | 24.68 KB |
-| templates/article/page.css    | 24211                | 24.21 KB |
-| templates/blog/page.css       | 24454                | 24.45 KB |
-| templates/e-commerce/page.css | 38859                | 38.86 KB |
-| templates/lune/page.css       | 41925                | 41.92 KB |
-| templates/test/page.css       | 24297                | 24.30 KB |
-| templates/themes_1/page.css   | 25879                | 25.88 KB |
-| templates/themes_2/page.css   | 24786                | 24.79 KB |
-| templates/thescenic/page.css  | 24305                | 24.30 KB |
-| www/components/page.css       | 22712                | 22.71 KB |
-| www/getstarted/page.css       | 17945                | 17.95 KB |
-| www/howitworks/page.css       | 17945                | 17.95 KB |
-| www/index/page.css            | 22125                | 22.13 KB |
-| www/render/page.css           | 24244                | 24.24 KB |
+| core.css                      | 13799                | 13.80 KB |
+| templates/alp/page.css        | 24313                | 24.31 KB |
+| templates/article/page.css    | 23842                | 23.84 KB |
+| templates/blog/page.css       | 24085                | 24.09 KB |
+| templates/e-commerce/page.css | 40486                | 40.49 KB |
+| templates/gallery/page.css    | 26266                | 26.27 KB |
+| templates/lune/page.css       | 47132                | 47.13 KB |
+| templates/test/page.css       | 23928                | 23.93 KB |
+| templates/themes_1/page.css   | 25496                | 25.50 KB |
+| templates/themes_2/page.css   | 24417                | 24.42 KB |
+| templates/thescenic/page.css  | 23936                | 23.94 KB |
+| www/components/page.css       | 22727                | 22.73 KB |
+| www/getstarted/page.css       | 17960                | 17.96 KB |
+| www/howitworks/page.css       | 17960                | 17.96 KB |
+| www/index/page.css            | 22140                | 22.14 KB |
+| www/render/page.css           | 23875                | 23.88 KB |
