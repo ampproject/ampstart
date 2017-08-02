@@ -1,0 +1,12 @@
+{
+  "gallery": {
+    "head-tag": {
+      "title": "Gallery Template",
+      "canonical-path": "templates/gallery.amp",
+      "css-path": "templates/gallery/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Poppins:300,400,600"
+      ]
+    }
+  }
+}

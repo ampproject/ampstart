@@ -1,0 +1,18 @@
+{
+  "gallery": {
+    "head-tag": {
+      "title": "Gallery Template",
+      "canonical-path": "templates/gallery-inner.amp",
+      "css-path": "templates/gallery/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Poppins:400,500",
+        "https://fonts.googleapis.com/css?family=Oswald:400"
+      ]
+    },
+    "hero": {
+      "heading": "Living Tree",
+      "subheading": "<time datetime=\"2017-08-24\">Sept 24</time>-<time datetime=\"2017-08-29\">29</time> / Anna Moss",
+      "content": "<blockquote>Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu in. Tellus at ut. Ac mi varius ut.</blockquote>"
+    }
+  }
+}
