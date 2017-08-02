@@ -1,0 +1,25 @@
+{
+  "name": "gulp-replace-important",
+  "version": "1.0.0",
+  "description": "Gulp Wrapper for the replace-important module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camelburrito/gulp-replace-important.git"
+  },
+  "keywords": [
+    "replace",
+    "!important",
+    "CSS",
+    "AMP"
+  ],
+  "author": "The AMP HTML Authors",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ampproject/ampstart/issues"
+  },
+  "homepage": "https://github.com/ampproject/ampstart#readme"
+}

@@ -22,9 +22,9 @@
   "author": "The AMP HTML Authors",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/camelburrito/gulp-replace-important/issues"
+    "url": "https://github.com/ampproject/ampstart/issues"
   },
-  "homepage": "https://github.com/camelburrito/gulp-replace-important#readme",
+  "homepage": "https://github.com/ampproject/ampstart#readme",
   "dependencies": {
     "css-tree": "1.0.0-alpha19",
     "minimist": "^1.2.0",
