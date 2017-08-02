@@ -175,6 +175,7 @@ textarea {
 .ampstart-input > input,
 .ampstart-input > textarea {
   border-bottom: 1px dashed var(--color-separator);
+  color: var(--color-primary);
 }
 
 .ampstart-input-radio {
@@ -330,12 +331,15 @@ amp-selector [option][selected] {
   border-bottom: 1px solid var(--color-separator);
 }
 
-.ampstart-navbar-trigger {
-  position: absolute;
-  top: 0;
-  padding-top: var(--space-2);
+.ampstart-headerbar .ampstart-navbar-trigger {
   color: var(--color-primary);
   font-size: var(--h4);
+  /* Overrides pr2 default in navbar */
+  padding-right: 0;
+}
+
+.ampstart-navbar-trigger:focus {
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 @media (--breakpoint-md) {

@@ -1,88 +1,88 @@
 {
 	"items": [
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 989,
-			"image": "/img/e-commerce/product/product-8.jpg",
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 968,
+			"image": "/img/e-commerce/product/product-7.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Beacon",
+			"description": "Full carbon frameset, designed to climb",
+			"price": 958,
+			"image": "/img/e-commerce/product/product-3.jpg",
 			"category": "mens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 964,
-			"image": "/img/e-commerce/product/product-7.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 937,
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 923,
 			"image": "/img/e-commerce/product/product-11.jpg",
 			"category": "kids"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 927,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "kids"
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 892,
+			"image": "/img/e-commerce/product/product-8.jpg",
+			"category": "womens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 908,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "kids"
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 856,
+			"image": "/img/e-commerce/product/product-4.jpg",
+			"category": "womens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 733,
-			"image": "/img/e-commerce/product/product-12.jpg",
+			"name": "Estuary",
+			"description": "Relaxed geometry for comfortable commuting",
+			"price": 846,
+			"image": "/img/e-commerce/product/product-2.jpg",
 			"category": "mens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 722,
-			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 708,
-			"image": "/img/e-commerce/product/product-5.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 564,
-			"image": "/img/e-commerce/product/product-3.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 564,
+			"name": "Highland",
+			"description": "Timeless style in Reynolds 531 tubing",
+			"price": 619,
 			"image": "/img/e-commerce/product/product-1.jpg",
 			"category": "womens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 511,
-			"image": "/img/e-commerce/product/product-2.jpg",
-			"category": "kids"
+			"name": "Herne Hill",
+			"description": "Built for the track, at home on the street",
+			"price": 575,
+			"image": "/img/e-commerce/product/product-12.jpg",
+			"category": "womens"
 		},
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 465,
-			"image": "/img/e-commerce/product/product-4.jpg",
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 574,
+			"image": "/img/e-commerce/product/product-9.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 510,
+			"image": "/img/e-commerce/product/product-10.jpg",
 			"category": "mens"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 489,
+			"image": "/img/e-commerce/product/product-5.jpg",
+			"category": "womens"
+		},
+		{
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 444,
+			"image": "/img/e-commerce/product/product-6.jpg",
+			"category": "womens"
 		}
 	]
 }
