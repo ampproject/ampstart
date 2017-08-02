@@ -101,13 +101,10 @@ function lowToHigh(productA, productB) {
 
 function writeFile(sortName, sortFunction, products, categoryName = 'all') {
   products.sort(sortFunction);
-  let data = products;
-  
-  if (categoryName !== 'all') {
-    data = {items: products};
-  }
+  let data = {items: products};
+
   let fileName = `${currentWorkingDirectory}/${sortName}-${categoryName}-${outputFile}`;
-  fs.writeFileSync(fileName, JSON.stringify(products, null, '\t')); 
+  fs.writeFileSync(fileName, JSON.stringify(data, null, '\t')); 
 }
 
 function saveProducts() {

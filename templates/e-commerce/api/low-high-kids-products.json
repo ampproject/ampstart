@@ -1,37 +1,18 @@
-[
-	{
-		"name": "Pointer gloves",
-		"description": "Fingerless with lightweight construction",
-		"price": 444,
-		"image": "/img/e-commerce/product/product-8.jpg",
-		"category": "kids"
-	},
-	{
-		"name": "Highland",
-		"description": "Timeless style in Reynolds 531 tubing",
-		"price": 472,
-		"image": "/img/e-commerce/product/product-1.jpg",
-		"category": "kids"
-	},
-	{
-		"name": "Herne Hill",
-		"description": "Built for the track, at home on the street",
-		"price": 540,
-		"image": "/img/e-commerce/product/product-12.jpg",
-		"category": "kids"
-	},
-	{
-		"name": "Pointer gloves",
-		"description": "Fingerless with lightweight construction",
-		"price": 607,
-		"image": "/img/e-commerce/product/product-10.jpg",
-		"category": "kids"
-	},
-	{
-		"name": "Farringdon cap",
-		"description": "Water resistant and breathable",
-		"price": 719,
-		"image": "/img/e-commerce/product/product-11.jpg",
-		"category": "kids"
-	}
-]
+{
+	"items": [
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 923,
+			"image": "/img/e-commerce/product/product-11.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 968,
+			"image": "/img/e-commerce/product/product-7.jpg",
+			"category": "kids"
+		}
+	]
+}
