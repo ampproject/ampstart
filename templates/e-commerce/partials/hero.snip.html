@@ -3,7 +3,9 @@
   <a href="{{link.url}}" class="text-decoration-none block">
   {{#images}}
     {{#image}}
-      <amp-img class="commerce-hero-image" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" media="{{media}}" alt="{{alt}}"></amp-img>
+      <amp-img class="commerce-hero-image" src="{{url}}" width="{{width}}" height="{{height}}" layout="responsive" media="{{media}}" alt="{{alt}}" noloading>
+        {{> partials/preloader.snip.html}}
+      </amp-img>
     {{/image}}
   {{/images}}
   <div class="commerce-hero-content commerce-hero-content-theme-{{text-theme}} flex justify-center flex-column md-mx-auto md-p0">
