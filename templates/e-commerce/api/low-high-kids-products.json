@@ -1,45 +1,17 @@
 {
 	"items": [
 		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 511,
-			"image": "/img/e-commerce/product/product-2.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 564,
-			"image": "/img/e-commerce/product/product-3.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 722,
-			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 908,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 927,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Product Name",
-			"description": "Mauris tincidunt.",
-			"price": 937,
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 923,
 			"image": "/img/e-commerce/product/product-11.jpg",
+			"category": "kids"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 968,
+			"image": "/img/e-commerce/product/product-7.jpg",
 			"category": "kids"
 		}
 	]
