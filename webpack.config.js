@@ -112,7 +112,7 @@ module.exports = function(webpackEnv) {
       new webpack.NoEmitOnErrorsPlugin(),
       FailPlugin,
       new HtmlWebpackPlugin({
-        template: conf.path.src('index.html')
+        template: `${conf.src.configurator_app}/index.html`
       }),
     ]);
   }
