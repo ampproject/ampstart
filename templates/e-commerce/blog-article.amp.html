@@ -26,16 +26,22 @@ limitations under the License.
     {{#blog.articles.0}}
     <article class="commerce-blog-wrapper col-12 md-col-8 px2 pt2 pb3 md-px4 md-pt6 md-pb7">
       <amp-img src="{{images.0.narrow}}" srcset="{{images.0.narrow}} 750w,{{images.0.wide}} 1280w" width="{{imageWidth}}"
-        height="{{imageHeight}}" layout="responsive" alt="{{title}}"></amp-img>
+        height="{{imageHeight}}" layout="responsive" alt="{{title}}" noloading>
+        {{> partials/preloader.snip.html}}
+      </amp-img>
       <div class="mt3">
         <h1 class="h3">{{title}}</h1>
         <time datetime="{{datetime}}" class="block mb2">{{date}}</time>
         <p class="mb5">{{paragraphs.0}}</p>
       </div>
       <amp-img class="mb3" src="{{images.1.narrow}}" srcset="{{images.1.narrow}} 750w,{{images.1.wide}} 1280w" width="{{imageWidth}}"
-        height="{{imageHeight}}" layout="responsive" alt="{{title}}"></amp-img>
+        height="{{imageHeight}}" layout="responsive" alt="{{title}}" noloading>
+        {{> partials/preloader.snip.html}}
+      </amp-img>
       <amp-img class="mb5" src="{{images.2.narrow}}" srcset="{{images.2.narrow}} 750w,{{images.2.wide}} 1280w" width="{{imageWidth}}"
-        height="{{imageHeight}}" layout="responsive" alt="{{title}}"></amp-img>
+        height="{{imageHeight}}" layout="responsive" alt="{{title}}" noloading>
+        {{> partials/preloader.snip.html}}
+      </amp-img>
       <div>
         <p>{{paragraphs.1}}</p>
         <blockquote class="ampstart-pullquote commerce-pullquote md-col-8">{{quote.text}}</blockquote>
