@@ -14,10 +14,23 @@
  * limitations under the License.
  */
 
-require('./validate');
-require('./highlight');
-require('./escape');
-require('./countCss');
-require('./replaceImportant');
-require('./configurator');
-require('./bundle');
+const gulp = require('gulp-help')(require('gulp'));
+const through = require('through2');
+const replaceImportant = require('replace-important');
+const config = require('./config');
+var gutil = require('gulp-util');
+
+function gulpReplaceImportant() {
+  return gulp.src(config.dest.css + '**/page.css')
+    .pipe(through.obj(function(file, enc, cb) {
+      if (file.isNull()) {
+        cb(null, file);
+        return;
+      }
+      file.contents = new Buffer(replaceImportant(file.contents.toString()));
+      cb(null, file);
+    }))
+    .pipe(gulp.dest(config.dest.css));
+}
+
+gulp.task('replace-important', gulpReplaceImportant);

@@ -116,7 +116,7 @@ function getPartials(acc, embedderDir, template) {
 
 gulp.task('build', 'build', function(cb) {
   runSequence(
-      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'countcss', 'posthtml', 'www', 'validate',
+      'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'replace-important', 'countcss', 'posthtml', 'www', 'validate',
       'bundle', cb);
 });
 
@@ -210,7 +210,6 @@ gulp.task('postcss', 'build postcss files', function() {
   const options = {};
   return gulp.src(config.src.css.concat(config.src.css_ignore))
       .pipe(postcss(plugins, options))
-      .pipe(replace('!important', ''))
       .pipe(gulp.dest(config.dest.css))
 });
 

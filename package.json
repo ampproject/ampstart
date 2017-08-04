@@ -50,6 +50,7 @@
     "posthtml-extend-attrs": "^1.0.0",
     "posthtml-include": "^1.1.0",
     "posthtml-inline-assets": "^2.0.0",
+    "replace-important": "file:tools/replace-important",
     "run-sequence": "^1.1.5",
     "through2": "2.0.3"
   },
