@@ -23,5 +23,8 @@
   color: var(--color-font-secondary);
   font-size: var(--h1);
   font-weight: var(--bold-font-weight);
-  margin-left: -2px;
+  margin-left: -7px;
+  margin-top: 7px;
+  padding: 5px;
+  float: left;
 }

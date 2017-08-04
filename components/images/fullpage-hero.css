@@ -22,7 +22,7 @@
 .ampstart-image-fullpage-hero .ampstart-image-credit {
   box-decoration-break: clone;
   background: var(--color-primary);
-  padding: 0 var(--space-2) 0.2rem;
+  padding: 0.4rem;
 }
 
 .ampstart-image-fullpage-hero > amp-img {
@@ -52,10 +52,12 @@
   display: block;
   content: '⌄';
   font-size: var(--h2);
+  margin-top: 0.5rem;
 }
 
 .ampstart-readmore-text {
   background: var(--color-primary);
+  padding: 0.5rem;
 }
 
 @media (--breakpoint-md) {
