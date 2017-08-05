@@ -42,7 +42,7 @@ function getData(fileDirectory, opt_path) {
    *    template.
    * 4) Otherwise set the data to be the root /data.json.
    */
-  const dataFile = 'data.json'
+  const dataFile = 'data.json';
   const folderData = fileDirectory + '/' + dataFile;
   const templateData = (opt_path || '').replace(/html$/, 'json');
   let data = dataFile;
@@ -71,7 +71,7 @@ function getData(fileDirectory, opt_path) {
 }
 
 function mustacheStream() {
-  return through.obj(function(file, enc, cb) {
+  return through.obj((file, enc, cb) => {
     if (file.isNull()) {
       cb(null, file);
       return;
@@ -94,10 +94,10 @@ function mustacheStream() {
 function getPartials(acc, embedderDir, template) {
   // Assume {{}} as mustache start/end tags
   const partialRegexp = new RegExp('{{>\\s*(\\S+)\\s*}}', 'g');
-  var partialMatch = null;
-  var partialPath = null;
-  var partialTemplate = null;
-  var absPathToTemplate = null;
+  let partialMatch = null;
+  let partialPath = null;
+  let partialTemplate = null;
+  let absPathToTemplate = null;
   while ((partialMatch = partialRegexp.exec(template))) {
     partialPath = partialMatch[1];
     absPathToTemplate = path.resolve(embedderDir, partialPath);
@@ -114,23 +114,23 @@ function getPartials(acc, embedderDir, template) {
   return acc;
 }
 
-gulp.task('build', 'build', function(cb) {
+gulp.task('build', 'build', cb => {
   runSequence(
       'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'countcss', 'posthtml', 'www', 'validate',
-      'bundle', cb);
+      'bundle', 'build:configurator', cb);
 });
 
-gulp.task('clean', function() {
+gulp.task('clean', 'Delete the dist/ directory to allow for clean re-builds', () => {
   // Clears partials map so changes to components are rebuilt in watch task.
   partialsMap = {};
   return del(['dist']);
 });
 
-gulp.task('img', function() {
+gulp.task('img', 'Copy Image assets to dist/', () => {
   return gulp.src(config.src.img).pipe(gulp.dest(config.dest.img));
 });
 
-gulp.task('templateapi', function() {
+gulp.task('templateapi', () => {
   return gulp.src(config.src.templateApi).pipe(gulp.dest(config.dest.templateApi));
 });
 
@@ -145,57 +145,57 @@ function inlineCheckStyle(node) {
 
 const inlineTransformation = {
   script: {
-    check: inlineCheckScript,
+    check: inlineCheckScript
   },
   style: {
-    check: inlineCheckStyle,
+    check: inlineCheckStyle
   }
 };
 
-gulp.task('www', function() {
+gulp.task('www', 'Translate Mustach files to AMP HTML', () => {
   const plugins = [
     require('posthtml-include')({encoding: 'utf-8'}),
     require('posthtml-inline-assets')({
       from: config.dest.www_pages,
-      inline: inlineTransformation,
-    }),
+      inline: inlineTransformation
+    })
   ];
   const options = {};
   return gulp.src(config.src.www_pages)
       .pipe(mustacheStream())
       .pipe(posthtml(plugins, options))
-      .pipe(gulp.dest(config.dest.www_pages))
+      .pipe(gulp.dest(config.dest.www_pages));
 });
 
-gulp.task('watch:www', 'watch stuff, minimal watching for development', ['build'], function() {
+gulp.task('watch:www', 'watch stuff, minimal watching for development', ['build'], () => {
   return gulp.watch(
-      [
-        config.src.components, config.src.templates, config.src.www_pages,
-        config.src.css, config.src.data, config.src.img
-      ],
-      function(event) {
+    [
+      config.src.components, config.src.templates, config.src.www_pages,
+      config.src.css, config.src.data, config.src.img
+    ],
+      event => {
         runSequence(['img', 'postcss'], ['www', 'posthtml'], 'validate');
       });
 });
 
 gulp.task('default', ['build']);
 
-gulp.task('posthtml', 'build kickstart files', function() {
+gulp.task('posthtml', 'build kickstart files', () => {
   const plugins = [
     require('posthtml-inline-assets')({
       from: config.dest.templates,
-      inline: inlineTransformation,
+      inline: inlineTransformation
     }),
-    require('posthtml-include')({encoding: 'utf-8'}),
+    require('posthtml-include')({encoding: 'utf-8'})
   ];
   const options = {};
   return gulp.src(config.src.templates)
       .pipe(mustacheStream())
       .pipe(posthtml(plugins, options))
-      .pipe(gulp.dest(config.dest.templates))
+      .pipe(gulp.dest(config.dest.templates));
 });
 
-gulp.task('postcss', 'build postcss files', function() {
+gulp.task('postcss', 'build postcss files', () => {
   const plugins = [
     require('postcss-import')(),
     require('autoprefixer')(),
@@ -204,20 +204,61 @@ gulp.task('postcss', 'build postcss files', function() {
     require('postcss-custom-properties')(),
     require('postcss-discard-comments')(),
     require('postcss-custom-media')(),
-    require('cssnano')({zindex: false}),
+    require('cssnano')({zindex: false})
   ];
   const replace = require('gulp-replace');
   const options = {};
   return gulp.src(config.src.css.concat(config.src.css_ignore))
       .pipe(postcss(plugins, options))
       .pipe(replace('!important', ''))
-      .pipe(gulp.dest(config.dest.css))
+      .pipe(gulp.dest(config.dest.css));
 });
 
-gulp.task('serve', 'Host a livereloading webserver for the project', ['watch:www'], function() {
+gulp.task('serve', 'Host the AMP Start website, and livereload for changes', ['watch:www'], () => {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     host: '0.0.0.0',
-    directoryListing: {enable: true, path: 'dist'},
+    directoryListing: {enable: true, path: 'dist'}
   }));
 });
+
+/** ****************************************************************************
+*
+* Configurator
+*
+***************************************************************************** */
+
+const browserSync = require('browser-sync');
+const conf = require('./tasks/configurator/conf/gulp.conf');
+
+gulp.task('build:configurator', 'builds the configurator app', () => {
+  runSequence(['other', 'webpack:dist']);
+});
+
+gulp.task('test', 'Run Tests for the AMP Start Configurator', () => {
+  runSequence(['karma:single-run']);
+});
+
+gulp.task('test:auto', 'Run Tests for the AMP Start Configurator', () => {
+  runSequence(['karma:auto-run']);
+});
+
+gulp.task('serve:configurator', 'Host the Configurator and livereload for changes', () => {
+  runSequence('webpack:watch', 'watch:configurator', 'browsersync');
+});
+
+gulp.task('serve:configurator:dist', 'Host a built (dist/) Configurator', () => {
+  runSequence('default', 'browsersync:dist');
+});
+
+gulp.task('watch:configurator', 'Watch files in the configurator for changes and rebuild', watchConfigurator);
+
+function reloadBrowserSync(cb) {
+  browserSync.reload();
+  cb();
+}
+
+function watchConfigurator(done) {
+  gulp.watch(conf.path.tmp('index.html'), reloadBrowserSync);
+  done();
+}

@@ -20,3 +20,7 @@ require('./escape');
 require('./countCss');
 require('./configurator');
 require('./bundle');
+require('./configurator/browsersync');
+require('./configurator/karma');
+require('./configurator/misc');
+require('./configurator/webpack');

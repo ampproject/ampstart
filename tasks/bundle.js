@@ -27,17 +27,17 @@ const cssbeautify = require('cssbeautify');
 function collectResources(filepath, html, done) {
   const filename = path.basename(filepath, '.amp.html');
   console.log('start for', filepath);
-  const env = jsdom.env(html, function(err, window) {
+  const env = jsdom.env(html, (err, window) => {
     const ampCustom = window.document.querySelector('style[amp-custom]');
     const css = ampCustom && ampCustom.textContent || '';
     const ampimgs = window.document.querySelectorAll('amp-img[src]');
     // This can most likely be done with the amp-img scan but separating
     // out for now.
-    var srcsetimgs = window.document.querySelectorAll('amp-img[srcset]');
+    let srcsetimgs = window.document.querySelectorAll('amp-img[srcset]');
     srcsetimgs = [].concat.apply([], [].slice.call(srcsetimgs)
-        .map(function(ampimg) {
+        .map(ampimg => {
           return ampimg.getAttribute('srcset')
-              .split(',').map(function(pair) {
+              .split(',').map(pair => {
                 const src = pair.trim().split(' ')[0];
                 if (src.indexOf('http://') == 0 ||
                     src.indexOf('https://') == 0 ||
@@ -49,7 +49,7 @@ function collectResources(filepath, html, done) {
                 return abspath.replace(`${process.cwd()}/`, '');
               });
         }));
-    const imgs = [].slice.call(ampimgs).map(function(el) {
+    const imgs = [].slice.call(ampimgs).map(el => {
       const src = el.getAttribute('src');
       if (src.indexOf('http://') == 0 ||
           src.indexOf('https://') == 0 ||
@@ -61,7 +61,7 @@ function collectResources(filepath, html, done) {
     });
     const name = filepath.replace(`${process.cwd()}/`, '');
     imgs.push.apply(imgs, srcsetimgs);
-    imgs.forEach(function(imgpath) {
+    imgs.forEach(imgpath => {
       if (imgpath) {
         const dest = `.archive/${imgpath.replace(/^dist/, filename)}`;
         fs.copySync(imgpath, dest);
@@ -81,7 +81,6 @@ function collectResources(filepath, html, done) {
   });
 }
 
-
 function bundle() {
   fs.removeSync('.archive');
   fs.mkdirSync('.archive');
@@ -90,19 +89,19 @@ function bundle() {
   fs.mkdirSync('dist/archive');
 
   return gulp.src(`${config.dest.templates}/templates/**/*.html`)
-      .pipe(through.obj(function(file, enc, cb) {
+      .pipe(through.obj((file, enc, cb) => {
         if (file.isNull()) {
           cb(null, file);
           return;
         }
         const resources = collectResources(
             file.path, file.contents.toString(), cb.bind(null, null, file));
-      })).on('end', function() {
+      })).on('end', () => {
         fs.removeSync('.archive');
       });
 }
 
-gulp.task('bundle', bundle);
+gulp.task('bundle', 'Bundle the AMP Start website to be deployed and downloaded', bundle);
 
 const licenses = `
 Basscss | https://github.com/basscss/basscss/blob/master/LICENSE.md

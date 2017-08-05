@@ -3,6 +3,10 @@
 build
 dist
 node_modules
+.tmp
+**/node_modules
+coverage
+**/coverage
 npm-debug.log
 .tm_properties
 .vscode
