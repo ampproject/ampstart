@@ -1,6 +1,6 @@
 {
   "name": "replace-important",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "Package for removing !important from css rules from selectors and replacing them inside similar selectors - the new selectors will have the highest specificity in the CSS file.",
   "main": "lib/index.js",
   "bin": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/camelburrito/gulp-replace-important.git"
+    "url": "https://github.com/ampproject/ampstart/tree/master/tools/replace-important"
   },
   "keywords": [
     "replace",
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/ampproject/ampstart/issues"
   },
-  "homepage": "https://github.com/ampproject/ampstart#readme",
+  "homepage": "https://github.com/ampproject/ampstart/tree/master/tools/replace-important#readme",
   "dependencies": {
     "css-tree": "1.0.0-alpha19",
     "minimist": "^1.2.0",
