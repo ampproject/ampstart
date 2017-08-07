@@ -1,6 +1,6 @@
 const webpack = require('webpack');
-const conf = require('tasks/config.js');
-const pkg = require('package.json');
+const conf = require('./tasks/config.js');
+const pkg = require('./package.json');
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -11,7 +11,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 //Our current environment
-const env = {};
+let env = {};
 
 // Our environment aliases
 const ENV_ALIAS = {
@@ -53,7 +53,7 @@ module.exports = function(webpackEnv) {
 
   // Set our environemnt
   env = webpackEnv;
-
+  console.log(env);
   // Create our base webpack configuration
   const webpackConf = {
     module: {
@@ -93,7 +93,7 @@ module.exports = function(webpackEnv) {
         use: 'css-loader?minimize!postcss-loader'
       })
     });
-  } else if(isENV(ENV_ALIAS.DEV)) {
+  } else if(isEnv(ENV_ALIAS.DEV)) {
     webpackConf.module.loaders.push({
       test: /\.css$/,
       loaders: ExtractTextPlugin.extract({
@@ -106,8 +106,8 @@ module.exports = function(webpackEnv) {
   //PLUGINS
   if(isNotEnv(ENV_ALIAS.TEST)) {
     // Add shared plugins
-    webpackConf.module.plugins =
-      webpackConf.module.plugins.concat([
+    webpackConf.plugins =
+      webpackConf.plugins.concat([
       new webpack.optimize.OccurrenceOrderPlugin(),
       new webpack.NoEmitOnErrorsPlugin(),
       FailPlugin,
@@ -118,8 +118,8 @@ module.exports = function(webpackEnv) {
   }
 
   if(isEnv(ENV_ALIAS.DEV)) {
-    webpackConf.module.plugins =
-      webpackConf.module.plugins.concat([
+    webpackConf.plugins =
+      webpackConf.plugins.concat([
         new webpack.HotModuleReplacementPlugin(),
         new webpack.LoaderOptionsPlugin({
           options: {
@@ -129,8 +129,8 @@ module.exports = function(webpackEnv) {
         })
       ]);
   } else if(isEnv(ENV_ALIAS.PROD)) {
-    webpackConf.module.plugins =
-      webpackConf.module.plugins.concat([
+    webpackConf.plugins =
+      webpackConf.plugins.concat([
         new webpack.DefinePlugin({
           'process.env.NODE_ENV': '"production"'
         }),
@@ -147,8 +147,8 @@ module.exports = function(webpackEnv) {
         })
       ]);
   } else if(isEnv(ENV_ALIAS.TEST)) {
-    webpackConf.module.plugins =
-      webpackConf.module.plugins.concat([
+    webpackConf.plugins =
+      webpackConf.plugins.concat([
         new webpack.LoaderOptionsPlugin({
           options: {},
           debug: true
@@ -158,31 +158,31 @@ module.exports = function(webpackEnv) {
 
   //DEVTOOL
   if(isNotEnv(ENV_ALIAS.PROD)) {
-    webpackConf.module.devtool = 'source-map';
+    webpackConf.devtool = 'source-map';
   }
 
   //OUTPUT
-  if(isENV(ENV_ALIAS.DEV)) {
-    webpackConf.module.output = {
+  if(isEnv(ENV_ALIAS.DEV)) {
+    webpackConf.output = {
       path: path.join(process.cwd(), conf.dist.configurator_tmp),
       filename: 'index.js'
     }
   } else if(isENV(ENV_ALIAS.PROD)) {
-    webpackConf.module.output = {
+    webpackConf.output = {
       path: path.join(process.cwd(), conf.dist.configurator),
       filename: '[name]-[hash].js'
     }
   }
 
   //ENTRY
-  if(isENV(ENV_ALIAS.DEV)) {
-    webpackConf.module.entry = [
+  if(isEnv(ENV_ALIAS.DEV)) {
+    webpackConf.entry = [
       'webpack/hot/dev-server',
       'webpack-hot-middleware/client',
       `./${conf.src.configurator}/index`
     ]
   } else if(isENV(ENV_ALIAS.PROD)) {
-    webpackConf.module.entry = {
+    webpackConf.entry = {
       app: `./${conf.src.configurator}/index`,
       vendor: pkg.configuratorDependencies
     }
@@ -190,7 +190,7 @@ module.exports = function(webpackEnv) {
 
   //EXTERNALS
   if(isENV(ENV_ALIAS.TEST)) {
-    webpackConf.module.externals = {}
+    webpackConf.externals = {}
   }
 
   return webpackConf;

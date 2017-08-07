@@ -39,7 +39,7 @@ module.exports = {
     css: 'dist/css/',
     img: 'dist/img/',
     configurator: 'dist/configurator',
-    configurator_tmp: '.tmp/configurator'
+    configurator_tmp: '.tmp/configurator',
     uncompiled_css: 'dist/configurator/uncompiledCss'
   },
 };
