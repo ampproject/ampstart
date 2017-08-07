@@ -20,6 +20,7 @@ const ENV_ALIAS = {
     'prod'
   ],
   DEV: [
+    'development',
     'dev'
   ],
   TEST: [
