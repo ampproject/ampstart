@@ -112,7 +112,7 @@ module.exports = function(webpackEnv) {
       new webpack.NoEmitOnErrorsPlugin(),
       FailPlugin,
       new HtmlWebpackPlugin({
-        template: `${conf.src.configurator_app}/index.html`
+        template: `${conf.configurator_app}/index.html`
       }),
     ]);
   }
@@ -179,11 +179,11 @@ module.exports = function(webpackEnv) {
     webpackConf.module.entry = [
       'webpack/hot/dev-server',
       'webpack-hot-middleware/client',
-      `./${conf.path.src('index')}`
+      `./${conf.configurator_app}/index`
     ]
   } else if(isENV(ENV_ALIAS.PROD)) {
     webpackConf.module.entry = {
-      app: `./${conf.path.src('index')}`,
+      app: `./${conf.configurator_app}/index`,
       vendor: pkg.configuratorDependencies
     }
   }
