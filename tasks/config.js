@@ -28,6 +28,7 @@ module.exports = {
     css_ignore: ['!css/**/_*.css', '!css/ampstart-base/**/*.css'],
     data: ['*/**/*.json', '!templates/*/data/*.json'],
     img: 'img/**',
+    configurator_app: 'www/configurator'
   },
   dest: {
     default: 'dist',
