@@ -51,7 +51,6 @@ function isNotEnv(envAlias) {
 module.exports = function (webpackEnv) {
   // Set our environemnt
   env = webpackEnv;
-  console.log(env);
   // Create our base webpack configuration
   const webpackConf = {
     module: {
@@ -94,10 +93,11 @@ module.exports = function (webpackEnv) {
   } else if (isEnv(ENV_ALIAS.DEV)) {
     webpackConf.module.loaders.push({
       test: /\.css$/,
-      loaders: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: 'css-loader?minimize!postcss-loader'
-      })
+      loaders: [
+        'style-loader',
+        'css-loader',
+        'postcss-loader'
+      ]
     });
   }
 
