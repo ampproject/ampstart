@@ -32,7 +32,7 @@ const ENV_ALIAS = {
 */
 function isEnv(envAlias) {
   // Check for default case
-  if(envAlias === ENV_ALIAS.DEV && Object.keys(env).length === 0) {
+  if(envAlias === ENV_ALIAS.DEV && (!env || Object.keys(env).length === 0)) {
     return true;
   }
 
@@ -112,7 +112,7 @@ module.exports = function(webpackEnv) {
       new webpack.NoEmitOnErrorsPlugin(),
       FailPlugin,
       new HtmlWebpackPlugin({
-        template: `${conf.configurator_app}/index.html`
+        template: `${conf.src.configurator}/index.html`
       }),
     ]);
   }
@@ -164,12 +164,12 @@ module.exports = function(webpackEnv) {
   //OUTPUT
   if(isEnv(ENV_ALIAS.DEV)) {
     webpackConf.output = {
-      path: path.join(process.cwd(), conf.dist.configurator_tmp),
+      path: path.join(process.cwd(), conf.dest.configurator_tmp),
       filename: 'index.js'
     }
-  } else if(isENV(ENV_ALIAS.PROD)) {
+  } else if(isEnv(ENV_ALIAS.PROD)) {
     webpackConf.output = {
-      path: path.join(process.cwd(), conf.dist.configurator),
+      path: path.join(process.cwd(), conf.dest.configurator),
       filename: '[name]-[hash].js'
     }
   }
@@ -181,7 +181,7 @@ module.exports = function(webpackEnv) {
       'webpack-hot-middleware/client',
       `./${conf.src.configurator}/index`
     ]
-  } else if(isENV(ENV_ALIAS.PROD)) {
+  } else if(isEnv(ENV_ALIAS.PROD)) {
     webpackConf.entry = {
       app: `./${conf.src.configurator}/index`,
       vendor: pkg.configuratorDependencies
@@ -189,7 +189,7 @@ module.exports = function(webpackEnv) {
   }
 
   //EXTERNALS
-  if(isENV(ENV_ALIAS.TEST)) {
+  if(isEnv(ENV_ALIAS.TEST)) {
     webpackConf.externals = {}
   }
 
