@@ -22,7 +22,7 @@ function validate() {
   return gulp.src([
         `${config.dest.templates}/**/*.html`,
         `!${config.dest.hl_partials}/**/*.html`,
-        `!${config.dest.configurator_app}/**/*.html`,
+        `!${config.dest.configurator}/**/*.html`,
       ])
       .pipe(validator.validate())
       .pipe(validator.format())

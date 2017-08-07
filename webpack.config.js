@@ -164,12 +164,12 @@ module.exports = function(webpackEnv) {
   //OUTPUT
   if(isENV(ENV_ALIAS.DEV)) {
     webpackConf.module.output = {
-      path: path.join(process.cwd(), conf.paths.tmp),
+      path: path.join(process.cwd(), conf.dist.configurator_tmp),
       filename: 'index.js'
     }
   } else if(isENV(ENV_ALIAS.PROD)) {
     webpackConf.module.output = {
-      path: path.join(process.cwd(), conf.paths.dist),
+      path: path.join(process.cwd(), conf.dist.configurator),
       filename: '[name]-[hash].js'
     }
   }
@@ -179,11 +179,11 @@ module.exports = function(webpackEnv) {
     webpackConf.module.entry = [
       'webpack/hot/dev-server',
       'webpack-hot-middleware/client',
-      `./${conf.configurator_app}/index`
+      `./${conf.src.configurator}/index`
     ]
   } else if(isENV(ENV_ALIAS.PROD)) {
     webpackConf.module.entry = {
-      app: `./${conf.configurator_app}/index`,
+      app: `./${conf.src.configurator}/index`,
       vendor: pkg.configuratorDependencies
     }
   }
