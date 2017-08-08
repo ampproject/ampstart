@@ -28,7 +28,7 @@ module.exports = {
     css_ignore: ['!css/**/_*.css', '!css/ampstart-base/**/*.css'],
     data: ['*/**/*.json', '!templates/*/data/*.json'],
     img: 'img/**',
-    configurator_app: 'www/configurator'
+    configurator: 'www/configurator/src'
   },
   dest: {
     default: 'dist',
@@ -38,7 +38,8 @@ module.exports = {
     hl_partials: 'dist/hl-partials',
     css: 'dist/css/',
     img: 'dist/img/',
-    configurator_app: 'dist/configurator',
+    configurator: 'dist/configurator',
+    configurator_tmp: '.tmp/configurator',
     uncompiled_css: 'dist/configurator/uncompiledCss'
   },
 };
