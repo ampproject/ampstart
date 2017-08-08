@@ -106,6 +106,12 @@ module.exports = function (webpackEnv) {
     // Devtool
     webpackConf.devtool = 'source-map';
 
+    // Output
+    webpackConf.output = {
+      path: path.join(process.cwd(), conf.dest.configurator_tmp),
+      filename: 'index.js'
+    };
+
     // Entry
     webpackConf.entry = [
       'webpack/hot/dev-server',
