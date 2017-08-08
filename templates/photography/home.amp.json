@@ -1,0 +1,69 @@
+{
+  "photography-home": {
+    "head-tag": {
+      "title": "Arvid Brane Photography",
+      "canonical-path": "templates/photography/home.amp.html",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-bind"
+      ],
+      "css-path": "templates/photography/home/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700,700i,400i"
+      ]
+    },
+    "navbar": {
+      "name": "Arvid Brane Photography",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": true,
+      "nav": [
+        {
+          "dropdown": {
+            "heading": "Photography",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Animals"}
+              },
+              {
+                "link": {"url": "#", "text": "Photo of the day"}
+              }
+            ]
+          }
+        },
+
+        {
+          "dropdown": {
+            "heading": "Travel",
+            "options": [
+              {
+                "link": {"url": "#", "text": "Urban"}
+              },
+              {
+                "link": {"url": "#", "text": "Tropical"}
+              }
+            ]
+          }
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"instagram": "#"},
+          {"email": "#"}
+        ]
+      },
+      "faq": {
+        "links": [
+          {
+            "link": {"url": "#", "text": "About"}
+          },
+          {
+            "link": {"url": "#", "text": "Contact"}
+          }
+        ]
+      }
+    }
+  }
+}
