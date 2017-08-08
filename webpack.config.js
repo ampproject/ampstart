@@ -33,20 +33,11 @@ const ENV_ALIAS = {
 */
 function isEnv(envAlias) {
   // Check for default case
-  if (envAlias === ENV_ALIAS.DEV && (!env || Object.keys(env).length === 0)) {
+  if (envAlias === ENV_ALIAS.DEV && Object.keys(env).length === 0) {
     return true;
   }
 
-  return envAlias.some(alias => {
-    if (env[alias]) {
-      return true;
-    }
-    return false;
-  });
-}
-
-function isNotEnv(envAlias) {
-  return !isEnv(envAlias);
+  return envAlias.some(alias => env[alias]);
 }
 
 module.exports = function (webpackEnv) {
@@ -82,16 +73,9 @@ module.exports = function (webpackEnv) {
     entry: []
   };
 
-  // LOADERS
-  if (isEnv(ENV_ALIAS.PROD)) {
-    webpackConf.module.loaders.push({
-      test: /\.css$/,
-      loaders: ExtractTextPlugin.extract({
-        fallback: 'style-loader',
-        use: 'css-loader?minimize!postcss-loader'
-      })
-    });
-  } else if (isEnv(ENV_ALIAS.DEV)) {
+  // DEV Environment
+  if (isEnv(ENV_ALIAS.DEV)) {
+    // Loaders
     webpackConf.module.loaders.push({
       test: /\.css$/,
       loaders: [
@@ -100,11 +84,8 @@ module.exports = function (webpackEnv) {
         'postcss-loader'
       ]
     });
-  }
 
-  // PLUGINS
-  if (isNotEnv(ENV_ALIAS.TEST)) {
-    // Add shared plugins
+    // Plugins
     webpackConf.plugins =
       webpackConf.plugins.concat([
         new webpack.optimize.OccurrenceOrderPlugin(),
@@ -112,13 +93,7 @@ module.exports = function (webpackEnv) {
         FailPlugin,
         new HtmlWebpackPlugin({
           template: `${conf.src.configurator}/index.html`
-        })
-      ]);
-  }
-
-  if (isEnv(ENV_ALIAS.DEV)) {
-    webpackConf.plugins =
-      webpackConf.plugins.concat([
+        }),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.LoaderOptionsPlugin({
           options: {
@@ -127,9 +102,38 @@ module.exports = function (webpackEnv) {
           debug: true
         })
       ]);
-  } else if (isEnv(ENV_ALIAS.PROD)) {
+
+    // Devtool
+    webpackConf.devtool = 'source-map';
+
+    // Entry
+    webpackConf.entry = [
+      'webpack/hot/dev-server',
+      'webpack-hot-middleware/client',
+      `./${conf.src.configurator}/index`
+    ];
+  }
+
+  // Prod Environment
+  if (isEnv(ENV_ALIAS.PROD)) {
+    // Loaders
+    webpackConf.module.loaders.push({
+      test: /\.css$/,
+      loaders: ExtractTextPlugin.extract({
+        fallback: 'style-loader',
+        use: 'css-loader?minimize!postcss-loader'
+      })
+    });
+
+    // Plugins
     webpackConf.plugins =
       webpackConf.plugins.concat([
+        new webpack.optimize.OccurrenceOrderPlugin(),
+        new webpack.NoEmitOnErrorsPlugin(),
+        FailPlugin,
+        new HtmlWebpackPlugin({
+          template: `${conf.src.configurator}/index.html`
+        }),
         new webpack.DefinePlugin({
           'process.env.NODE_ENV': '"production"'
         }),
@@ -145,7 +149,23 @@ module.exports = function (webpackEnv) {
           }
         })
       ]);
-  } else if (isEnv(ENV_ALIAS.TEST)) {
+
+    // Output
+    webpackConf.output = {
+      path: path.join(process.cwd(), conf.dest.configurator),
+      filename: '[name]-[hash].js'
+    };
+
+    // Entry
+    webpackConf.entry = {
+      app: `./${conf.src.configurator}/index`,
+      vendor: pkg.configuratorDependencies
+    };
+  }
+
+  // TEST Environment
+  if (isEnv(ENV_ALIAS.TEST)) {
+    // Plugins
     webpackConf.plugins =
       webpackConf.plugins.concat([
         new webpack.LoaderOptionsPlugin({
@@ -153,42 +173,17 @@ module.exports = function (webpackEnv) {
           debug: true
         })
       ]);
-  }
 
-  // DEVTOOL
-  if (isNotEnv(ENV_ALIAS.PROD)) {
+    // Devtool
     webpackConf.devtool = 'source-map';
-  }
 
-  // OUTPUT
-  if (isEnv(ENV_ALIAS.DEV)) {
+    // Output
     webpackConf.output = {
       path: path.join(process.cwd(), conf.dest.configurator_tmp),
       filename: 'index.js'
     };
-  } else if (isEnv(ENV_ALIAS.PROD)) {
-    webpackConf.output = {
-      path: path.join(process.cwd(), conf.dest.configurator),
-      filename: '[name]-[hash].js'
-    };
-  }
 
-  // ENTRY
-  if (isEnv(ENV_ALIAS.DEV)) {
-    webpackConf.entry = [
-      'webpack/hot/dev-server',
-      'webpack-hot-middleware/client',
-      `./${conf.src.configurator}/index`
-    ];
-  } else if (isEnv(ENV_ALIAS.PROD)) {
-    webpackConf.entry = {
-      app: `./${conf.src.configurator}/index`,
-      vendor: pkg.configuratorDependencies
-    };
-  }
-
-  // EXTERNALS
-  if (isEnv(ENV_ALIAS.TEST)) {
+    // Externals
     webpackConf.externals = {};
   }
 
