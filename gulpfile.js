@@ -120,6 +120,11 @@ gulp.task('build', 'build', function(cb) {
       'bundle', cb);
 });
 
+gulp.task('build:dev', 'runs a more lightweight build, meant for development and not production', function(cb) {
+  runSequence(
+      'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', cb);
+});
+
 gulp.task('clean', function() {
   // Clears partials map so changes to components are rebuilt in watch task.
   partialsMap = {};
@@ -167,7 +172,7 @@ gulp.task('www', function() {
       .pipe(gulp.dest(config.dest.www_pages))
 });
 
-gulp.task('watch:www', 'watch stuff, minimal watching for development', ['build'], function() {
+gulp.task('watch:www', 'watch stuff, minimal watching for development, including template validation', ['build'], function() {
   return gulp.watch(
       [
         config.src.components, config.src.templates, config.src.www_pages,
@@ -178,7 +183,18 @@ gulp.task('watch:www', 'watch stuff, minimal watching for development', ['build'
       });
 });
 
-gulp.task('default', ['build']);
+gulp.task('watch:dev', 'watch stuff, (more) minimal watching for development, without validation', ['build:dev'], function() {
+  return gulp.watch(
+      [
+        config.src.components, config.src.templates, config.src.www_pages,
+        config.src.css, config.src.data, config.src.img
+      ],
+      function(event) {
+        runSequence(['build:dev']);
+      });
+});
+
+gulp.task('default', ['watch:dev']);
 
 gulp.task('posthtml', 'build kickstart files', function() {
   const plugins = [
