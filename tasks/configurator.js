@@ -1,3 +1,5 @@
+
+/* eslint-disable */
 /**
  * Copyright 2017 The AMP Start Authors. All Rights Reserved.
  *
@@ -13,7 +15,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
 const util = require('gulp-util');
@@ -23,25 +24,39 @@ const csstree = require('css-tree');
 const rename = require('gulp-rename');
 const through = require('through2');
 const webpack = require("webpack");
-const webpackConfig = require('../webpack.config.js')({
+const webpackProdConfig = require('../webpack.config.js')({
+  prod: true
+});
+const webpackDevConfig = require('../webpack.config.js')({
   dev: true
+});
+const webpackTestConfig = require('../webpack.config.js')({
+  test: true
 });
 const WebpackDevServer = require("webpack-dev-server");
 
+function configuratorBuild() {
+
+}
+
 function configuratorWatch() {
-  const webpackCompiler = webpack(webpackConfig);
+  webpackDevConfig.entry.unshift("webpack-dev-server/client?http://localhost:8080");
+  const webpackCompiler = webpack(webpackDevConfig);
   new WebpackDevServer(webpackCompiler, {
-        // server and middleware options
+        publicPath: "/"
     }).listen(8080, "localhost", function(err) {
         if (err) {
           throw new util.PluginError("webpack-dev-server", err);
         }
-        // Server listening
-        util.log("[webpack-dev-server]", "http://localhost:8080/webpack-dev-server/index.html");
 
-        // keep the server alive or continue?
-        // callback();
+        // Inform the user of the url they can reach the server
+        util.log("[webpack-dev-server]", "Development Server: http://localhost:8080");
+        util.log("[webpack-dev-server]", "Directory Listing for current server: http://localhost:8080/webpack-dev-server");
     });
+}
+
+function configuratorTest() {
+
 }
 
 function postCssWithVars() {

@@ -25,6 +25,7 @@
     "basscss-responsive-padding": "^1.1.0",
     "basscss-responsive-type-scale": "^1.0.1",
     "child_process": "^1.0.2",
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
     "css-tree": "1.0.0-alpha19",
     "cssbeautify": "^0.3.1",
