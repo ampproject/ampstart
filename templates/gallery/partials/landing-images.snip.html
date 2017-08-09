@@ -17,13 +17,14 @@ limitations under the License.
 }}
 
 {{#landing-images}}
-  <div class="gallery-landing-image-wrap-{{index}}">
+  <figure class="gallery-landing-image-wrap-{{index}}">
     <a href="./gallery-inner.amp.html" class="gallery-landing-image-link"></a>
     <div class="gallery-landing-image-caption {{#positions}}gallery-landing-image-caption-{{.}} {{/positions}}">
-      <div class="gallery-landing-image-caption-content">
-        {{title}}<br> {{artist}}
-        <br><a href="./gallery-inner.amp.html" class="gallery-landing-caption-link inline-block">View Exhibit</a>
-      </div>
+      <figcaption class="gallery-landing-image-caption-content">
+        <div>{{title}}</div>
+        <div>{{artist}}</div>
+        <a href="./gallery-inner.amp.html" class="gallery-landing-caption-link inline-block">View Exhibit</a>
+      </figcaption>
     </div>
     <div class="gallery-landing-image-transform">
       <amp-img
@@ -39,5 +40,5 @@ limitations under the License.
         alt="{{alt}}"
       ></amp-img>
     </div>
-  </div>
+  </figure>
 {{/landing-images}}
