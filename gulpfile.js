@@ -194,7 +194,7 @@ gulp.task('watch:dev', 'watch stuff, (more) minimal watching for development, wi
       });
 });
 
-gulp.task('default', ['build:dev']);
+gulp.task('default', ['watch:dev']);
 
 gulp.task('posthtml', 'build kickstart files', function() {
   const plugins = [
