@@ -42,8 +42,8 @@
       ]
     },
     "fullpage-hero": {
-      "heading-html": "Arvid Brane <span class='caps bold h5'>Photography</span>",
-      "alt": "",
+      "heading-html": "Arvid Brane <span class='ampstart-label mt3 bold block'>Photography</span>",
+      "alt": "Sample wedding photo showing the bride hugging the groom.",
       "narrow-img": "../../img/photography/home/hero_tablet_opt.jpg",
       "wide-img": "../../img/photography/home/hero_desktop_opt.jpg"
     }

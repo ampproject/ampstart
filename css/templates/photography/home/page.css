@@ -28,3 +28,28 @@
 @import '../../../../components/socialbox/socialbox';
 @import '../../../../components/social-follow/social-follow';
 @import 'page-vars';
+
+
+.ampstart-image-fullpage-hero figcaption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ampstart-fullpage-hero-heading {
+  text-align: center;
+}
+
+.ampstart-fullpage-hero-heading-text::after {
+  content: '';
+  height: 75px;
+  display: inline-block;
+  border-left: 2px solid var(--color-font-primary);
+  margin-top: var(--space-4);
+}
+
+.ampstart-fullpage-hero-heading-text,
+.ampstart-image-fullpage-hero .ampstart-image-credit {
+  box-decoration-break: none;
+  background: transparent;
+}
