@@ -134,7 +134,7 @@ gulp.task('templateapi', function() {
   return gulp.src(config.src.templateApi).pipe(gulp.dest(config.dest.templateApi));
 });
 
-function disableNode(node) {
+function inlineCheckScript(node) {
   return false;
 }
 
@@ -145,13 +145,13 @@ function inlineCheckStyle(node) {
 
 const inlineTransformation = {
   script: {
-    check: disableNode,
+    check: inlineCheckScript,
   },
   style: {
     check: inlineCheckStyle,
   },
   image: {
-    check: disableNode,
+    check: inlineCheckScript,
   },
 };
 

@@ -23,7 +23,6 @@
 @import './v-hide';
 
 @import './page-vars';
-@import './bass-override-vars';
 
 @import './components/_header';
 @import './components/_sidebar';
@@ -34,18 +33,18 @@ body {
   line-height: var(--line-height);
 }
 
-.ampstart-gallery-base-content {
+.gallery-base-content {
   background: #fff;
   overflow-x: hidden;
 }
 
-.ampstart-gallery-base-container {
+.gallery-base-container {
   position: relative;
   width: calc((23 / 50) * 100vw + (150 / 16) * 1rem);
   max-width: calc((800 / 16) * 1rem);
 }
 
-.ampstart-gallery-base-invert {
+.gallery-base-invert {
   color: #fff;
   mix-blend-mode: difference;
   -webkit-font-smoothing: antialiased;
@@ -53,40 +52,40 @@ body {
 
 /* Hack media query to target IE, which does not support mix-blend-mode. */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .ampstart-gallery-base-invert {
+  .gallery-base-invert {
     color: inherit;
     mix-blend-mode: initial;
   }
 }
 
-.ampstart-gallery-base-callout {
+.gallery-base-callout {
   margin: 0 0 calc((56 / 16) * 1rem) 0;
   font-size: calc((20 / 16) * 1rem);
   color: var(--color-primary);
   font-weight: 500;
 }
 
-.ampstart-gallery-base-section:not(:last-child) {
+.gallery-base-section:not(:last-child) {
   margin-bottom: calc((122 / 16) * 1rem);
 }
 
-.ampstart-gallery-base-rich-text h2 {
+.gallery-base-rich-text h2 {
   font-family: var(--font-family-secondary);
   letter-spacing: 0.05rem;
   font-size: calc((32 / 16) * 1rem);
 }
 
-.ampstart-gallery-base-rich-text h3 {
+.gallery-base-rich-text h3 {
   font-family: var(--font-family-secondary);
   letter-spacing: 0.05rem;
   font-size: calc((18 / 16) * 1rem);
 }
 
-.ampstart-gallery-base-rich-text p {
+.gallery-base-rich-text p {
   line-height: 1.8;
 }
 
-.ampstart-gallery-base-rich-text blockquote {
+.gallery-base-rich-text blockquote {
   margin: 0 0 calc((56 / 16) * 1rem) 0;
   font-size: calc((24 / 16) * 1rem);
   color: var(--color-primary);

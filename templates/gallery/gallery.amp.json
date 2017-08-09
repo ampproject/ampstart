@@ -16,6 +16,163 @@
       "heading": "Gallery of Modern&nbsp;Art",
       "invert": true
     },
+
+    "landing-images": [{
+      "index": 0,
+      "title": "Modern Caesar",
+      "artist": "Sylvia Johnson",
+      "width": 8,
+      "height": 12,
+      "src": "statue_wearing_sunglasses",
+      "alt": "statue wearing sunglasses",
+      "positions": ["bottom", "extraleft"]
+    }, {
+      "index": 1,
+      "title": "Living Tree",
+      "artist": "David Beck",
+      "width": 8,
+      "height": 12,
+      "src": "cacti",
+      "alt": "cacti on green background",
+      "positions": ["bottom"]
+    }, {
+      "index": 2,
+      "title": "Flying Pigs",
+      "artist": "Brad Parker",
+      "width": 51,
+      "height": 31,
+      "src": "flying_pigs",
+      "alt": "power tool with ears",
+      "positions": ["right", "bottom"]
+    }, {
+      "index": 3,
+      "title": "Angry Mushroom Cloud",
+      "artist": "Janet Lande",
+      "width": 1,
+      "height": 1,
+      "src": "green_smoke",
+      "alt": "green mushroom cloud",
+      "positions": ["bottom"]
+    }, {
+      "index": 4,
+      "title": "Short Circuit",
+      "artist": "Anna Moss",
+      "width": 8,
+      "height": 12,
+      "src": "coloured_rectangles",
+      "alt": "coloured rectangles"
+    }, {
+      "index": 5,
+      "title": "Untitled",
+      "artist": "Evan Ondre",
+      "width": 12,
+      "height": 8,
+      "src": "person_in_water",
+      "alt": "person bathing in pink water",
+      "positions": ["extraleft"]
+    }, {
+      "index": 6,
+      "title": "Broken Carton",
+      "artist": "David Alders",
+      "width": 12,
+      "height": 8,
+      "src": "eggs_black_paint",
+      "alt": "eggs covered in black paint"
+    }, {
+      "index": 7,
+      "title": "A Reappropriation of Violence",
+      "artist": "Janet Lande",
+      "width": 8,
+      "height": 12,
+      "src": "grenade_cone",
+      "alt": "grenades in an ice cream cone"
+    }, {
+      "index": 8,
+      "title": "No Name",
+      "artist": "Tan Howell",
+      "width": 8,
+      "height": 12,
+      "src": "red_can",
+      "alt": "can covered in red paint on red background",
+      "positions": ["bottom"]
+    }, {
+      "index": 9,
+      "title": "Exit",
+      "artist": "Steven Rice",
+      "width": 12,
+      "height": 8,
+      "src": "white_stairwell",
+      "alt": "white stairwell",
+      "positions": ["bottom"]
+    }, {
+      "index": 10,
+      "title": "Fluid Architecture",
+      "artist": "Steven Rice",
+      "width": 8,
+      "height": 12,
+      "src": "tiled_building",
+      "alt": "tiled building",
+      "positions": ["bottom"]
+    }, {
+      "index": 11,
+      "title": "Self Portrait",
+      "artist": "Momo Reid",
+      "width": 1,
+      "height": 1,
+      "src": "person_with_frame",
+      "alt": "person holding picture frame in front of face"
+    }, {
+      "index": 12,
+      "title": "Untitled",
+      "artist": "Von West",
+      "width": 8,
+      "height": 12,
+      "src": "stacked_chairs",
+      "alt": "chairs stacked on top of each other",
+      "positions": ["bottom", "extraleft"]
+    }, {
+      "index": 13,
+      "title": "Geo Breakfast",
+      "artist": "Terra Morales",
+      "width": 1,
+      "height": 1,
+      "src": "banana",
+      "alt": "banana next to strawberries",
+      "positions": ["bottom", "right"]
+    }, {
+      "index": 14,
+      "title": "Alternative Reality",
+      "artist": "Nathaniel Hall",
+      "width": 8,
+      "height": 12,
+      "src": "vr_headset",
+      "alt": "white virtual reality headset"
+    }, {
+      "index": 15,
+      "title": "Cage",
+      "artist": "Ellen Doe",
+      "width": 8,
+      "height": 12,
+      "src": "eggs",
+      "alt": "eggs"
+    }, {
+      "index": 16,
+      "title": "Breakfast of Champions",
+      "artist": "Kay Herrera",
+      "width": 12,
+      "height": 8,
+      "src": "egg_breakfast",
+      "alt": "one egg on a plastic plate"
+    }, {
+      "index": 17,
+      "title": "Untitled",
+      "artist": "Ian Jimenez",
+      "width": 8,
+      "height": 12,
+      "src": "fruit_chair",
+      "alt": "chair with fruit on it"
+    }],
+
     "sidebar": {
       "links": [{
         "text": "Home",
@@ -24,43 +181,43 @@
         "text": "Untitled<br/>Evan Ondre",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/1429886_200.jpg",
-          "2x": "../../img/gallery/1429886_400.jpg"
+          "src": "../../img/gallery/person_in_water_200.jpg",
+          "2x": "../../img/gallery/person_in_water_400.jpg"
         }
       }, {
         "text": "Cage<br/>Ellen Doe",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/915599_200.jpg",
-          "2x": "../../img/gallery/915599_400.jpg"
+          "src": "../../img/gallery/eggs_200.jpg",
+          "2x": "../../img/gallery/eggs_400.jpg"
         }
       }, {
         "text": "Living Tree<br/>David Beck",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/780149_200.jpg",
-          "2x": "../../img/gallery/780149_400.jpg"
+          "src": "../../img/gallery/cacti_200.jpg",
+          "2x": "../../img/gallery/cacti_400.jpg"
         }
       }, {
         "text": "Short Circuit<br/>Anna Moss",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/1097005_200.jpg",
-          "2x": "../../img/gallery/1097005_400.jpg"
+          "src": "../../img/gallery/coloured_rectangles_200.jpg",
+          "2x": "../../img/gallery/coloured_rectangles_400.jpg"
         }
       }, {
         "text": "Geo Breakfast<br/>Terra Morales",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/1028245_200.jpg",
-          "2x": "../../img/gallery/1028245_400.jpg"
+          "src": "../../img/gallery/banana_200.jpg",
+          "2x": "../../img/gallery/banana_400.jpg"
         }
       }, {
         "text": "Flying Pigs<br/>Brad Parker",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/1431916_200.jpg",
-          "2x": "../../img/gallery/1431916_400.jpg"
+          "src": "../../img/gallery/flying_pigs_200.jpg",
+          "2x": "../../img/gallery/flying_pigs_400.jpg"
         }
       }]
     }

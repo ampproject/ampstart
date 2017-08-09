@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-@import './bass-override-vars';
+@import './page-vars';
 
 @media (--breakpoint-v-xs) {
   .v-xs-hide { display: none }
