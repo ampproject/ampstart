@@ -5,6 +5,7 @@ module.exports = function (config) {
     basePath: '.',
     singleRun: true,
     autoWatch: false,
+    autoWatchBatchDelay: 500,
     logLevel: 'INFO',
     browsers: [
       'Chrome'
@@ -39,6 +40,7 @@ module.exports = function (config) {
   const args = process.argv;
 
   // Check the passed client args
+  // http://karma-runner.github.io/1.0/config/configuration-file.html
   if (args.includes('--auto-watch')) {
     configuration.singleRun = false;
     configuration.autoWatch = true;
