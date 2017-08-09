@@ -79,6 +79,7 @@
     "uglifyjs-webpack-plugin": "0.4.3",
     "webpack": "^2.2.1",
     "webpack-dev-middleware": "^1.10.1",
+    "webpack-dev-server": "^2.7.1",
     "webpack-fail-plugin": "^1.0.5",
     "webpack-hot-middleware": "^2.17.0"
   },

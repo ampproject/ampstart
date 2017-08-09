@@ -22,6 +22,27 @@ const replace = require('gulp-replace');
 const csstree = require('css-tree');
 const rename = require('gulp-rename');
 const through = require('through2');
+const webpack = require("webpack");
+const webpackConfig = require('../webpack.config.js')({
+  dev: true
+});
+const WebpackDevServer = require("webpack-dev-server");
+
+function configuratorWatch() {
+  const webpackCompiler = webpack(webpackConfig);
+  new WebpackDevServer(webpackCompiler, {
+        // server and middleware options
+    }).listen(8080, "localhost", function(err) {
+        if (err) {
+          throw new util.PluginError("webpack-dev-server", err);
+        }
+        // Server listening
+        util.log("[webpack-dev-server]", "http://localhost:8080/webpack-dev-server/index.html");
+
+        // keep the server alive or continue?
+        // callback();
+    });
+}
 
 function postCssWithVars() {
   const plugins = [
@@ -69,5 +90,7 @@ function cssVarsJson() {
       .pipe(gulp.dest(config.dest.uncompiled_css))
 }
 
+
+gulp.task('configurator:watch', configuratorWatch);
 gulp.task('configurator:css', postCssWithVars);
 gulp.task('configurator:json', cssVarsJson);
