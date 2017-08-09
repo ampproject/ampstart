@@ -3,7 +3,7 @@ const assert = require('assert');
 
 describe('karma testing', () => {
   it('should pass', () => {
-    console.log('hello!');
+    console.log('Hello! this test is a test');
     assert.equal(true, true);
   });
 });

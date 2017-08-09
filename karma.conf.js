@@ -35,5 +35,14 @@ module.exports = function (config) {
     ]
   };
 
+  // Get our passed args
+  const args = process.argv;
+
+  // Check the passed client args
+  if (args.includes('--auto-watch')) {
+    configuration.singleRun = false;
+    configuration.autoWatch = true;
+  }
+
   config.set(configuration);
 };
