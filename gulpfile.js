@@ -122,7 +122,7 @@ gulp.task('build', 'build', function(cb) {
 
 gulp.task('build:dev', 'runs a more lightweight build, meant for development and not production', function(cb) {
   runSequence(
-      'escape', 'img', 'templateapi', 'postcss', 'countcss', 'posthtml', 'www', cb);
+      'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', cb);
 });
 
 gulp.task('clean', function() {
