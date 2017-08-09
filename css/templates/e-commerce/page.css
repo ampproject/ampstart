@@ -125,6 +125,62 @@ dd:after {
   display: block;
 }
 
+
+/* CUSTOM LOADER */
+.commerce-loader,
+.commerce-loader::before,
+.commerce-loader::after {
+  border-radius: 50%;
+  width: var(--space-1);
+  height: var(--space-1);
+  animation-fill-mode: both;
+  animation: commerce-loader 1.44s infinite ease-in-out;
+  will-change: contents;
+}
+
+.commerce-loader {
+  color: var(--color-secondary);
+  margin: 24% auto;
+  animation-delay: .16s;
+}
+
+.commerce-loader::before,
+.commerce-loader::after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.commerce-loader::before {
+  left: -1rem;
+  animation-delay: 0s;
+}
+
+.commerce-loader::after {
+  left: var(--space-2);
+  animation-delay: .32s;
+}
+
+.commerce-hero-image .commerce-loader {
+  margin-top: 200px;
+}
+
+.commerce-listing-banner .commerce-loader {
+  margin-top: 100px;
+}
+
+@keyframes commerce-loader {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 var(--space-2) 0 -1rem;
+  }
+  40% {
+    box-shadow: 0 var(--space-2) 0 0;
+  }
+}
+
+
 /* TODO: Merge with existing amp-start select component */
 .commerce-select-wrapper {
   position: relative;

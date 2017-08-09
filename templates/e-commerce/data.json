@@ -26,6 +26,9 @@
         "height": 27,
         "spacing-classes": "mb1 md-mb0"
       },
+      "preloader": {
+        "classes": "commerce-loader"
+      },
       "fixeditems-layout-classes": "absolute top-0 right-0 pt2 pr3",
       "fixeditems": [
         {
@@ -40,7 +43,10 @@
         "width": 279,
         "height": 175,
         "alt": "Company logo",
-        "classes": "inline-block mb4"
+        "classes": "inline-block mb4",
+        "placeholder": {
+          "classes": "commerce-loader"
+        }
       },
       "nav": [
         {
