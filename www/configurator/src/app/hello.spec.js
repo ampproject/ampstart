@@ -1,7 +1,9 @@
 /* eslint-env mocha */
+const assert = require('assert');
+
 describe('karma testing', () => {
   it('should pass', () => {
     console.log('hello!');
-    expect(true).toEqual(true);
+    assert.equal(true, true);
   });
 });

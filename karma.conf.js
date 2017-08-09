@@ -2,7 +2,7 @@ const conf = require('./tasks/config');
 
 module.exports = function (config) {
   const configuration = {
-    basePath: conf.src.configurator,
+    basePath: '.',
     singleRun: true,
     autoWatch: false,
     logLevel: 'INFO',
@@ -14,10 +14,10 @@ module.exports = function (config) {
     ],
     files: [
       'node_modules/es6-shim/es6-shim.js',
-      `${conf.src.configurator}/index.spec.js`
+      `${conf.src.configurator}/**/*.spec.js`
     ],
     preprocessors: {
-      [`${conf.src.configurator}/index.spec.js`]: [
+      [`${conf.src.configurator}/**/*.spec.js`]: [
         'webpack'
       ]
     },
