@@ -69,8 +69,7 @@ module.exports = function (webpackEnv) {
       ]
     },
     plugins: [],
-    output: {},
-    entry: []
+    output: {}
   };
 
   // DEV Environment
