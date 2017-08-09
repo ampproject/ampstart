@@ -54,6 +54,10 @@
 
 }
 
+.ampstart-nav .ampstart-label {
+  color: inherit;
+}
+
 .ampstart-navbar-trigger {
   line-height: var(--navbar-height);
   font-size: var(--h2);

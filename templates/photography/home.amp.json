@@ -16,54 +16,36 @@
     "navbar": {
       "name": "Arvid Brane Photography",
       "sidebar-id": "header-sidebar",
-      "sidebaronly": true,
+      "sidebaronly": false,
       "nav": [
         {
-          "dropdown": {
-            "heading": "Photography",
-            "options": [
-              {
-                "link": {"url": "#", "text": "Animals"}
-              },
-              {
-                "link": {"url": "#", "text": "Photo of the day"}
-              }
-            ]
-          }
+          "link": {"url": "#", "text": "Blog"}
         },
-
         {
-          "dropdown": {
-            "heading": "Travel",
-            "options": [
-              {
-                "link": {"url": "#", "text": "Urban"}
-              },
-              {
-                "link": {"url": "#", "text": "Tropical"}
-              }
-            ]
-          }
+          "link": {"url": "#", "text": "Portfolio"}
+        },
+        {
+          "link": {"url": "#", "text": "Contact"}
+        },
+        {
+          "link": {"url": "#", "text": "About"}
+        },
+        {
+          "link": {"url": "#", "text": "Services"}
+        },
+        {
+          "link": {"url": "#", "text": "Store"}
+        },
+        {
+          "link": {"url": "#", "text": "Clients"}
         }
-      ],
-      "social-follow": {
-        "links": [
-          {"twitter": "#"},
-          {"facebook": "#"},
-          {"instagram": "#"},
-          {"email": "#"}
-        ]
-      },
-      "faq": {
-        "links": [
-          {
-            "link": {"url": "#", "text": "About"}
-          },
-          {
-            "link": {"url": "#", "text": "Contact"}
-          }
-        ]
-      }
+      ]
+    },
+    "fullpage-hero": {
+      "heading-html": "Arvid Brane <span class='caps bold h5'>Photography</span>",
+      "alt": "",
+      "narrow-img": "../../img/photography/home/hero_tablet_opt.jpg",
+      "wide-img": "../../img/photography/home/hero_desktop_opt.jpg"
     }
   }
 }
