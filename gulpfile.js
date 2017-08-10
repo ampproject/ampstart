@@ -27,6 +27,7 @@ const path = require('path');
 const config = require('./tasks/config');
 const server = require('gulp-webserver');
 const merge = require('deepmerge');
+const argv = require('minimist')(process.argv.slice(2));
 require('./tasks');
 
 let partialsMap = {};
@@ -218,6 +219,7 @@ gulp.task('serve', 'Host a livereloading development webserver for amp start', [
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     host: '0.0.0.0',
+    port: argv.port || 8000,
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
