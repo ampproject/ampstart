@@ -1,4 +1,4 @@
-# replace-important
+# gulp-replace-important
 
 Gulp plugin for [replace-important](../replace-important). Plugin for removing !important from css rules from selectors and replacing them inside similar selectors - the new selectors will have the highest specificity in the CSS file. This is useful to remove any code smells from !important, and for making CSS [Supported by AMPHTML](https://www.ampproject.org/docs/guides/responsive/style_pages). This plugin only supports Buffers, but stream support could be added with [gulp-streamify](https://github.com/nfroidure/gulp-streamify).
 
