@@ -37,27 +37,22 @@ const webpackTestConfig = require('../webpack.config.js')({
 const WebpackDevServer = require("webpack-dev-server");
 const KarmaServer = require('karma').Server;
 
-function configuratorBuild(callback) {
-  runSequence('configurator:css', 'configurator:json', function() {
-    webpack(webpackProdConfig, function(err, stats) {
-      if (err) {
-        throw new util.PluginError("webpack", err);
-      }
-
-      // Output the webpack stats
-      util.log("[webpack]", stats.toString({}));
-    });
-
-    // Call our passed callback
-    if(callback) {
-      callback();
+function configuratorWebpackProd() {
+  webpack(webpackProdConfig, function(err, stats) {
+    if (err) {
+      throw new util.PluginError("webpack", err);
     }
+
+    // Output the webpack stats
+    util.log("[webpack]", stats.toString({}));
   });
 }
 
-function configuratorWatch() {
-  webpackDevConfig.entry.unshift("webpack-dev-server/client?http://localhost:8080");
-  const webpackCompiler = webpack(webpackDevConfig);
+function runWebpackDevServer(webpackConfig) {
+  if(webpackConfig.entry && Array.isArray(webpackConfig.entry)) {
+    webpackConfig.entry.unshift("webpack-dev-server/client?http://localhost:8080");
+  }
+  const webpackCompiler = webpack(webpackConfig);
   new WebpackDevServer(webpackCompiler, {
         publicPath: "/"
     }).listen(8080, "localhost", function(err) {
@@ -69,6 +64,20 @@ function configuratorWatch() {
         util.log("[webpack-dev-server]", "Development Server: http://localhost:8080");
         util.log("[webpack-dev-server]", "Directory Listing for current server: http://localhost:8080/webpack-dev-server");
     });
+}
+
+function configuratorServe() {
+  runWebpackDevServer(webpackDevConfig);
+}
+
+function configuratorWatchProd() {
+  return gulp.watch(
+      [
+        `${config.src.configurator}/**/*`
+      ],
+      function(event) {
+        runSequence('configurator:webpack');
+      });
 }
 
 function runKarma(options, callback) {
@@ -145,8 +154,10 @@ function cssVarsJson() {
 
 // Define our gulp tasks
 gulp.task('configurator', 'Runs the default, configurator:build for prod deployment', ['configurator:build']);
-gulp.task('configurator:build', 'Builds the configurator for deployment, analyzes the templates css, converts to json, and then builds the configurator webapp', configuratorBuild);
-gulp.task('configurator:watch', 'Opens a dev server at localhost:8080 for the configurator, and watches/livreloads on changes', configuratorWatch);
+gulp.task('configurator:build', 'Builds the configurator for deployment, analyzes the templates css, converts to json, and then builds the configurator webapp', ['configurator:css', 'configurator:json', 'configurator:webpack']);
+gulp.task('configurator:webpack', 'Builds only the configurator webapp using webpack, and passing the prod environment', configuratorWebpackProd);
+gulp.task('configurator:serve', 'Opens a dev server at localhost:8080 for the configurator, and watches/livreloads on changes', configuratorServe);
+gulp.task('configurator:watch', 'Watches the configurator src directory, and runs prod webpack builds on changes. Useful for eveloping both the configurator and ampstart', configuratorWatchProd);
 gulp.task('configurator:test', 'Runs the tests for configurator, only once', configuratorTest);
 gulp.task('configurator:test:watch', 'Runs and watches the tests for the configurator', configuratorTestWatch);
 gulp.task('configurator:css', 'Runs postcss on templates, and preserves their variables', postCssWithVars);
