@@ -33,7 +33,7 @@ $ replace-important
 
 **As a Node Module**
 
-Also, try the [Runkit](https://npm.runkit.com/replace-important) from the NPM Page
+Try the [Runkit](https://npm.runkit.com/replace-important) from the NPM Page
 
 ```javascript
 const replaceImportant = require('replace-important');
@@ -45,7 +45,7 @@ console.log(output); // body {}:root:not(#FK_ID) body{background-color: red }
 
 # Tests
 
-We have a golden test, and CLI tests, that are simply run with:
+There is a golden test, and CLI tests, that are run with:
 
 ```
 npm run test
