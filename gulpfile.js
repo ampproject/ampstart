@@ -117,7 +117,7 @@ function getPartials(acc, embedderDir, template) {
 gulp.task('build', 'build', function(cb) {
   runSequence(
       'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'countcss', 'posthtml', 'www', 'validate',
-      'bundle', cb);
+      'bundle', 'configurator', cb);
 });
 
 gulp.task('clean', function() {
