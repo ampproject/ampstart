@@ -18,6 +18,7 @@
 const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
 const util = require('gulp-util');
+const runSequence = require('run-sequence');
 const postcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const csstree = require('css-tree');
@@ -34,9 +35,24 @@ const webpackTestConfig = require('../webpack.config.js')({
   test: true
 });
 const WebpackDevServer = require("webpack-dev-server");
+const KarmaServer = require('karma').Server;
 
-function configuratorBuild() {
+function configuratorBuild(callback) {
+  runSequence('configurator:css', 'configurator:json', function(callback) {
+    webpack(webpackProdConfig, function(err, stats) {
+      if (err) {
+        throw new util.PluginError("webpack", err);
+      }
 
+      // Output the webpack stats
+      util.log("[webpack]", stats.toString({}));
+    });
+
+    // Call our passed callback
+    if(callback) {
+      callback();
+    }
+  });
 }
 
 function configuratorWatch() {
@@ -55,8 +71,30 @@ function configuratorWatch() {
     });
 }
 
-function configuratorTest() {
+function runKarma(options, callback) {
 
+  // Parse our karma config
+  karmaServerConfig = {
+    configFile: `${__dirname}/../karma.conf.js`
+  };
+
+  // Pass in our options
+  Object.keys(options).forEach(function(key) {
+    karmaServerConfig[key] = options[key];
+  });
+
+  new KarmaServer(karmaServerConfig, callback).start();
+}
+
+function configuratorTest(callback) {
+  runKarma({}, callback);
+}
+
+function configuratorTestWatch(callback) {
+  runKarma({
+    singleRun: false,
+    autoWatch: true
+  }, callback);
 }
 
 function postCssWithVars() {
@@ -105,7 +143,11 @@ function cssVarsJson() {
       .pipe(gulp.dest(config.dest.uncompiled_css))
 }
 
-
-gulp.task('configurator:watch', configuratorWatch);
-gulp.task('configurator:css', postCssWithVars);
-gulp.task('configurator:json', cssVarsJson);
+// Define our gulp tasks
+gulp.task('configurator', 'Runs the default, configurator:build for prod deployment', ['configurator:build']);
+gulp.task('configurator:build', 'Builds the configurator for deployment, analyzes the templates css, converts to json, and then builds the configurator webapp', configuratorBuild);
+gulp.task('configurator:watch', 'Opens a dev server at localhost:8080 for the configurator, and watches/livreloads on changes', configuratorWatch);
+gulp.task('configurator:test', 'Runs the tests for configurator, only once', configuratorTest);
+gulp.task('configurator:test:watch', 'Runs and watches the tests for the configurator', configuratorTestWatch);
+gulp.task('configurator:css', 'Runs postcss on templates, and preserves their variables', postCssWithVars);
+gulp.task('configurator:json', 'Converts CSS from configurator:css, into digestable JSON by the configurator webapp', cssVarsJson);
