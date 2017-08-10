@@ -1,7 +1,7 @@
 # replace-important
 ![Replace-important CLI Usage Gif](http://i.imgur.com/xJYOaMO.gif)
 
-Package for removing !important from css rules from selectors and replacing them inside similar selectors - the new selectors will have the highest specificity in the CSS file. This is useful to remove any code smells from !important, and for making CSS [Supported by AMPHTML](https://www.ampproject.org/docs/guides/responsive/style_pages). This can be used as a CLI or in your Node projects. We also have a [Gulp Plugin]('../gulp-replace-important') as well.
+Package for removing !important from css rules from selectors and replacing them inside similar selectors - the new selectors will have the highest specificity in the CSS file. This is useful to remove any code smells from !important, and for making CSS [Supported by AMPHTML](https://www.ampproject.org/docs/guides/responsive/style_pages). This can be used as a CLI or in your Node projects. We also have a [Gulp Plugin](../gulp-replace-important) as well.
 
 # Installation
 
@@ -53,7 +53,7 @@ npm run test
 
 # Contributing
 
-Please see the [CONTRIBUTING.md]('../../CONTRIBUTING.md')
+Please see the [CONTRIBUTING.md](../../CONTRIBUTING.md)
 
 # Credits
 
@@ -77,5 +77,5 @@ Logic for Replace Important done by [@camelburrito](https://github.com/camelburr
  */
 ````
 
-# LICENSE
+# License
 [Apache License 2.0](https://choosealicense.com/licenses/apache-2.0/)
