@@ -45,7 +45,7 @@ console.log(output); // body {}:root:not(#FK_ID) body{background-color: red }
 
 # Tests
 
-We have a golden test, that is simply run with:
+We have a golden test, and CLI tests, that are simply run with:
 
 ```
 npm run test
