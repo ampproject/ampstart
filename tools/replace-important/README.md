@@ -57,7 +57,7 @@ Please see the [CONTRIBUTING.md](../../CONTRIBUTING.md)
 
 # Credits
 
-Logic for Replace Important done by [@camelburrito](https://github.com/camelburrito) , Node Module Wrapping and Gulp Plugin done by [@torch2424](https://github.com/torch2424) .
+Logic for Replace Important done by [@camelburrito](https://github.com/camelburrito) . Node Module Wrapping, Tests, and Gulp Plugin done by [@torch2424](https://github.com/torch2424) .
 
 ````
 /**
