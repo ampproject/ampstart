@@ -1,11 +1,12 @@
 # replace-important
-[Replace-important CLI Usage Gif](http://i.imgur.com/xJYOaMO.gif)
+![Replace-important CLI Usage Gif](http://i.imgur.com/xJYOaMO.gif)
 
 Package for removing !important from css rules from selectors and replacing them inside similar selectors - the new selectors will have the highest specificity in the CSS file. This is useful to remove any code smells from !important, and for making CSS [Supported by AMPHTML](https://www.ampproject.org/docs/guides/responsive/style_pages). This can be used as a CLI or in your Node projects. We also have a [Gulp Plugin]('../gulp-replace-important') as well.
 
 # Installation
 
 **Globally as CLI**
+
 ```
 npm install -g replace-important
 ```
@@ -34,7 +35,7 @@ $ replace-important
 
 Also, try the [Runkit](https://npm.runkit.com/replace-important) from the NPM Page
 
-```
+```javascript
 const replaceImportant = require('replace-important');
 
 const output = replaceImportant('body {background-color: red !important;}');
@@ -56,7 +57,7 @@ Please see the [CONTRIBUTING.md]('../../CONTRIBUTING.md')
 
 # Credits
 
-Logic for Replace Important done by @camelburrito , Node Module Wrapping and Gulp Plugin done by @torch2424 .
+Logic for Replace Important done by [@camelburrito](https://github.com/camelburrito) , Node Module Wrapping and Gulp Plugin done by [@torch2424](https://github.com/torch2424) .
 
 ````
 /**
