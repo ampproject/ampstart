@@ -38,7 +38,7 @@ const WebpackDevServer = require("webpack-dev-server");
 const KarmaServer = require('karma').Server;
 
 function configuratorBuild(callback) {
-  runSequence('configurator:css', 'configurator:json', function(callback) {
+  runSequence('configurator:css', 'configurator:json', function() {
     webpack(webpackProdConfig, function(err, stats) {
       if (err) {
         throw new util.PluginError("webpack", err);
