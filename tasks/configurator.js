@@ -19,7 +19,8 @@ const gulp = require('gulp-help')(require('gulp'));
 const config = require('./config');
 const util = require('gulp-util');
 const runSequence = require('run-sequence');
-const postcss = require('gulp-postcss');
+const postcss = require('postcss');
+const gulpPostcss = require('gulp-postcss');
 const replace = require('gulp-replace');
 const csstree = require('css-tree');
 const rename = require('gulp-rename');
@@ -108,6 +109,12 @@ function configuratorTestWatch(callback) {
 }
 
 function postCssWithVars() {
+  // Filtering out warning messages
+  const silentPostCSS = postcss.plugin('messages', () => (css, result) => {
+    const warnings = result.warnings();
+    result.messages = result.messages.filter(msg => msg.type !== 'warning');
+  });
+
   const plugins = [
     require('postcss-import')(),
     require('autoprefixer')(),
@@ -119,10 +126,11 @@ function postCssWithVars() {
     }),
     require('postcss-discard-comments')(),
     require('postcss-custom-media')(),
+    silentPostCSS()
   ];
   const options = {};
   return gulp.src(config.src.css)
-      .pipe(postcss(plugins, options))
+      .pipe(gulpPostcss(plugins, options))
       .pipe(replace('!important', ''))
       .pipe(gulp.dest(config.dest.uncompiled_css))
 }
