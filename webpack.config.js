@@ -8,6 +8,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const FailPlugin = require('webpack-fail-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 // Our current environment
@@ -99,7 +100,13 @@ module.exports = function (webpackEnv) {
             postcss: () => [autoprefixer]
           },
           debug: true
-        })
+        }),
+        new CopyWebpackPlugin([
+          {
+            from: `${conf.src.configurator}/testTemplates`,
+            to: `testTemplates/`
+          }
+        ])
       ]);
 
     // Devtool

@@ -27,6 +27,7 @@ const path = require('path');
 const config = require('./tasks/config');
 const server = require('gulp-webserver');
 const merge = require('deepmerge');
+const argv = require('minimist')(process.argv.slice(2));
 require('./tasks');
 
 let partialsMap = {};
@@ -117,7 +118,7 @@ function getPartials(acc, embedderDir, template) {
 gulp.task('build', 'build', function(cb) {
   runSequence(
       'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'countcss', 'posthtml', 'www', 'validate',
-      'bundle', cb);
+      'bundle', 'configurator', cb);
 });
 
 gulp.task('build:dev', 'runs a more lightweight build, meant for development and not production', function(cb) {
@@ -230,10 +231,11 @@ gulp.task('postcss', 'build postcss files', function() {
       .pipe(gulp.dest(config.dest.css))
 });
 
-gulp.task('serve', 'Host a livereloading webserver for the project', ['watch:www'], function() {
+gulp.task('serve', 'Host a livereloading development webserver for amp start', ['watch:www', 'configurator:watch'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     host: '0.0.0.0',
+    port: argv.port || 8000,
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
