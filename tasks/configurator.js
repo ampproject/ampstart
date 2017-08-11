@@ -129,6 +129,9 @@ function postCssWithVars() {
     silentPostCSS()
   ];
   const options = {};
+  const gulpConfiguratorCssSrc = config.src.css;
+  gulpConfiguratorCssSrc.push('!css/**/_*.css');
+
   return gulp.src(config.src.css)
       .pipe(gulpPostcss(plugins, options))
       .pipe(replace('!important', ''))
