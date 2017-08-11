@@ -98,11 +98,9 @@
   "eslintConfig": {
     "root": true,
     "env": {
-      "browser": true,
-      "jasmine": true
+      "browser": true
     },
     "extends": [
-      "xo-react/space",
       "xo-space/esnext"
     ],
     "parser": "babel-eslint"
