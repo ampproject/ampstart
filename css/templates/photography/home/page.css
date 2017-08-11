@@ -30,6 +30,10 @@
 @import 'page-vars';
 
 
+/* Navbar */
+
+
+/* Fullpage Hero*/
 .ampstart-image-fullpage-hero figcaption {
   display: flex;
   justify-content: center;
@@ -53,3 +57,4 @@
   box-decoration-break: none;
   background: transparent;
 }
+

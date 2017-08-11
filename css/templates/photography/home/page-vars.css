@@ -1,0 +1,30 @@
+:root {
+
+  --color-body-background: #fff;
+
+  --color-primary: #07111d;
+  --color-font-primary: #c4aa92;
+
+  --color-secondary: #c4aa92;
+  --color-font-secondary: #07111d;
+
+  --color-font-default: var(--color-dark-grey);
+  --color-font-subtitle: #d8d8d8;
+  --color-font-accent: #003f93;
+
+  --color-disabled: #9b9b9b;
+  --color-border: var(--color-dark-grey);
+
+  --color-navbar-primary: var(--color-primary);
+  --color-navbar-font-primary: var(--color-font-primary);
+
+  --color-input-primary: var(--color-font-accent);
+  --color-input-font-secondary: var(--color-font-accent);
+
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --zindex-max: 999;
+
+  --body-min-width: 315px;
+  --content-max-width: 700px;
+}
