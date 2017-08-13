@@ -1,0 +1,67 @@
+{
+  "land-see": {
+    "head-tag": {
+      "title": "Land + See",
+      "canonical-path": "templates/land-see/land-see.amp",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-accordion",
+        "amp-instagram",
+        "amp-social-share"
+      ],
+      "css-path": "templates/land-see/page.css"
+    }
+  },
+  "navbar": {
+    "name": "Land+See",
+    "sidebar-id": "header-sidebar",
+    "logo": {
+      "name": "Land + See",
+      "classes": "h3"
+    },
+    "nav": [
+      {
+        "link": {"url": "#", "text": "Home"}
+      },
+      {
+        "link": {"url": "menu.amp.html", "text": "Menu"}
+      },
+      {
+        "link": {"url": "#locations", "text": "Locations & Hours"}
+      },
+      {
+        "search": {"text": "Search"}
+      }
+    ],
+    "social-follow": {
+      "links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"instagram": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
+      ]
+    }
+  },
+  "footer": {
+    "social-follow": {
+      "links": [
+        {"twitter": "#"},
+        {"facebook": "#"},
+        {"pinterest": "#"},
+        {"email": "#"}
+      ]
+    },
+    "faq-links": {
+      "links": [
+        {"text": "About", "url": "#"},
+        {"text": "Contact", "url": "#"},
+        {"text": "Terms", "url": "#"}
+      ]
+    },
+    "copyright": {
+      "text": "© Land + See, 2017"
+    }
+  }
+}
