@@ -5,6 +5,7 @@
       "canonical-path": "configurator",
       "extensions": [
         "amp-sidebar",
+        "amp-iframe",
         "amp-analytics"
       ],
       "css-path": "www/configurator/page.css",

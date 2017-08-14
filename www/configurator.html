@@ -30,6 +30,18 @@ limitations under the License.
     <aside class="col-2 xs-hide"></aside>
     <article class="flex-auto col-8">
       CONFIGURATOR GOES HERE
+
+      <input type="hidden" value="QUERY_PARAM['template']" />
+
+      <amp-iframe width="300" height="500"
+        sandbox="allow-scripts"
+        layout="responsive"
+        frameborder="0"
+        src="../configurator/index.html?QUERY_PARAM(template)"
+        data-amp-replace="QUERY_PARAM">
+        <amp-img layout="fill" src="https://www.ampproject.org/static/img/home/home_icon_performance.svg" placeholder></amp-img>
+      </amp-iframe>
+      </iframe>
     </article>
     <aside class="col-2 xs-hide"></aside>
   </main>
