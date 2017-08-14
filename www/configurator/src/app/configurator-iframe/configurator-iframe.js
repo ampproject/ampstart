@@ -14,6 +14,11 @@
  * limitations under the License.
  */
 
+/**
+  * @fileoverview Exports the ConfiguratorIframe class. This will create an ifram element on the page, and assign its src to a template.
+  * It also allows for passing in a string of styles to be applied to the iframe, to change the styles of the template real time.
+  */
+
 // Can only apply styles to iframe if on same domain
 // https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe
 // https://stackoverflow.com/questions/6494721/css-override-body-style-for-content-in-iframe

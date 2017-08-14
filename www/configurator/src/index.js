@@ -14,6 +14,10 @@
  * limitations under the License.
  */
 
+ /**
+   * @fileoverview Watches the URL for hash variable changes, creates our configurator iframe, and compiles css on changes
+   */
+
 import ConfiguratorIframe from './app/configurator-iframe/configurator-iframe';
 import queryString from 'query-string';
 import './index.css';
