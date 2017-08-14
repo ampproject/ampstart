@@ -1,5 +1,5 @@
-import queryString from 'queryString';
-import {hello} from './app/hello';
+import AmpConfigurator from './app/ampConfigurator/ampConfigurator';
+import {hello} from './app/hello/hello';
 import './index.css';
 
 let templatesPath = '';
@@ -9,51 +9,14 @@ if (process.env.NODE_ENV === 'production') {
   templatesPath = 'testTemplates/';
 }
 
-// Can only apply styles to iframe if on same domain
-// https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe
-// https://stackoverflow.com/questions/6494721/css-override-body-style-for-content-in-iframe
-
-class AmpConfigurator {
-  constructor() {
-    // Create our iframe
-    this.iframe = document.createElement('iframe');
-    this.iframe.setAttribute('width', '368px');
-    this.iframe.setAttribute('height', '600px');
-    document.getElementById('root').appendChild(this.iframe);
-
-    // Handle the beginning hash change, and our event listener
-    this.handleHashChange_();
-    window.addEventListener('hashchange', this.handleHashChange_);
-  }
-
-  setSrc(path, iframeLoadedCallback) {
-    this.iframe.src = path;
-    this.iframe.addEventListener('load', () => {
-      if (iframeLoadedCallback) {
-        iframeLoadedCallback();
-      }
-    });
-  }
-
-  setStyle() {
-    this.style = this.iframe.contentDocument.createElement('style');
-    this.style.textContent = 'body { padding-left: 100px !important; }';
-    this.iframe.contentDocument.head.appendChild(this.style);
-  }
-
-  handleHashChange_() {
-    console.log('Hash Changed, re-building template...');
-    this.params = queryString.parse(location.hash.substring(1));
-  }
-}
-
 // require('postcss-custom-properties')({preserve: true}),
 const configurator = new AmpConfigurator();
+
 configurator.setSrc('https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png');
-configurator.setSrc(templatesPath + 'article/article.amp.html#amp=1', () => {
+const templateSrc = `${templatesPath}${configurator.params.template}/${configurator.params.template}.amp.html#amp=1`;
+
+configurator.setSrc(templateSrc, () => {
   configurator.setStyle();
 });
-console.log(configurator.params);
-console.log(configurator.hello);
 
 hello();
