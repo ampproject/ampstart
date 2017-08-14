@@ -10,8 +10,8 @@ if (process.env.NODE_ENV === 'production') {
   templatesPath = '../templates/';
   cssPath = 'uncompiledCss/templates/';
 } else {
-  templatesPath = 'testTemplates/';
-  cssPath = '../../dist/uncompiledCss/templates/';
+  templatesPath = 'testDist/templates/';
+  cssPath = 'testDist/uncompiledCss/templates/';
 }
 
 // Define our hash change handler
@@ -29,13 +29,22 @@ const configurator = new AmpConfigurator();
 
 // Set the configurator source, and pass a callback for after the src has been set
 const templateSrc = `${templatesPath}${params.template}/${params.template}.amp.html#amp=1`;
-configurator.setSrc(templateSrc, () => {
-  configurator.setStyle();
-});
+configurator.setSrc(templateSrc);
 
 // Get our css json
-const templateCssPath = `${cssPath}${params.template}/page.json`;
-const cssConfig = require(templateCssPath);
-console.log(cssConfig);
+const templateCssJsonPath = `${cssPath}${params.template}/page.json`;
+fetch(templateCssJsonPath).then(response => {
+  return response.json();
+}).then(json => {
+  console.log(json);
+});
+
+// Get our css string
+const templateCssPath = `${cssPath}${params.template}/page.css`;
+fetch(templateCssPath).then(response => {
+  return response.text();
+}).then(css => {
+  console.log(css);
+});
 
 hello();

@@ -103,8 +103,8 @@ module.exports = function (webpackEnv) {
         }),
         new CopyWebpackPlugin([
           {
-            from: `${conf.src.configurator}/testTemplates`,
-            to: `testTemplates/`
+            from: `${conf.src.configurator}/testDist`,
+            to: `testDist/`
           }
         ])
       ]);
