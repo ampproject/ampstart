@@ -1,3 +1,7 @@
 body {
   background-color: lightgrey;
 }
+
+#root {
+  height: 500px;
+}

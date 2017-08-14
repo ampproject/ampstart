@@ -5,10 +5,13 @@ import './index.css';
 
 let params = {};
 let templatesPath = '';
+let cssPath = '';
 if (process.env.NODE_ENV === 'production') {
   templatesPath = '../templates/';
+  cssPath = 'uncompiledCss/templates/';
 } else {
   templatesPath = 'testTemplates/';
+  cssPath = '../../dist/uncompiledCss/templates/';
 }
 
 // Define our hash change handler
@@ -29,5 +32,10 @@ const templateSrc = `${templatesPath}${params.template}/${params.template}.amp.h
 configurator.setSrc(templateSrc, () => {
   configurator.setStyle();
 });
+
+// Get our css json
+const templateCssPath = `${cssPath}${params.template}/page.json`;
+const cssConfig = require(templateCssPath);
+console.log(cssConfig);
 
 hello();
