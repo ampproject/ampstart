@@ -1,5 +1,4 @@
-import AmpConfigurator from './app/ampConfigurator/ampConfigurator';
-import {hello} from './app/hello/hello';
+import ConfiguratorIframe from './app/configurator-iframe/configurator-iframe';
 import queryString from 'query-string';
 import './index.css';
 
@@ -8,10 +7,10 @@ let templatesPath = '';
 let cssPath = '';
 if (process.env.NODE_ENV === 'production') {
   templatesPath = '../templates/';
-  cssPath = 'uncompiledCss/templates/';
+  cssPath = 'uncompiled-css/templates/';
 } else {
-  templatesPath = 'testDist/templates/';
-  cssPath = 'testDist/uncompiledCss/templates/';
+  templatesPath = 'test-dist/templates/';
+  cssPath = 'test-dist/uncompiled-css/templates/';
 }
 
 // Define our hash change handler
@@ -45,7 +44,5 @@ Promise.all(cssRequests).then(responses => {
 });
 
 // Create the configurator
-const configurator = new AmpConfigurator(templatesPath, params.template);
-console.log(configurator);
-
-hello();
+const configuratorIframe = new ConfiguratorIframe(templatesPath, params.template);
+console.log(configuratorIframe);

@@ -40,6 +40,6 @@ module.exports = {
     img: 'dist/img/',
     configurator: 'dist/configurator',
     configurator_tmp: '.tmp/configurator',
-    uncompiled_css: 'dist/configurator/uncompiledCss'
+    uncompiled_css: 'dist/configurator/uncompiled-css'
   },
 };

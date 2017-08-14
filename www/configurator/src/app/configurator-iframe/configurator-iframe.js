@@ -2,7 +2,7 @@
 // https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe
 // https://stackoverflow.com/questions/6494721/css-override-body-style-for-content-in-iframe
 
-class AmpConfigurator {
+class ConfiguratorIframe {
   constructor(templatesPath, template) {
     // Create our iframe
     this.iframe = document.createElement('iframe');
@@ -37,4 +37,4 @@ class AmpConfigurator {
   }
 }
 
-export default AmpConfigurator;
+export default ConfiguratorIframe;
