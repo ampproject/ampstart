@@ -1,6 +1,6 @@
 {
   "name": "gulp-replace-important",
-  "version": "1.0.1-alpha",
+  "version": "1.0.2-alpha",
   "description": "Gulp Wrapper for the replace-important module",
   "main": "index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ampproject/ampstart#readme",
   "dependencies": {
+    "gulp-util": "^3.0.8",
     "replace-important": "1.0.0-alpha",
     "through2": "^2.0.3"
   },
