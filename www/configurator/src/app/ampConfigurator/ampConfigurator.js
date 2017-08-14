@@ -13,9 +13,9 @@ class AmpConfigurator {
     // Set our src
     this.template = template;
     const templateSrc = `${templatesPath}${this.template}/${this.template}.amp.html#amp=1`;
-    this.setSrc(templateSrc);
+    this.setSrc_(templateSrc);
 
-    // Create our style object we will be using to ovveride styles in the iframe
+    // Create our style object we will be using to overide styles in the iframe
     this.style = this.iframe.contentDocument.createElement('style');
     this.iframe.contentDocument.head.appendChild(this.style);
   }

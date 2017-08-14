@@ -25,23 +25,27 @@ window.addEventListener('hashchange', handleHashChange_);
 
 // require('postcss-custom-properties')({preserve: true}),
 
+// Grab our CSS and CSS Json
+const cssRequests = [];
+const templateCssPath = `${cssPath}${params.template}/page`;
+cssRequests.push(
+  fetch(`${templateCssPath}.json`).then(response => {
+    return response.json();
+  })
+);
+cssRequests.push(
+  fetch(`${templateCssPath}.css`).then(response => {
+    return response.text();
+  })
+);
+
+Promise.all(cssRequests).then(responses => {
+  // First response will be json, and second shall be css
+  console.log(responses);
+});
+
 // Create the configurator
 const configurator = new AmpConfigurator(templatesPath, params.template);
-
-// Get our css json
-const templateCssJsonPath = `${cssPath}${params.template}/page.json`;
-fetch(templateCssJsonPath).then(response => {
-  return response.json();
-}).then(json => {
-  console.log(json);
-});
-
-// Get our css string
-const templateCssPath = `${cssPath}${params.template}/page.css`;
-fetch(templateCssPath).then(response => {
-  return response.text();
-}).then(css => {
-  console.log(css);
-});
+console.log(configurator);
 
 hello();
