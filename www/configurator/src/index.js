@@ -1,6 +1,6 @@
 import AmpConfigurator from './app/ampConfigurator/ampConfigurator';
 import {hello} from './app/hello/hello';
-import queryString from 'queryString';
+import queryString from 'query-string';
 import './index.css';
 
 let params = {};
