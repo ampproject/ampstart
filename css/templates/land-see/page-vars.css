@@ -15,10 +15,13 @@
  */
 
 :root {
-  --h1: 2.25rem;  /* 36px */
-  --h2: 1.25rem;  /* 28px */
-  --h3: .6875rem;  /* 20px */
-  --h4: .875rem;  /* 14px */
+  --h0: 2.8125rem;  /* 45px */
+  --h1: 2.5rem;  /* 40px */
+  --h2: 1.625rem; /* 26px */
+  --h3: 1.3125rem; /* 21px */
+  --h4: 1.125rem;  /* 18px */
+  --h5: .9375rem;  /* 15px */
+  --h6: .8125rem;  /* 13px */
 
   --line-height-2: 1.42857;  /* 20px/14px*/
   --line-height-3: 2.0625;  /* 33px/16px*/
@@ -29,23 +32,24 @@
   --navbar-height: 3.5rem;
 
   --color-primary: var(--color-white);
-  --color-font-primary: var(--color-black);
+  --color-font-primary: #021425;
 
   --color-secondary: var(--color-black);
   --color-font-secondary: var(--color-white);
 
-  --color-footer-background: var(--color-primary);
-  --color-font-footer: var(--color-font-primary);
+  --color-sidebar-background: #fef4f2;
+  --color-font-footer: #3e6458;
 
   --color-border: var(--color-dark-grey);
 
-  --color-font-default: var(--color-dark-grey);
-  --color-font-accent: var(--color-font-secondary);
+  --color-font-default: #6d6d6d;
+  --color-font-accent: #808992;
 
-  --color-navbar-primary: var(--color-secondary);
-  --color-navbar-font-primary: var(--color-font-secondary);
+  --color-navbar-primary: var(--color-primary);
+  --color-navbar-font-primary: var(--color-font-primary);
 
-  --font-primary: "EB Garamond", times, serif;
-  --font-secondary: "Work Sans", arial, sans-serif;
+  --font-primary: "Crimson Text", times, serif;
+  --font-secondary: "Montserrat", arial, sans-serif;
+  --font-navigation: "Inconsolata", verdana, sans-serif;
   --font-family: var(--font-primary);
 }

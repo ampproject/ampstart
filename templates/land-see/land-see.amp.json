@@ -10,7 +10,10 @@
         "amp-instagram",
         "amp-social-share"
       ],
-      "css-path": "templates/land-see/page.css"
+      "css-path": "templates/land-see/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Crimson+Text"
+      ]
     }
   },
   "navbar": {
@@ -22,13 +25,16 @@
     },
     "nav": [
       {
-        "link": {"url": "#", "text": "Home"}
+        "link": {"url": "stories.amp.html", "text": "Stories"}
       },
       {
-        "link": {"url": "menu.amp.html", "text": "Menu"}
+        "link": {"url": "#shop", "text": "Shop"}
       },
       {
-        "link": {"url": "#locations", "text": "Locations & Hours"}
+        "link": {"url": "#about", "text": "About"}
+      },
+      {
+        "link": {"url": "#contact", "text": "Contact"}
       },
       {
         "search": {"text": "Search"}
