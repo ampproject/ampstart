@@ -24,12 +24,9 @@ handleHashChange_();
 window.addEventListener('hashchange', handleHashChange_);
 
 // require('postcss-custom-properties')({preserve: true}),
-// Create the configurator
-const configurator = new AmpConfigurator();
 
-// Set the configurator source, and pass a callback for after the src has been set
-const templateSrc = `${templatesPath}${params.template}/${params.template}.amp.html#amp=1`;
-configurator.setSrc(templateSrc);
+// Create the configurator
+const configurator = new AmpConfigurator(templatesPath, params.template);
 
 // Get our css json
 const templateCssJsonPath = `${cssPath}${params.template}/page.json`;
