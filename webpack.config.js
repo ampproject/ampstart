@@ -170,7 +170,10 @@ module.exports = function (webpackEnv) {
 
     // Entry
     webpackConf.entry = {
-      app: `./${conf.src.configurator}/index`,
+      app: [
+        'whatwg-fetch',
+        `./${conf.src.configurator}/index`
+      ],
       vendor: pkg.configuratorDependencies
     };
   }
