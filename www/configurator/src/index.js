@@ -1,3 +1,4 @@
+import queryString from 'queryString';
 import {hello} from './app/hello';
 import './index.css';
 
@@ -14,10 +15,15 @@ if (process.env.NODE_ENV === 'production') {
 
 class AmpConfigurator {
   constructor() {
+    // Create our iframe
     this.iframe = document.createElement('iframe');
     this.iframe.setAttribute('width', '368px');
     this.iframe.setAttribute('height', '600px');
     document.getElementById('root').appendChild(this.iframe);
+
+    // Handle the beginning hash change, and our event listener
+    this.handleHashChange_();
+    window.addEventListener('hashchange', this.handleHashChange_);
   }
 
   setSrc(path, iframeLoadedCallback) {
@@ -34,6 +40,11 @@ class AmpConfigurator {
     this.style.textContent = 'body { padding-left: 100px !important; }';
     this.iframe.contentDocument.head.appendChild(this.style);
   }
+
+  handleHashChange_() {
+    console.log('Hash Changed, re-building template...');
+    this.params = queryString.parse(location.hash.substring(1));
+  }
 }
 
 // require('postcss-custom-properties')({preserve: true}),
@@ -42,5 +53,7 @@ configurator.setSrc('https://www.google.com/images/branding/googlelogo/2x/google
 configurator.setSrc(templatesPath + 'article/article.amp.html#amp=1', () => {
   configurator.setStyle();
 });
+console.log(configurator.params);
+console.log(configurator.hello);
 
 hello();
