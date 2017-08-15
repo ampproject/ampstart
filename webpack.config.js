@@ -103,8 +103,8 @@ module.exports = function (webpackEnv) {
         }),
         new CopyWebpackPlugin([
           {
-            from: `${conf.src.configurator}/testTemplates`,
-            to: `testTemplates/`
+            from: `${conf.src.configurator}/test-dist`,
+            to: `test-dist/`
           }
         ])
       ]);
@@ -121,7 +121,6 @@ module.exports = function (webpackEnv) {
     // Entry
     webpackConf.entry = [
       'webpack/hot/dev-server',
-      'webpack-hot-middleware/client',
       `./${conf.src.configurator}/index`
     ];
   }
@@ -170,7 +169,10 @@ module.exports = function (webpackEnv) {
 
     // Entry
     webpackConf.entry = {
-      app: `./${conf.src.configurator}/index`,
+      app: [
+        'whatwg-fetch',
+        `./${conf.src.configurator}/index`
+      ],
       vendor: pkg.configuratorDependencies
     };
   }

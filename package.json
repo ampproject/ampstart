@@ -90,10 +90,12 @@
     "basscss": "^8.0.3",
     "basscss-addons": "^1.0.0",
     "basscss-basic": "^1.0.0",
-    "normalize.css": "^5.0.0"
+    "normalize.css": "^5.0.0",
+    "query-string": "^5.0.0",
+    "whatwg-fetch": "^2.0.3"
   },
   "configuratorDependencies": [
-    "normalize.css"
+    "query-string"
   ],
   "eslintConfig": {
     "root": true,

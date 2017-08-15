@@ -1,3 +1,5 @@
+/* eslint-env mocha */
+
 /**
  * Copyright 2017 The AMP Start Authors. All Rights Reserved.
  *
@@ -14,10 +16,11 @@
  * limitations under the License.
  */
 
-body {
-  background-color: lightgrey;
-}
+const assert = require('assert');
 
-#root {
-  height: 500px;
-}
+describe('karma testing', () => {
+  it('should pass', () => {
+    console.log('Hello! this test is a test');
+    assert.equal(true, true);
+  });
+});
