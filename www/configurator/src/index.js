@@ -19,6 +19,7 @@
    */
 
 import ConfiguratorIframe from './app/configurator-iframe/configurator-iframe';
+import CssTranspile from './app/css-transpile/css-transpile';
 import queryString from 'query-string';
 import './index.css';
 
@@ -37,6 +38,7 @@ if (process.env.NODE_ENV === 'production') {
 function handleHashChange_() {
   console.log('Hash Changed, re-building template...');
   params = queryString.parse(location.hash.substring(1));
+  console.log('New Hash params:', params);
 }
 // Handle the beginning hash change, and our event listener
 handleHashChange_();
@@ -58,11 +60,17 @@ cssRequests.push(
   })
 );
 
-Promise.all(cssRequests).then(responses => {
-  // First response will be json, and second shall be css
-  console.log(responses);
-});
-
 // Create the configurator
 const configuratorIframe = new ConfiguratorIframe(templatesPath, params.template);
-console.log(configuratorIframe);
+
+Promise.all(cssRequests).then(responses => {
+  // First response will be json, and second shall be css
+  const cssTranspiler = new CssTranspile(responses[1], responses[0]);
+  const cssTest = cssTranspiler.getCssWithVars({
+    '--h1': '17rem'
+  });
+
+  configuratorIframe.setStyle(cssTest);
+  configuratorIframe.setStyle('body, html { padding-left: 100px !important; }');
+  console.log(configuratorIframe.styleElement);
+});

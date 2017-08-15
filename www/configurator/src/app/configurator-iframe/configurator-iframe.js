@@ -37,15 +37,16 @@ class ConfiguratorIframe {
     this.setSrc_(templateSrc);
 
     // Create our style object we will be using to overide styles in the iframe
-    this.style = this.iframe.contentDocument.createElement('style');
-    this.iframe.contentDocument.head.appendChild(this.style);
+    this.styleElement = this.iframe.contentDocument.createElement('style');
+    this.iframe.contentDocument.head.appendChild(this.styleElement);
+    console.log(this.styleElement);
   }
 
   setStyle(style) {
     if (!style) {
       return;
     }
-    this.style.textContent = style;
+    this.styleElement.textContent = style;
   }
 
   setSrc_(path, iframeLoadedCallback) {
