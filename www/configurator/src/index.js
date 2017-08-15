@@ -33,39 +33,21 @@ if (process.env.NODE_ENV === 'production') {
   cssPath = 'test-dist/uncompiled-css/templates/';
 }
 
-// Function to get params on the page
-function getUrlParams() {
-  const params = {
-    search: {},
-    hash: {}
-  };
-  const templateParam = queryString.parse(location.search.substring(1)).template;
-  if (templateParam) {
-    params.search.template = templateParam;
-  }
-  params.hash = Object.assign({}, params.hash, queryString.parse(location.hash.substring(1)));
-  return params;
+function getUrlTemplate() {
+  return queryString.parse(location.search.substring(1)).template;
+}
+
+function getUrlCssVars() {
+  return queryString.parse(location.hash.substring(1));
 }
 
 // Define our iframe manager, an our css transplier
 let iframeManager = false;
 let cssTranspiler = false;
-// Get our url params on page load
-let params = getUrlParams();
-console.log('Initial Params', params);
-
-// Define our hash change handler
-function handleHashChange_() {
-  console.log('Hash Changed, re-building template...');
-  params = getUrlParams();
-  const updatedStyles = cssTranspiler.getCssWithVars(params.hash);
-  iframeManager.setStyle(updatedStyles);
-  console.log('New params:', params);
-}
 
 // Grab our CSS and CSS Json
 const configuratorInit = [];
-const templateCssPath = `${cssPath}${params.search.template}/page`;
+const templateCssPath = `${cssPath}${getUrlTemplate()}/page`;
 configuratorInit.push(
   fetch(`${templateCssPath}.json`).then(response => {
     return response.json();
@@ -78,7 +60,7 @@ configuratorInit.push(
 );
 
 // Create the configurator
-const templateSrc = `${templatesPath}${params.search.template}/${params.search.template}.amp.html#amp=1`;
+const templateSrc = `${templatesPath}${getUrlTemplate()}/${getUrlTemplate()}.amp.html#amp=1`;
 iframeManager = new IframeManager(templateSrc);
 configuratorInit.push(iframeManager.initialize());
 
@@ -87,9 +69,15 @@ Promise.all(configuratorInit).then(responses => {
   cssTranspiler = new CssTranspiler(responses[1], responses[0]);
 
   // Apply initial styles
-  const initialStyles = cssTranspiler.getCssWithVars(params.hash);
+  const initialStyles = cssTranspiler.getCssWithVars(getUrlCssVars());
   iframeManager.setStyle(initialStyles);
 
   // Listen to has change events on the page
   window.addEventListener('hashchange', handleHashChange_);
 });
+
+// Define our hash change handler
+function handleHashChange_() {
+  const updatedStyles = cssTranspiler.getCssWithVars(getUrlCssVars());
+  iframeManager.setStyle(updatedStyles);
+}

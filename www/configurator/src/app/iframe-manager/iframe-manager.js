@@ -41,8 +41,7 @@ class IframeManager {
       this.iframe.src = this.templateSrc;
       // Create our style object we will be using to overide styles in the iframe
       this.iframe.addEventListener('load', () => {
-        this.styleElement = this.iframe.contentDocument.createElement('style');
-        this.iframe.contentDocument.head.appendChild(this.styleElement);
+        this.styleElement = this.iframe.contentDocument.head.querySelector('style[amp-custom]');
         resolve();
       });
     });
