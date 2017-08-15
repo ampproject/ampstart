@@ -23,7 +23,7 @@
 // https://stackoverflow.com/questions/217776/how-to-apply-css-to-iframe
 // https://stackoverflow.com/questions/6494721/css-override-body-style-for-content-in-iframe
 
-class ConfiguratorIframe {
+class IframeManager {
   constructor(templateSrc) {
     // Create our iframe
     this.iframe = document.createElement('iframe');
@@ -56,4 +56,4 @@ class ConfiguratorIframe {
   }
 }
 
-export default ConfiguratorIframe;
+export default IframeManager;

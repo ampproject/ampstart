@@ -18,8 +18,8 @@
    * @fileoverview Watches the URL for hash variable changes, creates our configurator iframe, and compiles css on changes
    */
 
-import ConfiguratorIframe from './app/configurator-iframe/configurator-iframe';
-import CssTranspile from './app/css-transpile/css-transpile';
+import IframeManager from './app/iframe-manager/iframe-manager';
+import CssTranspiler from './app/css-transpiler/css-transpiler';
 import queryString from 'query-string';
 import './index.css';
 
@@ -48,7 +48,7 @@ function getUrlParams() {
 }
 
 // Define our iframe manager, an our css transplier
-let configuratorIframe = false;
+let iframeManager = false;
 let cssTranspiler = false;
 // Get our url params on page load
 let params = getUrlParams();
@@ -59,7 +59,7 @@ function handleHashChange_() {
   console.log('Hash Changed, re-building template...');
   params = getUrlParams();
   const updatedStyles = cssTranspiler.getCssWithVars(params.hash);
-  configuratorIframe.setStyle(updatedStyles);
+  iframeManager.setStyle(updatedStyles);
   console.log('New params:', params);
 }
 
@@ -79,16 +79,16 @@ configuratorInit.push(
 
 // Create the configurator
 const templateSrc = `${templatesPath}${params.search.template}/${params.search.template}.amp.html#amp=1`;
-configuratorIframe = new ConfiguratorIframe(templateSrc);
-configuratorInit.push(configuratorIframe.initialize());
+iframeManager = new IframeManager(templateSrc);
+configuratorInit.push(iframeManager.initialize());
 
 Promise.all(configuratorInit).then(responses => {
   // First response will be json, and second shall be css
-  cssTranspiler = new CssTranspile(responses[1], responses[0]);
+  cssTranspiler = new CssTranspiler(responses[1], responses[0]);
 
   // Apply initial styles
   const initialStyles = cssTranspiler.getCssWithVars(params.hash);
-  configuratorIframe.setStyle(initialStyles);
+  iframeManager.setStyle(initialStyles);
 
   // Listen to has change events on the page
   window.addEventListener('hashchange', handleHashChange_);

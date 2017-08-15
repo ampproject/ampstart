@@ -22,7 +22,7 @@
 const postcss = require('postcss');
 const customProperties = require('postcss-custom-properties');
 
-class CssTranspile {
+class CssTranspiler {
   constructor(css, cssVars) {
     this.templateCss = css;
     this.templateCssVars = cssVars;
@@ -49,4 +49,4 @@ class CssTranspile {
   }
 }
 
-export default CssTranspile;
+export default CssTranspiler;
