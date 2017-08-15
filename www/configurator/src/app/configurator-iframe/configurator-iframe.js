@@ -43,7 +43,6 @@ class ConfiguratorIframe {
       this.iframe.addEventListener('load', () => {
         this.styleElement = this.iframe.contentDocument.createElement('style');
         this.iframe.contentDocument.head.appendChild(this.styleElement);
-        console.log(this.styleElement);
         resolve();
       });
     });

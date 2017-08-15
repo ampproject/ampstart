@@ -23,7 +23,6 @@ import CssTranspile from './app/css-transpile/css-transpile';
 import queryString from 'query-string';
 import './index.css';
 
-let params = {};
 let templatesPath = '';
 let cssPath = '';
 if (process.env.NODE_ENV === 'production') {
@@ -34,27 +33,41 @@ if (process.env.NODE_ENV === 'production') {
   cssPath = 'test-dist/uncompiled-css/templates/';
 }
 
+// Function to get params on the page
+function getUrlParams() {
+  let params = {};
+  const templateParam = queryString.parse(location.search.substring(1)).template;
+  if (templateParam) {
+    params.template = templateParam;
+  }
+  params = Object.assign({}, params, queryString.parse(location.hash.substring(1)));
+  return params;
+}
+
+// Define our iframe manager, an our css transplier
+let configuratorIframe = false;
+let cssTranspiler = false;
+// Get our url params on page load
+let params = getUrlParams();
+console.log(params);
+
 // Define our hash change handler
 function handleHashChange_() {
   console.log('Hash Changed, re-building template...');
-  params = queryString.parse(location.hash.substring(1));
+  params = getUrlParams();
+  cssTranspiler.getCssWithVars({});
   console.log('New Hash params:', params);
 }
-// Handle the beginning hash change, and our event listener
-handleHashChange_();
-window.addEventListener('hashchange', handleHashChange_);
-
-// require('postcss-custom-properties')({preserve: true}),
 
 // Grab our CSS and CSS Json
-const cssRequests = [];
+const configuratorInit = [];
 const templateCssPath = `${cssPath}${params.template}/page`;
-cssRequests.push(
+configuratorInit.push(
   fetch(`${templateCssPath}.json`).then(response => {
     return response.json();
   })
 );
-cssRequests.push(
+configuratorInit.push(
   fetch(`${templateCssPath}.css`).then(response => {
     return response.text();
   })
@@ -62,20 +75,13 @@ cssRequests.push(
 
 // Create the configurator
 const templateSrc = `${templatesPath}${params.template}/${params.template}.amp.html#amp=1`;
-const configuratorIframe = new ConfiguratorIframe(templateSrc);
+configuratorIframe = new ConfiguratorIframe(templateSrc);
+configuratorInit.push(configuratorIframe.initialize());
 
-Promise.all(cssRequests).then(responses => {
+Promise.all(configuratorInit).then(responses => {
   // First response will be json, and second shall be css
-  const cssTranspiler = new CssTranspile(responses[1], responses[0]);
-  const cssTest = cssTranspiler.getCssWithVars({
-    '--h1': '17rem',
-    '--h2': '19rem',
-    '--color-black': '#fff',
-    '--color-primary': '#fff'
-  });
+  cssTranspiler = new CssTranspile(responses[1], responses[0]);
 
-  configuratorIframe.initialize().then(() => {
-    console.log(cssTest);
-    configuratorIframe.setStyle(cssTest);
-  });
+  // Listen to has change events on the page
+  window.addEventListener('hashchange', handleHashChange_);
 });
