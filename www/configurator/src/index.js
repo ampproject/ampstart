@@ -61,16 +61,21 @@ cssRequests.push(
 );
 
 // Create the configurator
-const configuratorIframe = new ConfiguratorIframe(templatesPath, params.template);
+const templateSrc = `${templatesPath}${params.template}/${params.template}.amp.html#amp=1`;
+const configuratorIframe = new ConfiguratorIframe(templateSrc);
 
 Promise.all(cssRequests).then(responses => {
   // First response will be json, and second shall be css
   const cssTranspiler = new CssTranspile(responses[1], responses[0]);
   const cssTest = cssTranspiler.getCssWithVars({
-    '--h1': '17rem'
+    '--h1': '17rem',
+    '--h2': '19rem',
+    '--color-black': '#fff',
+    '--color-primary': '#fff'
   });
 
-  configuratorIframe.setStyle(cssTest);
-  configuratorIframe.setStyle('body, html { padding-left: 100px !important; }');
-  console.log(configuratorIframe.styleElement);
+  configuratorIframe.initialize().then(() => {
+    console.log(cssTest);
+    configuratorIframe.setStyle(cssTest);
+  });
 });
