@@ -37,9 +37,6 @@ class CssTranspile {
       }
     });
 
-    console.log(this.templateCssVars);
-    console.log(cssVars);
-
     // Append the new vars to the end of our template css
     let cssWithAppendedVars = `${this.templateCss.slice(0)} :root {`;
     Object.keys(cssVars).forEach(cssVarKey => {
