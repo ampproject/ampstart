@@ -21,6 +21,10 @@
 
 const postcss = require('postcss');
 const customProperties = require('postcss-custom-properties');
+// Grab the Worker Using Webpack
+// https://github.com/webpack/webpack/tree/master/examples/web-worker
+// https://github.com/webpack-contrib/worker-loader
+const Worker = require('worker-loader!./css-transpiler.worker');
 
 class CssTranspiler {
   /**
@@ -39,6 +43,11 @@ class CssTranspiler {
    * @returns {string} - the newly transpiled page css with varibale values
    */
   getCssWithVars(passedCssVars) {
+    // Testing the webworker
+    // eslint-disable-next-line
+    const worker = new Worker;
+    worker.postMessage('b');
+
     // Only assign variables that exist in both, and set to the current value
     const cssVars = Object.assign({}, this.templateCssVars);
     Object.keys(passedCssVars).forEach(cssVarKey => {
@@ -46,6 +55,8 @@ class CssTranspiler {
         cssVars[cssVarKey].current = passedCssVars[cssVarKey];
       }
     });
+
+    // Add the onmessage here
 
     // Append the new vars to the end of our template css
     let cssWithAppendedVars = `${this.templateCss.slice(0)} :root {`;
