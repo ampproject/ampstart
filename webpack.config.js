@@ -6,7 +6,6 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // Doing a webpack hack for es6: https://github.com/webpack-contrib/uglifyjs-webpack-plugin/issues/33
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-const FailPlugin = require('webpack-fail-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const autoprefixer = require('autoprefixer');
@@ -90,7 +89,6 @@ module.exports = function (webpackEnv) {
       webpackConf.plugins.concat([
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
-        FailPlugin,
         new HtmlWebpackPlugin({
           template: `${conf.src.configurator}/index.html`
         }),
@@ -141,7 +139,6 @@ module.exports = function (webpackEnv) {
       webpackConf.plugins.concat([
         new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.NoEmitOnErrorsPlugin(),
-        FailPlugin,
         new HtmlWebpackPlugin({
           template: `${conf.src.configurator}/index.html`
         }),
