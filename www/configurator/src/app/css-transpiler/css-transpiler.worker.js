@@ -1,19 +1,22 @@
+/* eslint-disable */
+
 const postcss = require('postcss');
 const customProperties = require('postcss-custom-properties');
 
-/* eslint-disable */
 onmessage = function(event) {
-	console.log(event);
-	console.log(postcss);
+
+	// Obtain the templateCss and cssvars from event
+	const templateCss = event.data.templateCss;
+	const cssVars = event.data.cssVars;
 
 	// Append the new vars to the end of our template css
-	let cssWithAppendedVars = `${this.templateCss.slice(0)} :root {`;
+	let cssWithAppendedVars = `${templateCss} :root {`;
 	Object.keys(cssVars).forEach(cssVarKey => {
-		cssWithAppendedVars += `\n${cssVarKey}: ${cssVars[cssVarKey].current || cssVars[cssVarKey].value};`;
+		cssWithAppendedVars += `\n${cssVarKey}: ${[cssVarKey].current || [cssVarKey].value};`;
 	});
 	cssWithAppendedVars += '}';
 
 	// Transpile the CSS with the appended variables
-	return postcss().use(customProperties()).process(cssWithAppendedVars).css;
+	postMessage(postcss().use(customProperties()).process(cssWithAppendedVars).css);
 }
 /* eslint-enable */

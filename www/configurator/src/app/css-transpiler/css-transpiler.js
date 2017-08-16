@@ -19,8 +19,6 @@
   * It will then allow passing in an object with these variables, to take in the changes, and return the re-transpiled css
   */
 
-const postcss = require('postcss');
-const customProperties = require('postcss-custom-properties');
 // Grab the Worker Using Webpack
 // https://github.com/webpack/webpack/tree/master/examples/web-worker
 // https://github.com/webpack-contrib/worker-loader
@@ -34,6 +32,8 @@ class CssTranspiler {
   constructor(css, cssVars) {
     this.templateCss = css;
     this.templateCssVars = cssVars;
+    // eslint-disable-next-line
+    this.worker = new Worker;
   }
 
   /**
@@ -43,11 +43,6 @@ class CssTranspiler {
    * @returns {string} - the newly transpiled page css with varibale values
    */
   getCssWithVars(passedCssVars) {
-    // Testing the webworker
-    // eslint-disable-next-line
-    const worker = new Worker;
-    worker.postMessage('b');
-
     // Only assign variables that exist in both, and set to the current value
     const cssVars = Object.assign({}, this.templateCssVars);
     Object.keys(passedCssVars).forEach(cssVarKey => {
@@ -57,17 +52,17 @@ class CssTranspiler {
     });
 
     // Add the onmessage here
-    worker.postMessage(cssVars);
-
-    // Append the new vars to the end of our template css
-    let cssWithAppendedVars = `${this.templateCss.slice(0)} :root {`;
-    Object.keys(cssVars).forEach(cssVarKey => {
-      cssWithAppendedVars += `\n${cssVarKey}: ${cssVars[cssVarKey].current || cssVars[cssVarKey].value};`;
+    this.worker.postMessage({
+      templateCss: this.templateCss.slice(0),
+      cssVars
     });
-    cssWithAppendedVars += '}';
 
-    // Transpile the CSS with the appended variables
-    return postcss().use(customProperties()).process(cssWithAppendedVars).css;
+    return new Promise(resolve => {
+      this.worker.onmessage = event => {
+        console.log(event);
+        resolve(event);
+      };
+    });
   }
 }
 
