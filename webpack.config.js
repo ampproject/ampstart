@@ -4,8 +4,6 @@ const pkg = require('./package.json');
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// Doing a webpack hack for es6: https://github.com/webpack-contrib/uglifyjs-webpack-plugin/issues/33
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ClosureCompilerPlugin = require('webpack-closure-compiler');
