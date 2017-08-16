@@ -195,7 +195,7 @@ gulp.task('watch:dev', 'watch stuff, (more) minimal watching for development, wi
       });
 });
 
-gulp.task('default', ['watch:dev']);
+gulp.task('default', ['serve']);
 
 gulp.task('posthtml', 'build kickstart files', function() {
   const plugins = [
@@ -231,7 +231,7 @@ gulp.task('postcss', 'build postcss files', function() {
       .pipe(gulp.dest(config.dest.css))
 });
 
-gulp.task('serve', 'Host a livereloading development webserver for amp start', ['watch:www', 'configurator:watch'], function() {
+gulp.task('serve', 'Host a livereloading development webserver for amp start', ['watch:dev', 'configurator:watch'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     host: '0.0.0.0',
