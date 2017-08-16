@@ -57,6 +57,7 @@ class CssTranspiler {
     });
 
     // Add the onmessage here
+    worker.postMessage(cssVars);
 
     // Append the new vars to the end of our template css
     let cssWithAppendedVars = `${this.templateCss.slice(0)} :root {`;
