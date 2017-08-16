@@ -18,11 +18,12 @@
    * @fileoverview Watches the URL for hash variable changes, creates our configurator iframe, and compiles css on changes
    */
 
-import ConfiguratorIframe from './app/configurator-iframe/configurator-iframe';
+import IframeManager from './app/iframe-manager/iframe-manager';
+import CssTranspiler from './app/css-transpiler/css-transpiler';
 import queryString from 'query-string';
 import './index.css';
 
-let params = {};
+// Define our templates and css URL path depending on the current build environment
 let templatesPath = '';
 let cssPath = '';
 if (process.env.NODE_ENV === 'production') {
@@ -33,36 +34,61 @@ if (process.env.NODE_ENV === 'production') {
   cssPath = 'test-dist/uncompiled-css/templates/';
 }
 
-// Define our hash change handler
-function handleHashChange_() {
-  console.log('Hash Changed, re-building template...');
-  params = queryString.parse(location.hash.substring(1));
+/**
+ * Function to parse the search params of the url, and return the template
+ * @returns {string} - the name of the template
+ */
+function getUrlTemplate() {
+  return queryString.parse(location.search.substring(1)).template;
 }
-// Handle the beginning hash change, and our event listener
-handleHashChange_();
-window.addEventListener('hashchange', handleHashChange_);
 
-// require('postcss-custom-properties')({preserve: true}),
+/**
+ * Function to parse the hash params of the url
+ * @returns {string} - the has params of the url
+ */
+function getUrlCssVars() {
+  return queryString.parse(location.hash.substring(1));
+}
 
-// Grab our CSS and CSS Json
-const cssRequests = [];
-const templateCssPath = `${cssPath}${params.template}/page`;
-cssRequests.push(
+// Create requests for our CSS vars JSON file, and the template page css file
+const configuratorInit = [];
+const templateCssPath = `${cssPath}${getUrlTemplate()}/page`;
+configuratorInit.push(
   fetch(`${templateCssPath}.json`).then(response => {
     return response.json();
   })
 );
-cssRequests.push(
+configuratorInit.push(
   fetch(`${templateCssPath}.css`).then(response => {
     return response.text();
   })
 );
 
-Promise.all(cssRequests).then(responses => {
+// Instantiate our iframe manager
+const templateSrc = `${templatesPath}${getUrlTemplate()}/${getUrlTemplate()}.amp.html#amp=1`;
+const iframeManager = new IframeManager(templateSrc);
+configuratorInit.push(iframeManager.initialize());
+
+// Declare our cssTranspiler. Need the promises to resolve before instantiation.
+let cssTranspiler = false;
+
+Promise.all(configuratorInit).then(responses => {
   // First response will be json, and second shall be css
-  console.log(responses);
+  cssTranspiler = new CssTranspiler(responses[1], responses[0]);
+
+  // Apply initial styles
+  const initialStyles = cssTranspiler.getCssWithVars(getUrlCssVars());
+  iframeManager.setStyle(initialStyles);
+
+  // Listen to has change events on the page
+  window.addEventListener('hashchange', handleHashChange_);
 });
 
-// Create the configurator
-const configuratorIframe = new ConfiguratorIframe(templatesPath, params.template);
-console.log(configuratorIframe);
+/**
+ * Function to handle URL hash changes. This is not used until the initialization of the configurator is completed.
+ *    Also, this will simply get the latest URL params, pass them to the transpiler, and set the styles in the iframe manager.
+ */
+function handleHashChange_() {
+  const updatedStyles = cssTranspiler.getCssWithVars(getUrlCssVars());
+  iframeManager.setStyle(updatedStyles);
+}

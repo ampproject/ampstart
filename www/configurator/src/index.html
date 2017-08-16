@@ -31,14 +31,17 @@
 
     <div>
       <h1>Amp Start Configurator test</h1>
-      <h3 id="hello-test">
-        Hello
-      </h3>
-      <p>
-        Plase add "template=article" in the template hash, and reload the page.
+      <pre>
+        Plase add "template=article" in the url search params, and reload the page.
         Example:
-        <a href="http://localhost:8080/#template=article">http://localhost:8080/#template=article</a>
-      </p>
+        <a href="http://localhost:8080/?template=article">http://localhost:8080/?template=article</a>
+
+        Variables can be added in the url hash params.
+        Examples:
+        <a href="http://localhost:8080/?template=article#--h1=16rem&--h2=18rem">http://localhost:8080/?template=article#--h1=16rem&--h2=18rem</a>
+        <a href="http://localhost:8080/?template=article#--h1=1rem&--h2=2rem">http://localhost:8080/?template=article#--h1=1rem&--h2=2rem</a>
+        <a href="http://localhost:8080/?template=article#--h1=4rem&--h2=9rem">http://localhost:8080/?template=article#--h1=4rem&--h2=9rem</a>
+      </pre>
       <form>
       </form>
 
