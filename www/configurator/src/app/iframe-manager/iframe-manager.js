@@ -24,6 +24,9 @@
 // https://stackoverflow.com/questions/6494721/css-override-body-style-for-content-in-iframe
 
 class IframeManager {
+  /**
+   * @param {string} templateSrc - the url of the template to be loaded
+   */
   constructor(templateSrc) {
     // Create our iframe
     this.iframe = document.createElement('iframe');
@@ -35,6 +38,10 @@ class IframeManager {
     this.templateSrc = templateSrc;
   }
 
+  /**
+   * Funciton to apply the templateSrc to the [src] attribute, and obtain the amp-custom style element for use
+   * @returns {Promise}
+   */
   initialize() {
     return new Promise(resolve => {
       // Set the iframe src
@@ -47,6 +54,10 @@ class IframeManager {
     });
   }
 
+  /**
+   * Funciton to apply the styles to the iframe amp-custom style element.
+   * @param {string} style - a string of the css to be placed within the style element
+   */
   setStyle(style) {
     if (!style) {
       return;

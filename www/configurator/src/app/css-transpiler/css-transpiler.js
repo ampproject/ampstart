@@ -23,11 +23,21 @@ const postcss = require('postcss');
 const customProperties = require('postcss-custom-properties');
 
 class CssTranspiler {
+  /**
+   * @param {string} css - String of the templates page.css file
+   * @param {Object} cssVars - Json object of the templates page.json file, containing the css variables as json
+   */
   constructor(css, cssVars) {
     this.templateCss = css;
     this.templateCssVars = cssVars;
   }
 
+  /**
+   * Function to retranspile page css with new css vars, using postcss
+   * @param {Object} passedCssVars - Json object, where the key represents the css variable to be modified,
+   *    and the value represents the variables new value
+   * @returns {string} - the newly transpiled page css with varibale values
+   */
   getCssWithVars(passedCssVars) {
     // Only assign variables that exist in both, and set to the current value
     const cssVars = Object.assign({}, this.templateCssVars);

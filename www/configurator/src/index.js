@@ -23,6 +23,7 @@ import CssTranspiler from './app/css-transpiler/css-transpiler';
 import queryString from 'query-string';
 import './index.css';
 
+// Define our templates and css URL path depending on the current build environment
 let templatesPath = '';
 let cssPath = '';
 if (process.env.NODE_ENV === 'production') {
@@ -33,19 +34,23 @@ if (process.env.NODE_ENV === 'production') {
   cssPath = 'test-dist/uncompiled-css/templates/';
 }
 
+/**
+ * Function to parse the search params of the url, and return the template
+ * @returns {string} - the name of the template
+ */
 function getUrlTemplate() {
   return queryString.parse(location.search.substring(1)).template;
 }
 
+/**
+ * Function to parse the hash params of the url
+ * @returns {string} - the has params of the url
+ */
 function getUrlCssVars() {
   return queryString.parse(location.hash.substring(1));
 }
 
-// Define our iframe manager, an our css transplier
-let iframeManager = false;
-let cssTranspiler = false;
-
-// Grab our CSS and CSS Json
+// Create requests for our CSS vars JSON file, and the template page css file
 const configuratorInit = [];
 const templateCssPath = `${cssPath}${getUrlTemplate()}/page`;
 configuratorInit.push(
@@ -59,10 +64,13 @@ configuratorInit.push(
   })
 );
 
-// Create the configurator
+// Instantiate our iframe manager
 const templateSrc = `${templatesPath}${getUrlTemplate()}/${getUrlTemplate()}.amp.html#amp=1`;
-iframeManager = new IframeManager(templateSrc);
+const iframeManager = new IframeManager(templateSrc);
 configuratorInit.push(iframeManager.initialize());
+
+// Declare our cssTranspiler. Need the promises to resolve before instantiation.
+let cssTranspiler = false;
 
 Promise.all(configuratorInit).then(responses => {
   // First response will be json, and second shall be css
@@ -76,7 +84,10 @@ Promise.all(configuratorInit).then(responses => {
   window.addEventListener('hashchange', handleHashChange_);
 });
 
-// Define our hash change handler
+/**
+ * Function to handle URL hash changes. This is not used until the initialization of the configurator is completed.
+ *    Also, this will simply get the latest URL params, pass them to the transpiler, and set the styles in the iframe manager.
+ */
 function handleHashChange_() {
   const updatedStyles = cssTranspiler.getCssWithVars(getUrlCssVars());
   iframeManager.setStyle(updatedStyles);
