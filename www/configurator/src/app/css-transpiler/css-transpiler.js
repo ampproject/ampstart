@@ -32,12 +32,10 @@ class CssTranspiler {
   constructor(css, cssVars) {
     this.templateCss = css;
     this.templateCssVars = cssVars;
-    /* eslint-disable */
     this.asyncPostcssWorker = {
-      worker: new Worker,
-      resolved: true
-    }
-    /* eslint-enable */
+      worker: new Worker(),
+      didRespond: true
+    };
   }
 
   /**
@@ -47,18 +45,16 @@ class CssTranspiler {
    * @returns {Promise} - Will resolve with the response from a webworker, containing the newly transpiled css
    */
   getCssWithVars(passedCssVars) {
-    // First check if we have a worker, and if it resolved
-    if (this.asyncPostcssWorker.worker && !this.asyncPostcssWorker.resolved) {
+    // First check if we have a worker, and if it didRespond
+    if (this.asyncPostcssWorker.worker && !this.asyncPostcssWorker.didRespond) {
       // Terminate the worker, and recreate it
       this.asyncPostcssWorker.worker.terminate();
-      /* eslint-disable */
       this.asyncPostcssWorker = {
-        worker: new Worker,
-        resolved: false
-      }
-      /* eslint-enable */
+        worker: new Worker(),
+        didRespond: false
+      };
     } else {
-      this.asyncPostcssWorker.resolved = false;
+      this.asyncPostcssWorker.didRespond = false;
     }
     // Only assign variables that exist in both, and set to the current value
     const cssVars = Object.assign({}, this.templateCssVars);
@@ -70,14 +66,18 @@ class CssTranspiler {
 
     // Add the onmessage here
     this.asyncPostcssWorker.worker.postMessage({
-      templateCss: this.templateCss.slice(0),
+      templateCss: this.templateCss,
       cssVars
     });
 
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
       this.asyncPostcssWorker.worker.onmessage = event => {
-        this.asyncPostcssWorker.resolved = true;
-        resolve(event.data);
+        this.asyncPostcssWorker.didRespond = true;
+        if (event) {
+          resolve(event.data);
+        } else {
+          reject();
+        }
       };
     });
   }

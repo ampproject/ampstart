@@ -92,5 +92,9 @@ Promise.all(configuratorInit).then(responses => {
 function handleHashChange_() {
   cssTranspiler.getCssWithVars(getUrlCssVars()).then(updatedStyles => {
     iframeManager.setStyle(updatedStyles);
+  }).catch(() => {
+    // Set styles back to the initial styles
+    // TODO (torch2424 && camelburrito) - Talk offline to decide how to display transpilation error to user
+    iframeManager.setStyle(cssTranspiler.templateCss);
   });
 }
