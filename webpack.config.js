@@ -4,10 +4,9 @@ const pkg = require('./package.json');
 const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// Doing a webpack hack for es6: https://github.com/webpack-contrib/uglifyjs-webpack-plugin/issues/33
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ClosureCompilerPlugin = require('webpack-closure-compiler');
 const autoprefixer = require('autoprefixer');
 
 // Our current environment
@@ -135,6 +134,7 @@ module.exports = function (webpackEnv) {
     });
 
     // Plugins
+    /* eslint-disable */
     webpackConf.plugins =
       webpackConf.plugins.concat([
         new webpack.optimize.OccurrenceOrderPlugin(),
@@ -145,9 +145,14 @@ module.exports = function (webpackEnv) {
         new webpack.DefinePlugin({
           'process.env.NODE_ENV': '"production"'
         }),
-        new UglifyJsPlugin({
-          output: {comments: false},
-          compress: {unused: true, dead_code: true, warnings: false} // eslint-disable-line camelcase
+        new ClosureCompilerPlugin({
+          compiler: {
+            language_in: 'ECMASCRIPT6',
+            language_out: 'ECMASCRIPT5',
+            compilation_level: 'SIMPLE_OPTIMIZATIONS',
+            rewrite_polyfills: false,
+          },
+          concurrency: 3,
         }),
         new ExtractTextPlugin('index-[contenthash].css'),
         new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
@@ -157,6 +162,7 @@ module.exports = function (webpackEnv) {
           }
         })
       ]);
+    /* eslint-enable */
 
     // Output
     webpackConf.output = {
