@@ -44,7 +44,7 @@ class CssTranspiler {
    * Function to retranspile page css with new css vars, using postcss
    * @param {Object} passedCssVars - Json object, where the key represents the css variable to be modified,
    *    and the value represents the variables new value
-   * @returns {string} - the newly transpiled page css with varibale values
+   * @returns {Promise} - Will resolve with the response from a webworker, containing the newly transpiled css
    */
   getCssWithVars(passedCssVars) {
     // First check if we have a worker, and if it resolved

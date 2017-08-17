@@ -1,4 +1,10 @@
 /* eslint-disable */
+
+/**
+  * @fileoverview Web worker for the CssTranspiler Class, to handle css transpilation.
+	* 		Simply responds to messages containing the template CSS, and css vars, and responds with the newly transpiled css.
+  */
+
 const postcss = require('postcss');
 const customProperties = require('postcss-custom-properties');
 
