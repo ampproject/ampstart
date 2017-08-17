@@ -73,10 +73,10 @@ class CssTranspiler {
     return new Promise((resolve, reject) => {
       this.asyncPostcssWorker.worker.onmessage = event => {
         this.asyncPostcssWorker.didRespond = true;
-        if (event) {
+        if (event && !(event.data instanceof Error)) {
           resolve(event.data);
         } else {
-          reject();
+          reject(event.data);
         }
       };
     });

@@ -39,7 +39,6 @@ onmessage = function (event) {
   postcss().use(customProperties()).process(cssWithAppendedVars).then(result => {
     postMessage(result.css);
   }).catch(error => {
-    console.error(error);
-    postMessage(false);
+    postMessage(error);
   });
 };
