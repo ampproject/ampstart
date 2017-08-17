@@ -58,12 +58,9 @@ describe('Iframe Manager', () => {
     const iframeManager = new IframeManager(iframeSrc);
     iframeManager.initialize().then(() => {
       iframeManager.styleElement = ampCustomStyle;
-      console.log('hello', iframeManager.styleElement);
-
       const css = 'body { background-color: red; }';
       iframeManager.setStyle(css);
 
-      console.log(iframeManager.styleElement);
       assert(iframeManager.styleElement.textContent === css);
       done();
     });
