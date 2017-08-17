@@ -22,7 +22,7 @@
 // Grab the Worker Using Webpack
 // https://github.com/webpack/webpack/tree/master/examples/web-worker
 // https://github.com/webpack-contrib/worker-loader
-const Worker = require('worker-loader!./css-transpiler.worker');
+const CssTranspilerWorker = require('worker-loader!./css-transpiler.worker');
 
 class CssTranspiler {
   /**
@@ -33,7 +33,7 @@ class CssTranspiler {
     this.templateCss = css;
     this.templateCssVars = cssVars;
     this.asyncPostcssWorker = {
-      worker: new Worker(),
+      worker: new CssTranspilerWorker(),
       didRespond: true
     };
   }
@@ -50,7 +50,7 @@ class CssTranspiler {
       // Terminate the worker, and recreate it
       this.asyncPostcssWorker.worker.terminate();
       this.asyncPostcssWorker = {
-        worker: new Worker(),
+        worker: new CssTranspilerWorker(),
         didRespond: false
       };
     } else {
