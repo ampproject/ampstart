@@ -32,8 +32,12 @@ class CssTranspiler {
   constructor(css, cssVars) {
     this.templateCss = css;
     this.templateCssVars = cssVars;
-    // eslint-disable-next-line
-    this.worker = new Worker;
+    /* eslint-disable */
+    this.asyncPostcssWorker = {
+      worker: new Worker,
+      resolved: true
+    }
+    /* eslint-enable */
   }
 
   /**
@@ -43,6 +47,19 @@ class CssTranspiler {
    * @returns {string} - the newly transpiled page css with varibale values
    */
   getCssWithVars(passedCssVars) {
+    // First check if we have a worker, and if it resolved
+    if (this.asyncPostcssWorker.worker && !this.asyncPostcssWorker.resolved) {
+      // Terminate the worker, and recreate it
+      this.asyncPostcssWorker.worker.terminate();
+      /* eslint-disable */
+      this.asyncPostcssWorker = {
+        worker: new Worker,
+        resolved: false
+      }
+      /* eslint-enable */
+    } else {
+      this.asyncPostcssWorker.resolved = false;
+    }
     // Only assign variables that exist in both, and set to the current value
     const cssVars = Object.assign({}, this.templateCssVars);
     Object.keys(passedCssVars).forEach(cssVarKey => {
@@ -52,15 +69,15 @@ class CssTranspiler {
     });
 
     // Add the onmessage here
-    this.worker.postMessage({
+    this.asyncPostcssWorker.worker.postMessage({
       templateCss: this.templateCss.slice(0),
       cssVars
     });
 
     return new Promise(resolve => {
-      this.worker.onmessage = event => {
-        console.log(event);
-        resolve(event);
+      this.asyncPostcssWorker.worker.onmessage = event => {
+        this.asyncPostcssWorker.resolved = true;
+        resolve(event.data);
       };
     });
   }
