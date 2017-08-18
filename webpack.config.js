@@ -94,7 +94,13 @@ module.exports = function (webpackEnv) {
         new webpack.HotModuleReplacementPlugin(),
         new webpack.LoaderOptionsPlugin({
           options: {
-            postcss: () => [autoprefixer]
+            postcss: () => [autoprefixer],
+            worker: {
+              output: {
+                filename: 'hash.worker.js',
+                chunkFilename: '[id].hash.worker.js'
+              }
+            }
           },
           debug: true
         }),
@@ -158,7 +164,13 @@ module.exports = function (webpackEnv) {
         new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
         new webpack.LoaderOptionsPlugin({
           options: {
-            postcss: () => [autoprefixer]
+            postcss: () => [autoprefixer],
+            worker: {
+              output: {
+                filename: 'hash.worker.js',
+                chunkFilename: '[id].hash.worker.js'
+              }
+            }
           }
         })
       ]);
@@ -186,7 +198,14 @@ module.exports = function (webpackEnv) {
     webpackConf.plugins =
       webpackConf.plugins.concat([
         new webpack.LoaderOptionsPlugin({
-          options: {},
+          options: {
+            worker: {
+              output: {
+                filename: 'hash.worker.js',
+                chunkFilename: '[id].hash.worker.js'
+              }
+            }
+          },
           debug: true
         })
       ]);

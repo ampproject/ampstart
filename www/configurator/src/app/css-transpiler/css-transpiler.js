@@ -19,8 +19,10 @@
   * It will then allow passing in an object with these variables, to take in the changes, and return the re-transpiled css
   */
 
-const postcss = require('postcss');
-const customProperties = require('postcss-custom-properties');
+// Grab the Worker Using Webpack
+// https://github.com/webpack/webpack/tree/master/examples/web-worker
+// https://github.com/webpack-contrib/worker-loader
+const CssTranspilerWorker = require('worker-loader!./css-transpiler.worker');
 
 class CssTranspiler {
   /**
@@ -30,15 +32,30 @@ class CssTranspiler {
   constructor(css, cssVars) {
     this.templateCss = css;
     this.templateCssVars = cssVars;
+    this.asyncPostcssWorker = {
+      worker: new CssTranspilerWorker(),
+      didRespond: true
+    };
   }
 
   /**
    * Function to retranspile page css with new css vars, using postcss
    * @param {Object} passedCssVars - Json object, where the key represents the css variable to be modified,
    *    and the value represents the variables new value
-   * @returns {string} - the newly transpiled page css with varibale values
+   * @returns {Promise} - Will resolve with the response from a webworker, containing the newly transpiled css
    */
   getCssWithVars(passedCssVars) {
+    // First check if we have a worker, and if it didRespond
+    if (this.asyncPostcssWorker.worker && !this.asyncPostcssWorker.didRespond) {
+      // Terminate the worker, and recreate it
+      this.asyncPostcssWorker.worker.terminate();
+      this.asyncPostcssWorker = {
+        worker: new CssTranspilerWorker(),
+        didRespond: false
+      };
+    } else {
+      this.asyncPostcssWorker.didRespond = false;
+    }
     // Only assign variables that exist in both, and set to the current value
     const cssVars = Object.assign({}, this.templateCssVars);
     Object.keys(passedCssVars).forEach(cssVarKey => {
@@ -47,15 +64,22 @@ class CssTranspiler {
       }
     });
 
-    // Append the new vars to the end of our template css
-    let cssWithAppendedVars = `${this.templateCss.slice(0)} :root {`;
-    Object.keys(cssVars).forEach(cssVarKey => {
-      cssWithAppendedVars += `\n${cssVarKey}: ${cssVars[cssVarKey].current || cssVars[cssVarKey].value};`;
+    // Add the onmessage here
+    this.asyncPostcssWorker.worker.postMessage({
+      templateCss: this.templateCss,
+      cssVars
     });
-    cssWithAppendedVars += '}';
 
-    // Transpile the CSS with the appended variables
-    return postcss().use(customProperties()).process(cssWithAppendedVars).css;
+    return new Promise((resolve, reject) => {
+      this.asyncPostcssWorker.worker.onmessage = event => {
+        this.asyncPostcssWorker.didRespond = true;
+        if (event && !(event.data instanceof Error)) {
+          resolve(event.data);
+        } else {
+          reject(event.data);
+        }
+      };
+    });
   }
 }
 

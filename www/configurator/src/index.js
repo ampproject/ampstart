@@ -77,11 +77,12 @@ Promise.all(configuratorInit).then(responses => {
   cssTranspiler = new CssTranspiler(responses[1], responses[0]);
 
   // Apply initial styles
-  const initialStyles = cssTranspiler.getCssWithVars(getUrlCssVars());
-  iframeManager.setStyle(initialStyles);
+  cssTranspiler.getCssWithVars(getUrlCssVars()).then(initialStyles => {
+    iframeManager.setStyle(initialStyles);
 
-  // Listen to has change events on the page
-  window.addEventListener('hashchange', handleHashChange_);
+    // Listen to has change events on the page
+    window.addEventListener('hashchange', handleHashChange_);
+  });
 });
 
 /**
@@ -89,6 +90,10 @@ Promise.all(configuratorInit).then(responses => {
  *    Also, this will simply get the latest URL params, pass them to the transpiler, and set the styles in the iframe manager.
  */
 function handleHashChange_() {
-  const updatedStyles = cssTranspiler.getCssWithVars(getUrlCssVars());
-  iframeManager.setStyle(updatedStyles);
+  cssTranspiler.getCssWithVars(getUrlCssVars()).then(updatedStyles => {
+    iframeManager.setStyle(updatedStyles);
+  }).catch(error => {
+    // Don't set the styles, log the error
+    console.error(error);
+  });
 }
