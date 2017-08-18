@@ -15,12 +15,80 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import CssTranspiler from './css-transpiler';
 
 const assert = require('assert');
 
-describe('karma testing', () => {
-  it('should pass', () => {
-    console.log('Hello! this test is a test');
-    assert.equal(true, true);
+describe('css-transpiler', () => {
+  it('Should be able to be constructed with a valid string, and cssVars Object', () => {
+    const cssTranspiler = new CssTranspiler('body { color: --test }', {
+      test: {
+        value: '#000'
+      }
+    });
+    assert(cssTranspiler);
+  });
+
+  it('Should not create a new worker if the the current worker responded', done => {
+    const cssTranspiler = new CssTranspiler('body { color: --test }', {
+      test: {
+        value: '#000'
+      }
+    });
+    // Get a reference to our worker, and run our getCssWithVars() to test if the worker has the same ref
+    const currentWorker = cssTranspiler.asyncPostcssWorker.worker;
+    cssTranspiler.getCssWithVars({}).then(() => {
+      cssTranspiler.getCssWithVars({}).then(() => {
+        assert(currentWorker === cssTranspiler.asyncPostcssWorker.worker);
+        done();
+      });
+    });
+  });
+
+  it('Should create a new worker if the the current worker did NOT responded', done => {
+    const cssTranspiler = new CssTranspiler('body { color: --test }', {
+      test: {
+        value: '#000'
+      }
+    });
+    // Get a reference to our worker, and run our getCssWithVars() to test worker ref
+    const currentWorker = cssTranspiler.asyncPostcssWorker.worker;
+    cssTranspiler.asyncPostcssWorker.didRespond = false;
+    cssTranspiler.getCssWithVars({}).then(() => {
+      assert(currentWorker !== cssTranspiler.asyncPostcssWorker.worker);
+      done();
+    });
+  });
+
+  it('Should response with compiled css with the passed css vars', done => {
+    const cssTranspiler = new CssTranspiler('body { color: --test; background-color: --bgcolor; }', {
+      test: {
+        value: '#000'
+      },
+      bgColor: {
+        value: '#fff'
+      }
+    });
+    cssTranspiler.getCssWithVars({}).then(css => {
+      assert(css.includes('#fff'));
+      done();
+    });
+  });
+
+  it('Should replace css vars with the passed css vars, in resolve', done => {
+    const cssTranspiler = new CssTranspiler('body { color: --test; background-color: --bgcolor; }', {
+      test: {
+        value: '#000'
+      },
+      bgColor: {
+        value: '#fff'
+      }
+    });
+    cssTranspiler.getCssWithVars({
+      test: '#111'
+    }).then(css => {
+      assert(css.includes('#111'));
+      done();
+    });
   });
 });

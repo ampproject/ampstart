@@ -26,8 +26,8 @@ const CssTranspilerWorker = require('worker-loader!./css-transpiler.worker');
 
 class CssTranspiler {
   /**
-   * @param {string} css - String of the templates page.css file
-   * @param {Object} cssVars - Json object of the templates page.json file, containing the css variables as json
+   * @param {!string} css - String of the templates page.css file
+   * @param {!Object} cssVars - Json object of the templates page.json file, containing the css variables as json
    */
   constructor(css, cssVars) {
     this.templateCss = css;

@@ -15,12 +15,54 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import IframeManager from './iframe-manager';
 
 const assert = require('assert');
 
-describe('karma testing', () => {
-  it('should pass', () => {
-    console.log('Hello! this test is a test');
-    assert.equal(true, true);
+const iframeSrc = 'about:blank';
+
+// Create / Destroy the container for our iframe, Before and after each test
+let root;
+let ampCustomStyle;
+
+beforeEach(() => {
+  root = document.createElement('div');
+  root.id = 'root';
+  document.body.appendChild(root);
+
+  ampCustomStyle = document.createElement('style');
+  ampCustomStyle.setAttribute('amp-custom', true);
+  document.head.appendChild(ampCustomStyle);
+});
+
+afterEach(() => {
+  document.body.removeChild(root);
+  document.head.removeChild(ampCustomStyle);
+});
+
+describe('Iframe Manager', () => {
+  it('Should be able to be constructed with a valid string, and cssVars Object', () => {
+    const iframeManager = new IframeManager(iframeSrc);
+    assert(iframeManager);
+  });
+
+  it('Should be able to set and load the iframe from initialize()', done => {
+    const iframeManager = new IframeManager(iframeSrc);
+    iframeManager.initialize().then(() => {
+      assert(iframeManager.iframe.src === iframeSrc);
+      done();
+    });
+  });
+
+  it('Should set the iframe\'s style element', done => {
+    const iframeManager = new IframeManager(iframeSrc);
+    iframeManager.initialize().then(() => {
+      iframeManager.styleElement = ampCustomStyle;
+      const css = 'body { background-color: red; }';
+      iframeManager.setStyle(css);
+
+      assert(iframeManager.styleElement.textContent === css);
+      done();
+    });
   });
 });
