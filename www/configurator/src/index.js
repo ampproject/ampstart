@@ -54,12 +54,17 @@ function getUrlCssVars() {
 const configuratorInit = [];
 const templateCssPath = `${cssPath}${getUrlTemplate()}/page`;
 configuratorInit.push(
-  fetch(`${templateCssPath}.json`).then(response => {
+
+  fetch(new Request(`${templateCssPath}.json`, {
+    mode: 'no-cors'
+  })).then(response => {
     return response.json();
   })
 );
 configuratorInit.push(
-  fetch(`${templateCssPath}.css`).then(response => {
+  fetch(new Request(`${templateCssPath}.css`, {
+    mode: 'no-cors'
+  })).then(response => {
     return response.text();
   })
 );
