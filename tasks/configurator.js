@@ -166,7 +166,9 @@ function cssVarsJson() {
 
 // Define our gulp tasks
 gulp.task('configurator', 'Runs the default, configurator:build for prod deployment', ['configurator:build']);
-gulp.task('configurator:build', 'Builds the configurator for deployment, analyzes the templates css, converts to json, and then builds the configurator webapp', ['configurator:css', 'configurator:json', 'configurator:webpack']);
+gulp.task('configurator:build', 'Builds the configurator for deployment, analyzes the templates css, converts to json, and then builds the configurator webapp', function(cb) {
+  runSequence(['configurator:css', 'configurator:webpack'], 'configurator:json', cb);
+});
 gulp.task('configurator:webpack', 'Builds only the configurator webapp using webpack, and passing the prod environment', configuratorWebpackProd);
 gulp.task('configurator:serve', 'Opens a dev server at localhost:8080 for the configurator, and watches/livreloads on changes. Port can be changed with --port="PORT_NUMBER_HERE"', configuratorServe);
 gulp.task('configurator:watch', 'Watches the configurator src directory, and runs prod webpack builds on changes. Useful for eveloping both the configurator and ampstart', configuratorWatchProd);

@@ -11,7 +11,7 @@
 | templates/themes_2/page.css   | 24402                | 24.40 KB |
 | templates/thescenic/page.css  | 23921                | 23.92 KB |
 | www/components/page.css       | 22712                | 22.71 KB |
-| www/configurator/page.css     | 17913                | 17.91 KB |
+| www/configurator/page.css     | 17969                | 17.97 KB |
 | www/getstarted/page.css       | 17945                | 17.95 KB |
 | www/howitworks/page.css       | 17945                | 17.95 KB |
 | www/index/page.css            | 22125                | 22.13 KB |

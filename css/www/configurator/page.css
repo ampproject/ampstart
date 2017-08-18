@@ -15,3 +15,9 @@
  */
 
 @import '../shared';
+
+.configurator__iframe {
+  border: 2px solid black;
+  margin: 10px;
+  
+}
