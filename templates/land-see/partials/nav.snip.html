@@ -18,7 +18,7 @@ limitations under the License.
 
 {{#navbar}}
   <!-- Start Navbar -->
-  <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 {{responsive-layout-classes}}">
+  <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2">
     <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2 {{trigger-layout-classes}} {{trigger-spacing-classes}}">{{#svg-trigger}}{{{.}}}{{/svg-trigger}}{{^svg-trigger}}☰{{/svg-trigger}}
     </div>
     {{#logo}}
@@ -35,17 +35,16 @@ limitations under the License.
       </a>
       {{/href}}
     {{/logo}}
-    <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
-      <ul class="list-reset center m0 p0 flex justify-center nowrap">
+    <nav class="ampstart-headerbar-nav ampstart-nav">
+      <ul class="list-reset m0 p0 right flex justify-center nowrap">
         {{#nav}}
           {{#link}}
-          <li class="ampstart-nav-item {{classes}}"><a href="{{{url}}}" class="text-decoration-none block" {{#target}}target="{{.}}"{{/target}}>{{text}}</a></li>
-          <li class="ampstart-nav-item {{classes}}"><a href="#snow" class="text-decoration-none block">John</a></li>
+            <li class="ampstart-nav-item {{classes}} xs-hide sm-hide"><a href="{{{url}}}" class="text-decoration-none caps block" {{#target}}target="{{.}}"{{/target}}>{{text}}</a></li>
           {{/link}}
           {{#search}}
-          <li class="ampstart-nav-item ampstart-nav-search right-align">
-            <input type="text" placeholder="{{text}}"></input>
-          </li>
+            <li id="search-land-see" class="ampstart-nav-item ampstart-nav-search right-align">
+              <a href="#" target="_blank" class="inline-block p0 m0" aria-label="Search Land + See"><i class="fa fa-search"></i></a>
+            </li>
           {{/search}}
         {{/nav}}
       </ul>

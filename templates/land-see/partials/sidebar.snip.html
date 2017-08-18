@@ -22,28 +22,25 @@ limitations under the License.
     <div role="button" aria-label="close sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
   </div>
   <nav class="ampstart-sidebar-nav ampstart-nav">
-    <ul class="list-reset m0 p0 ampstart-label">
-      {{#sidebarimage}}
-        <li>
-          <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="responsive" class="ampstart-sidebar-nav-image {{classes}}" alt="{{alt}}"{{#preloader}} noloading{{/preloader}}>
-            {{#preloader}}<div placeholder class="{{classes}}"></div>{{/preloader}}
-          </amp-img>
-        </li>
-      {{/sidebarimage}}
+    <ul class="list-reset m0 p0">
       {{#nav}}
         {{#link}}
-          <li class="ampstart-nav-item {{nav-item-classes}}"><a {{#aria-label}}aria-label="{{.}}"{{/aria-label}} class="ampstart-nav-link" href="{{{url}}}">{{{text}}}</a>
-            {{#dropdown}}
-              <li class="ampstart-nav-item ampstart-nav-dropdown relative {{nav-item-classes}}">
-                {{> ../dropdown/dropdown-inline.snip.html}}
-              </li>
-            {{/dropdown}}
+          <li class="ampstart-nav-item bold {{nav-item-classes}}"><a {{#aria-label}}aria-label="{{.}}"{{/aria-label}} class="ampstart-nav-link" href="{{{url}}}">{{{text}}}</a>
+            {{#contains-sub-nav}}
+              <ul class="sidebar-subnav list-reset m0 p0 hr">
+              {{#sub-nav}}
+                {{#sub-link}}
+                  <li class="sidebar-subnav-item caps regular {{sub-classes}}"><a href="{{{sub-url}}}" class="text-decoration-none">{{sub-text}}</a></li>
+                {{/sub-link}}
+              {{/sub-nav}}
+              </ul>
+            {{/contains-sub-nav}}
           </li>
         {{/link}}
       {{/nav}}
     </ul>
   </nav>
 
-  {{> ../../components/social-follow/social-follow.snip.html}}
+  {{> ../../../components/social-follow/social-follow.snip.html}}
 </amp-sidebar>
 <!-- End Sidebar -->

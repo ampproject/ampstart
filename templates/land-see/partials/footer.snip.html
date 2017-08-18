@@ -19,19 +19,31 @@ limitations under the License.
 {{#footer}}
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center {{#spacing-classes}}{{.}}{{/spacing-classes}}{{^spacing-classes}}px3{{/spacing-classes}}">
-    {{#faq-links}}
-      <nav class="ampstart-footer-nav">
-        <ul class="list-reset flex flex-wrap mb3">
+    <div class="clearfix max-width-4">
+      <div class="flex-auto">
+        <nav class="ampstart-footer-nav">
+          {{#faq-links}}
+            <ul class="list-reset flex flex-wrap mt0 mb3 xs-hide sm-hide md-hide faq-links">
+              {{#links}}
+                <li class="pr1"><a class="text-decoration-none" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
+              {{/links}}
+            </ul>
+          {{/faq-links}}
           {{#copyright}}
-            <li class="px1">{{text}}</li>
+            <ul class="list-reset flex flex-wrap mt0 mb3 copyright caps">
+                <li>{{text}}</li>
+                <li>&bull;</li>
+                {{#terms-links}}
+                  <li class="{{classes}}"><a class="text-decoration-none" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
+                {{/terms-links}}
+            </ul>
           {{/copyright}}
-          {{#links}}
-            <li class="px1"><a class="text-decoration-none ampstart-label" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
-          {{/links}}
-        </ul>
-      </nav>
-    {{/faq-links}}
-    {{> ../social-follow/social-follow.snip.html}}
+        </nav>
+      </div>
+      <div class="lg-col lg-col-6">
+        {{> ../social-follow/social-follow.snip.html}}
+      </div>
+    </div>
   </footer>
   <!-- End Footer -->
 {{/footer}}

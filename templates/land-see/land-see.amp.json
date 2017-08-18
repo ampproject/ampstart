@@ -12,29 +12,49 @@
       ],
       "css-path": "templates/land-see/page.css",
       "font-stylesheets": [
-        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Crimson+Text"
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text",
+        "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       ]
     }
   },
   "navbar": {
-    "name": "Land+See",
     "sidebar-id": "header-sidebar",
     "logo": {
-      "name": "Land + See",
-      "classes": "h3"
+      "name": "Land + See"
     },
     "nav": [
       {
-        "link": {"url": "stories.amp.html", "text": "Stories"}
+        "link": {"url": "stories.amp.html", "nav-item-classes": "sidebar-nav-item", "text": "Stories"},
+        "contains-sub-nav": true,
+        "sub-nav": [
+          {
+            "sub-link": {"sub-url": "#", "sub-text": "All"}
+          },
+          {
+            "sub-link": {"sub-url": "#", "sub-text": "Design"}
+          },
+          {
+            "sub-link": {"sub-url": "#", "sub-text": "Fashion"}
+          },
+          {
+            "sub-link": {"sub-url": "#", "sub-text": "Interiors"}
+          },
+          {
+            "sub-link": {"sub-url": "#", "sub-text": "Arts & Culture"}
+          },
+          {
+            "sub-link": {"sub-url": "#", "sub-text": "Popular"}
+          }
+        ]
       },
       {
-        "link": {"url": "#shop", "text": "Shop"}
+        "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "Shop"}
       },
       {
-        "link": {"url": "#about", "text": "About"}
+        "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "About"}
       },
       {
-        "link": {"url": "#contact", "text": "Contact"}
+        "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "Contact"}
       },
       {
         "search": {"text": "Search"}
@@ -51,23 +71,27 @@
     }
   },
   "footer": {
+    "faq-links": {
+      "links": [
+        {"url": "#", "text": "Shop"},
+        {"url": "#", "text": "About"},
+        {"url": "#", "text": "Contact"}
+      ]
+    },
+    "copyright": {
+      "text": "© Land + See, 2017",
+      "terms-links": [
+        {"url": "#", "text": "Terms & Conditions"}
+      ]
+    },
     "social-follow": {
       "links": [
         {"twitter": "#"},
         {"facebook": "#"},
+        {"instagram": "#"},
         {"pinterest": "#"},
         {"email": "#"}
       ]
-    },
-    "faq-links": {
-      "links": [
-        {"text": "About", "url": "#"},
-        {"text": "Contact", "url": "#"},
-        {"text": "Terms", "url": "#"}
-      ]
-    },
-    "copyright": {
-      "text": "© Land + See, 2017"
     }
   }
 }

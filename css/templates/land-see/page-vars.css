@@ -38,6 +38,7 @@
   --color-font-secondary: var(--color-white);
 
   --color-sidebar-background: #fef4f2;
+  --color-footer-background: var(--color-primary);
   --color-font-footer: #3e6458;
 
   --color-border: var(--color-dark-grey);
