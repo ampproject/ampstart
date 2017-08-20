@@ -30,7 +30,7 @@ limitations under the License.
               <ul class="sidebar-subnav list-reset m0 p0 hr">
               {{#sub-nav}}
                 {{#sub-link}}
-                  <li class="sidebar-subnav-item caps regular {{sub-classes}}"><a href="{{{sub-url}}}" class="text-decoration-none">{{sub-text}}</a></li>
+                  <li class="sidebar-subnav-item regular {{sub-classes}}"><a href="{{{sub-url}}}" class="text-decoration-none">{{sub-text}}</a></li>
                 {{/sub-link}}
               {{/sub-nav}}
               </ul>
@@ -40,7 +40,8 @@ limitations under the License.
       {{/nav}}
     </ul>
   </nav>
-
-  {{> ../../../components/social-follow/social-follow.snip.html}}
+  <div class="land-see-sidebar-social">
+    {{> ../../../components/social-follow/social-follow.snip.html}}
+  </div>
 </amp-sidebar>
 <!-- End Sidebar -->

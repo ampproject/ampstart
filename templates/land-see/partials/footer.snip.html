@@ -19,28 +19,28 @@ limitations under the License.
 {{#footer}}
   <!-- Start Footer -->
   <footer class="ampstart-footer flex flex-column items-center {{#spacing-classes}}{{.}}{{/spacing-classes}}{{^spacing-classes}}px3{{/spacing-classes}}">
-    <div class="clearfix max-width-4">
-      <div class="flex-auto">
+    <div class="clearfix max-width-3 lg-col lg-col-12">
+      <div class="lg-col lg-col-6">
         <nav class="ampstart-footer-nav">
           {{#faq-links}}
-            <ul class="list-reset flex flex-wrap mt0 mb3 xs-hide sm-hide md-hide faq-links">
+            <ul class="list-reset flex flex-wrap mt0 mb0 xs-hide sm-hide md-hide faq-links">
               {{#links}}
-                <li class="pr1"><a class="text-decoration-none" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
+                <li class="pr4"><a class="text-decoration-none" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
               {{/links}}
             </ul>
           {{/faq-links}}
           {{#copyright}}
-            <ul class="list-reset flex flex-wrap mt0 mb3 copyright caps">
+            <ul class="list-reset flex flex-wrap mt0 mb2 copyright caps">
                 <li>{{text}}</li>
                 <li>&bull;</li>
                 {{#terms-links}}
-                  <li class="{{classes}}"><a class="text-decoration-none" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
+                  <li><a class="text-decoration-none" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
                 {{/terms-links}}
             </ul>
           {{/copyright}}
         </nav>
       </div>
-      <div class="lg-col lg-col-6">
+      <div class="land-see-footer-social">
         {{> ../social-follow/social-follow.snip.html}}
       </div>
     </div>
