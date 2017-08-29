@@ -1,0 +1,36 @@
+{
+  "name": "replace-important",
+  "version": "1.0.1-alpha",
+  "description": "Package for removing !important from css rules from selectors and replacing them inside similar selectors - the new selectors will have the highest specificity in the CSS file.",
+  "main": "lib/index.js",
+  "bin": {
+    "replace-important": "bin/replace-important"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ampproject/ampstart/tree/master/tools/replace-important"
+  },
+  "keywords": [
+    "replace",
+    "!important",
+    "CSS",
+    "AMP"
+  ],
+  "author": "The AMP HTML Authors",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ampproject/ampstart/issues"
+  },
+  "homepage": "https://github.com/ampproject/ampstart/tree/master/tools/replace-important#readme",
+  "dependencies": {
+    "css-tree": "1.0.0-alpha19",
+    "minimist": "^1.2.0",
+    "specificity": "^0.3.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0"
+  }
+}

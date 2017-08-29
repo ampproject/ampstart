@@ -125,6 +125,62 @@ dd:after {
   display: block;
 }
 
+
+/* CUSTOM LOADER */
+.commerce-loader,
+.commerce-loader::before,
+.commerce-loader::after {
+  border-radius: 50%;
+  width: var(--space-1);
+  height: var(--space-1);
+  animation-fill-mode: both;
+  animation: commerce-loader 1.44s infinite ease-in-out;
+  will-change: contents;
+}
+
+.commerce-loader {
+  color: var(--color-secondary);
+  margin: 24% auto;
+  animation-delay: .16s;
+}
+
+.commerce-loader::before,
+.commerce-loader::after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.commerce-loader::before {
+  left: -1rem;
+  animation-delay: 0s;
+}
+
+.commerce-loader::after {
+  left: var(--space-2);
+  animation-delay: .32s;
+}
+
+.commerce-hero-image .commerce-loader {
+  margin-top: 200px;
+}
+
+.commerce-listing-banner .commerce-loader {
+  margin-top: 100px;
+}
+
+@keyframes commerce-loader {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 var(--space-2) 0 -1rem;
+  }
+  40% {
+    box-shadow: 0 var(--space-2) 0 0;
+  }
+}
+
+
 /* TODO: Merge with existing amp-start select component */
 .commerce-select-wrapper {
   position: relative;
@@ -137,6 +193,13 @@ dd:after {
   border-radius: 0;
   background: none;
   color: var(--color-secondary);
+}
+
+/* Applies hover state only to mouse-enabled environments
+ * to prevent inconsistent behavior on mobile devices */
+.amp-mode-mouse .commerce-select:hover {
+  color: var(--color-primary);
+  cursor: pointer;
 }
 
 .ampstart-input {
@@ -168,6 +231,7 @@ textarea {
 .ampstart-input > input,
 .ampstart-input > textarea {
   border-bottom: 1px dashed var(--color-separator);
+  color: var(--color-primary);
 }
 
 .ampstart-input-radio {
@@ -183,6 +247,10 @@ textarea {
   font-size: var(--h7);
 }
 
+.amp-mode-mouse .ampstart-input-radio label:hover {
+  text-decoration: underline;
+}
+
 .ampstart-btn {
   border-color: var(--color-primary);
   display: inline-block;
@@ -190,11 +258,22 @@ textarea {
   font-family: var(--title-font);
   font-weight: var(--bold-font-weight);
   padding: var(--space-1) var(--space-4);
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
 }
 
 .ampstart-btn-secondary {
   background-color: var(--color-white);
   color: var(--color-primary);
+}
+
+.amp-mode-mouse .ampstart-btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+.amp-mode-mouse .ampstart-btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .ampstart-btn-secondary:visited {
@@ -203,6 +282,10 @@ textarea {
 
 amp-selector [option] {
   outline: 1px solid var(--color-separator);
+}
+
+amp-selector [option]:hover {
+  outline: 1px solid var(--color-primary);
 }
 
 amp-selector [option][selected] {
@@ -218,8 +301,6 @@ amp-selector [option][selected] {
   .commerce-side-panel {
     position: sticky;
     top: var(--wide-navbar-height);
-    /* Prevents added top: miscalculation https://github.com/ampproject/amphtml/issues/10664 */
-    margin-top: -1px;
   }
 
   .md-commerce-header {
@@ -306,12 +387,15 @@ amp-selector [option][selected] {
   border-bottom: 1px solid var(--color-separator);
 }
 
-.ampstart-navbar-trigger {
-  position: absolute;
-  top: 0;
-  padding-top: var(--space-2);
+.ampstart-headerbar .ampstart-navbar-trigger {
   color: var(--color-primary);
   font-size: var(--h4);
+  /* Overrides pr2 default in navbar */
+  padding-right: 0;
+}
+
+.ampstart-navbar-trigger:focus {
+  outline: auto 5px -webkit-focus-ring-color;
 }
 
 @media (--breakpoint-md) {
@@ -415,10 +499,6 @@ amp-selector [option][selected] {
   margin-bottom: var(--space-4);
 }
 
-.ampstart-nav a {
-  text-decoration: underline;
-}
-
 .ampstart-nav-item {
   color: var(--color-primary);
 }
@@ -432,8 +512,27 @@ amp-selector [option][selected] {
   font-size: var(--h3);
   font-weight: var(--bold-font-weight);
   line-height: normal;
-  display: block;
+  display: inline-block;
   margin-bottom: var(--space-2);
+  position:relative;
+}
+
+.amp-mode-mouse .ampstart-nav-link::after {
+  background-color: var(--color-primary);
+  left: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform .3s cubic-bezier(.19, 1, .22, 1);
+  width: 100%;
+  bottom: 0;
+  height: 2px;
+  content: '';
+  display: block;
+}
+
+.amp-mode-mouse .ampstart-nav-link:hover::after {
+  transform: scaleX(1);
 }
 
 .ampstart-sidebar .ampstart-faq-item {
@@ -450,6 +549,10 @@ amp-selector [option][selected] {
 .ampstart-faq-item {
   line-height: normal;
   padding: 0 0 var(--space-1) 0;
+}
+
+.amp-mode-mouse .ampstart-faq-item:hover {
+  text-decoration: underline;
 }
 
 .ampstart-sidebar .ampstart-social-follow {
@@ -549,6 +652,11 @@ amp-selector [option][selected] {
   .commerce-hero-content-theme-secondary .ampstart-btn {
     color: var(--color-white);
     background-color: var(--color-primary);
+  }
+
+  .amp-mode-mouse .commerce-hero-content-theme-secondary .ampstart-btn:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
   }
 }
 
@@ -701,6 +809,9 @@ amp-selector [option][selected] {
   border-bottom: 1px dashed #dadada;
 }
 
+.amp-mode-mouse .commerce-listing-product:hover > .commerce-listing-product-name {
+  text-decoration: underline;
+}
 
 /* FOOTER */
 .commerce-footer {
@@ -860,4 +971,8 @@ amp-selector [option][selected] {
 
 .commerce-related-product {
   width: 105px;
+}
+
+.amp-mode-mouse .commerce-related-product:hover .commerce-related-product-name {
+  text-decoration: underline;
 }

@@ -15,7 +15,8 @@
   },
   "main": {
     "product-details": {
-      "name": "Bike 1",
+      "name": "Highland",
+      "description": "With a frame forged from iconic Reynolds 531 tubing, Highland is as comfortable as it is quick.",
       "price": "£470",
       "colourFilterName": "colours",
       "colours": [

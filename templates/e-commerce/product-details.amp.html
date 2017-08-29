@@ -66,12 +66,16 @@ limitations under the License.
     <section class="flex flex-wrap pb4 md-pb7">
       <div class="col-12 md-col-6 px2 pt2 md-pl7 md-pt4">
         <amp-carousel width="1280" height="720" layout="responsive" type="slides" [slide]="product.selectedSlide" on="slideChange: AMP.setState({product: {selectedSlide: event.index}})">
-          <amp-img [src]="product[product.selectedColor].large.image1" src="{{colours.0.large.image1}}" width="1280" height="720" layout="responsive"
-            role="button" tabindex="0" alt="product image"></amp-img>
-          <amp-img [src]="product[product.selectedColor].large.image2" src="{{colours.0.large.image2}}" width="1280" height="720" layout="responsive"
-            role="button" tabindex="0" alt="product image"></amp-img>
+          <amp-img [src]="product[product.selectedColor].large.image1" src="{{colours.0.large.image1}}" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading>
+            {{> partials/preloader.snip.html}}
+          </amp-img>
+          <amp-img [src]="product[product.selectedColor].large.image2" src="{{colours.0.large.image2}}" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading>
+            {{> partials/preloader.snip.html}}
+          </amp-img>
           <amp-img [src]="product[product.selectedColor].large.image3" src="{{colours.0.large.image3}}" width="1280" height="720" layout="responsive"
-            role="button" tabindex="0" alt="product image"></amp-img>
+            role="button" tabindex="0" alt="product image" noloading>
+            {{> partials/preloader.snip.html}}
+          </amp-img>
         </amp-carousel>
 
         <amp-selector class="center" [selected]="product.selectedSlide" on="select:AMP.setState({product: {selectedSlide: event.targetOption}})">
@@ -100,9 +104,7 @@ limitations under the License.
           <h2 class="h7 block pb1">Reviews</h2>
           {{> partials/rating.snip.html}}
         </div>
-        <div class="col-12 self-start pb4">
-          Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla.
-        </div>
+        <div class="col-12 self-start pb4">{{description}}</div>
         <hr class="mb4" />
         <div class="col-6 self-start pb4">
           <span class="h6 md-h7 align-top pr2">colour:</span>

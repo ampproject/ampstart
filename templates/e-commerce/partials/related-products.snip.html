@@ -7,8 +7,10 @@
         {{#items}}
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="{{image}}" width="1" height="1" layout="responsive" alt="{{name}}"></amp-img>
-              <h2 class="h6">{{name}}</h2>
+              <amp-img class="mb2" src="{{image}}" width="1" height="1" layout="responsive" alt="{{name}}" noloading>
+                {{> partials/preloader.snip.html}}
+              </amp-img>
+              <h2 class="commerce-related-product-name h6">{{name}}</h2>
             </a>
           </li>
         {{/items}}

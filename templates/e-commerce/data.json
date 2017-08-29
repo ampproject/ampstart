@@ -12,6 +12,8 @@
       "css-path": "templates/e-commerce/page.css"
     },
     "navbar": {
+      "trigger-layout-classes": "absolute top-0",
+      "trigger-spacing-classes": "pr0 mr2 mt2",
       "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' class='block'><path fill='none' d='M0 0h24v24H0z'/><path fill='currentColor' d='M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z'/></svg>",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
@@ -23,6 +25,9 @@
         "width": 96,
         "height": 27,
         "spacing-classes": "mb1 md-mb0"
+      },
+      "preloader": {
+        "classes": "commerce-loader"
       },
       "fixeditems-layout-classes": "absolute top-0 right-0 pt2 pr3",
       "fixeditems": [
@@ -38,7 +43,10 @@
         "width": 279,
         "height": 175,
         "alt": "Company logo",
-        "classes": "inline-block mb4"
+        "classes": "inline-block mb4",
+        "placeholder": {
+          "classes": "commerce-loader"
+        }
       },
       "nav": [
         {
@@ -146,15 +154,15 @@
   "cart": {
     "items": [
       {
-        "name": "Product 1",
-        "description": "Mauris tincidunt justo convallis.",
+        "name": "Farringdon cap",
+        "description": "Water resistant and breathable",
         "price": "349",
         "quantity": 1,
         "thumbnail": "../../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Bike 1",
-        "description": "Donec id elit non mi porta gravida at eget metus.",
+        "name": "Highland",
+        "description": "Timeless style in Reynolds 531 tubing",
         "price": "470",
         "quantity": 1,
         "thumbnail": "../../../img/e-commerce/product/product-1.jpg"
@@ -164,7 +172,7 @@
   "blog": {
     "articles": [
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "No sleep 'til Brooklyn",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -196,7 +204,7 @@
         }
       },
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "Chasing Cumbrian nirvana",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -210,7 +218,7 @@
         ]
       },
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "At home with Paul Smith",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -224,7 +232,7 @@
         ]
       },
       {
-        "title": "no sleep 'til brooklyn",
+        "title": "Choosing your vintage",
         "date": "31st March 2017",
         "datetime": "2017-03-31T00:00",
         "preview": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
@@ -242,51 +250,51 @@
   "related-products": {
     "items": [
       {
-        "name": "Product Name",
+        "name": "Highland",
         "image": "../../img/e-commerce/product/product-1.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Estuary",
         "image": "../../img/e-commerce/product/product-2.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Beacon",
         "image": "../../img/e-commerce/product/product-3.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-4.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-5.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-6.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-7.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Poitner gloves",
         "image": "../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-9.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Pointer gloves",
         "image": "../../img/e-commerce/product/product-10.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Farringdon cap",
         "image": "../../img/e-commerce/product/product-11.jpg"
       },
       {
-        "name": "Product Name",
+        "name": "Herne Hill",
         "image": "../../img/e-commerce/product/product-12.jpg"
       }
     ]
