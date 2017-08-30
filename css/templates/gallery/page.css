@@ -15,14 +15,16 @@
  */
 
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
-@import 'normalize.css';
-
 /* Basscss Modules */
 @import '../../core.css';
 
 @import './page-vars';
+
 @import './components/_header';
+@import './components/_button';
+@import './components/_hero';
 @import './components/_landing-images';
+@import './components/_map';
 
 body {
   color: var(--font-color-primary);
