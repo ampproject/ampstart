@@ -57,7 +57,13 @@
         "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "Contact"}
       },
       {
-        "search": {"text": "Search"}
+        "icon": {
+          "id": "search-land-see",
+          "url": "#",
+          "target": "_parent",
+          "aria-label": "Search Land + See!",
+          "font-awesome-face": "fa-search"
+        }
       }
     ],
     "social-follow": {

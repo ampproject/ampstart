@@ -41,11 +41,11 @@ limitations under the License.
           {{#link}}
             <li class="ampstart-nav-item {{classes}} xs-hide sm-hide"><a href="{{{url}}}" class="text-decoration-none caps block" {{#target}}target="{{.}}"{{/target}}>{{text}}</a></li>
           {{/link}}
-          {{#search}}
-            <li id="search-land-see" class="ampstart-nav-item ampstart-nav-search right-align">
-              <a href="#" target="_blank" class="inline-block p0 m0" aria-label="Search Land + See"><i class="fa fa-search"></i></a>
+          {{#icon}}
+            <li id="{{id}}" class="ampstart-nav-item ampstart-nav-search right-align">
+              <a href="{{url}}" {{#target}}target="{{.}}"{{/target}} class="inline-block p0 m0" aria-label="{{aria-label}}"><i class="fa {{font-awesome-face}}"></i></a>
             </li>
-          {{/search}}
+          {{/icon}}
         {{/nav}}
       </ul>
     </nav>
