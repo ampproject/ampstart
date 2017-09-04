@@ -60,7 +60,7 @@
         "icon": {
           "id": "search-land-see",
           "url": "#",
-          "target": "_parent",
+          "target": "_blank",
           "aria-label": "Search Land + See!",
           "font-awesome-face": "fa-search"
         }
