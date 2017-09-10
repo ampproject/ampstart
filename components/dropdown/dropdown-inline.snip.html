@@ -18,7 +18,7 @@ limitations under the License.
 
 <!-- Start Dropdown-inline -->
 <amp-accordion layout="container" disable-session-states class="ampstart-dropdown">
-  <section>
+  <section {{#initial-state}}{{.}}{{/initial-state}}>
     <header>{{heading}}</header>
     <ul class="ampstart-dropdown-items list-reset m0 p0">
       {{#options}}
