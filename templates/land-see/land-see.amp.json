@@ -12,8 +12,7 @@
       ],
       "css-path": "templates/land-see/page.css",
       "font-stylesheets": [
-        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text",
-        "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text"
       ]
     }
   },
@@ -25,27 +24,30 @@
     "nav": [
       {
         "link": {"url": "stories.amp.html", "nav-item-classes": "sidebar-nav-item", "text": "Stories"},
-        "contains-sub-nav": true,
-        "sub-nav": [
-          {
-            "sub-link": {"sub-url": "#", "sub-text": "All"}
-          },
-          {
-            "sub-link": {"sub-url": "#", "sub-text": "Design"}
-          },
-          {
-            "sub-link": {"sub-url": "#", "sub-text": "Fashion"}
-          },
-          {
-            "sub-link": {"sub-url": "#", "sub-text": "Interiors"}
-          },
-          {
-            "sub-link": {"sub-url": "#", "sub-text": "Arts & Culture"}
-          },
-          {
-            "sub-link": {"sub-url": "#", "sub-text": "Popular"}
-          }
-        ]
+        "dropdown": {
+          "initial-state": "expanded",
+          "heading": "Stories",
+          "options": [
+            {
+              "link": {"url": "#", "text": "All"}
+            },
+            {
+              "link": {"url": "#", "text": "Design"}
+            },
+            {
+              "link": {"url": "#", "text": "Fashion"}
+            },
+            {
+              "link": {"url": "#", "text": "Interiors"}
+            },
+            {
+              "link": {"url": "#", "text": "Arts & Culture"}
+            },
+            {
+              "link": {"url": "#", "text": "Popular"}
+            }
+          ]
+        }
       },
       {
         "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "Shop"}
@@ -55,15 +57,6 @@
       },
       {
         "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "Contact"}
-      },
-      {
-        "icon": {
-          "id": "search-land-see",
-          "url": "#",
-          "target": "_blank",
-          "aria-label": "Search Land + See!",
-          "font-awesome-face": "fa-search"
-        }
       }
     ],
     "social-follow": {
@@ -74,9 +67,16 @@
         {"pinterest": "#"},
         {"email": "#"}
       ]
+    },
+    "fixeditems": {
+      "link": {
+        "url": "#",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' width='11' height='11' viewBox='0 0 11 11' overflow='visible'><circle fill='none' stroke='#000' stroke-width='1.68' stroke-miterlimit='10' cx='4.67' cy='4.67' r='3.83'/><path fill='none' stroke='#000' stroke-width='1.78' stroke-linecap='round' stroke-miterlimit='10' d='M7.258 7.77l2.485 2.485'/></svg>"
+      }
     }
   },
   "footer": {
+    "spacing-classes": "mx-auto max-width-3",
     "faq-links": {
       "links": [
         {"url": "#", "text": "Shop"},
@@ -85,10 +85,11 @@
       ]
     },
     "copyright": {
-      "text": "© Land + See, 2017",
-      "terms-links": [
-        {"url": "#", "text": "Terms & Conditions"}
-      ]
+      "text": "© Land + See, 2017 • ",
+      "terms":
+        {
+          "classes": "text-decoration-none", "url": "#", "text": "Terms & Conditions"
+        }
     },
     "social-follow": {
       "links": [

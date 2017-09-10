@@ -30,7 +30,12 @@ limitations under the License.
       </nav>
     {{/faq-links}}
     {{#copyright}}
-      <small>{{text}}</small>
+      <small>
+        {{text}}
+        {{#terms}}
+          <a class="{{classes}}" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a>
+        {{/terms}}
+      </small>
     {{/copyright}}
   </footer>
   <!-- End Footer -->
