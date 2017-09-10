@@ -101,7 +101,7 @@ h4,
   letter-spacing: .1rem;
 }
 
-.sidebar-nav-item {
+.land-see-sidebar-nav-item {
   font-family: var(--font-secondary);
   font-size: var(--h4);
   font-weight: bold;
@@ -151,7 +151,7 @@ h4,
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   height: 1px;
   background: #efe5e3;
 }

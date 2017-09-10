@@ -32,9 +32,9 @@ limitations under the License.
     {{#copyright}}
       <small>
         {{text}}
-        {{#terms}}
-          <a class="{{classes}}" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a>
-        {{/terms}}
+        {{#tos}}
+          <a class="{{classes}}" {{#link.target}}target="{{.}}"{{/link.target}} href="{{{link.url}}}">{{link.text}}</a>
+        {{/tos}}
       </small>
     {{/copyright}}
   </footer>

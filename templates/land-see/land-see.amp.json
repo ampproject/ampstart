@@ -23,7 +23,7 @@
     },
     "nav": [
       {
-        "link": {"url": "stories.amp.html", "nav-item-classes": "sidebar-nav-item", "text": "Stories"},
+        "link": {"url": "stories.amp.html", "nav-item-classes": "land-see-sidebar-nav-item", "text": "Stories"},
         "dropdown": {
           "initial-state": "expanded",
           "heading": "Stories",
@@ -50,13 +50,13 @@
         }
       },
       {
-        "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "Shop"}
+        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item", "text": "Shop"}
       },
       {
-        "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "About"}
+        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item", "text": "About"}
       },
       {
-        "link": {"url": "#", "nav-item-classes": "sidebar-nav-item", "text": "Contact"}
+        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item", "text": "Contact"}
       }
     ],
     "social-follow": {
@@ -86,10 +86,12 @@
     },
     "copyright": {
       "text": "© Land + See, 2017 • ",
-      "terms":
-        {
-          "classes": "text-decoration-none", "url": "#", "text": "Terms & Conditions"
+      "tos": {
+        "classes": "text-decoration-none",
+        "link": {
+          "url": "#", "text": "Terms & Conditions"
         }
+      }
     },
     "social-follow": {
       "links": [
