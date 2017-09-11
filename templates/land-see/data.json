@@ -78,6 +78,45 @@
       }
     }
   },
+  "subscription": {
+    "image": [
+      {
+        "classes": "land-see-subscribe-bg cover",
+        "alt-text": "A view of the sea, see?",
+        "height": 679, "layout": "fixed-height",
+        "src": "../../img/land-see/content/khatam-tadayon-107740.jpg"
+      }
+    ],
+    "form": {
+      "title": "Subscribe to Land + See",
+      "method": "GET",
+      "action": "/",
+      "heading": {
+        "level": 2,
+        "classes": "land-see-subs-heading-text",
+        "text": "Weekly inspiration from "
+      },
+      "inputs": [
+        {
+          "input": {
+            "type": "email",
+            "value": "",
+            "placeholder": "SUBSCRIBE",
+            "id": "email",
+            "name": "email"
+          }
+        },
+        {
+          "input": {
+            "type": "submit",
+            "value": "",
+            "id": "submit",
+            "name": "submit"
+          }
+        }
+      ]
+    }
+  },
   "footer": {
     "spacing-classes": "mx-auto max-width-3",
     "faq-links": {
