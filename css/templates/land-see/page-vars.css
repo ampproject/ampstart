@@ -52,6 +52,7 @@
 
   --color-navbar-primary: var(--color-primary);
   --color-navbar-font-primary: var(--color-font-primary);
+  --color-form-invalid: #ff0000;
 
   --font-primary: "Crimson Text", times, serif;
   --font-secondary: "Montserrat", arial, sans-serif;
