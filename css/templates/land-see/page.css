@@ -292,8 +292,11 @@ h4,
 .land-see-subscribe amp-img {
   position: absolute;
   width: 100%;
-  object-fit: cover;
   object-position: top center;
+}
+
+amp-img.cover img {
+  object-fit: cover;
 }
 
 .land-see-subscribe-bg {
