@@ -45,13 +45,20 @@
   --color-footer-background: var(--color-primary);
   --color-font-footer: #3e6458;
 
-  --color-border: var(--color-dark-grey);
+  --color-border: var(--color-primary);
 
   --color-font-default: #6d6d6d;
   --color-font-accent: #808992;
 
   --color-navbar-primary: var(--color-primary);
   --color-navbar-font-primary: var(--color-font-primary);
+  --color-form-invalid: #ff0000;
+
+  --color-input-default: var(--color-font-footer);
+  --color-input-primary: var(--color-font-footer);
+  --color-input-font-primary: var(--color-font-footer);
+  --color-input-secondary: var(--color-font-secondary);
+  --color-input-font-secondary: var(--color-font-secondary);
 
   --font-primary: "Crimson Text", times, serif;
   --font-secondary: "Montserrat", arial, sans-serif;

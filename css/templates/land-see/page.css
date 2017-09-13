@@ -193,7 +193,7 @@ h4,
 .ampstart-footer {
   font-family: var(--font-navigation);
   color: var(--color-font-footer);
-  padding-top: var(--space-7);
+  padding-top: var(--space-2);
   padding-bottom: var(--space-3);
 }
 
@@ -278,4 +278,79 @@ h4,
     flex-basis: 50%;
     justify-content: flex-end;
   }
+}
+
+/* Subscribe */
+
+.land-see-subscribe {
+  position: relative;
+  height: 310px;
+  overflow: hidden;
+  color: var(--color-font-footer);
+}
+
+.land-see-subscribe amp-img {
+  position: absolute;
+  width: 100%;
+  object-position: top center;
+}
+
+amp-img.cover img {
+  object-fit: cover;
+}
+
+.land-see-subscribe-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.land-see-subscribe-form form {
+  padding: 0;
+}
+
+.land-see-subscribe-form h2 {
+  margin-bottom: var(--h3);
+  padding-top: var(--h1);
+}
+
+.land-see-subs-heading-text {
+  font-size: var(--h2);
+  position: relative;
+}
+
+.ampstart-input {
+  margin-bottom: 0;
+}
+
+.ampstart-input > label {
+  display: none;
+}
+
+.ampstart-input input:not([type=checkbox]):not([type=radio]) {
+  -webkit-appearance: none;
+}
+
+.ampstart-input input[type="email"] {
+  border: 2px solid var(--color-border);
+  padding: 2px 0 0 var(--h9);
+  font-size: var(--h8);
+}
+
+.land-see-subscribe-form input[type="submit"] {
+  width: 10px;
+  height: 13px;
+  line-height: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10px' height='13px' viewBox='0 0 10 13'%3E%3Cpolygon fill='%23FFFFFF' points='0,13.12 0,0 10.47,6.561 '/%3E%3C/svg%3E");
+  border: none;
+  position: absolute;
+  top: -44px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.ampstart-input input[type="email"].user-invalid {
+  border: 2px solid var(--color-form-invalid);
 }
