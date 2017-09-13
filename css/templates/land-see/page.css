@@ -299,16 +299,11 @@ amp-img.cover img {
   object-fit: cover;
 }
 
-.land-see-subscribe-bg {
-  z-index: 1;
-}
-
 .land-see-subscribe-form {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
 }
 
 .land-see-subscribe-form form {
@@ -325,11 +320,6 @@ amp-img.cover img {
   position: relative;
 }
 
-.land-see-subs-heading-text:after {
-  content: 'Land+See';
-  font-weight: bold;
-}
-
 .ampstart-input {
   margin-bottom: 0;
 }
@@ -343,13 +333,12 @@ amp-img.cover img {
 }
 
 .ampstart-input input[type="email"] {
-  border: 2px solid var(--color-font-secondary);
+  border: 2px solid var(--color-border);
   padding: 2px 0 0 var(--h9);
   font-size: var(--h8);
-  color: var(--color-font-footer);
 }
 
-.ampstart-input input[type="submit"] {
+.land-see-subscribe-form input[type="submit"] {
   width: 10px;
   height: 13px;
   line-height: 0;

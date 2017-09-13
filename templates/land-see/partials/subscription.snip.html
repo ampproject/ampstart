@@ -14,14 +14,20 @@ limitations under the License.
 }}
 
 {{#subscription}}
-<div class="land-see-subscribe center items-center max-width-4 mx-auto m0 mb3">
-  <div class="land-see-subscribe-form">
+<div class="land-see-subscribe center items-center max-width-4 mx-auto m0 mb3 z1">
+  <div class="land-see-subscribe-form z2">
     {{> ../../components/form/form.snip.html}}
   </div>
   <amp-position-observer
     on="scroll:subscribeBGParallax.seekTo(percent=event.percent)"
     layout="nodisplay">
-  </amp-position-observer>
-  {{> ./image.snip.html}}
+  </amp-position-observer>\
+  {{#image}}
+  <amp-img alt="{{alt-text}}"
+    class="{{classes}}"
+    layout="{{layout}}"
+    height="{{height}}"
+    src="{{src}}">
+  {{/image}}
 </div>
 {{/subscription}}
