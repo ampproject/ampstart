@@ -3,6 +3,9 @@
     "section": [
       {
         "title": "Arts & Culture",
+        "observer": {
+          "action": "enter:accordionSlideIn.start"
+        },
         "classes": "accordion-bg-30",
         "expanded": "expanded",
         "list-src": "./api/arts-culture-accordion.json"

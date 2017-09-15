@@ -460,7 +460,7 @@ a.post-category {
   position: relative;
 }
 
-@media (--breakpoint-lg) {
+@media (--breakpoint-md) {
   .cta-wrapper {
     margin-top: var(--navbar-height);
     margin-bottom: var(--navbar-height);
