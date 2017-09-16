@@ -6,23 +6,23 @@
         "observer": {
           "action": "enter:accordionSlideIn.start"
         },
-        "classes": "accordion-bg-30",
+        "classes": "arts-culture",
         "expanded": "expanded",
         "list-src": "./api/arts-culture-accordion.json"
       },
       {
         "title": "Design",
-        "classes": "accordion-bg-54",
+        "classes": "design",
         "list-src": "./api/design-accordion.json"
       },
       {
         "title": "Fashion",
-        "classes": "accordion-bg-77",
+        "classes": "fashion",
         "list-src": "./api/fashion-accordion.json"
       },
       {
         "title": "Interiors",
-        "classes": "accordion-bg-100",
+        "classes": "interiors",
         "list-src": "./api/interiors-accordion.json"
       }
     ]
