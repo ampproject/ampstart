@@ -9,11 +9,13 @@
         "amp-accordion",
         "amp-instagram",
         "amp-list",
-        "amp-mustache",
         "amp-form",
         "amp-anim",
         "amp-animation",
         "amp-position-observer"
+      ],
+      "templates": [
+        "amp-mustache"
       ],
       "css-path": "templates/land-see/page.css",
       "font-stylesheets": [
