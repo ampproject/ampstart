@@ -65,51 +65,7 @@ limitations under the License.
       </p>
     </div>
 
-    {{#accordion}}
-    <section class="land-see-accordion center items-center">
-      <amp-accordion layout="container" disable-session-states>
-        {{#section}}
-        <section {{expanded}} class="{{classes}}">
-          <h3 class="max-width-4 mx-auto">{{title}}</h3>
-          <div class="accordion-content max-width-4 mx-auto">
-            <amp-list src="{{list-src}}" height="430" layout="fixed-height">
-              <template type="amp-mustache">
-                {{#observer}}
-                <amp-position-observer
-                  on="{{action}}"
-                  layout="nodisplay">
-                </amp-position-observer>
-                {{/observer}}
-                <ul class="list-reset m0 p0 center flex justify-center">
-                  <%#land-see-category%>
-                  <li class="<%post-classes%> land-see-post-item mx1">
-                    <a href="<%post-url%>" class="text-decoration-none">
-                      <%#image%>
-                        <amp-img
-                          class="land-see-post-image <%classes%>"
-                          alt="<%alt%>"
-                          media="<%media-query%>"
-                          width="<%width%>"
-                          height="<%height%>"
-                          layout="<%layout%>"
-                          src="<%src%>">
-                        </amp-img>
-                      <%/image%>
-                    </a>
-                    <a class="land-see-post-category text-decoration-none" href="<%post-category-url%>"><%post-category%></a>
-                    <h4 class="pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
-                    <p class="pt1 pb3"><%post-copy%></p>
-                  </li>
-                  <%/land-see-category%>
-                </ul>
-              </template>
-            </amp-list>
-          </div>
-        </section>
-        {{/section}}
-      </amp-accordion>
-    </section>
-    {{/accordion}}
+    {{> ./partials/story-category.snip.html}}
 
     {{#instagram-cta}}
       <a class="land-see-cta-link mx-auto" href="{{url}}">

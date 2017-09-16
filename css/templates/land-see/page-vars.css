@@ -60,11 +60,7 @@
   --color-input-secondary: var(--color-font-secondary);
   --color-input-font-secondary: var(--color-font-secondary);
 
-  --color-accordion-color-base: #FDDCD7;
-  --opacity-100: 1;
-  --opacity-77: .77;
-  --opacity-54: .54;
-  --opacity-30: .3;
+  --color-story-category-background: #fddcd7;
 
   --font-primary: "Crimson Text", times, serif;
   --font-secondary: "Montserrat", arial, sans-serif;
