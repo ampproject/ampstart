@@ -1,1 +1,59 @@
-{}
+{
+  "story-categories": {
+    "section": [
+      {
+        "title": "Arts & Culture",
+        "observer": {
+          "action": "enter:accordionSlideIn.start"
+        },
+        "classes": "land-see-stories land-see-arts-culture",
+        "expanded": "expanded",
+        "list-src": "./api/arts-culture-accordion.json"
+      },
+      {
+        "title": "Design",
+        "classes": "land-see-stories land-see-design",
+        "list-src": "./api/design-accordion.json"
+      },
+      {
+        "title": "Fashion",
+        "classes": "land-see-stories land-see-fashion",
+        "list-src": "./api/fashion-accordion.json"
+      },
+      {
+        "title": "Interiors",
+        "classes": "land-see-stories land-see-interiors",
+        "list-src": "./api/interiors-accordion.json"
+      }
+    ]
+  },
+  "instagram-cta": {
+    "url": "https://www.instagram.com/lifeatgoogle/",
+    "image": [
+      {
+        "classes": "mt3 mb3",
+        "alt-text": "Instagram, follow us!",
+        "media-query": "(min-width: 608px)",
+        "width": 813, "height": 270, "layout": "responsive",
+        "src": "../../img/land-see/content/instagram-cta-lg.gif",
+        "src-placeholder": "../../img/land-see/content/instagram-cta-lg.png"
+      },
+      {
+        "classes": "mt3 mb3",
+        "alt-text": "Instagram, follow us!",
+        "media-query": "(min-width: 361px) and (max-width: 607px)",
+        "width": 607, "height": 282, "layout": "responsive",
+        "src": "../../img/land-see/content/instagram-cta-md.gif",
+        "src-placeholder": "../../img/land-see/content/instagram-cta-md.png"
+      },
+      {
+        "classes": "mt4 mb4",
+        "alt-text": "Instagram, follow us!",
+        "media-query": "(max-width: 360px)",
+        "width": 360, "height": 210, "layout": "responsive",
+        "src": "../../img/land-see/content/instagram-cta-sm.gif",
+        "src-placeholder": "../../img/land-see/content/instagram-cta-sm.png"
+      }
+    ]
+  }
+}

@@ -199,10 +199,10 @@ h4,
 
 .land-see:after {
   content: '';
-  width: 100%;
   height: 49px;
   position: absolute;
   left: 0;
+  right: 0;
   background: var(--color-footer-background) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104px' height='49px' viewBox='0 0 104 49'%3E%3Cdefs%3E%3C/defs%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,0.5c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,5.367c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,10.235c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,15.104c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,19.972c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,24.84c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,29.708c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,34.576c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,39.443c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3Cpath fill='none' stroke='%23EFEFEF' stroke-miterlimit='10' d='M0,44.312c6.468,0,6.468,4,12.935,4c6.468,0,6.468-4,12.936-4 c6.466,0,6.466,4,12.931,4c6.468,0,6.468-4,12.935-4c6.47,0,6.47,4,12.94,4c6.468,0,6.468-4,12.935-4c6.473,0,6.473,4,12.945,4 c6.471,0,6.471-4,12.943-4'/%3E%3C/svg%3E") repeat-x left top local;
 }
 
@@ -270,7 +270,6 @@ h4,
 
   .ampstart-footer small {
     margin-bottom: var(--h8);
-    flex-basis: 50%;
     order: 3;
   }
 
@@ -295,7 +294,7 @@ h4,
   object-position: top center;
 }
 
-amp-img.cover img {
+.land-see amp-img.cover img {
   object-fit: cover;
 }
 
@@ -320,19 +319,19 @@ amp-img.cover img {
   position: relative;
 }
 
-.ampstart-input {
+.land-see-subscribe-form .ampstart-input {
   margin-bottom: 0;
 }
 
-.ampstart-input > label {
+.land-see-subscribe-form .ampstart-input > label {
   display: none;
 }
 
-.ampstart-input input:not([type=checkbox]):not([type=radio]) {
+.land-see-subscribe-form input:not([type=checkbox]):not([type=radio]) {
   -webkit-appearance: none;
 }
 
-.ampstart-input input[type="email"] {
+.land-see-subscribe-form input[type="email"] {
   border: 2px solid var(--color-border);
   padding: 2px 0 0 var(--h9);
   font-size: var(--h8);
@@ -351,6 +350,119 @@ amp-img.cover img {
   z-index: 10;
 }
 
-.ampstart-input input[type="email"].user-invalid {
+.land-see-subscribe-form input[type="email"].user-invalid {
   border: 2px solid var(--color-form-invalid);
+}
+
+/* Story Category Accordion */
+
+.land-see-stories {
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.land-see-stories > h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+  min-height: 68px;
+  line-height: 68px;
+  outline: none;
+}
+
+.land-see-stories > h3:after {
+  content: '';
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23021425' stroke-width='2' stroke-miterlimit='10' d='M6.967 13.932V0M0 6.966h13.932'/%3E%3C/svg%3E");
+  height: 14px;
+  width: 14px;
+  right: 30px;
+  top: 28px;
+  cursor: pointer;
+}
+
+.land-see-stories[expanded] > h3:after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23021425' stroke-width='2' stroke-miterlimit='10' d='M0 6.966h13.932'/%3E%3C/svg%3E");
+}
+
+.land-see-stories:before {
+  content: '';
+  position: absolute;
+  height: 168px;
+  left:0;
+  right: 0;
+  background-color: var(--color-story-category-background);
+}
+
+.land-see-stories > h3 {
+  cursor: default;
+  background-color: inherit;
+  padding-right: 0;
+  border: none;
+}
+
+.land-see-arts-culture:before {
+  opacity: .3;
+}
+
+.land-see-design:before {
+  opacity: .54;
+}
+
+.land-see-fashion:before {
+  opacity: .77;
+}
+
+.land-see-interiors:before {
+  opacity: 1;
+}
+
+/* Post */
+
+.land-see-post-item {
+  max-width: 196px;
+  text-align: left;
+}
+
+.land-see-pre-animate {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.land-see-post-item-wide {
+  max-width: 402px;
+}
+
+.land-see a.land-see-post-category {
+  font: 400 var(--h7)/var(--line-height-1) var(--font-navigation);
+  text-transform: uppercase;
+  color: var(--color-font-accent);
+}
+
+.land-see-post-item h4 {
+  font: 600 var(--h4)/var(--line-height-6) var(--font-secondary);
+  color: var(--color-font-primary);
+}
+
+.land-see-post-item h4 a:hover {
+  opacity: .77;
+}
+
+.land-see-post-item p {
+  font: 400 var(--h6)/var(--line-height-2) var(--font-primary);
+}
+
+/* Instagram/Sale CTAs */
+
+.land-see-cta-link {
+  display: block;
+  max-width: 813px;
+  position: relative; /* prep for summer sale cta */
+}
+
+@media (--breakpoint-md) {
+  .land-see-cta-link {
+    margin-top: var(--navbar-height);
+    margin-bottom: var(--navbar-height);
+  }
 }

@@ -8,10 +8,14 @@
         "amp-sidebar",
         "amp-accordion",
         "amp-instagram",
-        "amp-social-share",
+        "amp-list",
+        "amp-form",
+        "amp-anim",
         "amp-animation",
-        "amp-position-observer",
-        "amp-form"
+        "amp-position-observer"
+      ],
+      "templates": [
+        "amp-mustache"
       ],
       "css-path": "templates/land-see/page.css",
       "font-stylesheets": [
@@ -94,7 +98,7 @@
       "heading": {
         "level": 2,
         "classes": "land-see-subs-heading-text",
-        "text": "Weekly inspiration from Land+See"
+        "text": "Weekly inspiration from <span class='bold'>Land+See</span>"
       },
       "inputs": [
         {

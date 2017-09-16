@@ -21,13 +21,14 @@ limitations under the License.
   <amp-position-observer
     on="scroll:subscribeBGParallax.seekTo(percent=event.percent)"
     layout="nodisplay">
-  </amp-position-observer>\
+  </amp-position-observer>
   {{#image}}
   <amp-img alt="{{alt-text}}"
     class="{{classes}}"
     layout="{{layout}}"
     height="{{height}}"
     src="{{src}}">
+  </amp-image>
   {{/image}}
 </div>
 {{/subscription}}

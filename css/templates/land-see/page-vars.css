@@ -60,6 +60,8 @@
   --color-input-secondary: var(--color-font-secondary);
   --color-input-font-secondary: var(--color-font-secondary);
 
+  --color-story-category-background: #fddcd7;
+
   --font-primary: "Crimson Text", times, serif;
   --font-secondary: "Montserrat", arial, sans-serif;
   --font-navigation: "Inconsolata", verdana, sans-serif;
