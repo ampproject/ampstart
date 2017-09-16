@@ -354,15 +354,15 @@ h4,
   border: 2px solid var(--color-form-invalid);
 }
 
-/* Accordion */
+/* Story Category Accordion */
 
-.land-see-story-category section {
+.land-see-stories {
   margin-bottom: 10px;
   position: relative;
   overflow: hidden;
 }
 
-.land-see-story-category section > h3 {
+.land-see-stories > h3 {
   text-transform: uppercase;
   font-weight: bold;
   min-height: 68px;
@@ -370,7 +370,7 @@ h4,
   outline: none;
 }
 
-.land-see-story-category section > h3:after {
+.land-see-stories > h3:after {
   content: '';
   position: absolute;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23021425' stroke-width='2' stroke-miterlimit='10' d='M6.967 13.932V0M0 6.966h13.932'/%3E%3C/svg%3E");
@@ -381,11 +381,11 @@ h4,
   cursor: pointer;
 }
 
-.land-see-story-category section[expanded] > h3:after {
+.land-see-stories[expanded] > h3:after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%23021425' stroke-width='2' stroke-miterlimit='10' d='M0 6.966h13.932'/%3E%3C/svg%3E");
 }
 
-.land-see-story-category section:before {
+.land-see-stories:before {
   content: '';
   position: absolute;
   height: 168px;
@@ -394,27 +394,27 @@ h4,
   background-color: var(--color-story-category-background);
 }
 
-.land-see .i-amphtml-accordion-header { /* reset defaults */
+.land-see-stories > h3 {
   cursor: default;
   background-color: inherit;
   padding-right: 0;
   border: none;
 }
 
-.land-see-story-category section.interiors:before {
-  opacity: 1;
+.land-see-arts-culture:before {
+  opacity: .3;
 }
 
-.land-see-story-category section.fashion:before {
-  opacity: .77;
-}
-
-.land-see-story-category section.design:before {
+.land-see-design:before {
   opacity: .54;
 }
 
-.land-see-story-category section.arts-culture:before {
-  opacity: .3;
+.land-see-fashion:before {
+  opacity: .77;
+}
+
+.land-see-interiors:before {
+  opacity: 1;
 }
 
 /* Post */

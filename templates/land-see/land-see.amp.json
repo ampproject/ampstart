@@ -6,23 +6,23 @@
         "observer": {
           "action": "enter:accordionSlideIn.start"
         },
-        "classes": "arts-culture",
+        "classes": "land-see-stories land-see-arts-culture",
         "expanded": "expanded",
         "list-src": "./api/arts-culture-accordion.json"
       },
       {
         "title": "Design",
-        "classes": "design",
+        "classes": "land-see-stories land-see-design",
         "list-src": "./api/design-accordion.json"
       },
       {
         "title": "Fashion",
-        "classes": "fashion",
+        "classes": "land-see-stories land-see-fashion",
         "list-src": "./api/fashion-accordion.json"
       },
       {
         "title": "Interiors",
-        "classes": "interiors",
+        "classes": "land-see-stories land-see-interiors",
         "list-src": "./api/interiors-accordion.json"
       }
     ]
