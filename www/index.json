@@ -127,7 +127,7 @@
           },
           "lightbox-id": "theme1_article",
           "src": "templates/themes_1/template_1_article.amp.html",
-          "download": "archive/template_1_article.zip"
+          "download": "archive/themes_1.zip"
         }
       },
       {
@@ -141,7 +141,7 @@
           },
           "lightbox-id": "theme2_home",
           "src": "templates/themes_2/home.amp.html",
-          "download": "archive/home.zip"
+          "download": "archive/themes_2.zip"
         }
       },
       {

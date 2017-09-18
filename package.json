@@ -87,11 +87,13 @@
     "basscss": "^8.0.3",
     "basscss-addons": "^1.0.0",
     "basscss-basic": "^1.0.0",
+    "event-stream": "^3.3.4",
+    "gulp-zip": "^4.0.0",
     "normalize.css": "^5.0.0",
     "postcss": "5.2.14",
+    "postcss-custom-properties": "^5.0.1",
     "query-string": "^5.0.0",
-    "whatwg-fetch": "^2.0.3",
-    "postcss-custom-properties": "^5.0.1"
+    "whatwg-fetch": "^2.0.3"
   },
   "configuratorDependencies": [
     "postcss",

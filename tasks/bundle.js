@@ -16,17 +16,19 @@
 
 const gulp = require('gulp-help')(require('gulp'));
 const util = require('gulp-util');
+const replace = require('gulp-replace');
+const zip = require('gulp-zip');
 const exec = require('child_process').execSync;
 const jsdom = require('jsdom');
 const through = require('through2');
 const path = require('path');
 const fs = require('fs-extra');
+const es = require('event-stream');
 const config = require('./config');
 const cssbeautify = require('cssbeautify');
+const runSequence = require('run-sequence');
 
-function collectResources(filepath, html, done) {
-  const filename = path.basename(filepath, '.amp.html');
-  console.log('start for', filepath);
+function collectResources(filepath, html, templateName, done) {
   const env = jsdom.env(html, function(err, window) {
     const ampCustom = window.document.querySelector('style[amp-custom]');
     const css = ampCustom && ampCustom.textContent || '';
@@ -45,7 +47,6 @@ function collectResources(filepath, html, done) {
                   return false;
                 }
                 const abspath = path.resolve(path.dirname(filepath), src);
-                console.log('abspath', abspath);
                 return abspath.replace(`${process.cwd()}/`, '');
               });
         }));
@@ -63,46 +64,116 @@ function collectResources(filepath, html, done) {
     imgs.push.apply(imgs, srcsetimgs);
     imgs.forEach(function(imgpath) {
       if (imgpath) {
-        const dest = `.archive/${imgpath.replace(/^dist/, filename)}`;
+        let imgFile = imgpath.split('img/')[1];
+        const dest = `.archive/${templateName}/img/${imgFile}`;
         fs.copySync(imgpath, dest);
       }
     });
-    const pathToTmpl = filepath.replace(/.*templates\/(.*)/, '\$1');
+    let pathToTmpl = filepath.replace(/.*templates\/(.*)/, '\$1');
+    pathToTmpl = pathToTmpl.replace(templateName + '/', 'templates/');
     fs.copySync(filepath,
-        `.archive/${filename}/templates/${pathToTmpl}`);
-    if (css) {
-      fs.mkdirSync(`.archive/${filename}/css`);
-      fs.writeFileSync(`.archive/${filename}/css/${filename}.max.css`,
-          cssbeautify(css, {indent: '  '}));
-    }
-    fs.writeFileSync(`.archive/${filename}/LICENSE`, licenses);
-    exec(`cd .archive && zip -r ../dist/archive/${filename}.zip ${filename}/`);
+        `.archive/${templateName}/${pathToTmpl}`);
+    fs.copySync(filepath,
+        `.archive/${templateName}/${pathToTmpl}`);
+    fs.writeFileSync(`.archive/${templateName}/LICENSE`, licenses);
     done();
   });
 }
 
+function packageCSS() {
+  const cssFolders = getFolders(`${config.dest.css}/templates/`);
+  const tasks = cssFolders.map(function(folder) {
+    return gulp.src(`${config.dest.css}/templates/${folder}/*.css`)
+      .pipe(through.obj(function(file,enc,cb) {
+        console.log('Packaging CSS: ', folder);
+        file.contents = new Buffer(
+          cssbeautify(file.contents.toString(), {indent: '  '}));
+        cb(null, file);
+      }))
+      .pipe(gulp.dest(`.archive/${folder}/css/`))
+  });
 
-function bundle() {
-  fs.removeSync('.archive');
-  fs.mkdirSync('.archive');
-
-  fs.removeSync('dist/archive');
-  fs.mkdirSync('dist/archive');
-
-  return gulp.src(`${config.dest.templates}/templates/**/*.html`)
-      .pipe(through.obj(function(file, enc, cb) {
-        if (file.isNull()) {
-          cb(null, file);
-          return;
-        }
-        const resources = collectResources(
-            file.path, file.contents.toString(), cb.bind(null, null, file));
-      })).on('end', function() {
-        fs.removeSync('.archive');
-      });
+  return es.concat.apply(null, tasks);
 }
 
-gulp.task('bundle', bundle);
+function packageAPIs() {
+  const templateFolders = getFolders(`${config.dest.templates}/templates/`);
+  const tasks = templateFolders.map(function(folder) {
+    return gulp.src(`${config.dest.templates}/templates/${folder}/api/*.json`)
+      .pipe(gulp.dest(`.archive/${folder}/templates/api/`));
+  });
+  return es.concat.apply(null, tasks);
+}
+
+function fixImagePaths() {
+  const archiveFolders = getFolders(`.archive/`);
+  const tasks = archiveFolders.map(function(folder) {
+    return gulp.src(`.archive/${folder}/templates/**/*.amp.html`)
+      .pipe(replace('&#x2F;', '/'))
+      .pipe(replace('../../img/', '../img/'))
+      .pipe(gulp.dest(`.archive/${folder}/templates`));
+  });
+  return es.concat.apply(null, tasks);
+}
+
+
+function packageTemplates() {
+  fs.removeSync('.archive');
+  fs.mkdirSync('.archive');
+  fs.removeSync('dist/archive');
+  fs.mkdirSync('dist/archive');
+  const templateFolders = getFolders(`${config.dest.templates}/templates/`);
+  const tasks = templateFolders.map(function(folder) {
+    return gulp.src(`${config.dest.templates}/templates/${folder}/*.amp.html`)
+    .pipe(through.obj(function(file, enc, cb) {
+      if (file.isNull()) {
+        cb(null, file);
+        return;
+      }
+      console.log('Bundling: ', folder);
+      const resources = collectResources(
+          file.path, file.contents.toString(), folder, cb.bind(null, null, file));
+      console.log('Finished Bundling: ', folder);
+    }));
+  });
+
+  return es.concat.apply(null, tasks);
+}
+
+function archive() {
+  const archiveFolders = getFolders(`.archive/`);
+  const tasks = archiveFolders.map(function(folder) {
+    return gulp.src(`.archive/${folder}/**/*`)
+      .pipe(zip(`${folder}.zip`))
+      .pipe(gulp.dest('dist/archive'));
+  });
+  return es.concat.apply(null, tasks);
+}
+
+function getFolders(dir){
+  return fs.readdirSync(dir).filter(function(file){
+    return fs.statSync(path.join(dir, file)).isDirectory();
+  });
+}
+
+
+
+function bundle_v2() {
+  packageTemplates();
+  packageCSS();
+  archive();
+}
+
+gulp.task('_packageTemplates', packageTemplates);
+gulp.task('_fixImgPaths', ['_packageTemplates'], fixImagePaths);
+gulp.task('_packageCSS', ['_fixImgPaths'] ,packageCSS);
+gulp.task('_packageAPIs', ['_packageCSS'] ,packageAPIs);
+gulp.task('_archive',  ['_packageAPIs'], archive)
+
+gulp.task('bundle', ['_archive'], function(done) {
+  fs.removeSync('.archive');
+  done();
+});
 
 const licenses = `
 Basscss | https://github.com/basscss/basscss/blob/master/LICENSE.md
