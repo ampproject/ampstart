@@ -1,4 +1,45 @@
 {
+  "summer-sale-cta": {
+    "background-animation": {
+      "svg-image": [
+        {
+          "classes": "land-see-background-image-left",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 690 551' overflow='visible'><path fill='#ADD8BF' d='M345.048 0l-.032.051-.033-.051L0 550.606h690.031z'/></svg>"
+        },
+        {
+          "classes": "land-see-background-image-right",
+          "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 491 392' overflow='visible'><path fill='#FCDCD4' d='M491.354 0h-280.98v.004H0l210.374 335.771v.005l35.301 56.34.001-.001.004.006 35.3-56.34v-.015z'/></svg>"
+        }
+       ]
+    },
+    "url": "#",
+    "image": [
+      {
+        "classes": "mt3 mb3",
+        "alt-text": "Summer Sale!",
+        "media-query": "(min-width: 611px)",
+        "width": 813, "height": 342, "layout": "responsive",
+        "src": "../../img/land-see/content/summer-sale-lg.gif",
+        "src-placeholder": "../../img/land-see/content/summer-sale-lg.jpg"
+      },
+      {
+        "classes": "mt3 mb3",
+        "alt-text": "Summer Sale!",
+        "media-query": "(min-width: 361px) and (max-width: 610px)",
+        "width": 610, "height": 342, "layout": "responsive",
+        "src": "../../img/land-see/content/summer-sale-md.gif",
+        "src-placeholder": "../../img/land-see/content/summer-sale-md.jpg"
+      },
+      {
+        "classes": "mt4 mb4",
+        "alt-text": "Summer Sale!",
+        "media-query": "(max-width: 360px)",
+        "width": 329, "height": 348, "layout": "responsive",
+        "src": "../../img/land-see/content/summer-sale-sm.gif",
+        "src-placeholder": "../../img/land-see/content/summer-sale-sm.jpg"
+      }
+    ]
+  },
   "story-categories": {
     "section": [
       {
@@ -50,7 +91,7 @@
         "classes": "mt4 mb4",
         "alt-text": "Instagram, follow us!",
         "media-query": "(max-width: 360px)",
-        "width": 360, "height": 210, "layout": "responsive",
+        "width": 328, "height": 210, "layout": "responsive",
         "src": "../../img/land-see/content/instagram-cta-sm.gif",
         "src-placeholder": "../../img/land-see/content/instagram-cta-sm.png"
       }
