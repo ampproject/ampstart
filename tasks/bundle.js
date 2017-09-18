@@ -16,6 +16,7 @@
 
 const gulp = require('gulp-help')(require('gulp'));
 const util = require('gulp-util');
+const replace = require('gulp-replace');
 const zip = require('gulp-zip');
 const exec = require('child_process').execSync;
 const jsdom = require('jsdom');
@@ -28,7 +29,6 @@ const cssbeautify = require('cssbeautify');
 const runSequence = require('run-sequence');
 
 function collectResources(filepath, html, templateName, done) {
-  const filename = path.basename(filepath, '.amp.html');
   const env = jsdom.env(html, function(err, window) {
     const ampCustom = window.document.querySelector('style[amp-custom]');
     const css = ampCustom && ampCustom.textContent || '';
@@ -73,6 +73,8 @@ function collectResources(filepath, html, templateName, done) {
     pathToTmpl = pathToTmpl.replace(templateName + '/', 'templates/');
     fs.copySync(filepath,
         `.archive/${templateName}/${pathToTmpl}`);
+    fs.copySync(filepath,
+        `.archive/${templateName}/${pathToTmpl}`);
     fs.writeFileSync(`.archive/${templateName}/LICENSE`, licenses);
     done();
   });
@@ -93,6 +95,27 @@ function packageCSS() {
 
   return es.concat.apply(null, tasks);
 }
+
+function packageAPIs() {
+  const templateFolders = getFolders(`${config.dest.templates}/templates/`);
+  const tasks = templateFolders.map(function(folder) {
+    return gulp.src(`${config.dest.templates}/templates/${folder}/api/*.json`)
+      .pipe(gulp.dest(`.archive/${folder}/templates/api/`));
+  });
+  return es.concat.apply(null, tasks);
+}
+
+function fixImagePaths() {
+  const archiveFolders = getFolders(`.archive/`);
+  const tasks = archiveFolders.map(function(folder) {
+    return gulp.src(`.archive/${folder}/templates/**/*.amp.html`)
+      .pipe(replace('&#x2F;', '/'))
+      .pipe(replace('../../img/', '../img/'))
+      .pipe(gulp.dest(`.archive/${folder}/templates`));
+  });
+  return es.concat.apply(null, tasks);
+}
+
 
 function packageTemplates() {
   fs.removeSync('.archive');
@@ -142,8 +165,10 @@ function bundle_v2() {
 }
 
 gulp.task('_packageTemplates', packageTemplates);
-gulp.task('_packageCSS', ['_packageTemplates'] ,packageTemplates);
-gulp.task('_archive',  ['_packageCSS'], archive)
+gulp.task('_fixImgPaths', ['_packageTemplates'], fixImagePaths);
+gulp.task('_packageCSS', ['_fixImgPaths'] ,packageCSS);
+gulp.task('_packageAPIs', ['_packageCSS'] ,packageAPIs);
+gulp.task('_archive',  ['_packageAPIs'], archive)
 
 gulp.task('bundle', ['_archive'], function(done) {
   fs.removeSync('.archive');
