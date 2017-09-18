@@ -1,0 +1,466 @@
+<!doctype html>
+
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+{{#article}}
+<html ⚡="">
+{{> ../../utils/amp-page-head.snip.html}}
+  <body>
+    <!-- Start Navbar -->
+    <header class="ampstart-headerbar fixed flex justify-center items-center top-0 left-0 right-0 pl2 pr1">
+      <h1 class="h4 bold header-title"><a href="home.amp.html" class="text-decoration-none">Arvid Brane Photography</a></h1>
+      <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger absolute h6 pr2 menu-button">☰</div>
+      <ul class="hide-tablet full-menu absolute list-reset">
+        <li>
+          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Blog</a>
+        </li>
+        <li>
+          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Contact</a>
+        </li>
+        <li>
+          <a href="#" class="header-link montserrat caps text-decoration-none mr1">About</a>
+        </li>
+        <li>
+          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Services</a>
+        </li>
+        <li>
+          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Store</a>
+        </li>
+        <li>
+          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Clients</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- Start Sidebar -->
+    <amp-sidebar id="header-sidebar" side="right" class="ampstart-sidebar px3 " layout="nodisplay">
+      <div class="flex justify-center items-center ampstart-sidebar-header">
+        <h2 class="h5">Arvid Brane Photography</h2>
+        <div role="button" on="tap:header-sidebar.toggle" tabindex="1" class="menu-close-button absolute">✕</div>
+      </div>
+
+      <ul class="menu-links list-reset m0 center">
+        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Blog</a></li>
+        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Portfolio</a></li>
+        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Contact</a></li>
+        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">About</a></li>
+        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Services</a></li>
+        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Store</a></li>
+        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Clients</a></li>
+      </ul>
+    </amp-sidebar>
+    <!-- End Sidebar -->
+    <!-- End Navbar -->
+
+    <!-- Start Fullpage Hero -->
+    <figure class="ampstart-image-fullpage-hero m0 relative mb4">
+      <amp-img height="490" media="(max-width: 767px)" class="tint" layout="fixed-height" src="../../img/arvidbrane-photo/article/hero_opt_tablet.jpg"><span placeholder></span></amp-img>
+      <amp-img height="620" media="(min-width: 768px)" class="tint" layout="fixed-height" src="../../img/arvidbrane-photo/article/hero_opt_desktop.jpg"><span placeholder></span></amp-img>
+      <figcaption class="absolute top-0 right-0 bottom-0 left-0">
+          <header class="p3 hero-header center pt4 mt4 mx-auto">
+            <h1 class="ampstart-fullpage-hero-heading mb3 bold">
+              <span class="ampstart-fullpage-hero-heading-text inline-block">
+                Wedding Package
+              </span>
+            </h1>
+
+            <span class="ampstart-image-credit h5 caps montserrat bold sub-headline">
+              Starting at $499
+            </span>
+
+            <span class="vertical-divider mt4">
+              <span class="divider-line"></span>
+            </span>
+          </header>
+        <footer class="absolute left-0 right-0 bottom-0 flex justify-center">
+          <a href="#contact" class="text-decoration-none contact-button">
+            <button class="request-quote caps mb4 bold montserrat bold line-height-2 text-decoration-none mx-auto block h5">
+              Request quote
+            </button>
+          </a>
+        </footer>
+      </figcaption>
+    </figure>
+    <!-- End Fullpage Hero -->
+
+    <main id="content" role="main" class="">
+      <article class="photo-article">
+        <section class="text-section mb4">
+          <h2 class="pt2 mb2 caps section-header montserrat bold h5">What's included?</h2>
+
+          <p class="mb4">Vivamus viverra augue libero, vitae dapibus lectus accumsan eget. Pellentesque eget ipsum purus. Maecenas leo odio, ornare nec ex id, suscipit porta ipsum. Ut fringilla semper cursus.</p>
+
+          <hr />
+
+          <blockquote cite="http://example.org" class="italic h4 mt4 mb4 big-quote">
+              "Morbi vulputate purus sodales dapibus ultrices.
+              Donec commodo condimentum enim, eget congue dui dapibus."
+          </blockquote>
+
+          <hr class="mb3"/>
+
+          <p class="mb4">Donec porta orci eu tortor finibus, id facilisis metus aliquam. Pellentesque lobortis viverra odio ut eleifend. Integer elementum finibus magna, consequat fermentum dui ultrices sit amet.</p>
+
+          <section class="services">
+              <figure class="service ampstart-byline clearfix mb4 h5">
+                <amp-img class="byline-photo mr3 left" src="../../img/arvidbrane-photo/icons/1.png" layout="fixed" height="60" width="60"><span placeholder></span></amp-img>
+                <p class="service-header caps middle-grey bold block text-decoration-none service-icon-label" role="author">Preparation</p>
+                <span class="service-icon-description middle-grey caps montserrat block bold ">Briefing</span>
+              </figure>
+
+              <figure class="service ampstart-byline clearfix mb4 h5">
+                <amp-img class="byline-photo mr3 left" src="../../img/arvidbrane-photo/icons/2.png" layout="fixed" height="60" width="60"><span placeholder></span></amp-img>
+                <p class="service-header caps middle-grey block bold text-decoration-none service-icon-label" role="author">Shooting</p>
+                <span class="service-icon-description middle-grey caps montserrat block bold ">Act natural</span>
+              </figure>
+
+              <figure class="service ampstart-byline clearfix mb4 h5">
+                <amp-img class="byline-photo mr3 left" src="../../img/arvidbrane-photo/icons/3.png" layout="fixed" height="60" width="60"><span placeholder></span></amp-img>
+                <p class="service-header caps middle-grey bold block text-decoration-none service-icon-label" role="author">Post editing</p>
+                <span class="service-icon-description middle-grey caps montserrat block bold ">Make it perfect</span>
+              </figure>
+
+              <figure class="service ampstart-byline clearfix mb4 pb4 h5">
+                <amp-img class="byline-photo mr3 left" src="../../img/arvidbrane-photo/icons/4.png" layout="fixed" height="60" width="60"><span placeholder></span></amp-img>
+                <p class="service-header caps middle-grey bold block text-decoration-none service-icon-label" role="author">Delivery</p>
+                <span class="service-icon-description middle-grey caps montserrat block bold ">In any format</span>
+              </figure>
+          </section>
+        </section>
+      </article>
+    </main>
+
+    <section class="previous-work p3" id="galleries">
+      <div class="previous-wrap">
+        <h2 class="montserrat h5 bold middle-grey caps m0 mb3 center">Previous work</h2>
+        <!-- Start carousel -->
+        <amp-carousel height="200" controls="" layout="fixed-height" type="carousel" class="mb2 gallery-carousel">
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/1_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/2_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/3_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/10_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/13_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/1_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/2_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/3_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/10_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/13_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+        </amp-carousel>
+        <!-- End carousel -->
+
+        <!-- Start carousel -->
+        <amp-carousel height="200" layout="fixed-height" type="carousel" class="mb2 gallery-carousel">
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/4_opt.jpg" width="250" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/5_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/6_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/11_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/14_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/4_opt.jpg" width="250" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/5_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/6_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/11_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/14_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+        </amp-carousel>
+        <!-- End carousel -->
+
+        <!-- Start carousel -->
+        <amp-carousel height="200" layout="fixed-height" type="carousel" class="mb2 gallery-carousel">
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/7_opt.jpg" width="266" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/8_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/9_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/12_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/1_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/7_opt.jpg" width="266" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/8_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/9_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/12_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+
+          <figure class="ampstart-image-with-caption m0 mr2">
+            <amp-img src="../../img/arvidbrane-photo/gallery/1_opt.jpg" width="300" height="200" class=""><span placeholder></span></amp-img>
+          </figure>
+        </amp-carousel>
+        <!-- End carousel -->
+      </div>
+    </section>
+
+    <figure class="ampstart-image-fullpage-hero m0 relative mb4 greetings">
+      <amp-img height="580" class="tint" layout="fixed-height" src="../../img/arvidbrane-photo/gallery/2_opt_tablet.jpg"><span placeholder></span></amp-img>
+      <figcaption class="absolute top-0 right-0 bottom-0 left-0 center">
+
+        <h2 class="greetings-header mb3 mt4 bold h1 center">
+          <span class="ampstart-fullpage-hero-heading-text">
+            Testimonials
+          </span>
+        </h2>
+
+        <h4 class="caps montserrat bold center h5 sub-headline">From clients</h4>
+
+        <span class="vertical-divider mt4">
+          <span class="divider-line"></span>
+        </span>
+
+        <amp-carousel id="greetings-carousel" height="200" controls="0" layout="fixed-height" type="slides" class="mb4 mt4 greetings-carousel" on="slideChange:AMP.setState({selected: event.index})">
+
+          <figure class="center">
+            <blockquote class="italic px2 h4 big-quote">
+                "Donee sed dui. Fusce dapibus, tellus cursus commodo, tortor mauris."
+            </blockquote>
+
+            <span class="montserrat bold caps mt4 inline-block h5 quoted">Lisa &amp; Anton</span>
+          </figure>
+
+          <figure class="center">
+            <blockquote class="italic px2 h4 big-quote">
+              "Donec porta orci eu tortor finibus, id facilisis metus aliquam."
+            </blockquote>
+
+            <span class="montserrat bold caps mt4 inline-block h5 quoted">Mark &amp; Jeff</span>
+          </figure>
+
+          <figure class="center">
+            <blockquote class="italic px2 h4 big-quote">
+              "Maecenas leo odio, ornare nec ex id, suscipit porta ipsum."
+            </blockquote>
+
+            <span class="montserrat bold caps mt4 inline-block h5 quoted">Mia &amp; Jacob</span>
+          </figure>
+
+          <figure class="center">
+            <blockquote class="italic px2 h4 big-quote">
+              "Ut fringilla semper cursus. Pellentesque lobortis viverra odio ut eleifend."
+            </blockquote>
+
+            <span class="montserrat bold caps mt4 inline-block h5 quoted">Kate &amp; Lucy</span>
+          </figure>
+
+        </amp-carousel>
+        <div class="greetings-carousel-nav center mb3 pt4">
+          <span class="gallery-button button-1-selected" role="navigation" tabindex="3" data-gallery-button-1 [class]="galleryState[selected].className" on="tap:greetings-carousel.goToSlide(index=0),AMP.setState({selected: '0'})"></span>
+          <span class="gallery-button" role="navigation" tabindex="4" data-gallery-button-2 [class]="galleryState[selected].className" on="tap:greetings-carousel.goToSlide(index=1),AMP.setState({selected: '1'})"></span>
+          <span class="gallery-button" role="navigation" tabindex="5" data-gallery-button-3 [class]="galleryState[selected].className" on="tap:greetings-carousel.goToSlide(index=2),AMP.setState({selected: '2'})"></span>
+          <span class="gallery-button" role="navigation" tabindex="6" data-gallery-button-4 [class]="galleryState[selected].className" on="tap:greetings-carousel.goToSlide(index=3),AMP.setState({selected: '3'})"></span>
+        </div>
+      </figcaption>
+    </figure>
+
+    <section class="text-section contact-section mx-auto" id="contact">
+      <span class="ampstart-accent block mb2 caps section-header montserrat bold h5">Sounds like something for you?</span>
+      <p class="mb4">Vivamus viverra augue libero, vitae dapibus lectus accumsan eget. Pellentesque eget ipsum purus.</p>
+
+      <div>
+        <label for="ip1" class="section-header montserrat bold h5 caps">
+          Full name
+        </label>
+        <input type="text" value="" name="name1" id="ip1" class="block border-none p0 m0 mb2 py1 contact-input h5" placeholder="Enter your Name">
+      </div>
+
+      <div>
+        <label for="ip2" class="section-header montserrat bold h5 caps">
+          Email address
+        </label>
+        <input type="text" value="" name="name1" id="ip2" class="block border-none p0 m0 mb4 py1 contact-input h5" placeholder="Enter your email address">
+      </div>
+
+      <p class="mb4">Or you could <a href="#">call</a> or <a href="#">email</a> me directly!</p>
+
+      <button class="be-contacted caps bold montserrat bold line-height-2 text-decoration-none mx-auto block h5">
+        Request a quote
+      </button>
+    </section>
+
+    <!-- Start Footer -->
+    <footer class="ampstart-footer flex flex-column items-center px3">
+      <ul class="social-share-icons list-reset flex justify-around items-center flex-wrap m0 mb4">
+        <li class="mr2">
+          <a href="#" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22.2" viewbox="0 0 53 49">
+              <title>Twitter</title>
+              <path d="M45 6.9c-1.6 1-3.3 1.6-5.2 2-1.5-1.6-3.6-2.6-5.9-2.6-4.5 0-8.2 3.7-8.2 8.3 0 .6.1 1.3.2 1.9-6.8-.4-12.8-3.7-16.8-8.7C8.4 9 8 10.5 8 12c0 2.8 1.4 5.4 3.6 6.9-1.3-.1-2.6-.5-3.7-1.1v.1c0 4 2.8 7.4 6.6 8.1-.7.2-1.5.3-2.2.3-.5 0-1 0-1.5-.1 1 3.3 4 5.7 7.6 5.7-2.8 2.2-6.3 3.6-10.2 3.6-.6 0-1.3-.1-1.9-.1 3.6 2.3 7.9 3.7 12.5 3.7 15.1 0 23.3-12.6 23.3-23.6 0-.3 0-.7-.1-1 1.6-1.2 3-2.7 4.1-4.3-1.4.6-3 1.1-4.7 1.3 1.7-1 3-2.7 3.6-4.6" class="ampstart-icon ampstart-icon-twitter"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="mr2">
+          <a href="#" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="23.6" viewbox="0 0 56 55">
+              <title>Facebook</title>
+              <path d="M47.5 43c0 1.2-.9 2.1-2.1 2.1h-10V30h5.1l.8-5.9h-5.9v-3.7c0-1.7.5-2.9 3-2.9h3.1v-5.3c-.6 0-2.4-.2-4.6-.2-4.5 0-7.5 2.7-7.5 7.8v4.3h-5.1V30h5.1v15.1H10.7c-1.2 0-2.2-.9-2.2-2.1V8.3c0-1.2 1-2.2 2.2-2.2h34.7c1.2 0 2.1 1 2.1 2.2V43" class="ampstart-icon ampstart-icon-fb"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="mr2">
+          <a href="#" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="28.5" viewbox="0 0 43 51">
+              <title>pinterest</title>
+              <path d="M-13.6-5c0-1.6.2-3 .8-4.4.5-1.4 1.2-2.6 2.2-3.6.9-1 2-1.9 3.2-2.6 1.2-.8 2.5-1.3 3.9-1.7 1.5-.4 2.9-.5 4.4-.5 2.2 0 4.3.4 6.2 1.4 1.9.9 3.5 2.3 4.7 4.1 1.2 1.9 1.8 3.9 1.8 6.2 0 1.4-.1 2.7-.4 4C13-.8 12.5.5 12 1.7c-.6 1.2-1.3 2.3-2.2 3.2C9 5.8 8 6.6 6.7 7.1c-1.2.6-2.5.9-4 .9-1 0-1.9-.3-2.9-.7-.9-.5-1.6-1.1-2-1.9-.1.5-.3 1.4-.6 2.4-.3 1.1-.4 1.7-.5 2-.1.3-.2.9-.4 1.6-.3.7-.4 1.2-.6 1.5-.1.3-.4.7-.7 1.3-.3.6-.6 1.2-1 1.7-.3.5-.7 1.1-1.3 1.8l-.3.1-.2-.2c-.2-2.2-.3-3.6-.3-4 0-1.3.2-2.8.5-4.4.3-1.7.8-3.7 1.4-6.2.6-2.5 1-3.9 1.1-4.4-.5-.9-.7-2.1-.7-3.6 0-1.2.4-2.3 1.1-3.3.8-1.1 1.7-1.6 2.8-1.6.9 0 1.6.3 2.1.9.4.6.7 1.3.7 2.2 0 .9-.3 2.3-1 4.1C-.7-.9-1 .4-1 1.3c0 .9.3 1.6 1 2.2.6.6 1.4.9 2.3.9.8 0 1.5-.2 2.2-.5.6-.4 1.2-.9 1.6-1.5.5-.6.9-1.3 1.2-2 .4-.8.6-1.5.8-2.4.2-.8.4-1.6.5-2.4.1-.7.1-1.4.1-2.1 0-2.5-.8-4.4-2.3-5.8-1.6-1.4-3.6-2.1-6.1-2.1-2.8 0-5.2 1-7.1 2.8-1.9 1.9-2.9 4.2-2.9 7.1 0 .6.1 1.2.3 1.8.2.6.4 1.1.6 1.4.2.3.4.7.5 1 .2.3.3.5.3.6 0 .4-.1.9-.3 1.6-.2.6-.5 1-.8 1 0 0-.1-.1-.4-.1-.7-.2-1.3-.6-1.9-1.2-.5-.6-1-1.3-1.3-2-.3-.8-.5-1.6-.7-2.4-.2-.7-.2-1.5-.2-2.2z" transform="translate(21.734 23.748)" class="ampstart-icon ampstart-icon-pinterest"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="mr2">
+          <a href="#" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 54 54">
+              <title>instagram</title>
+              <path d="M27.2 6.1c-5.1 0-5.8 0-7.8.1s-3.4.4-4.6.9c-1.2.5-2.3 1.1-3.3 2.2-1.1 1-1.7 2.1-2.2 3.3-.5 1.2-.8 2.6-.9 4.6-.1 2-.1 2.7-.1 7.8s0 5.8.1 7.8.4 3.4.9 4.6c.5 1.2 1.1 2.3 2.2 3.3 1 1.1 2.1 1.7 3.3 2.2 1.2.5 2.6.8 4.6.9 2 .1 2.7.1 7.8.1s5.8 0 7.8-.1 3.4-.4 4.6-.9c1.2-.5 2.3-1.1 3.3-2.2 1.1-1 1.7-2.1 2.2-3.3.5-1.2.8-2.6.9-4.6.1-2 .1-2.7.1-7.8s0-5.8-.1-7.8-.4-3.4-.9-4.6c-.5-1.2-1.1-2.3-2.2-3.3-1-1.1-2.1-1.7-3.3-2.2-1.2-.5-2.6-.8-4.6-.9-2-.1-2.7-.1-7.8-.1zm0 3.4c5 0 5.6 0 7.6.1 1.9.1 2.9.4 3.5.7.9.3 1.6.7 2.2 1.4.7.6 1.1 1.3 1.4 2.2.3.6.6 1.6.7 3.5.1 2 .1 2.6.1 7.6s0 5.6-.1 7.6c-.1 1.9-.4 2.9-.7 3.5-.3.9-.7 1.6-1.4 2.2-.7.7-1.3 1.1-2.2 1.4-.6.3-1.7.6-3.5.7-2 .1-2.6.1-7.6.1-5.1 0-5.7 0-7.7-.1-1.8-.1-2.9-.4-3.5-.7-.9-.3-1.5-.7-2.2-1.4-.7-.7-1.1-1.3-1.4-2.2-.3-.6-.6-1.7-.7-3.5 0-2-.1-2.6-.1-7.6 0-5.1.1-5.7.1-7.7.1-1.8.4-2.8.7-3.5.3-.9.7-1.5 1.4-2.2.7-.6 1.3-1.1 2.2-1.4.6-.3 1.6-.6 3.5-.7h7.7zm0 5.8c-5.4 0-9.7 4.3-9.7 9.7 0 5.4 4.3 9.7 9.7 9.7 5.4 0 9.7-4.3 9.7-9.7 0-5.4-4.3-9.7-9.7-9.7zm0 16c-3.5 0-6.3-2.8-6.3-6.3s2.8-6.3 6.3-6.3 6.3 2.8 6.3 6.3-2.8 6.3-6.3 6.3zm12.4-16.4c0 1.3-1.1 2.3-2.3 2.3-1.3 0-2.3-1-2.3-2.3 0-1.2 1-2.3 2.3-2.3 1.2 0 2.3 1.1 2.3 2.3z" class="ampstart-icon ampstart-icon-instagram"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="mr2">
+          <a href="#" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15.5" viewbox="0 0 45 29">
+              <title>Google Plus</title>
+              <path d="M45 12.5h-4.1V8.4h-4.1v4.1h-4.1v4h4.1v4.1h4.1v-4.1H45v-4zm-30.7 0v4.9h8.1c-.3 2.1-2.4 6.1-8.1 6.1-4.8 0-8.8-4-8.8-9s4-9 8.8-9c2.8 0 4.7 1.2 5.7 2.2l3.9-3.8C21.4 1.6 18.2.2 14.3.2 6.4.2 0 6.6 0 14.5s6.4 14.3 14.3 14.3c8.3 0 13.8-5.8 13.8-14 0-.9-.1-1.6-.3-2.3H14.3z" class="ampstart-icon ampstart-icon-gplus"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="mr2">
+          <a href="#" class="inline-block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18.4" viewbox="0 0 56 43">
+              <title>email</title>
+              <path d="M10.5 6.4C9.1 6.4 8 7.5 8 8.9v21.3c0 1.3 1.1 2.5 2.5 2.5h34.9c1.4 0 2.5-1.2 2.5-2.5V8.9c0-1.4-1.1-2.5-2.5-2.5H10.5zm2.1 2.5h30.7L27.9 22.3 12.6 8.9zm-2.1 1.4l16.6 14.6c.5.4 1.2.4 1.7 0l16.6-14.6v19.9H10.5V10.3z" class="ampstart-icon ampstart-icon-email"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+      <h3 class="h5 montserrat caps bold sub-headline middle-grey">Arvid Brane</h3>
+
+      <nav class="ampstart-footer-nav">
+        <ul class="list-reset mb4 mt3 center footer-links">
+          <li class="px1"><a class="text-decoration-none caps h5 montserrat bold footer-link" href="#">Blog</a></li>
+          <li class="px1"><a class="text-decoration-none caps h5 montserrat bold footer-link" href="#">Portfolio</a></li>
+          <li class="px1"><a class="text-decoration-none caps h5 montserrat bold footer-link" href="#">Contact</a></li>
+          <li class="px1"><a class="text-decoration-none caps h5 montserrat bold footer-link" href="#">About</a></li>
+          <li class="px1"><a class="text-decoration-none caps h5 montserrat bold footer-link" href="#">Services</a></li>
+          <li class="px1"><a class="text-decoration-none caps h5 montserrat bold footer-link" href="#">Store</a></li>
+          <li class="px1"><a class="text-decoration-none caps h5 montserrat bold footer-link" href="#">Clients</a></li>
+        </ul>
+      </nav>
+
+      <small class="montserrat bold middle-grey copyright-tablet">© 2009-2017</small>
+      <small class="caps montserrat bold middle-grey copyright-tablet">Wedding photography</small>
+      <small class="caps montserrat bold middle-grey copyright-desktop">© 2009-2017 Wedding photography</small>
+    </footer>
+    <!-- End Footer -->
+
+
+    <amp-state id="galleryState">
+      <script type="application/json">
+        {
+          "0": {
+            "className": "gallery-button button-1-selected"
+          },
+          "1": {
+            "className": "gallery-button button-2-selected"
+          },
+          "2": {
+            "className": "gallery-button button-3-selected"
+          },
+          "3": {
+            "className": "gallery-button button-4-selected"
+          }
+        }
+      </script>
+    </amp-state>
+  </body>
+
+</html>
+{{/article}}
