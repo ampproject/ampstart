@@ -25,8 +25,7 @@ function validate() {
         `!${config.dest.configurator}/**/*.html`,
       ])
       .pipe(validator.validate())
-      .pipe(validator.format())
-      .pipe(validator.failAfterError());
+      .pipe(validator.format());
 }
 
 gulp.task('validate', validate);

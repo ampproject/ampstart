@@ -1,0 +1,51 @@
+{
+  "photography-home": {
+    "head-tag": {
+      "title": "Arvid Brane Photography",
+      "canonical-path": "templates/photography/home.amp.html",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-bind"
+      ],
+      "css-path": "templates/photography/home/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700,700i,400i"
+      ]
+    },
+    "navbar": {
+      "name": "Arvid Brane Photography",
+      "sidebar-id": "header-sidebar",
+      "sidebaronly": false,
+      "nav": [
+        {
+          "link": {"url": "#", "text": "Blog"}
+        },
+        {
+          "link": {"url": "#", "text": "Portfolio"}
+        },
+        {
+          "link": {"url": "#", "text": "Contact"}
+        },
+        {
+          "link": {"url": "#", "text": "About"}
+        },
+        {
+          "link": {"url": "#", "text": "Services"}
+        },
+        {
+          "link": {"url": "#", "text": "Store"}
+        },
+        {
+          "link": {"url": "#", "text": "Clients"}
+        }
+      ]
+    },
+    "fullpage-hero": {
+      "heading-html": "Arvid Brane <span class='ampstart-label mt3 bold block'>Photography</span>",
+      "alt": "Sample wedding photo showing the bride hugging the groom.",
+      "narrow-img": "../../img/photography/home/hero_tablet_opt.jpg",
+      "wide-img": "../../img/photography/home/hero_desktop_opt.jpg"
+    }
+  }
+}
