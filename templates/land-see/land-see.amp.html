@@ -17,21 +17,27 @@ limitations under the License.
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="land-see">
-    <amp-animation id="subscribeBGParallax" layout="nodisplay">
+    <amp-animation id="backgroundParallax" layout="nodisplay">
       <script type="application/json">
         {
-        "duration": "1s",
-        "fill": "both",
-        "direction": "alternate",
-        "animations": [
-          {
-            "selector": ".land-see-subscribe-bg",
-            "keyframes": [
-              { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
-            ]
-          }
-        ]
-      }
+          "duration": "1s",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-background-image-left",
+              "keyframes": [
+                { "transform": "translateY(calc(height('.land-see-subscribe') * -1.2))" }
+              ]
+            },
+            {
+              "selector": ".land-see-background-image-right",
+              "keyframes": [
+                { "transform": "translateY(calc(height('.land-see-subscribe') * 1.2))" }
+              ]
+            }
+          ]
+        }
       </script>
     </amp-animation>
     <amp-animation id="accordionSlideIn" layout="nodisplay">
@@ -53,6 +59,23 @@ limitations under the License.
         }
       </script>
     </amp-animation>
+    <amp-animation id="subscribeBGParallax" layout="nodisplay">
+      <script type="application/json">
+        {
+        "duration": "1s",
+        "fill": "both",
+        "direction": "alternate",
+        "animations": [
+          {
+            "selector": ".land-see-subscribe-bg",
+            "keyframes": [
+              { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
+            ]
+          }
+        ]
+      }
+      </script>
+    </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
     <div class="mx-auto m3 max-width-4">
@@ -63,9 +86,42 @@ limitations under the License.
       <p class="pb2">
         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
       </p>
+      <p class="pb2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p class="pb2">
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+      </p>
     </div>
 
-    {{> ./partials/story-category.snip.html}}
+    {{#summer-sale-cta}}
+    <section class="land-see-background-animation-container relative mx-auto">
+      <a class="land-see-cta-link mx-auto" href="{{url}}">
+        {{#image}}
+        <amp-anim
+          class="{{classes}}"
+          alt="{{alt-text}}"
+          media="{{media-query}}"
+          width="{{width}}"
+          height="{{height}}"
+          layout="{{layout}}"
+          src="{{src}}">
+          <amp-img placeholder
+            alt="{{alt-text}}"
+            media="{{media-query}}"
+            width="{{width}}"
+            height="{{height}}"
+            layout="{{layout}}"
+            src="{{src-placeholder}}">
+          </amp-img>
+        </amp-anim>
+        {{/image}}
+      </a>
+      {{> ./partials/background-animation.snip.html}}
+    </section>
+    {{/summer-sale-cta}}
+
+    {{> ./partials/story-categories.snip.html}}
 
     {{#instagram-cta}}
       <a class="land-see-cta-link mx-auto" href="{{url}}">

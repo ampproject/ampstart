@@ -457,12 +457,60 @@ h4,
 .land-see-cta-link {
   display: block;
   max-width: 813px;
-  position: relative; /* prep for summer sale cta */
 }
 
 @media (--breakpoint-md) {
   .land-see-cta-link {
     margin-top: var(--navbar-height);
     margin-bottom: var(--navbar-height);
+  }
+}
+
+/* Animated Background Images */
+
+.land-see-background-animation {
+  top: calc(-80px + var(--navbar-height));
+  left: 0;
+  right: 0;
+  height: 0;
+  max-height: 0;
+  z-index: -1;
+}
+
+.land-see-background-animation svg {
+  width: 100%;
+  height: 100%;
+}
+
+.land-see-background-image-left {
+  top: 0;
+  left: -34%;
+  opacity: .2;
+  width: 327px;
+  height: 261px;
+}
+
+.land-see-background-image-right {
+  top: 125px;
+  right: -40%;
+  opacity: .3;
+  width: 313px;
+  height: 250px;
+}
+
+@media (--breakpoint-sm) {
+  .land-see-background-animation {
+    top: calc(-260px + var(--navbar-height));
+  }
+
+  .land-see-background-image-left {
+    width: 690px;
+    height: 551px;
+  }
+
+  .land-see-background-image-right {
+    top: 196px;
+    width: 491px;
+    height: 392px;
   }
 }
