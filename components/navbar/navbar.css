@@ -51,7 +51,10 @@
 .ampstart-nav a {
   cursor: pointer;
   text-decoration: none;
+}
 
+.ampstart-nav .ampstart-label {
+  color: inherit;
 }
 
 .ampstart-navbar-trigger {
