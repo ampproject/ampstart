@@ -28,15 +28,14 @@ limitations under the License.
   </header>
   <amp-selector layout="container">
   <main class="flex pl2">
-    <aside class="www-components-sec-nav col-2 xs-hide sm-hide relative">
-      <ul class="www-component-anchors list-reset m0 pt0 pb3 px1 caps">
+    <aside class="www-secondary-nav col-2 xs-hide sm-hide relative">
+      <ul class="www-secondary-nav-anchors list-reset m0 pt0 pb3 px1 caps">
         {{#components}}
-          <li class="clearfix mb3"><a href="#{{id}}" class="www-component-anchor text-decoration-none left" option="">{{name}}</a></li>
+          <li class="clearfix mb3"><a href="#{{id}}" class="www-secondary-nav-anchor text-decoration-none left" option="">{{name}}</a></li>
         {{/components}}
       </ul>
     </aside>
     <article class="www-components flex-auto col-8">
-
       {{#components}}
         <section class="www-component-desc flex-column justify-center" id="{{id}}">
           <h2 class="www-heading pb4 mb2 relative">{{name}}</h2>

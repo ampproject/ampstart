@@ -17,33 +17,6 @@
 @import '../highlight-syntax/atom-light-syntax';
 @import '../shared';
 
-.www-components-sec-nav {
-  padding-top: var(--space-7);
-  margin-top: calc(-1 * var(--space-7));
-  box-shadow: 5px 0 5px -5px rgba(0,0,0,0.4);
-  min-width: 200px;
-}
-
-.www-component-anchors {
-  position: sticky;
-  top: var(--space-7);
-}
-
-.www-component-anchor {
-  clear: both;
-}
-
-body .www-component-anchors .www-component-anchor[option][selected] {
-  outline: none;
-}
-
-.www-component-anchor[selected]::after {
-  content: '';
-  display: block;
-  height: 4px;
-  background: var(--header-gradient);
-}
-
 .www-header > * {
   padding-left: var(--space-7);
   padding-right: var(--space-7);
