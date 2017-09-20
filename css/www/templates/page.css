@@ -14,3 +14,11 @@
  * limitations under the License.
  */
 @import '../shared';
+
+.www-templates-group {
+  margin-top: var(--space-5);
+}
+
+.www-template-preview-img {
+  margin-bottom: var(--space-5);
+}

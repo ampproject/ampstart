@@ -91,8 +91,8 @@ h1,h2,h3,h4,h5,h6,
 /* Secondary nav */
 
 .www-secondary-nav {
-  padding-top: var(--space-7);
-  margin-top: calc(-1 * var(--space-7));
+  padding-top: 4.5rem;
+  margin-top: calc(-1 * 4.5rem);
   box-shadow: 5px 0 5px -5px rgba(0,0,0,0.4);
   min-width: 200px;
 }

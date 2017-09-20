@@ -41,20 +41,20 @@ limitations under the License.
       {{#template-groups}}
       {{#template-group}}
       <section class="www-templates-group flex-column justify-center" id="{{id}}">
-        <header>
-          <h2 class="ampstart-title-sm">{{title}}</h2>
-          <span class="ampstart-caption block">{{template-count}} templates</span>
+        <header class="mb2 www-heading relative">
+          <h2 class="ampstart-title-sm mb2">{{title}}</h2>
+          <span class="ampstart-caption block pb1">{{template-count}} templates</span>
         </header>
         <ul class="list-reset flex flex-wrap justify-between">
         {{#templates}}
         {{#template-preview}}
           <li class="col-10 md-col-5 lg-col-5 mx2">
             {{#img}}
-            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card"></amp-img>
             {{/img}}
-            <header>
+            <header class="mb4">
               <h3 class="ampstart-title-sm">{{title}}</h3>
-              <div>
+              <div class="display-none">
                 <amp-img src="" width="10" height="5" layout="fixed" alt="open template preview lightbox" class="xs-hide" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
                 <a href="{{{src}}}" target="_blank" class="sm-hide md-hide lg-hide">
                   <amp-img src="" width="10" height="5" layout="fixed" alt="View template in a new tab">
@@ -64,8 +64,8 @@ limitations under the License.
                 </a>
               </div>
             </header>
-            <p>{{desc}}</p>
-            <span class="ampstart-caption block">{{page-count}} pages</span>
+            <p class="mb3">{{desc}}</p>
+            <span class="ampstart-caption block mb4">{{page-count}} pages</span>
           </li>
         {{/template-preview}}
         {{/templates}}
