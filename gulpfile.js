@@ -231,7 +231,7 @@ gulp.task('postcss', 'build postcss files', function() {
       .pipe(gulp.dest(config.dest.css))
 });
 
-gulp.task('serve', 'Host a livereloading development webserver for amp start', ['watch:dev', 'configurator:watch'], function() {
+gulp.task('serve', 'Host a livereloading development webserver for amp start', ['watch:dev'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
     host: 'localhost',

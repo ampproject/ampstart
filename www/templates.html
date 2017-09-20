@@ -1,0 +1,90 @@
+{{!
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
+<!doctype html>
+{{#www-templates}}
+<html ⚡>
+{{> ../utils/amp-page-head.snip.html}}
+<body>
+  {{> ../components/navbar/navbar.snip.html}}
+  <header class="www-header">
+    <h1 class="mb4 px2 col-12 sm-col-8 mx-auto">Templates</h1>
+    <span class="h3 block mb4 px2 col-12 sm-col-8 mx-auto">Stand out from the crowd and make a business impact with our newest page designs</span>
+  </header>
+  <amp-selector layout="container">
+  <main class="flex">
+    <aside class="www-secondary-nav col-2 xs-hide sm-hide relative">
+      <ul class="www-secondary-nav-anchors list-reset m0 pt0 pb3 px1 caps">
+        {{#template-groups}}
+        {{#template-group}}
+        <li class="clearfix mb3"><a href="#{{id}}" class="www-secondary-nav-anchor text-decoration-none left" option="">{{title}}</a></li>
+        {{/template-group}}
+        {{/template-groups}}
+      </ul>
+    </aside>
+    <article class="www-templates mx-auto col-9">
+      {{#template-groups}}
+      {{#template-group}}
+      <section class="www-templates-group flex-column justify-center" id="{{id}}">
+        <header class="mb2 www-heading relative">
+          <h2 class="ampstart-title-sm mb2">{{title}}</h2>
+          <span class="ampstart-caption block pb1">{{template-count}} templates</span>
+        </header>
+        <ul class="list-reset flex flex-wrap justify-between">
+        {{#templates}}
+        {{#template-preview}}
+          <li class="col-10 md-col-5 lg-col-5 mx2">
+            {{#img}}
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card"></amp-img>
+            {{/img}}
+            <header class="mb4">
+              <h3 class="ampstart-title-sm">{{title}}</h3>
+              <div class="display-none">
+                <amp-img src="" width="10" height="5" layout="fixed" alt="open template preview lightbox" class="xs-hide" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
+                <a href="{{{src}}}" target="_blank" class="sm-hide md-hide lg-hide">
+                  <amp-img src="" width="10" height="5" layout="fixed" alt="View template in a new tab">
+                </a>
+                <a href="{{{download}}}" target="_blank" role="button" tabindex="0">
+                  <amp-img src="" width="10" height="5" layout="fixed" alt="Download template"></amp-img>
+                </a>
+              </div>
+            </header>
+            <p class="mb3">{{desc}}</p>
+            <span class="ampstart-caption block mb4">{{page-count}} pages</span>
+          </li>
+        {{/template-preview}}
+        {{/templates}}
+        </ul>
+      </section>
+      {{/template-group}}
+      {{/template-groups}}
+    </article>
+  </main>
+  </amp-selector>
+  {{> ../components/footer/footer.snip.html}}
+  {{> ../utils/www-analytics.snip.html}}
+  {{#template-groups}}
+  {{#template-group}}
+  {{#templates}}
+    {{> ../components/lightbox/template-preview.snip.html}}
+  {{/templates}}
+  {{/template-group}}
+  {{/template-groups}}
+</body>
+</html>
+{{/www-templates}}

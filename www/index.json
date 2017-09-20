@@ -32,7 +32,7 @@
       "sidebar-id": "header-sidebar",
       "nav": [
         {
-          "link": {"url": "index.html#templates", "text": "Templates", "classes": "www-current-page"}
+          "link": {"url": "templates.html", "text": "Templates"}
         },
         {
           "link": {"url": "components.html", "text": "Components"}
