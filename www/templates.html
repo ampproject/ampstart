@@ -76,12 +76,14 @@ limitations under the License.
     </article>
   </main>
   </amp-selector>
+  {{> ../components/footer/footer.snip.html}}
+  {{> ../utils/www-analytics.snip.html}}
   {{#template-groups}}
+  {{#template-group}}
   {{#templates}}
-  {{#template-previews}}
     {{> ../components/lightbox/template-preview.snip.html}}
-  {{/template-previews}}
   {{/templates}}
+  {{/template-group}}
   {{/template-groups}}
 </body>
 </html>

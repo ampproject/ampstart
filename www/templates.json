@@ -204,6 +204,25 @@
           ]
         }
       }
-    ]
+    ],
+    "footer": {
+      "social-follow": {
+        "links": [
+          {"twitter": "https://twitter.com/AMPhtml"},
+          {"github": "https://github.com/ampproject/ampstart"},
+          {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
+          {"wordpress": "https://amphtml.wordpress.com"}
+        ]
+      },
+      "faq-links": {
+        "links": [
+          {"text": "Privacy", "url": "https://www.google.com/policies/privacy/", "target": "_blank"},
+          {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE", "target": "_blank"}
+        ]
+      },
+      "copyright": {
+        "text": "AMP Start is part of the Accelerated Mobile Pages Project"
+      }
+    }
   }
 }
