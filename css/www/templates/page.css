@@ -38,6 +38,12 @@
   margin-top: var(--space-5);
 }
 
+.www-templates-group:target::before {
+  content: '';
+  display: block;
+  height: var(--navbar-height);
+}
+
 .www-template-preview-img {
   margin-bottom: var(--space-5);
 }
