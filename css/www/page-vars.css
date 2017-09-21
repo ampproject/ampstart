@@ -37,5 +37,7 @@
 
   --header-gradient: linear-gradient(to right, #280e75 0%, #066573 100%);
 
+  --header-image-gradient: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+
   --font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }

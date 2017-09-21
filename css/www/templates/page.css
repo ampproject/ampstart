@@ -16,6 +16,24 @@
 @import '../../../components/lightbox/template-preview';
 @import '../shared';
 
+.www-header {
+  position: relative;
+}
+
+.www-header::after {
+  content: '';
+  background-image: url('/img/www/templates/templates_hero.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+
 .www-templates-group {
   margin-top: var(--space-5);
 }
