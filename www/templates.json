@@ -72,8 +72,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "/img/www/index/template3.png",
-                  "2x_url": "/img/www/index/template3_2x.png",
+                  "url": "/img/www/templates/bikeshop.png",
+                  "2x_url": "/img/www/templates/bikeshop_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the Bike shop template"
                 },
@@ -90,8 +90,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "/img/www/index/template3.png",
-                  "2x_url": "/img/www/index/template3_2x.png",
+                  "url": "/img/www/templates/lune.png",
+                  "2x_url": "/img/www/templates/lune_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the Lune template"
                 },
