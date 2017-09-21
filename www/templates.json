@@ -15,12 +15,12 @@
         "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
       ],
       "favicon": {
-        "href": "../img/www/amp_favicon.png"
+        "href": "/img/www/amp_favicon.png"
       }
     },
     "navbar": {
       "logo": {
-        "url": "../img/www/amp_start_logo.svg",
+        "url": "/img/www/amp_start_logo.svg",
         "alt": "AMP start home logo",
         "width": "119",
         "height": "26",
@@ -72,8 +72,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "../img/www/index/template3.png",
-                  "2x_url": "../img/www/index/template3_2x.png",
+                  "url": "/img/www/templates/bikeshop.png",
+                  "2x_url": "/img/www/templates/bikeshop_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the Bike shop template"
                 },
@@ -90,8 +90,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "../img/www/index/template3.png",
-                  "2x_url": "../img/www/index/template3_2x.png",
+                  "url": "/img/www/templates/lune.png",
+                  "2x_url": "/img/www/templates/lune_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the Lune template"
                 },
@@ -117,8 +117,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "../img/www/index/theme1_article.png",
-                  "2x_url": "../img/www/index/theme1_article_2x.png",
+                  "url": "/img/www/index/theme1_article.png",
+                  "2x_url": "/img/www/index/theme1_article_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the travel blog template"
                 },
@@ -135,8 +135,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "../img/www/index/template1.png",
-                  "2x_url": "../img/www/index/template1_2x.png",
+                  "url": "/img/www/index/template1.png",
+                  "2x_url": "/img/www/index/template1_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the Food blog template"
                 },
@@ -163,8 +163,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "../img/www/index/theme2_home.png",
-                  "2x_url": "../img/www/index/theme2_home_2x.png",
+                  "url": "/img/www/index/theme2_home.png",
+                  "2x_url": "/img/www/index/theme2_home_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the travel blog template"
                 },
@@ -190,8 +190,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "../img/www/index/template3.png",
-                  "2x_url": "../img/www/index/template3_2x.png",
+                  "url": "/img/www/index/template3.png",
+                  "2x_url": "/img/www/index/template3_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the travel blog template"
                 },

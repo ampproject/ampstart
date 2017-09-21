@@ -16,10 +16,46 @@
 @import '../../../components/lightbox/template-preview';
 @import '../shared';
 
+.www-header {
+  position: relative;
+}
+
+.www-header::after {
+  content: '';
+  background-image: url('/img/www/templates/templates_hero.png');
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+
 .www-templates-group {
   margin-top: var(--space-5);
 }
 
+.www-templates-group:target::before {
+  content: '';
+  display: block;
+  height: var(--navbar-height);
+}
+
 .www-template-preview-img {
   margin-bottom: var(--space-5);
+}
+
+.www-templates-action {
+  cursor: pointer;
+}
+
+.www-templates-action .ampstart-icon{
+  fill: var(--color-black);
+}
+
+.www-templates-action:hover .ampstart-icon {
+  fill: var(--color-font-primary);
 }

@@ -29,7 +29,7 @@ limitations under the License.
   <amp-selector layout="container">
   <main class="flex">
     <aside class="www-secondary-nav col-2 xs-hide sm-hide relative">
-      <ul class="www-secondary-nav-anchors list-reset m0 pt0 pb3 px1 caps">
+      <ul class="www-secondary-nav-anchors list-reset m0 pt0 pb3 pl3 pr1 caps">
         {{#template-groups}}
         {{#template-group}}
         <li class="clearfix mb3"><a href="#{{id}}" class="www-secondary-nav-anchor text-decoration-none left" option="">{{title}}</a></li>
@@ -45,22 +45,24 @@ limitations under the License.
           <h2 class="ampstart-title-sm mb2">{{title}}</h2>
           <span class="ampstart-caption block pb1">{{template-count}} templates</span>
         </header>
-        <ul class="list-reset flex flex-wrap justify-between">
+        <ul class="list-reset flex flex-wrap justify-between m0">
         {{#templates}}
         {{#template-preview}}
-          <li class="col-10 md-col-5 lg-col-5 mx2">
+          <li class="col-10 sm-col-5 md-col-5 lg-col-5 mx2">
             {{#img}}
             <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card"></amp-img>
             {{/img}}
-            <header class="mb4">
+            <header class="mb4 flex justify-between items-baseline">
               <h3 class="ampstart-title-sm">{{title}}</h3>
-              <div class="display-none">
-                <amp-img src="" width="10" height="5" layout="fixed" alt="open template preview lightbox" class="xs-hide" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
-                <a href="{{{src}}}" target="_blank" class="sm-hide md-hide lg-hide">
-                  <amp-img src="" width="10" height="5" layout="fixed" alt="View template in a new tab">
+              <div class="inline-block">
+                <span class="www-templates-action inline-block xs-hide mr1" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
+                  {{> ../img/www/preview.svg}}
+                </span>
+                <a href="{{{src}}}" target="_blank" class="www-templates-action sm-hide md-hide lg-hide">
+                  {{> ../img/www/preview.svg}}
                 </a>
-                <a href="{{{download}}}" target="_blank" role="button" tabindex="0">
-                  <amp-img src="" width="10" height="5" layout="fixed" alt="Download template"></amp-img>
+                <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action inline-block xs-hide">
+                  {{> ../img/www/download.svg}}
                 </a>
               </div>
             </header>
