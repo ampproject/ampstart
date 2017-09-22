@@ -88,6 +88,7 @@
     "basscss-addons": "^1.0.0",
     "basscss-basic": "^1.0.0",
     "event-stream": "^3.3.4",
+    "firebase-functions": "^0.6.3",
     "gulp-zip": "^4.0.0",
     "normalize.css": "^5.0.0",
     "postcss": "5.2.14",

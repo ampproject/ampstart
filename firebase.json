@@ -5,6 +5,22 @@
   "hosting": {
     "public": "dist",
     "cleanUrls": true,
-    "redirects": []
+    "redirects": [],
+    "headers": [{
+      "source": "**",
+      "headers": [{
+        "key": "Access-Control-Allow-Origin",
+        "value": "*"
+      },{
+        "key": "access-control-expose-headers",
+        "value": "AMP-Access-Control-Allow-Source-Origin"
+      },{
+        "key": "AMP-Access-Control-Allow-Source-Origin",
+        "value": "*"
+      },{
+        "key": "Access-Control-Expose-Headers",
+        "value": "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token"
+      }]
+    }]
   }
 }
