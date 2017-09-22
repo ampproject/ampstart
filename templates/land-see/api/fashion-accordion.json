@@ -10,6 +10,7 @@
             "src": "../../img/land-see/content/retail-shop-370px.jpg"
           }
         ],
+        "post-classes": "land-see-post-item",
         "post-url": "#",
         "post-category": "Fashion",
         "post-category-url": "stories.amp.html#fashion",
@@ -25,6 +26,7 @@
             "src": "../../img/land-see/content/travel-accessories-outfits-2-400px.jpg"
           }
         ],
+        "post-classes": "land-see-post-item",
         "post-url": "#",
         "post-category": "Fashion",
         "post-category-url": "stories.amp.html#fashion",
