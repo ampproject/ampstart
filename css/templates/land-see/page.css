@@ -566,3 +566,67 @@ h4,
   width: 44px;
   height: 35px;
 }
+
+/* Hero Carousel */
+
+.land-see-hero-container {
+
+}
+
+.land-see-hero-content {
+  color: var(--color-font-secondary);
+  max-width: 800px;
+}
+
+.land-see-hero-content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(125,126,125,0) 0%,rgba(125,126,125,0.15) 30%,rgba(14,14,14,0.7) 100%);
+  z-index: 1;
+}
+
+.land-see-hero-image {
+  background-color: rgba(125,126,125,1);
+}
+
+.land-see-hero-image img {
+  object-position: bottom center;
+}
+
+.land-see-hero-typography {
+  top: 78%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.land-see-hero-title {
+  font: 400 var(--h1)/var(--line-height-6) var(--font-primary);
+  letter-spacing: normal;
+}
+
+.land-see-hero-caption {
+  width: 28rem;
+  font: 400 var(--h7)/var(--line-height-6) var(--font-primary);
+  opacity: .7;
+}
+
+.land-see-hero-button {
+  font: 400 var(--h9)/var(--line-height-6) var(--font-navigation);
+  padding: 9px 14px;
+  border: solid 1px var(--color-primary);
+  opacity: .7;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.land-see-hero-button:hover {
+  opacity: .6;
+}
+
+.land-see-hero-button:active {
+  top: 1px;
+}
