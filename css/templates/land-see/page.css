@@ -49,6 +49,13 @@ h4,
   line-height: var(--line-height-2);
 }
 
+.land-see-section-header {
+  font: 600 var(--h7)/var(--line-height-5) var(--font-navigation);
+  color: var(--color-font-primary);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .ampstart-headerbar {
   background: var(--color-primary);
   color: var(--color-font-primary);
@@ -430,7 +437,18 @@ h4,
 }
 
 .land-see-post-item-wide {
-  max-width: 402px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.land-see-post-featured {
+  width: 100%;
+}
+
+@media (min-width: 30rem) {
+  .land-see-post-featured {
+    width: 50%;
+  }
 }
 
 .land-see a.land-see-post-category {
@@ -484,7 +502,7 @@ h4,
 
 .land-see-background-image-left {
   top: 0;
-  left: -34%;
+  left: -36%;
   opacity: .2;
   width: 327px;
   height: 261px;
@@ -492,7 +510,7 @@ h4,
 
 .land-see-background-image-right {
   top: 125px;
-  right: -40%;
+  right: -44%;
   opacity: .3;
   width: 313px;
   height: 250px;
@@ -513,4 +531,38 @@ h4,
     width: 491px;
     height: 392px;
   }
+}
+
+/* Popular/Recent/Reccomended Stories */
+
+.land-see-popular-content,
+.land-see-recommended-content,
+.land-see-recent-content {
+  max-width: 850px;
+}
+
+.land-see .amp-carousel-button {
+  top: 97px;
+  height: 32px;
+  width: 16px;
+  outline: none;
+  cursor: pointer;
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32' overflow='visible'%3E%3Cpath fill='none' stroke='%23DFDFDF' stroke-miterlimit='10' d='M.354 31.201l15.423-15.424L.354.354'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+.land-see-popular-content .amp-carousel-button,
+.land-see-recommended-content .amp-carousel-button {
+  background-size: 85%;
+}
+
+.land-see .amp-carousel-button-prev {
+  transform-origin: center center;
+  transform: rotate(180deg) translateY(50%);
+}
+
+.land-see-recent-accent-image {
+  left: -5px;
+  bottom: 25%;
+  width: 44px;
+  height: 35px;
 }
