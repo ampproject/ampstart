@@ -49,7 +49,7 @@ h4,
   line-height: var(--line-height-2);
 }
 
-h4.land-see-section-header {
+.land-see-section-header {
   font: 600 var(--h7)/var(--line-height-5) var(--font-navigation);
   color: var(--color-font-primary);
   letter-spacing: 1px;
@@ -541,19 +541,22 @@ h4.land-see-section-header {
   max-width: 850px;
 }
 
-.land-see-popular-content .amp-carousel-button,
-.land-see-recommended-content .amp-carousel-button {
+.land-see .amp-carousel-button {
   top: 97px;
   height: 32px;
   width: 16px;
   outline: none;
   cursor: pointer;
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32' overflow='visible'%3E%3Cpath fill='none' stroke='%23DFDFDF' stroke-miterlimit='10' d='M.354 31.201l15.423-15.424L.354.354'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+.land-see-popular-content .amp-carousel-button,
+.land-see-recommended-content .amp-carousel-button {
   background-size: 85%;
 }
 
-.land-see-popular-content .amp-carousel-button-prev,
-.land-see-recommended-content .amp-carousel-button-prev {
+.land-see .amp-carousel-button-prev,
+.land-see .amp-carousel-button-prev {
   transform-origin: center center;
   transform: rotate(180deg) translateY(50%);
 }
