@@ -569,13 +569,12 @@ h4,
 
 /* Hero Carousel */
 
-.land-see-hero-container {
-
+.land-see-hero-carousel {
+  max-width: 800px;
 }
 
 .land-see-hero-content {
   color: var(--color-font-secondary);
-  max-width: 800px;
 }
 
 .land-see-hero-content:before {
@@ -593,7 +592,11 @@ h4,
   background-color: rgba(125,126,125,1);
 }
 
-.land-see-hero-image img {
+.land-see-cover-position-top img {
+  object-position: top center;
+}
+
+.land-see-cover-position-bottom img {
   object-position: bottom center;
 }
 
@@ -601,6 +604,10 @@ h4,
   top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.land-see-hero-typography a {
+  text-decoration: none;
 }
 
 .land-see-hero-title {

@@ -12,7 +12,8 @@
         "amp-form",
         "amp-anim",
         "amp-animation",
-        "amp-position-observer"
+        "amp-position-observer",
+        "amp-bind"
       ],
       "templates": [
         "amp-mustache"

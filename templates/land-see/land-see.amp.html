@@ -133,27 +133,46 @@ limitations under the License.
     </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
+    {{#land-see-hero}}
     <section class="land-see-hero-container mx-auto mb4 max-width-4 relative">
-      <div class="land-see-hero-content mx-auto relative">
-        <amp-img
-          alt=""
-          class="cover land-see-hero-image"
-          width="800"
-          height="435"
-          layout="responsive"
-          src="../../img/land-see/content/shoe-designer.jpg">
-        </amp-img>
-        <div class="land-see-hero-typography mx-auto absolute center z2">
-          <a class="land-see-post-category text-decoration-none max-width-1 sm-hide md-hide lg-hide" href="#">Fashion</a>
-          <h1 class="land-see-hero-title">Designer Kim Myeong</h1>
-          <p class="land-see-hero-caption max-width-2 pt1 mb3">
-            Relatively new to the industry, footwear designer Kim Myeong uses a unique<br />
-            mix of color, texture, and material to make her shoes the must-haves of this year.
-          </p>
-          <a class="land-see-hero-button relative">Read More</a>
+      {{#hero-carousel}}
+      <amp-carousel
+        class="{{classes}} mx-auto"
+        media="{{media-query}}"
+        width="{{width}}"
+        height="{{height}}"
+        layout="{{layout}}"
+        [slide]="{{selected-slide}}"
+        controls
+        loop
+        type="slides">
+        {{#hero-slide}}
+        <div class="land-see-hero-content mx-auto relative">
+          {{#image}}
+          <amp-img
+            class="{{classes}}"
+            alt="{{alt-text}}"
+            media="{{media-query}}"
+            width="{{width}}"
+            height="{{height}}"
+            layout="{{layout}}"
+            src="{{src}}">
+          </amp-img>
+          {{/image}}
+          <div class="land-see-hero-typography mx-auto absolute center z2">
+            <a class="land-see-post-category text-decoration-none max-width-1 sm-hide md-hide lg-hide" href="{{post-category-url}}">{{post-category}}</a>
+            <h1 class="land-see-hero-title"><a href="{{post-url}}">{{post-title}}</a></h1>
+            <p class="land-see-hero-caption max-width-2 pt1 mb3">
+              {{{post-copy}}}
+            </p>
+            <a href="{{post-url}}" class="land-see-hero-button relative">Read More</a>
+          </div>
         </div>
-      </div>
+        {{/hero-slide}}
+      </amp-carousel>
+      {{/hero-carousel}}
     </section>
+    {{/land-see-hero}}
 
     {{#land-see-popular}}
     <section class="land-see-popular-content mx-auto">
@@ -170,8 +189,8 @@ limitations under the License.
             <%#land-see-category%>
             <amp-carousel
               media="<%media-query%>"
-              height="<%height%>"
               width="<%width%>"
+              height="<%height%>"
               layout="<%layout%>"
               controls
               type="slides">
