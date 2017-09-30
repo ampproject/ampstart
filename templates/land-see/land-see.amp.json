@@ -6,11 +6,13 @@
     "layout": "responsive",
     "hero-carousel": [
       {
+        "layout-classes": "land-see-hero-left absolute",
+        "responsive-display-classes": "xs-hide sm-hide md-hide",
+        "id": "land-see-hero-left",
         "classes": "land-see-hero-carousel",
-        "media-query": "(min-width: 28rem)",
         "width": "800",
         "height": "435",
-        "layout": "responsive",
+        "layout": "fill",
         "hero-slide": [
           {
             "image": [
@@ -58,12 +60,170 @@
             "post-category": "Design",
             "post-category-url": "stories.amp.html#design",
             "post-title": "Nature's Inspiration",
-            "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br /> sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla, quam corrupti."
+            "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br /> sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
+          }
+        ]
+      },
+      {
+        "layout-classes": "land-see-hero-main mx-auto",
+        "id": "land-see-hero-main",
+        "classes": "land-see-hero-carousel",
+        "width": "800",
+        "height": "435",
+        "layout": "responsive",
+        "on-action": "slideChange:AMP.setState({selectedSlide: event.index}),land-see-hero-left.goToSlide(index=event.index),land-see-hero-right.goToSlide(index=event.index)",
+        "hero-slide": [
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-bottom",
+                "alt-text": "Designer Kim Myeong",
+                "width": 800, "height": 435, "layout": "responsive",
+                "src": "../../img/land-see/content/shoe-designer.jpg"
+              }
+            ],
+            "post-url": "kim-myeong.amp.html",
+            "post-button-text": "Read More",
+            "post-category": "Fashion",
+            "post-category-url": "stories.amp.html#fashion",
+            "post-title": "Designer Kim Myeong",
+            "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique<br />mix of color, texture, and material to make her shoes the must-haves of this year."
+          },
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-top",
+                "alt-text": "Skykomish River Valley ",
+                "width": 800, "height": 435, "layout": "responsive",
+                "src": "../../img/land-see/content/wallace-falls.jpg"
+              }
+            ],
+            "post-url": "#",
+            "post-button-text": "Read More",
+            "post-category": "Design",
+            "post-category-url": "stories.amp.html#design",
+            "post-title": "Nature's Inspiration",
+            "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br /> sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
+          },
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-top",
+                "alt-text": "Bold Coast Cottage",
+                "width": 800, "height": 435, "layout": "responsive",
+                "src": "../../img/land-see/content/maine.jpg"
+              }
+            ],
+            "post-url": "#",
+            "post-button-text": "Read More",
+            "post-category": "Interiors",
+            "post-category-url": "stories.amp.html#interiors",
+            "post-title": "Bold Coast Cottage in Main",
+            "post-copy": "My travels in Main have taken me to many destinations<br /> not in the standard visitor’s guide."
           }
         ],
-        "status-slide": {
-
+        "hero-progress-carousel": {
+          "button": [
+            {
+              "on-action": "tap:AMP.setState({selectedSlide: 0}),land-see-hero-main.goToSlide(index=0),land-see-hero-left.goToSlide(index=0),land-see-hero-right.goToSlide(index=0)",
+              "spacing-classes": "px0",
+              "image": [
+                {
+                  "classes": "land-see-progress-indicator land-see-selected-slide",
+                  "dynamic-classes": "selectedSlide == 0 ? 'land-see-progress-indicator land-see-selected-slide' : 'land-see-progress-indicator'",
+                  "alt-text": "Go to slide 1",
+                  "width": 7, "height": 7, "layout": "fixed",
+                  "src": "../../img/land-see/structure/progress-indicator.svg"
+                }
+              ]
+            },
+            {
+              "on-action": "tap:AMP.setState({selectedSlide: 1}),land-see-hero-main.goToSlide(index=1),land-see-hero-left.goToSlide(index=1),land-see-hero-right.goToSlide(index=1)",
+              "spacing-classes": "px1",
+              "image": [
+                {
+                  "classes": "land-see-progress-indicator",
+                  "dynamic-classes": "selectedSlide == 1 ? 'land-see-progress-indicator land-see-selected-slide' : 'land-see-progress-indicator'",
+                  "alt-text": "Go to slide 2",
+                  "width": 7, "height": 7, "layout": "fixed",
+                  "src": "../../img/land-see/structure/progress-indicator.svg"
+                }
+              ]
+            },
+            {
+              "on-action": "tap:AMP.setState({selectedSlide: 2}),land-see-hero-main.goToSlide(index=2),land-see-hero-left.goToSlide(index=2),land-see-hero-right.goToSlide(index=2)",
+              "spacing-classes": "px0",
+              "image": [
+                {
+                  "classes": "land-see-progress-indicator",
+                  "dynamic-classes": "selectedSlide == 2 ? 'land-see-progress-indicator land-see-selected-slide' : 'land-see-progress-indicator'",
+                  "alt-text": "Go to slide 3",
+                  "width": 7, "height": 7, "layout": "fixed",
+                  "src": "../../img/land-see/structure/progress-indicator.svg"
+                }
+              ]
+            }
+          ]
         }
+      },
+      {
+        "layout-classes": "land-see-hero-right absolute",
+        "responsive-display-classes": "xs-hide sm-hide md-hide",
+        "id": "land-see-hero-right",
+        "classes": "land-see-hero-carousel",
+        "width": "800",
+        "height": "435",
+        "layout": "responsive",
+        "hero-slide": [
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-top",
+                "alt-text": "Skykomish River Valley ",
+                "width": 800, "height": 435, "layout": "responsive",
+                "src": "../../img/land-see/content/wallace-falls.jpg"
+              }
+            ],
+            "post-url": "#",
+            "post-button-text": "Read More",
+            "post-category": "Design",
+            "post-category-url": "stories.amp.html#design",
+            "post-title": "Nature's Inspiration",
+            "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br /> sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
+          },
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-top",
+                "alt-text": "Bold Coast Cottage",
+                "width": 800, "height": 435, "layout": "responsive",
+                "src": "../../img/land-see/content/maine.jpg"
+              }
+            ],
+            "post-url": "#",
+            "post-button-text": "Read More",
+            "post-category": "Interiors",
+            "post-category-url": "stories.amp.html#interiors",
+            "post-title": "Bold Coast Cottage in Main",
+            "post-copy": "My travels in Main have taken me to many destinations<br /> not in the standard visitor’s guide."
+          },
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-bottom",
+                "alt-text": "Designer Kim Myeong",
+                "width": 800, "height": 435, "layout": "responsive",
+                "src": "../../img/land-see/content/shoe-designer.jpg"
+              }
+            ],
+            "post-url": "kim-myeong.amp.html",
+            "post-button-text": "Read More",
+            "post-category": "Fashion",
+            "post-category-url": "stories.amp.html#fashion",
+            "post-title": "Designer Kim Myeong",
+            "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique<br />mix of color, texture, and material to make her shoes the must-haves of this year."
+          }
+        ]
       }
     ]
   },
