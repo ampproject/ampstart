@@ -454,6 +454,7 @@ h4,
 .land-see a.land-see-post-category {
   font: 400 var(--h7)/var(--line-height-1) var(--font-navigation);
   text-transform: uppercase;
+  text-decoration: underline;
   color: var(--color-font-accent);
 }
 
@@ -509,7 +510,7 @@ h4,
 }
 
 .land-see-background-image-right {
-  top: 125px;
+  top: 0;
   right: -44%;
   opacity: .3;
   width: 313px;
@@ -579,7 +580,7 @@ h4,
   color: var(--color-font-secondary);
 }
 
-.land-see-hero-content:before {
+.land-see-hero-content amp-img:before {
   content: '';
   position: absolute;
   top: 0;
@@ -603,7 +604,7 @@ h4,
 }
 
 .land-see-hero-typography {
-  top: 78%;
+  bottom: -7%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -675,4 +676,47 @@ h4,
 
 .land-see-selected-slide {
   opacity: 1;
+}
+
+@media (--breakpoint-xs) {
+  .land-see-hero-title,
+  .land-see-hero-caption,
+  .land-see-hero-button {
+    color: var(--color-font-primary);
+  }
+
+  .land-see-hero-title {
+    font: 600 var(--h0)/var(--line-height-6) var(--font-primary);
+  }
+
+  .land-see-hero-caption {
+    width: auto;
+  }
+
+  .land-see-hero-button {
+    border-color: var(--color-font-primary);
+  }
+
+  .land-see-hero-button:visited {
+    color: var(--color-font-primary);
+  }
+
+  .land-see .amp-carousel-button {
+    top: 24%;
+  }
+
+  .land-see-hero-typography {
+    max-width: 300px;
+    margin-top: 32px;
+    bottom: auto;
+    left: auto;
+    transform: none;
+  }
+
+  .land-see-hero-progress {
+    position: absolute;
+    top: 266px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
 }

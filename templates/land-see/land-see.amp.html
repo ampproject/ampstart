@@ -134,12 +134,15 @@ limitations under the License.
     {{> ../../components/navbar/navbar.snip.html}}
 
     {{#land-see-hero}}
-    <section class="land-see-hero-container mx-auto mb4 max-width-4 relative overflow-hidden">
+    <section class="land-see-hero-container mx-auto mb3 max-width-4 relative overflow-hidden">
       {{#hero-carousel}}
       <div class="{{layout-classes}} {{responsive-display-classes}}">
         <amp-carousel
           id="{{id}}"
           class="{{classes}} mx-auto"
+          {{#media-query}}
+          media="{{media-query}}"
+          {{/media-query}}
           width="{{width}}"
           height="{{height}}"
           layout="{{layout}}"
@@ -162,10 +165,10 @@ limitations under the License.
               src="{{src}}">
             </amp-img>
             {{/image}}
-            <div class="land-see-hero-typography mx-auto absolute center z2">
+            <div class="land-see-hero-typography mx-auto center z2 {{post-classes}}">
               <a class="land-see-post-category text-decoration-none max-width-1 sm-hide md-hide lg-hide" href="{{post-category-url}}">{{post-category}}</a>
               <h1 class="land-see-hero-title"><a href="{{post-url}}">{{post-title}}</a></h1>
-              <p class="land-see-hero-caption max-width-2 pt1 mb3">
+              <p class="land-see-hero-caption mx-auto max-width-2 pt1 mb3">
                 {{{post-copy}}}
               </p>
               <a class="land-see-hero-button relative" href="{{post-url}}">Read More</a>

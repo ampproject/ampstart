@@ -1,9 +1,5 @@
 {
   "land-see-hero": {
-    "media-query": "(min-width: 52.06rem)",
-    "width": "800",
-    "height": "435",
-    "layout": "responsive",
     "hero-carousel": [
       {
         "layout-classes": "land-see-hero-left absolute",
@@ -12,7 +8,8 @@
         "classes": "land-see-hero-carousel",
         "width": "800",
         "height": "435",
-        "layout": "fill",
+        "layout": "responsive",
+        "on-action": "slideChange:AMP.setState({selectedSlide: event.index})",
         "hero-slide": [
           {
             "image": [
@@ -23,6 +20,7 @@
                 "src": "../../img/land-see/content/maine.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Interiors",
@@ -39,6 +37,7 @@
                 "src": "../../img/land-see/content/shoe-designer.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "kim-myeong.amp.html",
             "post-button-text": "Read More",
             "post-category": "Fashion",
@@ -55,6 +54,7 @@
                 "src": "../../img/land-see/content/wallace-falls.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Design",
@@ -68,10 +68,11 @@
         "layout-classes": "land-see-hero-main mx-auto",
         "id": "land-see-hero-main",
         "classes": "land-see-hero-carousel",
+        "media-query": "(min-width: 40.06rem)",
         "width": "800",
         "height": "435",
         "layout": "responsive",
-        "on-action": "slideChange:AMP.setState({selectedSlide: event.index}),land-see-hero-left.goToSlide(index=event.index),land-see-hero-right.goToSlide(index=event.index)",
+        "on-action": "slideChange:AMP.setState({selectedSlide: event.index})",
         "hero-slide": [
           {
             "image": [
@@ -82,6 +83,7 @@
                 "src": "../../img/land-see/content/shoe-designer.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "kim-myeong.amp.html",
             "post-button-text": "Read More",
             "post-category": "Fashion",
@@ -98,6 +100,7 @@
                 "src": "../../img/land-see/content/wallace-falls.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Design",
@@ -114,6 +117,7 @@
                 "src": "../../img/land-see/content/maine.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Interiors",
@@ -121,11 +125,71 @@
             "post-title": "Bold Coast Cottage in Main",
             "post-copy": "My travels in Main have taken me to many destinations<br /> not in the standard visitor’s guide."
           }
+        ]
+      },
+      {
+        "layout-classes": "land-see-hero-main mx-auto",
+        "id": "land-see-hero-main-small",
+        "classes": "land-see-hero-carousel",
+        "media-query": "(max-width: 40rem)",
+        "width": "auto",
+        "height": "570",
+        "layout": "fixed-height",
+        "on-action": "slideChange:AMP.setState({selectedSlide: event.index})",
+        "hero-slide": [
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-top",
+                "alt-text": "Designer Kim Myeong",
+                "width": "auto", "height": 278, "layout": "fixed-height",
+                "src": "../../img/land-see/content/shoe-designer-centered.jpg"
+              }
+            ],
+            "post-url": "kim-myeong.amp.html",
+            "post-button-text": "Read More",
+            "post-category": "Fashion",
+            "post-category-url": "stories.amp.html#fashion",
+            "post-title": "Designer Kim Myeong",
+            "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique mix of color, texture, and material to make her shoes the must-haves of this year."
+          },
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image",
+                "alt-text": "Skykomish River Valley ",
+                "width": "auto", "height": 278, "layout": "fixed-height",
+                "src": "../../img/land-see/content/wallace-falls.jpg"
+              }
+            ],
+            "post-url": "#",
+            "post-button-text": "Read More",
+            "post-category": "Design",
+            "post-category-url": "stories.amp.html#design",
+            "post-title": "Nature's Inspiration",
+            "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
+          },
+          {
+            "image": [
+              {
+                "classes": "cover land-see-hero-image land-see-cover-position-top",
+                "alt-text": "Bold Coast Cottage",
+                "width": "auto", "height": 278, "layout": "fixed-height",
+                "src": "../../img/land-see/content/maine.jpg"
+              }
+            ],
+            "post-url": "#",
+            "post-button-text": "Read More",
+            "post-category": "Interiors",
+            "post-category-url": "stories.amp.html#interiors",
+            "post-title": "Bold Coast Cottage in Main",
+            "post-copy": "My travels in Main have taken me to many destinations not in the standard visitor’s guide."
+          }
         ],
         "hero-progress-carousel": {
           "button": [
             {
-              "on-action": "tap:AMP.setState({selectedSlide: 0}),land-see-hero-main.goToSlide(index=0),land-see-hero-left.goToSlide(index=0),land-see-hero-right.goToSlide(index=0)",
+              "on-action": "tap:AMP.setState({selectedSlide: 0})",
               "spacing-classes": "px0",
               "image": [
                 {
@@ -138,7 +202,7 @@
               ]
             },
             {
-              "on-action": "tap:AMP.setState({selectedSlide: 1}),land-see-hero-main.goToSlide(index=1),land-see-hero-left.goToSlide(index=1),land-see-hero-right.goToSlide(index=1)",
+              "on-action": "tap:AMP.setState({selectedSlide: 1})",
               "spacing-classes": "px1",
               "image": [
                 {
@@ -151,7 +215,7 @@
               ]
             },
             {
-              "on-action": "tap:AMP.setState({selectedSlide: 2}),land-see-hero-main.goToSlide(index=2),land-see-hero-left.goToSlide(index=2),land-see-hero-right.goToSlide(index=2)",
+              "on-action": "tap:AMP.setState({selectedSlide: 2})",
               "spacing-classes": "px0",
               "image": [
                 {
@@ -174,6 +238,7 @@
         "width": "800",
         "height": "435",
         "layout": "responsive",
+        "on-action": "slideChange:AMP.setState({selectedSlide: event.index})",
         "hero-slide": [
           {
             "image": [
@@ -184,6 +249,7 @@
                 "src": "../../img/land-see/content/wallace-falls.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Design",
@@ -200,6 +266,7 @@
                 "src": "../../img/land-see/content/maine.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Interiors",
@@ -216,6 +283,7 @@
                 "src": "../../img/land-see/content/shoe-designer.jpg"
               }
             ],
+            "post-classes": "absolute",
             "post-url": "kim-myeong.amp.html",
             "post-button-text": "Read More",
             "post-category": "Fashion",
