@@ -197,7 +197,7 @@
                   "dynamic-classes": "selectedSlide == 0 ? 'land-see-progress-indicator land-see-selected-slide' : 'land-see-progress-indicator'",
                   "alt-text": "Go to slide 1",
                   "width": 7, "height": 7, "layout": "fixed",
-                  "src": "../../img/land-see/structure/progress-indicator.svg"
+                  "src": "../../img/land-see/structure/carousel-progress-indicator.svg"
                 }
               ]
             },
@@ -210,7 +210,7 @@
                   "dynamic-classes": "selectedSlide == 1 ? 'land-see-progress-indicator land-see-selected-slide' : 'land-see-progress-indicator'",
                   "alt-text": "Go to slide 2",
                   "width": 7, "height": 7, "layout": "fixed",
-                  "src": "../../img/land-see/structure/progress-indicator.svg"
+                  "src": "../../img/land-see/structure/carousel-progress-indicator.svg"
                 }
               ]
             },
@@ -223,7 +223,7 @@
                   "dynamic-classes": "selectedSlide == 2 ? 'land-see-progress-indicator land-see-selected-slide' : 'land-see-progress-indicator'",
                   "alt-text": "Go to slide 3",
                   "width": 7, "height": 7, "layout": "fixed",
-                  "src": "../../img/land-see/structure/progress-indicator.svg"
+                  "src": "../../img/land-see/structure/carousel-progress-indicator.svg"
                 }
               ]
             }
