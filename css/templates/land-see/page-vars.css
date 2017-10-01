@@ -26,12 +26,12 @@
   --h8: .750rem;  /* 12px */
   --h9: .688rem; /* 11px */
 
-  --line-height-1: 2.7;
-  --line-height-2: 1.42857;  /* 20px/14px*/
-  --line-height-3: 2.0625;  /* 33px/16px*/
-  --line-height-4: 1.81818;  /* 20px/11px */
-  --line-height-5: 1.6;  /* 32px/20px */
-  --line-height-6: 1.11111;  /* 40px/36px */
+  --line-height-1: 1.11111;
+  --line-height-2: 1.42857;
+  --line-height-3: 1.6;
+  --line-height-4: 2.0625;
+
+  --space-4: 2.5rem;
 
   --navbar-height: 3.5rem;
 
