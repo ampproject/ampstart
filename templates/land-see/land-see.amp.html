@@ -133,15 +133,72 @@ limitations under the License.
     </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
-    <div class="mx-auto m3 max-width-4">
-      <h1 class="pt3">Hello AMP!</h1>
-      <p class="pb2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p class="pb2">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-      </p>
-    </div>
+    {{#land-see-hero}}
+    <section class="land-see-hero-container mx-auto mb3 max-width-4 relative overflow-hidden">
+      {{#hero-carousel}}
+      <div class="{{layout-classes}} {{responsive-display-classes}}">
+        <amp-carousel
+          id="{{id}}"
+          class="{{classes}} mx-auto"
+          {{#media-query}}
+          media="{{media-query}}"
+          {{/media-query}}
+          width="{{width}}"
+          height="{{height}}"
+          layout="{{layout}}"
+          [slide]="selectedSlide"
+          {{#on-action}}
+          on="{{on-action}}"
+          {{/on-action}}
+          controls
+          loop
+          type="slides">
+          {{#hero-slide}}
+          <div class="land-see-hero-content mx-auto relative">
+            {{#image}}
+            <amp-img
+              class="{{classes}}"
+              alt="{{alt-text}}"
+              width="{{width}}"
+              height="{{height}}"
+              layout="{{layout}}"
+              src="{{src}}">
+            </amp-img>
+            {{/image}}
+            <div class="land-see-hero-typography mx-auto center z2 {{post-classes}}">
+              <a class="land-see-post-category underline caps max-width-1 sm-hide md-hide lg-hide" href="{{post-category-url}}">{{post-category}}</a>
+              <h1 class="land-see-hero-title"><a class="text-decoration-none" href="{{post-url}}">{{{post-title}}}</a></h1>
+              <p class="land-see-hero-caption mx-auto max-width-2 pt1 mb3">
+                {{{post-copy}}}
+              </p>
+              <a class="land-see-hero-button text-decoration-none relative" href="{{post-url}}">Read More</a>
+            </div>
+          </div>
+          {{/hero-slide}}
+        </amp-carousel>
+        {{#hero-progress-carousel}}
+        <div class="land-see-hero-progress mt2 center">
+          {{#button}}
+          <button on="{{on-action}}" class="{{spacing-classes}}">
+            {{#image}}
+            <amp-img
+              [class]="{{dynamic-classes}}"
+              class="{{classes}}"
+              alt="{{alt}}"
+              width="{{width}}"
+              height="{{height}}"
+              layout="{{layout}}"
+              src="{{src}}">
+            </amp-img>
+            {{/image}}
+          </button>
+          {{/button}}
+        </div>
+        {{/hero-progress-carousel}}
+      </div>
+      {{/hero-carousel}}
+    </section>
+    {{/land-see-hero}}
 
     {{#land-see-popular}}
     <section class="land-see-popular-content mx-auto">
@@ -158,8 +215,8 @@ limitations under the License.
             <%#land-see-category%>
             <amp-carousel
               media="<%media-query%>"
-              height="<%height%>"
               width="<%width%>"
+              height="<%height%>"
               layout="<%layout%>"
               controls
               type="slides">
@@ -180,7 +237,7 @@ limitations under the License.
                       </amp-img>
                     <%/image%>
                   </a>
-                  <a class="land-see-post-category text-decoration-none" href="<%post-category-url%>"><%post-category%></a>
+                  <a class="land-see-post-category inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
                   <h4 class="pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
                   <p class="pt1 pb3"><%post-copy%></p>
                 </div>
@@ -246,7 +303,7 @@ limitations under the License.
                 </amp-img>
               {{/image}}
             </a>
-            <a class="land-see-post-category text-decoration-none" href="{{post-category-url}}">{{post-category}}</a>
+            <a class="land-see-post-category inline-block pt1 underline caps" href="{{post-category-url}}">{{post-category}}</a>
             <h4 class="pt1"><a class="text-decoration-none" href="{{post-url}}">{{post-title}}</a></h4>
             <p class="pt1 pb3">{{post-copy}}</p>
           </li>

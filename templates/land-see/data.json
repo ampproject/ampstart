@@ -12,14 +12,15 @@
         "amp-form",
         "amp-anim",
         "amp-animation",
-        "amp-position-observer"
+        "amp-position-observer",
+        "amp-bind"
       ],
       "templates": [
         "amp-mustache"
       ],
       "css-path": "templates/land-see/page.css",
       "font-stylesheets": [
-        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text"
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat:400,500,600,700|Crimson+Text:400,600"
       ]
     }
   },
