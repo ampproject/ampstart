@@ -3,7 +3,10 @@
     "head-tag": {
       "title": "Lune",
       "canonical-path": "templates/lune.amp",
-      "extensions": [],
+      "extensions": [
+        "amp-position-observer",
+        "amp-animation"
+      ],
       "css-path": "templates/lune/page.css"
     }
   },
@@ -12,10 +15,11 @@
     {
       "classes": "z2 lune-theme-light",
       "full_title": "Lune blanc",
-      "product_image": {
+      "product_360_image": {
         "alt": "Lune Blanc",
-        "webp_srcset": "../../img/lune/landing-hero-blanc@1x.webp, ../../img/lune/landing-hero-blanc@2x.webp 2x",
-        "fallback_srcset": "../../img/lune/landing-hero-blanc@1x.png, ../../img/lune/landing-hero-blanc@2x.png 2x",
+        "webp_layers": "../../img/lune/360/blanc",
+        "fallback_layers": "../../img/lune/360/blanc",
+        "total_layers": 3,
         "width": 1,
         "height": 1.37,
         "placeholder_classes": "lune-theme-light"
@@ -33,10 +37,11 @@
     {
       "classes": "z1 lune-theme-dark",
       "full_title": "Lune noir",
-      "product_image": {
+      "product_360_image": {
         "alt": "Lune Noir",
-        "webp_srcset": "../../img/lune/landing-hero-noir@1x.webp, ../../img/lune/landing-hero-noir@2x.webp 2x",
-        "fallback_srcset": "../../img/lune/landing-hero-noir@1x.png, ../../img/lune/landing-hero-noir@2x.png 2x",
+        "webp_layers": "../../img/lune/360/noir",
+        "fallback_layers": "../../img/lune/360/noir",
+        "total_layers": 3,
         "width": 1,
         "height": 1.37,
         "placeholder_classes": "lune-theme-dark"

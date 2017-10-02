@@ -17,6 +17,25 @@ limitations under the License.
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
+    <amp-animation id="chairRotationAnim" layout="nodisplay">
+      <script type="application/json">
+        {
+        "duration": "1s",
+        "fill": "both",
+        "direction": "alternate",
+        "animations": [
+          {
+            "selector": ".lune-anim-scale-up",
+            "keyframes": [
+              { "transform": "rotate(10deg)" },
+              { "transform": "rotate(-360deg)" }
+            ]
+          }
+        ]
+      }
+      </script>
+    </amp-animation>
+
     <!-- The clipPath is used in the CSS `clip-path` property; it's used to achieve a
       clipping effect while scrolling the page (see mocks/lune/landing-page-clipping.gif) -->
     <div class="hide">
@@ -40,30 +59,9 @@ limitations under the License.
             <h2 class="hide">{{full_title}}</h2>
             <figure class="lune-landing-content relative col-12 m0 flex-none">
               <!-- Chair image -->
-              {{#product_image}}
-                <!-- WebP image -->
-                <amp-img
-                  class="lune-anim-scale-up z1"
-                  alt="{{alt}}"
-                  srcset="{{webp_srcset}}"
-                  width="{{width}}"
-                  height="{{height}}"
-                  layout="responsive">
-                    <!-- Placeholder -->
-                    <!-- Commented out for now as an issue remains when using placeholders with web
-                         https://github.com/ampproject/amphtml/issues/10646 -->
-                    <!-- PNG Fallback -->
-                    <amp-img
-                      fallback
-                      class="lune-anim-scale-up z1"
-                      alt="{{alt}}"
-                      srcset="{{fallback_srcset}}"
-                      width="{{width}}"
-                      height="{{height}}"
-                      layout="responsive">
-                    </amp-img>
-                </amp-img>
-              {{/product_image}}
+              {{#product_360_image}}
+                {{> partials/product/chair-360.snip.html}}
+              {{/product_360_image}}
               <!-- Product name -->
               <span class="lune-landing-title-middle lune-anim-move-up flex justify-between z1 absolute caps h3 md-h1" aria-hidden="true">{{#product_name_split}}<span>{{.}}</span>{{/product_name_split}}</span>
               <!-- LU- -->
@@ -77,8 +75,10 @@ limitations under the License.
             {{> partials/components/scroll-indicator.snip.html}}
           </div>
         </section>
-
       {{/landing-sections}}
+      <div class="lune-scrolling-marker">
+        <amp-position-observer on="scroll:chairRotationAnim.seekTo(percent=event.percent)" layout="nodisplay"></amp-position-observer>
+      </div>
       </div>
     </main>
   </body>
