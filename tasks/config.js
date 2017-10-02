@@ -25,7 +25,7 @@ module.exports = {
     www_pages: 'www/**/*.html',
     hl_partials: 'hl-partials/**/*.html',
     css: ['css/**/*.css'],
-    css_ignore: ['!css/**/_*.css', '!css/ampstart-base/**/*.css'],
+    css_ignore: ['!css/**/_*.css', '!css/ampstart-base/**/*.css', '!css/**/page-vars.css'],
     data: ['*/**/*.json', '!templates/*/data/*.json'],
     img: 'img/**',
     configurator: 'www/configurator/src'
@@ -40,6 +40,6 @@ module.exports = {
     img: 'dist/img/',
     configurator: 'dist/configurator',
     configurator_tmp: '.tmp/configurator',
-    uncompiled_css: 'dist/configurator/uncompiledCss'
+    uncompiled_css: 'dist/configurator/uncompiled-css'
   },
 };

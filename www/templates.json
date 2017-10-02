@@ -1,0 +1,228 @@
+{
+  "www-templates": {
+    "head-tag": {
+      "title": "AMP Start - Templates",
+      "canonical-path": "templates",
+      "extensions": [
+        "amp-sidebar",
+        "amp-lightbox",
+        "amp-iframe",
+        "amp-selector",
+        "amp-analytics"
+      ],
+      "css-path": "www/templates/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
+      ],
+      "favicon": {
+        "href": "/img/www/amp_favicon.png"
+      }
+    },
+    "navbar": {
+      "logo": {
+        "url": "/img/www/amp_start_logo.svg",
+        "alt": "AMP start home logo",
+        "width": "119",
+        "height": "26",
+        "classes": "xs-hide sm-hide",
+        "href": "/"
+      },
+      "name": "AMP Start",
+      "sidebar-id": "header-sidebar",
+      "nav": [
+        {
+          "link": {"url": "templates", "text": "Templates", "classes": "www-current-page"}
+        },
+        {
+          "link": {"url": "components.html", "text": "Components"}
+        },
+        {
+          "link": {"url": "getstarted.html", "text": "Get Started"}
+        },
+        {
+          "link": {"url": "howitworks.html", "text": "How it works"}
+        },
+        {
+          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?", "target": "_blank"}
+        },
+        {
+          "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub", "target": "_blank"}
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "https://twitter.com/AMPhtml"},
+          {"github": "https://github.com/ampproject/ampstart"},
+          {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
+          {"wordpress": "https://amphtml.wordpress.com"}
+        ]
+      }
+    },
+    "template-groups":[
+      {
+        "template-group": {
+          "title": "Shop",
+          "id": "shop",
+          "template-count": "3",
+          "templates": [
+            {
+              "template-preview": {
+                "title": "Bikes",
+                "page-count": "4",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/templates/bikeshop.png",
+                  "2x_url": "/img/www/templates/bikeshop_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the Bike shop template"
+                },
+                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "lightbox-id": "shop-bike-template",
+                "src": "templates/e-commerce/landing.amp.html",
+                "download": "archive/e-commerce.zip"
+              }
+            },
+            {
+              "template-preview": {
+                "title": "Lune",
+                "page-count": "4",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/templates/lune.png",
+                  "2x_url": "/img/www/templates/lune_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the Lune template"
+                },
+                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "lightbox-id": "shop-lune-template",
+                "src": "templates/lune/lune.amp.html",
+                "download": "archive/lune.zip"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "template-group": {
+          "title": "Blog",
+          "id": "blog",
+          "template-count": "2",
+          "templates": [
+            {
+              "template-preview": {
+                "title": "Travel",
+                "page-count": "4",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/index/theme1_article.png",
+                  "2x_url": "/img/www/index/theme1_article_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the travel blog template"
+                },
+                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "lightbox-id": "travel-blog-template",
+                "src": "templates/themes_1/template_1_article.amp.html",
+                "download": "archive/themes_1.zip"
+              }
+            },
+            {
+              "template-preview": {
+                "title": "Food",
+                "page-count": "4",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/index/template1.png",
+                  "2x_url": "/img/www/index/template1_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the Food blog template"
+                },
+                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "lightbox-id": "food-blog-template",
+                "src": "templates/blog/blog.amp.html",
+                "download": "archive/blog.zip"
+              }
+            }
+
+          ]
+        }
+      },
+      {
+        "template-group": {
+          "title": "Business",
+          "id": "business",
+          "template-count": "1",
+          "templates": [
+            {
+              "template-preview": {
+                "title": "Restaurant",
+                "page-count": "2",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/index/theme2_home.png",
+                  "2x_url": "/img/www/index/theme2_home_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the travel blog template"
+                },
+                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "lightbox-id": "business-restaurant-template",
+                "src": "templates/themes_2/home.amp.html",
+                "download": "archive/themes_2.zip"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "template-group": {
+          "title": "Article",
+          "id": "article",
+          "template-count": "1",
+          "templates": [
+            {
+              "template-preview": {
+                "title": "Travel",
+                "page-count": "2",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/index/template3.png",
+                  "2x_url": "/img/www/index/template3_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the travel blog template"
+                },
+                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "lightbox-id": "article-travel-template",
+                "src": "templates/article/article.amp.html",
+                "download": "archive/article.zip"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "footer": {
+      "social-follow": {
+        "links": [
+          {"twitter": "https://twitter.com/AMPhtml"},
+          {"github": "https://github.com/ampproject/ampstart"},
+          {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
+          {"wordpress": "https://amphtml.wordpress.com"}
+        ]
+      },
+      "faq-links": {
+        "links": [
+          {"text": "Privacy", "url": "https://www.google.com/policies/privacy/", "target": "_blank"},
+          {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE", "target": "_blank"}
+        ]
+      },
+      "copyright": {
+        "text": "AMP Start is part of the Accelerated Mobile Pages Project"
+      }
+    }
+  }
+}

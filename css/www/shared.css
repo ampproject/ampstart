@@ -35,7 +35,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .ampstart-headerbar-nav .ampstart-nav-item.www-current-page::after,
-.www-component-anchor[selected]::after {
+.www-secondary-nav-anchor[selected]::after {
   content: '';
   display: block;
   height: 4px;
@@ -86,4 +86,33 @@ h1,h2,h3,h4,h5,h6,
 
 .ampstart-device-preview-select {
   box-shadow: 0 0 5px 2px rgba(0,0,0,.1);
+}
+
+/* Secondary nav */
+
+.www-secondary-nav {
+  padding-top: 4.5rem;
+  margin-top: calc(-1 * 4.5rem);
+  box-shadow: 5px 0 5px -5px rgba(0,0,0,0.4);
+  min-width: 200px;
+}
+
+.www-secondary-nav-anchors {
+  position: sticky;
+  top: var(--space-7);
+}
+
+.www-secondary-nav-anchor {
+  clear: both;
+}
+
+body .www-secondary-nav-anchors .www-secondary-nav-anchor[option][selected] {
+  outline: none;
+}
+
+.www-secondary-nav-anchor[selected]::after {
+  content: '';
+  display: block;
+  height: 4px;
+  background: var(--header-gradient);
 }

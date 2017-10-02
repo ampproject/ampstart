@@ -13,12 +13,12 @@
         "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
       ],
       "favicon": {
-        "href": "../img/www/amp_favicon.png"
+        "href": "/img/www/amp_favicon.png"
       }
     },
     "navbar": {
       "logo": {
-        "url": "../img/www/amp_start_logo.svg",
+        "url": "/img/www/amp_start_logo.svg",
         "alt": "AMP start home logo",
         "width": "119",
         "height": "26",
@@ -29,7 +29,7 @@
       "sidebar-id": "header-sidebar",
       "nav": [
         {
-          "link": {"url": "index.html#templates", "text": "Templates"}
+          "link": {"url": "templates.html", "text": "Templates"}
         },
         {
           "link": {"url": "components.html", "text": "Components"}

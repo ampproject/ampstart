@@ -20,7 +20,7 @@ const config = require('./config');
 
 function validate() {
   return gulp.src([
-        `${config.dest.templates}/**/*.html`,
+        `${config.dest.templates}/**/*amp.html`,
         `!${config.dest.hl_partials}/**/*.html`,
         `!${config.dest.configurator}/**/*.html`,
       ])

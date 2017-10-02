@@ -12,7 +12,7 @@
     "heros": [
       {
         "hero": {
-          "text-theme": "secondary",
+          "text-theme": "primary",
           "title": "The Essentials",
           "body": "These are the key frames, clothing and accessories every rider needs.",
           "link": {

@@ -27,6 +27,7 @@ const path = require('path');
 const config = require('./tasks/config');
 const server = require('gulp-webserver');
 const merge = require('deepmerge');
+const argv = require('minimist')(process.argv.slice(2));
 require('./tasks');
 
 let partialsMap = {};
@@ -117,7 +118,12 @@ function getPartials(acc, embedderDir, template) {
 gulp.task('build', 'build', function(cb) {
   runSequence(
       'clean', 'highlight', 'escape', 'img', 'templateapi', 'postcss', 'countcss', 'posthtml', 'www', 'validate',
-      'bundle', cb);
+      'bundle', 'configurator', cb);
+});
+
+gulp.task('build:dev', 'runs a more lightweight build, meant for development and not production', function(cb) {
+  runSequence(
+      'escape', 'img', 'templateapi', 'postcss', 'posthtml', 'www', cb);
 });
 
 gulp.task('clean', function() {
@@ -170,7 +176,7 @@ gulp.task('www', function() {
       .pipe(gulp.dest(config.dest.www_pages))
 });
 
-gulp.task('watch:www', 'watch stuff, minimal watching for development', ['build'], function() {
+gulp.task('watch:www', 'watch stuff, minimal watching for development, including template validation', ['build'], function() {
   return gulp.watch(
       [
         config.src.components, config.src.templates, config.src.www_pages,
@@ -181,7 +187,18 @@ gulp.task('watch:www', 'watch stuff, minimal watching for development', ['build'
       });
 });
 
-gulp.task('default', ['build']);
+gulp.task('watch:dev', 'watch stuff, (more) minimal watching for development, without validation', ['build:dev'], function() {
+  return gulp.watch(
+      [
+        config.src.components, config.src.templates, config.src.www_pages,
+        config.src.css, config.src.data, config.src.img
+      ],
+      function(event) {
+        runSequence(['build:dev']);
+      });
+});
+
+gulp.task('default', ['serve']);
 
 gulp.task('posthtml', 'build kickstart files', function() {
   const plugins = [
@@ -217,10 +234,11 @@ gulp.task('postcss', 'build postcss files', function() {
       .pipe(gulp.dest(config.dest.css))
 });
 
-gulp.task('serve', 'Host a livereloading webserver for the project', ['watch:www'], function() {
+gulp.task('serve', 'Host a livereloading development webserver for amp start', ['watch:dev'], function() {
   gulp.src(config.dest.default).pipe(server({
     livereload: true,
-    host: '0.0.0.0',
+    host: 'localhost',
+    port: argv.port || 8000,
     directoryListing: {enable: true, path: 'dist'},
   }));
 });
