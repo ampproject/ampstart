@@ -1,0 +1,162 @@
+{
+  "www-index": {
+    "head-tag": {
+      "title": "AMP Start - Accelarated Mobile Pages Templates",
+      "canonical-path": "",
+      "extensions": [
+        "amp-carousel",
+        "amp-sidebar",
+        "amp-lightbox",
+        "amp-iframe",
+        "amp-selector",
+        "amp-analytics"
+      ],
+      "css-path": "www/index/1.0/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
+      ],
+      "favicon": {
+        "href": "/img/www/amp_favicon.png"
+      }
+    },
+    "navbar": {
+      "logo": {
+        "url": "/img/www/amp_start_logo.svg",
+        "alt": "AMP start home logo",
+        "width": "119",
+        "height": "26",
+        "classes": "xs-hide sm-hide",
+        "href": "/"
+      },
+      "name": "The Blog",
+      "sidebar-id": "header-sidebar",
+      "nav": [
+        {
+          "link": {"url": "templates.html", "text": "Templates"}
+        },
+        {
+          "link": {"url": "components.html", "text": "Components"}
+        },
+        {
+          "link": {"url": "getstarted.html", "text": "Get Started"}
+        },
+        {
+          "link": {"url": "howitworks.html", "text": "How it works"}
+        },
+        {
+          "link": {"url": "https://www.ampproject.org/learn/about-amp/", "text": "What is AMP?", "target": "_blank"}
+        },
+        {
+          "link": {"url": "https://github.com/ampproject/ampstart", "text": "GitHub", "target": "_blank"}
+        }
+      ],
+      "social-follow": {
+        "links": [
+          {"twitter": "https://twitter.com/AMPhtml"},
+          {"github": "https://github.com/ampproject/ampstart"},
+          {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
+          {"wordpress": "https://amphtml.wordpress.com"}
+        ]
+      }
+    },
+    "footer": {
+      "social-follow": {
+        "links": [
+          {"twitter": "https://twitter.com/AMPhtml"},
+          {"github": "https://github.com/ampproject/ampstart"},
+          {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
+          {"wordpress": "https://amphtml.wordpress.com"}
+        ]
+      },
+      "faq-links": {
+        "links": [
+          {"text": "Privacy", "url": "https://www.google.com/policies/privacy/", "target": "_blank"},
+          {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE", "target": "_blank"}
+        ]
+      },
+      "copyright": {
+        "text": "AMP Start is part of the Accelerated Mobile Pages Project"
+      }
+    },
+    "features-showcase": [
+      {
+        "feature": {
+          "title": "Flexible",
+          "desc": "Modern designs that you can customize to suit your needs.",
+          "actions": [
+            {
+              "link": {"url": "templates.html", "text": "View all templates"}
+            }
+          ],
+          "template-preview": {
+            "title": "Article",
+            "img": {
+              "width": "360",
+              "height": "640",
+              "url": "/img/www/index/template3.png",
+              "2x_url": "/img/www/index/template3_2x.png",
+              "layout": "responsive",
+              "alt": "Screenshot of the Article template"
+            },
+            "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
+            "lightbox-id": "template-3",
+            "src": "templates/article/article.amp.html",
+            "download": "archive/article.zip"
+          }
+        }
+      },
+      {
+        "feature": {
+          "title": "Flexible",
+          "desc": "Modern designs that you can customize to suit your needs.",
+          "actions": [
+            {
+              "link": {"url": "templates.html", "text": "View all templates"}
+            }
+          ],
+          "template-preview": {
+            "title": "Article",
+            "img": {
+              "width": "360",
+              "height": "640",
+              "url": "/img/www/index/template3.png",
+              "2x_url": "/img/www/index/template3_2x.png",
+              "layout": "responsive",
+              "alt": "Screenshot of the Article template"
+            },
+            "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
+            "lightbox-id": "template-3",
+            "src": "templates/article/article.amp.html",
+            "download": "archive/article.zip"
+          }
+        }
+      },
+      {
+        "feature": {
+          "title": "Flexible",
+          "desc": "Modern designs that you can customize to suit your needs.",
+          "actions": [
+            {
+              "link": {"url": "templates.html", "text": "View all templates"}
+            }
+          ],
+          "template-preview": {
+            "title": "Article",
+            "img": {
+              "width": "360",
+              "height": "640",
+              "url": "/img/www/index/template3.png",
+              "2x_url": "/img/www/index/template3_2x.png",
+              "layout": "responsive",
+              "alt": "Screenshot of the Article template"
+            },
+            "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
+            "lightbox-id": "template-3",
+            "src": "templates/article/article.amp.html",
+            "download": "archive/article.zip"
+          }
+        }
+      }
+    ]
+  }
+}
