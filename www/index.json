@@ -113,6 +113,22 @@
           "src": "templates/blog/blog.amp.html",
           "download": "archive/blog.zip"
         }
+      },
+      {
+        "template-preview": {
+          "title": "Gallery",
+          "img": {
+            "width": "360",
+            "height": "640",
+            "url": "../img/www/index/gallery.png",
+            "2x_url": "../img/www/index/gallery.png",
+            "layout": "responsive"
+          },
+          "desc": "Gallery template description.",
+          "lightbox-id": "gallery-template",
+          "src": "templates/gallery/gallery.amp.html",
+          "download": "archive/gallery.zip"
+        }
       }
     ],
     "showcase-template-previews": [

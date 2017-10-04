@@ -13,40 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@import 'base-page-vars';
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+@import './page.css';
+@import './components/_landing-images';
 
-/* Body */
-body {
-  background: var(--color-body-background);
-  color: var(--color-font-default);
-  font-family: var(--font-family);
-  min-width: var(--body-min-width);
-  overflow-x: hidden;
-  font-smooth: always;
-  -webkit-font-smoothing: antialiased;
-}
-
-main {
-  max-width: var(--content-max-width);
-  margin: 0 auto;
-}
-
-p {
-  padding: 0;
+/* Override so we can use <figure> */
+figure {
   margin: 0;
-}
-
-
-/* Accents */
-.ampstart-accent {
-  color: var(--color-font-accent);
-}
-
-#content:target {
-  margin-top: calc(0px - var(--navbar-height));
-  padding-top: var(--navbar-height);
 }

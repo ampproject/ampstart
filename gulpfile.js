@@ -155,7 +155,10 @@ const inlineTransformation = {
   },
   style: {
     check: inlineCheckStyle,
-  }
+  },
+  image: {
+    check: inlineCheckScript,
+  },
 };
 
 gulp.task('www', function() {
@@ -217,8 +220,8 @@ gulp.task('postcss', 'build postcss files', function() {
     require('postcss-import')(),
     require('autoprefixer')(),
     require('postcss-calc')(),
-    require('postcss-color-function')(),
     require('postcss-custom-properties')(),
+    require('postcss-color-function')(),
     require('postcss-discard-comments')(),
     require('postcss-custom-media')(),
     require('cssnano')({zindex: false}),
