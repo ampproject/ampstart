@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-.gallery-component-header {
+.gallery-header {
   height: calc(18 / 16rem);
   width: auto;
   position: absolute;
@@ -29,7 +29,7 @@
 }
 
 
-.gallery-component-header .gallery-component-nav {
+.gallery-header .gallery-nav {
   display: none;
   flex-direction: column;
   flex: none;
@@ -40,13 +40,18 @@
  * enough. This keeps margins tight on small screens rotated to landscape.
  */
 @media (--breakpoint-sm) and (--breakpoint-v-sm) {
-  .gallery-component-header {
+  .gallery-header {
     margin: calc(30 / 16rem);
     margin-right: 0;
   }
 }
 
-.gallery-component-header-menu-button {
+.ampstart-btn {
+  background: transparent;
+  border: none;
+}
+
+.gallery-header-menu-button {
   flex: none;
   cursor: pointer;
   padding: calc(10 / 16rem);
@@ -55,42 +60,42 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.gallery-component-header-menu-button:hover {
+.gallery-header-menu-button:hover {
   background: #fff;
 }
 
-.gallery-component-header-menu-button:active,
-.gallery-component-header-menu-button:focus {
+.gallery-header-menu-button:active,
+.gallery-header-menu-button:focus {
   background: #aaa;
   outline: none;
 }
 
-.gallery-component-header-menu-button:hover svg g {
+.gallery-header-menu-button:hover svg g {
   fill: #000;
 }
 
-.gallery-component-header-menu-button svg {
+.gallery-header-menu-button svg {
   display: block;
   width: calc(18 / 16rem);
   height: calc(18 / 16rem);
 }
 
-.gallery-component-header-menu-button::before {
+.gallery-header-menu-button::before {
   bottom: calc(5 / 16rem);
 }
 
-.gallery-component-header-menu-button::after {
+.gallery-header-menu-button::after {
   top: calc(5 / 16rem);
 }
 
-.gallery-component-header-rotate {
+.gallery-header-rotate {
   display: none;
   flex: none;
   white-space: nowrap;
   margin: 0 0 0 1rem;
 }
 
-.gallery-component-mobile-header .gallery-component-header-rotate {
+.gallery-mobile-header .gallery-header-rotate {
   display: block;
 }
 
@@ -98,20 +103,20 @@
   Trigger the heading rotation to vertical at the small breakpoint.
  */
 @media (--breakpoint-sm) {
-  .gallery-component-header {
+  .gallery-header {
     position: fixed;
     flex-direction: column;
     width: calc(18 / 16rem);
     height: auto;
   }
 
-  .gallery-component-header-rotate {
+  .gallery-header-rotate {
     display: block;
     margin: 1rem 0;
     transform: rotate(-90deg) translateY(calc(-50% + (18 / 16rem) / 2));
   }
 
-  .gallery-component-header-rotate::before {
+  .gallery-header-rotate::before {
     content: "";
     display: block;
     padding-bottom: calc(100% - 1.125rem);
@@ -123,7 +128,7 @@
  * breakpoint.
  */
 @media (--breakpoint-sm) and (--breakpoint-v-sm) {
-  .gallery-component-header-rotate  {
+  .gallery-header-rotate  {
     margin: calc(28 / 16rem) 0;
   }
 }
@@ -132,18 +137,18 @@
  * Hide the sticky footer and display the header nav.
  */
 @media (--breakpoint-sm) and (--breakpoint-v-sm) {
-  .gallery-component-header .gallery-component-nav {
+  .gallery-header .gallery-nav {
     display: flex;
   }
 }
 
-.gallery-component-header-heading {
+.gallery-header-heading {
   margin: 0;
   font-size: calc(13.5 / 16rem);
   line-height: calc(18 / 16rem);
 }
 
-.gallery-component-header-heading a {
+.gallery-header-heading a {
   color: inherit;
   text-decoration: none;
 }

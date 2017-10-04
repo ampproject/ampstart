@@ -19,23 +19,21 @@ limitations under the License.
 {{#landing-images}}
   <figure class="gallery-landing-image-wrap-{{index}}">
     <a href="./gallery-inner.amp.html" class="gallery-landing-image-link"></a>
-    <div class="gallery-landing-image-caption {{#positions}}gallery-landing-image-caption-{{.}} {{/positions}}">
-      <figcaption class="gallery-landing-image-caption-content">
-        <div>{{title}}</div>
-        <div>{{artist}}</div>
-        <a href="./gallery-inner.amp.html" class="gallery-landing-caption-link inline-block">View Exhibit</a>
-      </figcaption>
-    </div>
+    <figcaption class="gallery-landing-image-caption {{#positions}}gallery-landing-image-caption-{{.}} {{/positions}} gallery-landing-image-caption-content">
+      <div>{{title}}</div>
+      <div>{{artist}}</div>
+      <a href="./gallery-inner.amp.html" class="gallery-landing-caption-link inline-block">View Exhibit</a>
+    </figcaption>
     <div class="gallery-landing-image-transform">
       <amp-img
         width="{{width}}"
         height="{{height}}"
         layout="responsive"
         noloading 
-        src="../../img/gallery/{{src}}_200.jpg"
+        src="../../img/gallery/{{src}}.jpg"
         srcset="
-          ../../img/gallery/{{src}}_200.jpg 1x,
-          ../../img/gallery/{{src}}_400.jpg 2x
+          ../../img/gallery/{{src}}.jpg 1x,
+          ../../img/gallery/{{src}}@2x.jpg 2x
         "
         alt="{{alt}}"
       ></amp-img>

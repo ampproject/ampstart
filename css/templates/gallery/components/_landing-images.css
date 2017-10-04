@@ -35,7 +35,7 @@
   }
 }
 
-.gallery-landing-wall .amp-carousel-button {
+.amp-carousel-button {
   background-color: white;
   box-shadow: -10px 0 20px rgba(0,0,0,0.12);
   border-radius: 0;
@@ -45,25 +45,26 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.gallery-landing-wall .amp-carousel-button:hover {
+.amp-carousel-button:hover {
   background-color: yellow;
 }
 
-.gallery-landing-wall .amp-carousel-button:focus {
+.amp-carousel-button:focus {
   outline: none;
 }
 
-.gallery-landing-wall .amp-carousel-button-next {
+.amp-carousel-button-next {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23000' viewBox='0 0 18 18'%3E%3Cpath d='M9 3L7.94 4.06l4.19 4.19H3v1.5h9.13l-4.19 4.19L9 15l6-6z'/%3E%3C/svg%3E");
   right: 0;
 }
-.gallery-landing-wall .amp-carousel-button-prev {
+
+.amp-carousel-button-prev {
   left: 0;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23000' viewBox='0 0 18 18'%3E%3Cpath d='M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 40.06rem) {
-  .gallery-landing-wall .amp-carousel-button {
+  .amp-carousel-button {
     position: fixed;
     top: auto;
     bottom: 0;
@@ -78,6 +79,11 @@
   height: 100vh;
   min-width: 100vw;
   overflow: hidden;
+}
+
+.gallery-landing-wall-scroll::after {
+  width: 0px;
+  height: 100%;
 }
 
 @media (max-width: 40.06rem) {

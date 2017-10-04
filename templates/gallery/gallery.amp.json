@@ -23,8 +23,8 @@
       "artist": "Sylvia Johnson",
       "width": 8,
       "height": 12,
-      "src": "statue_wearing_sunglasses",
-      "alt": "statue wearing sunglasses",
+      "src": "chair",
+      "alt": "wooden chair",
       "positions": ["bottom", "extraleft"]
     }, {
       "index": 1,
@@ -32,8 +32,8 @@
       "artist": "David Beck",
       "width": 8,
       "height": 12,
-      "src": "cacti",
-      "alt": "cacti on green background",
+      "src": "orange",
+      "alt": "orange painted blue",
       "positions": ["bottom"]
     }, {
       "index": 2,
@@ -41,8 +41,8 @@
       "artist": "Brad Parker",
       "width": 51,
       "height": 31,
-      "src": "flying_pigs",
-      "alt": "power tool with ears",
+      "src": "plant",
+      "alt": "house plant on a chair",
       "positions": ["right", "bottom"]
     }, {
       "index": 3,
@@ -50,8 +50,8 @@
       "artist": "Janet Lande",
       "width": 1,
       "height": 1,
-      "src": "green_smoke",
-      "alt": "green mushroom cloud",
+      "src": "hall",
+      "alt": "colourful hallway",
       "positions": ["bottom"]
     }, {
       "index": 4,
@@ -59,16 +59,16 @@
       "artist": "Anna Moss",
       "width": 8,
       "height": 12,
-      "src": "coloured_rectangles",
-      "alt": "coloured rectangles"
+      "src": "lamp",
+      "alt": "pink outdoor lamp"
     }, {
       "index": 5,
       "title": "Untitled",
       "artist": "Evan Ondre",
       "width": 12,
       "height": 8,
-      "src": "person_in_water",
-      "alt": "person bathing in pink water",
+      "src": "smoke",
+      "alt": "pink smoke",
       "positions": ["extraleft"]
     }, {
       "index": 6,
@@ -76,24 +76,24 @@
       "artist": "David Alders",
       "width": 12,
       "height": 8,
-      "src": "eggs_black_paint",
-      "alt": "eggs covered in black paint"
+      "src": "spiral",
+      "alt": "spiraling staircase"
     }, {
       "index": 7,
       "title": "A Reappropriation of Violence",
       "artist": "Janet Lande",
       "width": 8,
       "height": 12,
-      "src": "grenade_cone",
-      "alt": "grenades in an ice cream cone"
+      "src": "stairs",
+      "alt": "pink residential building with outdoor staircase"
     }, {
       "index": 8,
       "title": "No Name",
       "artist": "Tan Howell",
       "width": 8,
       "height": 12,
-      "src": "red_can",
-      "alt": "can covered in red paint on red background",
+      "src": "spectrum",
+      "alt": "striped colours",
       "positions": ["bottom"]
     }, {
       "index": 9,
@@ -101,17 +101,17 @@
       "artist": "Steven Rice",
       "width": 12,
       "height": 8,
-      "src": "white_stairwell",
-      "alt": "white stairwell",
-      "positions": ["bottom"]
+      "src": "cactus",
+      "alt": "pink cactus",
+      "positions": ["bottom", "right"]
     }, {
       "index": 10,
       "title": "Fluid Architecture",
       "artist": "Steven Rice",
       "width": 8,
       "height": 12,
-      "src": "tiled_building",
-      "alt": "tiled building",
+      "src": "corner",
+      "alt": "corner of white building's exterior",
       "positions": ["bottom"]
     }, {
       "index": 11,
@@ -119,16 +119,16 @@
       "artist": "Momo Reid",
       "width": 1,
       "height": 1,
-      "src": "person_with_frame",
-      "alt": "person holding picture frame in front of face"
+      "src": "building",
+      "alt": "black and white building"
     }, {
       "index": 12,
       "title": "Untitled",
       "artist": "Von West",
       "width": 8,
       "height": 12,
-      "src": "stacked_chairs",
-      "alt": "chairs stacked on top of each other",
+      "src": "skyline",
+      "alt": "sunset showing a skyline",
       "positions": ["bottom", "extraleft"]
     }, {
       "index": 13,
@@ -136,8 +136,8 @@
       "artist": "Terra Morales",
       "width": 1,
       "height": 1,
-      "src": "banana",
-      "alt": "banana next to strawberries",
+      "src": "balloon",
+      "alt": "colourful hot air balloon paneling",
       "positions": ["bottom", "right"]
     }, {
       "index": 14,
@@ -145,32 +145,32 @@
       "artist": "Nathaniel Hall",
       "width": 8,
       "height": 12,
-      "src": "vr_headset",
-      "alt": "white virtual reality headset"
+      "src": "lake",
+      "alt": "sunrise against a pink lake"
     }, {
       "index": 15,
       "title": "Cage",
       "artist": "Ellen Doe",
       "width": 8,
       "height": 12,
-      "src": "eggs",
-      "alt": "eggs"
+      "src": "court",
+      "alt": "basketball court"
     }, {
       "index": 16,
       "title": "Breakfast of Champions",
       "artist": "Kay Herrera",
       "width": 12,
       "height": 8,
-      "src": "egg_breakfast",
-      "alt": "one egg on a plastic plate"
+      "src": "jellyfish",
+      "alt": "pink jellyfish in a purple ocean"
     }, {
       "index": 17,
       "title": "Untitled",
       "artist": "Ian Jimenez",
       "width": 8,
       "height": 12,
-      "src": "fruit_chair",
-      "alt": "chair with fruit on it"
+      "src": "stripe",
+      "alt": "black and white striped pattern"
     }],
 
     "sidebar": {
@@ -181,43 +181,43 @@
         "text": "Untitled<br/>Evan Ondre",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/person_in_water_200.jpg",
-          "2x": "../../img/gallery/person_in_water_400.jpg"
+          "src": "../../img/gallery/smoke.jpg",
+          "2x": "../../img/gallery/smoke@2x.jpg"
         }
       }, {
         "text": "Cage<br/>Ellen Doe",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/eggs_200.jpg",
-          "2x": "../../img/gallery/eggs_400.jpg"
+          "src": "../../img/gallery/court.jpg",
+          "2x": "../../img/gallery/court@2x.jpg"
         }
       }, {
         "text": "Living Tree<br/>David Beck",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/cacti_200.jpg",
-          "2x": "../../img/gallery/cacti_400.jpg"
+          "src": "../../img/gallery/orange.jpg",
+          "2x": "../../img/gallery/orange@2x.jpg"
         }
       }, {
         "text": "Short Circuit<br/>Anna Moss",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/coloured_rectangles_200.jpg",
-          "2x": "../../img/gallery/coloured_rectangles_400.jpg"
+          "src": "../../img/gallery/lamp.jpg",
+          "2x": "../../img/gallery/lamp@2x.jpg"
         }
       }, {
         "text": "Geo Breakfast<br/>Terra Morales",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/banana_200.jpg",
-          "2x": "../../img/gallery/banana_400.jpg"
+          "src": "../../img/gallery/balloon.jpg",
+          "2x": "../../img/gallery/balloon@2x.jpg"
         }
       }, {
         "text": "Flying Pigs<br/>Brad Parker",
         "href": "./gallery-inner.amp.html",
         "image": {
-          "src": "../../img/gallery/flying_pigs_200.jpg",
-          "2x": "../../img/gallery/flying_pigs_400.jpg"
+          "src": "../../img/gallery/plant.jpg",
+          "2x": "../../img/gallery/plant@2x.jpg"
         }
       }]
     }

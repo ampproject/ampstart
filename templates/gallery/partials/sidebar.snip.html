@@ -19,40 +19,41 @@ limitations under the License.
 {{#sidebar}}
   <amp-sidebar
     id="sidebar"
-    class="gallery-component-sidebar"
+    class="gallery-sidebar"
     layout="nodisplay"
   >
-    <div class="gallery-component-sidebar-content">
-      <div class="gallery-component-sidebar-header">
-        <div
+    <div class="gallery-sidebar-content">
+      <div class="gallery-sidebar-header">
+        <button
           on="tap:sidebar.close"
           tabindex="-1"
-          role="button"
-          class="gallery-component-sidebar-close-button"
-        ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-          <g fill="none" stroke="currentColor">
-            <polyline points="84.243 84.243 15 15 15 15"/>
-            <path d="M15,84.2426407 L84.2426407,15 L15,84.2426407 Z"/>
-          </g>
-        </svg></div>
-        <div class="gallery-component-sidebar-heading">
+          class="ampstart-btn gallery-sidebar-close-button"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <g fill="none" stroke="currentColor">
+              <polyline points="84.243 84.243 15 15 15 15"/>
+              <path d="M15,84.2426407 L84.2426407,15 L15,84.2426407 Z"/>
+            </g>
+          </svg>
+        </button>
+        <div class="gallery-sidebar-heading">
           {{#header.href}}<a href="{{header.href}}">{{/header.href}}
           Current Exhibitions
           {{#header.href}}<a/>{{/header.href}}
         </div>
       </div>
-      <nav class="gallery-component-sidebar-nav">
+      <nav class="gallery-sidebar-nav">
         {{#links}}
         <a
-          class="gallery-component-sidebar-nav-item"
+          class="gallery-sidebar-nav-item"
           href="{{href}}"
         >
-          <div class="gallery-component-sidebar-nav-item-text">
+          <div class="gallery-sidebar-nav-item-text">
             {{{text}}}
           </div>
           {{#image}}
           <amp-img
-            class="gallery-component-sidebar-nav-item-image"
+            class="gallery-sidebar-nav-item-image"
             width="1"
             height="1"
             layout="responsive"
@@ -62,7 +63,7 @@ limitations under the License.
             {{/2x}}
           ></amp-img>
           {{/image}}
-          <div class="gallery-component-sidebar-nav-item-icon">
+          <div class="gallery-sidebar-nav-item-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
               <polyline fill="none" stroke="currentColor" points="27 5 72.167 50.167 27.335 95"/>
             </svg>
