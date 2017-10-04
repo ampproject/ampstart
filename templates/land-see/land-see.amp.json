@@ -295,7 +295,7 @@
       }
     ]
   },
-  "land-see-popular": {
+  "land-see-story-carousel": {
     "title": "Popular",
     "list-src": "./api/popular.json",
     "observer": {

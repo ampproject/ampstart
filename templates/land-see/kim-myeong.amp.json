@@ -1,0 +1,9 @@
+{
+  "land-see-story-carousel": {
+    "title": "Recommended",
+    "list-src": "./api/recommended.json",
+    "observer": {
+      "action": "enter:recommendedSlideIn.start"
+    }
+  }
+}
