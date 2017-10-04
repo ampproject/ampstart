@@ -17,6 +17,20 @@
 @import '../../../../components/lightbox/template-preview';
 @import '../../shared';
 
+.www-header {
+  min-height: 600px;
+}
+
+.www-index-showcase,
+.ampstart-footer {
+    transform: translateY(-300px);
+}
+
+.www-index-showcase-header-img [placeholder] {
+  background: url('../img/www/index/head_ph.png') no-repeat center center;
+  background-size: cover;
+}
+
 .www-index-showcase-template {
   background-color: rgba(155, 155, 155, 0.4)
 }
@@ -31,6 +45,15 @@
 
 
 @media (--breakpoint-xs) {
+  .www-header {
+    min-height: 300px;
+  }
+
+  .www-index-showcase,
+  .ampstart-footer {
+      transform: translateY(-180px);
+  }
+
   .www-index-showcase-template {
     padding-right: 0;
   }
