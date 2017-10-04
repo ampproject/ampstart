@@ -1,0 +1,75 @@
+{{!
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
+<!doctype html>
+{{#www-index}}
+<html ⚡>
+{{> ../utils/amp-page-head.snip.html}}
+<body>
+  {{> ../components/navbar/navbar.snip.html}}
+  <main>
+      <header class="www-header center">
+        <amp-img src="/img/www/amp_logo_white.svg" width="80" height="80" layout="fixed" class="mb4" alt="AMP logo"></amp-img>
+        <h1 class="mb4">AMP Start</h1>
+        <span class="block mb4 h3">Build responsible, lightning-fast AMP pages with our ready-to-use templates and components</span>
+    </header>
+    <section class="www-index-showcase" id="templates">
+      <ul class="list-reset">
+        {{#features-showcase}}
+        {{#feature}}
+        <li class="flex flex-wrap items-stretch justify-center">
+          {{#template-preview}}
+          <div class="www-index-showcase-template flex flex-column col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 py4 pr3">
+            {{#img}}
+            <amp-img width="{{width}}" height="{{height}}" layout="{{layout}}" alt="{{alt}}" src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}}></amp-img>
+            {{/img}}
+            <div class="flex flex-wrap justify-around items-baseline mt2">
+              <h3 class="ampstart-title-sm caps">{{title}}</h3>
+              <div class="inline-block">
+                <span class="www-templates-action inline-block xs-hide mr1" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
+                  {{> ../img/www/preview.svg}}
+                </span>
+                <a href="{{{src}}}" target="_blank" class="www-templates-action sm-hide md-hide lg-hide">
+                  {{> ../img/www/preview.svg}}
+                </a>
+                <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action inline-block xs-hide">
+                  {{> ../img/www/download.svg}}
+                </a>
+              </div>
+            </div>
+          </div>
+          {{/template-preview}}
+          <div class="www-index-showcase-feature flex flex-column justify-center items-start col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
+            <h2 class="ml4 mb4">{{title}}</h2>
+            <p class="ml4 mb4">{{desc}}</p>
+            {{#actions}}
+            {{#link}}
+            <a href="{{url}}" class="ampstart-btn caps inline-block ml4 ">{{text}}</a>
+            {{/link}}
+            {{/actions}}
+          </div>
+        </li>
+        {{/feature}}
+        {{/features-showcase}}
+      </ul>
+    </section>
+  </main>
+  {{> ../components/footer/footer.snip.html}}
+<body>
+</html>
+{{/www-index}}

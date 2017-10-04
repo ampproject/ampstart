@@ -533,10 +533,9 @@ h4,
   }
 }
 
-/* Popular/Recent/Reccomended Stories */
+/* Popular/Recent/Recommended Stories */
 
 .land-see-popular-content,
-.land-see-recommended-content,
 .land-see-recent-content {
   max-width: 850px;
 }
@@ -549,8 +548,7 @@ h4,
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32' overflow='visible'%3E%3Cpath fill='none' stroke='%23DFDFDF' stroke-miterlimit='10' d='M.354 31.201l15.423-15.424L.354.354'/%3E%3C/svg%3E") no-repeat center center;
 }
 
-.land-see-popular-content .amp-carousel-button,
-.land-see-recommended-content .amp-carousel-button {
+.land-see-popular-content .amp-carousel-button {
   top: 97px;
   background-size: 85%;
 }
