@@ -355,7 +355,7 @@
             "src": "../../img/land-see/content/studio-310px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col recent",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent",
         "post-url": "#",
         "post-category": "Design",
         "post-category-url": "stories.amp.html#design",
@@ -371,7 +371,7 @@
             "src": "../../img/land-see/content/retail-shop-370px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col recent",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent",
         "post-url": "#",
         "post-category": "Fashion",
         "post-category-url": "stories.amp.html#fashion",
@@ -387,7 +387,7 @@
             "src": "../../img/land-see/content/travel-accessories-outfits-2-400px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 recent",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 land-see-recent",
         "post-url": "#",
         "post-category": "Fashion",
         "post-category-url": "stories.amp.html#fashion",
@@ -403,7 +403,7 @@
             "src": "../../img/land-see/content/timeless-design-310px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 recent",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 land-see-recent",
         "post-url": "#",
         "post-category": "Design",
         "post-category-url": "stories.amp.html#design",
