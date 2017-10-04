@@ -89,71 +89,68 @@
             }
           ],
           "template-preview": {
-            "title": "Article",
+            "title": "The Scenic Template",
             "img": {
-              "width": "360",
-              "height": "640",
-              "url": "/img/www/index/template3.png",
-              "2x_url": "/img/www/index/template3_2x.png",
+              "width": "1480",
+              "height": "1254",
+              "url": "/img/www/index/scenic_both.png",
+              "2x_url": "/img/www/index/scenic_both.png",
               "layout": "responsive",
-              "alt": "Screenshot of the Article template"
+              "alt": "Screenshot of the scenic template"
             },
-            "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
-            "lightbox-id": "template-3",
-            "src": "templates/article/article.amp.html",
-            "download": "archive/article.zip"
+            "lightbox-id": "themes_2",
+            "src": "templates/themes_2/home.amp.html",
+            "download": "archive/themes_2.zip"
           }
         }
       },
       {
         "feature": {
-          "title": "Flexible",
-          "desc": "Modern designs that you can customize to suit your needs.",
+          "title": "Responsive",
+          "desc": "Templates designed to work with all devices - mobile, tablet and desktop.",
           "actions": [
             {
               "link": {"url": "templates.html", "text": "View all templates"}
             }
           ],
           "template-preview": {
-            "title": "Article",
+            "title": "Lune Template",
             "img": {
-              "width": "360",
-              "height": "640",
-              "url": "/img/www/index/template3.png",
-              "2x_url": "/img/www/index/template3_2x.png",
+              "width": "1864",
+              "height": "1082",
+              "url": "/img/www/index/lune_both.png",
+              "2x_url": "/img/www/index/lune_both.png",
               "layout": "responsive",
-              "alt": "Screenshot of the Article template"
+              "alt": "Screenshot of the Lune template"
             },
-            "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
-            "lightbox-id": "template-3",
-            "src": "templates/article/article.amp.html",
-            "download": "archive/article.zip"
+            "lightbox-id": "lune",
+            "src": "templates/lune/lune.amp.html",
+            "download": "archive/lune.zip"
           }
         }
       },
       {
         "feature": {
-          "title": "Flexible",
-          "desc": "Modern designs that you can customize to suit your needs.",
+          "title": "Open Source",
+          "desc": "Developers and designers can share and contribute their designs for new templates and components.",
           "actions": [
             {
               "link": {"url": "templates.html", "text": "View all templates"}
             }
           ],
           "template-preview": {
-            "title": "Article",
+            "title": "Bike Shed Template",
             "img": {
-              "width": "360",
-              "height": "640",
-              "url": "/img/www/index/template3.png",
-              "2x_url": "/img/www/index/template3_2x.png",
+              "width": "1264",
+              "height": "1298",
+              "url": "/img/www/index/bike_both.png",
+              "2x_url": "/img/www/index/bike_both.png",
               "layout": "responsive",
-              "alt": "Screenshot of the Article template"
+              "alt": "Screenshot of the Bike Shed template"
             },
-            "desc": "A responsive layout that features text, images, embedded social posts, and quick links to related content.",
-            "lightbox-id": "template-3",
-            "src": "templates/article/article.amp.html",
-            "download": "archive/article.zip"
+            "lightbox-id": "bike-shed",
+            "src": "templates/e-commerce/landing.amp.html",
+            "download": "archive/e-commerce.zip"
           }
         }
       }

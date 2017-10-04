@@ -16,3 +16,25 @@
 
 @import '../../../../components/lightbox/template-preview';
 @import '../../shared';
+
+.www-index-showcase-template {
+  background-color: rgba(155, 155, 155, 0.4)
+}
+
+.www-index-showcase > ul > li:nth-child(2n+1) >.www-index-showcase-template {
+  background-color: rgba(0, 65, 119, 0.05)
+}
+
+.www-index-showcase-feature > * {
+  max-width: var(--width-1);
+}
+
+
+@media (--breakpoint-xs) {
+  .www-index-showcase-template {
+    padding-right: 0;
+  }
+  .www-index-showcase-feature > * {
+    margin-left: 0;
+  }
+}

@@ -23,18 +23,23 @@ limitations under the License.
 <body>
   {{> ../components/navbar/navbar.snip.html}}
   <main>
+      <header class="www-header center">
+        <amp-img src="/img/www/amp_logo_white.svg" width="80" height="80" layout="fixed" class="mb4" alt="AMP logo"></amp-img>
+        <h1 class="mb4">AMP Start</h1>
+        <span class="block mb4 h3">Build responsible, lightning-fast AMP pages with our ready-to-use templates and components</span>
+    </header>
     <section class="www-index-showcase" id="templates">
       <ul class="list-reset">
         {{#features-showcase}}
         {{#feature}}
-        <li class="flex flex-wrap items-center">
+        <li class="flex flex-wrap items-stretch justify-center">
           {{#template-preview}}
-          <div class="www-index-showcase-template flex flex-column xs-col-12 sm-col-12 md-col-6 lg-col-6">
+          <div class="www-index-showcase-template flex flex-column col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 py4 pr3">
             {{#img}}
             <amp-img width="{{width}}" height="{{height}}" layout="{{layout}}" alt="{{alt}}" src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}}></amp-img>
             {{/img}}
-            <div class="flex flex-wrap justify-around items-baseline">
-              <h3>{{title}}</h3>
+            <div class="flex flex-wrap justify-around items-baseline mt2">
+              <h3 class="ampstart-title-sm caps">{{title}}</h3>
               <div class="inline-block">
                 <span class="www-templates-action inline-block xs-hide mr1" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
                   {{> ../img/www/preview.svg}}
@@ -49,12 +54,12 @@ limitations under the License.
             </div>
           </div>
           {{/template-preview}}
-          <div class="www-index-showcase-feature  xs-col-12 sm-col-12 md-col-6 lg-col-6">
-            <h2>{{title}}</h2>
-            <p>{{desc}}</p>
+          <div class="www-index-showcase-feature flex flex-column justify-center items-start col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
+            <h2 class="ml4 mb4">{{title}}</h2>
+            <p class="ml4 mb4">{{desc}}</p>
             {{#actions}}
             {{#link}}
-            <a href="{{url}}" class="ampstart-btn caps inline-block">{{text}}</a>
+            <a href="{{url}}" class="ampstart-btn caps inline-block ml4 ">{{text}}</a>
             {{/link}}
             {{/actions}}
           </div>
