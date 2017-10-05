@@ -22,8 +22,17 @@
 
 @import './page-vars';
 
+@import './components/_header';
+@import './components/_sidebar';
+
 body {
   color: var(--font-color-primary);
   font-family: var(--font-family-primary);
   line-height: var(--line-height);
+}
+
+.gallery-base-invert {
+  color: #fff;
+  mix-blend-mode: difference;
+  -webkit-font-smoothing: antialiased;
 }
