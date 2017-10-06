@@ -28,7 +28,7 @@ limitations under the License.
         <h1 class="align-middle mb4 inline-block">AMP Start</h1>
         <span class="block pb4 mb4 h3 max-width-1 mx-auto">Build responsible, lightning-fast AMP pages with our ready-to-use templates and components</span>
     </header>
-    <section class="www-index-showcase" id="templates">
+    <section class="www-index-showcase mb3">
       <header class="col-9 mx-auto">
         <amp-img class="www-index-showcase-header-img max-width-3 mx-auto" width="1608" height="1006" layout="responsive" src="../img/www/index/head.png" alt="List of sample templales built with AMP Start">
           <div placeholder class="max-width-3"></div>
@@ -115,8 +115,33 @@ limitations under the License.
         </li>
       </ul>
     </section>
+    {{#help-section}}
+    <section class="www-index-help p3">
+      <h2 class="mb3 center">{{title}}</h2>
+      <ul class="list-reset flex flex-wrap justify-center">
+      {{#help-topics}}
+        <li class="ampstart-card mx3 mb3">
+          <a href="{{link.url}}" target="{{link.target}}" class="text-decoration-none block">
+            {{#img}}
+            <div class="www-index-help-image-container center p3">
+              <amp-img layout="{{layout}}" width="{{width}}" height="{{height}}" alt="{{alt}}" src="{{url}}"></amp-img>
+            </div>
+            {{/img}}
+            <h3 class="m3">{{title}}</h3>
+            <p class="m3">{{desc}}</p>
+          </a>
+        </li>
+      {{/help-topics}}
+      </ul>
+    </section>
+    {{/help-section}}
   </main>
   {{> ../components/footer/footer.snip.html}}
+  {{#features-showcase}}
+  {{#feature}}
+    {{> ../components/lightbox/template-preview.snip.html}}
+  {{/feature}}
+  {{/features-showcase}}
 <body>
 </html>
 {{/www-index}}

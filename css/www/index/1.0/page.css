@@ -22,6 +22,7 @@
 }
 
 .www-index-showcase,
+.www-index-help,
 .ampstart-footer {
     transform: translateY(-300px);
 }
@@ -101,6 +102,18 @@
   left: 60.8%;
 }
 
+.www-index-help {
+  background-color: #f1f1f8;
+}
+
+.www-index-help-image-container {
+  background: var(--header-gradient);
+}
+
+.www-index-help > ul > li {
+  width: 386px;
+  background-color: var(--color-white);
+}
 
 @media (--breakpoint-xs) {
   .www-header {
@@ -108,6 +121,7 @@
   }
 
   .www-index-showcase,
+  .www-index-help,
   .ampstart-footer {
       transform: translateY(-180px);
   }

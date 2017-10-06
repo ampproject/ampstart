@@ -154,6 +154,43 @@
           }
         }
       }
-    ]
+    ],
+    "help-section": {
+      "title": "Get Help",
+      "help-topics": [
+        {
+          "title": "Understand the code",
+          "desc": "read the documentation or request a feature on GitHub.",
+          "img": {
+            "width": "55",
+            "height": "55",
+            "url": "img/icons/github.svg",
+            "layout": "fixed",
+            "alt": "GitHub logo image"
+          },
+          "link": {
+            "text": "GitHub",
+            "url": "https://github.com/ampproject/ampstart",
+            "target": "_blank"
+          }
+        },
+        {
+          "title": "Ask the Community",
+          "desc": "Join the AMP Slack channel to  get help from others usingh the AMP format or share your latest work.",
+          "img": {
+            "width": "55",
+            "height": "55",
+            "url": "img/icons/slack.svg",
+            "layout": "fixed",
+            "alt": "Slack logo image"
+          },
+          "link": {
+            "text": "Slack Channel",
+            "url": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877",
+            "target": "_blank"
+          }
+        }
+      ]
+    }
   }
 }
