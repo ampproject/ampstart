@@ -115,7 +115,14 @@
   .www-index-showcase-template {
     padding-right: 0;
   }
+
   .www-index-showcase-feature > * {
     margin-left: 0;
+  }
+}
+
+@media (--breakpoint-xs), (--breakpoint-sm-md) {
+  .www-index-showcase-components-container > .www-index-showcase-feature {
+    order: 2;
   }
 }
