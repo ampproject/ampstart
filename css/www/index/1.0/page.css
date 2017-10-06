@@ -35,12 +35,70 @@
   background-color: rgba(155, 155, 155, 0.4)
 }
 
-.www-index-showcase > ul > li:nth-child(2n+1) >.www-index-showcase-template {
+.www-index-showcase > ul > li:nth-child(2n+1) > .www-index-showcase-template {
   background-color: rgba(0, 65, 119, 0.05)
 }
 
 .www-index-showcase-feature > * {
   max-width: var(--width-1);
+}
+
+.www-index-showcase-components li {
+  position: absolute;
+  min-width: 10%;
+  min-height: 10%;
+  width: 31.6%;
+}
+
+.www-index-showcase-components ul {
+  overflow: hidden;
+}
+
+.www-index-showcase-components li:nth-child(1) {
+  left: 34.6%;
+  top: -5%;
+}
+
+.www-index-showcase-components li:nth-child(2) {
+  left: 66%;
+  top: -12.5%;
+  width: 25%;
+}
+
+.www-index-showcase-components li:nth-child(3) {
+  top: 7.5%;
+  left: 7.5%;
+}
+
+.www-index-showcase-components li:nth-child(4) {
+  width: 24.3%;
+  top: 31.2%;
+  left: 42%;
+}
+
+.www-index-showcase-components li:nth-child(5) {
+  left: 68.3%;
+  top: 39.4%;
+}
+
+.www-index-showcase-components li:nth-child(6) {
+  top: 54.6%;
+  left: 8.6%;
+}
+
+.www-index-showcase-components li:nth-child(7) {
+  top: 66.5%;
+  left: 11.7%;
+}
+
+.www-index-showcase-components li:nth-child(8) {
+  top: 68.3%;
+  left: 42%;
+}
+
+.www-index-showcase-components li:nth-child(9) {
+  top: 78.7%;
+  left: 60.8%;
 }
 
 
