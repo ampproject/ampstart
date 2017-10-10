@@ -1,0 +1,134 @@
+{
+  "items": [{
+    "land-see-category": [
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Studio Serif, interior.",
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "../../img/land-see/content/studio-310px.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "#",
+        "post-category": "Design",
+        "post-category-url": "stories.amp.html#design",
+        "post-title": "Office Tour: Studio Serif",
+        "post-copy": "In the heart of the southeast, Studio Serif stands out among its competitors for its complex mixture of hand-drawn and computer-generated art coming together in beautifully, cohesive designs."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Build a killer outfit.",
+            "width": 409, "height": 370, "layout": "responsive",
+            "src": "../../img/land-see/content/retail-shop-370px.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "#",
+        "post-category": "Fashion",
+        "post-category-url": "stories.amp.html#fashion",
+        "post-title": "New Textile & Basics Shop Opens in Soho",
+        "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Feel the sand on your feet, not your wardrobe weight.",
+            "width": 409, "height": 370, "layout": "responsive",
+            "src": "../../img/land-see/content/travel-accessories-outfits-2-400px.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "#",
+        "post-category": "Fashion",
+        "post-category-url": "stories.amp.html#fashion",
+        "post-title": "How to Pack Light When Traveling",
+        "post-copy": "Whether it’s a short weekend getaway or an extended holiday, choosing carefully from your accessories can help lighten your load while expanding your repertory."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Epression of aesthetics.",
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "../../img/land-see/content/timeless-design-350px.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "#",
+        "post-category": "Design",
+        "post-category-url": "stories.amp.html#design",
+        "post-title": "Timeless Design: A History of Watches",
+        "post-copy": "A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress.<span class='xs-hide'><br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;</span>"
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Designer Kim Myeong.",
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "../../img/land-see/content/shoe-designer.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+        "post-url": "#",
+        "post-category": "Fashion",
+        "post-category-url": "stories.amp.html#fashion",
+        "post-title": "Designer Kim Myeong",
+        "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique mix of color, texture, and material to make her shoes the must-haves of this year."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Birdhouse metaphor.",
+            "width": 409, "height": 370, "layout": "responsive",
+            "src": "../../img/land-see/content/tiny-houses-resized.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
+        "post-url": "#",
+        "post-category": "Interiors",
+        "post-category-url": "stories.amp.html#interiors",
+        "post-title": "Interior Design for Tiny Homes",
+        "post-copy": "Rampant materialism is a no-no for the tiny home owner, but this doesn’t strand these minimalists in the design desert."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "The Unsplash Book.",
+            "width": 409, "height": 370, "layout": "responsive",
+            "src": "../../img/land-see/content/books-you-need-resize-medium.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
+        "post-url": "#",
+        "post-category": "Arts & Culture",
+        "post-category-url": "stories.amp.html#arts-culture",
+        "post-title": "Nightstand-Worthy Books",
+        "post-copy": "We’ve collected our 100 favorite recommendations from our nightstands over the last year for those looking for a new read."
+      },
+      {
+        "image": [
+          {
+            "classes": "cover",
+            "alt-text": "Good eats.",
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "../../img/land-see/content/burger-resize-medium.jpg"
+          }
+        ],
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
+        "post-url": "#",
+        "post-category": "Arts & Culture",
+        "post-category-url": "stories.amp.html#arts-culture",
+        "post-title": "Quick Bites in the Bay Area",
+        "post-copy": "From Sonoma to Santa Clara, we've found the best spots for quick and delicious bites."
+      }
+    ]
+  }]
+}

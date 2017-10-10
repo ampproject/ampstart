@@ -400,7 +400,7 @@
             "classes": "cover",
             "alt-text": "Epression of aesthetics.",
             "width": 409, "height": 305, "layout": "responsive",
-            "src": "../../img/land-see/content/timeless-design-310px.jpg"
+            "src": "../../img/land-see/content/timeless-design-350px.jpg"
           }
         ],
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 land-see-recent",
@@ -427,22 +427,26 @@
         },
         "classes": "land-see-stories land-see-arts-culture",
         "expanded": "expanded",
-        "list-src": "./api/arts-culture-accordion.json"
+        "list-src": "./api/arts-culture-accordion.json",
+        "height": 430
       },
       {
         "title": "Design",
         "classes": "land-see-stories land-see-design",
-        "list-src": "./api/design-accordion.json"
+        "list-src": "./api/design-accordion.json",
+        "height": 460
       },
       {
         "title": "Fashion",
         "classes": "land-see-stories land-see-fashion",
-        "list-src": "./api/fashion-accordion.json"
+        "list-src": "./api/fashion-accordion.json",
+        "height": 460
       },
       {
         "title": "Interiors",
         "classes": "land-see-stories land-see-interiors",
-        "list-src": "./api/interiors-accordion.json"
+        "list-src": "./api/interiors-accordion.json",
+        "height": 430
       }
     ]
   },

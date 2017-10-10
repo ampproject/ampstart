@@ -184,7 +184,7 @@ limitations under the License.
             <amp-img
               [class]="{{dynamic-classes}}"
               class="{{classes}}"
-              alt="{{alt}}"
+              alt="{{alt-text}}"
               width="{{width}}"
               height="{{height}}"
               layout="{{layout}}"
@@ -243,13 +243,13 @@ limitations under the License.
             <a href="{{post-url}}" class="text-decoration-none">
               {{#image}}
                 <amp-img
-                    class="land-see-post-image {{classes}}"
-                    alt="{{alt}}"
-                    media="{{media-query}}"
-                    width="{{width}}"
-                    height="{{height}}"
-                    layout="{{layout}}"
-                    src="{{src}}">
+                  class="land-see-post-image {{classes}}"
+                  alt="{{alt-text}}"
+                  media="{{media-query}}"
+                  width="{{width}}"
+                  height="{{height}}"
+                  layout="{{layout}}"
+                  src="{{src}}">
                 </amp-img>
               {{/image}}
             </a>
