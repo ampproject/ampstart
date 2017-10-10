@@ -62,32 +62,42 @@ limitations under the License.
     <amp-animation id="subscribeBGParallax" layout="nodisplay">
       <script type="application/json">
         {
-        "duration": "1s",
-        "fill": "both",
-        "direction": "alternate",
-        "animations": [
-          {
-            "selector": ".land-see-subscribe-bg",
-            "keyframes": [
-              { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
-            ]
-          }
-        ]
-      }
+          "duration": "1s",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-subscribe-bg",
+              "keyframes": [
+                { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
+              ]
+            }
+          ]
+        }
       </script>
     </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
     {{#stories-category}}
-    <section class="land-see-recent-content relative mx-auto py4">
+    <section class="land-see-category land-see-recent-content relative mx-auto py4">
+      <h1>Stories</h1>
+      <div class="land-see-categories-carousel">
+        <ul class="list-reset center m0 p0 flex justify-center nowrap">
+          {{#category}}
+          <li><button on="{{action}}">{{button-text}}</button></li>
+          {{/category}}
+        </ul>
+      </div>
       <div class="clearfix pt2">
-        {{#category-list}}
+        {{#category-results}}
         <amp-list
           media="{{media-query}}"
           height="{{height}}"
+          [height]="height"
           layout="{{layout}}"
           items="{{item}}"
-          src="{{list-src}}">
+          src="{{list-src}}"
+          [src]="src">
           <template type="amp-mustache">
             {{#observer}}
             <amp-position-observer
@@ -117,9 +127,16 @@ limitations under the License.
               </li>
               <%/land-see-category%>
             </ul>
+            <%#land-see-paging%>
+            <div class="land-see-paging">
+              <%#page-nav%>
+              <button on="<%action%>" class="<%classes%>"><%button-text%></button>
+              <%/page-nav%>
+            </div>
+            <%/land-see-paging%>
           </template>
         </amp-list>
-        {{/category-list}}
+        {{/category-results}}
       </div>
     </section>
     {{/stories-category}}

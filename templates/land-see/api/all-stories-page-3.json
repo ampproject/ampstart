@@ -50,5 +50,15 @@
         "post-copy": "This Los Angeles based producer is the creative genius behind many Top-40 songs."
       }
     ]
+  },
+  {
+    "land-see-category": [{"post-classes": "hide"}],
+    "land-see-paging": {
+      "page-nav": [{
+        "classes": "land-see-prev-page sm-hide md-hide lg-hide",
+        "button-text": "Previous",
+        "action": "tap:AMP.setState({height: 2150, src: './api/all-stories-page-2.json'})"
+      }]
+    }
   }]
 }

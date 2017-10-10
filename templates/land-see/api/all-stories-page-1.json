@@ -130,5 +130,15 @@
         "post-copy": "From Sonoma to Santa Clara, we've found the best spots for quick and delicious bites."
       }
     ]
+  },
+  {
+    "land-see-category": [{"post-classes": "hide"}],
+    "land-see-paging": {
+      "page-nav": [{
+        "classes": "land-see-next-page",
+        "button-text": "Next",
+        "action": "tap:AMP.setState({height: 2150, src: './api/all-stories-page-2.json'})"
+      }]
+    }
   }]
 }
