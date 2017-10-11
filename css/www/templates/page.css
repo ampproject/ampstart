@@ -30,12 +30,14 @@
   right: 0;
   left: 0;
   z-index: -1;
-
 }
-
 
 .www-templates-group {
   margin-top: var(--space-5);
+}
+
+.www-templates-group:target {
+  padding-top: var(--space-5);
 }
 
 .www-templates-group:target::before {
@@ -46,6 +48,7 @@
 
 .www-template-preview-img {
   margin-bottom: var(--space-5);
+  max-width: 360px;
 }
 
 .www-templates-action {

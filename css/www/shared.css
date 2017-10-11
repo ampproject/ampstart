@@ -110,9 +110,13 @@ body .www-secondary-nav-anchors .www-secondary-nav-anchor[option][selected] {
   outline: none;
 }
 
-.www-secondary-nav-anchor[selected]::after {
+.www-secondary-nav-anchor::after {
   content: '';
   display: block;
   height: 4px;
+  background: transparent;
+}
+
+.www-secondary-nav-anchor[selected]::after {
   background: var(--header-gradient);
 }

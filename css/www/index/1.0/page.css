@@ -24,7 +24,7 @@
 .www-index-showcase,
 .www-index-help,
 .ampstart-footer {
-    transform: translateY(-300px);
+    transform: translateY(-250px);
 }
 
 .www-index-showcase-header-img [placeholder] {
