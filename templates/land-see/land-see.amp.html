@@ -17,7 +17,26 @@ limitations under the License.
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="land-see">
-    <amp-animation id="backgroundParallax" layout="nodisplay">
+    <amp-animation id="popularSlideIn" layout="nodisplay">
+      <script type="application/json">
+        {
+          "duration": ".4s",
+          "easing": "ease-in",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-popular",
+              "delay": "calc(100ms * index())",
+              "keyframes": [
+                {"transform": "translateY(0)", "opacity": 1}
+              ]
+            }
+          ]
+        }
+      </script>
+    </amp-animation>
+    <amp-animation id="backgroundAnimation" layout="nodisplay">
       <script type="application/json">
         {
           "duration": "1s",
@@ -40,6 +59,42 @@ limitations under the License.
         }
       </script>
     </amp-animation>
+    <amp-animation id="recentAccentAnimation" layout="nodisplay">
+      <script type="application/json">
+        {
+          "duration": "1s",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-recent-accent-image",
+              "keyframes": [
+                { "transform": "translateY(calc(height('.land-see-subscribe') * -0.4))" }
+              ]
+            }
+          ]
+        }
+      </script>
+    </amp-animation>
+    <amp-animation id="recentSlideIn" layout="nodisplay">
+      <script type="application/json">
+        {
+          "duration": ".4s",
+          "easing": "ease-in",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-recent",
+              "delay": "calc(100ms * index())",
+              "keyframes": [
+                {"transform": "translateY(0)", "opacity": 1}
+              ]
+            }
+          ]
+        }
+      </script>
+    </amp-animation>
     <amp-animation id="accordionSlideIn" layout="nodisplay">
       <script type="application/json">
         {
@@ -49,7 +104,7 @@ limitations under the License.
           "direction": "alternate",
           "animations": [
             {
-              "selector": ".arts-culture",
+              "selector": ".land-see-arts-culture-anim",
               "delay": "calc(100ms * index())",
               "keyframes": [
                 {"transform": "translateY(0)", "opacity": 1}
@@ -78,24 +133,77 @@ limitations under the License.
     </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
-    <div class="mx-auto m3 max-width-4">
-      <h1 class="pt3">Hello AMP!</h1>
-      <p class="pb2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p class="pb2">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-      </p>
-      <p class="pb2">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p class="pb2">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-      </p>
-    </div>
+    {{#land-see-hero}}
+    <section class="land-see-hero-container mx-auto mb3 max-width-4 relative overflow-hidden">
+      {{#hero-carousel}}
+      <div class="{{layout-classes}} {{responsive-display-classes}}">
+        <amp-carousel
+          id="{{id}}"
+          class="{{classes}} mx-auto"
+          {{#media-query}}
+          media="{{media-query}}"
+          {{/media-query}}
+          width="{{width}}"
+          height="{{height}}"
+          layout="{{layout}}"
+          [slide]="selectedSlide"
+          {{#on-action}}
+          on="{{on-action}}"
+          {{/on-action}}
+          controls
+          loop
+          type="slides">
+          {{#hero-slide}}
+          <div class="land-see-hero-content mx-auto relative">
+            {{#image}}
+            <amp-img
+              class="{{classes}}"
+              alt="{{alt-text}}"
+              width="{{width}}"
+              height="{{height}}"
+              layout="{{layout}}"
+              src="{{src}}">
+            </amp-img>
+            {{/image}}
+            <div class="land-see-hero-typography mx-auto center z2 {{post-classes}}">
+              <a class="land-see-post-category underline caps max-width-1 sm-hide md-hide lg-hide" href="{{post-category-url}}">{{post-category}}</a>
+              <h1 class="land-see-hero-title"><a class="text-decoration-none" href="{{post-url}}">{{{post-title}}}</a></h1>
+              <p class="land-see-hero-caption mx-auto max-width-2 pt1 mb3">
+                {{{post-copy}}}
+              </p>
+              <a class="land-see-hero-button text-decoration-none relative" href="{{post-url}}">Read More</a>
+            </div>
+          </div>
+          {{/hero-slide}}
+        </amp-carousel>
+        {{#hero-progress-carousel}}
+        <div class="land-see-hero-progress mt2 center">
+          {{#button}}
+          <button on="{{on-action}}" class="{{spacing-classes}}">
+            {{#image}}
+            <amp-img
+              [class]="{{dynamic-classes}}"
+              class="{{classes}}"
+              alt="{{alt}}"
+              width="{{width}}"
+              height="{{height}}"
+              layout="{{layout}}"
+              src="{{src}}">
+            </amp-img>
+            {{/image}}
+          </button>
+          {{/button}}
+        </div>
+        {{/hero-progress-carousel}}
+      </div>
+      {{/hero-carousel}}
+    </section>
+    {{/land-see-hero}}
+
+    {{> ./partials/story-carousel.snip.html}}
 
     {{#summer-sale-cta}}
-    <section class="land-see-background-animation-container relative mx-auto">
+    <section class="land-see-background-animation-container relative mx-auto my4">
       <a class="land-see-cta-link mx-auto" href="{{url}}">
         {{#image}}
         <amp-anim
@@ -120,6 +228,49 @@ limitations under the License.
       {{> ./partials/background-animation.snip.html}}
     </section>
     {{/summer-sale-cta}}
+
+    {{#land-see-recent}}
+    <section class="land-see-recent-content relative mx-auto py4">
+      <h4 class="land-see-section-header ml1">{{title}}</h4>
+      <div class="clearfix pt2">
+        <amp-position-observer
+          on="enter:recentSlideIn.start"
+          layout="nodisplay">
+        </amp-position-observer>
+        <ul class="list-reset m0 p0 center justify-center fit">
+          {{#recent-stories}}
+          <li class="px1 block align-top {{post-classes}}">
+            <a href="{{post-url}}" class="text-decoration-none">
+              {{#image}}
+                <amp-img
+                    class="land-see-post-image {{classes}}"
+                    alt="{{alt}}"
+                    media="{{media-query}}"
+                    width="{{width}}"
+                    height="{{height}}"
+                    layout="{{layout}}"
+                    src="{{src}}">
+                </amp-img>
+              {{/image}}
+            </a>
+            <a class="land-see-post-category inline-block pt1 underline caps" href="{{post-category-url}}">{{post-category}}</a>
+            <h4 class="pt1"><a class="text-decoration-none" href="{{post-url}}">{{post-title}}</a></h4>
+            <p class="pt1 pb3">{{post-copy}}</p>
+          </li>
+          {{/recent-stories}}
+        </ul>
+        {{#accent-animation}}
+        <div class="absolute z4 {{svg-image.classes}}">
+          <amp-position-observer
+            on="scroll:recentAccentAnimation.seekTo(percent=event.percent)"
+            layout="nodisplay">
+          </amp-position-observer>
+          {{{svg-image.svg}}}
+        </div>
+        {{/accent-animation}}
+      </div>
+    </section>
+    {{/land-see-recent}}
 
     {{> ./partials/story-categories.snip.html}}
 

@@ -1,0 +1,142 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@import '../../../../components/lightbox/template-preview';
+@import '../../shared';
+
+.www-header {
+  min-height: 600px;
+}
+
+.www-index-showcase,
+.www-index-help,
+.ampstart-footer {
+    transform: translateY(-300px);
+}
+
+.www-index-showcase-header-img [placeholder] {
+  background: url('../img/www/index/head_ph.png') no-repeat center center;
+  background-size: cover;
+}
+
+.www-index-showcase-template {
+  background-color: rgba(155, 155, 155, 0.4)
+}
+
+.www-index-showcase > ul > li:nth-child(2n+1) > .www-index-showcase-template {
+  background-color: rgba(0, 65, 119, 0.05)
+}
+
+.www-index-showcase-feature > * {
+  max-width: var(--width-1);
+}
+
+.www-index-showcase-components li {
+  position: absolute;
+  min-width: 10%;
+  min-height: 10%;
+  width: 31.6%;
+}
+
+.www-index-showcase-components ul {
+  overflow: hidden;
+}
+
+.www-index-showcase-components li:nth-child(1) {
+  left: 34.6%;
+  top: -5%;
+}
+
+.www-index-showcase-components li:nth-child(2) {
+  left: 66%;
+  top: -12.5%;
+  width: 25%;
+}
+
+.www-index-showcase-components li:nth-child(3) {
+  top: 7.5%;
+  left: 7.5%;
+}
+
+.www-index-showcase-components li:nth-child(4) {
+  width: 24.3%;
+  top: 31.2%;
+  left: 42%;
+}
+
+.www-index-showcase-components li:nth-child(5) {
+  left: 68.3%;
+  top: 39.4%;
+}
+
+.www-index-showcase-components li:nth-child(6) {
+  top: 54.6%;
+  left: 8.6%;
+}
+
+.www-index-showcase-components li:nth-child(7) {
+  top: 66.5%;
+  left: 11.7%;
+}
+
+.www-index-showcase-components li:nth-child(8) {
+  top: 68.3%;
+  left: 42%;
+}
+
+.www-index-showcase-components li:nth-child(9) {
+  top: 78.7%;
+  left: 60.8%;
+}
+
+.www-index-help {
+  background-color: #f1f1f8;
+}
+
+.www-index-help-image-container {
+  background: var(--header-gradient);
+}
+
+.www-index-help > ul > li {
+  width: 386px;
+  background-color: var(--color-white);
+}
+
+@media (--breakpoint-xs) {
+  .www-header {
+    min-height: 300px;
+  }
+
+  .www-index-showcase,
+  .www-index-help,
+  .ampstart-footer {
+      transform: translateY(-180px);
+  }
+
+  .www-index-showcase-template {
+    padding-right: 0;
+  }
+
+  .www-index-showcase-feature > * {
+    margin-left: 0;
+  }
+}
+
+@media (--breakpoint-xs), (--breakpoint-sm-md) {
+  .www-index-showcase-components-container > .www-index-showcase-feature {
+    order: 2;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "background-animation": {
+    "svg-image": [
+      {
+        "classes": "land-see-background-image-left",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 690 551' overflow='visible'><path fill='#add8bf' d='M345.048 0l-.032.051-.033-.051L0 550.606h690.031z'/></svg>"
+      },
+      {
+        "classes": "land-see-background-image-right",
+        "svg": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 491 392' overflow='visible'><path fill='#fcdcd4' d='M491.354 0h-280.98v.004H0l210.374 335.771v.005l35.301 56.34.001-.001.004.006 35.3-56.34v-.015z'/></svg>"
+      }
+     ]
+   }
+}

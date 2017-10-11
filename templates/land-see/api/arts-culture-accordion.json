@@ -10,7 +10,7 @@
             "src": "../../img/land-see/content/burger-200px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate arts-culture",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-arts-culture-anim",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html#arts-culture",
@@ -26,7 +26,7 @@
             "src": "../../img/land-see/content/kaneko-200px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate arts-culture",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-arts-culture-anim",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html#arts-culture",
@@ -42,7 +42,7 @@
             "src": "../../img/land-see/content/black-white-2-250px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate arts-culture xs-hide",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-arts-culture-anim xs-hide",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html#arts-culture",
@@ -58,7 +58,7 @@
             "src": "../../img/land-see/content/fall-festivals-200px.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate arts-culture xs-hide sm-hide",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-arts-culture-anim xs-hide sm-hide",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html#arts-culture",
