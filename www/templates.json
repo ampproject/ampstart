@@ -61,13 +61,13 @@
     "template-groups":[
       {
         "template-group": {
-          "title": "Shop",
-          "id": "shop",
-          "template-count": "3",
+          "title": "E-commerce",
+          "id": "commerce",
+          "template-count": "2",
           "templates": [
             {
               "template-preview": {
-                "title": "Bikes",
+                "title": "Bike Shop",
                 "page-count": "4",
                 "img": {
                   "width": "360",
@@ -77,7 +77,7 @@
                   "layout": "responsive",
                   "alt": "Screenshot of the Bike shop template"
                 },
-                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "desc": "A full e-commerce website designed to support many products with a modern look and feel.",
                 "lightbox-id": "shop-bike-template",
                 "src": "templates/e-commerce/landing.amp.html",
                 "download": "archive/e-commerce.zip"
@@ -95,7 +95,7 @@
                   "layout": "responsive",
                   "alt": "Screenshot of the Lune template"
                 },
-                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "desc": "An immersive walkthrough that lavishes attention on each feature of your product.",
                 "lightbox-id": "shop-lune-template",
                 "src": "templates/lune/lune.amp.html",
                 "download": "archive/lune.zip"
@@ -106,13 +106,49 @@
       },
       {
         "template-group": {
-          "title": "Blog",
-          "id": "blog",
-          "template-count": "2",
+          "title": "News + Blog",
+          "id": "news-blog",
+          "template-count": "3",
           "templates": [
             {
               "template-preview": {
-                "title": "Travel",
+                "title": "Simple Blog",
+                "page-count": "4",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/index/template1.png",
+                  "2x_url": "/img/www/index/template1_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the Simple blog template"
+                },
+                "desc": "A classic blog design with interactive elements such as an image a gallery, email sign up form and social buttons.",
+                "lightbox-id": "food-blog-template",
+                "src": "templates/blog/blog.amp.html",
+                "download": "archive/blog.zip"
+              }
+            },
+            {
+              "template-preview": {
+                "title": "Simple Article",
+                "page-count": "2",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/index/template3.png",
+                  "2x_url": "/img/www/index/template3_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the simple article template"
+                },
+                "desc": "A modern design for article content containing images and recommended articles.",
+                "lightbox-id": "simple-article-template",
+                "src": "templates/article/article.amp.html",
+                "download": "archive/article.zip"
+              }
+            },
+            {
+              "template-preview": {
+                "title": "The Scenic",
                 "page-count": "4",
                 "img": {
                   "width": "360",
@@ -122,31 +158,12 @@
                   "layout": "responsive",
                   "alt": "Screenshot of the travel blog template"
                 },
-                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
-                "lightbox-id": "travel-blog-template",
+                "desc": "An opinionated blog template with stylized fonts and image galleries.",
+                "lightbox-id": "the-scenic-template",
                 "src": "templates/themes_1/template_1_article.amp.html",
                 "download": "archive/themes_1.zip"
               }
-            },
-            {
-              "template-preview": {
-                "title": "Food",
-                "page-count": "4",
-                "img": {
-                  "width": "360",
-                  "height": "640",
-                  "url": "/img/www/index/template1.png",
-                  "2x_url": "/img/www/index/template1_2x.png",
-                  "layout": "responsive",
-                  "alt": "Screenshot of the Food blog template"
-                },
-                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
-                "lightbox-id": "food-blog-template",
-                "src": "templates/blog/blog.amp.html",
-                "download": "archive/blog.zip"
-              }
             }
-
           ]
         }
       },
@@ -158,7 +175,7 @@
           "templates": [
             {
               "template-preview": {
-                "title": "Restaurant",
+                "title": "Beck & Galo",
                 "page-count": "2",
                 "img": {
                   "width": "360",
@@ -168,37 +185,10 @@
                   "layout": "responsive",
                   "alt": "Screenshot of the travel blog template"
                 },
-                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
+                "desc": "A simple, elegant design for a restaurant home page and menu.",
                 "lightbox-id": "business-restaurant-template",
                 "src": "templates/themes_2/home.amp.html",
                 "download": "archive/themes_2.zip"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "template-group": {
-          "title": "Article",
-          "id": "article",
-          "template-count": "1",
-          "templates": [
-            {
-              "template-preview": {
-                "title": "Travel",
-                "page-count": "2",
-                "img": {
-                  "width": "360",
-                  "height": "640",
-                  "url": "/img/www/index/template3.png",
-                  "2x_url": "/img/www/index/template3_2x.png",
-                  "layout": "responsive",
-                  "alt": "Screenshot of the travel blog template"
-                },
-                "desc": "Details make all the difference. LUNE is an immersive product walkthrough that lavishes attention on each feature or your product with custom photography and show-stopping imagery",
-                "lightbox-id": "article-travel-template",
-                "src": "templates/article/article.amp.html",
-                "download": "archive/article.zip"
               }
             }
           ]
