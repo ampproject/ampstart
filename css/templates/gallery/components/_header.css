@@ -114,3 +114,28 @@
   color: inherit;
   text-decoration: none;
 }
+
+.ampstart-sidebar {
+  width: 320px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.ampstart-sidebar-header::after {
+  margin-left: 1.875rem;
+  font-size: .84375rem;
+  line-height: 1.25rem;
+  letter-spacing: .05em;
+  content: "Current Exhibitions"
+}
+
+.ampstart-sidebar-nav {
+  margin-top: 32px;
+}
+
+.ampstart-nav-link {
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
