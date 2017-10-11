@@ -18,4 +18,4 @@
 | www/index/1.0/page.css        | 23787                | 23.79 KB |
 | www/index/page.css            | 22670                | 22.67 KB |
 | www/render/page.css           | 24284                | 24.28 KB |
-| www/templates/page.css        | 22455                | 22.45 KB |
+| www/templates/page.css        | 22458                | 22.46 KB |
