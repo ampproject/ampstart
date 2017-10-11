@@ -33,9 +33,12 @@
 
 }
 
-
 .www-templates-group {
   margin-top: var(--space-5);
+}
+
+.www-templates-group:target {
+  padding-top: var(--space-5);
 }
 
 .www-templates-group:target::before {
