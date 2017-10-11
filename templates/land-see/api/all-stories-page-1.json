@@ -50,20 +50,18 @@
         "post-copy": "Whether it’s a short weekend getaway or an extended holiday, choosing carefully from your accessories can help lighten your load while expanding your repertory."
       },
       {
-        "image": [
+        "youtube": [
           {
             "classes": "cover",
-            "alt-text": "Epression of aesthetics.",
             "width": 409, "height": 305, "layout": "responsive",
-            "src": "../../img/land-see/content/timeless-design-350px.jpg"
+            "videoid": "IwlkVr6mibA"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-        "post-url": "#",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured land-see-post-video col land-see-story",
         "post-category": "Design",
         "post-category-url": "stories.amp.html#design",
         "post-title": "Timeless Design: A History of Watches",
-        "post-copy": "A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress.<span class='xs-hide'><br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;</span>"
+        "post-copy": "A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress."
       },
       {
         "image": [
@@ -75,7 +73,7 @@
           }
         ],
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
-        "post-url": "#",
+        "post-url": "kim-myeong.amp.html",
         "post-category": "Fashion",
         "post-category-url": "stories.amp.html#fashion",
         "post-title": "Designer Kim Myeong",

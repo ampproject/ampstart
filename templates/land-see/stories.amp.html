@@ -78,13 +78,17 @@ limitations under the License.
     </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
+    <section class="land-see-background-animation-container land-see-stories-anim-container relative mx-auto">
+      {{> ./partials/background-animation.snip.html}}
+    </section>
+
     {{#stories-category}}
-    <section class="land-see-category land-see-recent-content relative mx-auto py4">
-      <h1>Stories</h1>
-      <div class="land-see-categories-carousel">
+    <section class="land-see-category land-see-recent-content relative mx-auto">
+      <h1 class="center">Stories</h1>
+      <div class="land-see-categories-carousel fit">
         <ul class="list-reset center m0 p0 flex justify-center nowrap">
           {{#category}}
-          <li><button on="{{action}}">{{button-text}}</button></li>
+          <li class="mx2"><button class="land-see-categories-button" on="{{action}}">{{button-text}}</button></li>
           {{/category}}
         </ul>
       </div>
@@ -108,6 +112,7 @@ limitations under the License.
             <ul class="list-reset m0 p0 center justify-center fit">
               <%#land-see-category%>
               <li class="px1 block align-top <%post-classes%>">
+                <%#post-url%>
                 <a href="<%post-url%>" class="text-decoration-none">
                   <%#image%>
                     <amp-img
@@ -121,14 +126,26 @@ limitations under the License.
                     </amp-img>
                   <%/image%>
                 </a>
+                <%/post-url%>
+                <%#youtube%>
+                <amp-youtube
+                  class="<%classes%>"
+                  width="<%width%>"
+                  height="<%height%>"
+                  layout="<%layout%>"
+                  data-videoid="<%videoid%>">
+                </amp-youtube>
+                <%/youtube%>
                 <a class="land-see-post-category inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
                 <h4 class="pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
+                <%#post-copy%>
                 <p class="pt1 pb3"><%{post-copy}%></p>
+                <%/post-copy%>
               </li>
               <%/land-see-category%>
             </ul>
             <%#land-see-paging%>
-            <div class="land-see-paging">
+            <div class="land-see-paging fit">
               <%#page-nav%>
               <button on="<%action%>" class="<%classes%>"><%button-text%></button>
               <%/page-nav%>
@@ -140,10 +157,6 @@ limitations under the License.
       </div>
     </section>
     {{/stories-category}}
-
-    <section class="land-see-background-animation-container relative mx-auto my4">
-      {{> ./partials/background-animation.snip.html}}
-    </section>
 
     {{> ./partials/subscription.snip.html}}
 

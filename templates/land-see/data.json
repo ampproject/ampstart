@@ -13,7 +13,8 @@
         "amp-anim",
         "amp-animation",
         "amp-position-observer",
-        "amp-bind"
+        "amp-bind",
+        "amp-youtube"
       ],
       "templates": [
         "amp-mustache"
