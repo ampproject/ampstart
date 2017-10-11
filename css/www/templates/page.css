@@ -22,7 +22,7 @@
 
 .www-header::after {
   content: '';
-  background-image: url('/img/www/templates/templates_hero.png');
+  background-image: url('/img/www/templates/templates_hero_bg.png');
   background-size: cover;
   position: absolute;
   top: 0;
