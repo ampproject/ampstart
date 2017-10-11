@@ -46,6 +46,7 @@
 
 .www-template-preview-img {
   margin-bottom: var(--space-5);
+  max-width: 360px;
 }
 
 .www-templates-action {
