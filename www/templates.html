@@ -22,9 +22,9 @@ limitations under the License.
 {{> ../utils/amp-page-head.snip.html}}
 <body>
   {{> ../components/navbar/navbar.snip.html}}
-  <header class="www-header">
-    <h1 class="mb4 px2 col-12 sm-col-8 mx-auto">Templates</h1>
-    <span class="h3 block mb4 px2 col-12 sm-col-8 mx-auto">Get started quickly with a ready-made design.</span>
+  <header class="www-header relative">
+    <h1 class="mb4 px4 col-12 sm-col-8 max-width-1">Templates</h1>
+    <span class="h3 block mb4 px4 col-12 sm-col-8 max-width-1">Get started quickly with a ready-made design.</span>
   </header>
   <amp-selector layout="container">
   <main class="flex">
@@ -42,7 +42,7 @@ limitations under the License.
       {{#template-group}}
       <section class="www-templates-group flex-column justify-center" id="{{id}}">
         <header class="mb2 www-heading relative">
-          <h2 class="ampstart-title-sm mb2">{{title}}</h2>
+          <h2 class="caps ampstart-title-sm mb2">{{title}}</h2>
           <span class="ampstart-caption block pb1">{{template-count}} templates</span>
         </header>
         <ul class="list-reset flex flex-wrap justify-between m0">
@@ -53,7 +53,7 @@ limitations under the License.
             <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card"></amp-img>
             {{/img}}
             <header class="mb4 flex justify-between items-baseline">
-              <h3 class="ampstart-title-sm">{{title}}</h3>
+              <h3 class="caps ampstart-title-sm">{{title}}</h3>
               <div class="inline-block">
                 <span class="www-templates-action inline-block xs-hide mr1" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
                   {{> ../img/www/preview.svg}}

@@ -18,17 +18,18 @@
 
 .www-header {
   position: relative;
+  min-height: 600px;
 }
 
 .www-header::after {
   content: '';
-  background-image: url('/img/www/templates/templates_hero.png');
+  background-image: url('/img/www/templates/templates_hero_2x.png');
   background-size: cover;
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0;
-  left: 0;
+  right: -30%;
+  left: 40%;
   z-index: -1;
 }
 
@@ -61,4 +62,10 @@
 
 .www-templates-action:hover .ampstart-icon {
   fill: var(--color-font-primary);
+}
+
+@media (--breakpoint-xs) {
+  .www-header::after {
+    display: none;
+  }
 }

@@ -115,6 +115,10 @@
   background-color: var(--color-white);
 }
 
+.www-index-help .ampstart-icon {
+  fill: var(--color-font-secondary);
+}
+
 @media (--breakpoint-xs) {
   .www-header {
     min-height: 300px;
