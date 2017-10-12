@@ -18,11 +18,12 @@
 
 .www-header {
   position: relative;
+  min-height: 600px;
 }
 
 .www-header::after {
   content: '';
-  background-image: url('/img/www/templates/templates_hero.png');
+  background-image: url('/img/www/templates/templates_hero_2x.png');
   background-size: cover;
   position: absolute;
   top: 0;
