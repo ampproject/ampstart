@@ -1,0 +1,112 @@
+{{!
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
+<!doctype html>
+{{#www-index}}
+  <html ⚡>
+  {{> ../utils/amp-page-head.snip.html}}
+  <body>
+    {{> ../components/navbar/navbar.snip.html}}
+    <main>
+      <header class="www-header center">
+        <amp-img src="/img/www/amp_logo_white.svg" width="80" height="80" layout="fixed" class="mb4" alt="AMP logo"></amp-img>
+        <h1 class="mb4">Get started with AMP</h1>
+        <span class="block mb4 h3">Create modern, fast-loading AMP pages  with our quick-start templates and components</span>
+        <div class="www-index-header-action mx-auto mb4">
+          <a href="#templates" class="ampstart-btn ampstart-btn-secondary caps mb3 mx2 inline-block">Page Templates</a>
+          <a href="components.html" class="ampstart-btn ampstart-btn-secondary caps mb3 mx2 inline-block">Components</a>
+        </div>
+    </header>
+    <section class="www-index-features px4 mx-auto">
+      <ul class="list-reset flex flex-wrap m0 p0">
+        <li class="col col-12 md-col-4 pr4 mb4">
+          <h2 class="www-heading pb2 caps mb3 h3 relative">Responsive</h2>
+          <p>Templates are designed to work well on mobile, desktop, and tablet</p>
+        </li>
+        <li class="col col-12 md-col-4 lg-col-4 pr4 mb4">
+          <h2 class="www-heading pb2 caps mb3 h3 relative">Open Source</h2>
+          <p>Any developer or designer can contribute to the growing list of templates</p>
+        </li>
+        <li class="col col-12 md-col-4 mb4">
+          <h2 class="www-heading pb2 caps mb3 h3 relative">Flexible</h2>
+          <p>Modern design, easy to customize</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="www-index-templates" id="templates">
+      <h2 class="center mb4">Page Templates</h2>
+      <ul class="list-reset">
+        {{#template-previews}}
+        {{#template-preview}}
+        <li class="relative clearfix mb2" id="{{id}}">
+          {{#img}}
+          <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" class="ampstart-card xs-col-12 sm-col-5 md-col-4 lg-col-3 mx4 {{#right-aligned}}col-right{{/right-aligned}}{{^right-aligned}}left col {{/right-aligned}}"></amp-img>
+          {{/img}}
+          <div class="px4 mt4">
+          <h3 class="caps pt4 pb2">{{title}}</h3>
+          <p class="pb2">{{desc}}</p>
+          <div class="pb2">
+            <button class="ampstart-btn caps xs-hide mr2 mb2" on="tap:{{lightbox-id}}">View Template</button>
+            <a href="{{{download}}}" target="_blank" class="ampstart-btn caps xs-hide mr2 mb2 inline-block">Download Code</a>
+
+            <a href="{{{src}}}" target="_blank" class="ampstart-btn caps sm-hide md-hide lg-hide inline-block">View Template</a>
+          </div>
+          </div>
+        </li>
+        {{/template-preview}}
+        {{/template-previews}}
+      </ul>
+
+    </section>
+
+    <section class="www-index-showcase px4">
+      <h2 class="center mb4">Built with AMP Start</h2>
+      <amp-carousel type="carousel" layout="fixed-height" height="414" controls class="mb4 mx-auto xs-hide">
+        {{#showcase-template-previews}}
+        {{#template-preview}}
+          {{#img}}
+          <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" class="ampstart-card" alt="{{title}}"{{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}></amp-img>
+          {{/img}}
+        {{/template-preview}}
+        {{/showcase-template-previews}}
+      </amp-carousel>
+      <amp-carousel type="carousel" layout="fixed-height" height="414" controls class="mb4 mx-auto sm-hide md-hide lg-hide">
+        {{#showcase-template-previews}}
+        {{#template-preview}}
+          {{#img}}
+            {{#src}}<a href="{{{src}}}" title="View {{title}}" target="_blank">{{/src}}
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} width="{{width}}" height="{{height}}" class="ampstart-card" alt="{{title}}"></amp-img>
+            {{#src}}</a>{{/src}}
+          {{/img}}
+        {{/template-preview}}
+        {{/showcase-template-previews}}
+      </amp-carousel>
+    </section>
+    </main>
+    {{> ../components/footer/footer.snip.html}}
+    {{#template-previews}}
+      {{> ../components/lightbox/template-preview.snip.html}}
+    {{/template-previews}}
+    {{#showcase-template-previews}}
+      {{> ../components/lightbox/template-preview.snip.html}}
+    {{/showcase-template-previews}}
+    {{> ../utils/www-analytics.snip.html}}
+  </body>
+  </html>
+{{/www-index}}
