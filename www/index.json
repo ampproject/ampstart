@@ -85,16 +85,16 @@
           "desc": "Modern designs that you can customize to suit your needs.",
           "actions": [
             {
-              "link": {"url": "templates.html", "text": "View all templates"}
+              "link": {"url": "templates.html", "text": "View templates"}
             }
           ],
           "template-preview": {
             "title": "The Scenic Template",
             "img": {
               "width": "1480",
-              "height": "1254",
+              "height": "1100",
               "url": "/img/www/index/scenic_both.png",
-              "2x_url": "/img/www/index/scenic_both.png",
+              "2x_url": "/img/www/index/scenic_both_2x.png",
               "layout": "responsive",
               "alt": "Screenshot of the scenic template"
             },
@@ -110,16 +110,16 @@
           "desc": "Templates designed to work with all devices - mobile, tablet and desktop.",
           "actions": [
             {
-              "link": {"url": "templates.html", "text": "View all templates"}
+              "link": {"url": "templates.html", "text": "View templates"}
             }
           ],
           "template-preview": {
             "title": "Lune Template",
             "img": {
-              "width": "1864",
-              "height": "1082",
+              "width": "1480",
+              "height": "1100",
               "url": "/img/www/index/lune_both.png",
-              "2x_url": "/img/www/index/lune_both.png",
+              "2x_url": "/img/www/index/lune_both_2x.png",
               "layout": "responsive",
               "alt": "Screenshot of the Lune template"
             },
@@ -135,16 +135,16 @@
           "desc": "Developers and designers can share and contribute their designs for new templates and components.",
           "actions": [
             {
-              "link": {"url": "templates.html", "text": "View all templates"}
+              "link": {"url": "templates.html", "text": "View templates"}
             }
           ],
           "template-preview": {
             "title": "Bike Shed Template",
             "img": {
-              "width": "1264",
-              "height": "1298",
+              "width": "1480",
+              "height": "1100",
               "url": "/img/www/index/bike_both.png",
-              "2x_url": "/img/www/index/bike_both.png",
+              "2x_url": "/img/www/index/bike_both_2x.png",
               "layout": "responsive",
               "alt": "Screenshot of the Bike Shed template"
             },

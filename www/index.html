@@ -21,6 +21,15 @@ limitations under the License.
 <html ⚡>
 {{> ../utils/amp-page-head.snip.html}}
 <body>
+  <div class="hide">
+    <svg width="0" height="0">
+        <defs>
+          <clipPath id="svgClipPath" clipPathUnits="objectBoundingBox">
+            <rect y="0" x="0" width="1" height="0.99"/>
+          </clipPath>
+        </defs>
+    </svg>
+  </div>
   {{> ../components/navbar/navbar.snip.html}}
   <main>
       <header class="www-header center">
@@ -34,7 +43,7 @@ limitations under the License.
           <div placeholder class="max-width-3"></div>
         </amp-img>
       </header>
-      <ul class="list-reset">
+      <ul class="www-index-showcase-list list-reset relative">
         {{#features-showcase}}
         {{#feature}}
         <li class="flex flex-wrap items-stretch justify-center">
@@ -43,41 +52,42 @@ limitations under the License.
             {{#img}}
             <amp-img width="{{width}}" height="{{height}}" layout="{{layout}}" alt="{{alt}}" src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}}></amp-img>
             {{/img}}
-            <div class="flex flex-wrap justify-around items-baseline mt2">
-              <h3 class="ampstart-title-sm caps">{{title}}</h3>
-              <div class="inline-block">
-                <span class="www-templates-action inline-block xs-hide mr1" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
-                  {{> ../img/www/preview.svg}}
-                </span>
-                <a href="{{{src}}}" target="_blank" class="www-templates-action sm-hide md-hide lg-hide">
-                  {{> ../img/www/preview.svg}}
-                </a>
-                <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action inline-block xs-hide">
-                  {{> ../img/www/download.svg}}
-                </a>
-              </div>
-            </div>
           </div>
           {{/template-preview}}
-          <div class="www-index-showcase-feature flex flex-column justify-center items-start col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
-            <h2 class="ml4 mb4">{{title}}</h2>
-            <p class="ml4 mb4">{{desc}}</p>
-            {{#actions}}
-            {{#link}}
-            <a href="{{url}}" class="ampstart-btn caps inline-block ml4 ">{{text}}</a>
-            {{/link}}
-            {{/actions}}
+          <div class="www-index-showcase-feature flex flex-column justify-center items-center col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
+            <div>
+              <h2 class="mb3">{{title}}</h2>
+              <p class="mb3">{{desc}}</p>
+              {{#actions}}
+              {{#link}}
+              <a href="{{url}}" class="ampstart-btn caps inline-block mb4 ">{{text}}</a>
+              {{/link}}
+              {{/actions}}
+
+              {{#template-preview}}
+              <div class="www-index-showcase-feature-preview flex flex-wrap items-center mt2">
+                <h3 class="ampstart-label mr2">{{title}}</h3>
+                <div class="flex items-center">
+                  <span class="www-templates-action flex items-center xs-hide mr2" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
+                    {{> ../img/www/preview.svg}}
+                  </span>
+                  <a href="{{{src}}}" target="_blank" class="www-templates-action flex items-center sm-hide md-hide lg-hide">
+                    {{> ../img/www/preview.svg}}
+                  </a>
+                  <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action flex items-center xs-hide">
+                    {{> ../img/www/download.svg}}
+                  </a>
+                </div>
+              </div>
+              {{/template-preview}}
+
+            </div>
           </div>
         </li>
         {{/feature}}
         {{/features-showcase}}
         <li class="www-index-showcase-components-container flex flex-wrap items-stretch justify-center">
-          <div class="www-index-showcase-feature flex flex-column justify-center items-start col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
-            <h2 class="ml4 mb4">Page Components</h2>
-            <p class="ml4 mb4">Incorporate specific designed elements of a page into your own.</p>
-            <a href="components.html" class="ampstart-btn caps inline-block ml4 ">Learn More</a>
-          </div>
-          <div class="www-index-showcase-components col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 ny4 relative">
+          <div class="www-index-showcase-components col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 my4 relative">
             <amp-img  layout="responsive" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" layout="responsive" width="1430" height="1404" alt="background spacing image." class="max-width-3 block mx-auto" aria-hidden></amp-img>
 
 
@@ -111,6 +121,13 @@ limitations under the License.
               </li>
             </ul>
 
+          </div>
+          <div class="www-index-showcase-feature flex flex-column justify-center items-center col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
+            <div>
+              <h2 class="mb4">Page Components</h2>
+              <p class="mb4">Incorporate specific designed elements of a page into your own.</p>
+              <a href="components.html" class="ampstart-btn caps inline-block ml4 ">Learn More</a>
+          </div>
           </div>
         </li>
       </ul>
