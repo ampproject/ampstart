@@ -32,7 +32,6 @@
   --box-shadow-color-dark: rgba(50,58,67,.4);
 
   --font-color-primary: var(--black);
-  --color-primary: var(--black);
   --font-color-secondary: var(--white);
   --color-secondary: var(--white);
   --font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
