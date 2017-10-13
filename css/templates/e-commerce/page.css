@@ -693,12 +693,12 @@ amp-selector [option][selected] {
   margin-left: 0;
 }
 
-.commerce-product-color-white {
-  background-color: var(--color-white);
+.commerce-product-color-blue {
+  background-color: #1d4cdf;
 }
 
-.commerce-product-color-green {
-  background-color: #243d1e;
+.commerce-product-color-black {
+  background-color: var(--color-black);
 }
 
 .commerce-product-thumb {
