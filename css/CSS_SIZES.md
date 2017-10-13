@@ -4,7 +4,7 @@
 | templates/alp/page.css        | 24722                | 24.72 KB |
 | templates/article/page.css    | 24251                | 24.25 KB |
 | templates/blog/page.css       | 24494                | 24.49 KB |
-| templates/e-commerce/page.css | 42182                | 42.18 KB |
+| templates/e-commerce/page.css | 42288                | 42.29 KB |
 | templates/gallery/page.css    | 13975                | 13.97 KB |
 | templates/land-see/page.css   | 39035                | 39.03 KB |
 | templates/lune/page.css       | 47503                | 47.50 KB |
@@ -15,7 +15,7 @@
 | www/components/page.css       | 22899                | 22.90 KB |
 | www/getstarted/page.css       | 18569                | 18.57 KB |
 | www/howitworks/page.css       | 18569                | 18.57 KB |
-| www/index/1.0/page.css        | 24825                | 24.82 KB |
+| www/index/1.0/page.css        | 24955                | 24.95 KB |
 | www/index/page.css            | 22749                | 22.75 KB |
 | www/render/page.css           | 24284                | 24.28 KB |
 | www/templates/page.css        | 22815                | 22.82 KB |

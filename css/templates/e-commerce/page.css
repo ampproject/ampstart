@@ -905,6 +905,12 @@ amp-selector [option][selected] {
   }
 }
 
+@media (--breakpoint-xs) {
+  .commerce-cart-item-desc {
+    margin-top: var(--space-4);
+  }
+}
+
 .commerce-cart-added .ampstart-headerbar-icon-wrapper:after {
   content: '1';
   display: block;
@@ -976,6 +982,8 @@ amp-selector [option][selected] {
 
 .commerce-related-product {
   width: 105px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .amp-mode-mouse .commerce-related-product:hover .commerce-related-product-name {

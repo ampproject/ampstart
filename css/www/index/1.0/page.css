@@ -18,7 +18,8 @@
 @import '../../shared';
 
 .www-header {
-  min-height: 600px;
+  min-height: 440px;
+  padding-top: var(--space-4);
 }
 
 .www-header > h1 + span {
@@ -179,7 +180,7 @@
   .www-index-showcase,
   .www-index-help,
   .ampstart-footer {
-      transform: translateY(-180px);
+      transform: translateY(-200px);
   }
 
   .www-index-showcase-template {
@@ -188,5 +189,11 @@
 
   .www-index-showcase-feature > * {
     margin-left: 0;
+  }
+}
+
+@media (--breakpoint-xs), (--breakpoint-sm-md) {
+  .www-index-showcase-feature {
+    padding-top: 0;
   }
 }
