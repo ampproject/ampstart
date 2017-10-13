@@ -1,17 +1,17 @@
 {
 	"items": [
 		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 642,
-			"image": "/img/e-commerce/product/product-9.jpg",
+			"name": "16-Speed Road Bike",
+			"description": "Smooth shifting through all gears for city riding.",
+			"price": 892,
+			"image": "/img/e-commerce/product/product-7.jpg",
 			"category": "components"
 		},
 		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 487,
-			"image": "/img/e-commerce/product/product-6.jpg",
+			"name": "Black Road Bike Frame",
+			"description": "Built with lightweight aluminum for speed.",
+			"price": 692,
+			"image": "/img/e-commerce/product/product-10.jpg",
 			"category": "components"
 		}
 	]

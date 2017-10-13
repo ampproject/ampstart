@@ -9,38 +9,56 @@ const path = require('path');
 const currentWorkingDirectory = path.dirname(process.argv[1]);
 const totalProducts = 10;
 const titles = {
-  'gloves': {
-    'name': 'Pointer gloves',
-    'description': 'Fingerless with lightweight construction'
+  'saddle': {
+    'name': 'Leather Saddle',
+    'description': 'Firm, yet comfortable for long leisurely rides.'
   },
-  'cap': {
-    'name': 'Farringdon cap',
-    'description': 'Water resistant and breathable'
+  'sprocket': {
+    'name': 'Sprocket Set',
+    'description': 'Steel, designed for long lasting stability.'
   },
-  'bike1': {
-    'name': 'Highland',
-    'description': 'Timeless style in Reynolds 531 tubing'
+  'fixie': {
+    'name': 'Fixie Blue',
+    'description': 'Designed to get you there.'
   },
-  'bike2': {
-    'name': 'Estuary',
-    'description': 'Relaxed geometry for comfortable commuting'
+  'chain': {
+    'name': 'Chain replacement set',
+    'description': 'Aluminum construction for durability.'
   },
-  'bike3': {
-    'name': 'Beacon',
-    'description': 'Full carbon frameset, designed to climb'
+  'frame': {
+    'name': 'Black Road Bike Frame',
+    'description': 'Built with lightweight aluminum for speed.'
   },
-  'bike4':{
-    'name': 'Herne Hill',
-    'description': 'Built for the track, at home on the street'
+  'red': {
+    'name': 'Red Cruiser',
+    'description': 'Smooth ride for enjoyable cruising.'
   },
-  'bike5': {
-    'name': 'Pennine',
-    'description': 'Full-featured tourer for long-distance rides'
+  'wheel': {
+    'name': 'Wheel Reflectors',
+    'description': 'Be seen throughout your ride.'
+  },
+  'handles': {
+    'name': 'Rams Horn Handles',
+    'description': 'Built with grip and durability in mind.'
+  },
+  'brakes': {
+    'name': 'Caliper Brakes',
+    'description': 'Fits most wheel sizes and designed to last long.'
+  },
+  'speed16': {
+    'name': '16-Speed Road Bike',
+    'description': 'Smooth shifting through all gears for city riding.'
+  },
+  'reflector': {
+    'name': 'Handlebar Reflector Set',
+    'description': 'Maximum light visibility for safety.'
   }
 };
 const titleListing = [
-  titles.bike1, titles.bike2, titles.bike3, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.bike4
+  titles.fixie, titles.red, titles.saddle, titles.wheel, titles.sprocket, titles.brakes, titles.speed16, titles.handles, titles.chain, titles.frame
 ];
+
+
 const minPrice = 400;
 const maxPrice = 999;
 const imagesFolder = '/img/e-commerce/product/';
