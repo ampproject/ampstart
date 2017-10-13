@@ -15,20 +15,6 @@
 			"category": "accessories"
 		},
 		{
-			"name": "Sprocket Set",
-			"description": "Steel, designed for long lasting stability.",
-			"price": 581,
-			"image": "/img/e-commerce/product/product-1.jpg",
-			"category": "bikes"
-		},
-		{
-			"name": "Wheel Reflectors",
-			"description": "Be seen throughout your ride.",
-			"price": 603,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "components"
-		},
-		{
 			"name": "Fixie Blue",
 			"description": "Designed to get you there.",
 			"price": 643,
@@ -48,20 +34,6 @@
 			"price": 688,
 			"image": "/img/e-commerce/product/product-6.jpg",
 			"category": "accessories"
-		},
-		{
-			"name": "Caliper Brakes",
-			"description": "Fits most wheel sizes and designed to last long.",
-			"price": 776,
-			"image": "/img/e-commerce/product/product-8.jpg",
-			"category": "components"
-		},
-		{
-			"name": "Rams Horn Handles",
-			"description": "Built with grip and durability in mind.",
-			"price": 838,
-			"image": "/img/e-commerce/product/product-7.jpg",
-			"category": "components"
 		},
 		{
 			"name": "Chain replacement set",

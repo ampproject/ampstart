@@ -21,6 +21,10 @@
   min-height: 600px;
 }
 
+.www-header > h1 + span {
+  max-width: 35rem;
+}
+
 .www-index-showcase,
 .www-index-help,
 .ampstart-footer {

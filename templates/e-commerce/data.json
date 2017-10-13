@@ -161,8 +161,8 @@
         "thumbnail": "../../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Highland",
-        "description": "Timeless style in Reynolds 531 tubing",
+        "name": "Sprocket Set",
+        "description": "Steel, designed for long lasting stability.",
         "price": "470",
         "quantity": 1,
         "thumbnail": "../../../img/e-commerce/product/product-1.jpg"
@@ -250,11 +250,11 @@
   "related-products": {
     "items": [
       {
-        "name": "Highland",
+        "name": "Sprocket Set",
         "image": "../../img/e-commerce/product/product-1.jpg"
       },
       {
-        "name": "Estuary",
+        "name": "Fixie Blue",
         "image": "../../img/e-commerce/product/product-2.jpg"
       },
       {
@@ -262,7 +262,7 @@
         "image": "../../img/e-commerce/product/product-3.jpg"
       },
       {
-        "name": "Pointer gloves",
+        "name": "Leather Saddle",
         "image": "../../img/e-commerce/product/product-4.jpg"
       },
       {
@@ -270,7 +270,7 @@
         "image": "../../img/e-commerce/product/product-5.jpg"
       },
       {
-        "name": "Pointer gloves",
+        "name": "Leather Saddle",
         "image": "../../img/e-commerce/product/product-6.jpg"
       },
       {
@@ -286,16 +286,8 @@
         "image": "../../img/e-commerce/product/product-9.jpg"
       },
       {
-        "name": "Pointer gloves",
+        "name": "Leather Saddle",
         "image": "../../img/e-commerce/product/product-10.jpg"
-      },
-      {
-        "name": "Farringdon cap",
-        "image": "../../img/e-commerce/product/product-11.jpg"
-      },
-      {
-        "name": "Herne Hill",
-        "image": "../../img/e-commerce/product/product-12.jpg"
       }
     ]
   }

@@ -8,20 +8,6 @@
 			"category": "accessories"
 		},
 		{
-			"name": "Rams Horn Handles",
-			"description": "Built with grip and durability in mind.",
-			"price": 838,
-			"image": "/img/e-commerce/product/product-7.jpg",
-			"category": "components"
-		},
-		{
-			"name": "Caliper Brakes",
-			"description": "Fits most wheel sizes and designed to last long.",
-			"price": 776,
-			"image": "/img/e-commerce/product/product-8.jpg",
-			"category": "components"
-		},
-		{
 			"name": "Red Cruiser",
 			"description": "Smooth ride for enjoyable cruising.",
 			"price": 688,
@@ -41,20 +27,6 @@
 			"price": 643,
 			"image": "/img/e-commerce/product/product-2.jpg",
 			"category": "accessories"
-		},
-		{
-			"name": "Wheel Reflectors",
-			"description": "Be seen throughout your ride.",
-			"price": 603,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "components"
-		},
-		{
-			"name": "Sprocket Set",
-			"description": "Steel, designed for long lasting stability.",
-			"price": 581,
-			"image": "/img/e-commerce/product/product-1.jpg",
-			"category": "bikes"
 		},
 		{
 			"name": "16-Speed Road Bike",

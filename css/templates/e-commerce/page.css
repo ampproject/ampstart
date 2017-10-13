@@ -805,6 +805,11 @@ amp-selector [option][selected] {
   max-width: var(--content-max-width);
 }
 
+.commerce-listing-product,
+.commerce-listing-product > div {
+  min-height: 275px;
+}
+
 .commerce-listing-product-image {
   border-bottom: 1px dashed #dadada;
 }
