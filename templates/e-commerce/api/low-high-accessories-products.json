@@ -8,7 +8,7 @@
 			"category": "accessories"
 		},
 		{
-			"name": "16-Speed Road Bike",
+			"name": "16-Speed",
 			"description": "Smooth shifting through all gears for city riding.",
 			"price": 524,
 			"image": "/img/e-commerce/product/product-5.jpg",
@@ -22,7 +22,7 @@
 			"category": "accessories"
 		},
 		{
-			"name": "Black Road Bike Frame",
+			"name": "Road Bike",
 			"description": "Built with lightweight aluminum for speed.",
 			"price": 644,
 			"image": "/img/e-commerce/product/product-9.jpg",
@@ -36,8 +36,8 @@
 			"category": "accessories"
 		},
 		{
-			"name": "Chain replacement set",
-			"description": "Aluminum construction for durability.",
+			"name": "Chain set",
+			"description": "Silver alloy construction for durability.",
 			"price": 867,
 			"image": "/img/e-commerce/product/product-3.jpg",
 			"category": "accessories"
