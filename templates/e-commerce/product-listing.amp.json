@@ -33,21 +33,21 @@
           },
           {
             "name": "category",
-            "id": "mens",
-            "label": "Mens",
-            "on": "change: AMP.setState({products: {category: 'mens'}})"
+            "id": "bikes",
+            "label": "Bikes",
+            "on": "change: AMP.setState({products: {category: 'bikes'}})"
           },
           {
             "name": "category",
-            "id": "womens",
-            "label": "Womens",
-            "on": "change: AMP.setState({products: {category: 'womens'}})"
+            "id": "accessories",
+            "label": "Accessories",
+            "on": "change: AMP.setState({products: {category: 'accessories'}})"
           },
           {
             "name": "category",
-            "id": "kids",
-            "label": "Kids",
-            "on": "change: AMP.setState({products: {category: 'kids'}})"
+            "id": "components",
+            "label": "Components",
+            "on": "change: AMP.setState({products: {category: 'components'}})"
           }
         ],
         "commerce-select": {
@@ -59,14 +59,14 @@
             "value": "all",
             "text": "all"
           }, {
-            "value": "mens",
-            "text": "mens"
+            "value": "bikes",
+            "text": "bikes"
           }, {
-            "value": "womens",
-            "text": "womens"
+            "value": "accessories",
+            "text": "accessories"
           }, {
-            "value": "kids",
-            "text": "kids"
+            "value": "components",
+            "text": "components"
           }],
           "id": "categories",
           "name": "categories"

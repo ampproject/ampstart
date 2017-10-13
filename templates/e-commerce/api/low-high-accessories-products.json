@@ -1,0 +1,18 @@
+{
+	"items": [
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 449,
+			"image": "/img/e-commerce/product/product-5.jpg",
+			"category": "accessories"
+		},
+		{
+			"name": "Estuary",
+			"description": "Relaxed geometry for comfortable commuting",
+			"price": 865,
+			"image": "/img/e-commerce/product/product-2.jpg",
+			"category": "accessories"
+		}
+	]
+}

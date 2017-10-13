@@ -48,14 +48,14 @@ const imagePrefix = 'product-';
 const imageExtension = '.jpg';
 const totalImages = 10;
 let currentImage = 1;
-const categories = ['mens', 'womens', 'kids'];
+const categories = ['bikes', 'accessories', 'components'];
 const products = {
   items: []
 };
 const productCategories = {
-  mens: [],
-  womens: [],
-  kids: []
+  bikes: [],
+  accessories: [],
+  components: []
 };
 
 const outputFile = 'products.json';

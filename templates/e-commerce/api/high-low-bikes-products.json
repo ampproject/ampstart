@@ -1,13 +1,6 @@
 {
 	"items": [
 		{
-			"name": "Estuary",
-			"description": "Relaxed geometry for comfortable commuting",
-			"price": 865,
-			"image": "/img/e-commerce/product/product-2.jpg",
-			"category": "accessories"
-		},
-		{
 			"name": "Pointer gloves",
 			"description": "Fingerless with lightweight construction",
 			"price": 864,
@@ -36,32 +29,11 @@
 			"category": "bikes"
 		},
 		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 642,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "components"
-		},
-		{
 			"name": "Beacon",
 			"description": "Full carbon frameset, designed to climb",
 			"price": 562,
 			"image": "/img/e-commerce/product/product-3.jpg",
 			"category": "bikes"
-		},
-		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 487,
-			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "components"
-		},
-		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 449,
-			"image": "/img/e-commerce/product/product-5.jpg",
-			"category": "accessories"
 		},
 		{
 			"name": "Farringdon cap",
