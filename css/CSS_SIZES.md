@@ -15,7 +15,7 @@
 | www/components/page.css       | 22899                | 22.90 KB |
 | www/getstarted/page.css       | 18569                | 18.57 KB |
 | www/howitworks/page.css       | 18569                | 18.57 KB |
-| www/index/1.0/page.css        | 24825                | 24.82 KB |
+| www/index/1.0/page.css        | 24955                | 24.95 KB |
 | www/index/page.css            | 22749                | 22.75 KB |
 | www/render/page.css           | 24284                | 24.28 KB |
 | www/templates/page.css        | 22815                | 22.82 KB |
