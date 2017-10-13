@@ -1,24 +1,38 @@
 {
 	"items": [
 		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 510,
-			"image": "/img/e-commerce/product/product-10.jpg",
+			"name": "Highland",
+			"description": "Timeless style in Reynolds 531 tubing",
+			"price": 553,
+			"image": "/img/e-commerce/product/product-1.jpg",
 			"category": "mens"
 		},
 		{
-			"name": "Estuary",
-			"description": "Relaxed geometry for comfortable commuting",
-			"price": 846,
-			"image": "/img/e-commerce/product/product-2.jpg",
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 578,
+			"image": "/img/e-commerce/product/product-7.jpg",
+			"category": "mens"
+		},
+		{
+			"name": "Farringdon cap",
+			"description": "Water resistant and breathable",
+			"price": 832,
+			"image": "/img/e-commerce/product/product-5.jpg",
 			"category": "mens"
 		},
 		{
 			"name": "Beacon",
 			"description": "Full carbon frameset, designed to climb",
-			"price": 958,
+			"price": 851,
 			"image": "/img/e-commerce/product/product-3.jpg",
+			"category": "mens"
+		},
+		{
+			"name": "Pointer gloves",
+			"description": "Fingerless with lightweight construction",
+			"price": 851,
+			"image": "/img/e-commerce/product/product-4.jpg",
 			"category": "mens"
 		}
 	]

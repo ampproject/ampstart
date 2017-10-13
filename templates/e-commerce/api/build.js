@@ -1,5 +1,5 @@
 /*
- * Builds a collection of products and writes JSON files sorted by price and 
+ * Builds a collection of products and writes JSON files sorted by price and
  * category.
  */
 
@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const currentWorkingDirectory = path.dirname(process.argv[1]);
-const totalProducts = 12;
+const totalProducts = 10;
 const titles = {
   'gloves': {
     'name': 'Pointer gloves',
@@ -46,7 +46,7 @@ const maxPrice = 999;
 const imagesFolder = '/img/e-commerce/product/';
 const imagePrefix = 'product-';
 const imageExtension = '.jpg';
-const totalImages = 12;
+const totalImages = 10;
 let currentImage = 1;
 const categories = ['mens', 'womens', 'kids'];
 const products = {
@@ -104,7 +104,7 @@ function writeFile(sortName, sortFunction, products, categoryName = 'all') {
   let data = {items: products};
 
   let fileName = `${currentWorkingDirectory}/${sortName}-${categoryName}-${outputFile}`;
-  fs.writeFileSync(fileName, JSON.stringify(data, null, '\t')); 
+  fs.writeFileSync(fileName, JSON.stringify(data, null, '\t'));
 }
 
 function saveProducts() {
