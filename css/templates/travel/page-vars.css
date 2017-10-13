@@ -16,10 +16,27 @@
 
 :root {
   --font-color-primary: var(--black);
+  --color-primary: var(--black);
   --font-color-secondary: var(--white);
+  --color-secondary: var(--white);
   --font-family-primary: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
   --line-height: 1.2;
-  --fixed-navbar-height: calc(86 / 16rem);;
+  --fixed-navbar-height: calc(86 / 16rem);
+
+  --color-body-background: var(--white);
+  --color-font-default: var(--black);
+  --color-border: var(--black);
+
+  --color-navbar-primary: var(--white);
+  --color-navbar-font-primary: var(--black);
+
+  --color-input-primary: var(--black);
+  --color-input-font-secondary: var(--white);
+
+  --zindex-max: 999;
+
+  --body-min-width: 100%;
+  --content-max-width: 100%;
 
   /* activity type colors. */
   --type-active-color: #fd68ae;
