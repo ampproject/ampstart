@@ -15,29 +15,13 @@
  */
 
 :root {
-<<<<<<< HEAD
-  --blue:  #3682EC;
-  --green: #47B074;
-  --lime:  #67E497;
-  --orange:  #EC8936;
-  --fuchsia: #FB52A2;
-  --purple:  #8B58E3;
-  --white:  #FFFFFF;
-  --black:  #323A43;
-
-  --gray:   #8f98a3;
-  --silver: #e3e5e8;
-
-  --box-shadow-color: rgba(50,58,67,.2);
-  --box-shadow-color-light: rgba(50,58,67,.12);
-  --box-shadow-color-dark: rgba(50,58,67,.4);
-
   --font-color-primary: var(--black);
   --color-primary: var(--black);
   --font-color-secondary: var(--white);
   --color-secondary: var(--white);
   --font-family-primary: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
   --line-height: 1.2;
+  --fixed-navbar-height: calc(86 / 16rem);
   --fixed-navbar-height: calc(86 / 16rem);
 
   --color-body-background: var(--white);
@@ -54,13 +38,6 @@
 
   --body-min-width: 100%;
   --content-max-width: 100%;
-=======
-  --font-color-primary: var(--black);
-  --font-color-secondary: var(--white);
-  --font-family-primary: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
-  --line-height: 1.2;
-  --fixed-navbar-height: calc(86 / 16rem);;
->>>>>>> [TRAVEL] Set up inital project structure
 
   /* activity type colors. */
   --type-active-color: #fd68ae;
