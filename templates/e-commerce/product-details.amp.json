@@ -15,8 +15,8 @@
   },
   "main": {
     "product-details": {
-      "name": "Sprocket Set",
-      "description": "With a frame forged from iconic 531 tubing, Sprocket Set is as comfortable as it is quick.",
+      "name": "Road Bike",
+      "description": "Built with lightweight aluminum for speed.",
       "price": "£470",
       "colourFilterName": "colours",
       "colours": [
@@ -86,15 +86,15 @@
         },
         {
           "header": "grips",
-          "body": "Duracork"
+          "body": "Rubber"
         },
         {
           "header": "gear shifter",
-          "body": "Shimano rapidfire"
+          "body": "Rapidfire"
         },
         {
           "header": "gears",
-          "body": "Shimano Tourney 7 speed"
+          "body": "7 speed"
         },
         {
           "header": "chainset",
@@ -110,7 +110,7 @@
         },
         {
           "header": "brakes",
-          "body": "Tektro side pull"
+          "body": "Side pull caliper brakes"
         },
         {
           "header": "rims",
@@ -118,15 +118,15 @@
         },
         {
           "header": "tyres",
-          "body": "Kenda Brown with cream wall 20\"x1\""
+          "body": "700x19-28"
         },
         {
           "header": "saddle",
-          "body": "Bobbin vinyl saddle"
+          "body": "Vinyl saddle"
         },
         {
           "header": "seatpost",
-          "body": "Alloy icroadjust 600mm"
+          "body": "Alloy micro adjust 600mm"
         },
         {
           "header": "kickstand",

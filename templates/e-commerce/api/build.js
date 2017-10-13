@@ -22,11 +22,11 @@ const titles = {
     'description': 'Designed to get you there.'
   },
   'chain': {
-    'name': 'Chain replacement set',
-    'description': 'Aluminum construction for durability.'
+    'name': 'Chain set',
+    'description': 'Silver alloy construction for durability.'
   },
   'frame': {
-    'name': 'Black Road Bike Frame',
+    'name': 'Road Bike',
     'description': 'Built with lightweight aluminum for speed.'
   },
   'red': {
@@ -34,19 +34,19 @@ const titles = {
     'description': 'Smooth ride for enjoyable cruising.'
   },
   'wheel': {
-    'name': 'Wheel Reflectors',
-    'description': 'Be seen throughout your ride.'
+    'name': 'Wheel Set',
+    'description': 'Ride Sally, ride.'
   },
   'handles': {
-    'name': 'Rams Horn Handles',
-    'description': 'Built with grip and durability in mind.'
+    'name': 'Horn Handles',
+    'description': 'Grippingly durable and stylish.'
   },
   'brakes': {
     'name': 'Caliper Brakes',
     'description': 'Fits most wheel sizes and designed to last long.'
   },
   'speed16': {
-    'name': '16-Speed Road Bike',
+    'name': '16-Speed',
     'description': 'Smooth shifting through all gears for city riding.'
   }
 };

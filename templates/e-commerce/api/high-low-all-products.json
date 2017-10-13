@@ -1,15 +1,15 @@
 {
 	"items": [
 		{
-			"name": "Chain replacement set",
-			"description": "Aluminum construction for durability.",
+			"name": "Chain set",
+			"description": "Silver alloy construction for durability.",
 			"price": 867,
 			"image": "/img/e-commerce/product/product-3.jpg",
 			"category": "accessories"
 		},
 		{
-			"name": "Rams Horn Handles",
-			"description": "Built with grip and durability in mind.",
+			"name": "Horn Handles",
+			"description": "Grippingly durable and stylish.",
 			"price": 838,
 			"image": "/img/e-commerce/product/product-7.jpg",
 			"category": "components"
@@ -29,7 +29,7 @@
 			"category": "accessories"
 		},
 		{
-			"name": "Black Road Bike Frame",
+			"name": "Road Bike",
 			"description": "Built with lightweight aluminum for speed.",
 			"price": 644,
 			"image": "/img/e-commerce/product/product-9.jpg",
@@ -43,8 +43,8 @@
 			"category": "accessories"
 		},
 		{
-			"name": "Wheel Reflectors",
-			"description": "Be seen throughout your ride.",
+			"name": "Wheel Set",
+			"description": "Ride Sally, ride.",
 			"price": 603,
 			"image": "/img/e-commerce/product/product-10.jpg",
 			"category": "components"
@@ -57,7 +57,7 @@
 			"category": "bikes"
 		},
 		{
-			"name": "16-Speed Road Bike",
+			"name": "16-Speed",
 			"description": "Smooth shifting through all gears for city riding.",
 			"price": 524,
 			"image": "/img/e-commerce/product/product-5.jpg",
