@@ -12,10 +12,10 @@
 | templates/themes_1/page.css   | 25919                | 25.92 KB |
 | templates/themes_2/page.css   | 24826                | 24.83 KB |
 | templates/thescenic/page.css  | 24345                | 24.34 KB |
-| www/components/page.css       | 22820                | 22.82 KB |
-| www/getstarted/page.css       | 18490                | 18.49 KB |
-| www/howitworks/page.css       | 18490                | 18.49 KB |
-| www/index/1.0/page.css        | 24735                | 24.73 KB |
-| www/index/page.css            | 22670                | 22.67 KB |
+| www/components/page.css       | 22899                | 22.90 KB |
+| www/getstarted/page.css       | 18569                | 18.57 KB |
+| www/howitworks/page.css       | 18569                | 18.57 KB |
+| www/index/1.0/page.css        | 24825                | 24.82 KB |
+| www/index/page.css            | 22749                | 22.75 KB |
 | www/render/page.css           | 24284                | 24.28 KB |
-| www/templates/page.css        | 22700                | 22.70 KB |
+| www/templates/page.css        | 22815                | 22.82 KB |

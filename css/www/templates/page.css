@@ -72,10 +72,13 @@
 }
 
 .www-templates-action:hover .ampstart-icon {
-  fill: var(--color-font-primary);
+  fill: url(#svg-gradient);
 }
 
 @media (--breakpoint-xs) {
+  .www-header {
+    min-height: 0;
+  }
   .www-header::after {
     display: none;
   }

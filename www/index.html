@@ -24,9 +24,10 @@ limitations under the License.
   <div class="hide">
     <svg width="0" height="0">
         <defs>
-          <clipPath id="svgClipPath" clipPathUnits="objectBoundingBox">
-            <rect y="0" x="0" width="1" height="0.99"/>
-          </clipPath>
+          <linearGradient id="svg-gradient">
+           <stop offset="0%" class="start" />
+           <stop offset="100%" class="stop" />
+          </linearGradient>
         </defs>
     </svg>
   </div>
@@ -87,7 +88,7 @@ limitations under the License.
         {{/feature}}
         {{/features-showcase}}
         <li class="www-index-showcase-components-container flex flex-wrap items-stretch justify-center">
-          <div class="www-index-showcase-components col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 my4 relative">
+          <div class="www-index-showcase-components col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 mb4 relative">
             <amp-img  layout="responsive" src="data:image/svg+xml;charset=utf-8,%3Csvg xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg' viewBox%3D'0 0 200 150'%2F%3E" layout="responsive" width="1430" height="1404" alt="background spacing image." class="max-width-3 block mx-auto" aria-hidden></amp-img>
 
 
@@ -126,8 +127,8 @@ limitations under the License.
             <div>
               <h2 class="mb4">Page Components</h2>
               <p class="mb4">Incorporate specific designed elements of a page into your own.</p>
-              <a href="components.html" class="ampstart-btn caps inline-block ml4 ">Learn More</a>
-          </div>
+              <a href="components.html" class="ampstart-btn caps inline-block">Learn More</a>
+            </div>
           </div>
         </li>
       </ul>
