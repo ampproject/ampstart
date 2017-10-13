@@ -21,6 +21,16 @@ limitations under the License.
 <html ⚡>
 {{> ../utils/amp-page-head.snip.html}}
 <body>
+  <div class="hide">
+    <svg width="0" height="0">
+        <defs>
+          <linearGradient id="svg-gradient">
+           <stop offset="0%" class="start" />
+           <stop offset="100%" class="stop" />
+          </linearGradient>
+        </defs>
+    </svg>
+  </div>
   {{> ../components/navbar/navbar.snip.html}}
   <header class="www-header relative">
     <h1 class="mb4 px4 col-12 sm-col-8 max-width-1">Templates</h1>
@@ -50,7 +60,10 @@ limitations under the License.
         {{#template-preview}}
           <li class="col-10 sm-col-5 md-col-5 lg-col-5 mx2">
             {{#img}}
-            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card"></amp-img>
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card xs-hide"></amp-img>
+            <a href="{{{src}}}" target="_blank" class="text-decoration-none sm-hide md-hide lg-hide block">
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" {{/lightbox-id}} class="www-template-preview-img ampstart-card"></amp-img>
+            </a>
             {{/img}}
             <header class="mb4 flex justify-between items-baseline">
               <h3 class="caps ampstart-title-sm">{{title}}</h3>

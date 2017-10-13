@@ -72,7 +72,7 @@
 }
 
 .www-templates-action:hover .ampstart-icon {
-  fill: var(--color-font-primary);
+  fill: url(#svg-gradient);
 }
 
 @media (--breakpoint-xs) {
