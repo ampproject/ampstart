@@ -18,8 +18,6 @@
 /*! Bassplate | MIT License | http://github.com/basscss/bassplate */
 @import 'normalize.css';
 
-@import './reset';
-
 /* Basscss Modules */
 @import 'basscss-type-scale';
 @import 'basscss-typography';
@@ -33,10 +31,15 @@
 @import 'basscss-border';
 @import 'basscss-hide';
 
-@import '../../ampstart-base/base-page-vars';
-@import '../../ampstart-base/elements/buttons';
-
+/* BassCSS Add-ons */
 @import 'basscss-addons/modules/colors';
-@import 'basscss-addons/modules/background-colors';
 
 @import './page-vars';
+
+body {
+  color: var(--font-color-primary);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-2);
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
