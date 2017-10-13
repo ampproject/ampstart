@@ -54,32 +54,34 @@ limitations under the License.
             {{/img}}
           </div>
           {{/template-preview}}
-          <div class="www-index-showcase-feature flex flex-column justify-center items-start col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
-            <h2 class="ml4 mb3">{{title}}</h2>
-            <p class="ml4 mb3">{{desc}}</p>
-            {{#actions}}
-            {{#link}}
-            <a href="{{url}}" class="ampstart-btn caps inline-block ml4 mb4 ">{{text}}</a>
-            {{/link}}
-            {{/actions}}
+          <div class="www-index-showcase-feature flex flex-column justify-center items-center col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
+            <div>
+              <h2 class="mb3">{{title}}</h2>
+              <p class="mb3">{{desc}}</p>
+              {{#actions}}
+              {{#link}}
+              <a href="{{url}}" class="ampstart-btn caps inline-block mb4 ">{{text}}</a>
+              {{/link}}
+              {{/actions}}
 
-            {{#template-preview}}
-            <div class="www-index-showcase-feature-preview flex flex-wrap items-center ml4 mt2">
-              <h3 class="ampstart-label mr2">{{title}}</h3>
-              <div class="flex items-center">
-                <span class="www-templates-action flex items-center xs-hide mr2" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
-                  {{> ../img/www/preview.svg}}
-                </span>
-                <a href="{{{src}}}" target="_blank" class="www-templates-action flex items-center sm-hide md-hide lg-hide">
-                  {{> ../img/www/preview.svg}}
-                </a>
-                <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action flex items-center xs-hide">
-                  {{> ../img/www/download.svg}}
-                </a>
+              {{#template-preview}}
+              <div class="www-index-showcase-feature-preview flex flex-wrap items-center mt2">
+                <h3 class="ampstart-label mr2">{{title}}</h3>
+                <div class="flex items-center">
+                  <span class="www-templates-action flex items-center xs-hide mr2" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
+                    {{> ../img/www/preview.svg}}
+                  </span>
+                  <a href="{{{src}}}" target="_blank" class="www-templates-action flex items-center sm-hide md-hide lg-hide">
+                    {{> ../img/www/preview.svg}}
+                  </a>
+                  <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action flex items-center xs-hide">
+                    {{> ../img/www/download.svg}}
+                  </a>
+                </div>
               </div>
-            </div>
-            {{/template-preview}}
+              {{/template-preview}}
 
+            </div>
           </div>
         </li>
         {{/feature}}
@@ -120,10 +122,12 @@ limitations under the License.
             </ul>
 
           </div>
-          <div class="www-index-showcase-feature flex flex-column justify-center items-start col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
-            <h2 class="ml4 mb4">Page Components</h2>
-            <p class="ml4 mb4">Incorporate specific designed elements of a page into your own.</p>
-            <a href="components.html" class="ampstart-btn caps inline-block ml4 ">Learn More</a>
+          <div class="www-index-showcase-feature flex flex-column justify-center items-center col-12 xs-col-12 sm-col-12 md-col-6 lg-col-6 p4">
+            <div>
+              <h2 class="mb4">Page Components</h2>
+              <p class="mb4">Incorporate specific designed elements of a page into your own.</p>
+              <a href="components.html" class="ampstart-btn caps inline-block ml4 ">Learn More</a>
+          </div>
           </div>
         </li>
       </ul>

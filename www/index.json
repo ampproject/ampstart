@@ -85,7 +85,7 @@
           "desc": "Modern designs that you can customize to suit your needs.",
           "actions": [
             {
-              "link": {"url": "templates.html", "text": "View all templates"}
+              "link": {"url": "templates.html", "text": "View templates"}
             }
           ],
           "template-preview": {
@@ -110,7 +110,7 @@
           "desc": "Templates designed to work with all devices - mobile, tablet and desktop.",
           "actions": [
             {
-              "link": {"url": "templates.html", "text": "View all templates"}
+              "link": {"url": "templates.html", "text": "View templates"}
             }
           ],
           "template-preview": {
@@ -135,7 +135,7 @@
           "desc": "Developers and designers can share and contribute their designs for new templates and components.",
           "actions": [
             {
-              "link": {"url": "templates.html", "text": "View all templates"}
+              "link": {"url": "templates.html", "text": "View templates"}
             }
           ],
           "template-preview": {
