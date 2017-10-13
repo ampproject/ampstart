@@ -48,14 +48,10 @@ const titles = {
   'speed16': {
     'name': '16-Speed Road Bike',
     'description': 'Smooth shifting through all gears for city riding.'
-  },
-  'reflector': {
-    'name': 'Handlebar Reflector Set',
-    'description': 'Maximum light visibility for safety.'
   }
 };
 const titleListing = [
-  titles.fixie, titles.red, titles.saddle, titles.wheel, titles.sprocket, titles.brakes, titles.speed16, titles.handles, titles.chain, titles.frame
+  titles.sprocket, titles.fixie, titles.chain, titles.saddle, titles.speed16, titles.red, titles.handles, titles.brakes, titles.frame, titles.wheel
 ];
 
 
@@ -145,6 +141,7 @@ function saveCategories() {
 
 function generateProducts() {
   for (let i = 0; i < totalProducts; i++) {
+    console.log(i + ": ", titleListing[i]);
     products.items.push({
       name: titleListing[i].name,
       description: titleListing[i].description,

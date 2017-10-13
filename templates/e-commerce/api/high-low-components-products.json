@@ -1,16 +1,23 @@
 {
 	"items": [
 		{
-			"name": "16-Speed Road Bike",
-			"description": "Smooth shifting through all gears for city riding.",
-			"price": 892,
+			"name": "Rams Horn Handles",
+			"description": "Built with grip and durability in mind.",
+			"price": 838,
 			"image": "/img/e-commerce/product/product-7.jpg",
 			"category": "components"
 		},
 		{
-			"name": "Black Road Bike Frame",
-			"description": "Built with lightweight aluminum for speed.",
-			"price": 692,
+			"name": "Caliper Brakes",
+			"description": "Fits most wheel sizes and designed to last long.",
+			"price": 776,
+			"image": "/img/e-commerce/product/product-8.jpg",
+			"category": "components"
+		},
+		{
+			"name": "Wheel Reflectors",
+			"description": "Be seen throughout your ride.",
+			"price": 603,
 			"image": "/img/e-commerce/product/product-10.jpg",
 			"category": "components"
 		}

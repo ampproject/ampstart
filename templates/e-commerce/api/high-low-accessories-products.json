@@ -1,52 +1,45 @@
 {
 	"items": [
 		{
-<<<<<<< Local Changes
-<<<<<<< Local Changes
-			"name": "Fixie Blue",
-			"description": "Designed to get you there.",
-			"price": 865,
-			"image": "/img/e-commerce/product/product-2.jpg",
-=======
 			"name": "Chain replacement set",
 			"description": "Aluminum construction for durability.",
-			"price": 980,
-			"image": "/img/e-commerce/product/product-9.jpg",
-=======
-			"name": "Wheel Reflectors",
-			"description": "Be seen throughout your ride.",
-			"price": 970,
-			"image": "/img/e-commerce/product/product-4.jpg",
->>>>>>> External Changes
-			"category": "accessories"
-		},
-		{
-			"name": "Rams Horn Handles",
-			"description": "Built with grip and durability in mind.",
-			"price": 712,
-			"image": "/img/e-commerce/product/product-8.jpg",
-			"category": "accessories"
-		},
-		{
-<<<<<<< Local Changes
-			"name": "Fixie Blue",
-			"description": "Designed to get you there.",
-			"price": 751,
-			"image": "/img/e-commerce/product/product-1.jpg",
->>>>>>> External Changes
+			"price": 867,
+			"image": "/img/e-commerce/product/product-3.jpg",
 			"category": "accessories"
 		},
 		{
 			"name": "Red Cruiser",
 			"description": "Smooth ride for enjoyable cruising.",
-			"price": 535,
+			"price": 688,
+			"image": "/img/e-commerce/product/product-6.jpg",
+			"category": "accessories"
+		},
+		{
+			"name": "Black Road Bike Frame",
+			"description": "Built with lightweight aluminum for speed.",
+			"price": 644,
+			"image": "/img/e-commerce/product/product-9.jpg",
+			"category": "accessories"
+		},
+		{
+			"name": "Fixie Blue",
+			"description": "Designed to get you there.",
+			"price": 643,
 			"image": "/img/e-commerce/product/product-2.jpg",
-=======
+			"category": "accessories"
+		},
+		{
+			"name": "16-Speed Road Bike",
+			"description": "Smooth shifting through all gears for city riding.",
+			"price": 524,
+			"image": "/img/e-commerce/product/product-5.jpg",
+			"category": "accessories"
+		},
+		{
 			"name": "Leather Saddle",
 			"description": "Firm, yet comfortable for long leisurely rides.",
-			"price": 495,
-			"image": "/img/e-commerce/product/product-3.jpg",
->>>>>>> External Changes
+			"price": 476,
+			"image": "/img/e-commerce/product/product-4.jpg",
 			"category": "accessories"
 		}
 	]

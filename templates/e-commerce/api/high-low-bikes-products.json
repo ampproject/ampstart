@@ -1,37 +1,9 @@
 {
 	"items": [
 		{
-			"name": "Caliper Brakes",
-			"description": "Fits most wheel sizes and designed to last long.",
-			"price": 764,
-			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "bikes"
-		},
-		{
-			"name": "Chain replacement set",
-			"description": "Aluminum construction for durability.",
-			"price": 753,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "bikes"
-		},
-		{
 			"name": "Sprocket Set",
 			"description": "Steel, designed for long lasting stability.",
-			"price": 712,
-			"image": "/img/e-commerce/product/product-5.jpg",
-			"category": "bikes"
-		},
-		{
-			"name": "Red Cruiser",
-			"description": "Smooth ride for enjoyable cruising.",
-			"price": 705,
-			"image": "/img/e-commerce/product/product-2.jpg",
-			"category": "bikes"
-		},
-		{
-			"name": "Fixie Blue",
-			"description": "Designed to get you there.",
-			"price": 540,
+			"price": 581,
 			"image": "/img/e-commerce/product/product-1.jpg",
 			"category": "bikes"
 		}
