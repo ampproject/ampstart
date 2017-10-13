@@ -164,6 +164,14 @@
   display: inline;
 }
 
+.www-index-action .ampstart-icon{
+  fill: var(--color-black);
+}
+
+.www-index-action:hover .ampstart-icon {
+  fill: var(--color-font-primary);
+}
+
 @media (--breakpoint-md) {
   .www-index-showcase > ul > li:nth-child(2n) > .www-index-showcase-template,
   .www-index-showcase > ul > li:nth-child(2n) > .www-index-showcase-components {
