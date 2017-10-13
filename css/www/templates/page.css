@@ -76,6 +76,9 @@
 }
 
 @media (--breakpoint-xs) {
+  .www-header {
+    min-height: 0;
+  }
   .www-header::after {
     display: none;
   }
