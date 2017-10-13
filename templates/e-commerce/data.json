@@ -154,8 +154,8 @@
   "cart": {
     "items": [
       {
-        "name": "Farringdon cap",
-        "description": "Water resistant and breathable",
+        "name": "Caliper Brakes",
+        "description": "Fits most wheel sizes and designed to last long.",
         "price": "349",
         "quantity": 1,
         "thumbnail": "../../../img/e-commerce/product/product-8.jpg"
@@ -258,7 +258,7 @@
         "image": "../../img/e-commerce/product/product-2.jpg"
       },
       {
-        "name": "Beacon",
+        "name": "Chain replacement set",
         "image": "../../img/e-commerce/product/product-3.jpg"
       },
       {
@@ -266,27 +266,27 @@
         "image": "../../img/e-commerce/product/product-4.jpg"
       },
       {
-        "name": "Farringdon cap",
+        "name": "16-Speed Road Bike",
         "image": "../../img/e-commerce/product/product-5.jpg"
       },
       {
-        "name": "Leather Saddle",
+        "name": "Red Cruiser",
         "image": "../../img/e-commerce/product/product-6.jpg"
       },
       {
-        "name": "Farringdon cap",
+        "name": "Rams Horn Handles",
         "image": "../../img/e-commerce/product/product-7.jpg"
       },
       {
-        "name": "Poitner gloves",
+        "name": "Caliper Brakes",
         "image": "../../img/e-commerce/product/product-8.jpg"
       },
       {
-        "name": "Farringdon cap",
+        "name": "Black Road Bike Frame",
         "image": "../../img/e-commerce/product/product-9.jpg"
       },
       {
-        "name": "Leather Saddle",
+        "name": "Wheel Reflectors",
         "image": "../../img/e-commerce/product/product-10.jpg"
       }
     ]

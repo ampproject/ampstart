@@ -4,7 +4,7 @@
 | templates/alp/page.css        | 24722                | 24.72 KB |
 | templates/article/page.css    | 24251                | 24.25 KB |
 | templates/blog/page.css       | 24494                | 24.49 KB |
-| templates/e-commerce/page.css | 42182                | 42.18 KB |
+| templates/e-commerce/page.css | 42288                | 42.29 KB |
 | templates/gallery/page.css    | 13975                | 13.97 KB |
 | templates/land-see/page.css   | 39035                | 39.03 KB |
 | templates/lune/page.css       | 47503                | 47.50 KB |
