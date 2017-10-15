@@ -740,7 +740,7 @@ h4,
 }
 
 .land-see-categories-button {
-  font: 500 var(--h5)/var(--line-height-1) var(--font-navigation);
+  font: 500 var(--h6)/var(--line-height-1) var(--font-navigation);
   text-transform: uppercase;
   letter-spacing: .1rem;
   border: none;
@@ -816,6 +816,12 @@ h4,
   width: 150px;
   height: 100%;
   z-index: 10;
+}
+
+@media (--breakpoint-xs) {
+  .land-see-category .i-amphtml-scrollable-carousel-container div:last-child {
+    margin-right: 75px;
+  }
 }
 
 @media (--breakpoint-sm) {

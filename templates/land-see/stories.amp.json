@@ -17,7 +17,7 @@
         "id": "land-see-fashion",
         "button-text": "Fashion",
         "dynamic-classes": "selectedCategory == 'fashion' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
-        "action": "tap:AMP.pushState({height: 550, mobile_height: 1100, src: './api/fashion-page-1.json', selectedCategory: 'fashion', selectedContainerClass: 'land-see-categories-carousel center mb2 mx1'})"
+        "action": "tap:AMP.pushState({height: 1100, mobile_height: 1650, src: './api/fashion-page-1.json', selectedCategory: 'fashion', selectedContainerClass: 'land-see-categories-carousel center mb2 mx1'})"
       },
       {
         "id": "land-see-interiors",
@@ -29,13 +29,13 @@
         "id": "land-see-arts-culture",
         "button-text": "Arts & Culture",
         "dynamic-classes": "selectedCategory == 'arts-culture' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
-        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/arts-culture-page-1.json', selectedCategory: 'arts-culture', selectedContainerClass: 'land-see-categories-carousel center mb2 mx1'})"
+        "action": "tap:AMP.pushState({height: 1650, mobile_height: 2750, src: './api/arts-culture-page-1.json', selectedCategory: 'arts-culture', selectedContainerClass: 'land-see-categories-carousel center mb2 mx1'})"
       },
       {
         "id": "land-see-popular",
         "button-text": "Popular",
         "dynamic-classes": "selectedCategory == 'popular' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
-        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/popular-page-1.json', selectedCategory: 'popular', selectedContainerClass: 'land-see-categories-carousel center mb2 mx1'})"
+        "action": "tap:AMP.pushState({height: 1100, mobile_height: 2200, src: './api/popular-page-1.json', selectedCategory: 'popular', selectedContainerClass: 'land-see-categories-carousel center mb2 mx1'})"
       }
     ],
     "category-results": [

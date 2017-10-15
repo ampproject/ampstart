@@ -107,14 +107,14 @@ limitations under the License.
       <div [class]="selectedContainerClass" class="land-see-categories-carousel-page-load center mb2 mx1">
         <amp-carousel
           type="carousel"
-          height="50"
+          height="35"
           layout="fixed-height">
           {{#category}}
           <div class="px3"><button id="{{id}}" [class]="{{dynamic-classes}}" class="land-see-categories-button {{classes}}" on="{{action}}">{{button-text}}</button></div>
           {{/category}}
         </amp-carousel>
       </div>
-      <div class="clearfix pt2">
+      <div class="clearfix pt1">
         {{#category-results}}
         <amp-list
           media="{{media-query}}"
@@ -173,7 +173,7 @@ limitations under the License.
             </ul>
             <%#land-see-paging%>
             <div class="pt4 clearfix"></div>
-            <div class="land-see-paging mt4 fit">
+            <div class="land-see-paging mt4 mx2 fit <%classes%>">
               <%#page-nav%>
               <button on="<%action%>" class="<%classes%>"><%button-text%></button>
               <%/page-nav%>
