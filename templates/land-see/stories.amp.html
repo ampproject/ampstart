@@ -36,6 +36,25 @@ limitations under the License.
         }
       </script>
     </amp-animation>
+    <amp-animation id="storySlideInMobile" layout="nodisplay">
+      <script type="application/json">
+        {
+          "duration": ".4s",
+          "easing": "ease-in",
+          "fill": "both",
+          "direction": "alternate",
+          "animations": [
+            {
+              "selector": ".land-see-story",
+              "delay": "calc(100ms * index())",
+              "keyframes": [
+                {"transform": "translateY(0)", "opacity": 1}
+              ]
+            }
+          ]
+        }
+      </script>
+    </amp-animation>
     <amp-animation id="backgroundAnimation" layout="nodisplay">
       <script type="application/json">
         {
@@ -83,13 +102,19 @@ limitations under the License.
     </section>
 
     {{#stories-category}}
-    <section class="land-see-category land-see-recent-content relative mx-auto">
-      <h1 class="center">Stories</h1>
-      <div class="land-see-categories-carousel fit">
+    <section class="land-see-category land-see-recent-content relative mx-auto mb2">
+      <h1 class="center pt1">Stories</h1>
+      <div [class]="selectedContainerClass" class="land-see-categories-carousel-page-load fit mb2 mx1">
         <ul class="list-reset center m0 p0 flex justify-center nowrap">
-          {{#category}}
-          <li class="mx2"><button class="land-see-categories-button" on="{{action}}">{{button-text}}</button></li>
-          {{/category}}
+          <amp-carousel
+            type="carousel"
+            width="850"
+            height="50"
+            layout="fixed">
+            {{#category}}
+            <li class="mx3"><button id="{{id}}" [class]="{{dynamic-classes}}" class="land-see-categories-button {{classes}}" on="{{action}}">{{button-text}}</button></li>
+            {{/category}}
+          </amp-carousel>
         </ul>
       </div>
       <div class="clearfix pt2">
@@ -97,7 +122,12 @@ limitations under the License.
         <amp-list
           media="{{media-query}}"
           height="{{height}}"
+          {{#bind-height}}
           [height]="height"
+          {{/bind-height}}
+          {{#bind-height-mobile}}
+          [height]="mobile_height"
+          {{/bind-height-mobile}}
           layout="{{layout}}"
           items="{{item}}"
           src="{{list-src}}"
@@ -145,7 +175,8 @@ limitations under the License.
               <%/land-see-category%>
             </ul>
             <%#land-see-paging%>
-            <div class="land-see-paging fit">
+            <div class="pt4 clearfix"></div>
+            <div class="land-see-paging mt4 fit">
               <%#page-nav%>
               <button on="<%action%>" class="<%classes%>"><%button-text%></button>
               <%/page-nav%>

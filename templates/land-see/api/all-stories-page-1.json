@@ -133,9 +133,9 @@
     "land-see-category": [{"post-classes": "hide"}],
     "land-see-paging": {
       "page-nav": [{
-        "classes": "land-see-next-page",
+        "classes": "land-see-next-page mt2 mr2 relative right",
         "button-text": "Next",
-        "action": "tap:AMP.setState({height: 2150, src: './api/all-stories-page-2.json'})"
+        "action": "tap:AMP.pushState({height: 1550, mobile_height: 2750, src: './api/all-stories-page-2.json', selectedCategory: 'all'})"
       }]
     }
   }]

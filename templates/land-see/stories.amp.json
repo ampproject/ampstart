@@ -2,37 +2,61 @@
   "stories-category": {
     "category": [
       {
+        "id": "land-see-all",
         "button-text": "All",
-        "action": "tap:AMP.setState({height: 2150, src: './api/all-stories-page-1.json'})"
+        "dynamic-classes": "selectedCategory == 'all' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
+        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/all-stories-page-1.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-carousel fit mb2 mx1'})"
       },
       {
+        "id": "land-see-design",
         "button-text": "Design",
-        "action": "tap:AMP.setState({height: 870, src: './api/design-page-1.json'})"
+        "dynamic-classes": "selectedCategory == 'design' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
+        "action": "tap:AMP.pushState({height: 550, mobile_height: 1100, src: './api/design-page-1.json', selectedCategory: 'design', selectedContainerClass: 'land-see-categories-carousel fit mb2 mx1'})"
       },
       {
+        "id": "land-see-fashion",
         "button-text": "Fashion",
-        "action": "tap:AMP.setState({height: 870, src: './api/fashion-page-1.json'})"
+        "dynamic-classes": "selectedCategory == 'fashion' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
+        "action": "tap:AMP.pushState({height: 550, mobile_height: 1100, src: './api/fashion-page-1.json', selectedCategory: 'fashion', selectedContainerClass: 'land-see-categories-carousel fit mb2 mx1'})"
       },
       {
+        "id": "land-see-interiors",
         "button-text": "Interiors",
-        "action": "tap:AMP.setState({height: 870, src: './api/interiors-page-1.json'})"
+        "dynamic-classes": "selectedCategory == 'interiors' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
+        "action": "tap:AMP.pushState({height: 550, mobile_height: 1100, src: './api/interiors-page-1.json', selectedCategory: 'interiors', selectedContainerClass: 'land-see-categories-carousel fit mb2 mx1'})"
       },
       {
+        "id": "land-see-arts-culture",
         "button-text": "Arts & Culture",
-        "action": "tap:AMP.setState({height: 2150, src: './api/arts-culture-page-1.json'})"
+        "dynamic-classes": "selectedCategory == 'arts-culture' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
+        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/arts-culture-page-1.json', selectedCategory: 'arts-culture', selectedContainerClass: 'land-see-categories-carousel fit mb2 mx1'})"
       },
       {
+        "id": "land-see-popular",
         "button-text": "Popular",
-        "action": "tap:AMP.setState({height: 1740, src: './api/popular-page-1.json'})"
+        "dynamic-classes": "selectedCategory == 'popular' ? 'land-see-categories-button land-see-selected-category' : 'land-see-categories-button'",
+        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/popular-page-1.json', selectedCategory: 'popular', selectedContainerClass: 'land-see-categories-carousel fit mb2 mx1'})"
       }
     ],
     "category-results": [
       {
+        "media-query": "(min-width: 30.06rem)",
         "list-src": "./api/QUERY_PARAM(category,all-stories)-page-QUERY_PARAM(page,1).json",
-        "height": 2150,
+        "height": 550,
         "layout": "fixed-height",
+        "bind-height": true,
         "observer": {
           "action": "enter:storySlideIn.start"
+        }
+      },
+      {
+        "media-query": "(max-width: 30rem)",
+        "list-src": "./api/QUERY_PARAM(category,all-stories)-page-QUERY_PARAM(page,1).json",
+        "height": 1100,
+        "layout": "fixed-height",
+        "bind-height-mobile": true,
+        "observer": {
+          "action": "enter:storySlideInMobile.start"
         }
       }
     ]

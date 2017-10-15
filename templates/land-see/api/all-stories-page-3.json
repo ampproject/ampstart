@@ -55,9 +55,9 @@
     "land-see-category": [{"post-classes": "hide"}],
     "land-see-paging": {
       "page-nav": [{
-        "classes": "land-see-prev-page sm-hide md-hide lg-hide",
+        "classes": "land-see-prev-page mt2 ml2 relative left sm-hide md-hide lg-hide",
         "button-text": "Previous",
-        "action": "tap:AMP.setState({height: 2150, src: './api/all-stories-page-2.json'})"
+        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/all-stories-page-2.json', selectedCategory: 'all'})"
       }]
     }
   }]
