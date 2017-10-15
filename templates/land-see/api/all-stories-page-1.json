@@ -13,7 +13,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
         "post-url": "#",
         "post-category": "Design",
-        "post-category-url": "stories.amp.html#design",
+        "post-category-url": "stories.amp.html?category=design#land-see-design",
         "post-title": "Office Tour: Studio Serif",
         "post-copy": "In the heart of the southeast, Studio Serif stands out among its competitors for its complex mixture of hand-drawn and computer-generated art coming together in beautifully, cohesive designs."
       },
@@ -29,7 +29,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
         "post-url": "#",
         "post-category": "Fashion",
-        "post-category-url": "stories.amp.html#fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
         "post-title": "New Textile & Basics Shop Opens in Soho",
         "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
       },
@@ -45,7 +45,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
         "post-url": "#",
         "post-category": "Fashion",
-        "post-category-url": "stories.amp.html#fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
         "post-title": "How to Pack Light When Traveling",
         "post-copy": "Whether it’s a short weekend getaway or an extended holiday, choosing carefully from your accessories can help lighten your load while expanding your repertory."
       },
@@ -59,7 +59,7 @@
         ],
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured land-see-post-video col land-see-story",
         "post-category": "Design",
-        "post-category-url": "stories.amp.html#design",
+        "post-category-url": "stories.amp.html?category=design#land-see-design",
         "post-title": "Timeless Design: A History of Watches",
         "post-copy": "A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress."
       },
@@ -75,7 +75,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
         "post-url": "kim-myeong.amp.html",
         "post-category": "Fashion",
-        "post-category-url": "stories.amp.html#fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
         "post-title": "Designer Kim Myeong",
         "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique mix of color, texture, and material to make her shoes the must-haves of this year."
       },
@@ -91,7 +91,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
         "post-url": "#",
         "post-category": "Interiors",
-        "post-category-url": "stories.amp.html#interiors",
+        "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
         "post-title": "Interior Design for Tiny Homes",
         "post-copy": "Rampant materialism is a no-no for the tiny home owner, but this doesn’t strand these minimalists in the design desert."
       },
@@ -107,7 +107,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
         "post-url": "#",
         "post-category": "Arts & Culture",
-        "post-category-url": "stories.amp.html#arts-culture",
+        "post-category-url": "stories.amp.html?category=arts-culture#land-see-arts-culture",
         "post-title": "Nightstand-Worthy Books",
         "post-copy": "We’ve collected our 100 favorite recommendations from our nightstands over the last year for those looking for a new read."
       },
@@ -123,7 +123,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
         "post-url": "#",
         "post-category": "Arts & Culture",
-        "post-category-url": "stories.amp.html#arts-culture",
+        "post-category-url": "stories.amp.html?category=arts-culture#land-see-arts-culture",
         "post-title": "Quick Bites in the Bay Area",
         "post-copy": "From Sonoma to Santa Clara, we've found the best spots for quick and delicious bites."
       }

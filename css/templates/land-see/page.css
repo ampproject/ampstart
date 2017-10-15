@@ -56,6 +56,8 @@ h4,
   text-transform: uppercase;
 }
 
+/********** Navigation **********/
+
 .ampstart-headerbar {
   background: var(--color-primary);
   color: var(--color-font-primary);
@@ -286,6 +288,8 @@ h4,
     justify-content: flex-end;
   }
 }
+
+/********** Home Template **********/
 
 /* Subscribe */
 
@@ -723,7 +727,7 @@ h4,
   }
 }
 
-/* Stories Template */
+/********** Stories Template **********/
 
 .land-see-category h1 {
   font: 500 var(--h1)/var(--line-height-4) var(--font-primary);
