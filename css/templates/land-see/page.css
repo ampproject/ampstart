@@ -789,3 +789,35 @@ h4,
   left: -16px;
   top: 14px;
 }
+
+.land-see-category .amp-carousel-button {
+  display: none;
+}
+
+.land-see-category .amp-scrollable-carousel-slide {
+  margin-left: 0;
+}
+
+.land-see-category .i-amphtml-scrollable-carousel-container {
+  padding-bottom: 50px;
+}
+
+.land-see-category .i-amphtml-scrollable-carousel-container:after {
+  content: '';
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 10;
+}
+
+@media (--breakpoint-sm) {
+  .land-see-category .i-amphtml-scrollable-carousel-container:after {
+    background: none;
+    width: 0;
+    height: 0;
+  }
+}

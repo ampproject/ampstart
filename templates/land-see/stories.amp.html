@@ -104,18 +104,15 @@ limitations under the License.
     {{#stories-category}}
     <section class="land-see-category land-see-recent-content relative mx-auto mb2">
       <h1 class="center pt1">Stories</h1>
-      <div [class]="selectedContainerClass" class="land-see-categories-carousel-page-load fit mb2 mx1">
-        <ul class="list-reset center m0 p0 flex justify-center nowrap">
-          <amp-carousel
-            type="carousel"
-            width="850"
-            height="50"
-            layout="fixed">
-            {{#category}}
-            <li class="mx3"><button id="{{id}}" [class]="{{dynamic-classes}}" class="land-see-categories-button {{classes}}" on="{{action}}">{{button-text}}</button></li>
-            {{/category}}
-          </amp-carousel>
-        </ul>
+      <div [class]="selectedContainerClass" class="land-see-categories-carousel-page-load center mb2 mx1">
+        <amp-carousel
+          type="carousel"
+          height="50"
+          layout="fixed-height">
+          {{#category}}
+          <div class="px3"><button id="{{id}}" [class]="{{dynamic-classes}}" class="land-see-categories-button {{classes}}" on="{{action}}">{{button-text}}</button></div>
+          {{/category}}
+        </amp-carousel>
       </div>
       <div class="clearfix pt2">
         {{#category-results}}
