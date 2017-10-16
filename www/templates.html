@@ -68,13 +68,13 @@ limitations under the License.
             <header class="mb4 flex justify-between items-baseline">
               <h3 class="caps ampstart-title-sm">{{title}}</h3>
               <div class="inline-block">
-                <span class="www-templates-action inline-block xs-hide mr1" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}}>
+                <span class="www-templates-action inline-block xs-hide mr1" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} data-vars-preview="{{{src}}}">
                   {{> ../img/www/preview.svg}}
                 </span>
-                <a href="{{{src}}}" target="_blank" class="www-templates-action sm-hide md-hide lg-hide">
+                <a href="{{{src}}}" target="_blank" class="www-templates-action sm-hide md-hide lg-hide" data-vars-preview="{{{src}}}">
                   {{> ../img/www/preview.svg}}
                 </a>
-                <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action inline-block xs-hide">
+                <a href="{{{download}}}" target="_blank" role="button" tabindex="0" class="www-templates-action inline-block xs-hide" data-vars-download="{{{download}}}">
                   {{> ../img/www/download.svg}}
                 </a>
               </div>
