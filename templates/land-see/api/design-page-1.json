@@ -2,12 +2,13 @@
   "items": [{
     "land-see-category": [
       {
-        "image": [
+        "image-animated": [
           {
             "classes": "cover",
             "alt-text": "Studio Serif, interior.",
             "width": 409, "height": 305, "layout": "responsive",
-            "src": "../../img/land-see/content/studio-310px.jpg"
+            "src": "../../img/land-see/content/land-see-studio-loop.gif",
+            "src-placeholder": "../../img/land-see/content/studio-310px.jpg"
           }
         ],
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",

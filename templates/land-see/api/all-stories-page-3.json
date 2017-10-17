@@ -54,10 +54,11 @@
   {
     "land-see-category": [{"post-classes": "hide"}],
     "land-see-paging": {
+      "classes": "sm-hide md-hide lg-hide",
       "page-nav": [{
-        "classes": "land-see-prev-page mt2 ml2 relative left sm-hide md-hide lg-hide",
+        "classes": "land-see-prev-page mt2 ml2 relative left",
         "button-text": "Previous",
-        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/all-stories-page-2.json', selectedCategory: 'all'})"
+        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/all-stories-page-2.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       }]
     }
   }]

@@ -90,7 +90,7 @@
             "src": "../../img/land-see/content/kaneko-resize-medium.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html?category=arts-culture#land-see-arts-culture",
@@ -106,7 +106,7 @@
             "src": "../../img/land-see/content/fall-festivals-resize-medium.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html?category=arts-culture#land-see-arts-culture",
@@ -122,7 +122,7 @@
             "src": "../../img/land-see/content/shoe-designer-2-resize-medium.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col xs-hide land-see-story",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-mobile land-see-story",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html?category=arts-culture#land-see-arts-culture",
@@ -137,12 +137,12 @@
       "page-nav": [{
         "classes": "land-see-prev-page mt2 ml2 relative left",
         "button-text": "Previous",
-        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/all-stories-page-1.json', selectedCategory: 'all'})"
+        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/all-stories-page-1.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       },
       {
         "classes": "land-see-next-page mt2 mr2 relative right sm-hide md-hide lg-hide",
         "button-text": "Next",
-        "action": "tap:AMP.pushState({height: 1100, mobile_height: 1650, src: './api/all-stories-page-3.json', selectedCategory: 'all'})"
+        "action": "tap:AMP.pushState({height: 1100, mobile_height: 1650, src: './api/all-stories-page-3.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       }]
     }
   }]

@@ -104,15 +104,12 @@ limitations under the License.
     {{#stories-category}}
     <section class="land-see-category land-see-recent-content relative mx-auto mb2">
       <h1 class="center pt1">Stories</h1>
-      <div [class]="selectedContainerClass" class="land-see-categories-carousel-page-load center mb2 mx1">
-        <amp-carousel
-          type="carousel"
-          height="35"
-          layout="fixed-height">
+      <div [class]="selectedContainerClass" class="land-see-categories-nav-page-load center mb2 mx1 fit relative fit">
+        <div class="land-see-categories-inner-nav nowrap">
           {{#category}}
-          <div class="px3"><button id="{{id}}" [class]="{{dynamic-classes}}" class="land-see-categories-button {{classes}}" on="{{action}}">{{button-text}}</button></div>
+          <div class="inline-block px3"><button id="{{id}}" [class]="{{dynamic-classes}}" class="land-see-categories-button {{classes}}" on="{{action}}">{{button-text}}</button></div>
           {{/category}}
-        </amp-carousel>
+        </div>
       </div>
       <div class="clearfix pt1">
         {{#category-results}}
@@ -152,6 +149,25 @@ limitations under the License.
                       src="<%src%>">
                     </amp-img>
                   <%/image%>
+                  <%#image-animated%>
+                    <amp-anim
+                      class="land-see-post-image <%classes%>"
+                      alt="<%alt-text%>"
+                      media="<%media-query%>"
+                      width="<%width%>"
+                      height="<%height%>"
+                      layout="<%layout%>"
+                      src="<%src%>">
+                      <amp-img placeholder
+                        alt="<%alt-text%>"
+                        media="<%media-query%>"
+                        width="<%width%>"
+                        height="<%height%>"
+                        layout="<%layout%>"
+                        src="<%src-placeholder%>">
+                      </amp-img>
+                    </amp-anim>
+                  <%/image-animated%>
                 </a>
                 <%/post-url%>
                 <%#youtube%>
@@ -180,6 +196,9 @@ limitations under the License.
             </div>
             <%/land-see-paging%>
           </template>
+          <div role="button" aria-label="See More" overflow class="land-see-list-overflow center mx-auto">
+            <div class="land-see-hero-button land-see-overflow-button">See More</div>
+          </div>
         </amp-list>
         {{/category-results}}
       </div>

@@ -61,6 +61,8 @@
   --color-input-font-secondary: var(--color-font-secondary);
 
   --color-story-category-background: #fddcd7;
+  --color-story-navigation-border: #f0f0f0;
+  --color-story-navigation-accent: #98caaf;
 
   --font-primary: "Crimson Text", times, serif;
   --font-secondary: "Montserrat", arial, sans-serif;

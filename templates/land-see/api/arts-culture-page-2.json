@@ -26,7 +26,7 @@
       "page-nav": [{
         "classes": "land-see-prev-page mt2 ml2 relative left",
         "button-text": "Previous",
-        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/arts-culture-page-1.json', selectedCategory: 'arts-culture'})"
+        "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/arts-culture-page-1.json', selectedCategory: 'arts-culture', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       }]
     }
   }]
