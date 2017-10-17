@@ -145,24 +145,24 @@
   pointer-events: none;
 }
 
-.gallery-landing-image-wrap-0 amp-img { background: #b3afab }
-.gallery-landing-image-wrap-1 amp-img { background: #9cd954 }
-.gallery-landing-image-wrap-2 amp-img { background: #BFDAE4 }
-.gallery-landing-image-wrap-3 amp-img { background: #E6E8E7 }
-.gallery-landing-image-wrap-4 amp-img { background: #FEFA4A }
-.gallery-landing-image-wrap-5 amp-img { background: #D8AEC3 }
-.gallery-landing-image-wrap-6 amp-img { background: #A4C5D0 }
-.gallery-landing-image-wrap-7 amp-img { background: #34AAB2 }
-.gallery-landing-image-wrap-8 amp-img { background: #DA2338 }
-.gallery-landing-image-wrap-9 amp-img { background: #D3DBDD }
-.gallery-landing-image-wrap-10 amp-img { background: #4270A2 }
-.gallery-landing-image-wrap-11 amp-img { background: #D7D8D8 }
-.gallery-landing-image-wrap-12 amp-img { background: #FCDB87 }
-.gallery-landing-image-wrap-13 amp-img { background: #C9E6F9 }
-.gallery-landing-image-wrap-14 amp-img { background: #98CBDE }
-.gallery-landing-image-wrap-15 amp-img { background: #31C7C3 }
-.gallery-landing-image-wrap-16 amp-img { background: #F2BFCD }
-.gallery-landing-image-wrap-17 amp-img { background: #E3CB78 }
+.gallery-landing-image-wrap-0 amp-img { background: #d97b7f }
+.gallery-landing-image-wrap-1 amp-img { background: #127eb1 }
+.gallery-landing-image-wrap-2 amp-img { background: #e4bf0b }
+.gallery-landing-image-wrap-3 amp-img { background: #9f3f7a }
+.gallery-landing-image-wrap-4 amp-img { background: #5870ed }
+.gallery-landing-image-wrap-5 amp-img { background: #fe95a6 }
+.gallery-landing-image-wrap-6 amp-img { background: #a8a697 }
+.gallery-landing-image-wrap-7 amp-img { background: #c8acbc }
+.gallery-landing-image-wrap-8 amp-img { background: #ee9d57 }
+.gallery-landing-image-wrap-9 amp-img { background: #ddd1d2 }
+.gallery-landing-image-wrap-10 amp-img { background: #8dbbc0 }
+.gallery-landing-image-wrap-11 amp-img { background: #9bd1ee }
+.gallery-landing-image-wrap-12 amp-img { background: #b48b86 }
+.gallery-landing-image-wrap-13 amp-img { background: #764b4e }
+.gallery-landing-image-wrap-14 amp-img { background: #aaaab3 }
+.gallery-landing-image-wrap-15 amp-img { background: #aeb197 }
+.gallery-landing-image-wrap-16 amp-img { background: #370afa }
+.gallery-landing-image-wrap-17 amp-img { background: #c1c1bf }
 
 [class^="gallery-landing-image-wrap-"]:hover amp-img {
   transform: translateY(-1vh) scale(1.05);
