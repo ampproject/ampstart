@@ -541,41 +541,41 @@
 }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-1) .gallery-landing-image-caption-content
-  { background: #E63C09 }
+  { background: #e63c09 }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-1) .gallery-landing-image-caption::after
-  { background: color(#E63C09 hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#e63c09 hue(- 10deg) lightness(+ 20%)) }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-2) .gallery-landing-image-caption-content
-  { background: #B812AB }
+  { background: #b812ab }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-2) .gallery-landing-image-caption::after
-  { background: color(#B812AB hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#b812ab hue(- 10deg) lightness(+ 20%)) }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-3) .gallery-landing-image-caption-content
-  { background: #EB4D68 }
+  { background: #eb4d68 }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-3) .gallery-landing-image-caption::after
-  { background: color(#EB4D68 hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#eb4d68 hue(- 10deg) lightness(+ 20%)) }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-4) .gallery-landing-image-caption-content
-  { background: #1B5B17 }
+  { background: #1b5b17 }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-4) .gallery-landing-image-caption::after
-  { background: color(#1B5B17 hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#1b5b17 hue(- 10deg) lightness(+ 20%)) }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-5) .gallery-landing-image-caption-content
-  { background: #4A145B }
+  { background: #4a145b }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-5) .gallery-landing-image-caption::after
-  { background: color(#4A145B hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#4a145b hue(- 10deg) lightness(+ 20%)) }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-6) .gallery-landing-image-caption-content
-  { background: #2D646E }
+  { background: #2d646e }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-6) .gallery-landing-image-caption::after
-  { background: color(#2D646E hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#2d646e hue(- 10deg) lightness(+ 20%)) }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-7) .gallery-landing-image-caption-content
-  { background: #25B841 }
+  { background: #25b841 }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n-7) .gallery-landing-image-caption::after
-  { background: color(#25B841 hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#25b841 hue(- 10deg) lightness(+ 20%)) }
 
 [class^="gallery-landing-image-wrap-"]:nth-child(8n) .gallery-landing-image-caption-content
-  { background: #06345E }
+  { background: #06345e }
 [class^="gallery-landing-image-wrap-"]:nth-child(8n) .gallery-landing-image-caption::after
-  { background: color(#06345E hue(- 10deg) lightness(+ 20%)) }
+  { background: color(#06345e hue(- 10deg) lightness(+ 20%)) }
