@@ -146,16 +146,16 @@
             }
           ],
           "template-preview": {
-            "title": "Bike Shed Template",
+            "title": "Bike Shop Template",
             "img": {
               "width": "1480",
               "height": "1100",
               "url": "/img/www/index/bike_both.png",
               "2x_url": "/img/www/index/bike_both_2x.png",
               "layout": "responsive",
-              "alt": "Screenshot of the Bike Shed template"
+              "alt": "Screenshot of the Bike Shop template"
             },
-            "lightbox-id": "bike-shed",
+            "lightbox-id": "bike-shop",
             "src": "templates/e-commerce/landing.amp.html",
             "download": "archive/e-commerce.zip"
           }
