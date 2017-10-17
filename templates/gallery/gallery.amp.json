@@ -19,9 +19,10 @@
     },
 
     "navbar": {
+      "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='36' height='36'><path fill='currentColor' d='M9 12h18v1H9z'/><path fill='currentColor' d='M9 17h18v1H9z'/><path fill='currentColor' d='M9 22h18v1H9z'/></svg>",
       "sidebar-id": "sidebar",
       "sidebaronly": true,
-      "sidebarclasses": [],
+      "sidebarclasses": ["gallery-sidebar"],
       "nav": {
         "link": [{
           "href": "./gallery.amp.html",

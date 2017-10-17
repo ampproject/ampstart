@@ -14,12 +14,6 @@
  * limitations under the License.
  */
 
- .gallery-sidebar {
-  width: calc((375 / 16rem) - 20vw);
-  padding-right: 20vw;
-  box-sizing: content-box;
-}
-
 .gallery-sidebar a, .gallery-sidebar-close-button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
