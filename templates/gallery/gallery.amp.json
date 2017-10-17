@@ -23,6 +23,9 @@
       "sidebar-id": "sidebar",
       "sidebaronly": true,
       "sidebarclasses": ["gallery-sidebar"],
+      "sidebartitle": {
+        "title": "Current Exhibitions"
+      },
       "nav": {
         "link": [{
           "href": "./gallery.amp.html",
