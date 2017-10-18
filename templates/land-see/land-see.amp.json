@@ -434,7 +434,7 @@
         "title": "Design",
         "classes": "land-see-stories land-see-design",
         "list-src": "./api/design-accordion.json",
-        "height": 460
+        "height": 495
       },
       {
         "title": "Fashion",

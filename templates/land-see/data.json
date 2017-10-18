@@ -28,6 +28,7 @@
   "navbar": {
     "sidebar-id": "header-sidebar",
     "logo": {
+      "href": "land-see.amp.html",
       "name": "Land + See"
     },
     "nav": [
@@ -38,22 +39,22 @@
           "heading": "Stories",
           "options": [
             {
-              "link": {"url": "#", "text": "All"}
+              "link": {"url": "stories.amp.html", "text": "All"}
             },
             {
-              "link": {"url": "#", "text": "Design"}
+              "link": {"url": "stories.amp.html?category=design#land-see-design", "text": "Design"}
             },
             {
-              "link": {"url": "#", "text": "Fashion"}
+              "link": {"url": "stories.amp.html?category=fashion#land-see-fashion", "text": "Fashion"}
             },
             {
-              "link": {"url": "#", "text": "Interiors"}
+              "link": {"url": "stories.amp.html?category=interiors#land-see-interiors", "text": "Interiors"}
             },
             {
-              "link": {"url": "#", "text": "Arts & Culture"}
+              "link": {"url": "stories.amp.html?category=arts-culture#land-see-arts-culture", "text": "Arts & Culture"}
             },
             {
-              "link": {"url": "#", "text": "Popular"}
+              "link": {"url": "stories.amp.html?category=popular#land-see-popular", "text": "Popular"}
             }
           ]
         }

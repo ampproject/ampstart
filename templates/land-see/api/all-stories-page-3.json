@@ -58,7 +58,7 @@
       "page-nav": [{
         "classes": "land-see-prev-page mt2 ml2 relative left",
         "button-text": "Previous",
-        "action": "tap:AMP.pushState({height: 1650, mobile_height: 2750, src: './api/all-stories-page-2.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
+        "action": "tap:AMP.pushState({height: 1535, mobile_height: 2770, src: './api/all-stories-page-2.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       }]
     }
   }]
