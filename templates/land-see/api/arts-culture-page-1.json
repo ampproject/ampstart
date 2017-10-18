@@ -102,7 +102,7 @@
   {
     "land-see-category": [{"post-classes": "hide"}],
     "land-see-paging": {
-      "classes": "sm-hide md-hide lg-hide",
+      "classes": "land-see-hide-widescreen",
       "page-nav": [{
         "classes": "land-see-next-page mt2 mr2 relative right",
         "button-text": "Next",

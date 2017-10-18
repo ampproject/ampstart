@@ -10,7 +10,7 @@
             "src": "../../img/land-see/content/tiny-houses-resized.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col sm-hide md-hide lg-hide land-see-story",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-widescreen land-see-story",
         "post-url": "#",
         "post-category": "Interiors",
         "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
@@ -26,7 +26,7 @@
             "src": "../../img/land-see/content/books-you-need-resize-medium.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col sm-hide md-hide lg-hide land-see-story",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-widescreen land-see-story",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html?category=arts-culture#land-see-arts-culture",
@@ -42,7 +42,7 @@
             "src": "../../img/land-see/content/burger-resize-medium.jpg"
           }
         ],
-        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col sm-hide md-hide lg-hide land-see-story",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-hide-widescreen land-see-story",
         "post-url": "#",
         "post-category": "Arts & Culture",
         "post-category-url": "stories.amp.html?category=arts-culture#land-see-arts-culture",
@@ -140,7 +140,7 @@
         "action": "tap:AMP.pushState({height: 2170, mobile_height: 2750, src: './api/all-stories-page-1.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       },
       {
-        "classes": "land-see-next-page mt2 mr2 relative right sm-hide md-hide lg-hide",
+        "classes": "land-see-next-page mt2 mr2 relative right land-see-hide-widescreen",
         "button-text": "Next",
         "action": "tap:AMP.pushState({height: 1100, mobile_height: 1650, src: './api/all-stories-page-3.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       }]

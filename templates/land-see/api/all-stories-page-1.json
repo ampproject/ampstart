@@ -136,7 +136,7 @@
       "page-nav": [{
         "classes": "land-see-next-page mt2 mr2 relative right",
         "button-text": "Next",
-        "action": "tap:AMP.pushState({height: 1550, mobile_height: 2750, src: './api/all-stories-page-2.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
+        "action": "tap:AMP.pushState({height: 1650, mobile_height: 2750, src: './api/all-stories-page-2.json', selectedCategory: 'all', selectedContainerClass: 'land-see-categories-nav center mb2 mx1 fit relative'})"
       }]
     }
   }]

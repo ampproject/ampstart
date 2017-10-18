@@ -820,7 +820,6 @@ h4,
 
 .land-see-list-overflow[overflow] {
   background-color: var(--color-story-navigation-accent);
-  color: var(--color-font-secondary);
   cursor: pointer;
   position: absolute;
   bottom: 0;
@@ -830,11 +829,19 @@ h4,
 }
 
 .land-see-overflow-button {
+  color: var(--color-font-secondary);
+  border-color: var(--color-font-secondary);
   opacity: 1;
 }
 
 @media (max-width: 30rem) {
   .land-see-hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 30.06rem) {
+  .land-see-hide-widescreen {
     display: none;
   }
 }
