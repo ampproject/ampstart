@@ -1,0 +1,46 @@
+.icon, [class^="img-icon"] {
+  display: inline-block;
+  vertical-align: -23%;
+  height: var(--icon-size);
+  width: var(--icon-size);
+
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto var(--icon-size);
+}
+
+.icon:not(:root) {
+  overflow: visible;
+}
+
+.img-iconmcheckmark-purple {
+  background-image: url(../../img/travel/icon/checkmark-purple.png);
+}
+
+.img-icon-map-pin-outline-gray {
+  background-image: url(../../img/travel/icon/map-pin-outline-gray.png);
+}
+
+.img-icon-map-pin-transparent {
+  background-image: url(../../img/travel/icon/map-pin-transparent.png);
+}
+
+.img-icon-plane-landing-transparent {
+  background-image: url(../../img/travel/icon/plane-landing-transparent.png);
+}
+
+.img-icon-plane-taking-off-transparent {
+  background-image: url(../../img/travel/icon/plane-taking-off-transparent.png);
+}
+
+.img-icon-sad-face-gray {
+  background-image: url(../../img/travel/icon/sad-face-gray.png);
+}
+
+.img-icon-star-green {
+  background-image: url(../../img/travel/icon/star-green.png);
+}
+
+.img-icon-star-silver {
+  background-image: url(../../img/travel/icon/star-silver.png);
+}

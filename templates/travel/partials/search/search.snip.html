@@ -1,0 +1,31 @@
+<!-- Search -->
+<section class="py4 bg-purple xs-hide sm-hide relative">
+  <div class="container px1 md-px2 pb1 relative">
+    <h3 class="h1 semibold mb2 white center">Have a specific destination in mind?</h3>
+
+    <div class="flex justify-center pb2">
+      <div class="col-8">
+        <div class="input-group">
+          <input
+            class="input input-big rounded"
+            type="text"
+            name="query"
+            placeholder="Where would you like to go?"
+            on="change:AMP.setState({fields_query: event.value})"
+            value=""
+            [value]="fields_query"
+          >
+          <span class="input-group-sep input-border-gray"></span>
+          <a
+            href="travel-results.amp"
+            class="btn input-big bg-white purple rounded"
+            {{> ../util/apply-button-props.snip.html}}
+          >
+            Find my next adventure
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/ Search -->
