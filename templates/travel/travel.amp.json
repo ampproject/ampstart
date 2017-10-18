@@ -10,10 +10,62 @@
       "templates": [
         "amp-mustache"
       ],
-      "css-path": "templates/travel/page.css",
+      "css-path": "templates/travel/travel.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
       ]
+    },
+    "partials": {
+      "featured": {
+        "image-col-1": {
+          "overlay-color": "travel-featured-color-blue",
+          "width": 336,
+          "height": 507,
+          "src": "new-york",
+          "name": "New York",
+          "adventure-number": "379 adventures"
+        },
+        "image-col-2-top": {
+          "overlay-color": "travel-featured-color-cyan",
+          "width": 264,
+          "height": 246,
+          "src": "barcelona",
+          "name": "Barcelona",
+          "adventure-number": "68 adventures"
+        },
+        "image-col-2-bottom": {
+          "overlay-color": "travel-featured-color-orange",
+          "width": 264,
+          "height": 264,
+          "src": "paris",
+          "name": "Paris",
+          "adventure-number": "221 adventures"
+        },
+        "image-col-3-top": {
+          "overlay-color": "travel-featured-color-purple",
+          "width": 276,
+          "height": 207,
+          "src": "tokyo",
+          "name": "Tokyo",
+          "adventure-number": "500+ adventures"
+        },
+        "image-col-3-bottom": {
+          "overlay-color": "travel-featured-color-cornflower",
+          "width": 264,
+          "height": 286,
+          "src": "chicago",
+          "name": "Chicago",
+          "adventure-number": "143 adventures"
+        },
+        "image-col-4": {
+          "overlay-color": "travel-featured-color-teal",
+          "width": 312,
+          "height": 507,
+          "src": "reykjavik",
+          "name": "Reykjavik",
+          "adventure-number": "87 adventures"
+        }
+      }
     }
   }
 }
