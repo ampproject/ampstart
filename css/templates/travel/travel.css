@@ -23,7 +23,6 @@
 @import '../../../templates/travel/elements/_btn';
 @import '../../../templates/travel/elements/_clip';
 @import '../../../templates/travel/elements/_container';
-@import '../../../templates/travel/elements/_date-input';
 @import '../../../templates/travel/elements/_inline-list';
 @import '../../../templates/travel/elements/_input-group';
 @import '../../../templates/travel/elements/_input-icon';
@@ -43,9 +42,6 @@
 @import '../../../templates/travel/partials/angles/_angles';
 @import '../../../templates/travel/partials/activities/_activities';
 @import '../../../templates/travel/partials/discover/_discover';
-@import '../../../templates/travel/partials/footer/_footer';
-@import '../../../templates/travel/partials/featured/_featured';
-@import '../../../templates/travel/partials/hero/_hero';
 @import '../../../templates/travel/partials/icon/_icon';
 @import '../../../templates/travel/partials/popular/_popular';
 @import '../../../templates/travel/partials/results/_results';
