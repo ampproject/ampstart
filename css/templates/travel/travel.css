@@ -19,15 +19,15 @@
 /*
  * Custom elements.
  */
-@import '../../../templates/travel/elements/_activity-type-color.css';
-@import '../../../templates/travel/elements/_btn.css';
+@import '../../../templates/travel/elements/_activity-type-color';
+@import '../../../templates/travel/elements/_btn';
 @import '../../../templates/travel/elements/_clip';
 @import '../../../templates/travel/elements/_container';
 @import '../../../templates/travel/elements/_date-input';
-@import '../../../templates/travel/elements/_inline-list.css';
-@import '../../../templates/travel/elements/_input-group.css';
-@import '../../../templates/travel/elements/_input-icon.css';
-@import '../../../templates/travel/elements/_input.css';
+@import '../../../templates/travel/elements/_inline-list';
+@import '../../../templates/travel/elements/_input-group';
+@import '../../../templates/travel/elements/_input-icon';
+@import '../../../templates/travel/elements/_input';
 @import '../../../templates/travel/elements/_like';
 @import '../../../templates/travel/elements/_link';
 @import '../../../templates/travel/elements/_object-cover';
@@ -40,12 +40,12 @@
 /*
  * Template partials.
  */
-@import '../../../templates/travel/partials/angles/angles.css';
-@import '../../../templates/travel/partials/activities/activities.css';
-@import '../../../templates/travel/partials/discover/discover.css';
-@import '../../../templates/travel/partials/footer/footer.css';
-@import '../../../templates/travel/partials/featured/featured.css';
-@import '../../../templates/travel/partials/hero/hero.css';
-@import '../../../templates/travel/partials/icon/icon.css';
-@import '../../../templates/travel/partials/popular/popular.css';
-@import '../../../templates/travel/partials/results/results.css';
+@import '../../../templates/travel/partials/angles/_angles';
+@import '../../../templates/travel/partials/activities/_activities';
+@import '../../../templates/travel/partials/discover/_discover';
+@import '../../../templates/travel/partials/footer/_footer';
+@import '../../../templates/travel/partials/featured/_featured';
+@import '../../../templates/travel/partials/hero/_hero';
+@import '../../../templates/travel/partials/icon/_icon';
+@import '../../../templates/travel/partials/popular/_popular';
+@import '../../../templates/travel/partials/results/_results';

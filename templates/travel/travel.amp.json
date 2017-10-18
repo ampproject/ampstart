@@ -1,5 +1,25 @@
 {
   "travel": {
+    "data": {
+      "types": [
+        {"text": "Active", "value": "active", "icon": {"run": true}},
+        {"text": "Artistic", "value": "artistic", "icon": {"paintbrush": true}},
+        {"text": "Drinks", "value": "drinks", "icon": {"cocktail": true}},
+        {"text": "Fashion", "value": "fashion", "icon": {"jacket": true}},
+        {"text": "Food", "value": "food", "icon": {"cutlery": true}},
+        {"text": "Music", "value": "music", "icon": {"guitar": true}},
+        {"text": "Nature", "value": "nature", "icon": {"pine": true}},
+        {"text": "Nightlife", "value": "nightlife", "icon": {"moon": true}},
+        {"text": "Tours", "value": "tours", "icon": {"bus": true}},
+        {"text": "Water", "value": "water", "icon": {"boat": true}}
+      ],
+      "sort": [
+        {"text": "Popular", "value": "popularity-desc", "selected": true},
+        {"text": "Best Rated", "value": "rating-desc", "selected": false},
+        {"text": "New", "value": "age-asc", "selected": false},
+        {"text": "Lowest Price", "value": "price-asc", "selected": false}
+      ]
+    },
     "head-tag": {
       "title": "Travel Template",
       "canonical-path": "templates/travel/travel.amp",
@@ -10,10 +30,71 @@
       "templates": [
         "amp-mustache"
       ],
-      "css-path": "templates/travel/page.css",
+      "css-path": "templates/travel/travel.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
       ]
+    },
+    "partials": {
+      "hero": {
+        "images": [{
+          "src": "../../img/travel/hero-2.jpg"
+        }, {
+          "src": "../../img/travel/hero-3.jpg"
+        }, {
+          "src": "../../img/travel/hero-1.jpg"
+        }]
+      },
+      "featured": {
+        "image-col-1": {
+          "overlay-color": "travel-featured-color-blue",
+          "width": 336,
+          "height": 507,
+          "src": "new-york",
+          "name": "New York",
+          "adventure-number": "379 adventures"
+        },
+        "image-col-2-top": {
+          "overlay-color": "travel-featured-color-cyan",
+          "width": 264,
+          "height": 246,
+          "src": "barcelona",
+          "name": "Barcelona",
+          "adventure-number": "68 adventures"
+        },
+        "image-col-2-bottom": {
+          "overlay-color": "travel-featured-color-orange",
+          "width": 264,
+          "height": 264,
+          "src": "paris",
+          "name": "Paris",
+          "adventure-number": "221 adventures"
+        },
+        "image-col-3-top": {
+          "overlay-color": "travel-featured-color-purple",
+          "width": 276,
+          "height": 207,
+          "src": "tokyo",
+          "name": "Tokyo",
+          "adventure-number": "500+ adventures"
+        },
+        "image-col-3-bottom": {
+          "overlay-color": "travel-featured-color-cornflower",
+          "width": 264,
+          "height": 286,
+          "src": "chicago",
+          "name": "Chicago",
+          "adventure-number": "143 adventures"
+        },
+        "image-col-4": {
+          "overlay-color": "travel-featured-color-teal",
+          "width": 312,
+          "height": 507,
+          "src": "reykjavik",
+          "name": "Reykjavik",
+          "adventure-number": "87 adventures"
+        }
+      }
     }
   }
 }

@@ -86,6 +86,23 @@ limitations under the License.
           </label>
         </div>
 
+        <amp-list
+            class="inline-list clip"
+            layout="flex-item"
+            src="/api/places?types=(regions)&types=(cities)&input="
+            [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live"
+          >
+            <template type="amp-mustache">
+              {{=[[ ]]=}}
+              <datalist id="locations">
+                {{#predictions}}
+                <option value="{{description}}">
+                {{/predictions}}
+              </datalist>
+              [[={{ }}=]]
+            </template>
+          </amp-list>
+
         <div class="flex my2 travel-hero-search-dates">
           <label
             class="date-input focus"

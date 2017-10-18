@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "ampstart-8dc53",
+    "default": "ampstart-staging-metalab",
     "staging": "ampstart-staging",
     "iframes": "ampstart-iframes"
   }
