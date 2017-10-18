@@ -30,7 +30,7 @@ body {
 }
 
 .gallery-base-content {
-  background: #fff;
+  background: var(--color-white);
   overflow-x: hidden;
 }
 
