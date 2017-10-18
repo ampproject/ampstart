@@ -46,14 +46,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Hack media query to target IE, which does not support mix-blend-mode. */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .gallery-base-invert {
-    color: inherit;
-    mix-blend-mode: initial;
-  }
-}
-
 .gallery-base-callout {
   margin: 0 0 calc((56 / 16) * 1rem) 0;
   font-size: calc((20 / 16) * 1rem);
@@ -88,18 +80,26 @@ body {
   font-weight: 600;
 }
 
- @media (--breakpoint-v-xs) {
-   .v-xs-hide { display: none }
- }
- 
- @media (--breakpoint-v-sm-md) {
-   .v-sm-hide { display: none }
- }
- 
- @media (--breakpoint-v-md-lg) {
-   .v-md-hide { display: none }
- }
- 
- @media (--breakpoint-v-lg) {
-   .v-lg-hide { display: none }
- }
+@media (--breakpoint-v-xs) {
+  .v-xs-hide { display: none }
+}
+
+@media (--breakpoint-v-sm-md) {
+  .v-sm-hide { display: none }
+}
+
+@media (--breakpoint-v-md-lg) {
+  .v-md-hide { display: none }
+}
+
+@media (--breakpoint-v-lg) {
+  .v-lg-hide { display: none }
+}
+
+ /* Hack media query to target IE, which does not support mix-blend-mode. */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .gallery-base-invert {
+    color: inherit;
+    mix-blend-mode: initial;
+  }
+}
