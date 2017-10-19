@@ -1,0 +1,31 @@
+.travel-footer .link.gray:focus {
+  border-bottom: calc(2 / 16rem) solid rgba(255,255,255,0.25);
+}
+
+.travel-footer-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  background: var(--white);
+}
+
+.travel-footer-input-bg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+}
+
+.travel-footer-angle {
+  position: absolute;
+  width: 200vw;
+  bottom: 100%;
+
+  height: calc(800 / 16rem);
+  transform: translate(-25%, calc(50 / 16rem)) rotate(20deg);
+  background-color: #DCE6EA;
+  opacity: 0.2;
+}

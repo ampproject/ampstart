@@ -1,0 +1,52 @@
+:root .clip {
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: 100vh;
+  max-width: 100vw;
+  clip: rect(0 0 0 0);
+}
+
+@media (--breakpoint-xs) {
+  :root .xs-clip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    clip: rect(0 0 0 0);
+  }
+}
+
+@media (--breakpoint-sm-md) {
+  :root .sm-clip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    clip: rect(0 0 0 0);
+  }
+}
+
+@media (--breakpoint-md-lg) {
+  :root .md-clip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    clip: rect(0 0 0 0);
+  }
+}
+
+@media (--breakpoint-lg) {
+  :root .lg-clip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    clip: rect(0 0 0 0);
+  }
+}

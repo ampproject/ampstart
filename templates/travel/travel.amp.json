@@ -16,63 +16,55 @@
       ]
     },
     "partials": {
-      "hero": {
-        "images": [{
-          "src": "../../img/travel/hero-2.jpg"
-        }, {
-          "src": "../../img/travel/hero-3.jpg"
-        }, {
-          "src": "../../img/travel/hero-1.jpg"
-        }],
-        "apply-button-props": [{
-            "key": "ui_reset",
-            "value": "false"
-          }, {
-            "key": "ui_filterPane",
-            "value": "false"
-          }, {
-            "key": "query_query",
-            "value": "fields_query"
-          }, {
-            "key": "fields_query_edited",
-            "value": "false"
-          }, {
-            "key": "query_departure",
-            "value": "fields_departure"
-          }, {
-            "key": "fields_departure_edited",
-            "value": "false"
-          }, {
-            "key": "query_return",
-            "value": "fields_return"
-          }, {
-            "key": "fields_return_edited",
-            "value": "false"
-          }, {
-            "key": "query_maxPrice",
-            "value": "fields_maxPrice"
-          }, {
-            "key": "fields_maxPrice_edited",
-            "value": "false"
-          }, {
-            "key": "query_city",
-            "value": "fields_city"
-          }, {
-            "key": "fields_city_edited",
-            "value": "false"
-          }, {
-            "key": "query_type",
-            "value": "fields_type"
-          }, {
-            "key": "fields_type_edited",
-            "value": "false"
-          }, {
-            "key": "query_sort",
-            "value": "fields_sort"
-          }, {
-            "key": "fields_sort_edited",
-            "value": "false"
-        }]
+      "featured": {
+        "image-col-1": {
+          "overlay-color": "travel-featured-color-blue",
+          "width": 336,
+          "height": 507,
+          "src": "new-york",
+          "name": "New York",
+          "adventure-number": "379 adventures"
+        },
+        "image-col-2-top": {
+          "overlay-color": "travel-featured-color-cyan",
+          "width": 264,
+          "height": 246,
+          "src": "barcelona",
+          "name": "Barcelona",
+          "adventure-number": "68 adventures"
+        },
+        "image-col-2-bottom": {
+          "overlay-color": "travel-featured-color-orange",
+          "width": 264,
+          "height": 264,
+          "src": "paris",
+          "name": "Paris",
+          "adventure-number": "221 adventures"
+        },
+        "image-col-3-top": {
+          "overlay-color": "travel-featured-color-purple",
+          "width": 276,
+          "height": 207,
+          "src": "tokyo",
+          "name": "Tokyo",
+          "adventure-number": "500+ adventures"
+        },
+        "image-col-3-bottom": {
+          "overlay-color": "travel-featured-color-cornflower",
+          "width": 264,
+          "height": 286,
+          "src": "chicago",
+          "name": "Chicago",
+          "adventure-number": "143 adventures"
+        },
+        "image-col-4": {
+          "overlay-color": "travel-featured-color-teal",
+          "width": 312,
+          "height": 507,
+          "src": "reykjavik",
+          "name": "Reykjavik",
+          "adventure-number": "87 adventures"
+        }
       }
     }
   }
