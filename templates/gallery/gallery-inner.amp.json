@@ -8,65 +8,11 @@
         "amp-carousel",
         "amp-sidebar"
       ],
-      "css-path": "templates/gallery/inner.css",
+      "css-path": "templates/gallery/page.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Poppins:300,400,600",
         "https://fonts.googleapis.com/css?family=Oswald:400"
       ]
-    },
-    "header": {
-      "heading": "Gallery of Modern Art",
-      "href": "./gallery.amp.html",
-      "mobile-header": true,
-      "invert": true
-    },
-    "sidebar": {
-      "links": [{
-        "text": "Home",
-        "href": "./gallery.amp.html"
-      }, {
-        "text": "Untitled<br/>Evan Ondre",
-        "href": "./gallery-inner.amp.html",
-        "image": {
-          "src": "../../img/gallery/1429886_200.jpg",
-          "2x": "../../img/gallery/1429886_400.jpg"
-        }
-      }, {
-        "text": "Cage<br/>Ellen Doe",
-        "href": "./gallery-inner.amp.html",
-        "image": {
-          "src": "../../img/gallery/915599_200.jpg",
-          "2x": "../../img/gallery/915599_400.jpg"
-        }
-      }, {
-        "text": "Living Tree<br/>David Beck",
-        "href": "./gallery-inner.amp.html",
-        "image": {
-          "src": "../../img/gallery/780149_200.jpg",
-          "2x": "../../img/gallery/780149_400.jpg"
-        }
-      }, {
-        "text": "Short Circuit<br/>Anna Moss",
-        "href": "./gallery-inner.amp.html",
-        "image": {
-          "src": "../../img/gallery/1097005_200.jpg",
-          "2x": "../../img/gallery/1097005_400.jpg"
-        }
-      }, {
-        "text": "Geo Breakfast<br/>Terra Morales",
-        "href": "./gallery-inner.amp.html",
-        "image": {
-          "src": "../../img/gallery/1028245_200.jpg",
-          "2x": "../../img/gallery/1028245_400.jpg"
-        }
-      }, {
-        "text": "Flying Pigs<br/>Brad Parker",
-        "href": "./gallery-inner.amp.html",
-        "image": {
-          "src": "../../img/gallery/1431916_200.jpg",
-          "2x": "../../img/gallery/1431916_400.jpg"
-        }
-      }]
     },
     "hero": {
       "heading": "Living Tree",
@@ -79,33 +25,33 @@
         "images": [{
           "width": 210,
           "height": 316,
-          "src": "../../img/gallery/1016795_800.jpg",
-          "2x": "../../img/gallery/1016795_800.jpg"
+          "src": "../../img/gallery/court.jpg",
+          "2x": "../../img/gallery/court@2x.jpg"
         }, {
           "width": 517,
           "height": 316,
-          "src": "../../img/gallery/1431916_200.jpg",
-          "2x": "../../img/gallery/1431916_400.jpg"
+          "src": "../../img/gallery/stripe.jpg",
+          "2x": "../../img/gallery/stripe@2x.jpg"
         }, {
           "width": 211,
           "height": 316,
-          "src": "../../img/gallery/1097005_200.jpg",
-          "2x": "../../img/gallery/1097005_400.jpg"
+          "src": "../../img/gallery/lamp.jpg",
+          "2x": "../../img/gallery/lamp@2x.jpg"
         }, {
           "width": 316,
           "height": 316,
-          "src": "../../img/gallery/1028245_200.jpg",
-          "2x": "../../img/gallery/1028245_400.jpg"
+          "src": "../../img/gallery/plant.jpg",
+          "2x": "../../img/gallery/plant@2x.jpg"
         }, {
           "width": 361,
           "height": 316,
-          "src": "../../img/gallery/1196479_200.jpg",
-          "2x": "../../img/gallery/1196479_400.jpg"
+          "src": "../../img/gallery/corner.jpg",
+          "2x": "../../img/gallery/corner@2x.jpg"
         }, {
           "width": 473,
           "height": 316,
-          "src": "../../img/gallery/1008988_200.jpg",
-          "2x": "../../img/gallery/1008988_400.jpg"
+          "src": "../../img/gallery/hall.jpg",
+          "2x": "../../img/gallery/hall@2x.jpg"
         }]
       },
       "content": "<blockquote>Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu in. Tellus at ut. Ac mi varius ut.</blockquote>"
