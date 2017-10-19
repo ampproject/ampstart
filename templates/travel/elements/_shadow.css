@@ -1,0 +1,14 @@
+.shadow,
+.shadow-hover {
+  box-shadow: 0 0.4rem 1.1rem var(--box-shadow-color-light);
+}
+
+.shadow-hover {
+  transition: box-shadow 250ms, transform 250ms;
+}
+
+.shadow-hover:not(:disabled):hover,
+.shadow-hover:not(:disabled):focus {
+  transform: scale(1.02) translateY(calc(0.02 / 1 * -100%));
+  box-shadow: 0 0.4rem 2rem var(--box-shadow-color-dark);
+}
