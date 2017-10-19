@@ -2,15 +2,16 @@
   "items": [{
     "land-see-category": [
       {
-        "image": [
+        "image-animated": [
           {
             "classes": "cover",
             "alt-text": "Studio Serif, interior.",
-            "width": 196, "height": 249, "layout": "responsive",
-            "src": "../../img/land-see/content/studio-310px.jpg"
+            "width": 409, "height": 305, "layout": "responsive",
+            "src": "../../img/land-see/content/land-see-studio-loop.gif",
+            "src-placeholder": "../../img/land-see/content/studio-310px.jpg"
           }
         ],
-        "post-classes": "land-see-post-item",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
         "post-url": "#",
         "post-category": "Design",
         "post-category-url": "stories.amp.html?category=design#land-see-design",
@@ -22,16 +23,16 @@
           {
             "classes": "cover",
             "alt-text": "Epression of aesthetics.",
-            "width": 196, "height": 187, "layout": "responsive",
-            "src": "../../img/land-see/content/timeless-design-310px.jpg"
+            "width": 409, "height": 370, "layout": "responsive",
+            "src": "../../img/land-see/content/timeless-design-350px.jpg"
           }
         ],
-        "post-classes": "land-see-post-item",
+        "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
         "post-url": "#",
         "post-category": "Design",
         "post-category-url": "stories.amp.html?category=design#land-see-design",
         "post-title": "Timeless Design: A History of Watches",
-        "post-copy": "A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress."
+        "post-copy": "A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress.<br />&nbsp;<br />&nbsp;<br />&nbsp;<br />&nbsp;"
       }
     ]
   }]
