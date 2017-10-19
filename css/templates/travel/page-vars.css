@@ -151,6 +151,10 @@ body {
   box-sizing: inherit;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -170,12 +174,10 @@ a {
 
 .focus:focus {
   outline: none;
-  /*box-shadow: 0 0 0 3px rgba(0,0,0,.25);*/
 }
 
 *:focus .focus-child {
   outline: none;
-  /*box-shadow: 0 0 0 3px rgba(0,0,0,.25);*/
 }
 
 .no-focus:focus {
