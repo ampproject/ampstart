@@ -1,0 +1,91 @@
+/**
+ * input
+ *
+ * Create a stylized input element. Derived from the basscss .input class with
+ * some non-compatible changes.
+ *
+ * Modifier Classes:
+ * - input-dark: style the input as a semi-transparent black overlay with
+ *    white text.
+ * - input-small: reduce the element padding
+ * - input-big: increace the element padding
+ * - input-narrow: reduce the horizontal element padding
+ */
+.input {
+  display: block;
+  width: 100%;
+  padding: var(--input-padding-y) var(--input-padding-x);
+  line-height: var(--input-line-height);
+  background-color: #fff;
+  border-width: var(--border-width);
+  border-style: solid;
+  color: currentColor;
+}
+
+.input:not(.border) {
+  border-color: transparent;
+}
+
+.input-dark {
+  background: color(#000 a(0.2));
+}
+
+.input-clear {
+  color: var(--white);
+  background: none;
+  border-color: rgba(255, 255, 255, .4);
+}
+
+.input:focus {
+  outline: 0;
+}
+
+.input-big {
+  padding: var(--input-big-padding-y) var(--input-big-padding-x);
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--gray);
+}
+
+.input::-moz-placeholder {
+  color: var(--gray);
+  opacity: 1;
+}
+
+.input:-ms-input-placeholder {
+  color: var(--gray);
+}
+
+.input-dark::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.75;
+}
+
+.input-dark::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.75;
+}
+
+.input-dark:-ms-input-placeholder {
+  color: currentColor;
+  opacity: 0.75;
+}
+
+.input-clear::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.4;
+}
+
+.input-clear::-moz-placeholder {
+  color: currentColor;
+  opacity: 0.4;
+}
+
+.input-clear:-ms-input-placeholder {
+  opacity: 0.4;
+}
+
+.input-border-gray {
+  border-color: var(--silver);
+}

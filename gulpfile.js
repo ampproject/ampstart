@@ -238,4 +238,13 @@ gulp.task('serve', 'Host a livereloading development webserver for amp start', [
     port: argv.port || 8000,
     directoryListing: {enable: true, path: 'dist'},
   }));
+gulp.task('serve', function() {
+  gulp.src(config.dest.default)
+    .pipe(server({
+      livereload: true,
+      directoryListing: {
+        enable: true,
+        path: 'dist'
+      },
+    }));
 });

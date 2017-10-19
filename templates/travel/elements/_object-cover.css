@@ -1,0 +1,4 @@
+.object-cover,
+.object-cover > img {
+  object-fit: cover;
+}
