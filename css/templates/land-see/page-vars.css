@@ -68,4 +68,7 @@
   --font-secondary: "Montserrat", arial, sans-serif;
   --font-navigation: "Inconsolata", verdana, sans-serif;
   --font-family: var(--font-primary);
+
+  @custom-media --breakpoint-within-xxs (max-width: 30rem);
+  @custom-media --breakpoint-greater-than-xxs (min-width: 30.06rem);
 }
