@@ -20,6 +20,19 @@ limitations under the License.
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body>
+    {{> ./partials/util/initial-state.snip.html}}
+    <section class="bg-black overflow-hidden" role="main">
+      <div class="relative travel-landing-content">
+        {{> ./partials/angles/angles.snip.html}}
+
+        {{> ./partials/discover/discover.snip.html}}
+
+        {{> ./partials/activities/activities.snip.html}}
+
+        <div class="bg-white">
+          {{> ./partials/popular/popular.snip.html}}
+        </div>
+      </div>
   </body>
 </html>
 {{/travel}}

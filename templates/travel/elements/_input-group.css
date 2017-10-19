@@ -1,0 +1,71 @@
+/**
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * input-group
+ *
+ * Join a sequence of .input, .input-icon, and .btn elements into a connected
+ * row.
+ */
+.input-group {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.input-group > .input,
+.input-group > .input-icon {
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+.input-group > .input:focus,
+.input-group > .btn:focus {
+  position: relative;
+}
+
+.input-group > .input:not(:first-child),
+.input-group > .input-icon:not(:first-child) > .input,
+.input-group > .btn:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-left-width: 0;
+}
+
+.input-group > .input:not(:last-child),
+.input-group > .input-icon:not(:last-child) > .input,
+.input-group > .btn:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  border-right-width: 0;
+}
+
+.input-group-sep {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 0;
+  height: calc(22 / 16rem);
+  border-left-width: 1px;
+  border-left-style: solid;
+  margin: 0 -0.5px;
+  pointer-events: none;
+}
+
+.input-group > .btn:hover {
+  transform: none;
+  box-shadow: none;
+}

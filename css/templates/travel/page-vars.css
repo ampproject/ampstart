@@ -22,6 +22,7 @@
   --font-family-primary: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
   --line-height: 1.2;
   --fixed-navbar-height: calc(86 / 16rem);
+  --fixed-navbar-height: calc(86 / 16rem);
 
   --color-body-background: var(--white);
   --color-font-default: var(--black);
