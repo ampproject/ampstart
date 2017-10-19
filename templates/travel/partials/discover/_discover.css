@@ -14,17 +14,11 @@
  * limitations under the License.
  */
 
-.shadow,
-.shadow-hover {
-  box-shadow: 0 0.4rem 1.1rem var(--box-shadow-color-light);
+.travel-discover-panel {
+  max-width: calc(440 / 16rem);
 }
 
-.shadow-hover {
-  transition: box-shadow 250ms, transform 250ms;
-}
-
-.shadow-hover:not(:disabled):hover,
-.shadow-hover:not(:disabled):focus {
-  transform: scale(1.02) translateY(calc(0.02 / 1 * -100%));
-  box-shadow: 0 0.4rem 2rem var(--box-shadow-color-dark);
+.travel-discover-heading {
+  font-size: calc(56 / 16rem);
+  margin-bottom: 0.3rem;
 }

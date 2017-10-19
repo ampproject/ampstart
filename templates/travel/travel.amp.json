@@ -1,5 +1,19 @@
 {
   "travel": {
+    "data": {
+      "types": [
+        {"text": "Active", "value": "active", "icon": {"run": true}},
+        {"text": "Artistic", "value": "artistic", "icon": {"paintbrush": true}},
+        {"text": "Drinks", "value": "drinks", "icon": {"cocktail": true}},
+        {"text": "Fashion", "value": "fashion", "icon": {"jacket": true}},
+        {"text": "Food", "value": "food", "icon": {"cutlery": true}},
+        {"text": "Music", "value": "music", "icon": {"guitar": true}},
+        {"text": "Nature", "value": "nature", "icon": {"pine": true}},
+        {"text": "Nightlife", "value": "nightlife", "icon": {"moon": true}},
+        {"text": "Tours", "value": "tours", "icon": {"bus": true}},
+        {"text": "Water", "value": "water", "icon": {"boat": true}}
+      ]
+    },
     "head-tag": {
       "title": "Travel Template",
       "canonical-path": "templates/travel/travel.amp",
@@ -10,7 +24,7 @@
       "templates": [
         "amp-mustache"
       ],
-      "css-path": "templates/travel/page.css",
+      "css-path": "templates/travel/travel.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
       ]

@@ -14,17 +14,42 @@
  * limitations under the License.
  */
 
-.shadow,
-.shadow-hover {
-  box-shadow: 0 0.4rem 1.1rem var(--box-shadow-color-light);
+.type-active {
+  color: var(--type-active-color);
 }
 
-.shadow-hover {
-  transition: box-shadow 250ms, transform 250ms;
+.type-artistic {
+  color: var(--type-artistic-color);
 }
 
-.shadow-hover:not(:disabled):hover,
-.shadow-hover:not(:disabled):focus {
-  transform: scale(1.02) translateY(calc(0.02 / 1 * -100%));
-  box-shadow: 0 0.4rem 2rem var(--box-shadow-color-dark);
+.type-drinks {
+  color: var(--type-drinks-color);
+}
+
+.type-fashion {
+  color: var(--type-fashion-color);
+}
+
+.type-food {
+  color: var(--type-food-color);
+}
+
+.type-music {
+  color: var(--type-music-color);
+}
+
+.type-nature {
+  color: var(--type-nature-color);
+}
+
+.type-nightlife {
+  color: var(--type-nightlife-color);
+}
+
+.type-tours {
+  color: var(--type-tours-color);
+}
+
+.type-water {
+  color: var(--type-water-color);
 }
