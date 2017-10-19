@@ -10,10 +10,21 @@
       "templates": [
         "amp-mustache"
       ],
-      "css-path": "templates/travel/page.css",
+      "css-path": "templates/travel/travel.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
       ]
+    },
+    "partials": {
+      "hero": {
+        "images": [{
+          "src": "hero-2"
+        }, {
+          "src": "hero-3"
+        }, {
+          "src": "hero-1"
+        }]
+      }
     }
   }
 }

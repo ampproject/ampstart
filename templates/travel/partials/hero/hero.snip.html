@@ -1,0 +1,165 @@
+<!-- Hero -->
+{{#partials.hero}}
+<div class="travel-hero-bg">
+  {{#images}}
+    <amp-img
+      class="travel-hero-bg-img"
+      src="../../../img/travel/{{src}}.jpg"
+      height="80vmax"
+    ></amp-img>
+  {{/images}}
+  <div class="travel-hero-bg-fade"></div>
+</div>
+
+<section class="relative travel-hero">
+  <div class="travel-hero-content container flex items-center">
+    <div class="travel-hero-content-inner relative px1 md-px2 flex-auto">
+      <h1 class="travel-hero-heading mb2 line-height-1">Adventures<br class="md-hide lg-hide"/> made&nbsp;easy</h1>
+      <div class="travel-hero-subheading xs-hide sm-hide">Find and book activities, tours, and experiences.</div>
+      <!-- Search Form -->
+      <div class="travel-hero-search">
+        <div class="md-hide lg-hide">
+          <label class="input-icon shadow rounded">
+            <input
+              class="input border input-big input-clear rounded"
+              list="locations"
+              type="text"
+              name="query"
+              placeholder="Where would you like to go?"
+              on="
+                change:AMP.setState({
+                  fields_query: event.value,
+                  fields_query_live: event.value,
+                  fields_query_edited: query_query != event.value
+                });
+                input-debounced:AMP.setState({
+                  fields_query_live: event.value
+                });
+              "
+              value=""
+              [value]="fields_query"
+            >
+            {{> ../icon/map-pin.snip.html}}
+          </label>
+        </div>
+
+        <div class="xs-hide sm-hide">
+          <label class="input-icon shadow rounded">
+            <input
+              class="input input-big rounded"
+              list="locations"
+              type="text"
+              name="query"
+              placeholder="Where would you like to go?"
+              on="
+                change:AMP.setState({
+                  fields_query: event.value,
+                  fields_query_live: event.value,
+                  fields_query_edited: query_query != event.value
+                });
+                input-debounced:AMP.setState({
+                  fields_query_live: event.value
+                });
+              "
+              value=""
+              [value]="fields_query"
+            >
+            {{> ../icon/map-pin.snip.html}}
+          </label>
+        </div>
+
+        <amp-list
+            class="inline-list clip"
+            layout="flex-item"
+            src="/api/places?types=(regions)&types=(cities)&input="
+            [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live"
+          >
+            <template type="amp-mustache">
+              {{=[[ ]]=}}
+              <datalist id="locations">
+                {{#predictions}}
+                <option value="{{description}}">
+                {{/predictions}}
+              </datalist>
+              [[={{ }}=]]
+            </template>
+          </amp-list>
+
+        <div class="flex my2 travel-hero-search-dates">
+          <label
+            class="date-input focus"
+            [class]="'date-input focus' + (fields_departure ? ' date-input-touched' : '')"
+          >
+            <input
+              type="date"
+              placeholder="yyyy-mm-dd"
+              pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+              title="yyyy-mm-dd"
+              name="departure"
+              on="
+                change:AMP.setState({
+                  fields_departure: true,
+                  fields_departure_edited: true
+                })
+              "
+            >
+            {{> ../icon/plane-taking-off.snip.html}}
+            <div class="date-input-label">
+              Departure
+            </div>
+          </label>
+          <label
+            class="date-input focus"
+            [class]="'date-input focus' + (fields_return ? ' date-input-touched' : '')"
+          >
+            <input
+              type="date"
+              placeholder="yyyy-mm-dd"
+              pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
+              title="yyyy-mm-dd"
+              name="return"
+              on="
+                change:AMP.setState({
+                  fields_return: true,
+                  fields_return_edited: true
+                })
+              "
+              disabled
+              [disabled]="!fields_departure"
+            >
+            {{> ../icon/plane-landing.snip.html}}
+            <div class="date-input-label">
+              Return
+            </div>
+          </label>
+        </div>
+
+      <div class="md-hide lg-hide">
+        <a
+          href="travel-results.amp"
+          {{> ../util/apply-button-props.snip.html}}
+        >
+          <button class="ampstart-btn btn rounded center semibold white block layout-fill bg-purple input-big">
+            Find Adventures &amp; Tours
+          </button>
+        </a>
+      </div>
+      <div class="xs-hide sm-hide">
+        <a
+          href="travel-results.amp"
+          class="ampstart-btn btn rounded center semibold white inline-block bg-purple input-big"
+          {{> ../util/apply-button-props.snip.html}}
+        >
+          Find Adventures &amp; Tours
+        </a>
+      </div>
+
+      <!--/ Search Form -->
+      <div class="travel-hero-discover center mt1 md-hide lg-hide gray">
+        Discover adventures {{> ../icon/caret-down-small.snip.html}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/partials.hero}}
+<!--/ Hero -->

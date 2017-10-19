@@ -1,0 +1,85 @@
+.date-input {
+  font-weight: 600;
+  line-height: var(--input-line-height);
+  padding: var(--input-padding-y) var(--input-padding-x);
+  padding-left: calc(var(--input-padding-y) * 2.5 + var(--icon-size));
+  position: relative;
+}
+
+.date-input .icon{
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: content-box;
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.date-input.input-dark .date-input-label {
+  color: rgba(255, 255, 255, .75);
+}
+
+.date-input.input-dark .icon {
+  color: rgba(255, 255, 255, .75);
+}
+
+.date-input input {
+  opacity: 0;
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  line-height: var(--input-line-height);
+  height: var(--input-line-height);
+  position: relative;
+  margin-bottom: calc(var(--input-line-height) * -1);
+  z-index: 1;
+  width: 8rem;
+  color: currentColor;
+}
+
+.date-input-touched input,
+.date-input input:focus {
+  opacity: 1;
+}
+
+.date-input input:focus {
+  outline: none;
+}
+
+.date-input-touched input ~ .date-input-label,
+.date-input input:focus ~ .date-input-label {
+  opacity: 0;
+}
+
+.date-input input:disabled ~ .icon,
+.date-input input:disabled ~ .date-input-label {
+  opacity: 0.5;
+}
+
+.date-input-touched input:disabled {
+  opacity: 0.5;
+}
+
+.date-input input::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+.date-input input::-webkit-clear-button {
+  display: none;
+}
+
+.date-input input::-webkit-inner-spin-button {
+  display: none;
+}
+
+.date-input input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}

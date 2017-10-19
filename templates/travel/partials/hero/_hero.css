@@ -1,0 +1,228 @@
+@keyframes travel-hero-bg-img-1 {
+  0% {
+    opacity: 0;
+    transform: translate3d(5vmax, 2vmax, 0) scale(1.1);
+  }
+  5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+    transform: translate3d(0, -2vmax, 0) scale(1);
+  }
+}
+
+@keyframes travel-hero-bg-img-2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(-2vmax, 0vmax, 0) scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+    transform: translate3d(2vmax, -2vmax, 0) scale(1.1);
+  }
+}
+
+@keyframes travel-hero-bg-img-3 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 2vmax, 0) scale(1);
+  }
+  5% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+    transform: translate(0, -2vmax) scale(1.1);
+  }
+}
+
+.travel-hero {
+  height: 100vmax;
+}
+
+@media (--breakpoint-md) {
+  .travel-hero {
+    z-index: 1;
+    height: auto;
+  }
+}
+
+.travel-hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 70vmax;
+  animation: fade 0.8s ease-out both;
+}
+
+.travel-hero-bg-img {
+  position: absolute;
+  top: -5vmax;
+  right: -5vmax;
+  bottom: -5vmax;
+  left: -5vmax;
+  opacity: 0;
+  background: var(--silver)
+}
+.travel-hero-bg-img img {
+  object-fit: cover;
+}
+.travel-hero-bg-img:nth-child(3) img {
+  object-position: 80% 100%;
+}
+
+.travel-hero-bg-img:nth-child(1) {
+  animation: 18s travel-hero-bg-img-1 linear infinite;
+  background: url('../../img/travel/hero-2-preview.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.travel-hero-bg-img:nth-child(2) {
+  animation: 18s travel-hero-bg-img-2 linear 6s infinite;
+  background: url('../../img/travel/hero-3-preview.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+.travel-hero-bg-img:nth-child(3) {
+  animation: 18s travel-hero-bg-img-3 linear 12s infinite;
+  background: url('../../img/travel/hero-1-preview.jpg') no-repeat 50% 50%;
+  background-size: cover;
+}
+
+@media (--breakpoint-md) {
+  .travel-hero-bg {
+    position: relative;
+    height: auto;
+  }
+}
+
+.travel-hero-bg-fade {
+  position: absolute;
+  height: 70vmax;
+  left: 0;
+  right: 0;
+  top: calc(70vmax - (300 / 16rem));
+  background-image: linear-gradient(180deg, transparent 0%, var(--black) calc(300 / 16rem));
+}
+
+.travel-hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: var(--fixed-navbar-height);
+  align-self: flex-end;
+  height: calc(100vmax - 70px);
+}
+
+@media (--breakpoint-md) {
+  .travel-hero-content {
+    padding-top: calc(var(--fixed-navbar-height) + (56 / 16rem));
+    padding-bottom: calc(48 / 16rem);
+    height: auto;
+    position: relative;
+  }
+}
+
+.travel-hero-content-inner {
+  align-self: flex-end;
+}
+
+.travel-hero-heading {
+  color: var(--white);
+  font-size: calc(60 / 16rem);
+  font-weight: 700;
+}
+
+.travel-hero-subheading {
+  color: var(--white);
+  font-size: calc(18 / 16rem);
+  font-weight: 600;
+}
+
+@media (--breakpoint-md) {
+  .travel-hero-heading {
+    font-size: 4.6rem;
+  }
+
+  .travel-hero-subheading {
+    font-size: calc(24 / 16rem);
+  }
+}
+
+@media (--breakpoint-md) {
+  .travel-hero-search {
+    margin-top: 4.25rem;
+    max-width: calc(530 / 16rem);
+  }
+}
+
+.travel-hero-search-dates {
+  color: var(--white);
+  justify-content: space-around;
+}
+
+.travel-hero-search-dates .date-input {
+  flex: 1 1 auto;
+}
+
+
+@media (--breakpoint-md) {
+  .travel-hero-search-dates {
+    justify-content: flex-start;
+    color: var(--black);
+  }
+
+  .travel-hero-search-dates .date-input {
+    flex: none;
+  }
+}
+
+.travel-hero-heading {
+  animation: fade-and-slideup 0.4s 0.2s ease-in-out both;
+}
+
+.travel-hero-subheading {
+  animation: fade-and-slideup 0.4s 0.25s ease-in-out both;
+}
+
+.travel-hero-search .input-icon {
+  animation: fade-and-slideup 0.4s 0.3s ease-in-out both;
+}
+
+.travel-hero-search-dates {
+  animation: fade-and-slideup 0.4s 0.35s ease-in-out both;
+}
+
+.travel-hero-search .btn {
+  font-size: 1.25rem;
+  animation: fade-and-slideup 0.4s 0.4s ease-in-out both;
+}
+
+.travel-hero-discover {
+  animation: fade-and-slideup 0.4s 0.45s ease-in-out both;
+}
+
+.travel-angles {
+  animation: fade-and-slideup 0.4s 0.5s ease-in-out both;
+}
+
+.travel-discover {
+  animation: fade-and-slideup 0.4s 0.55s ease-in-out both;
+}
+
+.travel-activities {
+  animation: fade-and-slideup 0.4s 0.6s ease-in-out both;
+}
