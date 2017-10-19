@@ -1,0 +1,12 @@
+/**
+ * object-cover
+ *
+ * Set the scale-mode of an img (or amp-img) element to "cover" instead of the
+ * default "stretch". This allows arbrairy scaling of img elements without
+ * distortion.
+ */
+
+.object-cover,
+.object-cover > img {
+  object-fit: cover;
+}

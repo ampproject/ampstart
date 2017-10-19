@@ -1,0 +1,37 @@
+/**
+ * basscss btn
+ *
+ * Extend the ampstart button class.
+ */
+
+ .btn {
+   /* Prevent btn bold weight. */
+   font-weight: inherit;
+   font-family: inherit;
+   font-size: 1rem;
+   text-decoration: none;
+   transition: box-shadow 250ms, transform 250ms;
+   line-height: 1.125rem;
+   padding: .5rem 1rem;
+   text-decoration: none;
+   white-space: nowrap;
+   word-wrap: normal;
+   vertical-align: middle;
+   cursor: pointer;
+   border: 1px solid transparent;
+ }
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.btn:not(:disabled):hover {
+  transform: scale(1.02) translateY(calc(0.02 / 1 * -100%));
+  box-shadow: 0 0.4rem 2rem var(--box-shadow-color-dark);
+}
+
+.btn:not(:disabled):focus {
+  outline: none;
+  box-shadow: none;
+}

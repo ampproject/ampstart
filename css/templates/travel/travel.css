@@ -19,20 +19,24 @@
 /*
  * Custom elements.
  */
-@import 'elements/_activity-type-color';
-@import 'elements/_container';
-@import 'elements/_link';
-@import 'elements/_pill';
-@import 'elements/_shadow';
-@import 'elements/_typography';
+@import '../../../templates/travel/elements/_btn';
+@import '../../../templates/travel/elements/_clip';
+@import '../../../templates/travel/elements/_container';
+@import '../../../templates/travel/elements/_date-input';
+@import '../../../templates/travel/elements/_inline-list';
+@import '../../../templates/travel/elements/_input-group';
+@import '../../../templates/travel/elements/_input-icon';
+@import '../../../templates/travel/elements/_input';
+@import '../../../templates/travel/elements/_link';
+@import '../../../templates/travel/elements/_object-cover';
+@import '../../../templates/travel/elements/_pill';
+@import '../../../templates/travel/elements/_responsive';
+@import '../../../templates/travel/elements/_shadow';
+@import '../../../templates/travel/elements/_spacing';
+@import '../../../templates/travel/elements/_typography';
 
 /*
  * Template partials.
  */
-@import 'components/_activities';
-@import 'components/_angles';
-@import 'components/_discover';
-@import 'components/_icon';
-@import 'components/_like';
-@import 'components/_popular';
-@import 'components/_results';
+@import '../../../templates/travel/partials/hero/_hero';
+@import '../../../templates/travel/partials/icon/_icon';
