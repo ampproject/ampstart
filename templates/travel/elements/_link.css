@@ -1,0 +1,23 @@
+.link:link, .link:visited {
+  transition: color .15s ease-in;
+  color: var(--purple);
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
+
+.link:hover {
+  color: #b99aef;
+}
+
+.link:focus {
+  outline: none;
+  border-bottom: calc(2 / 16rem) solid var(--box-shadow-color);
+}
+
+.link.gray:link, .link.gray:visited {
+  color: var(--gray);
+}
+
+.link.gray:hover {
+  color: #b4b4b4;
+}
