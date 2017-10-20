@@ -1,20 +1,20 @@
-/**
- * Copyright 2017 The AMP Start Authors. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS-IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 :root {
+  --blue:  #3682EC;
+  --green: #47B074;
+  --lime:  #67E497;
+  --orange:  #EC8936;
+  --fuchsia: #FB52A2;
+  --purple:  #8B58E3;
+  --white:  #FFFFFF;
+  --black:  #323A43;
+
+  --gray:   #8f98a3;
+  --silver: #e3e5e8;
+
+  --box-shadow-color: rgba(50,58,67,.2);
+  --box-shadow-color-light: rgba(50,58,67,.12);
+  --box-shadow-color-dark: rgba(50,58,67,.4);
+
   --font-color-primary: var(--black);
   --color-primary: var(--black);
   --font-color-secondary: var(--white);
@@ -51,6 +51,15 @@
   --type-water-color: #3abee8;
 
   /* input element */
+  --button-padding-y: .5rem;
+  --button-padding-x: 1rem;
+  --button-small-padding-y: .25rem;
+  --button-small-padding-x: .5rem;
+  --button-big-padding-y: 1rem;
+  --button-big-padding-x: 1.25rem;
+  --button-narrow-padding-x: .5rem;
+  --button-line-height: 1.125rem;
+
   --input-padding-y: var(--button-padding-y);
   --input-padding-x: var(--button-padding-x);
   --input-line-height: var(--button-line-height);
@@ -82,17 +91,17 @@
 
   --caps-letter-spacing: 0;
 
-  --h1: 2rem; /* 32px */
-  --h2: 1.5rem; /* 24px */
-  --h3: 1.25rem; /* 20px */
-  --h4: 1rem; /* 16px */
-  --h5: .875rem; /* 14px */
-  --h6: .75rem; /* 12px */
+  --h1: 2rem;
+  --h2: 1.5rem;
+  --h3: 1.25rem;
+  --h4: 1rem;
+  --h5: .875rem;
+  --h6: .75rem;
 
-  --space-1: 1rem; /* 16px */
-  --space-2: 1.5rem; /* 24px */
-  --space-3: 3rem; /* 48px */
-  --space-4: 5rem; /* 80px */
+  --space-1: 1rem;
+  --space-2: 1.5rem;
+  --space-3: 3rem;
+  --space-4: 4rem;
 
   --width-sm: 40rem; /* 640px */
   --width-md: 52rem; /* 832px */
@@ -111,4 +120,96 @@
   @custom-media --breakpoint-v-sm-md (min-height: 40.06rem) and (max-height: 52rem);
   @custom-media --breakpoint-md-lg (min-width: 52.06rem) and (max-width: 72rem);
   @custom-media --breakpoint-v-md-lg (min-height: 52.06rem) and (max-height: 72rem);
+}
+
+body {
+  color: var(--font-color-primary);
+  font-family: var(--font-family-primary);
+  line-height: var(--line-height-2);
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Util classes. */
+.min-0 {
+  min-width: 0;
+}
+
+.layout-fill {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.focus:focus {
+  outline: none;
+}
+
+*:focus .focus-child {
+  outline: none;
+}
+
+.no-focus:focus {
+  outline: none;
+}
+
+.flip {
+  transition: transform 100ms;
+  transform: rotate(0);
+}
+
+.flip-flipped {
+  transform: rotate(180deg);
+}
+
+.no-select {
+  user-select: none;
+}
+
+.collapse {
+  height: 0;
+  overflow: hidden;
+}
+
+/* Prevent strange bug where amp-img elements randomly lose rounded corners. */
+amp-img.rounded img {
+  border-radius: var(--border-radius)
+}
+amp-img.circle img {
+  border-radius: 50%
+}
+
+@keyframes fade-and-slideup {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
