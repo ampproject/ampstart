@@ -1,0 +1,63 @@
+
+/**
+ * overlay
+ *
+ * Create a full-page overlay. This is similar to an amp-lightbox with the
+ * important difference that it can be wholly controlled with css and disabled
+ * at different breakpoints.
+ *
+ * The required markup is:
+ *  div.overlay(.overlay-visible) > div.overlay-overflow > div.overlay-content
+ *
+ * Modifier Classes:
+ * - overlay-visible
+ */
+
+.overlay {
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(0, 100%);
+  transition: opacity 100ms, transform 100ms ease-out;
+}
+
+.overlay-visible {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(0, 0);
+  transition: opacity 200ms, transform 200ms ease-out;
+}
+
+.overlay-content {
+  flex: auto;
+  min-height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.overlay-fx-scale {
+  transition: transform 100ms ease-out;
+  transform-origin: 50vw 50vw;
+}
+
+.overlay-fx-scale.overlay-fx-scale-active {
+  transition: transform 200ms ease-out;
+  transform: scale(0.95);
+}
+
+/* Assuming that the overlay will never be used above small breakpoint. */
+@media (--breakpoint-md) {
+  .overlay-fx-scale.overlay-fx-scale-active {
+    transform: none;
+  }
+}

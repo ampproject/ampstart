@@ -1,0 +1,19 @@
+
+
+on="
+  tap:
+    AMP.setState({ui_reset: false}),
+    AMP.setState({
+      ui_reset: true,
+      query_maxPrice: fields_maxPrice_initial,
+      fields_maxPrice: fields_maxPrice_initial,
+      fields_maxPrice_live: fields_maxPrice_initial,
+      fields_maxPrice_edited: false,
+      query_city: fields_city_initial,
+      fields_city: fields_city_initial,
+      fields_city_edited: false,
+      query_type: fields_type_initial,
+      fields_type: fields_type_initial,
+      fields_type_edited: false
+    })
+"

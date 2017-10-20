@@ -1,0 +1,29 @@
+
+/*
+ * block-list
+ *
+ * Style an <amp-list> element to display itself and its children as block
+ * elements, restoring its intrinsic height.
+ */
+.block-list {
+  min-height: 1px;
+  min-width: 1px;
+  position: static;
+}
+
+.block-list [role="list"] {
+  position: static;
+  height: auto;
+  width: auto;
+}
+
+/*
+  Add an nbsp character to the block-list element to ensure prevent it
+  from shrinking to 0px X 0px when otherwise empty which would make AMP think
+  the element was not visible in the viewport and would prevent the list
+  request from firing.
+ */
+.block-list::after {
+  content: "\00a0";
+  display: inline;
+}
