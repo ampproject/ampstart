@@ -28,10 +28,10 @@
           "src": "../../img/gallery/court.jpg",
           "2x": "../../img/gallery/court@2x.jpg"
         }, {
-          "width": 517,
+          "width": 361,
           "height": 316,
-          "src": "../../img/gallery/stripe.jpg",
-          "2x": "../../img/gallery/stripe@2x.jpg"
+          "src": "../../img/gallery/corner.jpg",
+          "2x": "../../img/gallery/corner@2x.jpg"
         }, {
           "width": 211,
           "height": 316,
@@ -43,10 +43,10 @@
           "src": "../../img/gallery/plant.jpg",
           "2x": "../../img/gallery/plant@2x.jpg"
         }, {
-          "width": 361,
+          "width": 517,
           "height": 316,
-          "src": "../../img/gallery/corner.jpg",
-          "2x": "../../img/gallery/corner@2x.jpg"
+          "src": "../../img/gallery/stripe.jpg",
+          "2x": "../../img/gallery/stripe@2x.jpg"
         }, {
           "width": 473,
           "height": 316,

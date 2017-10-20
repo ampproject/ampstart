@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-.gallery-component-button {
+.ampstart-btn {
   display: inline-flex;
   height: 3.6rem;
   padding: calc((30 / 16) * 1rem);
@@ -22,7 +22,8 @@
   letter-spacing: 0.02em;
   font-weight: 600;
   background: var(--color-primary);
-  color: #fff;
+  border: 1px solid var(--color-primary);
+  color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   transition: transform 0.1s, box-shadow 0.1s;
   box-shadow: 0 0.3rem 1rem rgba(6, 7, 22, 0.1);
@@ -30,13 +31,13 @@
   white-space: nowrap;
 }
 
-.gallery-component-button:hover {
+.ampstart-btn:hover {
   transition: transform 0.25s, box-shadow 0.25s;
   transform: translate3d(0, -0.25rem, 0) scale(1.05);
   box-shadow: 0 1rem 2rem rgba(6, 7, 22, 0.2);
 }
 
-.gallery-component-button:active {
+.ampstart-btn:active {
   transition: transform 0.1s, box-shadow 0.1s;
   transform: translate3d(0, -0.125rem, 0) scale(1.025);
   box-shadow: 0 0.5rem 1rem rgba(6, 7, 22, 0.2);
