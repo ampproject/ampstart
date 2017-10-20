@@ -21,6 +21,7 @@
 @import '../../core.css';
 
 @import './page-vars';
+@import './components/_header';
 @import './components/_landing-images';
 
 body {
@@ -41,7 +42,7 @@ body {
 }
 
 .gallery-base-invert {
-  color: #fff;
+  color: var(--color-white);
   mix-blend-mode: difference;
   -webkit-font-smoothing: antialiased;
 }

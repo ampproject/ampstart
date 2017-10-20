@@ -13,6 +13,11 @@
       ]
     },
 
+    "header": {
+      "heading": "Gallery of Modern&nbsp;Art",
+      "invert": true
+   },
+
     "landing-images": [{
       "index": 0,
       "title": "Modern Caesar",
