@@ -26,32 +26,38 @@
           "width": 210,
           "height": 316,
           "src": "../../img/gallery/court.jpg",
-          "2x": "../../img/gallery/court@2x.jpg"
+          "2x": "../../img/gallery/court@2x.jpg",
+          "alt": "outdoor basketball court"
         }, {
           "width": 361,
           "height": 316,
           "src": "../../img/gallery/corner.jpg",
-          "2x": "../../img/gallery/corner@2x.jpg"
+          "2x": "../../img/gallery/corner@2x.jpg",
+          "alt": "corner of a building"
         }, {
           "width": 211,
           "height": 316,
           "src": "../../img/gallery/lamp.jpg",
-          "2x": "../../img/gallery/lamp@2x.jpg"
+          "2x": "../../img/gallery/lamp@2x.jpg",
+          "alt": "pink lamp on a blue background"
         }, {
           "width": 316,
           "height": 316,
           "src": "../../img/gallery/plant.jpg",
-          "2x": "../../img/gallery/plant@2x.jpg"
+          "2x": "../../img/gallery/plant@2x.jpg",
+          "alt": "house plant on chair on yellow background"
         }, {
           "width": 517,
           "height": 316,
           "src": "../../img/gallery/stripe.jpg",
-          "2x": "../../img/gallery/stripe@2x.jpg"
+          "2x": "../../img/gallery/stripe@2x.jpg",
+          "alt": "striped building"
         }, {
           "width": 473,
           "height": 316,
           "src": "../../img/gallery/hall.jpg",
-          "2x": "../../img/gallery/hall@2x.jpg"
+          "2x": "../../img/gallery/hall@2x.jpg",
+          "alt": "colourful hallway"
         }]
       },
       "content": "<blockquote>Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu in. Tellus at ut. Ac mi varius ut.</blockquote>"
