@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-.icon, [class^="img-icon"] {
+.travel-icon, [class^="travel-img-icon"] {
   display: inline-block;
   vertical-align: -23%;
   height: var(--icon-size);
@@ -25,38 +25,38 @@
   background-size: auto var(--icon-size);
 }
 
-.icon:not(:root) {
+.travel-icon:not(:root) {
   overflow: visible;
 }
 
-.img-iconmcheckmark-purple {
+.travel-img-icon-checkmark-purple {
   background-image: url(../../img/travel/icon/checkmark-purple.png);
 }
 
-.img-icon-map-pin-outline-gray {
+.travel-img-icon-map-pin-outline-gray {
   background-image: url(../../img/travel/icon/map-pin-outline-gray.png);
 }
 
-.img-icon-map-pin-transparent {
+.travel-img-icon-map-pin-transparent {
   background-image: url(../../img/travel/icon/map-pin-transparent.png);
 }
 
-.img-icon-plane-landing-transparent {
+.travel-img-icon-plane-landing-transparent {
   background-image: url(../../img/travel/icon/plane-landing-transparent.png);
 }
 
-.img-icon-plane-taking-off-transparent {
+.travel-img-icon-plane-taking-off-transparent {
   background-image: url(../../img/travel/icon/plane-taking-off-transparent.png);
 }
 
-.img-icon-sad-face-gray {
+.travel-img-icon-sad-face-gray {
   background-image: url(../../img/travel/icon/sad-face-gray.png);
 }
 
-.img-icon-star-green {
+.travel-img-icon-star-green {
   background-image: url(../../img/travel/icon/star-green.png);
 }
 
-.img-icon-star-silver {
+.travel-img-icon-star-silver {
   background-image: url(../../img/travel/icon/star-silver.png);
 }

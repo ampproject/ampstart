@@ -5,7 +5,7 @@
  *
  */
 
-:root .clip {
+.travel-clip {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +15,7 @@
 }
 
 @media (--breakpoint-xs) {
-  :root .xs-clip {
+  .travel-xs-clip {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +26,7 @@
 }
 
 @media (--breakpoint-sm-md) {
-  :root .sm-clip {
+  .travel-sm-clip {
     position: fixed;
     top: 0;
     left: 0;
@@ -37,7 +37,7 @@
 }
 
 @media (--breakpoint-md-lg) {
-  :root .md-clip {
+  .md-clip {
     position: fixed;
     top: 0;
     left: 0;
@@ -48,7 +48,7 @@
 }
 
 @media (--breakpoint-lg) {
-  :root .lg-clip {
+  .travel-lg-clip {
     position: fixed;
     top: 0;
     left: 0;
