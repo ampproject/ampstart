@@ -1,4 +1,4 @@
-.date-input {
+.travel-date-input {
   font-weight: 600;
   line-height: var(--input-line-height);
   padding: var(--input-padding-y) var(--input-padding-x);
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.date-input .icon{
+.travel-date-input .travel-icon{
   position: absolute;
   left: 0;
   top: 0;
@@ -14,15 +14,15 @@
   padding: var(--input-padding-y) var(--input-padding-x);
 }
 
-.date-input.input-dark .date-input-label {
+.travel-date-input.input-dark .travel-date-input-label {
   color: rgba(255, 255, 255, .75);
 }
 
-.date-input.input-dark .icon {
+.travel-date-input.input-dark .travel-icon {
   color: rgba(255, 255, 255, .75);
 }
 
-.date-input input {
+.travel-date-input input {
   opacity: 0;
   display: block;
   padding: 0;
@@ -38,42 +38,42 @@
   color: currentColor;
 }
 
-.date-input-touched input,
-.date-input input:focus {
+.travel-date-input-touched input,
+.travel-date-input input:focus {
   opacity: 1;
 }
 
-.date-input input:focus {
+.travel-date-input input:focus {
   outline: none;
 }
 
-.date-input-touched input ~ .date-input-label,
-.date-input input:focus ~ .date-input-label {
+.travel-date-input-touched input ~ .travel-date-input-label,
+.travel-date-input input:focus ~ .travel-date-input-label {
   opacity: 0;
 }
 
-.date-input input:disabled ~ .icon,
-.date-input input:disabled ~ .date-input-label {
+.travel-date-input input[disabled] ~ .travel-icon,
+.travel-date-input input[disabled] ~ .travel-date-input-label {
   opacity: 0.5;
 }
 
-.date-input-touched input:disabled {
+.travel-date-input-touched input[disabled] {
   opacity: 0.5;
 }
 
-.date-input input::-webkit-datetime-edit-fields-wrapper {
+.travel-date-input input::-webkit-datetime-edit-fields-wrapper {
   padding: 0;
 }
 
-.date-input input::-webkit-clear-button {
+.travel-date-input input::-webkit-clear-button {
   display: none;
 }
 
-.date-input input::-webkit-inner-spin-button {
+.travel-date-input input::-webkit-inner-spin-button {
   display: none;
 }
 
-.date-input input::-webkit-calendar-picker-indicator {
+.travel-date-input input::-webkit-calendar-picker-indicator {
   opacity: 0;
   padding: 0;
   position: absolute;

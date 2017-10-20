@@ -19,9 +19,9 @@
       <!-- Search Form -->
       <div class="travel-hero-search">
         <div class="md-hide lg-hide">
-          <label class="input-icon shadow rounded">
+          <label class="travel-input-icon shadow rounded">
             <input
-              class="input border input-big input-clear rounded"
+              class="travel-input border travel-input-big travel-input-clear rounded"
               list="locations"
               type="text"
               name="query"
@@ -44,9 +44,9 @@
         </div>
 
         <div class="xs-hide sm-hide">
-          <label class="input-icon shadow rounded">
+          <label class="travel-input-icon shadow rounded">
             <input
-              class="input input-big rounded"
+              class="travel-input travel-input-big rounded"
               list="locations"
               type="text"
               name="query"
@@ -87,8 +87,8 @@
 
         <div class="flex my2 travel-hero-search-dates">
           <label
-            class="date-input focus"
-            [class]="'date-input focus' + (fields_departure ? ' date-input-touched' : '')"
+            class="travel-date-input focus"
+            [class]="'travel-date-input focus' + (fields_departure ? ' travel-date-input-touched' : '')"
           >
             <input
               type="date"
@@ -104,13 +104,13 @@
               "
             >
             {{> ../icon/plane-taking-off.snip.html}}
-            <div class="date-input-label">
+            <div class="travel-date-input-label">
               Departure
             </div>
           </label>
           <label
-            class="date-input focus"
-            [class]="'date-input focus' + (fields_return ? ' date-input-touched' : '')"
+            class="travel-date-input focus"
+            [class]="'travel-date-input focus' + (fields_return ? ' travel-date-input-touched' : '')"
           >
             <input
               type="date"
@@ -128,7 +128,7 @@
               [disabled]="!fields_departure"
             >
             {{> ../icon/plane-landing.snip.html}}
-            <div class="date-input-label">
+            <div class="travel-date-input-label">
               Return
             </div>
           </label>
@@ -137,17 +137,16 @@
       <div class="md-hide lg-hide">
         <a
           href="travel-results.amp"
+          class="ampstart-btn btn rounded center travel-semibold white block col-12 bg-purple travel-input-big"
           {{> ../util/apply-button-props.snip.html}}
         >
-          <button class="ampstart-btn btn rounded center semibold white block layout-fill bg-purple input-big">
-            Find Adventures &amp; Tours
-          </button>
+          Find Adventures &amp; Tours
         </a>
       </div>
       <div class="xs-hide sm-hide">
         <a
           href="travel-results.amp"
-          class="ampstart-btn btn rounded center semibold white inline-block bg-purple input-big"
+          class="ampstart-btn rounded center travel-semibold white inline-block bg-purple travel-input-big"
           {{> ../util/apply-button-props.snip.html}}
         >
           Find Adventures &amp; Tours
