@@ -1,6 +1,55 @@
 {
+  "land-see-post-detail": [
+    {
+      "image": [
+        {
+          "classes": "cover",
+          "alt-text": "Designer Kim Myeong.",
+          "width": 409, "height": 370, "layout": "responsive",
+          "src": "../../img/land-see/content/shoe-designer.jpg"
+        }
+      ],
+      "post-classes": "land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+      "post-url": "kim-myeong.amp.html",
+      "post-category": "Fashion",
+      "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
+      "post-title": "Designer Kim Myeong",
+      "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique mix of color, texture, and material to make her shoes the must-haves of this year."
+    }
+  ],
+  "land-see-instagram": {
+    "classes": "land-see-stories land-see-instagram",
+    "title": "Follow Kim Myeong",
+    "land-see-instagram-embed": [
+      {
+        "classes": "land-see-instagram-post flex-auto mx1",
+        "data-shortcode": "BZyeebeAlF-",
+        "height": "260px",
+        "layout": "fixed-height"
+      },
+      {
+        "classes": "land-see-instagram-post flex-auto mx1",
+        "data-shortcode": "BV-QKd-gxv7",
+        "height": "260px",
+        "layout": "fixed-height"
+      },
+      {
+        "classes": "land-see-instagram-post flex-auto mx1 xs-hide",
+        "data-shortcode": "0eAWjtQr70",
+        "height": "260px",
+        "layout": "fixed-height"
+      },
+      {
+        "classes": "land-see-instagram-post flex-auto mx1 xs-hide sm-hide",
+        "data-shortcode": "z5zt5BQr9B",
+        "height": "260px",
+        "layout": "fixed-height"
+      }
+    ]
+  },
   "land-see-story-carousel": {
     "title": "Recommended",
+    "height": 460,
     "list-src": "./api/recommended.json",
     "observer": {
       "action": "enter:recommendedSlideIn.start"

@@ -55,15 +55,54 @@ limitations under the License.
     </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
+    <!-- {{#land-see-post-detail}}
+    <section class="land-see-story-detail relative mx-auto mb2">
+      <div class="land-see-hero-typography mx-auto center z2 {{post-classes}}">
+        <a class="land-see-post-category underline caps max-width-1" href="{{post-category-url}}">{{post-category}}</a>
+        <h1 class="land-see-hero-title"><a class="text-decoration-none" href="{{post-url}}">{{{post-title}}}</a></h1>
+        <p class="land-see-hero-caption mx-auto max-width-2 pt1 mb3">
+          {{{post-copy}}}
+        </p>
+      </div>
+    </section>
+    {{/land-see-post-detail}} -->
+
     <div class="mx-auto m3 max-width-4">
       <h1 class="pt3">Hello AMP!</h1>
       <p class="py3">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-      <p class="py3">
-        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-      </p>
     </div>
+
+    {{#land-see-instagram}}
+    <section class="land-see-story-instagram-container my4 mx-auto center">
+      <section class="{{classes}}">
+        <h3 class="max-width-4 mx-auto"><span class="relative">{{title}}</span></h3>
+        <div class="land-see-story-instagrams mb2">
+          <ul class="list-reset flex justify-center overflow-hidden mt0 p0 relative">
+            {{#land-see-instagram-embed}}
+            <li class="{{classes}}">
+              <amp-instagram
+                data-shortcode="{{data-shortcode}}"
+                width="{{width}}"
+                height="{{height}}"
+                layout="{{layout}}">
+              </amp-instagram>
+            </li>
+            {{/land-see-instagram-embed}}
+          </ul>
+        </div>
+      </section>
+    </section>
+    {{/land-see-instagram}}
+
+    <section class="land-see-story-nav mx-auto center px1 relative z2">
+      <div class="land-see-paging mb4 fit">
+        <!-- <%#page-nav%>
+        <button on="<%action%>" class="<%classes%>"><%button-text%></button>
+        <%/page-nav%> -->
+      </div>
+    </section>
 
     {{> ./partials/story-carousel.snip.html}}
 

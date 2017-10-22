@@ -549,7 +549,8 @@ h4,
 
 .land-see-popular-content,
 .land-see-recent-content,
-.land-see-paging {
+.land-see-paging,
+.land-see-story-nav {
   max-width: 850px;
 }
 
@@ -871,4 +872,43 @@ h4,
   .land-see-categories-inner-nav div:last-child {
     margin-right: 0;
   }
+}
+
+/********** Story Detail Template **********/
+
+.land-see-instagram-post {
+  margin-top: -64px;
+  max-width: 196px;
+}
+
+.land-see-instagram > h3 span {
+  margin-left: 40px;
+}
+
+.land-see-instagram > h3 span::before {
+  content: '';
+  position: absolute;
+  background: url('../../img/icons/instagram.svg') -5px -3px/35px 35px no-repeat;
+  height: 29px;
+  width: 29px;
+  top: 0;
+  left: -40px;
+  z-index: var(--z3);
+}
+
+.land-see-story-instagram-container .land-see-stories > h3::after {
+  content: '';
+  background: none;
+  height: 0;
+  width: 0;
+}
+
+@media (--breakpoint-within-xxxs) {
+  .land-see-story-instagram-container {
+    margin-bottom: 0;
+  }
+}
+
+.land-see-story-nav {
+
 }
