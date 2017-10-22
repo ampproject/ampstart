@@ -34,7 +34,7 @@
               "alt-text": "Omg, shoes.",
               "alt-text-preview": "Go to slide 1",
               "width": 813, "height": 480, "layout": "responsive",
-              "src": "../../img/land-see/content/slider/slider-0.jpg"
+              "src": "../../img/land-see/content/gallery/kim-0.jpg"
             },
             {
               "classes": "cover",
@@ -44,7 +44,7 @@
               "alt-text": "Those shoes are miiiiine...",
               "alt-text-preview": "Go to slide 2",
               "width": 813, "height": 480, "layout": "responsive",
-              "src": "../../img/land-see/content/slider/slider-1.jpg"
+              "src": "../../img/land-see/content/gallery/kim-1.jpg"
             },
             {
               "classes": "cover",
@@ -54,7 +54,7 @@
               "alt-text": "These shoes are rad...",
               "alt-text-preview": "Go to slide 3",
               "width": 813, "height": 480, "layout": "responsive",
-              "src": "../../img/land-see/content/slider/slider-2.jpg"
+              "src": "../../img/land-see/content/gallery/kim-2.jpg"
             },
             {
               "classes": "cover",
@@ -64,7 +64,7 @@
               "alt-text": "Shoe designer self-portrait.",
               "alt-text-preview": "Go to slide 4",
               "width": 813, "height": 480, "layout": "responsive",
-              "src": "../../img/land-see/content/slider/slider-5.jpg"
+              "src": "../../img/land-see/content/gallery/kim-5.jpg"
             },
             {
               "classes": "cover",
@@ -74,7 +74,7 @@
               "alt-text": "Those shoes are rad...",
               "alt-text-preview": "Go to slide 5",
               "width": 813, "height": 480, "layout": "responsive",
-              "src": "../../img/land-see/content/slider/slider-3.jpg"
+              "src": "../../img/land-see/content/gallery/kim-3.jpg"
             },
             {
               "classes": "cover",
@@ -84,7 +84,7 @@
               "alt-text": "Matching accessories.",
               "alt-text-preview": "Go to slide 6",
               "width": 813, "height": 480, "layout": "responsive",
-              "src": "../../img/land-see/content/slider/slider-6.jpg"
+              "src": "../../img/land-see/content/gallery/kim-6.jpg"
             },
             {
               "classes": "cover",
@@ -94,7 +94,7 @@
               "alt-text": "Sigh, having such amazing shoes is almost a burden.",
               "alt-text-preview": "Go to slide 7",
               "width": 813, "height": 480, "layout": "responsive",
-              "src": "../../img/land-see/content/slider/slider-4.jpg"
+              "src": "../../img/land-see/content/gallery/kim-4.jpg"
             }
           ]
         }
