@@ -1,6 +1,6 @@
 {
-  "land-see-post-detail": [
-    {
+  "land-see-story-content": {
+    "land-see-post-detail": {
       "image": [
         {
           "classes": "cover",
@@ -9,14 +9,99 @@
           "src": "../../img/land-see/content/shoe-designer.jpg"
         }
       ],
-      "post-classes": "land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-story",
+      "post-classes": "land-see-post-item land-see-post-item-wide land-see-story",
       "post-url": "kim-myeong.amp.html",
       "post-category": "Fashion",
       "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
-      "post-title": "Designer Kim Myeong",
+      "post-title": "Designer Kim&nbsp;Myeong",
       "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique mix of color, texture, and material to make her shoes the must-haves of this year."
-    }
-  ],
+    },
+    "land-see-image-gallery": {
+      "carousel": [
+        {
+          "id": "land-see-kim-carousel",
+          "width": 813,
+          "height": 480,
+          "layout": "responsive",
+          "story-preview": true,
+          "image-slide": [
+            {
+              "classes": "cover land-see-cover-position-bottom",
+              "initial-classes": "land-see-selected-preview-image",
+              "button-classes-preview": "px0",
+              "dynamic-classes": "selectedSlide == 0 ? 'cover land-see-cover-position-bottom land-see-selected-preview-image' : 'cover land-see-cover-position-bottom'",
+              "on-action": "tap:AMP.setState({selectedSlide: 0})",
+              "alt-text": "Omg, shoes.",
+              "alt-text-preview": "Go to slide 1",
+              "width": 813, "height": 480, "layout": "responsive",
+              "src": "../../img/land-see/content/slider/slider-0.jpg"
+            },
+            {
+              "classes": "cover",
+              "button-classes-preview": "px0",
+              "dynamic-classes": "selectedSlide == 1 ? 'cover land-see-selected-preview-image' : 'cover'",
+              "on-action": "tap:AMP.setState({selectedSlide: 1})",
+              "alt-text": "Those shoes are miiiiine...",
+              "alt-text-preview": "Go to slide 2",
+              "width": 813, "height": 480, "layout": "responsive",
+              "src": "../../img/land-see/content/slider/slider-1.jpg"
+            },
+            {
+              "classes": "cover",
+              "button-classes-preview": "px0",
+              "dynamic-classes": "selectedSlide == 2 ? 'cover land-see-selected-preview-image' : 'cover'",
+              "on-action": "tap:AMP.setState({selectedSlide: 2})",
+              "alt-text": "These shoes are rad...",
+              "alt-text-preview": "Go to slide 3",
+              "width": 813, "height": 480, "layout": "responsive",
+              "src": "../../img/land-see/content/slider/slider-2.jpg"
+            },
+            {
+              "classes": "cover",
+              "button-classes-preview": "px0",
+              "dynamic-classes": "selectedSlide == 3 ? 'cover land-see-selected-preview-image' : 'cover'",
+              "on-action": "tap:AMP.setState({selectedSlide: 3})",
+              "alt-text": "Shoe designer self-portrait.",
+              "alt-text-preview": "Go to slide 4",
+              "width": 813, "height": 480, "layout": "responsive",
+              "src": "../../img/land-see/content/slider/slider-5.jpg"
+            },
+            {
+              "classes": "cover",
+              "button-classes-preview": "px0",
+              "dynamic-classes": "selectedSlide == 4 ? 'cover land-see-selected-preview-image' : 'cover'",
+              "on-action": "tap:AMP.setState({selectedSlide: 4})",
+              "alt-text": "Those shoes are rad...",
+              "alt-text-preview": "Go to slide 5",
+              "width": 813, "height": 480, "layout": "responsive",
+              "src": "../../img/land-see/content/slider/slider-3.jpg"
+            },
+            {
+              "classes": "cover",
+              "button-classes-preview": "px0",
+              "dynamic-classes": "selectedSlide == 5 ? 'cover land-see-selected-preview-image' : 'cover'",
+              "on-action": "tap:AMP.setState({selectedSlide: 5})",
+              "alt-text": "Matching accessories.",
+              "alt-text-preview": "Go to slide 6",
+              "width": 813, "height": 480, "layout": "responsive",
+              "src": "../../img/land-see/content/slider/slider-6.jpg"
+            },
+            {
+              "classes": "cover",
+              "button-classes-preview": "px0",
+              "dynamic-classes": "selectedSlide == 6 ? 'cover land-see-selected-preview-image' : 'cover'",
+              "on-action": "tap:AMP.setState({selectedSlide: 6})",
+              "alt-text": "Sigh, having such amazing shoes is almost a burden.",
+              "alt-text-preview": "Go to slide 7",
+              "width": 813, "height": 480, "layout": "responsive",
+              "src": "../../img/land-see/content/slider/slider-4.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    "land-see-after-gallery-copy": "Mauris sodales sem sed tempus fermentum. Mauris placerat libero lorem, ac fermentum libero condimentum tincidunt. Praesent ut nulla quis nibh euismod ultricies. Pellentesque id sagittis nibh. Proin rutrum fermentum malesuada. Pellentesque nec consequat est. Integer felis lectus, luctus sed urna nec, rhoncus convallis velit."
+  },
   "land-see-instagram": {
     "classes": "land-see-stories land-see-instagram",
     "title": "Follow Kim Myeong",

@@ -55,24 +55,88 @@ limitations under the License.
     </amp-animation>
     {{> ../../components/navbar/navbar.snip.html}}
 
-    <!-- {{#land-see-post-detail}}
-    <section class="land-see-story-detail relative mx-auto mb2">
-      <div class="land-see-hero-typography mx-auto center z2 {{post-classes}}">
-        <a class="land-see-post-category underline caps max-width-1" href="{{post-category-url}}">{{post-category}}</a>
-        <h1 class="land-see-hero-title"><a class="text-decoration-none" href="{{post-url}}">{{{post-title}}}</a></h1>
-        <p class="land-see-hero-caption mx-auto max-width-2 pt1 mb3">
+    {{#land-see-story-content}}
+    <section class="land-see-story-detail relative mx-auto mb4 pt2">
+      {{#land-see-post-detail}}
+      <div class="mx-auto center {{post-classes}}">
+        <!-- {{#image}}
+        <amp-img
+          class="{{classes}}"
+          alt="{{alt-text}}"
+          width="{{width}}"
+          height="{{height}}"
+          layout="{{layout}}"
+          src="{{src}}">
+        </amp-img>
+        {{/image}} -->
+        <a class="land-see-post-category underline caps max-width-1 pb1" href="{{post-category-url}}">{{post-category}}</a>
+        <h1 class="land-see-hero-title pt2 mx2"><a class="text-decoration-none" href="{{post-url}}">{{{post-title}}}</a></h1>
+        <p class="land-see-hero-caption mx-auto max-width-2 pt1 px2 mb3">
           {{{post-copy}}}
         </p>
       </div>
-    </section>
-    {{/land-see-post-detail}} -->
+      {{/land-see-post-detail}}
 
-    <div class="mx-auto m3 max-width-4">
-      <h1 class="pt3">Hello AMP!</h1>
-      <p class="py3">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      {{#land-see-image-gallery}}
+      <div class="land-see-image-gallery mx-auto">
+        <div class="clearfix mx1">
+          {{#carousel}}
+          <amp-carousel
+            id="{{id}}"
+            class="{{classes}} mx-auto"
+            {{#media-query}}
+            media="{{media-query}}"
+            {{/media-query}}
+            width="{{width}}"
+            height="{{height}}"
+            layout="{{layout}}"
+            [slide]="selectedSlide"
+            on="slideChange:AMP.setState({selectedSlide: event.index})"
+            controls
+            loop
+            type="slides">
+              {{#image-slide}}
+              <amp-img
+                class="{{classes}}"
+                alt="{{alt-text}}"
+                width="{{width}}"
+                height="{{height}}"
+                layout="{{layout}}"
+                src="{{src}}">
+              </amp-img>
+              {{/image-slide}}
+          </amp-carousel>
+          {{#story-preview}}
+          <div class="land-see-gallery-progress mt1 center col-12 overflow-hidden">
+            <div class="land-see-gallery-progress-scroll col-12 nowrap">
+              {{#image-slide}}
+              <button on="{{on-action}}" class="{{button-classes-preview}}">
+                <amp-img
+                  class="{{classes}} {{initial-classes}}"
+                  [class]="{{dynamic-classes}}"
+                  alt="{{alt-text-preview}}"
+                  width="77"
+                  height="58"
+                  layout="fixed"
+                  src="{{src}}">
+                </amp-img>
+              </button>
+              {{/image-slide}}
+            </div>
+          </div>
+          {{/story-preview}}
+          {{/carousel}}
+        </div>
+      </div>
+      {{/land-see-image-gallery}}
+
+      {{#land-see-after-gallery-copy}}
+      <p class="land-see-story-copy max-width-3 mx-auto pt1 pb3 px4">
+        {{{.}}}
       </p>
-    </div>
+      {{/land-see-after-gallery-copy}}
+    </section>
+    {{/land-see-story-content}}
 
     {{#land-see-instagram}}
     <section class="land-see-story-instagram-container my4 mx-auto center">

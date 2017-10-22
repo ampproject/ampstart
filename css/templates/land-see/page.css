@@ -676,6 +676,7 @@ h4,
   height: 435px;
 }
 
+.land-see-gallery-progress button,
 .land-see-hero-progress button {
   border: none;
   background: transparent;
@@ -713,7 +714,7 @@ h4,
     color: var(--color-font-primary);
   }
 
-  .land-see .amp-carousel-button {
+  .land-see .land-see-hero-container .amp-carousel-button {
     top: 24%;
   }
 
@@ -876,6 +877,50 @@ h4,
 }
 
 /********** Story Detail Template **********/
+
+.land-see-story-detail .land-see-post-item-wide {
+  text-align: center;
+}
+
+.land-see-story-detail .land-see-hero-title {
+  font: 600 var(--h0)/var(--line-height-1) var(--font-primary);
+}
+
+.land-see-story-detail .land-see-hero-title,
+.land-see-story-detail .land-see-hero-caption {
+  color: var(--color-font-primary);
+}
+
+.land-see-story-detail .land-see-hero-caption {
+  width: auto;
+}
+
+.land-see-image-gallery {
+  max-width: 813px;
+  margin-top: var(--navbar-height);
+  margin-bottom: var(--navbar-height);
+}
+
+.land-see-gallery-progress {
+  height: 58px;
+}
+
+.land-see-gallery-progress-scroll {
+  overflow-x: scroll;
+  padding-bottom: 58px;
+}
+
+.land-see-gallery-progress button {
+  padding-right: 3px;
+}
+
+.land-see-gallery-progress button:last-child {
+  padding-right: 0;
+}
+
+.land-see-selected-preview-image {
+  opacity: .77;
+}
 
 .land-see-instagram-post {
   margin-top: -64px;
