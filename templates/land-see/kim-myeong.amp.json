@@ -47,6 +47,23 @@
       }
     ]
   },
+  "land-see-story-nav": {
+    "previous-url": "#",
+    "next-url": "#",
+    "social-follow": {
+      "heading": {
+        "classes": "land-see-story-social-share-heading",
+        "text": "share:"
+      },
+      "links": [
+        {"facebook": "#"},
+        {"twitter": "#"},
+        {"pinterest": "#"},
+        {"gplus": "#"},
+        {"email": "#"}
+      ]
+    }
+  },
   "land-see-story-carousel": {
     "title": "Recommended",
     "height": 460,
