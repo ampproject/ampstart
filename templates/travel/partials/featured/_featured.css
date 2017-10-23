@@ -1,8 +1,4 @@
 .travel-featured-bg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
   height: calc(112 / 16rem);
 }
 
@@ -11,13 +7,11 @@
 }
 
 .travel-featured-tile {
-  position: relative;
   margin: calc(2 / 16rem);
 }
 
 .travel-featured-tile:hover,
 .travel-featured-tile:focus {
-  outline: none;
   z-index: 1;
 }
 
@@ -58,9 +52,7 @@
   left: 0;
   width: 100%;
   padding-bottom: 75%;
-
   opacity: 0.9;
-
   background-image: linear-gradient(to bottom, currentColor 0%, transparent 100%);
 }
 
@@ -95,26 +87,26 @@
   }
 }
 
-.travel-featured-color-blue {
-  color: #1B65D6;
+.travel-featured-color-blue, .travel-featured-color-blue:visited {
+  color: #1b65d6;
 }
 
-.travel-featured-color-cyan {
-  color: #91B2C0;
+.travel-featured-color-cyan, .travel-featured-color-cyan:visited {
+  color: #91b2c0;
 }
 
-.travel-featured-color-orange {
+.travel-featured-color-orange, .travel-featured-color-orange:visited {
   color: #e2a367;
 }
 
-.travel-featured-color-purple {
-  color: #281A5F;
+.travel-featured-color-purple, .travel-featured-color-purple:visited {
+  color: #281a5f;
 }
 
-.travel-featured-color-cornflower {
-  color: #477BAD;
+.travel-featured-color-cornflower, .travel-featured-color-cornflower:visited {
+  color: #477bad;
 }
 
-.travel-featured-color-teal {
-  color: #13A3C4;
+.travel-featured-color-teal, .travel-featured-color-teal:visited {
+  color: #13a3c4;
 }

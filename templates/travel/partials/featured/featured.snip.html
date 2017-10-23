@@ -1,29 +1,29 @@
 <!-- Featured -->
 {{#partials.featured}}
 <section class="travel-featured pt3 relative clearfix">
-  <div class="travel-featured-bg bg-purple xs-hide sm-hide"></div>
-  <div class="container px1 md-px2 relative">
-    <h3 class="h1 semibold mb2 md-hide lg-hide">Featured<br>Destinations</h3>
-    <h3 class="h1 semibold mb2 xs-hide sm-hide center">Featured Destinations</h3>
+  <div class="travel-featured-bg bg-purple xs-hide sm-hide absolute bottom-0 left-0 right-0"></div>
+  <div class="travel-container px1 md-px2 relative">
+    <h3 class="h1 travel-semibold line-height-2 mb2 md-hide lg-hide">Featured<br>Destinations</h3>
+    <h3 class="h1 travel-semibold line-height-2 mb2 xs-hide sm-hide center">Featured Destinations</h3>
   </div>
-  <div class="container relative">
+  <div class="travel-container relative">
     <div class="flex flex-wrap items-stretch travel-featured-grid">
       <div class="col-12 md-col-6 flex items-stretch flex-auto">
         {{#image-col-1}}
         <a
           href="travel-results.amp"
-          class="flex flex-auto pointer travel-featured-tile {{overlay-color}}"
+          class="flex flex-auto travel-featured-tile relative {{overlay-color}}"
           on="tap:AMP.setState({fields_query: 'New York', query_query: 'New York'})"
         >
           <amp-img
-            class="flex-auto bg-silver object-cover"
+            class="flex-auto bg-silver travel-object-cover"
             layout="responsive"
             width="{{width}}"
             height="{{height}}"
             src="../../../img/travel/city/{{src}}.jpg"
           ></amp-img>
           <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
-            <div class="caps spacing-medium semibold line-height-2 h3">{{name}}</div>
+            <div class="caps travel-spacing-medium travel-semibold line-height-2 h3">{{name}}</div>
             <div class="h5">{{adventure-number}}</div>
           </div>
         </a>
@@ -32,18 +32,18 @@
           {{#image-col-2-top}}
           <a
             href="travel-results.amp"
-            class="flex flex-auto pointer travel-featured-tile {{overlay-color}}"
+            class="flex flex-auto travel-featured-tile relative {{overlay-color}}"
             on="tap:AMP.setState({fields_query: 'Barcelona', query_query: 'Barcelona'})"
           >
             <amp-img
-              class="flex-auto bg-silver object-cover"
+              class="flex-auto bg-silver travel-object-cover"
               layout="responsive"
               width="{{width}}"
               height="{{height}}"
               src="../../../img/travel/city/{{src}}.jpg"
             ></amp-img>
             <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
-              <div class="caps spacing-medium semibold line-height-2 h3">{{name}}</div>
+              <div class="caps travel-spacing-medium travel-semibold line-height-2 h3">{{name}}</div>
               <div class="h5">{{adventure-number}}</div>
             </div>
           </a>
@@ -51,18 +51,18 @@
           {{#image-col-2-bottom}}
           <a
             href="travel-results.amp"
-            class="flex flex-auto pointer travel-featured-tile {{overlay-color}}"
+            class="flex flex-auto pointer travel-featured-tile relative {{overlay-color}}"
             on="tap:AMP.setState({fields_query: 'Paris', query_query: 'Paris'})"
           >
             <amp-img
-              class="flex-auto bg-silver object-cover"
+              class="flex-auto bg-silver travel-object-cover"
               layout="responsive"
               width="{{width}}"
               height="{{height}}"
               src="../../../img/travel/city/{{src}}.jpg"
             ></amp-img>
             <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
-              <div class="caps spacing-medium semibold line-height-2 h3">{{name}}</div>
+              <div class="caps travel-spacing-medium travel-semibold line-height-2 h3">{{name}}</div>
               <div class="h5">{{adventure-number}}</div>
             </div>
           </a>
@@ -74,18 +74,18 @@
           {{#image-col-3-top}}
           <a
             href="travel-results.amp"
-            class="flex flex-auto pointer travel-featured-tile {{overlay-color}}"
+            class="flex flex-auto pointer travel-featured-tile relative {{overlay-color}}"
             on="tap:AMP.setState({fields_query: 'Tokyo', query_query: 'Tokyo'})"
           >
             <amp-img
-              class="flex-auto bg-silver object-cover"
+              class="flex-auto bg-silver travel-object-cover"
               layout="responsive"
               width="{{width}}"
               height="{{height}}"
               src="../../../img/travel/city/{{src}}.jpg"
             ></amp-img>
             <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
-              <div class="caps spacing-medium semibold line-height-2 h3">{{name}}</div>
+              <div class="caps travel-spacing-medium travel-semibold line-height-2 h3">{{name}}</div>
               <div class="h5">{{adventure-number}}</div>
             </div>
           </a>
@@ -93,18 +93,18 @@
           {{#image-col-3-bottom}}
           <a
             href="travel-results.amp"
-            class="flex flex-auto pointer travel-featured-tile {{overlay-color}}"
+            class="flex flex-auto travel-featured-tile relative {{overlay-color}}"
             on="tap:AMP.setState({fields_query: 'Chicago', query_query: 'Chicago'})"
           >
             <amp-img
-              class="flex-auto bg-silver object-cover"
+              class="flex-auto bg-silver travel-object-cover"
               layout="responsive"
               width="{{width}}"
               height="{{height}}"
               src="../../../img/travel/city/{{src}}.jpg"
             ></amp-img>
             <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
-              <div class="caps spacing-medium semibold line-height-2 h3">{{name}}</div>
+              <div class="caps travel-spacing-medium travel-semibold line-height-2 h3">{{name}}</div>
               <div class="h5">{{adventure-number}}</div>
             </div>
           </a>
@@ -113,18 +113,18 @@
         {{#image-col-4}}
         <a
           href="travel-results.amp"
-          class="flex flex-auto pointer travel-featured-tile {{overlay-color}}"
+          class="flex flex-auto travel-featured-tile relative {{overlay-color}}"
           on="tap:AMP.setState({fields_query: 'Reykjavik', query_query: 'Reykjavik'})"
         >
           <amp-img
-            class="flex-auto bg-silver object-cover"
+            class="flex-auto bg-silver travel-object-cover"
             layout="responsive"
             width="{{width}}"
             height="{{height}}"
             src="../../../img/travel/city/{{src}}.jpg"
           ></amp-img>
           <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
-            <div class="caps spacing-medium semibold h3">{{name}}</div>
+            <div class="caps travel-spacing-medium travel-semibold h3">{{name}}</div>
             <div class="h5">{{adventure-number}}</div>
           </div>
         </a>

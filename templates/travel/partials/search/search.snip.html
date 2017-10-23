@@ -1,13 +1,13 @@
 <!-- Search -->
 <section class="py4 bg-purple xs-hide sm-hide relative">
   <div class="container px1 md-px2 pb1 relative">
-    <h3 class="h1 semibold mb2 white center">Have a specific destination in mind?</h3>
+    <h3 class="h1 travel-semibold mb2 white center">Have a specific destination in mind?</h3>
 
     <div class="flex justify-center pb2">
       <div class="col-8">
-        <div class="input-group">
+        <div class="travel-input-group flex col-12 items-center">
           <input
-            class="input input-big rounded"
+            class="travel-input travel-input-big travel-border-gray line-height-2 block col-12 flex-auto rounded-left"
             type="text"
             name="query"
             placeholder="Where would you like to go?"
@@ -15,10 +15,10 @@
             value=""
             [value]="fields_query"
           >
-          <span class="input-group-sep input-border-gray"></span>
+          <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
           <a
             href="travel-results.amp"
-            class="btn input-big bg-white purple rounded"
+            class="travel-link travel-input-big travel-border-gray bg-white line-height-2 link rounded-right nowrap text-decoration-none"
             {{> ../util/apply-button-props.snip.html}}
           >
             Find my next adventure
