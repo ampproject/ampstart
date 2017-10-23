@@ -1,7 +1,8 @@
 <!-- Footer -->
 <footer class="travel-footer overflow-hidden bg-white">
-  <div class="container px1 md-hide lg-hide">
+  <div class="travel-container px1 md-hide lg-hide">
     <div class="flex md-mx2 my3">
+      <!-- Pulling in a random image as a placeholder for the blog container -->
       <amp-img
         class="rounded relative bg-silver flex-none mx1"
         width="100"
@@ -9,33 +10,33 @@
         src="https://unsplash.it/100/?random"
       ></amp-img>
       <div class="flex-auto">
-        <div class="h3 semibold mb1">From the blog</div>
+        <div class="h3 travel-semibold line-height-2 mb1">From the blog</div>
         <p class="gray my1">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit amet dolor set. <a class="link" href="#">Read more</a>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit amet dolor set. <a class="travel-link" href="#">Read more</a>
         </p>
       </div>
     </div>
   </div>
 
-  <div class="container px1 md-px2 md-hide lg-hide">
+  <div class="travel-container px1 md-px2 md-hide lg-hide">
     <h4 class="h2 mb3 blue">Want travel deals<br>straight to your inbox?</h4>
-    <div class="h4 semibold mb1">Sign up to our newsletter</div>
+    <div class="h4 travel-semibold mb1">Sign up to our newsletter</div>
   </div>
 
   <div class="relative md-hide lg-hide">
     <div class="travel-footer-input-bg bg-black"></div>
-    <div class="container px1 md-px2 relative">
-      <div class="input-group rounded shadow">
+    <div class="travel-container px1 md-px2 relative">
+      <div class="travel-input-group flex items-center col-12 rounded shadow">
         <input
-          class="input input-big rounded"
+          class="travel-input travel-input-big block col-12 flex-auto rounded-left"
           type="text"
           name="email"
           placeholder="Enter your email address..."
         >
-        <span class="input-group-sep input-border-gray"></span>
+        <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
         <button
           type="button"
-          class="btn input-big bg-white purple rounded"
+          class="travel-input travel-link travel-input-big bg-white nowrap purple rounded-right"
         >
           Sign up now
         </button>
@@ -47,31 +48,31 @@
     <div class="travel-footer-bg bg-white xs-hide sm-hide"></div>
     <div class="travel-footer-angle xs-hide sm-hide"></div>
 
-    <div class="container px1 md-px2 relative">
+    <div class="travel-container px1 md-px2 relative">
       <div class="clearfix mxn3">
         <!-- Left column -->
         <div class="col col-12 md-col-6 px3 clearfix">
           <div class="col col-2">
-            <a href="travel.amp" class="inline-block h2 line-height-1 circle focus white pointer">
+            <a href="travel.amp" class="inline-block h2 line-height-1 circle white">
               {{> ../icon/logo.snip.html}}
             </a>
           </div>
           <div class="col col-5">
-            <h4 class="mb2 h3 gray semibold">Company</h4>
+            <h4 class="mb2 h3 gray travel-semibold">Company</h4>
             <div class="line-height-4 mb4">
-              <div><a href="#" class="link gray">About</a></div>
-              <div><a href="#" class="link gray">Careers</a></div>
-              <div><a href="#" class="link gray">Contact</a></div>
+              <div><a href="#" class="travel-link gray">About</a></div>
+              <div><a href="#" class="travel-link gray">Careers</a></div>
+              <div><a href="#" class="travel-link gray">Contact</a></div>
             </div>
           </div>
           <div class="col col-5">
-            <h4 class="mb2 h3 gray semibold">Discover</h4>
+            <h4 class="mb2 h3 gray travel-semibold">Discover</h4>
             <div class="line-height-4 mb4">
-              <div><a href="#" class="link gray">Activities</a></div>
-              <div><a href="#" class="link gray">Tours</a></div>
-              <div><a href="#" class="link gray">Experiences</a></div>
-              <div><a href="#" class="link gray">Featured Adventures</a></div>
-              <div><a href="#" class="link gray">Search</a></div>
+              <div><a href="#" class="travel-link gray">Activities</a></div>
+              <div><a href="#" class="travel-link gray">Tours</a></div>
+              <div><a href="#" class="travel-link gray">Experiences</a></div>
+              <div><a href="#" class="travel-link gray">Featured Adventures</a></div>
+              <div><a href="#" class="travel-link gray">Search</a></div>
             </div>
           </div>
         </div>
@@ -79,20 +80,20 @@
 
         <!-- Right column -->
         <div class="col col-5 px4 sm-hide xs-hide">
-          <h4 class="h1 mb3">Want travel deals<br>straight to your inbox?</h4>
-          <div class="h4 semibold mb1">Sign up to our newsletter</div>
+          <h4 class="h1 line-height-2  mb3">Want travel deals<br>straight to your inbox?</h4>
+          <div class="h4 travel-semibold mb1">Sign up to our newsletter</div>
 
-          <div class="input-group">
+          <div class="travel-input-group flex col-12 items-center">
             <input
-              class="input input-big border input-border-gray rounded"
+              class="travel-input travel-input-big travel-border-gray border block col-12 flex-auto rounded-left"
               type="text"
               name="email"
               placeholder="Enter your email address..."
             >
-            <span class="input-group-sep input-border-gray"></span>
+            <span class="travel-input-group-sep travel-border-gray relative z1 block"></span>
             <button
               type="button"
-              class="btn input-big bg-white border input-border-gray purple rounded"
+              class="travel-input-big bg-white travel-border-gray nowrap border purple rounded-right"
             >
               Sign up now
             </button>

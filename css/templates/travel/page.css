@@ -15,26 +15,11 @@
   */
 
 
-/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
-@import 'normalize.css';
-
-/* Basscss Modules */
-@import 'basscss-type-scale';
-@import 'basscss-typography';
-@import 'basscss-layout';
-@import 'basscss-align';
-@import 'basscss-margin';
-@import 'basscss-padding';
-@import 'basscss-grid';
-@import 'basscss-flexbox';
-@import 'basscss-position';
-@import 'basscss-border';
-@import 'basscss-hide';
-
-@import '../../ampstart-base/base-page-vars';
-@import '../../ampstart-base/elements/buttons';
+@import '../../core.css';
 
 @import 'basscss-addons/modules/colors';
 @import 'basscss-addons/modules/background-colors';
+@import 'basscss-addons/modules/responsive-padding';
 
-@import './page-vars';
+@import 'page-vars';
+@import '_pages';

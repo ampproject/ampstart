@@ -1,0 +1,8 @@
+/*
+ * border
+ *
+ */
+
+ .travel-border-gray {
+   border-color: var(--silver);
+ }

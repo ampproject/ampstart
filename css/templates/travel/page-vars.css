@@ -15,14 +15,14 @@
  */
 
 :root {
-  --blue:  #3682EC;
-  --green: #47B074;
-  --lime:  #67E497;
-  --orange:  #EC8936;
-  --fuchsia: #FB52A2;
-  --purple:  #8B58E3;
-  --white:  #FFFFFF;
-  --black:  #323A43;
+  --blue:  #3682ec;
+  --green: #47b074;
+  --lime:  #67e497;
+  --orange:  #ec8936;
+  --fuchsia: #fb52a2;
+  --purple:  #8b58e3;
+  --white:  #ffffff;
+  --black:  #323a43;
 
   --gray:   #8f98a3;
   --silver: #e3e5e8;
@@ -35,7 +35,7 @@
   --color-primary: var(--black);
   --font-color-secondary: var(--white);
   --color-secondary: var(--white);
-  --font-family-primary: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
+  --font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
   --line-height: 1.2;
   --fixed-navbar-height: calc(86 / 16rem);
 
@@ -107,17 +107,18 @@
 
   --caps-letter-spacing: 0;
 
-  --h1: 2rem;
-  --h2: 1.5rem;
-  --h3: 1.25rem;
-  --h4: 1rem;
-  --h5: .875rem;
-  --h6: .75rem;
+  --h0: 3.5rem; /* 56px */
+  --h1: 2rem; /* 32px */
+  --h2: 1.5rem; /* 24px */
+  --h3: 1.25rem; /* 20px */
+  --h4: 1rem; /* 16px */
+  --h5: .875rem; /* 14px */
+  --h6: .75rem; /* 12px */
 
-  --space-1: 1rem;
-  --space-2: 1.5rem;
-  --space-3: 3rem;
-  --space-4: 4rem;
+  --space-1: 1rem; /* 16px */
+  --space-2: 1.5rem; /* 24px */
+  --space-3: 3rem; /* 48px */
+  --space-4: 4rem; /* 64px */
 
   --width-sm: 40rem; /* 640px */
   --width-md: 52rem; /* 832px */
@@ -139,67 +140,15 @@
 }
 
 body {
-  color: var(--font-color-primary);
-  font-family: var(--font-family-primary);
   line-height: var(--line-height-2);
-  box-sizing: border-box;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Util classes. */
-.min-0 {
-  min-width: 0;
-}
-
-.layout-fill {
-  width: 100%;
-}
-
-.pointer {
-  cursor: pointer;
-}
-
-.focus:focus {
-  outline: none;
-}
-
-*:focus .focus-child {
-  outline: none;
 }
 
 .no-focus:focus {
   outline: none;
 }
 
-.flip {
-  transition: transform 100ms;
-  transform: rotate(0);
-}
-
-.flip-flipped {
-  transform: rotate(180deg);
-}
-
 .no-select {
   user-select: none;
-}
-
-.collapse {
-  height: 0;
-  overflow: hidden;
 }
 
 /* Prevent strange bug where amp-img elements randomly lose rounded corners. */
@@ -208,24 +157,4 @@ amp-img.rounded img {
 }
 amp-img.circle img {
   border-radius: 50%
-}
-
-@keyframes fade-and-slideup {
-  from {
-    opacity: 0;
-    transform: translateY(2rem);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }

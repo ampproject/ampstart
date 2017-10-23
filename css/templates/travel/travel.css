@@ -14,24 +14,19 @@
  * limitations under the License.
  */
 
-@import './page';
+@import 'page';
 
 /*
  * Custom elements.
  */
+@import '../../../templates/travel/elements/_border';
 @import '../../../templates/travel/elements/_btn';
-@import '../../../templates/travel/elements/_clip';
 @import '../../../templates/travel/elements/_container';
-@import '../../../templates/travel/elements/_inline-list';
 @import '../../../templates/travel/elements/_input-group';
-@import '../../../templates/travel/elements/_input-icon';
 @import '../../../templates/travel/elements/_input';
 @import '../../../templates/travel/elements/_link';
 @import '../../../templates/travel/elements/_object-cover';
-@import '../../../templates/travel/elements/_pill';
-@import '../../../templates/travel/elements/_responsive';
 @import '../../../templates/travel/elements/_shadow';
-@import '../../../templates/travel/elements/_spacing';
 @import '../../../templates/travel/elements/_typography';
 
 /*
