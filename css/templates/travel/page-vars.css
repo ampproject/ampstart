@@ -142,14 +142,6 @@ body {
   line-height: var(--line-height-2);
 }
 
-.no-focus:focus {
-  outline: none;
-}
-
-.no-select {
-  user-select: none;
-}
-
 /* Prevent strange bug where amp-img elements randomly lose rounded corners. */
 amp-img.rounded img {
   border-radius: var(--border-radius)
