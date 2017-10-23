@@ -16,6 +16,23 @@
       "post-title": "Designer Kim&nbsp;Myeong",
       "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique mix of color, texture, and material to make her shoes the must-haves of this year."
     },
+    "land-see-copy": [
+      {
+        "subheader": "What makes Kim different?"
+      },
+      {
+        "paragraph": "<b>Sed porta ultrices eros, a lobortis lectus elementum at.</b> Nullam lobortis sit amet metus vel consequat. Vivamus varius quis ipsum eget ullamcorper. Praesent ultricies massa condimentum sem fermentum pulvinar vitae dignissim lectus. Sed suscipit convallis erat, vel ultricies ipsum euismod sed. Donec vitae vestibulum justo. In tristique vitae dolor sed vulputate. Praesent sed risus vel felis ullamcorper iaculis. Donec vel lacinia enim, vel laoreet dolor. Etiam pharetra blandit felis eget bibendum."
+      },
+      {
+        "blockquote": {
+          "quote": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus efficitur lacus non fringilla.",
+          "citation": "New York Times"
+        }
+      },
+      {
+        "paragraph": "Quisque tempor imperdiet eros, non luctus nisi suscipit in. Sed ex nisi, imperdiet eu odio vitae, congue fermentum est. Phasellus id justo et sem fermentum tincidunt quis vel lacus. Integer dapibus non ligula nec mollis. In at urna nec dui malesuada pharetra. Phasellus non enim sed ipsum pulvinar semper in ac neque. Morbi bibendum lorem sed lectus luctus lacinia."
+      }
+    ],
     "land-see-image-gallery": {
       "carousel": [
         {
@@ -100,7 +117,7 @@
         }
       ]
     },
-    "land-see-after-gallery-copy": "Mauris sodales sem sed tempus fermentum. Mauris placerat libero lorem, ac fermentum libero condimentum tincidunt. Praesent ut nulla quis nibh euismod ultricies. Pellentesque id sagittis nibh. Proin rutrum fermentum malesuada. Pellentesque nec consequat est. Integer felis lectus, luctus sed urna nec, rhoncus convallis velit."
+    "land-see-copy-suffix": "Mauris sodales sem sed tempus fermentum. Mauris placerat libero lorem, ac fermentum libero condimentum tincidunt. Praesent ut nulla quis nibh euismod ultricies. Pellentesque id sagittis nibh. Proin rutrum fermentum malesuada. Pellentesque nec consequat est. Integer felis lectus, luctus sed urna nec, rhoncus convallis velit."
   },
   "land-see-instagram": {
     "classes": "land-see-stories land-see-instagram",

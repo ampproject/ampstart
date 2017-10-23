@@ -887,12 +887,22 @@ h4,
 }
 
 .land-see-story-detail .land-see-hero-title,
-.land-see-story-detail .land-see-hero-caption {
+.land-see-story-detail .land-see-hero-caption,
+.land-see-story-subheader {
   color: var(--color-font-primary);
 }
 
 .land-see-story-detail .land-see-hero-caption {
   width: auto;
+}
+
+.land-see-story-subheader {
+  font: 600 var(--h5)/var(--line-height-1) var(--font-secondary);
+  margin-bottom: -0.5rem;
+}
+
+.land-see-story-copy b {
+  line-height: normal;
 }
 
 .land-see-image-gallery {

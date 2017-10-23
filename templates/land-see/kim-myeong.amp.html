@@ -77,6 +77,25 @@ limitations under the License.
       </div>
       {{/land-see-post-detail}}
 
+      {{#land-see-copy}}
+        {{#subheader}}
+        <h2 class="land-see-story-subheader max-width-3 mx-auto pb0 pt4 px4">{{.}}</h2>
+        {{/subheader}}
+        {{#paragraph}}
+        <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
+          {{{.}}}
+        </p>
+        {{/paragraph}}
+        {{#blockquote}}
+        <blockquote class="land-see-blockquote max-width-3 mx-auto py4 px4 {{classes}} "{{#cite-url}}cite="{{.}}"{{/cite-url}}>
+          <p>{{quote}}</p>
+          {{#citation}}
+          <cite>{{.}}</cite>
+          {{/citation}}
+        </blockquote>
+        {{/blockquote}}
+      {{/land-see-copy}}
+
       {{#land-see-image-gallery}}
       <div class="land-see-image-gallery mx-auto">
         <div class="clearfix mx1">
@@ -130,11 +149,11 @@ limitations under the License.
       </div>
       {{/land-see-image-gallery}}
 
-      {{#land-see-after-gallery-copy}}
+      {{#land-see-copy-suffix}}
       <p class="land-see-story-copy max-width-3 mx-auto pt1 pb3 px4">
         {{{.}}}
       </p>
-      {{/land-see-after-gallery-copy}}
+      {{/land-see-copy-suffix}}
     </section>
     {{/land-see-story-content}}
 
