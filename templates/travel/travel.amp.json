@@ -31,11 +31,11 @@
     "partials": {
       "hero": {
         "images": [{
-          "src": "hero-2"
+          "src": "../../img/travel/hero-2.jpg"
         }, {
-          "src": "hero-3"
+          "src": "../../img/travel/hero-3.jpg"
         }, {
-          "src": "hero-1"
+          "src": "../../img/travel/hero-1.jpg"
         }]
       }
     },
