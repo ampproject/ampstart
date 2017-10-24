@@ -122,14 +122,6 @@
   padding-right: 0;
 }
 
-.ampstart-sidebar-header::after {
-  margin-left: 1.875rem;
-  font-size: .84375rem;
-  line-height: 1.25rem;
-  letter-spacing: .05em;
-  content: "Current Exhibitions"
-}
-
 .ampstart-sidebar-nav {
   margin-top: 32px;
 }
