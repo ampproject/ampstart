@@ -17,8 +17,6 @@
 
 @import '../../core.css';
 
-@import 'basscss-addons/modules/colors';
-@import 'basscss-addons/modules/background-colors';
 @import 'basscss-addons/modules/responsive-margin';
 @import 'basscss-addons/modules/responsive-padding';
 

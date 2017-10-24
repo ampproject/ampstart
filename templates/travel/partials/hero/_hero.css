@@ -1,4 +1,20 @@
-@keyframes travel-hero-bg-img-1 {
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@keyframes travel-hero-scene1 {
   0% {
     opacity: 0;
     transform: translate3d(5vmax, 2vmax, 0) scale(1.1);
@@ -15,7 +31,7 @@
   }
 }
 
-@keyframes travel-hero-bg-img-2 {
+@keyframes travel-hero-scene2 {
   0% {
     opacity: 0;
     transform: translate3d(-2vmax, 0vmax, 0) scale(1);
@@ -32,7 +48,7 @@
   }
 }
 
-@keyframes travel-hero-bg-img-3 {
+@keyframes travel-hero-scene3 {
   0% {
     opacity: 0;
     transform: translate3d(0, 2vmax, 0) scale(1);
@@ -53,22 +69,12 @@
   height: 100vmax;
 }
 
-@media (--breakpoint-md) {
-  .travel-hero {
-    z-index: 1;
-    height: auto;
-  }
-}
-
 .travel-hero-bg {
-  position: absolute;
-  width: 100%;
   height: 70vmax;
   animation: fade 0.8s ease-out both;
 }
 
 .travel-hero-bg-img {
-  position: absolute;
   top: -5vmax;
   right: -5vmax;
   bottom: -5vmax;
@@ -84,60 +90,32 @@
 }
 
 .travel-hero-bg-img:nth-child(1) {
-  animation: 18s travel-hero-bg-img-1 linear infinite;
+  animation: 18s travel-hero-scene1 linear infinite;
   background: url('../../img/travel/hero-2-preview.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
 .travel-hero-bg-img:nth-child(2) {
-  animation: 18s travel-hero-bg-img-2 linear 6s infinite;
+  animation: 18s travel-hero-scene2 linear 6s infinite;
   background: url('../../img/travel/hero-3-preview.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
 .travel-hero-bg-img:nth-child(3) {
-  animation: 18s travel-hero-bg-img-3 linear 12s infinite;
+  animation: 18s travel-hero-scene3 linear 12s infinite;
   background: url('../../img/travel/hero-1-preview.jpg') no-repeat 50% 50%;
   background-size: cover;
 }
 
-@media (--breakpoint-md) {
-  .travel-hero-bg {
-    position: relative;
-    height: auto;
-  }
-}
-
 .travel-hero-bg-fade {
-  position: absolute;
   height: 70vmax;
-  left: 0;
-  right: 0;
   top: calc(70vmax - (300 / 16rem));
   background-image: linear-gradient(180deg, transparent 0%, var(--black) calc(300 / 16rem));
 }
 
 .travel-hero-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
   padding-top: var(--fixed-navbar-height);
-  align-self: flex-end;
   height: calc(100vmax - 70px);
-}
-
-@media (--breakpoint-md) {
-  .travel-hero-content {
-    padding-top: calc(var(--fixed-navbar-height) + (56 / 16rem));
-    padding-bottom: calc(48 / 16rem);
-    height: auto;
-    position: relative;
-  }
-}
-
-.travel-hero-content-inner {
-  align-self: flex-end;
 }
 
 .travel-hero-heading {
@@ -149,45 +127,10 @@
 .travel-hero-subheading {
   color: var(--white);
   font-size: calc(18 / 16rem);
-  font-weight: 600;
-}
-
-@media (--breakpoint-md) {
-  .travel-hero-heading {
-    font-size: 4.6rem;
-  }
-
-  .travel-hero-subheading {
-    font-size: calc(24 / 16rem);
-  }
-}
-
-@media (--breakpoint-md) {
-  .travel-hero-search {
-    margin-top: 4.25rem;
-    max-width: calc(530 / 16rem);
-  }
 }
 
 .travel-hero-search-dates {
   color: var(--white);
-  justify-content: space-around;
-}
-
-.travel-hero-search-dates .travel-date-input {
-  flex: 1 1 auto;
-}
-
-
-@media (--breakpoint-md) {
-  .travel-hero-search-dates {
-    justify-content: flex-start;
-    color: var(--black);
-  }
-
-  .travel-hero-search-dates .travel-date-input {
-    flex: none;
-  }
 }
 
 .travel-hero-heading {
@@ -208,10 +151,12 @@
 
 .travel-hero-search .ampstart-btn {
   font-size: 1.25rem;
+  background-color: var(--purple);
   animation: fade-and-slideup 0.4s 0.4s ease-in-out both;
 }
 
 .travel-hero-discover {
+  color: var(--gray);
   animation: fade-and-slideup 0.4s 0.45s ease-in-out both;
 }
 
@@ -225,4 +170,60 @@
 
 .travel-activities {
   animation: fade-and-slideup 0.4s 0.6s ease-in-out both;
+}
+
+@media (--breakpoint-md) {
+  .travel-hero {
+    z-index: 1;
+    height: auto;
+  }
+
+  .travel-hero-bg {
+    position: relative;
+    height: auto;
+  }
+
+  .travel-hero-content {
+    padding-top: calc(var(--fixed-navbar-height) + (56 / 16rem));
+    padding-bottom: calc(48 / 16rem);
+    height: auto;
+    position: relative;
+  }
+
+  .travel-hero-heading {
+    font-size: var(--h00);
+  }
+
+  .travel-hero-subheading {
+    font-size: calc(24 / 16rem);
+  }
+
+  .travel-hero-search {
+    margin-top: var(--space-5);
+    max-width: calc(530 / 16rem);
+  }
+
+  .travel-hero-search .travel-input {
+    color: inherit;
+    background-color: white;
+    border-color: transparent;
+  }
+
+  .travel-hero-search .travel-input-clear + .travel-icon {
+    color: inherit;
+  }
+
+  .travel-hero .ampstart-btn {
+    display: inline-block;
+    width: auto;
+  }
+
+  .travel-hero-search-dates {
+    justify-content: flex-start;
+    color: var(--black);
+  }
+
+  .travel-hero-search-dates .travel-date-input {
+    flex: none;
+  }
 }

@@ -95,7 +95,7 @@
   --range-track-height: calc(5 / 16rem);
   --range-track-color: var(--green);
 
-  --bold-font-weight: 700;
+  --bold-font-weight: 600;
 
   --border-width: 1px;
   --border-radius: calc(4 / 16rem);
@@ -107,6 +107,7 @@
 
   --caps-letter-spacing: 0;
 
+  --h00: 4.6rem; /* 74px */
   --h1: 2rem; /* 32px */
   --h2: 1.5rem; /* 24px */
   --h3: 1.25rem; /* 20px */
@@ -118,11 +119,12 @@
   --space-2: 1.5rem; /* 24px */
   --space-3: 3rem; /* 48px */
   --space-4: 4rem; /* 64px */
+  --space-5: 4.25rem; /* 64px */
 
-  --width-sm: 40rem; /* 640px */
-  --width-md: 52rem; /* 832px */
-  --width-lg: 72rem; /* 1152px */
-  --width-xl: 88rem; /* 1408px */
+  --width-1: 40rem; /* 640px */
+  --width-2: 52rem; /* 832px */
+  --width-3: 72rem; /* 1152px */
+  --width-4: 88rem; /* 1408px */
 
   @custom-media --breakpoint-xs (max-width: 40rem);
   @custom-media --breakpoint-v-xs (max-height: 40rem);
@@ -140,12 +142,4 @@
 
 body {
   line-height: var(--line-height-2);
-}
-
-/* Prevent strange bug where amp-img elements randomly lose rounded corners. */
-amp-img.rounded img {
-  border-radius: var(--border-radius)
-}
-amp-img.circle img {
-  border-radius: 50%
 }

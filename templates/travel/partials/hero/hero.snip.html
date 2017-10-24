@@ -1,75 +1,65 @@
+{{!
+<!---
+Copyright 2016 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
 <!-- Hero -->
 {{#partials.hero}}
-<div class="travel-hero-bg">
+<div class="travel-hero-bg absolute col-12">
   {{#images}}
     <amp-img
-      class="travel-hero-bg-img"
-      src="../../../img/travel/{{src}}.jpg"
+      class="travel-hero-bg-img absolute"
+      src="{{src}}"
       height="80vmax"
     ></amp-img>
   {{/images}}
-  <div class="travel-hero-bg-fade"></div>
+  <div class="travel-hero-bg-fade absolute left-0 right-0"></div>
 </div>
 
-<section class="relative travel-hero">
-  <div class="travel-hero-content container flex items-center">
-    <div class="travel-hero-content-inner relative px1 md-px2 flex-auto">
+<section class="travel-hero relative">
+  <div class="travel-hero-content max-width-3 mx-auto absolute top-0 left-0 right-0 flex flex-end self-end items-center">
+    <div class="travel-hero-content-inner relative px1 md-px2 flex-auto self-end">
       <h1 class="travel-hero-heading mb2 line-height-1">Adventures<br class="md-hide lg-hide"/> made&nbsp;easy</h1>
-      <div class="travel-hero-subheading xs-hide sm-hide">Find and book activities, tours, and experiences.</div>
+      <div class="travel-hero-subheading bold xs-hide sm-hide">Find and book activities, tours, and experiences.</div>
       <!-- Search Form -->
       <div class="travel-hero-search">
-        <div class="md-hide lg-hide">
-          <label class="travel-input-icon shadow rounded">
-            <input
-              class="travel-input border travel-input-big travel-input-clear rounded"
-              list="locations"
-              type="text"
-              name="query"
-              placeholder="Where would you like to go?"
-              on="
-                change:AMP.setState({
-                  fields_query: event.value,
-                  fields_query_live: event.value,
-                  fields_query_edited: query_query != event.value
-                });
-                input-debounced:AMP.setState({
-                  fields_query_live: event.value
-                });
-              "
-              value=""
-              [value]="fields_query"
-            >
-            {{> ../icon/map-pin.snip.html}}
-          </label>
-        </div>
-
-        <div class="xs-hide sm-hide">
-          <label class="travel-input-icon shadow rounded">
-            <input
-              class="travel-input travel-input-big rounded"
-              list="locations"
-              type="text"
-              name="query"
-              placeholder="Where would you like to go?"
-              on="
-                change:AMP.setState({
-                  fields_query: event.value,
-                  fields_query_live: event.value,
-                  fields_query_edited: query_query != event.value
-                });
-                input-debounced:AMP.setState({
-                  fields_query_live: event.value
-                });
-              "
-              value=""
-              [value]="fields_query"
-            >
-            {{> ../icon/map-pin.snip.html}}
-          </label>
-        </div>
+        <label class="travel-input-icon travel-shadow flex col-12 relative rounded">
+          <input
+            class="travel-input travel-input-big travel-input-clear border block col-12 rounded"
+            list="locations"
+            type="text"
+            name="query"
+            placeholder="Where would you like to go?"
+            on="
+              change:AMP.setState({
+                fields_query: event.value,
+                fields_query_live: event.value,
+                fields_query_edited: query_query != event.value
+              });
+              input-debounced:AMP.setState({
+                fields_query_live: event.value
+              });
+            "
+            value=""
+            [value]="fields_query"
+          />
+          {{> ../icon/map-pin.snip.html}}
+        </label>
 
         <amp-list
-            class="inline-list clip"
             layout="flex-item"
             src="/api/places?types=(regions)&types=(cities)&input="
             [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live"
@@ -85,12 +75,13 @@
             </template>
           </amp-list>
 
-        <div class="flex my2 travel-hero-search-dates">
+        <div class="travel-hero-search-dates flex my2 justify-around">
           <label
-            class="travel-date-input focus"
-            [class]="'travel-date-input focus' + (fields_departure ? ' travel-date-input-touched' : '')"
+            class="travel-date-input relative bold flex-auto"
+            [class]="'travel-date-input relative bold' + (fields_departure ? ' travel-date-input-touched' : '')"
           >
             <input
+              class="block relative p0 z1"
               type="date"
               placeholder="yyyy-mm-dd"
               pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
@@ -109,10 +100,11 @@
             </div>
           </label>
           <label
-            class="travel-date-input focus"
-            [class]="'travel-date-input focus' + (fields_return ? ' travel-date-input-touched' : '')"
+            class="travel-date-input bold flex-auto relative"
+            [class]="'travel-date-input bold flex-auto relative' + (fields_return ? ' travel-date-input-touched' : '')"
           >
             <input
+              class="block relative p0 z1"
               type="date"
               placeholder="yyyy-mm-dd"
               pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
@@ -134,29 +126,18 @@
           </label>
         </div>
 
-      <div class="md-hide lg-hide">
-        <a
-          href="travel-results.amp"
-          class="ampstart-btn btn rounded center travel-semibold white block col-12 bg-purple travel-input-big"
-          {{> ../util/apply-button-props.snip.html}}
-        >
-          Find Adventures &amp; Tours
-        </a>
-      </div>
-      <div class="xs-hide sm-hide">
-        <a
-          href="travel-results.amp"
-          class="ampstart-btn rounded center travel-semibold white inline-block bg-purple travel-input-big"
-          {{> ../util/apply-button-props.snip.html}}
-        >
-          Find Adventures &amp; Tours
-        </a>
-      </div>
+      <a
+        href="travel-results.amp"
+        class="ampstart-btn travel-input-big rounded center bold white block col-12"
+        {{> ../util/apply-button-props.snip.html}}
+      >
+        Find Adventures & Tours
+      </a>
 
       <!--/ Search Form -->
-      <div class="travel-hero-discover center mt1 md-hide lg-hide gray">
+      <a class="travel-hero-discover block center mx-auto mt1 md-hide lg-hide">
         Discover adventures {{> ../icon/caret-down-small.snip.html}}
-      </div>
+      </a>
     </div>
   </div>
 </section>
