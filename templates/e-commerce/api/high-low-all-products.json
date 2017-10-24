@@ -1,88 +1,74 @@
 {
 	"items": [
 		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 968,
-			"image": "/img/e-commerce/product/product-7.jpg",
-			"category": "kids"
-		},
-		{
-			"name": "Beacon",
-			"description": "Full carbon frameset, designed to climb",
-			"price": 958,
+			"name": "Chain set",
+			"description": "Silver alloy construction for durability.",
+			"price": 867,
 			"image": "/img/e-commerce/product/product-3.jpg",
-			"category": "mens"
+			"category": "accessories"
 		},
 		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 923,
-			"image": "/img/e-commerce/product/product-11.jpg",
-			"category": "kids"
+			"name": "Horn Handles",
+			"description": "Grippingly durable and stylish.",
+			"price": 838,
+			"image": "/img/e-commerce/product/product-7.jpg",
+			"category": "components"
 		},
 		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 892,
+			"name": "Caliper Brakes",
+			"description": "Fits most wheel sizes and designed to last long.",
+			"price": 776,
 			"image": "/img/e-commerce/product/product-8.jpg",
-			"category": "womens"
+			"category": "components"
 		},
 		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 856,
-			"image": "/img/e-commerce/product/product-4.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Estuary",
-			"description": "Relaxed geometry for comfortable commuting",
-			"price": 846,
-			"image": "/img/e-commerce/product/product-2.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Highland",
-			"description": "Timeless style in Reynolds 531 tubing",
-			"price": 619,
-			"image": "/img/e-commerce/product/product-1.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Herne Hill",
-			"description": "Built for the track, at home on the street",
-			"price": 575,
-			"image": "/img/e-commerce/product/product-12.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 574,
-			"image": "/img/e-commerce/product/product-9.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 510,
-			"image": "/img/e-commerce/product/product-10.jpg",
-			"category": "mens"
-		},
-		{
-			"name": "Farringdon cap",
-			"description": "Water resistant and breathable",
-			"price": 489,
-			"image": "/img/e-commerce/product/product-5.jpg",
-			"category": "womens"
-		},
-		{
-			"name": "Pointer gloves",
-			"description": "Fingerless with lightweight construction",
-			"price": 444,
+			"name": "Red Cruiser",
+			"description": "Smooth ride for enjoyable cruising.",
+			"price": 688,
 			"image": "/img/e-commerce/product/product-6.jpg",
-			"category": "womens"
+			"category": "accessories"
+		},
+		{
+			"name": "Road Bike",
+			"description": "Built with lightweight aluminum for speed.",
+			"price": 644,
+			"image": "/img/e-commerce/product/product-9.jpg",
+			"category": "accessories"
+		},
+		{
+			"name": "Fixie Blue",
+			"description": "Designed to get you there.",
+			"price": 643,
+			"image": "/img/e-commerce/product/product-2.jpg",
+			"category": "accessories"
+		},
+		{
+			"name": "Wheel Set",
+			"description": "Ride Sally, ride.",
+			"price": 603,
+			"image": "/img/e-commerce/product/product-10.jpg",
+			"category": "components"
+		},
+		{
+			"name": "Sprocket Set",
+			"description": "Steel, designed for long lasting stability.",
+			"price": 581,
+			"image": "/img/e-commerce/product/product-1.jpg",
+			"category": "bikes"
+		},
+		{
+			"name": "16-Speed",
+			"description": "Smooth shifting through all gears for city riding.",
+			"price": 524,
+			"image": "/img/e-commerce/product/product-5.jpg",
+			"category": "accessories"
+		},
+		{
+			"name": "Leather Saddle",
+			"description": "Firm, yet comfortable for long leisurely rides.",
+			"price": 476,
+			"image": "/img/e-commerce/product/product-4.jpg",
+			"category": "accessories"
 		}
 	]
 }

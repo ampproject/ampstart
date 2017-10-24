@@ -13,7 +13,7 @@
         "post-classes": "land-see-post-item",
         "post-url": "#",
         "post-category": "Fashion",
-        "post-category-url": "stories.amp.html#fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
         "post-title": "New Textile & Basics Shop Opens in Soho",
         "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
       },
@@ -29,7 +29,7 @@
         "post-classes": "land-see-post-item",
         "post-url": "#",
         "post-category": "Fashion",
-        "post-category-url": "stories.amp.html#fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
         "post-title": "How to Pack Light When Traveling",
         "post-copy": "Whether it’s a short weekend getaway or an extended holiday, choosing carefully from your accessories can help lighten your load while expanding your repertory."
       }

@@ -18,13 +18,18 @@
 @import '../../shared';
 
 .www-header {
-  min-height: 600px;
+  min-height: 440px;
+  padding-top: var(--space-4);
+}
+
+.www-header > h1 + span {
+  max-width: 35rem;
 }
 
 .www-index-showcase,
 .www-index-help,
 .ampstart-footer {
-    transform: translateY(-300px);
+    transform: translateY(-250px);
 }
 
 .www-index-showcase-header-img [placeholder] {
@@ -32,16 +37,32 @@
   background-size: cover;
 }
 
-.www-index-showcase-template {
+.www-index-showcase-template,
+..www-index-showcase-feature {
   background-color: rgba(155, 155, 155, 0.4)
 }
 
-.www-index-showcase > ul > li:nth-child(2n+1) > .www-index-showcase-template {
+.www-index-showcase > ul > li:nth-child(2n+1) > .www-index-showcase-template,
+.www-index-showcase > ul > li:nth-child(2n+1) > .www-index-showcase-feature {
   background-color: rgba(0, 65, 119, 0.05)
 }
 
-.www-index-showcase-feature > * {
-  max-width: var(--width-1);
+.www-index-showcase-components-container > .www-index-showcase-feature {
+  background: none;
+}
+
+
+.www-index-showcase-feature .ampstart-btn {
+  background-color: transparent;
+}
+
+.www-index-showcase-feature > div > *:not(.www-index-showcase-feature-preview) {
+  max-width: 19rem;
+}
+
+.www-index-showcase-feature-preview h3 {
+  font-family: var(--font-family);
+  font-size: 1rem;
 }
 
 .www-index-showcase-components li {
@@ -115,6 +136,42 @@
   background-color: var(--color-white);
 }
 
+.www-index-help .ampstart-icon {
+  fill: var(--color-font-secondary);
+}
+
+.www-index-action .ampstart-icon{
+  fill: var(--color-black);
+}
+
+.www-index-action:hover .ampstart-icon {
+  fill: url(#svg-gradient);
+}
+
+.www-index-showcase-feature-preview h3::before {
+  content: '↑ ';
+  display: inline;
+}
+
+@media (--breakpoint-md) {
+  .www-index-showcase > ul > li:nth-child(2n) > .www-index-showcase-template,
+  .www-index-showcase > ul > li:nth-child(2n) > .www-index-showcase-components {
+    order: 2;
+  }
+
+.www-index-showcase-feature-preview h3::before {
+  content: '← ';
+}
+
+  .www-index-showcase > ul > li:nth-child(2n) .www-index-showcase-feature-preview h3::before {
+    content: '';
+  }
+
+  .www-index-showcase > ul > li:nth-child(2n) .www-index-showcase-feature-preview h3::before {
+    content: '→ ';
+  }
+}
+
 @media (--breakpoint-xs) {
   .www-header {
     min-height: 300px;
@@ -123,7 +180,7 @@
   .www-index-showcase,
   .www-index-help,
   .ampstart-footer {
-      transform: translateY(-180px);
+      transform: translateY(-200px);
   }
 
   .www-index-showcase-template {
@@ -136,7 +193,7 @@
 }
 
 @media (--breakpoint-xs), (--breakpoint-sm-md) {
-  .www-index-showcase-components-container > .www-index-showcase-feature {
-    order: 2;
+  .www-index-showcase-feature {
+    padding-top: 0;
   }
 }

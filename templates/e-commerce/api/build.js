@@ -1,5 +1,5 @@
 /*
- * Builds a collection of products and writes JSON files sorted by price and 
+ * Builds a collection of products and writes JSON files sorted by price and
  * category.
  */
 
@@ -7,55 +7,69 @@ const fs = require('fs');
 const path = require('path');
 
 const currentWorkingDirectory = path.dirname(process.argv[1]);
-const totalProducts = 12;
+const totalProducts = 10;
 const titles = {
-  'gloves': {
-    'name': 'Pointer gloves',
-    'description': 'Fingerless with lightweight construction'
+  'saddle': {
+    'name': 'Leather Saddle',
+    'description': 'Firm, yet comfortable for long leisurely rides.'
   },
-  'cap': {
-    'name': 'Farringdon cap',
-    'description': 'Water resistant and breathable'
+  'sprocket': {
+    'name': 'Sprocket Set',
+    'description': 'Steel, designed for long lasting stability.'
   },
-  'bike1': {
-    'name': 'Highland',
-    'description': 'Timeless style in Reynolds 531 tubing'
+  'fixie': {
+    'name': 'Fixie Blue',
+    'description': 'Designed to get you there.'
   },
-  'bike2': {
-    'name': 'Estuary',
-    'description': 'Relaxed geometry for comfortable commuting'
+  'chain': {
+    'name': 'Chain set',
+    'description': 'Silver alloy construction for durability.'
   },
-  'bike3': {
-    'name': 'Beacon',
-    'description': 'Full carbon frameset, designed to climb'
+  'frame': {
+    'name': 'Road Bike',
+    'description': 'Built with lightweight aluminum for speed.'
   },
-  'bike4':{
-    'name': 'Herne Hill',
-    'description': 'Built for the track, at home on the street'
+  'red': {
+    'name': 'Red Cruiser',
+    'description': 'Smooth ride for enjoyable cruising.'
   },
-  'bike5': {
-    'name': 'Pennine',
-    'description': 'Full-featured tourer for long-distance rides'
+  'wheel': {
+    'name': 'Wheel Set',
+    'description': 'Ride Sally, ride.'
+  },
+  'handles': {
+    'name': 'Horn Handles',
+    'description': 'Grippingly durable and stylish.'
+  },
+  'brakes': {
+    'name': 'Caliper Brakes',
+    'description': 'Fits most wheel sizes and designed to last long.'
+  },
+  'speed16': {
+    'name': '16-Speed',
+    'description': 'Smooth shifting through all gears for city riding.'
   }
 };
 const titleListing = [
-  titles.bike1, titles.bike2, titles.bike3, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.gloves, titles.cap, titles.bike4
+  titles.sprocket, titles.fixie, titles.chain, titles.saddle, titles.speed16, titles.red, titles.handles, titles.brakes, titles.frame, titles.wheel
 ];
+
+
 const minPrice = 400;
 const maxPrice = 999;
 const imagesFolder = '/img/e-commerce/product/';
 const imagePrefix = 'product-';
 const imageExtension = '.jpg';
-const totalImages = 12;
+const totalImages = 10;
 let currentImage = 1;
-const categories = ['mens', 'womens', 'kids'];
+const categories = ['bikes', 'accessories', 'components'];
 const products = {
   items: []
 };
 const productCategories = {
-  mens: [],
-  womens: [],
-  kids: []
+  bikes: [],
+  accessories: [],
+  components: []
 };
 
 const outputFile = 'products.json';
@@ -104,7 +118,7 @@ function writeFile(sortName, sortFunction, products, categoryName = 'all') {
   let data = {items: products};
 
   let fileName = `${currentWorkingDirectory}/${sortName}-${categoryName}-${outputFile}`;
-  fs.writeFileSync(fileName, JSON.stringify(data, null, '\t')); 
+  fs.writeFileSync(fileName, JSON.stringify(data, null, '\t'));
 }
 
 function saveProducts() {
@@ -127,6 +141,7 @@ function saveCategories() {
 
 function generateProducts() {
   for (let i = 0; i < totalProducts; i++) {
+    console.log(i + ": ", titleListing[i]);
     products.items.push({
       name: titleListing[i].name,
       description: titleListing[i].description,

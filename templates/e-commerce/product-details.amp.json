@@ -15,26 +15,13 @@
   },
   "main": {
     "product-details": {
-      "name": "Highland",
-      "description": "With a frame forged from iconic Reynolds 531 tubing, Highland is as comfortable as it is quick.",
+      "name": "Road Bike",
+      "description": "Built with lightweight aluminum for speed.",
       "price": "£470",
       "colourFilterName": "colours",
       "colours": [
         {
-          "name": "white",
-          "thumb": {
-            "image1": "../../img/e-commerce/product/light-small-1.jpg",
-            "image2": "../../img/e-commerce/product/light-small-2.jpg",
-            "image3": "../../img/e-commerce/product/light-small-3.jpg"
-          },
-          "large": {
-            "image1": "../../img/e-commerce/product/light-large-1.jpg",
-            "image2": "../../img/e-commerce/product/light-large-2.jpg",
-            "image3": "../../img/e-commerce/product/light-large-3.jpg"
-          }
-        },
-        {
-          "name": "green",
+          "name": "black",
           "thumb": {
             "image1": "../../img/e-commerce/product/dark-small-1.jpg",
             "image2": "../../img/e-commerce/product/dark-small-2.jpg",
@@ -44,6 +31,19 @@
             "image1": "../../img/e-commerce/product/dark-large-1.jpg",
             "image2": "../../img/e-commerce/product/dark-large-2.jpg",
             "image3": "../../img/e-commerce/product/dark-large-3.jpg"
+          }
+        },
+        {
+          "name": "blue",
+          "thumb": {
+            "image1": "../../img/e-commerce/product/light-small-1.jpg",
+            "image2": "../../img/e-commerce/product/light-small-2.jpg",
+            "image3": "../../img/e-commerce/product/light-small-3.jpg"
+          },
+          "large": {
+            "image1": "../../img/e-commerce/product/light-large-1.jpg",
+            "image2": "../../img/e-commerce/product/light-large-2.jpg",
+            "image3": "../../img/e-commerce/product/light-large-3.jpg"
           }
         }
       ],
@@ -86,15 +86,15 @@
         },
         {
           "header": "grips",
-          "body": "Duracork"
+          "body": "Rubber"
         },
         {
           "header": "gear shifter",
-          "body": "Shimano rapidfire"
+          "body": "Rapidfire"
         },
         {
           "header": "gears",
-          "body": "Shimano Tourney 7 speed"
+          "body": "7 speed"
         },
         {
           "header": "chainset",
@@ -110,7 +110,7 @@
         },
         {
           "header": "brakes",
-          "body": "Tektro side pull"
+          "body": "Side pull caliper brakes"
         },
         {
           "header": "rims",
@@ -118,15 +118,15 @@
         },
         {
           "header": "tyres",
-          "body": "Kenda Brown with cream wall 20\"x1\""
+          "body": "700x19-28"
         },
         {
           "header": "saddle",
-          "body": "Bobbin vinyl saddle"
+          "body": "Vinyl saddle"
         },
         {
           "header": "seatpost",
-          "body": "Alloy icroadjust 600mm"
+          "body": "Alloy micro adjust 600mm"
         },
         {
           "header": "kickstand",

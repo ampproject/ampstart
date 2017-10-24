@@ -13,7 +13,7 @@
         "post-classes": "land-see-post-item",
         "post-url": "#",
         "post-category": "Interiors",
-        "post-category-url": "stories.amp.html#interiors",
+        "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
         "post-title": "Interior Design for Tiny Homes",
         "post-copy": "Rampant materialism is a no-no for the tiny home owner, but this doesn’t strand these minimalists in the design desert."
       },
@@ -29,7 +29,7 @@
         "post-classes": "land-see-post-item",
         "post-url": "#",
         "post-category": "Interiors",
-        "post-category-url": "stories.amp.html#interiors",
+        "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
         "post-title": "Bold Coast Cottage in Main",
         "post-copy": "My travels in Main have taken me to many destinations not in the standard visitor’s guide."
       }

@@ -21,9 +21,85 @@
 @import '../../core.css';
 
 @import './page-vars';
+@import './components/_landing-images';
 
 body {
   color: var(--font-color-primary);
   font-family: var(--font-family-primary);
   line-height: var(--line-height);
+}
+
+.gallery-base-content {
+  background: var(--color-white);
+  overflow-x: hidden;
+}
+
+.gallery-base-container {
+  position: relative;
+  width: calc((23 / 50) * 100vw + (150 / 16) * 1rem);
+  max-width: calc((800 / 16) * 1rem);
+}
+
+.gallery-base-invert {
+  color: #fff;
+  mix-blend-mode: difference;
+  -webkit-font-smoothing: antialiased;
+}
+
+.gallery-base-callout {
+  margin: 0 0 calc((56 / 16) * 1rem) 0;
+  font-size: calc((20 / 16) * 1rem);
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.gallery-base-section:not(:last-child) {
+  margin-bottom: calc((122 / 16) * 1rem);
+}
+
+.gallery-base-rich-text h2 {
+  font-family: var(--font-family-secondary);
+  letter-spacing: 0.05rem;
+  font-size: calc((32 / 16) * 1rem);
+}
+
+.gallery-base-rich-text h3 {
+  font-family: var(--font-family-secondary);
+  letter-spacing: 0.05rem;
+  font-size: calc((18 / 16) * 1rem);
+}
+
+.gallery-base-rich-text p {
+  line-height: 1.8;
+}
+
+.gallery-base-rich-text blockquote {
+  margin: 0 0 calc((56 / 16) * 1rem) 0;
+  font-size: calc((24 / 16) * 1rem);
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+@media (--breakpoint-v-xs) {
+  .v-xs-hide { display: none }
+}
+
+@media (--breakpoint-v-sm-md) {
+  .v-sm-hide { display: none }
+}
+
+@media (--breakpoint-v-md-lg) {
+  .v-md-hide { display: none }
+}
+
+@media (--breakpoint-v-lg) {
+  .v-lg-hide { display: none }
+}
+
+ /* Hack media query to target IE, which does not support mix-blend-mode. */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .gallery-base-invert {
+    color: inherit;
+    mix-blend-mode: initial;
+  }
 }

@@ -25,9 +25,15 @@ limitations under the License.
     <ul class="list-reset m0 p0 ampstart-label">
       {{#sidebarimage}}
         <li>
+          {{#href}}
+          <a href="{{.}}" class="text-decoration-none block 22">
+          {{/href}}
           <amp-img src="{{{url}}}" width="{{width}}" height="{{height}}" layout="responsive" class="ampstart-sidebar-nav-image {{classes}}" alt="{{alt}}"{{#preloader}} noloading{{/preloader}}>
             {{#preloader}}<div placeholder class="{{classes}}"></div>{{/preloader}}
           </amp-img>
+          {{#href}}
+          </a>
+          {{/href}}
         </li>
       {{/sidebarimage}}
       {{#nav}}

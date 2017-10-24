@@ -55,11 +55,15 @@ limitations under the License.
 
       <amp-list class="mx1 md-mxn1" [src]="'api/' + products.filter + '-' + products.category + '-products.json'" src="api/high-low-all-products.json" height="1000" width="300" layout="responsive">
         <template type="amp-mustache">
-          <a href="product-details.amp.html" class="commerce-listing-product text-decoration-none inline-block col-6 md-col-3 px1 mb2 md-mb4">
-            <amp-img class="commerce-listing-product-image mb2" src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>" noloading>{{> partials/preloader.snip.html}}</amp-img>
-            <h2 class="commerce-listing-product-name h6"><% name %></h2>
-            <% description %>
-            <div class="h6 mt1">&#163;<% price %></div>
+          <a href="product-details.amp.html" target="_self" class="commerce-listing-product text-decoration-none inline-block col-6 md-col-4 lg-col-3 px1 mb2 md-mb4 relative">
+            <div class="flex flex-column justify-between">
+              <div>
+                <amp-img class="commerce-listing-product-image mb2" src="<%image%>" width="340" height="340" layout="responsive" alt="<% name %>" noloading>{{> partials/preloader.snip.html}}</amp-img>
+                <h2 class="commerce-listing-product-name h6"><% name %></h2>
+                <% description %>
+              </div>
+              <div class="h6 mt1">&#163;<% price %></div>
+            </div>
           </a>
         </template>
       </amp-list>
