@@ -67,24 +67,15 @@
   --type-water-color: #3abee8;
 
   /* input element */
-  --button-padding-y: .5rem;
-  --button-padding-x: 1rem;
-  --button-small-padding-y: .25rem;
-  --button-small-padding-x: .5rem;
-  --button-big-padding-y: 1rem;
-  --button-big-padding-x: 1.25rem;
-  --button-narrow-padding-x: .5rem;
-  --button-line-height: 1.125rem;
+  --input-padding-y: .5rem;
+  --input-padding-x: 1rem;
+  --input-line-height: 1.125rem;
 
-  --input-padding-y: var(--button-padding-y);
-  --input-padding-x: var(--button-padding-x);
-  --input-line-height: var(--button-line-height);
-
-  --input-small-padding-y: var(--button-small-padding-y);
-  --input-small-padding-x: var(--button-small-padding-x);
-  --input-big-padding-y: var(--button-big-padding-y);
-  --input-big-padding-x: var(--button-big-padding-x);
-  --input-narrow-padding-x: var(--button-narrow-padding-x);
+  --input-small-padding-y: .25rem;
+  --input-small-padding-x: .5rem;
+  --input-big-padding-y: 1rem;
+  --input-big-padding-x: 1.25rem;
+  --input-narrow-padding-x: .5rem;
 
   /* icon element */
   --icon-size: 1.2em;
