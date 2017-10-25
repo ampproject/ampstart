@@ -17,16 +17,9 @@
 /* Override properties from ampstart-button. */
 
  .ampstart-btn {
-   font-size: 1rem;
-   text-decoration: none;
    transition: box-shadow 250ms, transform 250ms;
    line-height: 1.125rem;
    padding: .5rem 1rem;
-   text-decoration: none;
-   white-space: nowrap;
-   word-wrap: normal;
-   vertical-align: middle;
-   cursor: pointer;
    border: 1px solid transparent;
  }
 
