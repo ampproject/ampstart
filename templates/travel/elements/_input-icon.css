@@ -40,7 +40,6 @@
   padding: var(--input-big-padding-y) var(--input-big-padding-x);
 }
 
-.travel-input-icon > .travel-input-dark + .travel-icon,
 .travel-input-icon > .travel-input-clear + .travel-icon {
   color: rgba(255,255,255,.4);
 }
