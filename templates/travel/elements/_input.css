@@ -56,15 +56,6 @@
   color: var(--gray);
 }
 
-.travel-input::-moz-placeholder {
-  color: var(--gray);
-  opacity: 1;
-}
-
-.travel-input:-ms-input-placeholder {
-  color: var(--gray);
-}
-
 .travel-input-dark::-webkit-input-placeholder {
   color: currentColor;
   opacity: 0.75;
