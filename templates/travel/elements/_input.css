@@ -38,10 +38,6 @@
   border-color: transparent;
 }
 
-.travel-input-dark {
-  background: color(#000 a(0.2));
-}
-
 .travel-input-clear {
   color: var(--white);
   background: none;
@@ -56,32 +52,8 @@
   color: var(--gray);
 }
 
-.travel-input-dark::-webkit-input-placeholder {
-  color: currentColor;
-  opacity: 0.75;
-}
-
-.travel-input-dark::-moz-placeholder {
-  color: currentColor;
-  opacity: 0.75;
-}
-
-.travel-input-dark:-ms-input-placeholder {
-  color: currentColor;
-  opacity: 0.75;
-}
-
 .travel-input-clear::-webkit-input-placeholder {
   color: currentColor;
-  opacity: 0.4;
-}
-
-.travel-input-clear::-moz-placeholder {
-  color: currentColor;
-  opacity: 0.4;
-}
-
-.travel-input-clear:-ms-input-placeholder {
   opacity: 0.4;
 }
 
