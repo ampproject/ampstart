@@ -5,9 +5,9 @@
 | templates/article/page.css    | 23871                | 23.87 KB |
 | templates/blog/page.css       | 24114                | 24.11 KB |
 | templates/e-commerce/page.css | 41579                | 41.58 KB |
-| templates/gallery/page.css    | 13975                | 13.97 KB |
+| templates/gallery/page.css    | 33038                | 33.04 KB |
 | templates/land-see/page.css   | 41278                | 41.28 KB |
-| templates/lune/page.css       | 47161                | 47.16 KB |
+| templates/lune/page.css       | 47316                | 47.32 KB |
 | templates/test/page.css       | 23957                | 23.96 KB |
 | templates/themes_1/page.css   | 25525                | 25.52 KB |
 | templates/themes_2/page.css   | 24446                | 24.45 KB |

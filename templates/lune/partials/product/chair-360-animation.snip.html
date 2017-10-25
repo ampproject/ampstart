@@ -1,0 +1,41 @@
+<amp-animation id="chairRotationAnim" layout="nodisplay">
+  <script type="application/json">
+    {
+    "duration": "5s",
+    "fill": "both",
+    "direction": "alternate",
+    "animations": [
+      {
+        "selector": ".lune-layer:nth-child(1)",
+        "keyframes": [
+          { "visibility": "visible", "offset": 0 },
+          { "visibility": "visible", "offset": 0.32 },
+          { "visibility": "hidden", "offset": 0.33 },
+          { "visibility": "hidden", "offset": 1 }
+        ]
+      },
+      {{#webp_layers}}
+        {
+          "selector": ".lune-layer:nth-child({{index}})",
+          "keyframes": [
+            { "visibility": "hidden", "offset": 0 },
+            { "visibility": "hidden", "offset": 0.33 },
+            { "visibility": "visible", "offset": 0.34 },
+            { "visibility": "hidden", "offset": 0.66 },
+            { "visibility": "hidden", "offset": 1 }
+          ]
+        },
+      {{/webp_layers}}
+      {
+        "selector": ".lune-layer:nth-child(3)",
+        "keyframes": [
+          { "visibility": "hidden", "offset": 0 },
+          { "visibility": "hidden", "offset": 0.66 },
+          { "visibility": "visible", "offset": 0.67 },
+          { "visibility": "visible", "offset": 1 }
+        ]
+      }
+    ]
+  }
+  </script>
+</amp-animation>

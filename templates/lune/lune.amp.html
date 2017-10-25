@@ -17,25 +17,11 @@ limitations under the License.
 <html ⚡>
   {{> ../../utils/amp-page-head.snip.html}}
   <body class="lune">
-    <amp-animation id="chairRotationAnim" layout="nodisplay">
-      <script type="application/json">
-        {
-        "duration": "1s",
-        "fill": "both",
-        "direction": "alternate",
-        "animations": [
-          {
-            "selector": ".lune-anim-scale-up",
-            "keyframes": [
-              { "transform": "rotate(10deg)" },
-              { "transform": "rotate(-360deg)" }
-            ]
-          }
-        ]
-      }
-      </script>
-    </amp-animation>
-
+    {{#landing-sections}}
+      {{#product_360_image}}
+        {{> partials/product/chair-360-animation.snip.html}}
+      {{/product_360_image}}
+    {{/landing-sections}}
     <!-- The clipPath is used in the CSS `clip-path` property; it's used to achieve a
       clipping effect while scrolling the page (see mocks/lune/landing-page-clipping.gif) -->
     <div class="hide">

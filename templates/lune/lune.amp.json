@@ -17,9 +17,16 @@
       "full_title": "Lune blanc",
       "product_360_image": {
         "alt": "Lune Blanc",
-        "webp_layers": "../../img/lune/360/blanc",
-        "fallback_layers": "../../img/lune/360/blanc",
-        "total_layers": 3,
+        "webp_layers": [
+          { "url": "../../img/lune/360/blanc/0.png", "index": 1},
+          { "url": "../../img/lune/360/blanc/1.png", "index": 2},
+          { "url": "../../img/lune/360/blanc/2.png", "index": 3}
+        ],
+        "fallback_layers": [
+          "../../img/lune/360/blanc/0.png",
+          "../../img/lune/360/blanc/1.png",
+          "../../img/lune/360/blanc/2.png"
+        ],
         "width": 1,
         "height": 1.37,
         "placeholder_classes": "lune-theme-light"
@@ -39,9 +46,16 @@
       "full_title": "Lune noir",
       "product_360_image": {
         "alt": "Lune Noir",
-        "webp_layers": "../../img/lune/360/noir",
-        "fallback_layers": "../../img/lune/360/noir",
-        "total_layers": 3,
+        "webp_layers": [
+          { "url": "../../img/lune/360/noir/0.png", "index": 0},
+          { "url": "../../img/lune/360/noir/1.png", "index": 1},
+          { "url": "../../img/lune/360/noir/2.png", "index": 2}
+        ],
+        "fallback_layers": [
+          "../../img/lune/360/noir/0.png",
+          "../../img/lune/360/noir/1.png",
+          "../../img/lune/360/noir/2.png"
+        ],
         "width": 1,
         "height": 1.37,
         "placeholder_classes": "lune-theme-dark"
