@@ -174,6 +174,7 @@ h4,
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='104' height='39' viewBox='0 0 104 39'%3E%3Cpath fill='none' stroke='%23EFE5E3' stroke-miterlimit='10' d='M0 .5c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 5.368c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 10.236c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 15.104c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 19.972c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 24.84c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 29.708c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4M0 34.576c6.468 0 6.468 4 12.936 4 6.467 0 6.467-4 12.935-4 6.466 0 6.466 4 12.932 4 6.467 0 6.467-4 12.934-4 6.47 0 6.47 4 12.939 4s6.469-4 12.936-4c6.472 0 6.472 4 12.943 4 6.473 0 6.473-4 12.944-4'/%3E%3C/svg%3E%0A") repeat-x 0 61px;
 }
 
+.land-see-story-nav .ampstart-icon,
 .ampstart-sidebar .ampstart-icon {
   color: var(--color-font-primary);
   fill: var(--color-font-primary);
@@ -549,7 +550,8 @@ h4,
 
 .land-see-popular-content,
 .land-see-recent-content,
-.land-see-paging {
+.land-see-paging,
+.land-see-story-nav {
   max-width: 850px;
 }
 
@@ -674,6 +676,7 @@ h4,
   height: 435px;
 }
 
+.land-see-gallery-progress button,
 .land-see-hero-progress button {
   border: none;
   background: transparent;
@@ -711,7 +714,7 @@ h4,
     color: var(--color-font-primary);
   }
 
-  .land-see .amp-carousel-button {
+  .land-see .land-see-hero-container .amp-carousel-button {
     top: 24%;
   }
 
@@ -870,5 +873,113 @@ h4,
   }
   .land-see-categories-inner-nav div:last-child {
     margin-right: 0;
+  }
+}
+
+/********** Story Detail Template **********/
+
+.land-see-story-detail .land-see-post-item-wide {
+  text-align: center;
+}
+
+.land-see-story-detail .land-see-hero-title {
+  font: 600 var(--h0)/var(--line-height-1) var(--font-primary);
+}
+
+.land-see-story-detail .land-see-hero-title,
+.land-see-story-detail .land-see-hero-caption,
+.land-see-story-subheader {
+  color: var(--color-font-primary);
+}
+
+.land-see-story-detail .land-see-hero-caption {
+  width: auto;
+}
+
+.land-see-story-subheader {
+  font: 600 var(--h5)/var(--line-height-1) var(--font-secondary);
+  margin-bottom: -0.5rem;
+}
+
+.land-see-story-copy b {
+  line-height: normal;
+}
+
+.land-see-image-gallery {
+  max-width: 813px;
+  margin-top: var(--navbar-height);
+  margin-bottom: var(--navbar-height);
+}
+
+.land-see-gallery-progress {
+  height: 58px;
+}
+
+.land-see-gallery-progress-scroll {
+  overflow-x: scroll;
+  padding-bottom: 58px;
+}
+
+.land-see-gallery-progress button {
+  padding-right: 3px;
+}
+
+.land-see-gallery-progress button:last-child {
+  padding-right: 0;
+}
+
+.land-see-selected-preview-image {
+  opacity: .77;
+}
+
+.land-see-instagram-post {
+  margin-top: -67px;
+  max-width: 196px;
+}
+
+.land-see-instagram > h3 span {
+  margin-left: 40px;
+}
+
+.land-see-instagram > h3 span::before {
+  content: '';
+  position: absolute;
+  background: url('../../img/icons/instagram.svg') -5px -3px/35px 35px no-repeat;
+  height: 29px;
+  width: 29px;
+  top: 0;
+  left: -40px;
+  z-index: var(--z3);
+}
+
+.land-see-story-instagram-container.land-see-stories > h3::after {
+  content: '';
+  background: none;
+  height: 0;
+  width: 0;
+}
+
+.land-see-story-social-share-heading {
+  float: left;
+  font: 400 var(--h7)/var(--line-height-4) var(--font-navigation);
+  color: var(--color-font-accent);
+  text-transform: uppercase;
+  padding-top: .5rem;
+}
+
+.land-see-story-nav .ampstart-social-follow {
+  float: right;
+  justify-content: flex-start;
+}
+
+@media (--breakpoint-within-xxxs) {
+  .land-see-story-instagram-container {
+    margin-bottom: 0;
+  }
+}
+
+@media (--breakpoint-xs) {
+  .land-see-story-social {
+    order: 3;
   }
 }
