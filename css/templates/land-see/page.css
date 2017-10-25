@@ -952,7 +952,7 @@ h4,
   z-index: var(--z3);
 }
 
-.land-see-story-instagram-container .land-see-stories > h3::after {
+.land-see-story-instagram-container.land-see-stories > h3::after {
   content: '';
   background: none;
   height: 0;
