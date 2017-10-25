@@ -10,6 +10,20 @@
   animation: fade-in-move-up .8s var(--animation-delay-start) cubic-bezier(0.41, 0.01, 0.27, 1) both;
 }
 
+.lune-layers {
+  position: relative;
+  display: block;
+}
+
+.lune-layer:not(:first-child) {
+  display: block;
+  position: absolute;
+  width: 100%;
+  visibility: hidden;
+  top: 0;
+}
+
+
 @keyframes fade-in-scale-up {
   from {
     opacity: 0;

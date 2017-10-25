@@ -1,0 +1,28 @@
+<!-- WebP image -->
+<span class="lune-layers">
+{{#webp_layers}}
+<span class="lune-layer">
+  <amp-img
+    class="lune-anim-scale-up z1"
+    alt="{{alt}}"
+    src="{{url}}"
+    width="{{width}}"
+    height="{{height}}"
+    layout="responsive">
+      <!-- Placeholder -->
+      <!-- Commented out for now as an issue remains when using placeholders with web
+            https://github.com/ampproject/amphtml/issues/10646 -->
+      <!-- PNG Fallback -->
+      <!--<amp-img
+        fallback
+        class="lune-anim-scale-up z1"
+        alt="{{alt}}"
+        srcset="{{fallback_layers}}"
+        width="{{width}}"
+        height="{{height}}"
+        layout="responsive">
+      </amp-img>-->
+  </amp-img>
+</span>
+{{/webp_layers}}
+</span>
