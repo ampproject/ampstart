@@ -109,8 +109,8 @@
 
 .travel-hero-bg-fade {
   height: 70vmax;
-  top: calc(70vmax - (300 / 16rem));
-  background-image: linear-gradient(180deg, transparent 0%, var(--black) calc(300 / 16rem));
+  top: calc(70vmax - 300px);
+  background-image: linear-gradient(180deg, transparent 0%, var(--black) 300px);
 }
 
 .travel-hero-content {
@@ -120,13 +120,13 @@
 
 .travel-hero-heading {
   color: var(--white);
-  font-size: calc(60 / 16rem);
+  font-size: var(--h00);
   font-weight: 700;
 }
 
 .travel-hero-subheading {
   color: var(--white);
-  font-size: calc(18 / 16rem);
+  font-size: 18px;
 }
 
 .travel-hero-search-dates {
@@ -184,28 +184,28 @@
   }
 
   .travel-hero-content {
-    padding-top: calc(var(--fixed-navbar-height) + (56 / 16rem));
-    padding-bottom: calc(48 / 16rem);
+    padding-top: calc(var(--fixed-navbar-height) + 56px);
+    padding-bottom: var(--space-3);
     height: auto;
     position: relative;
   }
 
   .travel-hero-heading {
-    font-size: var(--h00);
+    font-size: var(--h000);
   }
 
   .travel-hero-subheading {
-    font-size: calc(24 / 16rem);
+    font-size: var(--h2);
   }
 
   .travel-hero-search {
     margin-top: var(--space-5);
-    max-width: calc(530 / 16rem);
+    max-width: 530px;
   }
 
   .travel-hero-search .travel-input {
     color: inherit;
-    background-color: white;
+    background-color: var(--white);
     border-color: transparent;
   }
 
