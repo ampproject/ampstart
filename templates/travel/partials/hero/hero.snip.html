@@ -127,15 +127,34 @@ limitations under the License.
             </div>
           </label>
         </div>
-
-      <a
-        href="travel-results.amp"
-        class="ampstart-btn travel-input-big rounded center bold white block col-12"
-        {{> ../util/apply-button-props.snip.html}}
-      >
-        Find Adventures & Tours
-      </a>
-
+      {{#apply-button-props}}
+        <a
+          href="travel-results.amp"
+          class="ampstart-btn travel-input-big rounded center bold white block col-12"
+          on="
+            tap:AMP.setState({
+              ui_reset: {{ui_reset}},
+              ui_filterPane: {{ui_filterPane}},
+              query_query: {{query_query}},
+              fields_query_edited: {{fields_query_edited}},
+              query_departure: {{query_departure}},
+              fields_departure_edited: {{fields_departure_edited}},
+              query_return: {{query_return}},
+              fields_return_edited: {{fields_return_edited}},
+              query_maxPrice: {{query_maxPrice}},
+              fields_maxPrice_edited: {{fields_maxPrice_edited}},
+              query_city: {{query_city}},
+              fields_city_edited: {{fields_city_edited}},
+              query_type: {{query_type}},
+              fields_type_edited: {{fields_type_edited}},
+              query_sort: {{query_sort}},
+              fields_sort_edited: {{fields_sort_edited}}
+            })
+          "
+        >
+          Find Adventures & Tours
+        </a>
+      {{/apply-button-props}}
       <!--/ Search Form -->
       <a class="travel-hero-discover block center mx-auto mt1 md-hide lg-hide">
         Discover adventures {{> ../icon/caret-down-small.snip.html}}
