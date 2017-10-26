@@ -14,11 +14,14 @@
   * limitations under the License.
   */
 
-/*
- * border
- *
- */
+.travel-search {
+  background-color: var(--purple);
+}
 
- .travel-border-gray {
-   border-color: var(--silver);
- }
+.travel-search-heading {
+  color: var(--white);
+}
+
+.travel-search .travel-link {
+  background-color: var(--white);
+}

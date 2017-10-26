@@ -21,7 +21,6 @@
  */
 @import '../../../templates/travel/elements/_border';
 @import '../../../templates/travel/elements/_btn';
-@import '../../../templates/travel/elements/_container';
 @import '../../../templates/travel/elements/_input-group';
 @import '../../../templates/travel/elements/_input';
 @import '../../../templates/travel/elements/_link';
@@ -35,3 +34,4 @@
 @import '../../../templates/travel/partials/footer/_footer';
 @import '../../../templates/travel/partials/featured/_featured';
 @import '../../../templates/travel/partials/icon/_icon';
+@import '../../../templates/travel/partials/search/_search';

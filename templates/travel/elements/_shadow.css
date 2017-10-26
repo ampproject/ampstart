@@ -14,17 +14,6 @@
  * limitations under the License.
  */
 
-.travel-shadow,
-.travel-shadow-hover {
+.travel-shadow{
   box-shadow: 0 0.4rem 1.1rem var(--box-shadow-color-light);
-}
-
-.travel-shadow-hover {
-  transition: box-shadow 250ms, transform 250ms;
-}
-
-.travel-shadow-hover:not([disabled]):hover,
-.travel-shadow-hover:not([disabled]):focus {
-  transform: scale(1.02) translateY(calc(0.02 / 1 * -100%));
-  box-shadow: 0 0.4rem 2rem var(--box-shadow-color-dark);
 }
