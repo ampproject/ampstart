@@ -29,10 +29,6 @@
   color: white;
 }
 
-.travel-icon:not(:root) {
-  overflow: visible;
-}
-
 .travel-img-icon-checkmark-purple {
   background-image: url(../../img/travel/icon/checkmark-purple.png);
 }
