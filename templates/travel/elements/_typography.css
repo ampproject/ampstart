@@ -14,22 +14,13 @@
  * limitations under the License.
  */
 
-.travel-semibold {
-  font-weight: 600;
-}
-
-.travel-spacing-wide {
-  letter-spacing: 0.2em;
-}
-
 .travel-spacing-medium {
   letter-spacing: 0.1em;
 }
 
 .travel-spacing-none {
-  letter-spacing: 1;
+  letter-spacing: normal;
 }
-
 /**
  * Overide ampstart-base heading line-heights
  */

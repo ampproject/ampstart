@@ -18,6 +18,7 @@
   transition: color .15s ease-in;
   color: var(--purple);
   text-decoration: none;
+  font-family: inherit;
   transition: color 0.15s ease-in;
 }
 
@@ -27,7 +28,7 @@
 
 .travel-link:focus {
   outline: none;
-  border-bottom: calc(2 / 16rem) solid var(--box-shadow-color);
+  border-bottom: calc(2 / 16rem) solid var(--gray);
 }
 
 .travel-link.gray, .travel-link.gray:visited {

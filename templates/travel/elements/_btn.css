@@ -1,5 +1,9 @@
 /**
+<<<<<<< HEAD
  * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+=======
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
+>>>>>>> namespaced classes, moved attr into basscss classes on elements, removed duplicate html elments, added copyright
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -24,18 +28,22 @@
  }
 
 .ampstart-btn[disabled] {
-  opacity: 0.5;
-  cursor: default;
+opacity: 0.5;
+cursor: default;
 }
 
 .ampstart-btn:not([disabled]):hover {
-  transform: scale(1.02) translateY(calc(0.02 / 1 * -100%));
-  box-shadow: 0 0.4rem 2rem var(--box-shadow-color-dark);
+transform: scale(1.02) translateY(calc(0.02 / 1 * -100%));
+box-shadow: 0 0.4rem 2rem var(--box-shadow-color-dark);
 }
 
 .ampstart-btn:not([disabled]):focus {
-  outline: none;
-  box-shadow: none;
+outline: none;
+box-shadow: none;
+}
+
+.ampstart-btn.bold {
+font-weight: var(--bold-font-weight);
 }
 
 .ampstart-btn.bold {
