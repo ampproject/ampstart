@@ -62,9 +62,35 @@
       },
       "content": "<blockquote>Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu in. Tellus at ut. Ac mi varius ut.</blockquote>"
     },
+    "otherExhibits": [{
+      "width": 233,
+      "height": 202,
+      "src": "../../img/gallery/plant.jpg",
+      "2x": "../../img/gallery/plant@2x.jpg",
+      "alt" : "house plant on a chair on a yellow background",
+      "title": "Untitled",
+      "artist": "Evan Ondre"
+    }, {
+      "width": 233,
+      "height": 202,
+      "src": "../../img/gallery/smoke.jpg",
+      "2x": "../../img/gallery/smoke@2x.jpg",
+      "alt" : "pink smoke",
+      "title": "Cage",
+      "artist": "Ellen Doe"
+    }, {
+      "width": 233,
+      "height": 202,
+      "src": "../../img/gallery/orange.jpg",
+      "2x": "../../img/gallery/orange@2x.jpg",
+      "alt" : "sliced orange covered in blue paint",
+      "title": "Short Circuit",
+      "artist": "Anna Moss"
+    }],
     "map": {
       "heading": "Visit the exhibition from <time datetime=\"2017-08-24\">Sept 24</time>-<time datetime=\"2017-08-29\">29</time>",
-      "subheading": "123 St Name <br/>City, State 12345",
+      "addressLineOne": "123 St Name",
+      "addressLineTwo": "City, State 12345",
       "button": {
         "text": "Buy Tickets"
       },

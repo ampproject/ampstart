@@ -21,39 +21,8 @@ limitations under the License.
   {{> ../../utils/amp-page-head.snip.html}}
   <body>
     <main id="content" class="gallery-base-content relative fit" role="main">
-      <svg
-        class="gallery-inner-background-1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 388 809"
-      >
-        <path
-          d="
-            M7,142.5 C7,245 124.5,286 124.5,373 C124.5,460 47.5,579.367391
-            47.5,679 C47.5,778.632609 140.5,802 198,802 C255.5,802 338,803.5
-            338,671.5 C338,539.5 321.5,560.5 321.5,444.5 C321.5,328.5 381,274
-            381,134 C381,-6 268.5,8 203,8 C137.5,8 7,40 7,142.5 Z
-          "
-          stroke="none"
-          fill="#F5F6FD"
-        ></path>
-      </svg>
-      <svg
-        class="gallery-inner-background-2"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1167 599"
-      >
-        <path
-          d="
-            M8,359.5 C8,503 64.5,538.5 185.5,538.5 C306.5,538.5 335.554256,508.5
-            471.5,508.5 C607.445744,508.5 737,594 879.5,594 C1022,594 1159,543.5
-            1159,299.5 C1159,55.5 1062.73379,5 902,5 C741.266207,5 689,220
-            568,220 C447,220 234.617034,147.5 143,147.5 C51.3829655,147.5 8,216
-            8,359.5 Z
-          "
-          stroke="none"
-          fill="#F5F6FD"
-        ></path>
-      </svg>
+      {{> ../../img/gallery/inner-background-primary.svg}}
+      {{> ../../img/gallery/inner-background-secondary.svg}}
       {{> ./partials/hero.snip.html}}
       <section class="gallery-base-section gallery-base-rich-text">
         <div class="gallery-base-container mx-auto">
@@ -169,37 +138,36 @@ limitations under the License.
           </div>
         </div>
       </section>
+
       <section class="gallery-base-section gallery-base-rich-text">
         <div class="gallery-base-container mx-auto">
           <h2 class="gallery-base-invert relative z1 pb2 mb2">Other Exibits</h2>
-          <ul class="related-section-items list-reset flex flex-wrap m0">
-            <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
-              <figure class="image-with-caption m0 relative mb4">
-                <amp-img src="../../img/gallery/plant.jpg" width="233" height="202" layout="responsive" class="gallery-recommended-image" alt="house plant on a chair on a yellow background"></amp-img>
-                <figcaption class="h5 mt1 px3">
-                  Untitled &mdash; Evan Ondre
-                </figcaption>
-              </figure>
-            </li>
-            <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
-              <figure class="image-with-caption m0 relative mb4">
-                <amp-img src="../../img/gallery/smoke.jpg" width="233" height="202" layout="responsive" class="gallery-recommended-image" alt="pink smoke"></amp-img>
-                <figcaption class="h5 mt1 px3">
-                  Cage &mdash; Ellen Doe
-                </figcaption>
-              </figure>
-            </li>
-            <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
-              <figure class="image-with-caption m0 relative mb4">
-                <amp-img src="../../img/gallery/orange.jpg" width="233" height="202" layout="responsive" class="gallery-recommended-image" alt="sliced orange covered in blue paint"></amp-img>
-                <figcaption class="h5 mt1 px3">
-                  Short Circuit &mdash; Anna Moss
-                </figcaption>
-              </figure>
-            </li>
+          <ul class="gallery-related-section-items list-reset flex flex-wrap m0">
+            {{#otherExhibits}}
+              <li class="col-12 sm-col-4 md-col-4 lg-col-4 pr2 py2">
+                <figure class="ampstart-image-with-caption m0 relative mb4">
+                  <amp-img
+                    width="{{width}}"
+                    height="{{height}}" 
+                    src="{{src}}"
+                    srcset="
+                      {{src}} 1x,
+                      {{2x}} 2x
+                    "
+                    alt="{{alt}}"
+                    layout="responsive"
+                    class="gallery-recommended-image"
+                  ></amp-img>
+                  <figcaption class="h5 mt1 px3">
+                    {{title}} &mdash; {{artist}}
+                  </figcaption>
+                </figure>
+              </li>
+            {{/otherExhibits}}
           </ul>
         </div>
       </section>
+
       {{> ./partials/map.snip.html}}
     </main>
   </body>

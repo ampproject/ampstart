@@ -66,10 +66,11 @@ body {
   font-size: calc((32 / 16) * 1rem);
 }
 
-.gallery-base-rich-text h3 {
+.gallery-base-rich-text address {
   font-family: var(--font-family-secondary);
   letter-spacing: 0.05rem;
   font-size: calc((18 / 16) * 1rem);
+  font-style: normal;
 }
 
 .gallery-base-rich-text p {
@@ -246,7 +247,7 @@ body {
   object-fit: cover;
 }
 
-.related-section-items li:first-child .gallery-recommended-image {
+.gallery-related-section-items li:first-child .gallery-recommended-image {
   transform: matrix3d(1.534047, 0.12295, 0, 0.001049,
                     0.081503, 1.335949, 0, 0.000489,
                     0, 0, 1, 0,
@@ -254,7 +255,7 @@ body {
   box-shadow: 1vh 6vh 5vh var(--color-shadow);
 }
 
-.related-section-items li:nth-child(2) .gallery-recommended-image {
+.gallery-related-section-items li:nth-child(2) .gallery-recommended-image {
   transform: matrix3d(1.104404, -0.050629, 0, 0.000115,
                   0.223984, 1.35379, 0, 0.000809,
                   0, 0, 1, 0,
@@ -263,7 +264,7 @@ body {
   box-shadow: 0.5vh 3vh 4vh var(--color-shadow);
 }
 
-.related-section-items li:nth-child(3) .gallery-recommended-image {
+.gallery-related-section-items li:nth-child(3) .gallery-recommended-image {
   transform: matrix3d(0.819634, -0.109733, 0, -0.000154,
                   -0.11382, 0.81154, 0, -0.000399,
                   0, 0, 1, 0,
@@ -279,16 +280,16 @@ body {
   transition: box-shadow 0.2s ease-in-out;
 }
 
-.image-with-caption {
+.ampstart-image-with-caption {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-.related-section-items li:hover .image-with-caption {
+.gallery-related-section-items li:hover .ampstart-image-with-caption {
   transform: translateY(-0.5vh) scale(1.05);
 }
 
-.related-section-items li:hover .gallery-recommended-image {
+.gallery-related-section-items li:hover .gallery-recommended-image {
   box-shadow: 1.5vh 7vh 6vh var(--color-shadow);
 }
 

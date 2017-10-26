@@ -95,7 +95,7 @@
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' fill='%23000' viewBox='0 0 18 18'%3E%3Cpath d='M15 8.25H5.87l4.19-4.19L9 3 3 9l6 6 1.06-1.06-4.19-4.19H15v-1.5z'/%3E%3C/svg%3E");
 }
 
-@media (max-width: 40.06rem) {
+@media (--breakpoint-xs) {
   .gallery-component-hero-carousel .amp-carousel-button {
     width: 40px;
     height: 55px;

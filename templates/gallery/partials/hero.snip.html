@@ -20,34 +20,14 @@ limitations under the License.
   <header class="gallery-component-hero clearfix">
     <div class="gallery-base-container mx-auto">
       <div class="gallery-component-hero-content absolute left-0 right-0 z1">
-        <h1
-          class="gallery-component-hero-heading"
-        >
-          {{heading}}
-        </h1>
-        <div
-          class="gallery-component-hero-subheading"
-        >
-          {{{subheading}}}
-        </div>
-        <div
-          class="gallery-component-hero-action"
-        >
-          {{> ./button.snip.html}}
-        </div>
+        <h1 class="gallery-component-hero-heading">{{heading}}</h1>
+        <div class="gallery-component-hero-subheading">{{{subheading}}}</div>
+        <div class="gallery-component-hero-action">{{> ./button.snip.html}}</div>
       </div>
     </div>
     {{#carousel}}
-    <div
-      class="gallery-component-hero-carousel"
-    >
-      <amp-carousel
-        height="{{height}}"
-        layout="fixed-height"
-        type="carousel"
-        autoplay
-        loop
-      >
+    <div class="gallery-component-hero-carousel">
+      <amp-carousel height="{{height}}" layout="fixed-height" type="carousel" autoplay loop>
         {{#images}}
           <amp-img
             src="{{src}}"

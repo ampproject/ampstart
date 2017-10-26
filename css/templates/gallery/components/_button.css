@@ -21,14 +21,14 @@
   font-size: 1.1rem;
   letter-spacing: 0.02em;
   font-weight: 600;
-  background: var(--color-primary);
   border: 1px solid var(--color-primary);
   color: var(--color-white);
-  -webkit-font-smoothing: antialiased;
   transition: transform 0.1s, box-shadow 0.1s;
   box-shadow: 0 0.3rem 1rem rgba(6, 7, 22, 0.1);
-  cursor: pointer;
-  white-space: nowrap;
+}
+
+button.ampstart-btn {
+  line-height: 0;
 }
 
 .ampstart-btn:hover {
