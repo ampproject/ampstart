@@ -46,7 +46,7 @@
   height: var(--input-line-height);
   margin-bottom: calc(var(--input-line-height) * -1);
   width: 8rem;
-  color: currentColor;
+  color: inherit;
 }
 
 .travel-date-input-touched input,
