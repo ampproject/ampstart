@@ -49,6 +49,42 @@ h4,
   line-height: var(--line-height-2);
 }
 
+.ampstart-title-lg {
+  font-size: var(--h0);
+  line-height: var(--line-height-1);
+  letter-spacing: normal;
+}
+
+.ampstart-title-md {
+  font-size: var(--h1);
+  line-height: var(--line-height-4);
+  letter-spacing: normal;
+}
+
+.ampstart-title-sm {
+  font-size: var(--h4);
+  line-height: var(--line-height-1);
+  letter-spacing: .2px;
+}
+
+.ampstart-subtitle {
+  color: var(--color-font-primary);
+  font-size: var(--h5);
+  line-height: var(--line-height-1);
+  letter-spacing: normal;
+}
+
+.ampstart-caption {
+  font: 400 var(--h6)/var(--line-height-2) var(--font-primary);
+  letter-spacing: normal;
+}
+
+.land-see-page-navigation,
+.land-see-page-navigation h3,
+.land-see-page-navigation button {
+  font: 400 var(--h7)/var(--line-height-4) var(--font-navigation);
+}
+
 .land-see-section-header {
   font: 600 var(--h7)/var(--line-height-3) var(--font-navigation);
   color: var(--color-font-primary);
@@ -112,11 +148,10 @@ h4,
 
 .land-see-sidebar-nav-item {
   font-family: var(--font-secondary);
-  font-size: var(--h4);
-  font-weight: bold;
+  color: var(--color-font-primary);
   text-transform: capitalize;
   letter-spacing: .6px;
-  color: var(--color-font-primary);
+  line-height: var(--line-height-4);
 }
 
 .ampstart-dropdown-item {
@@ -460,23 +495,22 @@ h4,
   }
 }
 
+.land-see-post-title {
+  font-weight: 600;
+}
+
 .land-see a.land-see-post-category {
-  font: 400 var(--h7)/var(--line-height-4) var(--font-navigation);
   color: var(--color-font-accent);
   letter-spacing: 1.4px;
 }
 
 .land-see-post-item h4 {
-  font: 600 var(--h4)/var(--line-height-1) var(--font-secondary);
+  font-family: var(--font-secondary);
   color: var(--color-font-primary);
 }
 
 .land-see-post-item h4 a:hover {
   opacity: .77;
-}
-
-.land-see-post-item p {
-  font: 400 var(--h6)/var(--line-height-2) var(--font-primary);
 }
 
 /* Instagram/Sale CTAs */
@@ -626,13 +660,14 @@ h4,
 }
 
 .land-see-hero-title {
-  font: 400 var(--h1)/var(--line-height-1) var(--font-primary);
-  letter-spacing: normal;
+  line-height: var(--line-height-1);
+  font-family: var(--font-primary);
 }
 
 .land-see-hero-caption {
   width: 28rem;
-  font: 400 var(--h7)/var(--line-height-1) var(--font-primary);
+  font-size: var(--h7);
+  line-height: var(--line-height-1);
   opacity: .7;
 }
 
@@ -699,7 +734,8 @@ h4,
   }
 
   .land-see-hero-title {
-    font: 600 var(--h0)/var(--line-height-1) var(--font-primary);
+    font-weight: 600;
+    font-size: var(--h0);
   }
 
   .land-see-hero-caption {
@@ -737,7 +773,7 @@ h4,
 /********** Stories Template **********/
 
 .land-see-category h1 {
-  font: 500 var(--h1)/var(--line-height-4) var(--font-primary);
+  font-family: var(--font-primary);
   color: var(--color-font-primary);
 }
 
@@ -776,7 +812,6 @@ h4,
 
 .land-see-next-page,
 .land-see-prev-page {
-  font: 400 var(--h7)/var(--line-height-4) var(--font-navigation);
   color: var(--color-font-accent);
   letter-spacing: 1.4px;
   border: none;
@@ -882,22 +917,20 @@ h4,
   text-align: center;
 }
 
-.land-see-story-detail .land-see-hero-title {
-  font: 600 var(--h0)/var(--line-height-1) var(--font-primary);
-}
-
 .land-see-story-detail .land-see-hero-title,
-.land-see-story-detail .land-see-hero-caption,
-.land-see-story-subheader {
+.land-see-story-detail .land-see-hero-caption {
   color: var(--color-font-primary);
 }
 
 .land-see-story-detail .land-see-hero-caption {
+  font-size: var(--h6);
+  line-height: var(--line-height-2);
   width: auto;
 }
 
-.land-see-story-subheader {
-  font: 600 var(--h5)/var(--line-height-1) var(--font-secondary);
+.land-see-story-subtitle {
+  font-family: var(--font-secondary);
+  font-weight: 600;
   margin-bottom: -0.5rem;
 }
 
@@ -961,7 +994,6 @@ h4,
 
 .land-see-story-social-share-heading {
   float: left;
-  font: 400 var(--h7)/var(--line-height-4) var(--font-navigation);
   color: var(--color-font-accent);
   text-transform: uppercase;
   padding-top: .5rem;

@@ -33,7 +33,7 @@
     },
     "nav": [
       {
-        "link": {"url": "stories.amp.html", "nav-item-classes": "land-see-sidebar-nav-item", "text": "Stories"},
+        "link": {"url": "stories.amp.html", "nav-item-classes": "land-see-sidebar-nav-item ampstart-title-sm bold", "text": "Stories"},
         "dropdown": {
           "initial-state": "expanded",
           "heading": "Stories",
@@ -60,13 +60,13 @@
         }
       },
       {
-        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item", "text": "Shop"}
+        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item ampstart-title-sm bold", "text": "Shop"}
       },
       {
-        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item", "text": "About"}
+        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item ampstart-title-sm bold", "text": "About"}
       },
       {
-        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item", "text": "Contact"}
+        "link": {"url": "#", "nav-item-classes": "land-see-sidebar-nav-item ampstart-title-sm bold", "text": "Contact"}
       }
     ],
     "social-follow": {
