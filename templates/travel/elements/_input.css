@@ -27,10 +27,11 @@
  */
 .travel-input {
   padding: var(--input-padding-y) var(--input-padding-x);
+  line-height: var(--input-line-height);
   background-color: var(--white);
   border-width: var(--border-width);
   border-style: solid;
-  color: currentColor;
+  color: inherit;
 }
 
 .travel-input:not(.border) {

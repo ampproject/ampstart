@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-.travel-icon, [class^="travel-img-icon"] {
+.travel-icon {
   display: inline-block;
   vertical-align: -23%;
   height: var(--icon-size);
@@ -23,10 +23,6 @@
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto var(--icon-size);
-}
-
-.travel-icon:not(:root) {
-  overflow: visible;
 }
 
 .travel-icon-logo {
