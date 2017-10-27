@@ -24,24 +24,55 @@
         }, {
           "src": "../../img/travel/hero-1.jpg"
         }],
-        "apply-button-props": {
-          "ui_reset": false,
-          "ui_filterPane": false,
-          "query_query": "fields_query",
-          "fields_query_edited": false,
-          "query_departure": "fields_departure",
-          "fields_departure_edited": false,
-          "query_return": "fields_return",
-          "fields_return_edited": false,
-          "query_maxPrice": "fields_maxPrice",
-          "fields_maxPrice_edited": false,
-          "query_city": "fields_city",
-          "fields_city_edited": false,
-          "query_type": "fields_type",
-          "fields_type_edited": false,
-          "query_sort": "fields_sort",
-          "fields_sort_edited": false
-        }
+        "apply-button-props": [{
+            "key": "ui_reset",
+            "value": "false"
+          }, {
+            "key": "ui_filterPane",
+            "value": "false"
+          }, {
+            "key": "query_query",
+            "value": "fields_query"
+          }, {
+            "key": "fields_query_edited",
+            "value": "false"
+          }, {
+            "key": "query_departure",
+            "value": "fields_departure"
+          }, {
+            "key": "fields_departure_edited",
+            "value": "false"
+          }, {
+            "key": "query_return",
+            "value": "fields_return"
+          }, {
+            "key": "fields_return_edited",
+            "value": "false"
+          }, {
+            "key": "query_maxPrice",
+            "value": "fields_maxPrice"
+          }, {
+            "key": "fields_maxPrice_edited",
+            "value": "false"
+          }, {
+            "key": "query_city",
+            "value": "fields_city"
+          }, {
+            "key": "fields_city_edited",
+            "value": "false"
+          }, {
+            "key": "query_type",
+            "value": "fields_type"
+          }, {
+            "key": "fields_type_edited",
+            "value": "false"
+          }, {
+            "key": "query_sort",
+            "value": "fields_sort"
+          }, {
+            "key": "fields_sort_edited",
+            "value": "false"
+        }]
       }
     }
   }
