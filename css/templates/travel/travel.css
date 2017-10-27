@@ -19,20 +19,20 @@
 /*
  * Custom elements.
  */
-@import '../../../templates/travel/elements/_activity-type-color';
-@import '../../../templates/travel/elements/_container';
-@import '../../../templates/travel/elements/_link';
-@import '../../../templates/travel/elements/_pill';
-@import '../../../templates/travel/elements/_shadow';
-@import '../../../templates/travel/elements/_typography';
+@import 'elements/_activity-type-color';
+@import 'elements/_container';
+@import 'elements/_link';
+@import 'elements/_pill';
+@import 'elements/_shadow';
+@import 'elements/_typography';
 
 /*
  * Template partials.
  */
-@import '../../../templates/travel/partials/activities/_activities';
-@import '../../../templates/travel/partials/angles/_angles';
-@import '../../../templates/travel/partials/discover/_discover';
-@import '../../../templates/travel/partials/icon/_icon';
-@import '../../../templates/travel/partials/like/_like';
-@import '../../../templates/travel/partials/popular/_popular';
-@import '../../../templates/travel/partials/results/_results';
+@import 'components/_activities';
+@import 'components/_angles';
+@import 'components/_discover';
+@import 'components/_icon';
+@import 'components/_like';
+@import 'components/_popular';
+@import 'components/_results';
