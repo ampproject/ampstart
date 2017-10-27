@@ -74,6 +74,16 @@
   animation: fade 0.8s ease-out both;
 }
 
+.travel-hero-bg::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 70vmax;
+  top: calc(70vmax - 300px);
+  background-image: linear-gradient(180deg, transparent 0%, var(--black) 300px);
+}
+
 .travel-hero-bg-img {
   top: -5vmax;
   right: -5vmax;
@@ -105,12 +115,6 @@
   animation: 18s travel-hero-scene3 linear 12s infinite;
   background: url('../../img/travel/hero-1-preview.jpg') no-repeat 50% 50%;
   background-size: cover;
-}
-
-.travel-hero-bg-fade {
-  height: 70vmax;
-  top: calc(70vmax - 300px);
-  background-image: linear-gradient(180deg, transparent 0%, var(--black) 300px);
 }
 
 .travel-hero-content {
