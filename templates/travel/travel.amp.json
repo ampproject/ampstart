@@ -1,19 +1,70 @@
 {
   "travel": {
+    "data": {
+      "types": [
+        {"text": "Active", "value": "active", "icon": {"run": true}},
+        {"text": "Artistic", "value": "artistic", "icon": {"paintbrush": true}},
+        {"text": "Drinks", "value": "drinks", "icon": {"cocktail": true}},
+        {"text": "Fashion", "value": "fashion", "icon": {"jacket": true}},
+        {"text": "Food", "value": "food", "icon": {"cutlery": true}},
+        {"text": "Music", "value": "music", "icon": {"guitar": true}},
+        {"text": "Nature", "value": "nature", "icon": {"pine": true}},
+        {"text": "Nightlife", "value": "nightlife", "icon": {"moon": true}},
+        {"text": "Tours", "value": "tours", "icon": {"bus": true}},
+        {"text": "Water", "value": "water", "icon": {"boat": true}}
+      ]
+    },
     "head-tag": {
       "title": "Travel Template",
       "canonical-path": "templates/travel/travel.amp",
       "extensions": [
-        "amp-list",
         "amp-bind"
       ],
       "templates": [
         "amp-mustache"
       ],
-      "css-path": "templates/travel/page.css",
+      "css-path": "templates/travel/travel.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
       ]
+    },
+    "partials": {
+      "popular": {
+        "adventures": [{
+          "layout-classes": ["travel-popular-tilt-right"],
+          "href": "#",
+          "width": 346,
+          "height": 200,
+          "src": "../../img/travel/activity/surf.jpg",
+          "text": "Surf Day. Board and Wetsuits Included in Price!",
+          "price": "100",
+          "reviews": "241 Reviews",
+          "place": "Oaxaca",
+          "new" : false
+        }, {
+          "layout-classes": ["travel-results-result relative"],
+          "href": "#",
+          "width": 346,
+          "height": 200,
+          "src": "../../img/travel/activity/music-show.jpg",
+          "text": "Discover Oaxaca's Electronic Music Scene with a Top DJ",
+          "price": "113",
+          "reviews": "42 Reviews",
+          "place": "Oaxaca",
+          "new" : true
+        }, {
+          "layout-classes": ["travel-popular-tilt-left"],
+          "href": "#",
+          "width": 346,
+          "height": 200,
+          "src": "../../../img/travel/activity/skate.jpg",
+          "text": "Skateboard Around the City",
+          "price": "92",
+          "reviews": "17 Reviews",
+          "place": "Mexico City",
+          "new" : false
+        }]
+      }
     }
   }
 }
