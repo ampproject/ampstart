@@ -157,6 +157,7 @@
 
 .travel-hero-discover {
   color: var(--gray);
+  cursor: pointer;
   animation: fade-and-slideup 0.4s 0.45s ease-in-out both;
 }
 
