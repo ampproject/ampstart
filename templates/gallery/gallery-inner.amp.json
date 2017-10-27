@@ -1,0 +1,103 @@
+{
+  "gallery": {
+    "head-tag": {
+      "title": "Gallery Template",
+      "canonical-path": "templates/gallery-inner.amp",
+      "extensions": [
+        "amp-iframe",
+        "amp-carousel",
+        "amp-sidebar"
+      ],
+      "css-path": "templates/gallery/page.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Poppins:300,400,600",
+        "https://fonts.googleapis.com/css?family=Oswald:400"
+      ]
+    },
+    "hero": {
+      "heading": "Living Tree",
+      "subheading": "<time datetime=\"2017-08-24\">Sept 24</time>-<time datetime=\"2017-08-29\">29</time> / Anna Moss",
+      "button": {
+        "text": "Buy Tickets"
+      },
+      "carousel": {
+        "height": 316,
+        "images": [{
+          "width": 210,
+          "height": 316,
+          "src": "../../img/gallery/court.jpg",
+          "2x": "../../img/gallery/court@2x.jpg",
+          "alt": "outdoor basketball court"
+        }, {
+          "width": 361,
+          "height": 316,
+          "src": "../../img/gallery/corner.jpg",
+          "2x": "../../img/gallery/corner@2x.jpg",
+          "alt": "corner of a building"
+        }, {
+          "width": 211,
+          "height": 316,
+          "src": "../../img/gallery/lamp.jpg",
+          "2x": "../../img/gallery/lamp@2x.jpg",
+          "alt": "pink lamp on a blue background"
+        }, {
+          "width": 316,
+          "height": 316,
+          "src": "../../img/gallery/plant.jpg",
+          "2x": "../../img/gallery/plant@2x.jpg",
+          "alt": "house plant on chair on yellow background"
+        }, {
+          "width": 517,
+          "height": 316,
+          "src": "../../img/gallery/stripe.jpg",
+          "2x": "../../img/gallery/stripe@2x.jpg",
+          "alt": "striped building"
+        }, {
+          "width": 473,
+          "height": 316,
+          "src": "../../img/gallery/hall.jpg",
+          "2x": "../../img/gallery/hall@2x.jpg",
+          "alt": "colourful hallway"
+        }]
+      },
+      "content": "<blockquote>Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu in. Tellus at ut. Ac mi varius ut.</blockquote>"
+    },
+    "otherExhibits": [{
+      "width": 233,
+      "height": 202,
+      "src": "../../img/gallery/plant.jpg",
+      "2x": "../../img/gallery/plant@2x.jpg",
+      "alt" : "house plant on a chair on a yellow background",
+      "title": "Untitled",
+      "artist": "Evan Ondre"
+    }, {
+      "width": 233,
+      "height": 202,
+      "src": "../../img/gallery/smoke.jpg",
+      "2x": "../../img/gallery/smoke@2x.jpg",
+      "alt" : "pink smoke",
+      "title": "Cage",
+      "artist": "Ellen Doe"
+    }, {
+      "width": 233,
+      "height": 202,
+      "src": "../../img/gallery/orange.jpg",
+      "2x": "../../img/gallery/orange@2x.jpg",
+      "alt" : "sliced orange covered in blue paint",
+      "title": "Short Circuit",
+      "artist": "Anna Moss"
+    }],
+    "map": {
+      "heading": "Visit the exhibition from <time datetime=\"2017-08-24\">Sept 24</time>-<time datetime=\"2017-08-29\">29</time>",
+      "addressLineOne": "123 St Name",
+      "addressLineTwo": "City, State 12345",
+      "button": {
+        "text": "Buy Tickets"
+      },
+      "marker": {
+        "lat": 37.422,
+        "lng": -122.084
+      }
+    }
+  }
+}
