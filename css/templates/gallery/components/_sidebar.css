@@ -29,22 +29,9 @@
   transition: transform 300ms cubic-bezier(0,0,.21,1), box-shadow 300ms;
 }
 
-/*.gallery-sidebar-content {
-  padding: calc(18 / 16rem);
-  padding-right: 0;
-  margin-right: -20vw;
-  transform: translateX(100%);
-  transition: transform 300ms cubic-bezier(0,0,.21,1);
-  background: white;
-}*/
-
 .gallery-sidebar[open] {
   box-shadow: 0 0 2rem var(--color-shadow);
 }
-
-/*.gallery-sidebar[open] > .ampstart-sidebar-nav {
-  transform: translateX(0);
-}*/
 
 /*
  * Increase the header margin when _both_ the screen width and height are
@@ -163,21 +150,9 @@
   position: relative;
 }
 
-/*.ampstart-nav-item {
-  margin-left: calc(-18 / 16rem);
-  padding-left: calc(18 / 16rem);
-}*/
-
 .ampstart-nav-item {
   margin-left: calc(-40 / 16rem);
 }
-
-/*@media (--breakpoint-sm) and (--breakpoint-v-sm) {
-  .ampstart-nav-item {
-    margin-left: calc(-40 / 16rem);
-    padding-left: calc(40 / 16rem);
-  }
-}*/
 
 .ampstart-nav-link::after {
   content: "";

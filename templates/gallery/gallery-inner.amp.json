@@ -8,10 +8,70 @@
         "amp-carousel",
         "amp-sidebar"
       ],
-      "css-path": "templates/gallery/page.css",
+      "css-path": "templates/gallery/gallery-inner.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Poppins:300,400,600",
         "https://fonts.googleapis.com/css?family=Oswald:400"
+      ]
+    },
+    "navbar": {
+      "svg-trigger": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='36' height='36'><path fill='currentColor' d='M9 12h18v1H9z'/><path fill='currentColor' d='M9 17h18v1H9z'/><path fill='currentColor' d='M9 22h18v1H9z'/></svg>",
+      "sidebar-id": "sidebar",
+      "sidebaronly": true,
+      "sidebarclasses": ["gallery-sidebar"],
+      "sidebartitle": {
+        "title": "Current Exhibitions"
+      },
+      "nav": [
+        {
+          "link": {
+            "nav-item-classes": ["gallery-sidebar-nav-item"],
+            "url": "./gallery-inner.amp.html",
+            "text": "<div class='gallery-sidebar-nav-item-text'>Home</div><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+          }
+        },
+        {
+          "link": {
+            "nav-item-classes": ["gallery-sidebar-nav-item"],
+            "url": "./gallery-inner.amp.html",
+            "text": "<div class='gallery-sidebar-nav-item-text'>Untitled<br/>Evan Ondre</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/smoke.jpg' srcset='../../img/gallery/smoke.jpg 1x, ../../img/gallery/smoke@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+          }
+        },
+        {
+          "link": {
+            "nav-item-classes": ["gallery-sidebar-nav-item"],
+            "url": "./gallery-inner.amp.html",
+            "text": "<div class='gallery-sidebar-nav-item-text'>Cage<br/>Ellen Doe</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/court.jpg' srcset='../../img/gallery/court.jpg 1x, ../../img/gallery/court@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+          }
+        },
+        {
+          "link": {
+            "nav-item-classes": ["gallery-sidebar-nav-item"],
+            "url": "./gallery-inner.amp.html",
+            "text": "<div class='gallery-sidebar-nav-item-text'>Living Tree<br/>David Beck</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/orange.jpg' srcset='../../img/gallery/orange.jpg 1x, ../../img/gallery/orange@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+          }
+        },
+        {
+          "link": {
+            "nav-item-classes": ["gallery-sidebar-nav-item"],
+            "url": "./gallery-inner.amp.html",
+            "text": "<div class='gallery-sidebar-nav-item-text'>Short Circuit<br/>Anna Moss</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/lamp.jpg' srcset='../../img/gallery/lamp.jpg 1x, ../../img/gallery/lamp@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+          }
+        },
+        {
+          "link": {
+            "nav-item-classes": ["gallery-sidebar-nav-item"],
+            "url": "./gallery-inner.amp.html",
+            "text": "<div class='gallery-sidebar-nav-item-text'>Geo Breakfast<br/>Terra Morales</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/balloon.jpg' srcset='../../img/gallery/balloon.jpg 1x, ../../img/gallery/balloon@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+          }
+        },
+        {
+          "link": {
+            "nav-item-classes": ["gallery-sidebar-nav-item"],
+            "url": "./gallery-inner.amp.html",
+            "text": "<div class='gallery-sidebar-nav-item-text'>Flying Pigs<br/>Brad Parker</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/plant.jpg' srcset='../../img/gallery/plant.jpg 1x, ../../img/gallery/plant@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+          }
+        }
       ]
     },
     "hero": {
