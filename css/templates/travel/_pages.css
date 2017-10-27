@@ -2,7 +2,7 @@
  * In-page animations
  ******************************************************************************/
 
- @keyframes fade-and-slideup {
+@keyframes fade-and-slideup {
   from {
     opacity: 0;
     transform: translateY(2rem);

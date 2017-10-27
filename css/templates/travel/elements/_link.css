@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +14,26 @@
  * limitations under the License.
  */
 
-@import './page';
+.travel-link, .travel-link:visited {
+  transition: color .15s ease-in;
+  color: var(--purple);
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
 
-/*
- * Custom elements.
- */
-@import 'elements/_activity-type-color';
-@import 'elements/_container';
-@import 'elements/_link';
-@import 'elements/_pill';
-@import 'elements/_shadow';
-@import 'elements/_typography';
+.travel-link:hover {
+  color: #b99aef;
+}
 
-/*
- * Template partials.
- */
-@import 'components/_activities';
-@import 'components/_angles';
-@import 'components/_discover';
-@import 'components/_icon';
-@import 'components/_like';
-@import 'components/_popular';
-@import 'components/_results';
+.travel-link:focus {
+  outline: none;
+  border-bottom: 2px solid var(--box-shadow-color);
+}
+
+.travel-link.gray, .travel-link.gray:visited {
+  color: var(--gray);
+}
+
+.travel-link.gray:hover {
+  color: #b4b4b4;
+}

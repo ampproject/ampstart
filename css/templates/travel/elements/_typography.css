@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,25 +14,10 @@
  * limitations under the License.
  */
 
-@import './page';
-
-/*
- * Custom elements.
+/**
+ * Overide ampstart-base heading line-heights
  */
-@import 'elements/_activity-type-color';
-@import 'elements/_container';
-@import 'elements/_link';
-@import 'elements/_pill';
-@import 'elements/_shadow';
-@import 'elements/_typography';
-
-/*
- * Template partials.
- */
-@import 'components/_activities';
-@import 'components/_angles';
-@import 'components/_discover';
-@import 'components/_icon';
-@import 'components/_like';
-@import 'components/_popular';
-@import 'components/_results';
+h1.line-height-2, h2.line-height-2, h3.line-height-2, h4.line-height-2, h5.line-height-2, h6.line-height-2,
+.h1.line-height-2, .h2.line-height-2, .h3.line-height-2, .h4.line-height-2, .h5.line-height-2, .h6.line-height-2 {
+  line-height: var(--line-height-2);
+}

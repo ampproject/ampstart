@@ -58,5 +58,6 @@
 }
 
 .travel-img-icon-star-silver {
+  overflow: visible;
   background-image: url(../../img/travel/icon/star-silver.png);
 }
