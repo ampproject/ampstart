@@ -16,7 +16,7 @@
 
 
 .gallery-component-hero {
-  margin-bottom: calc(60 / 16rem);
+  margin-bottom: calc(60 / 16rem); /* offset the height of map iframe component */
 }
 
 .gallery-component-hero-content,
