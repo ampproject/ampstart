@@ -12,7 +12,7 @@
 | templates/themes_1/page.css   | 25525                | 25.52 KB |
 | templates/themes_2/page.css   | 24446                | 24.45 KB |
 | templates/thescenic/page.css  | 23965                | 23.96 KB |
-| templates/travel/page.css     | 14709                | 14.71 KB |
+| templates/travel/page.css     | 20757                | 20.76 KB |
 | www/components/page.css       | 22903                | 22.90 KB |
 | www/getstarted/page.css       | 18573                | 18.57 KB |
 | www/howitworks/page.css       | 18573                | 18.57 KB |
