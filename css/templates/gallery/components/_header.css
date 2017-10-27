@@ -51,43 +51,6 @@
   border: none;
 }
 
-.gallery-header-menu-button {
-  flex: none;
-  cursor: pointer;
-  padding: calc(10 / 16rem);
-  margin: calc(-10 / 16rem);
-  transition: 150ms background-color ease-in;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-.gallery-header-menu-button:hover {
-  background: #fff;
-}
-
-.gallery-header-menu-button:active,
-.gallery-header-menu-button:focus {
-  background: #aaa;
-  outline: none;
-}
-
-.gallery-header-menu-button:hover svg g {
-  fill: #000;
-}
-
-.gallery-header-menu-button svg {
-  display: block;
-  width: calc(18 / 16rem);
-  height: calc(18 / 16rem);
-}
-
-.gallery-header-menu-button::before {
-  bottom: calc(5 / 16rem);
-}
-
-.gallery-header-menu-button::after {
-  top: calc(5 / 16rem);
-}
-
 .gallery-header-rotate {
   display: none;
   flex: none;
