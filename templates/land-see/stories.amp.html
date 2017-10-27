@@ -103,7 +103,7 @@ limitations under the License.
 
     {{#stories-category}}
     <section class="land-see-category land-see-recent-content relative mx-auto mb2">
-      <h1 class="center pt1">Stories</h1>
+      <h1 class="ampstart-title-md center pt1">Stories</h1>
       <div [class]="selectedContainerClass" class="land-see-categories-nav-page-load center mb2 mx1 fit relative fit">
         <div class="land-see-categories-inner-nav nowrap">
           {{#category}}
@@ -180,17 +180,17 @@ limitations under the License.
                   data-videoid="<%videoid%>">
                 </amp-youtube>
                 <%/youtube%>
-                <a class="land-see-post-category inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
-                <h4 class="pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
+                <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
+                <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
                 <%#post-copy%>
-                <p class="pt1 pb3"><%{post-copy}%></p>
+                <p class="ampstart-caption pt1 pb3"><%{post-copy}%></p>
                 <%/post-copy%>
               </li>
               <%/land-see-category%>
             </ul>
             <%#land-see-paging%>
             <div class="pt4 clearfix"></div>
-            <div class="land-see-paging mt4 mx2 fit <%classes%>">
+            <div class="land-see-paging land-see-page-navigation mt4 mx2 fit <%classes%>">
               <%#page-nav%>
               <button on="<%action%>" class="<%classes%>"><%button-text%></button>
               <%/page-nav%>

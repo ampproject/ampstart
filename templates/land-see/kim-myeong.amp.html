@@ -59,18 +59,18 @@ limitations under the License.
     <section class="land-see-story-detail relative mx-auto mb4 pt2">
       {{#land-see-post-detail}}
       <div class="mx-auto center {{post-classes}}">
-        <a class="land-see-post-category underline caps max-width-1 pb1" href="{{post-category-url}}">{{post-category}}</a>
-        <h1 class="land-see-hero-title pt2 mx2"><a class="text-decoration-none" href="{{post-url}}">{{{post-title}}}</a></h1>
-        <p class="land-see-hero-caption mx-auto max-width-2 pt1 px2 mb3">
+        <a class="land-see-post-category land-see-page-navigation underline caps max-width-1 pb1" href="{{post-category-url}}">{{post-category}}</a>
+        <h1 class="land-see-hero-title ampstart-title-lg bold pt2 mx2"><a class="text-decoration-none" href="{{post-url}}">{{{post-title}}}</a></h1>
+        <p class="land-see-hero-caption ampstart-caption mx-auto max-width-2 pt1 px2 mb3">
           {{{post-copy}}}
         </p>
       </div>
       {{/land-see-post-detail}}
 
       {{#land-see-copy}}
-        {{#subheader}}
-        <h2 class="land-see-story-subheader max-width-3 mx-auto pb0 pt4 px4">{{.}}</h2>
-        {{/subheader}}
+        {{#subtitle}}
+        <h2 class="land-see-story-subtitle ampstart-subtitle bold max-width-3 mx-auto pb0 pt4 px4">{{.}}</h2>
+        {{/subtitle}}
         {{#paragraph}}
         <p class="land-see-story-copy max-width-3 mx-auto py2 px4">
           {{{.}}}
@@ -173,7 +173,7 @@ limitations under the License.
 
     {{#land-see-story-nav}}
     <section class="land-see-story-nav mx-auto center px1 relative z2">
-      <div class="land-see-paging mb4 flex flex-wrap clearfix">
+      <div class="land-see-paging land-see-page-navigation mb4 flex flex-wrap clearfix">
         <div class="sm-col sm-col-3 col-6 left-align"><a href="{{previous-url}}" class="land-see-prev-page mt2 ml2 inline-block relative">Previous Story</a></div>
         <div class="land-see-story-social flex flex-auto align-top pt1 justify-center">
             {{> ../../components/social-follow/social-follow.snip.html}}
