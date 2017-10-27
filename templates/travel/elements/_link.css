@@ -27,7 +27,7 @@
 
 .travel-link:focus {
   outline: none;
-  border-bottom: calc(2 / 16rem) solid var(--box-shadow-color);
+  border-bottom: 2px solid var(--box-shadow-color);
 }
 
 .travel-link.gray, .travel-link.gray:visited {

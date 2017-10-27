@@ -30,7 +30,7 @@
 }
 
 .travel-angle-1 {
-  height: calc(800 / 16rem);
+  height: 800px;
   transform: translate(-50%, -3rem) rotate(20deg);
   background-color: #FAFBFC;
 }
@@ -43,7 +43,7 @@
 }
 
 .travel-angle-2 {
-  height: calc(1400 / 16rem);
+  height: 1400px;
   transform: translate(-50%, 16rem) rotate(20deg);
   background-color: var(--white);
 }
@@ -55,7 +55,7 @@
 }
 
 .travel-angle-3 {
-  height: calc(500 / 16rem);
+  height: 500px;
   transform: translate(-50%, 1rem) rotate(-5deg);
   background-image: linear-gradient(90deg, color(#CFE0E7 a(0.2)) 20%, color(#F3F6F7 a(0.4)) 50%);
 }

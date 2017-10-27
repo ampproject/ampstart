@@ -23,7 +23,7 @@
 
 .travel-activities-activity .circle {
   background-color: var(--white);
-  margin-bottom: calc(2 / 16rem);
+  margin-bottom: 2px;
 }
 
 .travel-activities-activity:hover,
@@ -62,10 +62,10 @@
 
 .travel-activities-activity-icon {
   display: flex;
-  width: calc(70 / 16rem);
-  height: calc(70 / 16rem);
+  width: 70px;
+  height: 70px;
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  font-size: 2rem;
+  font-size: var(--h1);
 }

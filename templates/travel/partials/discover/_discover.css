@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 .travel-discover-panel {
-  max-width: calc(440 / 16rem);
+  max-width: 440px;
   background-color: white;
 }
 
