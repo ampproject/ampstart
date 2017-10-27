@@ -1,5 +1,5 @@
 /**
- * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,24 +14,6 @@
  * limitations under the License.
  */
 
-@import 'page';
-
-/*
- * Custom elements.
- */
-@import 'elements/_border';
-@import 'elements/_btn';
-@import 'elements/_input-group';
-@import 'elements/_input';
-@import 'elements/_link';
-@import 'elements/_object-cover';
-@import 'elements/_shadow';
-@import 'elements/_typography';
-
-/*
- * Template partials.
- */
-@import 'components/_footer';
-@import 'components/_featured';
-@import 'components/_icon';
-@import 'components/_search';
+ .travel-shadow {
+  box-shadow: 0 0.4rem 1.1rem var(--box-shadow-color-light);
+}
