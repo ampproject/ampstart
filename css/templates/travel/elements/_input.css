@@ -1,5 +1,13 @@
 /**
+<<<<<<< HEAD
+<<<<<<< HEAD
  * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+=======
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
+>>>>>>> namespaced classes, moved attr into basscss classes on elements, added copyright
+=======
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
+>>>>>>> 6d6263b0df19bda58cdbf97583094f7adb3cc9c9
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,25 +46,15 @@
   border-color: transparent;
 }
 
-.travel-input-clear {
-  color: var(--white);
-  background: none;
-  border-color: rgba(255, 255, 255, .4);
-}
-
-.travel-input-big {
-  padding: var(--input-big-padding-y) var(--input-big-padding-x);
+.travel-input-dark {
+  background: color(#000 a(0.2));
 }
 
 .travel-input::-webkit-input-placeholder {
   color: var(--gray);
 }
 
-.travel-input-clear::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.4;
-}
-
-.travel-input-border-gray {
-  border-color: var(--silver);
+.travel-input-dark::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.75;
 }

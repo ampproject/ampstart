@@ -1,0 +1,18 @@
+.travel-results-navbar {
+  margin-top: -4rem;
+  margin-right: -4rem;
+  margin-left: -4rem;
+  background-color: var(--purple);
+  color: var(--white);
+  animation: fade-and-slideup 0.4s ease-in-out both;
+}
+
+.travel-results-navbar .line-height-1 {
+  line-height: 1;
+}
+
+@media (--breakpoint-md) {
+  .travel-results-navbar .line-height-1 {
+    line-height: inherit;
+  }
+}
