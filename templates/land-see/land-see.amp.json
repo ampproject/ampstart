@@ -24,7 +24,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Interiors",
-            "post-category-url": "stories.amp.html#interiors",
+            "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
             "post-title": "Bold Coast Cottage in Main",
             "post-copy": "My travels in Main have taken me to many destinations<br />not in the standard visitor’s guide."
           },
@@ -41,7 +41,7 @@
             "post-url": "kim-myeong.amp.html",
             "post-button-text": "Read More",
             "post-category": "Fashion",
-            "post-category-url": "stories.amp.html#fashion",
+            "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
             "post-title": "Designer Kim Myeong",
             "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique<br />mix of color, texture, and material to make her shoes the must-haves of this year."
           },
@@ -58,7 +58,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Design",
-            "post-category-url": "stories.amp.html#design",
+            "post-category-url": "stories.amp.html?category=design#land-see-design",
             "post-title": "Nature's Inspiration",
             "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br />sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
           }
@@ -87,7 +87,7 @@
             "post-url": "kim-myeong.amp.html",
             "post-button-text": "Read More",
             "post-category": "Fashion",
-            "post-category-url": "stories.amp.html#fashion",
+            "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
             "post-title": "Designer Kim Myeong",
             "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique<br />mix of color, texture, and material to make her shoes the must-haves of this year."
           },
@@ -104,7 +104,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Design",
-            "post-category-url": "stories.amp.html#design",
+            "post-category-url": "stories.amp.html?category=design#land-see-design",
             "post-title": "Nature's Inspiration",
             "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br />sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
           },
@@ -121,7 +121,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Interiors",
-            "post-category-url": "stories.amp.html#interiors",
+            "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
             "post-title": "Bold Coast Cottage in Main",
             "post-copy": "My travels in Main have taken me to many destinations<br />not in the standard visitor’s guide."
           }
@@ -149,7 +149,7 @@
             "post-url": "kim-myeong.amp.html",
             "post-button-text": "Read More",
             "post-category": "Fashion",
-            "post-category-url": "stories.amp.html#fashion",
+            "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
             "post-title": "Designer<br />Kim Myeong",
             "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique mix of color, texture, and material to make her shoes the must-haves of this year."
           },
@@ -165,7 +165,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Design",
-            "post-category-url": "stories.amp.html#design",
+            "post-category-url": "stories.amp.html?category=design#land-see-design",
             "post-title": "Nature's Inspiration",
             "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
           },
@@ -181,7 +181,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Interiors",
-            "post-category-url": "stories.amp.html#interiors",
+            "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
             "post-title": "Bold Coast Cottage in Main",
             "post-copy": "My travels in Main have taken me to many destinations not in the standard visitor’s guide."
           }
@@ -253,7 +253,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Design",
-            "post-category-url": "stories.amp.html#design",
+            "post-category-url": "stories.amp.html?category=design#land-see-design",
             "post-title": "Nature's Inspiration",
             "post-copy": "Habitant lobortis dolor, dictumst feugiat pede diam, minim turpis ut, quam<br />sociosqu egestas sed lorem auctor dui. Venenatis deserunt nulla."
           },
@@ -270,7 +270,7 @@
             "post-url": "#",
             "post-button-text": "Read More",
             "post-category": "Interiors",
-            "post-category-url": "stories.amp.html#interiors",
+            "post-category-url": "stories.amp.html?category=interiors#land-see-interiors",
             "post-title": "Bold Coast Cottage in Main",
             "post-copy": "My travels in Main have taken me to many destinations<br />not in the standard visitor’s guide."
           },
@@ -287,7 +287,7 @@
             "post-url": "kim-myeong.amp.html",
             "post-button-text": "Read More",
             "post-category": "Fashion",
-            "post-category-url": "stories.amp.html#fashion",
+            "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
             "post-title": "Designer Kim Myeong",
             "post-copy": "Relatively new to the industry, footwear designer Kim Myeong uses a unique<br />mix of color, texture, and material to make her shoes the must-haves of this year."
           }
@@ -297,6 +297,7 @@
   },
   "land-see-story-carousel": {
     "title": "Popular",
+    "height": 430,
     "list-src": "./api/popular.json",
     "observer": {
       "action": "enter:popularSlideIn.start"
@@ -358,7 +359,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent",
         "post-url": "#",
         "post-category": "Design",
-        "post-category-url": "stories.amp.html#design",
+        "post-category-url": "stories.amp.html?category=design#land-see-design",
         "post-title": "Office Tour: Studio Serif",
         "post-copy": "In the heart of the southeast, Studio Serif stands out among its competitors for its complex mixture of hand-drawn and computer-generated art coming together in beautifully, cohesive designs."
       },
@@ -374,7 +375,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide land-see-post-featured col land-see-recent",
         "post-url": "#",
         "post-category": "Fashion",
-        "post-category-url": "stories.amp.html#fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
         "post-title": "New Textile & Basics Shop Opens in Soho",
         "post-copy": "Everyone’s wardrobe needs the well-fitting, structured, and neutral basics to provide the start for the building of a killer outfit."
       },
@@ -390,7 +391,7 @@
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 land-see-recent",
         "post-url": "#",
         "post-category": "Fashion",
-        "post-category-url": "stories.amp.html#fashion",
+        "post-category-url": "stories.amp.html?category=fashion#land-see-fashion",
         "post-title": "How to Pack Light When Traveling",
         "post-copy": "Whether it’s a short weekend getaway or an extended holiday, choosing carefully from your accessories can help lighten your load while expanding your repertory."
       },
@@ -400,13 +401,13 @@
             "classes": "cover",
             "alt-text": "Epression of aesthetics.",
             "width": 409, "height": 305, "layout": "responsive",
-            "src": "../../img/land-see/content/timeless-design-310px.jpg"
+            "src": "../../img/land-see/content/timeless-design-350px.jpg"
           }
         ],
         "post-classes": "land-see-pre-animate land-see-post-item land-see-post-item-wide col col-6 land-see-recent",
         "post-url": "#",
         "post-category": "Design",
-        "post-category-url": "stories.amp.html#design",
+        "post-category-url": "stories.amp.html?category=design#land-see-design",
         "post-title": "Timeless Design: A History of Watches",
         "post-copy": "A fashionable timepiece is as much a bold statement of one’s individuality, an expression of aesthetics, as it is an implement of progress."
       }
@@ -427,22 +428,26 @@
         },
         "classes": "land-see-stories land-see-arts-culture",
         "expanded": "expanded",
-        "list-src": "./api/arts-culture-accordion.json"
+        "list-src": "./api/arts-culture-accordion.json",
+        "height": 430
       },
       {
         "title": "Design",
         "classes": "land-see-stories land-see-design",
-        "list-src": "./api/design-accordion.json"
+        "list-src": "./api/design-accordion.json",
+        "height": 495
       },
       {
         "title": "Fashion",
         "classes": "land-see-stories land-see-fashion",
-        "list-src": "./api/fashion-accordion.json"
+        "list-src": "./api/fashion-accordion.json",
+        "height": 460
       },
       {
         "title": "Interiors",
         "classes": "land-see-stories land-see-interiors",
-        "list-src": "./api/interiors-accordion.json"
+        "list-src": "./api/interiors-accordion.json",
+        "height": 430
       }
     ]
   },
