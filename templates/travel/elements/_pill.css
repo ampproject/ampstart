@@ -1,10 +1,11 @@
-
 /*
  * pill
  *
  * Add a background and rounded ends to an inline element.
  */
-.pill {
-  border-radius: 1em;
-  padding: calc(2 / 16rem) calc(8 / 16rem);
+.travel-pill {
+   border-radius: 1em;
+   padding: 2px 8px;
+   color: var(--white);
+   background-color: var(--fuchsia);
 }

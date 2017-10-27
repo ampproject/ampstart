@@ -1,3 +1,19 @@
+/**
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 .travel-results-result {
   animation: fade-and-slideup 0.4s ease-in-out both;
   animation-delay: 110ms;
@@ -21,10 +37,30 @@
   position: relative;
 }
 
+.travel-results-result-link amp-img {
+  background-color: var(--silver);
+}
+
 .travel-results-result-flags {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.travel-results-result-text {
+  color: var(--black);
+}
+
+.travel-results-result-subtext {
+  color: var(--gray);
+}
+
+.travel-results-result-stars {
+  color: var(--silver);
+}
+
+.travel-results-result-stars.green {
+  color: var(--green);
 }
 
 .travel-results-result-like {
@@ -78,7 +114,7 @@
   animation: fade-and-slideup 0.4s ease-in-out both;
 }
 
-.travel-results-list > [class*="loading-container"] {
+.travel-results-list > [class^=loading-container] {
   position: fixed;
   top: calc(150 / 16rem);
   left: 0;

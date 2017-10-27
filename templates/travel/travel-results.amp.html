@@ -6,11 +6,11 @@
     {{> ./partials/util/initial-state.snip.html}}
     <div role="main">
       <div
-        class="overlay-fx-scale"
-        [class]="'overlay-fx-scale' + (ui_filterPane ? ' overlay-fx-scale-active' : '')"
+        class="travel-overlay-fx-scale"
+        [class]="'travel-overlay-fx-scale' + (ui_filterPane ? ' travel-overlay-fx-scale-active' : '')"
       >
         <div
-          class="no-focus flex-auto overflow-auto"
+          class="flex-auto overflow-auto"
           role="button"
           tabindex="-1" on="tap:AMP.setState({ui_filterPane: false, ui_reset: false, ui_sortPane: false})"
         >

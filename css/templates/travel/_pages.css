@@ -1,0 +1,32 @@
+/*******************************************************************************
+ * In-page animations
+ ******************************************************************************/
+
+ .flip {
+   transition: transform 100ms;
+   transform: rotate(0);
+ }
+
+ .flip-flipped {
+   transform: rotate(180deg);
+ }
+
+@keyframes fade-and-slideup {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
