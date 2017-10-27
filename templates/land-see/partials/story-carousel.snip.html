@@ -17,7 +17,7 @@ limitations under the License.
 <section class="land-see-popular-content mx-auto">
   <h4 class="land-see-section-header ml1">{{title}}</h4>
   <div class="clearfix pt2">
-    <amp-list class="center justify-center" src="{{list-src}}" height="430" layout="fixed-height">
+    <amp-list class="center justify-center" src="{{list-src}}" height="{{height}}" layout="fixed-height">
       <template type="amp-mustache">
         {{#observer}}
         <amp-position-observer
@@ -50,9 +50,9 @@ limitations under the License.
                   </amp-img>
                 <%/image%>
               </a>
-              <a class="land-see-post-category inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
-              <h4 class="pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
-              <p class="pt1 pb3"><%post-copy%></p>
+              <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
+              <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
+              <p class="ampstart-caption pt1 pb3"><%post-copy%></p>
             </div>
             <%/story-post%>
           </div>
