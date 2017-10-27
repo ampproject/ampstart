@@ -1,18 +1,16 @@
 
-@import './page';
+@import 'page';
 /*
  * Custom elements.
  */
 @import '../../../templates/travel/elements/_block-list';
-@import '../../../templates/travel/elements/_container';
-@import '../../../templates/travel/elements/_like';
 @import '../../../templates/travel/elements/_overlay';
 @import '../../../templates/travel/elements/_pill';
-@import '../../../templates/travel/elements/_responsive';
 @import '../../../templates/travel/elements/_typography';
 
 /*
  * Template partials.
  */
 @import '../../../templates/travel/partials/icon/_icon';
+@import '../../../templates/travel/partials/like/_like';
 @import '../../../templates/travel/partials/results/_results';

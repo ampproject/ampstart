@@ -5,13 +5,13 @@
  * Style an <amp-list> element to display itself and its children as block
  * elements, restoring its intrinsic height.
  */
-.block-list {
+.travel-block-list {
   min-height: 1px;
   min-width: 1px;
   position: static;
 }
 
-.block-list [role="list"] {
+.travel-block-list [role="list"] {
   position: static;
   height: auto;
   width: auto;
@@ -23,7 +23,7 @@
   the element was not visible in the viewport and would prevent the list
   request from firing.
  */
-.block-list::after {
+.travel-block-list::after {
   content: "\00a0";
   display: inline;
 }
