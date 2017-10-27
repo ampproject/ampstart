@@ -177,8 +177,8 @@
       },
       {
         "template-group": {
-          "title": "Business",
-          "id": "business",
+          "title": "Food & Drink",
+          "id": "food-and-drink",
           "template-count": "1",
           "templates": [
             {
@@ -194,7 +194,7 @@
                   "alt": "Screenshot of the travel blog template"
                 },
                 "desc": "A simple, elegant design for a restaurant home page and menu.",
-                "lightbox-id": "business-restaurant-template",
+                "lightbox-id": "restaurant-template",
                 "src": "templates/themes_2/home.amp.html",
                 "download": "archive/themes_2.zip"
               }

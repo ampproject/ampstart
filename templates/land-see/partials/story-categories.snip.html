@@ -20,7 +20,7 @@ limitations under the License.
     <section {{expanded}} class="{{classes}}">
       <h3 class="max-width-4 mx-auto">{{title}}</h3>
       <div class="max-width-4 mx-auto">
-        <amp-list src="{{list-src}}" height="430" layout="fixed-height">
+        <amp-list src="{{list-src}}" height="{{height}}" layout="fixed-height">
           <template type="amp-mustache">
             {{#observer}}
             <amp-position-observer
@@ -35,7 +35,7 @@ limitations under the License.
                   <%#image%>
                     <amp-img
                       class="land-see-post-image <%classes%>"
-                      alt="<%alt%>"
+                      alt="<%alt-text%>"
                       media="<%media-query%>"
                       width="<%width%>"
                       height="<%height%>"
@@ -44,9 +44,9 @@ limitations under the License.
                     </amp-img>
                   <%/image%>
                 </a>
-                <a class="land-see-post-category inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
-                <h4 class="pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
-                <p class="pt1 pb3"><%post-copy%></p>
+                <a class="land-see-post-category land-see-page-navigation inline-block pt1 underline caps" href="<%post-category-url%>"><%post-category%></a>
+                <h4 class="land-see-post-title ampstart-title-sm pt1"><a class="text-decoration-none" href="<%post-url%>"><%post-title%></a></h4>
+                <p class="ampstart-caption pt1 pb3"><%post-copy%></p>
               </li>
               <%/land-see-category%>
             </ul>

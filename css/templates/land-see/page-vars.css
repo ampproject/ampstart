@@ -61,9 +61,15 @@
   --color-input-font-secondary: var(--color-font-secondary);
 
   --color-story-category-background: #fddcd7;
+  --color-story-navigation-border: #f0f0f0;
+  --color-story-navigation-accent: #98caaf;
 
   --font-primary: "Crimson Text", times, serif;
   --font-secondary: "Montserrat", arial, sans-serif;
   --font-navigation: "Inconsolata", verdana, sans-serif;
   --font-family: var(--font-primary);
+
+  @custom-media --breakpoint-within-xxxs (max-width: 25rem);
+  @custom-media --breakpoint-within-xxs (max-width: 30rem);
+  @custom-media --breakpoint-greater-than-xxs (min-width: 30.06rem);
 }

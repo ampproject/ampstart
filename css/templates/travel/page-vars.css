@@ -14,124 +14,125 @@
  * limitations under the License.
  */
 
- :root {
-   --blue:  #3682ec;
-   --green: #47b074;
-   --lime:  #67e497;
-   --orange:  #ec8936;
-   --fuchsia: #fb52a2;
-   --purple:  #8b58e3;
-   --white:  #ffffff;
-   --black:  #323a43;
+:root {
+  --blue:  #3682ec;
+  --green: #47b074;
+  --lime:  #67e497;
+  --orange:  #ec8936;
+  --fuchsia: #fb52a2;
+  --purple:  #8b58e3;
+  --white:  #ffffff;
+  --black:  #323a43;
 
-   --gray:   #8f98a3;
-   --silver: #e3e5e8;
+  --gray:   #8f98a3;
+  --silver: #e3e5e8;
 
-   --box-shadow-color: rgba(50,58,67,.2);
-   --box-shadow-color-light: rgba(50,58,67,.12);
-   --box-shadow-color-dark: rgba(50,58,67,.4);
+  --box-shadow-color: rgba(50,58,67,.2);
+  --box-shadow-color-light: rgba(50,58,67,.12);
+  --box-shadow-color-dark: rgba(50,58,67,.4);
 
-   --font-color-primary: var(--black);
-   --color-primary: var(--black);
-   --font-color-secondary: var(--white);
-   --color-secondary: var(--white);
-   --font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
-   --line-height: 1.2;
-   --fixed-navbar-height: calc(86 / 16rem);
+  --font-color-primary: var(--black);
+  --color-primary: var(--black);
+  --font-color-secondary: var(--white);
+  --color-secondary: var(--white);
+  --font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", OpenSansEmoji, EmojiSymbols, EmojiSymb, Symbola;
+  --line-height: 1.2;
+  --fixed-navbar-height: 86px;
 
-   --color-body-background: var(--white);
-   --color-font-default: var(--black);
-   --color-border: var(--black);
+  --color-body-background: var(--white);
+  --color-font-default: var(--black);
+  --color-border: var(--black);
 
-   --color-navbar-primary: var(--white);
-   --color-navbar-font-primary: var(--black);
+  --color-navbar-primary: var(--white);
+  --color-navbar-font-primary: var(--black);
 
-   --color-input-primary: var(--black);
-   --color-input-font-secondary: var(--white);
+  --color-input-primary: var(--black);
+  --color-input-font-secondary: var(--white);
 
-   --zindex-max: 999;
+  --zindex-max: 999;
 
-   --body-min-width: 100%;
-   --content-max-width: 100%;
+  --body-min-width: 100%;
+  --content-max-width: 100%;
 
-   /* activity type colors. */
-   --type-active-color: #fd68ae;
-   --type-artistic-color: #32dada;
-   --type-drinks-color: #4e93f8;
-   --type-fashion-color: #f1c363;
-   --type-food-color: #aa5efd;
-   --type-music-color: #ec8936;
-   --type-nature-color: #14b52a;
-   --type-nightlife-color: #e83a3a;
-   --type-tours-color: #0ece9e;
-   --type-water-color: #3abee8;
+  /* activity type colors. */
+  --type-active-color: #fd68ae;
+  --type-artistic-color: #32dada;
+  --type-drinks-color: #4e93f8;
+  --type-fashion-color: #f1c363;
+  --type-food-color: #aa5efd;
+  --type-music-color: #ec8936;
+  --type-nature-color: #14b52a;
+  --type-nightlife-color: #e83a3a;
+  --type-tours-color: #0ece9e;
+  --type-water-color: #3abee8;
 
-   /* input element */
-   --input-padding-y: .5rem;
-   --input-padding-x: 1rem;
-   --input-line-height: 1.125rem;
+  /* input element */
+  --input-padding-y: .5rem;
+  --input-padding-x: 1rem;
+  --input-line-height: 1.125rem;
 
-   --input-small-padding-y: .25rem;
-   --input-small-padding-x: .5rem;
-   --input-big-padding-y: 1rem;
-   --input-big-padding-x: 1.25rem;
-   --input-narrow-padding-x: .5rem;
+  --input-small-padding-y: .25rem;
+  --input-small-padding-x: .5rem;
+  --input-big-padding-y: 1rem;
+  --input-big-padding-x: 1.25rem;
+  --input-narrow-padding-x: .5rem;
 
-   /* icon element */
-   --icon-size: 1.2em;
+  /* icon element */
+  --icon-size: 1.2em;
 
-   /* input-range element */
-   --range-thumb-size: calc(24 / 16rem);
-   --range-thumb-color: var(--white);
-   --range-track-height: calc(5 / 16rem);
-   --range-track-color: var(--green);
+  /* input-range element */
+  --range-thumb-size: var(--space-2);
+  --range-thumb-color: var(--white);
+  --range-track-height: 5px;
+  --range-track-color: var(--green);
 
-   --bold-font-weight: 600;
+  --bold-font-weight: 600;
 
-   --border-width: 1px;
-   --border-radius: calc(4 / 16rem);
+  --border-width: 1px;
+  --border-radius: 4px;
 
-   --line-height-1: 1;
-   --line-height-2: 1.4;
-   --line-height-3: 1.6;
-   --line-height-4: 2;
+  --line-height-1: 1;
+  --line-height-2: 1.4;
+  --line-height-3: 1.6;
+  --line-height-4: 2;
 
-   --caps-letter-spacing: 0;
+  --caps-letter-spacing: 0;
 
-   --h00: 4.6rem; /* 74px */
-   --h0: 3.5rem; /* 56px */
-   --h1: 2rem; /* 32px */
-   --h2: 1.5rem; /* 24px */
-   --h3: 1.25rem; /* 20px */
-   --h4: 1rem; /* 16px */
-   --h5: .875rem; /* 14px */
-   --h6: .75rem; /* 12px */
+  --h000: 4.6rem; /* 74px */
+  --h00: 3.75rem; /* 60px */
+  --h0: 3.5rem; /* 56px */
+  --h1: 2rem; /* 32px */
+  --h2: 1.5rem; /* 24px */
+  --h3: 1.25rem; /* 20px */
+  --h4: 1rem; /* 16px */
+  --h5: .875rem; /* 14px */
+  --h6: .75rem; /* 12px */
 
-   --space-1: 1rem; /* 16px */
-   --space-2: 1.5rem; /* 24px */
-   --space-3: 3rem; /* 48px */
-   --space-4: 4rem; /* 64px */
-   --space-5: 4.25rem; /* 64px */
+  --space-1: 1rem; /* 16px */
+  --space-2: 1.5rem; /* 24px */
+  --space-3: 3rem; /* 48px */
+  --space-4: 4rem; /* 64px */
+  --space-5: 4.25rem; /* 68px */
 
-   --width-1: 40rem; /* 640px */
-   --width-2: 52rem; /* 832px */
-   --width-3: 72rem; /* 1152px */
-   --width-4: 88rem; /* 1408px */
+  --width-1: 40rem; /* 640px */
+  --width-2: 52rem; /* 832px */
+  --width-3: 72rem; /* 1152px */
+  --width-4: 88rem; /* 1408px */
 
-   @custom-media --breakpoint-xs (max-width: 40rem);
-   @custom-media --breakpoint-v-xs (max-height: 40rem);
-   @custom-media --breakpoint-sm (min-width: 40.06rem);
-   @custom-media --breakpoint-v-sm (min-height: 40.06rem);
-   @custom-media --breakpoint-md (min-width: 52.06rem);
-   @custom-media --breakpoint-v-md (min-height: 52.06rem);
-   @custom-media --breakpoint-lg (min-width: 72.06rem);
-   @custom-media --breakpoint-v-lg (min-height: 72.06rem);
-   @custom-media --breakpoint-sm-md (min-width: 40.06rem) and (max-width: 52rem);
-   @custom-media --breakpoint-v-sm-md (min-height: 40.06rem) and (max-height: 52rem);
-   @custom-media --breakpoint-md-lg (min-width: 52.06rem) and (max-width: 72rem);
-   @custom-media --breakpoint-v-md-lg (min-height: 52.06rem) and (max-height: 72rem);
- }
+  @custom-media --breakpoint-xs (max-width: 40rem);
+  @custom-media --breakpoint-v-xs (max-height: 40rem);
+  @custom-media --breakpoint-sm (min-width: 40.06rem);
+  @custom-media --breakpoint-v-sm (min-height: 40.06rem);
+  @custom-media --breakpoint-md (min-width: 52.06rem);
+  @custom-media --breakpoint-v-md (min-height: 52.06rem);
+  @custom-media --breakpoint-lg (min-width: 72.06rem);
+  @custom-media --breakpoint-v-lg (min-height: 72.06rem);
+  @custom-media --breakpoint-sm-md (min-width: 40.06rem) and (max-width: 52rem);
+  @custom-media --breakpoint-v-sm-md (min-height: 40.06rem) and (max-height: 52rem);
+  @custom-media --breakpoint-md-lg (min-width: 52.06rem) and (max-width: 72rem);
+  @custom-media --breakpoint-v-md-lg (min-height: 52.06rem) and (max-height: 72rem);
+}
 
- body {
-   line-height: var(--line-height-2);
- }
+body {
+  line-height: var(--line-height-2);
+}
