@@ -118,26 +118,22 @@
   height: calc(100vmax - 70px);
 }
 
-.travel-hero-heading {
-  color: var(--white);
-  font-size: var(--h00);
-  font-weight: 700;
-}
-
-.travel-hero-subheading {
-  color: var(--white);
-  font-size: 18px;
-}
-
 .travel-hero-search-dates {
   color: var(--white);
 }
 
 .travel-hero-heading {
+  color: var(--white);
+  font-size: var(--h00);
+  font-weight: 700;
+  letter-spacing: normal;
   animation: fade-and-slideup 0.4s 0.2s ease-in-out both;
 }
 
 .travel-hero-subheading {
+  color: var(--white);
+  font-size: 18px;
+  letter-spacing: normal;
   animation: fade-and-slideup 0.4s 0.25s ease-in-out both;
 }
 
@@ -157,6 +153,7 @@
 
 .travel-hero-discover {
   color: var(--gray);
+  cursor: pointer;
   animation: fade-and-slideup 0.4s 0.45s ease-in-out both;
 }
 
