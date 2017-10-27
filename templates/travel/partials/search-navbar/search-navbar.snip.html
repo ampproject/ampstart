@@ -16,16 +16,12 @@ limitations under the License.
 -->
 }}
 
-<!doctype html>
-{{#travel}}
-<html ⚡>
-  {{> ../../utils/amp-page-head.snip.html}}
-  <body>
-    {{> ./partials/util/initial-state.snip.html}}
-    <section class="travel-hero-wrapper overflow-hidden" role="main">
-      {{> ./partials/search-navbar/search-navbar.snip.html}}
-
-      {{> ./partials/hero/hero.snip.html}}
-  </body>
-</html>
-{{/travel}}
+<section class="relative z2">
+  <header class="travel-header absolute top-0 right-0 left-0">
+    <div class="px1 md-px2 py1 md-py2 flex justify-between items-center">
+       <a href="travel.amp" class="travel-icon-logo mx-auto inline-block circle">
+         {{> ../icon/logo.snip.html}}
+        </a>
+    </div>
+  </header>
+</section>
