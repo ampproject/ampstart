@@ -20,19 +20,11 @@
 }
 
 .travel-results-result-link {
-  display: block;
   border-radius: var(--border-radius);
-  position: relative;
 }
 
 .travel-results-result-link amp-img {
   background-color: var(--silver);
-}
-
-.travel-results-result-flags {
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .travel-results-result-text {
@@ -49,12 +41,6 @@
 
 .travel-results-result-stars.green {
   color: var(--green);
-}
-
-.travel-results-result-like {
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 
 .travel-results-result-flags,

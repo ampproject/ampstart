@@ -27,7 +27,7 @@ limitations under the License.
         <div class="m1 mt3 mb2">
           <div class="{{layout-classes}} mb1">
             <div class="relative travel-results-result">
-              <a class="travel-results-result-link" href="{{href}}">
+              <a class="travel-results-result-link block relative" href="{{href}}">
                 <amp-img
                   class="block rounded"
                   width="{{width}}"
@@ -36,11 +36,11 @@ limitations under the License.
                 ></amp-img>
               </a>
               {{#new}}
-              <div class="travel-results-result-flags">
+              <div class="travel-results-result-flags absolute top-0 left-0">
                 <div class="p1"><span class="travel-pill bold">NEW</span></div>
               </div>
               {{/new}}
-              <div class="travel-results-result-like">
+              <div class="travel-results-result-like absolute top-0 right-0">
                 <div class="p1">
                   {{> ../like/like.snip.html}}
                 </div>
