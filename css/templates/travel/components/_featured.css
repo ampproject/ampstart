@@ -85,6 +85,19 @@
 }
 
 @media (--breakpoint-md) {
+  .travel-featured::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 112px;
+    margin-bottom: -8px;
+    background-color: var(--purple);
+  }
+
   .travel-featured-grid {
     margin: calc(6 / 16rem);
   }
