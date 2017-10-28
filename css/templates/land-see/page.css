@@ -74,6 +74,14 @@ h4,
   letter-spacing: normal;
 }
 
+.ampstart-byline {
+  font-size: var(--h6);
+  font-style: italic;
+  letter-spacing: normal;
+  color: var(--color-font-accent);
+  opacity: .8;
+}
+
 .ampstart-caption {
   font: 400 var(--h6)/var(--line-height-2) var(--font-primary);
   letter-spacing: normal;
@@ -712,6 +720,7 @@ h4,
   border: none;
   background: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .land-see-progress-indicator {
@@ -979,6 +988,8 @@ h4,
 
 .land-see-gallery-progress button {
   padding-right: 3px;
+  outline: none;
+  background: transparent;
 }
 
 .land-see-gallery-progress button:last-child {
@@ -1029,6 +1040,15 @@ h4,
 }
 
 @media (--breakpoint-within-xxs) {
+  .land-see-image-attribution {
+    padding-left: var(--h5);
+  }
+
+  .land-see-story-subtitle {
+    padding-top: var(--h2);
+    padding-left: var(--h5);
+  }
+
   .land-see-story-copy {
     padding-left: var(--h5);
     padding-right: var(--h5);

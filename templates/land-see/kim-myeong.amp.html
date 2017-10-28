@@ -64,6 +64,19 @@ limitations under the License.
         <p class="land-see-hero-caption ampstart-caption mx-auto max-width-2 pt1 px2 mb3">
           {{{post-copy}}}
         </p>
+        {{#image}}
+        <amp-img
+          class="{{classes}}"
+          alt="{{alt-text}}"
+          width="{{width}}"
+          height="{{height}}"
+          layout="{{layout}}"
+          src="{{src}}">
+        </amp-img>
+        {{#attribution}}
+        <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">{{.}}</div>
+        {{/attribution}}
+        {{/image}}
       </div>
       {{/land-see-post-detail}}
 
@@ -176,7 +189,7 @@ limitations under the License.
       <div class="land-see-paging land-see-page-navigation mb4 flex flex-wrap">
         <div class="sm-col sm-col-3 col-6 left-align"><a href="{{previous-url}}" class="land-see-prev-page mt2 ml2 inline-block relative">Previous Story</a></div>
         <div class="land-see-story-social flex flex-auto align-top pt1 justify-center">
-            {{> ../../components/social-follow/social-follow.snip.html}}
+          {{> ../../components/social-follow/social-follow.snip.html}}
         </div>
         <div class="sm-col sm-col-3 col-6 right-align"><a href="{{next-url}}" class="land-see-next-page mt2 mr2 inline-block relative">Next Story</a></div>
       </div>

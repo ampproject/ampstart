@@ -3,10 +3,11 @@
     "land-see-post-detail": {
       "image": [
         {
-          "classes": "cover",
+          "classes": "cover max-width-4 mx-auto mt2",
           "alt-text": "Designer Kim Myeong.",
-          "width": 409, "height": 370, "layout": "responsive",
-          "src": "../../img/land-see/content/shoe-designer.jpg"
+          "width": 1000, "height": 532, "layout": "responsive",
+          "src": "../../img/land-see/content/shoe-designer.jpg",
+          "attribution": "Photo by: Jaccob Herman"
         }
       ],
       "post-classes": "land-see-post-item land-see-post-item-wide land-see-story",
