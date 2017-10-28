@@ -14,11 +14,6 @@
   * limitations under the License.
   */
 
-.travel-featured-bg {
-  height: calc(112 / 16rem);
-  background-color: var(--purple);
-}
-
 .travel-featured-grid {
   margin: calc(2 / 16rem);
 }
