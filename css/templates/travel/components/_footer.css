@@ -114,8 +114,4 @@
   .travel-footer .travel-input-group > .travel-input {
     border-color: var(--silver);
   }
-
-  .travel-footer .travel-input-group > .travel-link:focus {
-    /*border-bottom: */
-  }
 }
