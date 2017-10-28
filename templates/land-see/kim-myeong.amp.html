@@ -97,10 +97,16 @@ limitations under the License.
           <amp-fx-flying-carpet height="{{height}}">
             {{#image}}
             <amp-img
-              class="{{classes}}"
               alt="{{alt-text}}"
+              {{#classes}}
+              class="{{classes}}"
+              {{/classes}}
+              {{#width}}
               width="{{width}}"
+              {{/width}}
+              {{#height}}
               height="{{height}}"
+              {{/height}}
               layout="{{layout}}"
               src="{{src}}">
             </amp-img>
