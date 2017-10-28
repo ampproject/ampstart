@@ -77,10 +77,10 @@ limitations under the License.
         </p>
         {{/paragraph}}
         {{#blockquote}}
-        <blockquote class="land-see-blockquote max-width-3 mx-auto py4 px4 {{classes}} "{{#cite-url}}cite="{{.}}"{{/cite-url}}>
-          <p>{{quote}}</p>
+        <blockquote class="land-see-blockquote max-width-3 mx-auto py4 px4 relative {{classes}} "{{#cite-url}}cite="{{.}}"{{/cite-url}}>
+          <p class="bold mb1 pl4">{{quote}}</p>
           {{#citation}}
-          <cite>{{.}}</cite>
+          <cite class="pl4">{{.}}</cite>
           {{/citation}}
         </blockquote>
         {{/blockquote}}
@@ -173,7 +173,7 @@ limitations under the License.
 
     {{#land-see-story-nav}}
     <section class="land-see-story-nav mx-auto center px1 relative z2">
-      <div class="land-see-paging land-see-page-navigation mb4 flex flex-wrap clearfix">
+      <div class="land-see-paging land-see-page-navigation mb4 flex flex-wrap">
         <div class="sm-col sm-col-3 col-6 left-align"><a href="{{previous-url}}" class="land-see-prev-page mt2 ml2 inline-block relative">Previous Story</a></div>
         <div class="land-see-story-social flex flex-auto align-top pt1 justify-center">
             {{> ../../components/social-follow/social-follow.snip.html}}

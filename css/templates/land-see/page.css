@@ -173,10 +173,6 @@ h4,
   background-color: var(--color-sidebar-background);
 }
 
-.ampstart-sidebar .ampstart-nav-dropdown .ampstart-dropdown-item {
-  color: var(--color-font-primary);
-}
-
 .ampstart-sidebar-nav > ul > li:first-child {
   margin-bottom: 0;
 }
@@ -917,8 +913,10 @@ h4,
   text-align: center;
 }
 
+.ampstart-sidebar .ampstart-nav-dropdown .ampstart-dropdown-item,
 .land-see-story-detail .land-see-hero-title,
-.land-see-story-detail .land-see-hero-caption {
+.land-see-story-detail .land-see-hero-caption,
+.land-see-blockquote p {
   color: var(--color-font-primary);
 }
 
@@ -936,6 +934,32 @@ h4,
 
 .land-see-story-copy b {
   line-height: normal;
+}
+
+.land-see-blockquote::before {
+  content: "";
+  background: url(../../img/land-see/structure/green-up-full-20.svg) 0 0/198px 156px no-repeat;
+  position: absolute;
+  top: 50%;
+  left: var(--h5);
+  width: 198px;
+  height: 157px;
+  transform: rotate(90deg) translate(-40%,0);;
+  opacity: .2;
+  z-index: -1;
+}
+
+.land-see-blockquote p {
+  font-size: var(--h2);
+  line-height: var(--line-height-2);
+}
+
+.land-see-blockquote cite {
+  font-family: var(--font-navigation);
+  font-size: var(--h9);
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--color-font-accent);
 }
 
 .land-see-image-gallery {
@@ -1002,6 +1026,25 @@ h4,
 .land-see-story-nav .ampstart-social-follow {
   float: right;
   justify-content: flex-start;
+}
+
+@media (--breakpoint-within-xxs) {
+  .land-see-story-copy {
+    padding-left: var(--h5);
+    padding-right: var(--h5);
+  }
+
+  .land-see-blockquote::before {
+    left: -22px;
+  }
+
+  .land-see-blockquote {
+    padding: var(--h5);
+  }
+
+  .land-see-blockquote p {
+    padding-left: var(--h5);
+  }
 }
 
 @media (--breakpoint-within-xxxs) {
