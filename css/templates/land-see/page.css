@@ -1040,17 +1040,26 @@ h4,
 }
 
 @media (--breakpoint-within-xxs) {
-  .land-see-image-attribution {
+  .land-see-story-detail .land-see-post-item .land-see-image-attribution {
+    display: none;
+  }
+
+  .land-see-image-attribution,
+  .land-see-story-subtitle,
+  .land-see-story-copy,
+  .land-see-blockquote p {
     padding-left: var(--h5);
+  }
+
+  .land-see-flying-carpet {
+    display: block;
   }
 
   .land-see-story-subtitle {
-    padding-top: var(--h2);
-    padding-left: var(--h5);
+    padding-top: var(--h5);
   }
 
   .land-see-story-copy {
-    padding-left: var(--h5);
     padding-right: var(--h5);
   }
 
@@ -1060,10 +1069,6 @@ h4,
 
   .land-see-blockquote {
     padding: var(--h5);
-  }
-
-  .land-see-blockquote p {
-    padding-left: var(--h5);
   }
 }
 

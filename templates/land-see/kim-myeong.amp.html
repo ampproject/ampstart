@@ -66,6 +66,9 @@ limitations under the License.
         </p>
         {{#image}}
         <amp-img
+          {{#media-query}}
+          media="{{media-query}}"
+          {{/media-query}}
           class="{{classes}}"
           alt="{{alt-text}}"
           width="{{width}}"
@@ -89,6 +92,25 @@ limitations under the License.
           {{{.}}}
         </p>
         {{/paragraph}}
+        {{#flying-carpet}}
+        <div class="land-see-flying-carpet display-none">
+          <amp-fx-flying-carpet height="{{height}}">
+            {{#image}}
+            <amp-img
+              class="{{classes}}"
+              alt="{{alt-text}}"
+              width="{{width}}"
+              height="{{height}}"
+              layout="{{layout}}"
+              src="{{src}}">
+            </amp-img>
+            {{/image}}
+          </amp-fx-flying-carpet>
+          {{#attribution}}
+          <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">{{.}}</div>
+          {{/attribution}}
+        </div>
+        {{/flying-carpet}}
         {{#blockquote}}
         <blockquote class="land-see-blockquote max-width-3 mx-auto py4 px4 relative {{classes}} "{{#cite-url}}cite="{{.}}"{{/cite-url}}>
           <p class="bold mb1 pl4">{{quote}}</p>
