@@ -22,10 +22,21 @@ limitations under the License.
   {{> ../../utils/amp-page-head.snip.html}}
   <body>
     {{> ./partials/util/initial-state.snip.html}}
-    <section class="travel-hero-wrapper overflow-hidden" role="main">
-      {{> ./partials/search-navbar/search-navbar.snip.html}}
+    <section class="travel-main-wrapper overflow-hidden" role="main">
 
-      {{> ./partials/hero/hero.snip.html}}
+        {{> ./partials/search-navbar/search-navbar.snip.html}}
+
+        {{> ./partials/hero/hero.snip.html}}
+
+      <div class="travel-landing-content relative">
+        <div class="travel-footer-wrapper">
+          {{> ./partials/featured/featured.snip.html}}
+
+          {{> ./partials/search/search.snip.html}}
+
+          {{> ./partials/footer/footer.snip.html}}
+        </div>
+      </div>
     </section>
   </body>
 </html>
