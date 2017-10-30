@@ -19,11 +19,11 @@
 }
 
 .travel-featured-grid {
-  margin: calc(2 / 16rem);
+  margin: 2px;
 }
 
 .travel-featured-tile {
-  margin: calc(2 / 16rem);
+  margin: 2px;
 }
 
 .travel-featured-tile-heading {
@@ -57,7 +57,7 @@
 }
 
 .travel-featured-tile .travel-featured-overlay {
-  color: white;
+  color: var(--color-white);
   transition: transform 2s ease-out;
 }
 
@@ -66,7 +66,7 @@
 }
 
 .travel-featured-tile amp-img::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -79,11 +79,11 @@
 
 @media (--breakpoint-sm) {
   .travel-featured-grid {
-    margin: calc(4 / 16rem);
+    margin: 4px;
   }
 
   .travel-featured-tile {
-    margin: calc(4 / 16rem);
+    margin: 4px;
   }
 }
 
@@ -102,21 +102,21 @@
   }
 
   .travel-featured-grid {
-    margin: calc(6 / 16rem);
+    margin: 6px;
   }
 
   .travel-featured-tile {
-    margin: calc(6 / 16rem);
+    margin: 6px;
   }
 }
 
 @media (--breakpoint-lg) {
   .travel-featured-grid {
-    margin: calc(8 / 16rem);
+    margin: 8px;
   }
 
   .travel-featured-tile {
-    margin: calc(8 / 16rem);
+    margin: 8px;
   }
 }
 

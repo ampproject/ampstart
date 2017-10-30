@@ -26,11 +26,7 @@
 }
 
 .travel-icon-logo {
-  color: white;
-}
-
-.travel-icon-logo {
-  color: white;
+  color: var(--color-white);
 }
 
 .travel-img-icon-checkmark-purple {

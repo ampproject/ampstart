@@ -35,30 +35,22 @@
 }
 
 .travel-footer-input-bg {
-  position: absolute;
   top: 50%;
-  right: 0;
   bottom: -1px;
-  left: 0;
 }
 
 .travel-footer-angle {
-  position: absolute;
   width: 200vw;
   bottom: 100%;
-
-  height: calc(800 / 16rem);
-  transform: translate(-25%, calc(50 / 16rem)) rotate(20deg);
+  height: 800px;
+  transform: translate(-25%, 50px) rotate(20deg);
   background-color: #dce6ea;
   opacity: 0.2;
 }
 
 .travel-footer-angle-block {
   left: 50%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  background: white;
+  background: var(--color-white);
 }
 
 .travel-newsletter-signup {
@@ -74,7 +66,7 @@
 }
 
 .travel-footer-wrapper {
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 @media (--breakpoint-md) {
