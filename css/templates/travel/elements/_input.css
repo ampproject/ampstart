@@ -38,10 +38,21 @@
   border-color: transparent;
 }
 
+.travel-input-clear {
+  color: var(--white);
+  background: none;
+  border-color: rgba(255, 255, 255, .4);
+}
+
 .travel-input-big {
   padding: var(--input-big-padding-y) var(--input-big-padding-x);
 }
 
 .travel-input::-webkit-input-placeholder {
   color: var(--gray);
+}
+
+.travel-input-clear::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.4;
 }

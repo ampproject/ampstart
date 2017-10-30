@@ -41,7 +41,3 @@ box-shadow: none;
 .ampstart-btn.bold {
 font-weight: var(--bold-font-weight);
 }
-
-.ampstart-btn.bold {
-  font-weight: var(--bold-font-weight);
-}
