@@ -13,18 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-/*! Bassplate | MIT License | http://github.com/basscss/bassplate */
-/* Basscss Modules */
-@import '../../core.css';
-
+ 
 @import './page-vars';
-
-@import './components/_header';
-@import './components/_button';
-@import './components/_hero';
-@import './components/_landing-images';
-@import './components/_map';
 
 body {
   color: var(--font-color-primary);
@@ -47,6 +37,10 @@ body {
   color: var(--color-white);
   mix-blend-mode: difference;
   -webkit-font-smoothing: antialiased;
+}
+
+.ampstart-headerbar {
+  z-index: var(--z1);
 }
 
 .gallery-base-callout {

@@ -28,7 +28,6 @@
   z-index: 100;
 }
 
-
 .gallery-header .gallery-nav {
   display: none;
   flex-direction: column;
@@ -44,11 +43,6 @@
     margin: calc(30 / 16rem);
     margin-right: 0;
   }
-}
-
-.ampstart-btn {
-  background: transparent;
-  border: none;
 }
 
 .gallery-header-rotate {
@@ -114,4 +108,21 @@
 .gallery-header-heading a {
   color: inherit;
   text-decoration: none;
+}
+
+.ampstart-sidebar {
+  width: 320px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.ampstart-sidebar-nav {
+  margin-top: 32px;
+}
+
+.ampstart-nav-link {
+  display: flex;
+  align-content: center;
+  align-items: center;
 }
