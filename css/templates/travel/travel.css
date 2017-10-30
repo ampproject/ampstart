@@ -19,15 +19,15 @@
 /*
  * Custom elements.
  */
-@import '../../../templates/travel/elements/_btn';
-@import '../../../templates/travel/elements/_date-input';
-@import '../../../templates/travel/elements/_input-icon';
-@import '../../../templates/travel/elements/_input';
-@import '../../../templates/travel/elements/_shadow';
+@import 'elements/_btn';
+@import 'elements/_date-input';
+@import 'elements/_input-icon';
+@import 'elements/_input';
+@import 'elements/_shadow';
 
 /*
  * Template partials.
  */
-@import '../../../templates/travel/partials/hero/_hero';
-@import '../../../templates/travel/partials/icon/_icon';
-@import '../../../templates/travel/partials/search-navbar/_search-navbar';
+@import 'components/_hero';
+@import 'components/_icon';
+@import 'components/_search-navbar';
