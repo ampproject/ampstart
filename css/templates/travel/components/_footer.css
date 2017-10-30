@@ -22,10 +22,6 @@
   background-color: var(--silver);
 }
 
-.travel-footer-blog-text {
-  color: var(--gray);
-}
-
 .travel-footer .link.gray:focus {
   border-bottom: calc(2 / 16rem) solid rgba(255,255,255,0.25);
 }
