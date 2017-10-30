@@ -1,0 +1,24 @@
+<!-- Sort bar -->
+<section class="travel-filter-bar md-hide lg-hide">
+  <div class="px1 md-px2">
+    <amp-selector
+      class="travel-row-selector px1 mxn1 md-px2 md-mxn2"
+      layout="container"
+      name="sort"
+      on="
+        select:AMP.setState({
+          query_sort: event.targetOption,
+          fields_sort: event.targetOption
+        })
+      "
+      [selected]="fields_sort"
+    >
+    <ul class="list-reset">
+      {{#data.sort}}
+        <li class="bold" option="{{value}}"{{#selected}} selected{{/selected}}>{{text}}</li>
+      {{/data.sort}}
+    </ul>
+    </amp-selector>
+  </div>
+</section>
+<!--/ Sort bar -->

@@ -1,0 +1,40 @@
+<!-- Filter Pane -->
+<div class="travel-pane" [class]="'travel-pane' + (ui_filterPane ? ' travel-pane-visible' : '')">
+  <div class="travel-pane-overflow absolute overflow-hidden left-0 right-0 pb2">
+    <div class="travel-pane-content travel-shadow travel-border-gray border-bottom">
+      <div class="max-width-3 mx-auto px1 md-px2 py1">
+        {{> ../filters/filters.snip.html}}
+      </div>
+      <div class="travel-border-gray mx1 md-mx2 border-top"></div>
+      <div class="max-width-3 mx-auto px1 md-px2 py1 center">
+        <button
+        class="travel-filters-reset-btn ampstart-btn rounded bold"
+        on="
+          tap:AMP.setState({
+            {{#reset-button-props}}
+              {{key}}: {{value}},
+            {{/reset-button-props}}
+          })
+        "
+        >
+          Reset Filters
+        </button>
+        <button
+          class="travel-filters-apply-btn ampstart-btn rounded bold"
+          disabled
+          [disabled]="!fields_maxPrice_edited && !fields_city_edited && !fields_type_edited && !ui_reset"
+          on="
+            tap:AMP.setState({
+              {{#apply-button-props}}
+                {{key}}: {{value}},
+              {{/apply-button-props}}
+            })
+          "
+        >
+          Apply Filters
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Filter Pane -->

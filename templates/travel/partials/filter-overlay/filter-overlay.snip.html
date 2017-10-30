@@ -1,0 +1,70 @@
+<!-- Filter Overlay -->
+<div class="absolute">
+  <div class="travel-overlay" [class]="'travel-overlay' + (ui_filterPane ? ' travel-overlay-visible' : '')">
+    <div class="travel-overlay-header">
+      <div class="border-bottom travel-border-gray mx1 md-mx2 relative flex items-center">
+        <!--
+          Use a div the same height as an icon to achieve the same height
+          as the results page header without an explicit shared height value.
+         -->
+        <div class="travel-icon my1 h2 flex-none"></div>
+        <amp-list
+          class="travel-block-list flex center flex-auto"
+          layout="flex-item"
+          {{> ../util/amp-list-props.snip.html}}
+        >
+          <template type="amp-mustache">
+            {{=[[ ]]=}}
+              <div class="h3 line-height-2 bold">
+                {{stats.resultCount}} Results
+              </div>
+              <div class="travel-spacing-wide h6 gray line-height-2 caps">
+                {{stats.location}}
+                {{#stats.startDate}}{{#stats.endDate}}
+                   &bull; {{stats.startDate.formatted}} - {{stats.endDate.formatted}}
+                {{/stats.endDate}}{{/stats.startDate}}
+              </div>
+            [[={{ }}=]]
+          </template>
+        </amp-list>
+
+        <div class="absolute top-0 bottom-0 left-0 flex items-center">
+          <div
+            class="travel-overlay-reset-btn gray"
+            role="button"
+            tabindex="0"
+            on="
+              tap:AMP.setState({
+                {{#reset-button-props}}
+                  {{key}}: {{value}},
+                {{/reset-button-props}}
+              })
+            "
+          >
+            Reset
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="travel-overlay-content">
+      <div class="max-width-3 mx-auto px1 md-px2 py1">
+        {{> ../filters/filters.snip.html}}
+      </div>
+    </div>
+    <div class="travel-overlay-footer">
+      <button
+      class="travel-filters-apply-btn travel-input-big ampstart-btn bold h3 block col-12"
+      on="
+        tap:AMP.setState({
+          {{#apply-button-props}}
+            {{key}}: {{value}},
+          {{/apply-button-props}}
+        })
+      "
+      >
+        Apply Filters
+      </button>
+    </div>
+  </div>
+</div>
+<!--/ Filter Overlay -->

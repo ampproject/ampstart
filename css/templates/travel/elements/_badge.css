@@ -1,0 +1,18 @@
+/*
+ * badge
+ *
+ * Add a background and border to an inline element.
+ */
+.travel-badge {
+  padding: 4px 10px;
+  border: 1px solid var(--silver);
+  border-radius: var(--border-radius);
+  background: var(--white);
+  margin-left: 0.5rem;
+}
+
+.travel-badge.green {
+  color: var(--green);
+  border-color: transparent;
+  background: rgba(71,176,116,.2);
+}

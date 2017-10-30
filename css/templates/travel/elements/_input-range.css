@@ -1,0 +1,75 @@
+
+/*
+ * input-range
+ *
+ * Create a stylized input[type=range] element.
+ */
+.travel-input-range {
+  display: block;
+  background-color: transparent;
+  color: inherit;
+  background-color: transparent;
+  -webkit-appearance: none;
+  margin-top: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
+  margin-bottom: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
+}
+
+.travel-input-range::-webkit-slider-thumb {
+  position: relative;
+  width: var(--range-thumb-size);
+  height: var(--range-thumb-size);
+  cursor: pointer;
+  margin-top: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
+  border-radius: calc(var(--range-thumb-size) * 0.5);
+  background-color: var(--range-thumb-color);
+  -webkit-appearance: none;
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color);
+}
+
+.travel-input-range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color), 0 0 0 3px rgba(0,0,0,.25);
+}
+
+.travel-input-range::-moz-range-thumb {
+  width: var(--range-thumb-size);
+  height: var(--range-thumb-size);
+  cursor: pointer;
+  border-radius: calc(var(--range-thumb-size) * 0.5);
+  border-color: transparent;
+  border-width: 0;
+  background-color: var(--range-thumb-color);
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color);
+}
+
+.travel-input-range:focus::-moz-range-thumb {
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color), 0 0 0 3px rgba(0,0,0,.25);
+}
+
+
+.travel-input-range::-webkit-slider-runnable-track {
+  margin-top: calc((var(--range-thumb-size) - var(--range-track-height)) * 0.5);
+  margin-bottom: calc((var(--range-thumb-size) - var(--range-track-height)) * 0.5);
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: calc(var(--range-track-height) * 0.5);
+  background-color: var(--range-track-color);
+}
+
+.travel-input-range::-moz-range-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: calc(var(--range-track-height) * 0.5);
+  background-color: var(--range-track-color);
+}
+
+.travel-input-range:focus {
+  outline: none;
+}
+
+.travel-input-range::-moz-focus-outer {
+  border: 0;
+}
+
+.travel-input-range-shape {
+  color: var(--lime);
+}

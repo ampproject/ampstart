@@ -1,0 +1,16 @@
+.travel-filter-bar {
+  animation: fade-and-slideup 0.4s 0.05s ease-in-out both;
+}
+
+.travel-filter-bar-collapse {
+  height: 0;
+  overflow: hidden;
+}
+
+.travel-filter-bar .gray {
+  color: var(--gray);
+}
+
+.travel-filter-bar .purple {
+  color: var(--purple);
+}

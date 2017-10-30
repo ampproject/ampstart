@@ -1,0 +1,24 @@
+
+/**
+ * list-selector
+ *
+ * Style an <amp-selector> element
+ */
+.travel-list-selector [option] {
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  background: var(--white);
+  white-space: nowrap;
+  margin-bottom: 3px;
+}
+
+.travel-list-selector [option]:focus {
+  outline: none;
+}
+
+.travel-list-selector [option][selected] {
+  /* Override core amp [option][selected] styles. */
+  cursor: pointer;
+  outline: none;
+  background: rgba(71,176,116,.2);
+}

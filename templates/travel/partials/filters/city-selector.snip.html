@@ -1,0 +1,46 @@
+<!-- Ciity Selector -->
+<amp-list
+  class="travel-block-list travel-city-selector"
+  layout="flex-item"
+  {{> ../util/amp-list-props.snip.html}}
+>
+  <template type="amp-mustache">
+    {{=[[ ]]=}}
+      <amp-selector
+        layout="container"
+        name="city"
+        multiple
+        on="
+          select:
+            AMP.setState({
+              ui_reset: false,
+              fields_city: fields_city.includes(event.targetOption)
+                ? copyAndSplice(fields_city, fields_city.indexOf(event.targetOption), 1)
+                : fields_city.concat([event.targetOption]),
+              fields_city_edited: true
+            })
+        "
+        [selected]="fields_city"
+      >
+      <ul class="list-reset">
+          {{#stats.cities}}
+            <!--
+              "The attribute 'option' may not appear in tag 'div'."
+              see: https://github.com/ampproject/amphtml/pull/9585
+            -->
+            {{#isSelected}}<li option="{{name}}" selected>{{/isSelected}}
+            {{^isSelected}}<li option="{{name}}">{{/isSelected}}
+              <span>
+                <div class="travel-city-selector-img">
+                  <amp-img class="circle" layout="flex-item" src="/img/travel/city/{{img}}.jpg"></amp-img>
+                </div>
+                {{name}}
+              </span>
+            </li>
+          {{/stats.cities}}
+        </ul>
+      </amp-selector>
+    [[={{ }}=]]
+  </template>
+</amp-list>
+<!--/ City Selector -->

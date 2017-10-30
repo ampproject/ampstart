@@ -1,0 +1,11 @@
+.travel-overlay-header, .travel-overlay-footer {
+  background-color: var(--white);
+}
+
+.travel-overlay-header .gray {
+  color: var(--gray);
+}
+
+.travel-overlay-reset-btn {
+  cursor: pointer;
+}

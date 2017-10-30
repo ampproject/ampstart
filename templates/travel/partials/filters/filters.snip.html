@@ -1,0 +1,32 @@
+<!-- Filters -->
+<div
+  class="travel-filters clearfix mxn2"
+  [class]="'travel-filters clearfix mxn2' + (ui_reset ? ' travel-filters-reset' : '')"
+>
+  <div class="col col-12 md-col-4 px2 py1">
+    <div class="h5 gray mb1">MAX PRICE</div>
+    {{> ./price-range.snip.html}}
+    <div class="h3 gray line-height-3">
+      <amp-list
+        class="travel-inline-list"
+        layout="flex-item"
+        {{> ../util/amp-list-props.snip.html}}
+      >
+        <template type="amp-mustache">
+          {{=[[ ]]=}}
+          Average Price for activites in {{stats.location}} is between ${{stats.price.average.min}} and ${{stats.price.average.max}}.
+          [[={{ }}=]]
+        </template>
+      </amp-list>
+    </div>
+  </div>
+  <div class="col col-12 md-col-5 px2 py1">
+    <div class="h5 gray mb2">TYPE</div>
+    {{> ./type-selector.snip.html}}
+  </div>
+  <div class="col col-12 md-col-3 px2 py1">
+    <div class="h5 gray mb2">CITY</div>
+    {{> ./city-selector.snip.html}}
+  </div>
+</div>
+<!--/ Filters -->

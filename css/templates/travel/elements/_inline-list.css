@@ -1,0 +1,30 @@
+/*
+ * inline-list
+ *
+ * Style an <amp-list> element to display itself and its children as inline
+ * elements.
+ */
+.travel-inline-list {
+  position: static;
+}
+
+.travel-inline-list,
+.travel-inline-list [role="list"],
+.travel-inline-list [role="listitem"] {
+  display: inline;
+}
+
+.travel-inline-list [role="list"] {
+  position: static;
+}
+
+/*
+  Add an nbsp character to the inline-list element to ensure prevent it
+  from shrinking to 0px X 0px when otherwise empty which would make AMP think
+  the element was not visible in the viewport and would prevent the list
+  request from firing.
+ */
+.travel-inline-list::after {
+  content: "\00a0";
+  display: inline;
+}

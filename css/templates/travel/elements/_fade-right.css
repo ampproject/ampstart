@@ -1,0 +1,22 @@
+
+/*
+ * fade-right
+ *
+ * Create an element that fades out overflow content to the right.
+ */
+.travel-fade-right {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.travel-fade-right::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1rem;
+  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)
+}

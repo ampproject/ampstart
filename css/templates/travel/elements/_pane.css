@@ -1,0 +1,43 @@
+
+/**
+ * pane
+ *
+ * Create a collapsable dropdown panel. The required markup is:
+ *  div.pane(.pane-visible) > div.pane-overflow > div.pane-content
+ *
+ * NOTE: This element uses an unconventional approach to "hiding" content by
+ * setting `opacity: 0` and `pointer-events: none`. This is to prevent nested
+ * amp components from detecting their state as not visible when the panel is
+ * hidden. It also enables adding css transitions as the closes.
+ *
+ * Modifier Classes:
+ * - pane-visible: Show pane content. (content is otherwise hidden)
+ */
+
+.travel-pane {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.travel-pane-overflow {
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.travel-pane-content {
+  background-color: var(--white);
+  transform: translate(0, -100%);
+  transition: transform 100ms ease-out;
+}
+
+.travel-pane-visible .travel-pane-overflow {
+  transition: opacity 200ms;
+  opacity: 1;
+}
+
+.travel-pane-visible .travel-pane-content {
+  transition: transform 200ms ease-out;
+  transform: translate(0, 0);
+  pointer-events: all;
+}
