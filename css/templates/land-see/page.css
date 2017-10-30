@@ -74,6 +74,14 @@ h4,
   letter-spacing: normal;
 }
 
+.ampstart-byline {
+  font-size: var(--h6);
+  font-style: italic;
+  letter-spacing: normal;
+  color: var(--color-font-accent);
+  opacity: .8;
+}
+
 .ampstart-caption {
   font: 400 var(--h6)/var(--line-height-2) var(--font-primary);
   letter-spacing: normal;
@@ -171,10 +179,6 @@ h4,
 .ampstart-nav-dropdown .ampstart-dropdown-item,
 .ampstart-sidebar, .ampstart-nav-dropdown amp-accordion ul {
   background-color: var(--color-sidebar-background);
-}
-
-.ampstart-sidebar .ampstart-nav-dropdown .ampstart-dropdown-item {
-  color: var(--color-font-primary);
 }
 
 .ampstart-sidebar-nav > ul > li:first-child {
@@ -716,6 +720,7 @@ h4,
   border: none;
   background: transparent;
   cursor: pointer;
+  outline: none;
 }
 
 .land-see-progress-indicator {
@@ -917,8 +922,10 @@ h4,
   text-align: center;
 }
 
+.ampstart-sidebar .ampstart-nav-dropdown .ampstart-dropdown-item,
 .land-see-story-detail .land-see-hero-title,
-.land-see-story-detail .land-see-hero-caption {
+.land-see-story-detail .land-see-hero-caption,
+.land-see-blockquote p {
   color: var(--color-font-primary);
 }
 
@@ -938,6 +945,32 @@ h4,
   line-height: normal;
 }
 
+.land-see-blockquote::before {
+  content: "";
+  background: url(../../img/land-see/structure/green-up-full-20.svg) 0 0/198px 156px no-repeat;
+  position: absolute;
+  top: 50%;
+  left: var(--h5);
+  width: 198px;
+  height: 157px;
+  transform: rotate(90deg) translate(-40%,0);;
+  opacity: .2;
+  z-index: -1;
+}
+
+.land-see-blockquote p {
+  font-size: var(--h2);
+  line-height: var(--line-height-2);
+}
+
+.land-see-blockquote cite {
+  font-family: var(--font-navigation);
+  font-size: var(--h9);
+  font-style: normal;
+  text-transform: uppercase;
+  color: var(--color-font-accent);
+}
+
 .land-see-image-gallery {
   max-width: 813px;
   margin-top: var(--navbar-height);
@@ -955,6 +988,8 @@ h4,
 
 .land-see-gallery-progress button {
   padding-right: 3px;
+  outline: none;
+  background: transparent;
 }
 
 .land-see-gallery-progress button:last-child {
@@ -1002,6 +1037,39 @@ h4,
 .land-see-story-nav .ampstart-social-follow {
   float: right;
   justify-content: flex-start;
+}
+
+@media (--breakpoint-within-xxs) {
+  .land-see-story-detail .land-see-post-item .land-see-image-attribution {
+    display: none;
+  }
+
+  .land-see-image-attribution,
+  .land-see-story-subtitle,
+  .land-see-story-copy,
+  .land-see-blockquote p {
+    padding-left: var(--h5);
+  }
+
+  .land-see-flying-carpet {
+    display: block;
+  }
+
+  .land-see-story-subtitle {
+    padding-top: var(--h5);
+  }
+
+  .land-see-story-copy {
+    padding-right: var(--h5);
+  }
+
+  .land-see-blockquote::before {
+    left: -22px;
+  }
+
+  .land-see-blockquote {
+    padding: var(--h5);
+  }
 }
 
 @media (--breakpoint-within-xxxs) {

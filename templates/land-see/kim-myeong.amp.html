@@ -64,6 +64,22 @@ limitations under the License.
         <p class="land-see-hero-caption ampstart-caption mx-auto max-width-2 pt1 px2 mb3">
           {{{post-copy}}}
         </p>
+        {{#image}}
+        <amp-img
+          {{#media-query}}
+          media="{{media-query}}"
+          {{/media-query}}
+          class="{{classes}}"
+          alt="{{alt-text}}"
+          width="{{width}}"
+          height="{{height}}"
+          layout="{{layout}}"
+          src="{{src}}">
+        </amp-img>
+        {{#attribution}}
+        <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">{{.}}</div>
+        {{/attribution}}
+        {{/image}}
       </div>
       {{/land-see-post-detail}}
 
@@ -76,11 +92,36 @@ limitations under the License.
           {{{.}}}
         </p>
         {{/paragraph}}
+        {{#flying-carpet}}
+        <div class="land-see-flying-carpet display-none">
+          <amp-fx-flying-carpet height="{{height}}">
+            {{#image}}
+            <amp-img
+              alt="{{alt-text}}"
+              {{#classes}}
+              class="{{classes}}"
+              {{/classes}}
+              {{#width}}
+              width="{{width}}"
+              {{/width}}
+              {{#height}}
+              height="{{height}}"
+              {{/height}}
+              layout="{{layout}}"
+              src="{{src}}">
+            </amp-img>
+            {{/image}}
+          </amp-fx-flying-carpet>
+          {{#attribution}}
+          <div class="land-see-image-attribution ampstart-byline left-align mx-auto max-width-3 px4 pt1">{{.}}</div>
+          {{/attribution}}
+        </div>
+        {{/flying-carpet}}
         {{#blockquote}}
-        <blockquote class="land-see-blockquote max-width-3 mx-auto py4 px4 {{classes}} "{{#cite-url}}cite="{{.}}"{{/cite-url}}>
-          <p>{{quote}}</p>
+        <blockquote class="land-see-blockquote max-width-3 mx-auto py4 px4 relative {{classes}} "{{#cite-url}}cite="{{.}}"{{/cite-url}}>
+          <p class="bold mb1 pl4">{{quote}}</p>
           {{#citation}}
-          <cite>{{.}}</cite>
+          <cite class="pl4">{{.}}</cite>
           {{/citation}}
         </blockquote>
         {{/blockquote}}
@@ -173,10 +214,10 @@ limitations under the License.
 
     {{#land-see-story-nav}}
     <section class="land-see-story-nav mx-auto center px1 relative z2">
-      <div class="land-see-paging land-see-page-navigation mb4 flex flex-wrap clearfix">
+      <div class="land-see-paging land-see-page-navigation mb4 flex flex-wrap">
         <div class="sm-col sm-col-3 col-6 left-align"><a href="{{previous-url}}" class="land-see-prev-page mt2 ml2 inline-block relative">Previous Story</a></div>
         <div class="land-see-story-social flex flex-auto align-top pt1 justify-center">
-            {{> ../../components/social-follow/social-follow.snip.html}}
+          {{> ../../components/social-follow/social-follow.snip.html}}
         </div>
         <div class="sm-col sm-col-3 col-6 right-align"><a href="{{next-url}}" class="land-see-next-page mt2 mr2 inline-block relative">Next Story</a></div>
       </div>

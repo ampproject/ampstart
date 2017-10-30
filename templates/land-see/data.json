@@ -14,7 +14,8 @@
         "amp-animation",
         "amp-position-observer",
         "amp-bind",
-        "amp-youtube"
+        "amp-youtube",
+        "amp-fx-flying-carpet"
       ],
       "templates": [
         "amp-mustache"
