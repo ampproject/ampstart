@@ -18,6 +18,7 @@
       "title": "Travel Template",
       "canonical-path": "templates/travel/travel.amp",
       "extensions": [
+        "amp-list",
         "amp-bind"
       ],
       "templates": [
@@ -29,42 +30,64 @@
       ]
     },
     "partials": {
-      "popular": {
-        "adventures": [{
-          "layout-classes": ["travel-popular-tilt-right"],
-          "href": "#",
-          "width": 346,
-          "height": 200,
-          "src": "../../img/travel/activity/surf.jpg",
-          "text": "Surf Day. Board and Wetsuits Included in Price!",
-          "price": "100",
-          "reviews": "241 Reviews",
-          "place": "Oaxaca",
-          "new" : false
+      "hero": {
+        "images": [{
+          "src": "../../img/travel/hero-2.jpg"
         }, {
-          "layout-classes": ["travel-results-result relative"],
-          "href": "#",
-          "width": 346,
-          "height": 200,
-          "src": "../../img/travel/activity/music-show.jpg",
-          "text": "Discover Oaxaca's Electronic Music Scene with a Top DJ",
-          "price": "113",
-          "reviews": "42 Reviews",
-          "place": "Oaxaca",
-          "new" : true
+          "src": "../../img/travel/hero-3.jpg"
         }, {
-          "layout-classes": ["travel-popular-tilt-left"],
-          "href": "#",
-          "width": 346,
-          "height": 200,
-          "src": "../../../img/travel/activity/skate.jpg",
-          "text": "Skateboard Around the City",
-          "price": "92",
-          "reviews": "17 Reviews",
-          "place": "Mexico City",
-          "new" : false
+          "src": "../../img/travel/hero-1.jpg"
         }]
       }
-    }
+    },
+    "apply-button-props": [{
+       "key": "ui_reset",
+       "value": "false"
+     }, {
+       "key": "ui_filterPane",
+       "value": "false"
+     }, {
+       "key": "query_query",
+       "value": "fields_query"
+     }, {
+       "key": "fields_query_edited",
+       "value": "false"
+     }, {
+       "key": "query_departure",
+       "value": "fields_departure"
+     }, {
+       "key": "fields_departure_edited",
+       "value": "false"
+     }, {
+       "key": "query_return",
+       "value": "fields_return"
+     }, {
+       "key": "fields_return_edited",
+       "value": "false"
+     }, {
+       "key": "query_maxPrice",
+       "value": "fields_maxPrice"
+     }, {
+       "key": "fields_maxPrice_edited",
+       "value": "false"
+     }, {
+       "key": "query_city",
+       "value": "fields_city"
+     }, {
+       "key": "fields_city_edited",
+       "value": "false"
+     }, {
+       "key": "query_type",
+       "value": "fields_type"
+     }, {
+       "key": "fields_type_edited",
+       "value": "false"
+     }, {
+       "key": "query_sort",
+       "value": "fields_sort"
+     }, {
+       "key": "fields_sort_edited",
+       "value": "false"
+   }]
   }
 }
