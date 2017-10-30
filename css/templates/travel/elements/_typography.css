@@ -13,14 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-.travel-spacing-medium {
-  letter-spacing: 0.1em;
-}
-
-.travel-spacing-none {
-  letter-spacing: normal;
-}
 /**
  * Overide ampstart-base heading line-heights
  */

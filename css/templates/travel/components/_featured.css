@@ -14,12 +14,20 @@
   * limitations under the License.
   */
 
+.travel-featured-heading {
+  letter-spacing: none;
+}
+
 .travel-featured-grid {
   margin: calc(2 / 16rem);
 }
 
 .travel-featured-tile {
   margin: calc(2 / 16rem);
+}
+
+.travel-featured-tile-heading {
+  letter-spacing: 0.1em
 }
 
 .travel-featured-tile:hover,
