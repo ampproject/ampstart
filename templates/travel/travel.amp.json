@@ -18,6 +18,7 @@
       "title": "Travel Template",
       "canonical-path": "templates/travel/travel.amp",
       "extensions": [
+        "amp-list",
         "amp-bind"
       ],
       "templates": [
