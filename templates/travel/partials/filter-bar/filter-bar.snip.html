@@ -53,13 +53,7 @@
           <amp-list
             class="travel-inline-list"
             layout="flex-item"
-            on="
-              tap:AMP.setState({
-                {{#apply-button-props}}
-                  {{key}}: {{value}},
-                {{/apply-button-props}}
-              })
-            "
+            {{> ../util/amp-list-props.snip.html}}
           >
             <template type="amp-mustache">
               {{=[[ ]]=}}
