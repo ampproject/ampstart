@@ -11,6 +11,10 @@
   line-height: 1;
 }
 
+.travel-results-navbar-subheading {
+  letter-spacing: .2em;
+}
+
 @media (--breakpoint-md) {
   .travel-results-navbar-icon {
     line-height: inherit;
