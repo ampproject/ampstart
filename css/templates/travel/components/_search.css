@@ -15,13 +15,13 @@
   */
 
 .travel-search {
-  background-color: var(--purple);
+  background-color: var(--color-purple);
 }
 
 .travel-search-heading {
-  color: var(--white);
+  color: var(--color-white);
 }
 
 .travel-search .travel-link {
-  background-color: var(--white);
+  background-color: var(--color-white);
 }

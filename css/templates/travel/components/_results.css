@@ -24,23 +24,23 @@
 }
 
 .travel-results-result-link amp-img {
-  background-color: var(--silver);
+  background-color: var(--color-silver);
 }
 
 .travel-results-result-text {
-  color: var(--black);
+  color: var(--color-black);
 }
 
 .travel-results-result-subtext {
-  color: var(--gray);
+  color: var(--color-gray);
 }
 
 .travel-results-result-stars {
-  color: var(--silver);
+  color: var(--color-silver);
 }
 
 .travel-results-result-stars.green {
-  color: var(--green);
+  color: var(--color-green);
 }
 
 .travel-results-result-flags,

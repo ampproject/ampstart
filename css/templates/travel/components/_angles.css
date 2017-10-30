@@ -45,7 +45,7 @@
 .travel-angle-2 {
   height: 1400px;
   transform: translate(-50%, 16rem) rotate(20deg);
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 @media (--breakpoint-md) {

@@ -81,7 +81,7 @@
   right: 0;
   height: 70vmax;
   top: calc(70vmax - 300px);
-  background-image: linear-gradient(180deg, transparent 0%, var(--black) 300px);
+  background-image: linear-gradient(180deg, transparent 0%, var(--color-black) 300px);
 }
 
 .travel-hero-bg-img {
@@ -90,7 +90,7 @@
   bottom: -5vmax;
   left: -5vmax;
   opacity: 0;
-  background: var(--silver)
+  background: var(--color-silver)
 }
 .travel-hero-bg-img img {
   object-fit: cover;
@@ -123,11 +123,11 @@
 }
 
 .travel-hero-search-dates {
-  color: var(--white);
+  color: var(--color-white);
 }
 
 .travel-hero-heading {
-  color: var(--white);
+  color: var(--color-white);
   font-size: var(--h00);
   font-weight: 700;
   letter-spacing: normal;
@@ -135,7 +135,7 @@
 }
 
 .travel-hero-subheading {
-  color: var(--white);
+  color: var(--color-white);
   font-size: 18px;
   letter-spacing: normal;
   animation: fade-and-slideup 0.4s 0.25s ease-in-out both;
@@ -151,12 +151,12 @@
 
 .travel-hero-search .ampstart-btn {
   font-size: 1.25rem;
-  background-color: var(--purple);
+  background-color: var(--color-purple);
   animation: fade-and-slideup 0.4s 0.4s ease-in-out both;
 }
 
 .travel-hero-discover {
-  color: var(--gray);
+  color: var(--color-gray);
   cursor: pointer;
   animation: fade-and-slideup 0.4s 0.45s ease-in-out both;
 }
@@ -206,7 +206,7 @@
 
   .travel-hero-search .travel-input {
     color: inherit;
-    background-color: var(--white);
+    background-color: var(--color-white);
     border-color: transparent;
   }
 
@@ -221,7 +221,7 @@
 
   .travel-hero-search-dates {
     justify-content: flex-start;
-    color: var(--black);
+    color: var(--color-black);
   }
 
   .travel-hero-search-dates .travel-date-input {

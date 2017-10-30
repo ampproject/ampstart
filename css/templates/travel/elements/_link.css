@@ -16,7 +16,7 @@
 
 .travel-link, .travel-link:visited {
   transition: color .15s ease-in;
-  color: var(--purple);
+  color: var(--color-purple);
   text-decoration: none;
   font-family: inherit;
   transition: color 0.15s ease-in;
@@ -32,7 +32,7 @@
 }
 
 .travel-link.gray, .travel-link.gray:visited {
-  color: var(--gray);
+  color: var(--color-gray);
 }
 
 .travel-link.gray:hover {

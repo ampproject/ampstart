@@ -22,7 +22,7 @@
 .travel-input-group > a {
   border-left-width: 0;
   cursor: pointer;
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 .travel-input-group > a,

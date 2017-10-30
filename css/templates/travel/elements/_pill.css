@@ -22,6 +22,6 @@
 .travel-pill {
   border-radius: 1em;
   padding: 2px 8px;
-  color: var(--white);
-  background-color: var(--fuchsia);
+  color: var(--color-white);
+  background-color: var(--color-fuchsia);
 }
