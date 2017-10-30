@@ -37,55 +37,6 @@
           "src": "../../img/travel/hero-3.jpg"
         }, {
           "src": "../../img/travel/hero-1.jpg"
-        }],
-        "apply-button-props": [{
-            "key": "ui_reset",
-            "value": "false"
-          }, {
-            "key": "ui_filterPane",
-            "value": "false"
-          }, {
-            "key": "query_query",
-            "value": "fields_query"
-          }, {
-            "key": "fields_query_edited",
-            "value": "false"
-          }, {
-            "key": "query_departure",
-            "value": "fields_departure"
-          }, {
-            "key": "fields_departure_edited",
-            "value": "false"
-          }, {
-            "key": "query_return",
-            "value": "fields_return"
-          }, {
-            "key": "fields_return_edited",
-            "value": "false"
-          }, {
-            "key": "query_maxPrice",
-            "value": "fields_maxPrice"
-          }, {
-            "key": "fields_maxPrice_edited",
-            "value": "false"
-          }, {
-            "key": "query_city",
-            "value": "fields_city"
-          }, {
-            "key": "fields_city_edited",
-            "value": "false"
-          }, {
-            "key": "query_type",
-            "value": "fields_type"
-          }, {
-            "key": "fields_type_edited",
-            "value": "false"
-          }, {
-            "key": "query_sort",
-            "value": "fields_sort"
-          }, {
-            "key": "fields_sort_edited",
-            "value": "false"
         }]
       }
     },
