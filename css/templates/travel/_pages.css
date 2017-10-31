@@ -21,3 +21,24 @@
     opacity: 1;
   }
 }
+
+/**
+ * object-cover
+ *
+ * Set the scale-mode of an img (or amp-img) element to "cover" instead of the
+ * default "stretch". This allows arbrairy scaling of img elements without
+ * distortion.
+ */
+
+.travel-object-cover,
+.travel-object-cover > img {
+  object-fit: cover;
+}
+
+/**
+ * travel-main-wrapper
+ */
+
+.travel-main-wrapper {
+  background-color: var(--color-black);
+}

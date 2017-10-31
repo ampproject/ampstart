@@ -1,0 +1,153 @@
+{{!
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
+<!-- Featured -->
+{{#partials.featured}}
+<section class="travel-featured pt3 relative clearfix">
+  <header class="max-width-2 mx-auto px1 md-px2 relative">
+    <h3 class="travel-featured-heading h1 bold line-height-2 mb2 center">Featured Destinations</h3>
+  </header>
+  <div class="max-width-3 mx-auto relative">
+    <div class="travel-featured-grid flex flex-wrap items-stretch">
+      <div class="col-12 md-col-6 flex items-stretch flex-auto">
+        {{#image-col-1}}
+        <a
+          href="travel-results.amp"
+          class="travel-featured-tile flex flex-auto relative {{overlay-color}}"
+          on="tap:AMP.setState({fields_query: 'New York', query_query: 'New York'})"
+        >
+          <amp-img
+            class="travel-object-cover flex-auto"
+            layout="responsive"
+            width="{{width}}"
+            height="{{height}}"
+            src="../../../img/travel/city/{{src}}.jpg"
+          ></amp-img>
+          <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
+            <div class="travel-featured-tile-heading caps bold line-height-2 h3">{{name}}</div>
+            <div class="h5">{{adventure-number}}</div>
+          </div>
+        </a>
+        {{/image-col-1}}
+        <div class="flex flex-column items-stretch flex-auto">
+          {{#image-col-2-top}}
+          <a
+            href="travel-results.amp"
+            class="travel-featured-tile flex flex-auto relative {{overlay-color}}"
+            on="tap:AMP.setState({fields_query: 'Barcelona', query_query: 'Barcelona'})"
+          >
+            <amp-img
+              class="travel-object-cover flex-auto"
+              layout="responsive"
+              width="{{width}}"
+              height="{{height}}"
+              src="../../../img/travel/city/{{src}}.jpg"
+            ></amp-img>
+            <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
+              <div class="travel-featured-tile-heading bold caps line-height-2 h3">{{name}}</div>
+              <div class="h5">{{adventure-number}}</div>
+            </div>
+          </a>
+          {{/image-col-2-top}}
+          {{#image-col-2-bottom}}
+          <a
+            href="travel-results.amp"
+            class="travel-featured-tile flex flex-auto pointer relative {{overlay-color}}"
+            on="tap:AMP.setState({fields_query: 'Paris', query_query: 'Paris'})"
+          >
+            <amp-img
+              class="travel-object-cover flex-auto"
+              layout="responsive"
+              width="{{width}}"
+              height="{{height}}"
+              src="../../../img/travel/city/{{src}}.jpg"
+            ></amp-img>
+            <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
+              <div class="travel-featured-tile-heading bold caps line-height-2 h3">{{name}}</div>
+              <div class="h5">{{adventure-number}}</div>
+            </div>
+          </a>
+          {{/image-col-2-bottom}}
+        </div>
+      </div>
+      <div class="col-12 md-col-6 flex items-stretch flex-auto">
+        <div class="flex flex-column items-stretch flex-auto">
+          {{#image-col-3-top}}
+          <a
+            href="travel-results.amp"
+            class="travel-featured-tile flex flex-auto pointer relative {{overlay-color}}"
+            on="tap:AMP.setState({fields_query: 'Tokyo', query_query: 'Tokyo'})"
+          >
+            <amp-img
+              class="travel-object-cover flex-auto"
+              layout="responsive"
+              width="{{width}}"
+              height="{{height}}"
+              src="../../../img/travel/city/{{src}}.jpg"
+            ></amp-img>
+            <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
+              <div class="travel-featured-tile-heading caps bold line-height-2 h3">{{name}}</div>
+              <div class="h5">{{adventure-number}}</div>
+            </div>
+          </a>
+          {{/image-col-3-top}}
+          {{#image-col-3-bottom}}
+          <a
+            href="travel-results.amp"
+            class="travel-featured-tile flex flex-auto relative {{overlay-color}}"
+            on="tap:AMP.setState({fields_query: 'Chicago', query_query: 'Chicago'})"
+          >
+            <amp-img
+              class="travel-object-cover flex-auto"
+              layout="responsive"
+              width="{{width}}"
+              height="{{height}}"
+              src="../../../img/travel/city/{{src}}.jpg"
+            ></amp-img>
+            <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
+              <div class="travel-featured-tile-heading caps bold line-height-2 h3">{{name}}</div>
+              <div class="h5">{{adventure-number}}</div>
+            </div>
+          </a>
+          {{/image-col-3-bottom}}
+        </div>
+        {{#image-col-4}}
+        <a
+          href="travel-results.amp"
+          class="travel-featured-tile flex flex-auto relative {{overlay-color}}"
+          on="tap:AMP.setState({fields_query: 'Reykjavik', query_query: 'Reykjavik'})"
+        >
+          <amp-img
+            class="travel-object-cover flex-auto"
+            layout="responsive"
+            width="{{width}}"
+            height="{{height}}"
+            src="../../../img/travel/city/{{src}}.jpg"
+          ></amp-img>
+          <div class="travel-featured-overlay absolute z1 center top-0 right-0 bottom-0 left-0 white p2">
+            <div class="travel-featured-tile-heading caps bold h3">{{name}}</div>
+            <div class="h5">{{adventure-number}}</div>
+          </div>
+        </a>
+        {{/image-col-4}}
+      </div>
+    </div>
+  </div>
+</section>
+{{/partials.featured}}
+<!--/ Featured -->

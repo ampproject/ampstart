@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-@import './page';
+@import 'page';
 
 /*
  * Custom elements.
@@ -24,6 +24,10 @@
 @import 'elements/_input-icon';
 @import 'elements/_input';
 @import 'elements/_shadow';
+@import 'elements/_border';
+@import 'elements/_input-group';
+@import 'elements/_link';
+@import 'elements/_typography';
 
 /*
  * Template partials.
@@ -31,3 +35,6 @@
 @import 'components/_hero';
 @import 'components/_icon';
 @import 'components/_search-navbar';
+@import 'components/_footer';
+@import 'components/_featured';
+@import 'components/_search';
