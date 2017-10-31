@@ -10,7 +10,7 @@
       <div class="pl2 pr1 py2 nowrap border-bottom travel-border flex-none">
         <span class="bold">Filters</span>
         <span
-          class="travel-flip gray inline-block"
+          class="travel-flip travel-filters-text inline-block"
           [class]="'travel-flip travel-filters-text inline-block' + (ui_filterPane ? ' travel-flip-flipped' : '')"
         >
           {{> ../../../../img/travel/icon/caret-down-small.svg}}
@@ -18,19 +18,19 @@
       </div>
 
       <div class="pl1 py2 nowrap border-bottom travel-border flex-none">
-        <span class="gray">Price</span>
+        <span class="travel-filters-text">Price</span>
       </div>
 
       <div class="pr1 py2 nowrap border-bottom travel-border">
         <span
-          class="travel-badge gray"
-          [class]="query_maxPrice < 801 ? 'travel-badge green' : 'travel-badge gray'"
+          class="travel-badge"
+          [class]="query_maxPrice < 801 ? 'travel-badge green' : 'travel-badge'"
           [text]="query_maxPrice < 801 ? 'Up to $' + round(query_maxPrice) : 'Any price'"
         >Any price</span>
       </div>
 
       <div class="pl1 py2 nowrap border-bottom travel-border flex-none">
-        <span class="gray">Type</span>
+        <span class="travel-filters-text">Type</span>
       </div>
 
       <div class="border-bottom travel-border">
@@ -93,7 +93,7 @@
         tabindex="0"
         on="tap:AMP.setState({ui_filterPane: false, ui_reset: false, ui_sortPane: !ui_sortPane})"
       >
-        <span class="gray">Sort by</span>
+        <span class="travel-filters-text">Sort by</span>
         <div class="inline-block">
           <!--
             Render an invisible set of labels to force the element to always be
@@ -112,8 +112,8 @@
           </span>
         </div>
         <span
-          class="travel-flip gray inline-block"
-          [class]="'travel-flip gray inline-block ' + (ui_sortPane ? ' travel-flip-flipped' : '')"
+          class="travel-flip travel-filters-text inline-block"
+          [class]="'travel-flip travel-filters-text inline-block ' + (ui_sortPane ? ' travel-flip-flipped' : '')"
         >
           {{> ../../../../img/travel/icon/caret-down-small.svg}}
         </span>

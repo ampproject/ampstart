@@ -1,6 +1,6 @@
 <!-- Filter Overlay -->
 <div class="absolute">
-  <div class="travel-overlay" [class]="'travel-overlay' + (ui_filterPane ? ' travel-overlay-visible' : '')">
+  <div class="travel-overlay fixed top-0 bottom-0 right-0 left-0 z1 overflow-hidden flex flex-column" [class]="'travel-overlay fixed top-0 bottom-0 right-0 left-0 z1 overflow-hidden flex flex-column' + (ui_filterPane ? ' travel-overlay-visible' : '')">
     <div class="travel-overlay-header">
       <div class="border-bottom travel-border mx1 md-mx2 relative flex items-center">
         <!--
@@ -18,7 +18,7 @@
               <div class="h3 line-height-2 bold">
                 {{stats.resultCount}} Results
               </div>
-              <div class="travel-spacing-wide h6 gray line-height-2 caps">
+              <div class="travel-filter-results-heading h6 line-height-2 caps">
                 {{stats.location}}
                 {{#stats.startDate}}{{#stats.endDate}}
                    &bull; {{stats.startDate.formatted}} - {{stats.endDate.formatted}}
@@ -30,7 +30,7 @@
 
         <div class="absolute top-0 bottom-0 left-0 flex items-center">
           <div
-            class="travel-overlay-reset-btn gray"
+            class="travel-overlay-reset-btn"
             role="button"
             tabindex="0"
             on="
@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-    <div class="travel-overlay-content">
+    <div class="travel-overlay-content flex-auto overflow-hidden">
       <div class="max-width-3 mx-auto px1 md-px2 py1">
         {{> ../filters/filters.snip.html}}
       </div>

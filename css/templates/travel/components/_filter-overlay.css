@@ -18,10 +18,7 @@
   background-color: var(--white);
 }
 
-.travel-overlay-header .gray {
-  color: var(--gray);
-}
-
 .travel-overlay-reset-btn {
   cursor: pointer;
+  color: var(--gray);
 }

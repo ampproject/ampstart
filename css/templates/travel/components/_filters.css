@@ -51,6 +51,11 @@
   color: var(--black);
 }
 
+.travel-filter-results-heading {
+  color: var(--gray);
+  letter-spacing: .2em;
+}
+
 .travel-filters-text {
   color: var(--gray);
 }
