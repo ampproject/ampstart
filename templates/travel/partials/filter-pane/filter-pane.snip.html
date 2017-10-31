@@ -1,11 +1,11 @@
 <!-- Filter Pane -->
 <div class="travel-pane" [class]="'travel-pane' + (ui_filterPane ? ' travel-pane-visible' : '')">
   <div class="travel-pane-overflow absolute overflow-hidden left-0 right-0 pb2">
-    <div class="travel-pane-content travel-shadow travel-border-gray border-bottom">
+    <div class="travel-pane-content travel-shadow travel-border border-bottom">
       <div class="max-width-3 mx-auto px1 md-px2 py1">
         {{> ../filters/filters.snip.html}}
       </div>
-      <div class="travel-border-gray mx1 md-mx2 border-top"></div>
+      <div class="travel-border mx1 md-mx2 border-top"></div>
       <div class="max-width-3 mx-auto px1 md-px2 py1 center">
         <button
         class="travel-filters-reset-btn ampstart-btn rounded bold"

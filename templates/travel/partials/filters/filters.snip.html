@@ -4,7 +4,7 @@
   [class]="'travel-filters clearfix mxn2' + (ui_reset ? ' travel-filters-reset' : '')"
 >
   <div class="col col-12 md-col-4 px2 py1">
-    <div class="h5 gray mb1 caps">max price</div>
+    <div class="travel-filters-text h5 mb1 caps">max price</div>
     {{> ./price-range.snip.html}}
     <div class="h3 gray line-height-3">
       <amp-list
@@ -21,11 +21,11 @@
     </div>
   </div>
   <div class="col col-12 md-col-5 px2 py1">
-    <div class="h5 gray mb2 caps">type</div>
+    <div class="travel-filters-text h5 mb2 caps">type</div>
     {{> ./type-selector.snip.html}}
   </div>
   <div class="col col-12 md-col-3 px2 py1">
-    <div class="h5 gray mb2 caps">city</div>
+    <div class="travel-filters-text h5 mb2 caps">city</div>
     {{> ./city-selector.snip.html}}
   </div>
 </div>

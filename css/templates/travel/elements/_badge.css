@@ -21,6 +21,7 @@
  */
 .travel-badge {
   padding: 4px 10px;
+  color: var(--gray)
   border: 1px solid var(--silver);
   border-radius: var(--border-radius);
   background: var(--white);

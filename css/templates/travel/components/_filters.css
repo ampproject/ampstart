@@ -51,6 +51,10 @@
   color: var(--black);
 }
 
-.travel-filters .gray {
+.travel-filters-text {
   color: var(--gray);
+}
+
+.travel-filters-results-text {
+  color: var(--purple);
 }
