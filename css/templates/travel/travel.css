@@ -19,6 +19,12 @@
 /*
  * Custom elements.
  */
+@import 'elements/_activity-type-color';
+@import 'elements/_container';
+@import 'elements/_link';
+@import 'elements/_pill';
+@import 'elements/_shadow';
+@import 'elements/_typography';
 @import 'elements/_btn';
 @import 'elements/_date-input';
 @import 'elements/_input-icon';
@@ -32,6 +38,13 @@
 /*
  * Template partials.
  */
+@import 'components/_activities';
+@import 'components/_angles';
+@import 'components/_discover';
+@import 'components/_icon';
+@import 'components/_like';
+@import 'components/_popular';
+@import 'components/_results';
 @import 'components/_hero';
 @import 'components/_icon';
 @import 'components/_search-navbar';

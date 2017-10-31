@@ -1,0 +1,26 @@
+{{!
+<!--
+  The API interaction would ideally be handled with a form tag, instead of
+  numerouse amp-list elements, unfortunately there is now way to render
+  form response data outside of the `form > div[sumbit-success]` element.
+
+  For now the app interactivity is provided by using a [src] bound amp-list
+  element element in each location of the page the displays dynamic response
+  content.
+
+  The attributes common to each amp-list element are defined here. This [src]
+  bind statement is already at the max complexity limit (50), so sending
+  additional data in the request is not an option.
+-->
+}}
+
+src="/api/search?maxPrice=0{{!departure=&return=}}&query=&sort=popularity-desc"
+[src]="
+  '/api/search?maxPrice=' + (query_maxPrice < 801 ? query_maxPrice : 0) +
+  {{!'&departure=' + query_departure +}}
+  {{!'&return=' + query_return +}}
+  '&query=' + query_query +
+  (query_city.length ? '&cities[]=' + query_city.join('&cities[]=') : '') +
+  (query_type.length ? '&types[]=' + query_type.join('&types[]=') : '') +
+  '&sort=' + query_sort
+"

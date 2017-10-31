@@ -48,8 +48,17 @@
   padding: var(--input-big-padding-y) var(--input-big-padding-x);
 }
 
+.travel-input-dark {
+  background: color(#000 a(0.2));
+}
+
 .travel-input::-webkit-input-placeholder {
   color: var(--color-gray);
+}
+
+.travel-input-dark::-webkit-input-placeholder {
+  color: currentColor;
+  opacity: 0.75;
 }
 
 .travel-input-clear::-webkit-input-placeholder {
