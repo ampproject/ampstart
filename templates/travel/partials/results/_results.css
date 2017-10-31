@@ -1,0 +1,159 @@
+/**
+ * Copyright 2016 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.travel-results-result {
+  animation: fade-and-slideup 0.4s ease-in-out both;
+  animation-delay: 110ms;
+}
+
+.travel-results-result:nth-child(1) { animation-delay: 0ms; }
+.travel-results-result:nth-child(2) { animation-delay: 40ms; }
+.travel-results-result:nth-child(3) { animation-delay: 80ms; }
+.travel-results-result:nth-child(4) { animation-delay: 120ms; }
+.travel-results-result:nth-child(5) { animation-delay: 160ms; }
+.travel-results-result:nth-child(6) { animation-delay: 200ms; }
+.travel-results-result:nth-child(7) { animation-delay: 240ms; }
+.travel-results-result:nth-child(8) { animation-delay: 280ms; }
+.travel-results-result:nth-child(9) { animation-delay: 320ms; }
+.travel-results-result:nth-child(10) { animation-delay: 360ms; }
+.travel-results-result:nth-child(11) { animation-delay: 400ms; }
+
+.travel-results-result-link {
+  display: block;
+  border-radius: var(--border-radius);
+  position: relative;
+}
+
+.travel-results-result-link amp-img {
+  background-color: var(--silver);
+}
+
+.travel-results-result-flags {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.travel-results-result-text {
+  color: var(--black);
+}
+
+.travel-results-result-subtext {
+  color: var(--gray);
+}
+
+.travel-results-result-stars {
+  color: var(--silver);
+}
+
+.travel-results-result-stars.green {
+  color: var(--green);
+}
+
+.travel-results-result-like {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.travel-results-result-flags,
+.travel-results-result-like {
+  pointer-events: none;
+}
+
+.travel-results-result-flags > *,
+.travel-results-result-like > * {
+  pointer-events: all;
+}
+
+.travel-results-result-link,
+.travel-results-result-flags,
+.travel-results-result-like {
+  transition: transform 200ms;
+}
+
+.travel-results-result:hover .travel-results-result-link,
+.travel-results-result-link:focus {
+  outline: none;
+}
+
+.travel-results-result:hover .travel-results-result-link,
+.travel-results-result-link:focus,
+.travel-results-result:hover .travel-results-result-flags,
+.travel-results-result-link:focus ~ .travel-results-result-flags,
+.travel-results-result:hover .travel-results-result-like,
+.travel-results-result-link:focus ~ .travel-results-result-like {
+  transform: translateY(-0.5rem);
+}
+
+.travel-results-empty {
+  position: fixed;
+  top: calc(150 / 16rem);
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  min-height: calc(200 / 16rem);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: fade-and-slideup 0.4s ease-in-out both;
+}
+
+.travel-results-list > [class^=loading-container] {
+  position: fixed;
+  top: calc(150 / 16rem);
+  left: 0;
+  right: 0;
+  bottom: 70px;
+  min-height: calc(200 / 16rem);
+}
+
+.travel-results-list > div > .amp-active {
+  width: calc(40 / 16rem);
+  height: calc(40 / 16rem);
+  box-shadow: 0 0 0 calc(4 / 16rem) var(--silver) inset;
+  border-radius: 50%;
+  background: var(--white);
+  overflow: hidden;
+  position: relative;
+
+  animation: fade-and-slideup 0.4s 0.2s ease-in-out both;
+}
+
+.travel-results-list > div > .amp-active::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: calc(112 / 16rem);
+  height: calc(14 / 16rem);
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='760px' height='190px' viewBox='0 0 760 190'><path stroke='#e3e5e8' stroke-width='50' fill='none' d='M0,45 C95.0000001,45 95.0000001,145 190.000001,145 C285.000001,145 285.000001,45 380.000001,45 C475.000001,45 475.000001,145 570,145 C665,145 665,45 760,45'></path></svg>");
+  background-size: contain;
+  animation: travel-results-list-loading 2s linear infinite;
+}
+
+.travel-results-list > div > .amp-active > div {
+  display: none;
+}
+
+@keyframes travel-results-list-loading {
+  0% {transform: translateX(0%)}
+  to {transform: translateX(-50%)}
+}

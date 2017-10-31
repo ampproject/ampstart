@@ -1,0 +1,123 @@
+{
+  "travel": {
+    "data": {
+      "types": [
+        {"text": "Active", "value": "active", "icon": {"run": true}},
+        {"text": "Artistic", "value": "artistic", "icon": {"paintbrush": true}},
+        {"text": "Drinks", "value": "drinks", "icon": {"cocktail": true}},
+        {"text": "Fashion", "value": "fashion", "icon": {"jacket": true}},
+        {"text": "Food", "value": "food", "icon": {"cutlery": true}},
+        {"text": "Music", "value": "music", "icon": {"guitar": true}},
+        {"text": "Nature", "value": "nature", "icon": {"pine": true}},
+        {"text": "Nightlife", "value": "nightlife", "icon": {"moon": true}},
+        {"text": "Tours", "value": "tours", "icon": {"bus": true}},
+        {"text": "Water", "value": "water", "icon": {"boat": true}}
+      ],
+      "sort": [
+        {"text": "Popular", "value": "popularity-desc", "selected": true},
+        {"text": "Best Rated", "value": "rating-desc", "selected": false},
+        {"text": "New", "value": "age-asc", "selected": false},
+        {"text": "Lowest Price", "value": "price-asc", "selected": false}
+      ]
+    },
+    "head-tag": {
+      "title": "Travel Template",
+      "canonical-path": "templates/travel/travel-results.amp",
+      "extensions": [
+        "amp-selector",
+        "amp-bind",
+        "amp-list"
+      ],
+      "templates": [
+        "amp-mustache"
+      ],
+      "css-path": "templates/travel/travel-results.css",
+      "font-stylesheets": [
+        "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700"
+      ]
+    },
+    "apply-button-props": [{
+        "key": "ui_reset",
+        "value": "false"
+      }, {
+        "key": "ui_filterPane",
+        "value": "false"
+      }, {
+        "key": "query_query",
+        "value": "fields_query"
+      }, {
+        "key": "fields_query_edited",
+        "value": "false"
+      }, {
+        "key": "query_departure",
+        "value": "fields_departure"
+      }, {
+        "key": "fields_departure_edited",
+        "value": "false"
+      }, {
+        "key": "query_return",
+        "value": "fields_return"
+      }, {
+        "key": "fields_return_edited",
+        "value": "false"
+      }, {
+        "key": "query_maxPrice",
+        "value": "fields_maxPrice"
+      }, {
+        "key": "fields_maxPrice_edited",
+        "value": "false"
+      }, {
+        "key": "query_city",
+        "value": "fields_city"
+      }, {
+        "key": "fields_city_edited",
+        "value": "false"
+      }, {
+        "key": "query_type",
+        "value": "fields_type"
+      }, {
+        "key": "fields_type_edited",
+        "value": "false"
+      }, {
+        "key": "query_sort",
+        "value": "fields_sort"
+      }, {
+        "key": "fields_sort_edited",
+        "value": "false"
+    }],
+    "reset-button-props": [{
+        "key": "ui_reset",
+        "value": "true"
+      }, {
+        "key": "query_maxPrice",
+        "value": "fields_maxPrice_initial"
+      }, {
+        "key": "fields_maxPrice",
+        "value": "fields_maxPrice_initial"
+      }, {
+        "key": "fields_maxPrice_live",
+        "value": "fields_maxPrice_initial"
+      }, {
+        "key": "fields_maxPrice_edited",
+        "value": "false"
+      }, {
+        "key": "query_city",
+        "value": "fields_city_initial"
+      }, {
+        "key": "fields_city",
+        "value": "fields_city_initial"
+      }, {
+        "key": "fields_city_edited",
+        "value": "false"
+      }, {
+        "key": "query_type",
+        "value": "fields_type_initial"
+      }, {
+        "key": "fields_type",
+        "value": "fields_type_initial"
+      }, {
+        "key": "fields_type_edited",
+        "value": "false"
+    }]
+  }
+}
