@@ -2,8 +2,8 @@
   margin-top: -4rem;
   margin-right: -4rem;
   margin-left: -4rem;
-  background-color: var(--purple);
-  color: var(--white);
+  background-color: var(--color-purple);
+  color: var(--color-white);
   animation: fade-and-slideup 0.4s ease-in-out both;
 }
 
