@@ -1,0 +1,90 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * input-range
+ *
+ * Create a stylized input[type=range] element.
+ */
+.travel-input-range {
+  display: block;
+  background-color: transparent;
+  color: inherit;
+  background-color: transparent;
+  margin-top: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
+  margin-bottom: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
+  -webkit-appearance: none;
+}
+
+.travel-input-range::-webkit-slider-thumb {
+  position: relative;
+  width: var(--range-thumb-size);
+  height: var(--range-thumb-size);
+  cursor: pointer;
+  margin-top: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
+  border-radius: calc(var(--range-thumb-size) * 0.5);
+  background-color: var(--range-thumb-color);
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color);
+  -webkit-appearance: none;
+}
+
+.travel-input-range:focus::-webkit-slider-thumb {
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color), 0 0 0 3px rgba(0,0,0,.25);
+}
+
+.travel-input-range::-moz-range-thumb {
+  width: var(--range-thumb-size);
+  height: var(--range-thumb-size);
+  cursor: pointer;
+  border-radius: calc(var(--range-thumb-size) * 0.5);
+  border-color: transparent;
+  border-width: 0;
+  background-color: var(--range-thumb-color);
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color);
+}
+
+.travel-input-range:focus::-moz-range-thumb {
+  box-shadow: 0 0.25rem 0.75rem var(--box-shadow-color), 0 0 0 3px rgba(0,0,0,.25);
+}
+
+
+.travel-input-range::-webkit-slider-runnable-track {
+  margin-top: calc((var(--range-thumb-size) - var(--range-track-height)) * 0.5);
+  margin-bottom: calc((var(--range-thumb-size) - var(--range-track-height)) * 0.5);
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: calc(var(--range-track-height) * 0.5);
+  background-color: var(--range-track-color);
+}
+
+.travel-input-range::-moz-range-track {
+  height: var(--range-track-height);
+  cursor: pointer;
+  border-radius: calc(var(--range-track-height) * 0.5);
+  background-color: var(--range-track-color);
+}
+
+.travel-input-range:focus {
+  outline: none;
+}
+
+.travel-input-range::-moz-focus-outer {
+  border: 0;
+}
+
+.travel-input-range-shape {
+  color: var(--color-lime);
+}

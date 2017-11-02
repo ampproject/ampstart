@@ -1,0 +1,39 @@
+<!-- Type Selector -->
+<amp-selector
+  class="travel-type-selector clearfix"
+  layout="container"
+  name="type"
+  multiple
+  on="
+    select:AMP.setState({
+      ui_reset: false,
+      fields_type: fields_type.includes(event.targetOption)
+        ? copyAndSplice(fields_type, fields_type.indexOf(event.targetOption), 1)
+        : fields_type.concat([event.targetOption]),
+      fields_type_edited: true
+    })
+  "
+  [selected]="fields_type"
+>
+  <ul class="list-reset">
+    {{#data.types}}
+      <!-- <div class=""> -->
+        <li option="{{value}}" class="col col-6 travel-type-{{value}}">
+          <div class="travel-type-selector-inactive flex relative items-center justify-between nowrap">
+            <span class="travel-type-selector-content nowrap">
+              {{> ../icon/icon.snip.html}}
+              {{text}}
+            </span>
+          </div>
+          <div class="travel-type-selector-active flex items-center justify-between nowrap absolute top-0 bottom-0 left-0 right-0">
+            <span class="travel-type-selector-content nowrap">
+              {{> ../icon/icon.snip.html}}
+              {{text}}
+            </span>
+          </div>
+        </li>
+      <!-- </div> -->
+    {{/data.types}}
+  </ul>
+</amp-selector>
+<!--/ Type Selector -->

@@ -14,19 +14,11 @@
  * limitations under the License.
  */
 
-.travel-discover-panel {
-  max-width: 440px;
-  background-color: white;
+ .travel-overlay-header, .travel-overlay-footer {
+  background-color: var(--color-white);
 }
 
-.travel-discover-heading {
-  font-size: var(--h0);
-}
-
-.travel-discover-subheading {
-  color: var(--color-gray);
-}
-
-.travel-discover-panel-subheading {
+.travel-overlay-reset-btn {
+  cursor: pointer;
   color: var(--color-gray);
 }

@@ -14,19 +14,11 @@
  * limitations under the License.
  */
 
-.travel-discover-panel {
-  max-width: 440px;
-  background-color: white;
+ .travel-filter-bar {
+  animation: fade-and-slideup 0.4s 0.05s ease-in-out both;
 }
 
-.travel-discover-heading {
-  font-size: var(--h0);
-}
-
-.travel-discover-subheading {
-  color: var(--color-gray);
-}
-
-.travel-discover-panel-subheading {
-  color: var(--color-gray);
+.travel-filter-bar-collapse {
+  height: 0;
+  overflow: hidden;
 }
