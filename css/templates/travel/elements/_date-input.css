@@ -61,7 +61,6 @@
 .travel-date-input-touched input ~ .travel-date-input-label,
 .travel-date-input input:focus ~ .travel-date-input-label {
   opacity: 0;
-  height: 0;
 }
 
 .travel-date-input input[disabled] ~ .travel-icon,

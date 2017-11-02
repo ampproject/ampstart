@@ -56,8 +56,17 @@
   letter-spacing: .2em;
 }
 
+.travel-filter-results-heading {
+  color: var(--color-gray);
+  letter-spacing: .2em;
+}
+
 .travel-filters-text {
   color: var(--color-gray);
+}
+
+.travel-filters-results-text {
+  color: var(--color-purple);
 }
 
 .travel-filters-results-text {

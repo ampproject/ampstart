@@ -10,7 +10,8 @@
     "highlight": "gulp highlight",
     "watch": "gulp watch:www",
     "serve": "gulp serve",
-    "configurator": "gulp configurator:serve"
+    "configurator": "gulp configurator:serve",
+    "postinstall": "cd functions && npm i"
   },
   "private": true,
   "license": "Apache-2.0",

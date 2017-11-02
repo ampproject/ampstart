@@ -61,20 +61,20 @@ limitations under the License.
         </label>
 
         <amp-list
-            layout="flex-item"
-            src="/api/places?types=(regions)&types=(cities)&input="
-            [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live"
-          >
-            <template type="amp-mustache">
-              {{=[[ ]]=}}
-              <datalist id="locations">
-                {{#predictions}}
-                <option value="{{description}}">
-                {{/predictions}}
-              </datalist>
-              [[={{ }}=]]
-            </template>
-          </amp-list>
+          layout="flex-item"
+          src="/api/places?types=(regions)&types=(cities)&input="
+          [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live"
+        >
+          <template type="amp-mustache">
+            {{=[[ ]]=}}
+            <datalist id="locations">
+              {{#predictions}}
+              <option value="{{description}}">
+              {{/predictions}}
+            </datalist>
+            [[={{ }}=]]
+          </template>
+        </amp-list>
 
         <div class="travel-hero-search-dates flex my2 justify-around">
           <label
