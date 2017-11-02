@@ -21,15 +21,15 @@
  */
 .travel-badge {
   padding: 4px 10px;
-  color: var(--gray);
-  border: 1px solid var(--silver);
+  color: var(--color-gray);
+  border: 1px solid var(--color-silver);
   border-radius: var(--border-radius);
-  background: var(--white);
+  background: var(--color-white);
   margin-left: 0.5rem;
 }
 
 .travel-badge.green {
-  color: var(--green);
+  color: var(--color-green);
   border-color: transparent;
   background: rgba(71,176,116,.2);
 }

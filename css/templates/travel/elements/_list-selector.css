@@ -22,7 +22,7 @@
 .travel-list-selector [option] {
   padding: 6px 12px;
   border-radius: var(--border-radius);
-  background: var(--white);
+  background: var(--color-white);
   white-space: nowrap;
   margin-bottom: 3px;
 }

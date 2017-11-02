@@ -34,7 +34,7 @@
   padding-left: 12px;
   padding-right: 10px;
   border-radius: 19px;
-  border: 2px solid var(--silver);
+  border: 2px solid var(--color-silver);
   cursor: pointer;
   min-width: 0;
   transition: border-color 0.3s;

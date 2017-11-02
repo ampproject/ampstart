@@ -45,7 +45,7 @@
   width: 38px;
   height: 38px;
   margin-right: 10px;
-  background: var(--silver);
+  background: var(--color-silver);
   position: relative;
 
   transition: transform 300ms ease-in-out;
@@ -70,10 +70,10 @@
 
 
 .travel-city-selector [option]::before {
-  content: "";
+  content: '';
   display: block;
   border-radius: var(--border-radius);
-  border: 1px solid var(--silver);
+  border: 1px solid var(--color-silver);
 
   transition: border-color 300ms;
 }

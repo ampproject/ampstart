@@ -41,6 +41,6 @@
   request from firing.
  */
 .travel-inline-list::after {
-  content: "\00a0";
+  content: ' ';
   display: inline;
 }

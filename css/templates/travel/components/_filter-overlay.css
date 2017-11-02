@@ -15,10 +15,10 @@
  */
 
  .travel-overlay-header, .travel-overlay-footer {
-  background-color: var(--white);
+  background-color: var(--color-white);
 }
 
 .travel-overlay-reset-btn {
   cursor: pointer;
-  color: var(--gray);
+  color: var(--color-gray);
 }

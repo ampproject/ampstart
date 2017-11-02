@@ -24,9 +24,9 @@
   background-color: transparent;
   color: inherit;
   background-color: transparent;
-  -webkit-appearance: none;
   margin-top: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
   margin-bottom: calc((var(--range-track-height) - var(--range-thumb-size)) * 0.5);
+  -webkit-appearance: none;
 }
 
 .travel-input-range::-webkit-slider-thumb {
