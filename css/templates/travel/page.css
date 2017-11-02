@@ -21,3 +21,14 @@
 
 @import 'page-vars';
 @import '_pages';
+
+amp-img.rounded img {
+  border-radius:4px;
+}
+amp-img.circle img {
+  border-radius: 50%;
+}
+
+.travel-no-focus:focus {
+  outline: none;
+}

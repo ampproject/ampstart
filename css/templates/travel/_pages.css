@@ -51,7 +51,7 @@
  * object-cover
  *
  * Set the scale-mode of an img (or amp-img) element to "cover" instead of the
- * default "stretch". This allows arbrairy scaling of img elements without
+ * default "stretch". This allows arbitrary scaling of img elements without
  * distortion.
  */
 
@@ -66,4 +66,15 @@
 
 .travel-main-wrapper {
   background-color: var(--color-black);
+}
+
+amp-img.rounded img {
+  border-radius:4px;
+}
+amp-img.circle img {
+  border-radius: 50%;
+}
+
+.travel-no-focus:focus {
+  outline: none;
 }

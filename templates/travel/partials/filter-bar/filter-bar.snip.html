@@ -2,12 +2,12 @@
 <section class="travel-filter-bar sm-hide xs-hide relative z2">
   <div class="flex mxn2 px1 md-px2">
     <div
-      class="flex flex-auto overflow-hidden"
+      class="travel-no-focus flex flex-auto overflow-hidden"
       role="button"
       tabindex="0"
       on="tap:AMP.setState({ui_filterPane: !ui_filterPane, ui_sortPane: false})"
     >
-      <div class="pl2 pr1 py2 nowrap border-bottom travel-border flex-none">
+      <div class="pl2 pr1 py2 nowrap border-bottom travel-border-gray flex-none">
         <span class="bold">Filters</span>
         <span
           class="travel-flip travel-filters-text inline-block"
@@ -17,11 +17,11 @@
         </span>
       </div>
 
-      <div class="pl1 py2 nowrap border-bottom travel-border flex-none">
+      <div class="pl1 py2 nowrap border-bottom travel-border-gray flex-none">
         <span class="travel-filters-text">Price</span>
       </div>
 
-      <div class="pr1 py2 nowrap border-bottom travel-border">
+      <div class="pr1 py2 nowrap border-bottom travel-border-gray">
         <span
           class="travel-badge"
           [class]="query_maxPrice < 801 ? 'travel-badge green' : 'travel-badge'"
@@ -29,11 +29,11 @@
         >Any price</span>
       </div>
 
-      <div class="pl1 py2 nowrap border-bottom travel-border flex-none">
+      <div class="pl1 py2 nowrap border-bottom travel-border-gray flex-none">
         <span class="travel-filters-text">Type</span>
       </div>
 
-      <div class="border-bottom travel-border">
+      <div class="border-bottom travel-border-gray">
         <div class="travel-fade-right pr1 py2">
           <span
             class="travel-badge"
@@ -44,11 +44,11 @@
         </div>
       </div>
 
-      <div class="pl1 py2 nowrap border-bottom travel-border flex-none">
+      <div class="pl1 py2 nowrap border-bottom travel-border-gray flex-none">
         <span class="travel-filters-text">City</span>
       </div>
 
-      <div class="flex-auto border-bottom travel-border">
+      <div class="flex-auto border-bottom travel-border-gray">
         <div class="travel-fade-right pr1 py2">
           <amp-list
             class="travel-inline-list"
@@ -67,7 +67,7 @@
         </div>
       </div>
 
-      <div class="travel-border px1 md-pr2 py2 nowrap border-bottom flex-none">
+      <div class="travel-border-gray px1 md-pr2 py2 nowrap border-bottom flex-none">
         <amp-list
           class="travel-inline-list"
           layout="flex-item"
@@ -88,7 +88,7 @@
 
     <div class="flex-none">
       <div
-        class="travel-border pl1 pr2 py2 md-pl2 nowrap border-left border-bottom relative z2"
+        class="travel-no-focus travel-border-gray pl1 pr2 py2 md-pl2 nowrap border-left border-bottom relative z2"
         role="button"
         tabindex="0"
         on="tap:AMP.setState({ui_filterPane: false, ui_reset: false, ui_sortPane: !ui_sortPane})"

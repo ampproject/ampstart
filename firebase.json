@@ -5,6 +5,11 @@
   "hosting": {
     "public": "dist",
     "cleanUrls": true,
-    "redirects": []
+    "redirects": [],
+    "rewrites": [{
+      "source": "/api/places", "function": "places"
+    }, {
+      "source": "/api/search", "function": "search"
+    }]
   }
 }

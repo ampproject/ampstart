@@ -25,12 +25,26 @@ limitations under the License.
         [class]="'travel-overlay-fx-scale' + (ui_filterPane ? ' travel-overlay-fx-scale-active' : '')"
       >
         <div
-          class="no-focus"
+          class="travel-no-focus"
           role="button"
           tabindex="-1"
           on="tap:AMP.setState({ui_filterPane: false, ui_reset: false, ui_sortPane: false})"
         >
           {{> ./partials/results-navbar/results-navbar.snip.html}}
+        </div>
+
+        {{> ./partials/filter-bar/filter-bar.snip.html}}
+
+        {{> ./partials/filter-pane/filter-pane.snip.html}}
+
+        {{> ./partials/sort-bar/sort-bar.snip.html}}
+
+        <div
+          class="travel-no-focus flex-auto overflow-auto"
+          role="button"
+          tabindex="-1" on="tap:AMP.setState({ui_filterPane: false, ui_reset: false, ui_sortPane: false})"
+        >
+            {{> ./partials/results/results.snip.html}}
         </div>
       </div>
     </div>
