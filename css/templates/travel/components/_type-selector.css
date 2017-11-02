@@ -1,0 +1,129 @@
+/**
+ * Copyright 2017 The AMP Start Authors. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS-IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+ /**
+ * type-selector
+ *
+ * Style an <amp-selector> element as a grid of buttons.
+ */
+.travel-type-selector {
+  margin: -6px;
+}
+
+.travel-type-selector [option] {
+  padding: 6px;
+  position: relative;
+}
+
+.travel-type-selector-inactive,
+.travel-type-selector-active {
+  height: 38px;
+  padding-left: 12px;
+  padding-right: 10px;
+  border-radius: 19px;
+  border: 2px solid var(--color-silver);
+  cursor: pointer;
+  min-width: 0;
+  transition: border-color 0.3s;
+}
+
+.travel-type-selector [option]:focus .travel-type-selector-inactive,
+.travel-type-selector [option][selected] .travel-type-selector-inactive {
+  border-color: currentColor;
+}
+
+.travel-type-selector [option]:focus:not(:hover) .travel-type-selector-active {
+  border-color: rgba(0,0,0,0.25);
+}
+
+.travel-type-selector-active {
+  transition-delay: 0.3s;
+}
+
+.travel-type-selector-inactive::after,
+.travel-type-selector-active::after {
+  content: '+';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  font-size: 1.6em;
+  transition: transform 100ms ease-out;
+}
+
+.travel-type-selector-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.travel-type-selector [option] svg.travel-icon {
+  margin-right: 10px;
+  transition: transform 300ms;
+}
+
+.travel-type-selector-active {
+  margin-top: 6px;
+  margin-left: 6px;
+  background: currentColor;
+  border-color: currentColor;
+  opacity: 0;
+  clip-path: circle(0% at 0 50%);
+  transition: clip-path 0.4s, opacity 0.4s;
+}
+
+.travel-type-selector [option]:hover .travel-type-selector-active {
+  opacity: 0.75;
+  clip-path: circle(40px at 0 50%);
+}
+
+.travel-type-selector [option][selected] .travel-type-selector-active,
+.travel-type-selector [option][selected]:hover .travel-type-selector-active {
+  opacity: 1;
+  clip-path: circle(142% at 0 50%);
+}
+
+.travel-type-selector [option][selected]:hover .travel-type-selector-active {
+  opacity: 1;
+  clip-path: circle(calc(142% - 36px) at 0 50%);
+}
+
+.travel-type-selector-active .travel-type-selector-content,
+.travel-type-selector-active::after {
+  color: var(--color-white);
+}
+
+.travel-type-selector [option][selected] {
+  /* Override core amp [option][selected] styles. */
+  outline: none;
+  cursor: pointer;
+}
+
+.travel-type-selector [option]:hover .travel-type-selector-active::after,
+.travel-type-selector [option]:hover .travel-type-selector-inactive::after,
+.travel-type-selector [option][selected] .travel-type-selector-active::after,
+.travel-type-selector [option][selected] .travel-type-selector-inactive::after {
+  transform: rotate(45deg);
+}
+
+.travel-type-selector [option][selected]:hover:not(:focus) .travel-type-selector-active::after,
+.travel-type-selector [option][selected]:hover:not(:focus) .travel-type-selector-inactive::after {
+  transform: rotate(0deg);
+}
+
+.travel-type-selector [option]:focus {
+  outline: none;
+}

@@ -18,6 +18,15 @@
  * In-page animations
  ******************************************************************************/
 
+ .travel-flip {
+   transition: transform 100ms;
+   transform: rotate(0);
+ }
+
+ .travel-flip-flipped {
+   transform: rotate(180deg);
+ }
+
 @keyframes fade-and-slideup {
   from {
     opacity: 0;

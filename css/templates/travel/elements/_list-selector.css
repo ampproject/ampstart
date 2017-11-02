@@ -13,20 +13,27 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-.travel-discover-panel {
-  max-width: 440px;
-  background-color: white;
+ 
+/**
+ * list-selector
+ *
+ * Style an <amp-selector> element
+ */
+.travel-list-selector [option] {
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  background: var(--color-white);
+  white-space: nowrap;
+  margin-bottom: 3px;
 }
 
-.travel-discover-heading {
-  font-size: var(--h0);
+.travel-list-selector [option]:focus {
+  outline: none;
 }
 
-.travel-discover-subheading {
-  color: var(--color-gray);
-}
-
-.travel-discover-panel-subheading {
-  color: var(--color-gray);
+.travel-list-selector [option][selected] {
+  /* Override core amp [option][selected] styles. */
+  cursor: pointer;
+  outline: none;
+  background: rgba(71,176,116,.2);
 }
