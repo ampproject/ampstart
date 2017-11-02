@@ -27,7 +27,7 @@
 
 .travel-row-selector [option] {
   display: inline-block;
-  color: var(--gray);
+  color: var(--color-gray);
   padding-top: 1rem;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .travel-row-selector [option][selected] {
-  color: var(--green);
+  color: var(--color-green);
 }
 
 .travel-row-selector [option][selected] {

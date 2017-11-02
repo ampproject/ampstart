@@ -103,7 +103,7 @@
 
 .travel-type-selector-active .travel-type-selector-content,
 .travel-type-selector-active::after {
-  color: var(--white);
+  color: var(--color-white);
 }
 
 .travel-type-selector [option][selected] {
