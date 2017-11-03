@@ -681,12 +681,12 @@ h4,
   text-transform: uppercase;
   padding: 9px 14px;
   border: solid 1px var(--color-primary);
-  opacity: .7;
+  opacity: .85;
   cursor: pointer;
 }
 
 .land-see-hero-button:hover {
-  opacity: .6;
+  opacity: .75;
 }
 
 .land-see-hero-button:active {
