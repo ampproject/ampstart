@@ -1,0 +1,148 @@
+{{!
+<!---
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS-IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+}}
+
+<!-- Results -->
+<section class="travel-results pb1 md-pt1">
+  <div class="max-width-3 mx-auto px1 md-px2">
+    <amp-list
+      class="travel-inline-list travel-results-list"
+      layout="flex-item"
+      {{> ../util/amp-list-props.snip.html}}
+    >
+      <template type="amp-mustache">
+        {{=[[ ]]=}}
+        <div>
+          <div class="flex flex-wrap mxn1 flex-auto">
+            {{#results.length}}
+              {{#results}}
+              <div class="col-12 sm-col-6 lg-col-4 p1 travel-results-result">
+                <div class="relative travel-results-result">
+                  <a class="travel-results-result-link" href="#">
+                    <amp-img
+                      class="rounded bg-silver mb1"
+                      width="2"
+                      height="1"
+                      layout="responsive"
+                      src="/img/travel/activity/{{img}}.jpg"
+                      srcset="/img/travel/activity/{{img}}@2x.jpg 2x, /img/travel/activity/{{img}}.jpg 1x"
+                    ></amp-img>
+                  </a>
+                  {{#flags.new}}
+                  <div class="travel-results-result-flags absolute top-0 left-0">
+                    <div class="p1"><span class="travel-pill bold">NEW</span></div>
+                  </div>
+                  {{/flags.new}}
+                  <div class="travel-results-result-like absolute top-0 right-0">
+                    <div class="p1">
+                      <label class="travel-like">
+                        {{#liked}}<input type="checkbox" checked class="absolute"/>{{/liked}}
+                        {{^liked}}<input type="checkbox" class="absolute"/>{{/liked}}
+                        <div class="travel-like-hearts circle inline-block relative">
+                          <div class="travel-like-heart-tiny travel-like-heart-solid absolute"></div>
+                          <div class="travel-like-heart-tiny travel-like-heart-solid absolute"></div>
+                          <div class="travel-like-heart-tiny travel-like-heart-solid absolute"></div>
+                          <div class="travel-like-heart travel-like-heart-white absolute mx-auto"></div>
+                          <div class="travel-like-heart travel-like-heart-solid absolute mx-auto"></div>
+                          <div class="travel-like-heart travel-like-heart-outline absolute mx-auto"></div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="h2 line-height-2 mb1">
+                  <span class="travel-results-result-text">{{name}}</span>
+                  <span class="travel-results-result-subtext h3">&bull;</span>
+                  <span class="travel-results-result-subtext h3">$&nbsp;</span><span class="bold">{{price.value}}</span>
+                </div>
+                <div class="h4 line-height-2">
+                  <!--
+                    Outputting SVG with amp-mustache is currently blocked. Plain
+                    glyphs are used here instead for the map icon and rating.
+                    see: https://github.com/ampproject/amphtml/issues/8214
+                  -->
+                  {{#reviews.count}}
+                    <div class="inline-block relative mr1 h3 line-height-2">
+                      <div>
+                        <span class="travel-icon travel-img-icon-star-silver">
+                        </span><span class="travel-icon travel-img-icon-star-silver">
+                        </span><span class="travel-icon travel-img-icon-star-silver">
+                        </span><span class="travel-icon travel-img-icon-star-silver">
+                        </span><span class="travel-icon travel-img-icon-star-silver"></span>
+                      </div>
+                      <div class="absolute top-0">
+                        {{#reviews.averageRating.range}}<span class="travel-icon travel-img-icon-star-green"></span>{{/reviews.averageRating.range}}
+                      </div>
+                    </div>
+                    <span class="travel-results-result-subtext mr1">{{reviews.count}} Reviews</span>
+                  {{/reviews.count}}
+                  {{^reviews.count}}
+                    <span class="travel-results-result-subtext mr1">Not Yet Reviewed</span>
+                  {{/reviews.count}}
+                    <span class="nowrap">
+                      <span class="travel-icon travel-img-icon-map-pin-outline-gray"></span>
+                      {{location.city}}
+                    </span>
+                </div>
+              </div>
+              {{/results}}
+            {{/results.length}}
+            {{^results.length}}
+              <div class="travel-results-empty">
+                <div>
+                  <div class="h1 center mb1">
+                    <span class="travel-icon travel-img-icon-sad-face-gray"></span>
+                  </div>
+                  <div class="h1 gray center">No adventures for that search</div>
+                  <div class="gray center">
+                    You can
+                    <span
+                      class="underline pointer"
+                      role="button"
+                      tabindex="0"
+                      on="
+                        tap:
+                          AMP.setState({ui_reset: false}),
+                          AMP.setState({
+                            ui_filterPane: true,
+                            ui_reset: true,
+                            query_maxPrice: fields_maxPrice_initial,
+                            fields_maxPrice: fields_maxPrice_initial,
+                            fields_maxPrice_live: fields_maxPrice_initial,
+                            fields_maxPrice_edited: false,
+                            query_city: fields_city_initial,
+                            fields_city: fields_city_initial,
+                            fields_city_edited: false,
+                            query_type: fields_type_initial,
+                            fields_type: fields_type_initial,
+                            fields_type_edited: false
+                          })
+                      "
+                    >reset filters</span>
+                    to see more results
+                  </div>
+                </div>
+              </div>
+            {{/results.length}}
+          </div>
+        </div>
+        [[={{ }}=]]
+      </template>
+    </amp-list>
+  </div>
+</section>
+<!--/ Results -->

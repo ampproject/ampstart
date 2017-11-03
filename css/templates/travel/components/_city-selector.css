@@ -23,11 +23,16 @@
   margin: -6px;
 }
 
+.travel-city-selector amp-selector {
+  flex: auto;
+}
+
 .travel-city-selector [option] {
   display: flex;
   align-items: center;
   position: relative;
   padding: 6px;
+  padding-right: 32px;
 }
 
 .travel-city-selector [option] > span {

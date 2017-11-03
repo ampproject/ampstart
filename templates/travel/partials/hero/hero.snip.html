@@ -1,6 +1,6 @@
 {{!
 <!---
-Copyright 2016 The AMP Start Authors. All Rights Reserved.
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -61,20 +61,20 @@ limitations under the License.
         </label>
 
         <amp-list
-            layout="flex-item"
-            src="/api/places?types=(regions)&types=(cities)&input="
-            [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live"
-          >
-            <template type="amp-mustache">
-              {{=[[ ]]=}}
-              <datalist id="locations">
-                {{#predictions}}
-                <option value="{{description}}">
-                {{/predictions}}
-              </datalist>
-              [[={{ }}=]]
-            </template>
-          </amp-list>
+          layout="flex-item"
+          src="/api/places?types=(regions)&types=(cities)&input="
+          [src]="'/api/places?types=(regions)&types=(cities)&input=' + fields_query_live"
+        >
+          <template type="amp-mustache">
+            {{=[[ ]]=}}
+            <datalist id="locations">
+              {{#predictions}}
+              <option value="{{description}}">
+              {{/predictions}}
+            </datalist>
+            [[={{ }}=]]
+          </template>
+        </amp-list>
 
         <div class="travel-hero-search-dates flex my2 justify-around">
           <label
