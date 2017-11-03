@@ -384,9 +384,10 @@ h4,
 }
 
 .land-see-subscribe-form input[type="email"] {
+  font: 600 var(--h7)/var(--line-height-4) var(--font-navigation);
+  letter-spacing: .6px;
   border: 2px solid var(--color-border);
   padding: 2px 0 0 var(--h9);
-  font-size: var(--h8);
 }
 
 .land-see-subscribe-form input[type="submit"] {
@@ -396,7 +397,7 @@ h4,
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10px' height='13px' viewBox='0 0 10 13'%3E%3Cpolygon fill='%23FFFFFF' points='0,13.12 0,0 10.47,6.561 '/%3E%3C/svg%3E");
   border: none;
   position: absolute;
-  top: -37px;
+  top: -41px;
   right: 10px;
   cursor: pointer;
   z-index: 10;
@@ -641,7 +642,7 @@ h4,
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to bottom, rgba(125,126,125,0) 0%,rgba(125,126,125,0.15) 30%,rgba(14,14,14,0.7) 100%);
+  background: linear-gradient(to bottom, rgba(125,126,125,0) 0%,rgba(125,126,125,0.15) 30%,rgba(14,14,14,0.6) 100%);
   z-index: var(--z1);
 }
 
@@ -672,7 +673,7 @@ h4,
   width: 28rem;
   font-size: var(--h7);
   line-height: var(--line-height-1);
-  opacity: .7;
+  opacity: .85;
 }
 
 .land-see-hero-button {
@@ -680,12 +681,12 @@ h4,
   text-transform: uppercase;
   padding: 9px 14px;
   border: solid 1px var(--color-primary);
-  opacity: .7;
+  opacity: .85;
   cursor: pointer;
 }
 
 .land-see-hero-button:hover {
-  opacity: .6;
+  opacity: .75;
 }
 
 .land-see-hero-button:active {
