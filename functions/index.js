@@ -27,14 +27,14 @@ function cors(req, res, next) {
 }
 
 /**
- * Cast a value to an array.
+ * Convert a value to an array.
  *
  * The value is coerced to an array, in the case that the provided value is
  * null, undefined or an empty string, an empty array is returned.
- * @param  {any} val - any value.
+ * @param  {*} val - any value.
  * @returns {array} an array.
  */
-function castArray(val) {
+function convertToArray(val) {
   if (Array.isArray(val)) {
     return val;
   }
@@ -104,7 +104,7 @@ function filter(data, query) {
  * Checks to see if any the given cities exist in our travel data,
  * returning all the ones that are.
  *
- * @param {Array} data - Array of objects containing the travel data to
+ * @param {Array} travelData - Array of objects containing the travel data to
  * filter.
  * @param {Array} cities - Array of strings containing city names.
  * @return {Array} The selected cities.
@@ -217,9 +217,9 @@ function sortResults(val, results) {
  */
 exports.search = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
-    req.query.cities = castArray(req.query.cities);
+    req.query.cities = convertToArray(req.query.cities);
     req.query.maxPrice = req.query.maxPrice || 0;
-    req.query.types = castArray(req.query.types);
+    req.query.types = convertToArray(req.query.types);
 
     // Not sure how to handle these yet...
     // const departureDate = req.query.departure;
@@ -243,7 +243,7 @@ exports.search = functions.https.onRequest((req, res) => {
       46.023,
       37.5,
       0,
-      0,
+      0
     ];
 
     var results = filter(travelData.activities, req.query);
@@ -292,8 +292,15 @@ exports.search = functions.https.onRequest((req, res) => {
   })
 });
 
-// Helpers
-
+/**
+ * getSVGGraphPath data converts an array of numbers to valid SVG graph path
+ * data.
+ * 
+ * @param {Array} data - The data to convert to SVG graph path format.
+ * @param {Integer} width - The width of the SVG.
+ * @param {Integer} height - The height of the SVG.
+ * @return {String} The string representing the SVG path.
+ */
 function getSVGGraphPathData(data, width, height) {
   var max = Math.max.apply(null, data);
 
@@ -337,6 +344,12 @@ function getSVGGraphPathData(data, width, height) {
   return commands.join(' ');
 };
 
+/**
+ * onRequest handles the interaction with the Google Maps API.
+ *
+ * @param {Object} req - The HTTP request object.
+ * @param {Object} res - The HTTP response object.
+ */
 exports.places = functions.https.onRequest((req, res) => {
   const options = {
     hostname: 'maps.googleapis.com',
