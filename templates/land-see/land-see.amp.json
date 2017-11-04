@@ -297,7 +297,7 @@
   },
   "land-see-story-carousel": {
     "title": "Popular",
-    "height": 430,
+    "height": 450,
     "list-src": "./api/popular.json",
     "observer": {
       "action": "enter:popularSlideIn.start"

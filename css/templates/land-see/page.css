@@ -623,6 +623,18 @@ h4,
   height: 35px;
 }
 
+@media (--breakpoint-sm-md) {
+  .land-see-popular-content {
+    max-width: 636px;
+  }
+}
+
+@media (--breakpoint-xs) {
+  .land-see-popular-content {
+    max-width: 424px;
+  }
+}
+
 /* Hero Carousel */
 
 .land-see-hero-carousel {
