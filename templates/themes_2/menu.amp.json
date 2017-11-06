@@ -46,7 +46,7 @@
           "pick": {
             "heading": "Chef’s Pick",
             "image": {
-              "url": "../../../img/themes_2/waffles.jpg",
+              "url": "../../img/themes_2/waffles.jpg",
               "width": 300,
               "height": 200,
               "alt": ""
@@ -78,7 +78,7 @@
           "pick": {
             "heading": "Chef’s Pick",
             "image": {
-              "url": "../../../img/themes_2/soup.jpg",
+              "url": "../../img/themes_2/soup.jpg",
               "width": 300,
               "height": 200,
               "alt": ""
@@ -110,7 +110,7 @@
           "pick": {
             "heading": "Chef’s Pick",
             "image": {
-              "url": "../../../img/themes_2/steak.jpg",
+              "url": "../../img/themes_2/steak.jpg",
               "width": 300,
               "height": 200,
               "alt": ""
@@ -142,7 +142,7 @@
           "pick": {
             "heading": "Chef’s Pick",
             "image": {
-              "url": "../../../img/themes_2/pie.jpg",
+              "url": "../../img/themes_2/pie.jpg",
               "width": 300,
               "height": 200,
               "alt": ""
