@@ -20,7 +20,7 @@ limitations under the License.
 <!--
   The API interaction would ideally be handled with a form tag, instead of
   numerouse amp-list elements, unfortunately there is now way to render
-  form response data outside of the `form > div[sumbit-success]` element.
+  form response data outside of the `form > div[submit-success]` element.
 
   For now the app interactivity is provided by using a [src] bound amp-list
   element element in each location of the page the displays dynamic response
@@ -32,7 +32,7 @@ limitations under the License.
 -->
 }}
 
-src="/api/search?maxPrice=0{{!departure=&return=}}&query=&sort=popularity-desc"
+src="/api/search?maxPrice=800{{!departure=&return=}}&query=&sort=popularity-desc"
 [src]="
   '/api/search?maxPrice=' + (query_maxPrice < 801 ? query_maxPrice : 0) +
   {{!'&departure=' + query_departure +}}

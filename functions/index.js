@@ -13,13 +13,17 @@ const travelData = JSON.parse(fs.readFileSync(src, 'utf8'));
  * sharing HTTP header on our response.
  *
  * @param {Object} req - The HTTP request object.
- * @param {Object} res - The HTTP resonse object.
+ * @param {Object} res - The HTTP response object.
  * @param {Function} next - The next HTTP handler to execute.
  */
 function cors(req, res, next) {
+  const port = process.env.NODE_ENV === 'production'
+    ? null
+    : new url.URL(req.query.__amp_source_origin).port;
+
   const host = process.env.NODE_ENV === 'production'
     ? `https://${req.hostname}`
-    : `http://${req.hostname}:5000`
+    : `http://${req.hostname}:${port}`;
 
   res.header('amp-access-control-allow-source-origin', host);
 
@@ -295,7 +299,7 @@ exports.search = functions.https.onRequest((req, res) => {
 /**
  * getSVGGraphPath data converts an array of numbers to valid SVG graph path
  * data.
- * 
+ *
  * @param {Array} data - The data to convert to SVG graph path format.
  * @param {Integer} width - The width of the SVG.
  * @param {Integer} height - The height of the SVG.
