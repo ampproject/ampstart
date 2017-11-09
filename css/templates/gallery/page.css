@@ -51,7 +51,7 @@ body {
 }
 
 .gallery-base-section:not(:last-child) {
-  margin-bottom: calc((122 / 16) * 1rem);
+  margin-bottom: 22rem;
 }
 
 .gallery-base-rich-text h2 {
@@ -146,7 +146,7 @@ body {
 .gallery-inner-3d-row-img-center {
   width: 90%;
   left: 3%;
-  top: 50%;
+  top: 88%;
   z-index: 1;
   transform: translateZ(120px) rotateX(-6deg) rotateY(-1deg);
 }
@@ -154,7 +154,7 @@ body {
 .gallery-inner-3d-row-img-right {
   width: 65%;
   right: -10%;
-  top: 20%;
+  top: 35%;
   transform: translateZ(60px) rotateY(-40deg);
 }
 
