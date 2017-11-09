@@ -73,7 +73,7 @@
           "link": {
             "nav-item-classes": ["gallery-sidebar-nav-item"],
             "url": "./gallery-inner.amp.html",
-            "text": "<div class='gallery-sidebar-nav-item-text'>Flying Pigs<br/>Brad Parker</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/plant.jpg' srcset='../../img/gallery/plant.jpg 1x, ../../img/gallery/plant@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+            "text": "<div class='gallery-sidebar-nav-item-text'>Flower Still Life<br/>Brad Parker</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/plant.jpg' srcset='../../img/gallery/plant.jpg 1x, ../../img/gallery/plant@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
           }
         }
       ]
@@ -99,7 +99,7 @@
       "positions": ["bottom"]
     }, {
       "index": 2,
-      "title": "Flying Pigs",
+      "title": "Flower Still Life",
       "artist": "Brad Parker",
       "width": 51,
       "height": 31,
@@ -108,7 +108,7 @@
       "positions": ["right", "bottom"]
     }, {
       "index": 3,
-      "title": "Angry Mushroom Cloud",
+      "title": "The Way Out",
       "artist": "Janet Lande",
       "width": 1,
       "height": 1,
@@ -134,7 +134,7 @@
       "positions": ["extraleft"]
     }, {
       "index": 6,
-      "title": "Broken Carton",
+      "title": "Spiraling Industry",
       "artist": "David Alders",
       "width": 12,
       "height": 8,
@@ -142,7 +142,7 @@
       "alt": "spiraling staircase"
     }, {
       "index": 7,
-      "title": "A Reappropriation of Violence",
+      "title": "Palm Tree Dreams",
       "artist": "Janet Lande",
       "width": 8,
       "height": 12,
@@ -159,7 +159,7 @@
       "positions": ["bottom"]
     }, {
       "index": 9,
-      "title": "Exit",
+      "title": "Flora and Illuminations",
       "artist": "Steven Rice",
       "width": 12,
       "height": 8,
@@ -177,7 +177,7 @@
       "positions": ["bottom"]
     }, {
       "index": 11,
-      "title": "Self Portrait",
+      "title": "Upward Perspective",
       "artist": "Momo Reid",
       "width": 1,
       "height": 1,
@@ -219,12 +219,13 @@
       "alt": "basketball court"
     }, {
       "index": 16,
-      "title": "Breakfast of Champions",
+      "title": "Swimming in Neon",
       "artist": "Kay Herrera",
       "width": 12,
       "height": 8,
       "src": "jellyfish",
-      "alt": "pink jellyfish in a purple ocean"
+      "alt": "pink jellyfish in a purple ocean",
+      "positions": ["bottom", "right"]
     }, {
       "index": 17,
       "title": "Untitled",
@@ -232,7 +233,8 @@
       "width": 8,
       "height": 12,
       "src": "stripe",
-      "alt": "black and white striped pattern"
+      "alt": "black and white striped pattern",
+      "positions": ["bottom", "extraleft"]
     }]
   }
 }

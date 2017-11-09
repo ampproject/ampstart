@@ -201,7 +201,7 @@
 
 .gallery-landing-image-wrap:nth-child(3) {
   animation-delay: -1s;
-  width: 46vh;
+  width: 44vh;
   top: 48vh;
   left: -2vh;
 }
@@ -323,7 +323,7 @@
   animation-delay: -6s;
   width: 30vh;
   top: 52vh;
-  left: 89vh;
+  left: 84vh;
 }
 .gallery-landing-image-wrap:nth-child(11) .gallery-landing-image-transform {
   width: 100%;

@@ -26,7 +26,7 @@
         {
           "link": {
             "nav-item-classes": ["gallery-sidebar-nav-item"],
-            "url": "./gallery-inner.amp.html",
+            "url": "./gallery.amp.html",
             "text": "<div class='gallery-sidebar-nav-item-text'>Home</div><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
           }
         },
@@ -69,7 +69,7 @@
           "link": {
             "nav-item-classes": ["gallery-sidebar-nav-item"],
             "url": "./gallery-inner.amp.html",
-            "text": "<div class='gallery-sidebar-nav-item-text'>Flying Pigs<br/>Brad Parker</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/plant.jpg' srcset='../../img/gallery/plant.jpg 1x, ../../img/gallery/plant@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
+            "text": "<div class='gallery-sidebar-nav-item-text'>Flower Still Life<br/>Brad Parker</div><amp-img class='gallery-sidebar-nav-item-image' width='1' height='1' layout='responsive' src='../../img/gallery/plant.jpg' srcset='../../img/gallery/plant.jpg 1x, ../../img/gallery/plant@2x.jpg 2x'></amp-img><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
           }
         }
       ]
@@ -83,12 +83,6 @@
       "carousel": {
         "height": 316,
         "images": [{
-          "width": 210,
-          "height": 316,
-          "src": "../../img/gallery/court.jpg",
-          "2x": "../../img/gallery/court@2x.jpg",
-          "alt": "outdoor basketball court"
-        }, {
           "width": 361,
           "height": 316,
           "src": "../../img/gallery/corner.jpg",
@@ -118,6 +112,12 @@
           "src": "../../img/gallery/hall.jpg",
           "2x": "../../img/gallery/hall@2x.jpg",
           "alt": "colourful hallway"
+        }, {
+          "width": 233,
+          "height": 202,
+          "src": "../../img/gallery/smoke.jpg",
+          "2x": "../../img/gallery/smoke@2x.jpg",
+          "alt" : "pink smoke"
         }]
       },
       "content": "<blockquote>Justo libero ut nunc consequat massa. Vitae et nulla. Mus arcu in. Tellus at ut. Ac mi varius ut.</blockquote>"
