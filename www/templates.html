@@ -55,14 +55,26 @@ limitations under the License.
           <h2 class="caps ampstart-title-sm mb2">{{title}}</h2>
           <span class="ampstart-caption block pb1">{{template-count}} templates</span>
         </header>
-        <ul class="list-reset flex flex-wrap justify-between m0">
+        <ul class="list-reset flex flex-wrap justify-start m0">
         {{#templates}}
         {{#template-preview}}
-          <li class="col-10 sm-col-5 md-col-5 lg-col-5 mx2">
+          <li class="col-10 sm-col-5 md-col-5 lg-col-5 mx1">
             {{#img}}
-            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card xs-hide"></amp-img>
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" on="tap:{{lightbox-id}}"{{/lightbox-id}} class="www-template-preview-img ampstart-card xs-hide mx2">
+              <div class="www-template-preview-img-hover absolute bottom-0 left-0 right-0 flex items-center justify-around z1" role="presentation">
+                <div>
+                {{> ../img/www/templates/mobile.svg}}
+                </div>
+                <div>
+                {{> ../img/www/templates/tablet.svg}}
+                </div>
+                <div>
+                {{> ../img/www/templates/desktop.svg}}
+                </div>
+              </div>
+            </amp-img>
             <a href="{{{src}}}" target="_blank" class="text-decoration-none sm-hide md-hide lg-hide block">
-            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" {{/lightbox-id}} class="www-template-preview-img ampstart-card"></amp-img>
+            <amp-img src="{{{url}}}" {{#2x_url}}srcset="{{{url}}} 1x,{{{.}}} 2x"{{/2x_url}} alt="{{alt}}" width="{{width}}" height="{{height}}" layout="{{layout}}" {{#lightbox-id}} title="View {{title}}" role="button" tabindex="0" {{/lightbox-id}} class="www-template-preview-img ampstart-card mx2"></amp-img>
             </a>
             {{/img}}
             <header class="mb4 flex justify-between items-baseline">
