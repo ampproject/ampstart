@@ -55,17 +55,18 @@
 .www-template-preview-img {
   cursor: pointer;
   margin-bottom: var(--space-5);
-
 }
 
-.www-template-preview-img:hover::after {
-  content: '';
+.www-template-preview-img-hover {
   height: 25%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-image: var(--header-gradient);
+  opacity: 0.8;
+  transform: translateY(100%);
+  transition: ease-in-out 0.5s;
+}
+
+.www-templates-group > ul > li:hover .www-template-preview-img-hover {
+  transform: translateY(0);
 }
 
 .www-templates-action {
