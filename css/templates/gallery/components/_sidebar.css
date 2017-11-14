@@ -14,9 +14,12 @@
  * limitations under the License.
  */
 
- .gallery-sidebar {
-   width: calc((375 / 16rem));
- }
+.gallery-sidebar {
+  padding-top: 0;
+  width: calc((375 / 16rem));
+  padding-right: 0;
+  box-sizing: content-box;
+}
 
 .gallery-sidebar a, .gallery-sidebar-close-button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -35,7 +38,7 @@
 
 /*
  * Increase the header margin when _both_ the screen width and height are
- * large  enough. This keeps margins tight on small screens rotated to
+ * large enough. This keeps margins tight on small screens rotated to
  * landscape.
  */
 @media (--breakpoint-sm) and (--breakpoint-v-sm) {
@@ -46,14 +49,8 @@
 }
 
 .ampstart-sidebar-header {
-  height: calc(18 / 16rem);
-  width: auto;
-  display: flex;
   font-weight: 300;
-  align-items: center;
-  justify-content: flex-start;
-  white-space: nowrap;
-  margin: 0 0 2rem;
+  margin: var(--sidebar-nav-title-top) 0 calc(var(--sidebar-nav-title-height) * 0.925);
 }
 
 .ampstart-navbar-trigger {
@@ -68,8 +65,11 @@
 }
 
 .gallery-sidebar .ampstart-navbar-trigger {
-  padding: calc(10 / 16rem);
-  margin: calc(-10 / 16rem);
+  height: var(--sidebar-nav-trigger-height);
+  line-height: calc(var(--sidebar-nav-trigger-height) * 1.066666667);
+  overflow: hidden;
+  padding: 0 .625rem;
+  margin-top: calc(var(--sidebar-nav-trigger-height) / -2 + var(--sidebar-nav-title-height) / 2);
 }
 
 .ampstart-navbar-trigger:focus,
@@ -98,10 +98,10 @@
 
 .ampstart-sidebar-nav-title {
   position: absolute;
-  top: 30px;
+  top: var(--sidebar-nav-title-top);
   margin-left: 2.875rem;
   font-size: .84375rem;
-  line-height: 1.25rem;
+  line-height: var(--sidebar-nav-title-height);
   letter-spacing: .05em;
   text-transform: none;
   color: black;
