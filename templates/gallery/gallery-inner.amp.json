@@ -1,5 +1,6 @@
 {
   "gallery": {
+    "tagline": "Gallery of Modern Art",
     "head-tag": {
       "title": "Gallery Template",
       "canonical-path": "templates/gallery-inner.amp",
@@ -113,8 +114,8 @@
           "2x": "../../img/gallery/hall@2x.jpg",
           "alt": "colourful hallway"
         }, {
-          "width": 233,
-          "height": 202,
+          "width": 364,
+          "height": 316,
           "src": "../../img/gallery/smoke.jpg",
           "2x": "../../img/gallery/smoke@2x.jpg",
           "alt" : "pink smoke"

@@ -1,5 +1,6 @@
 {
   "gallery": {
+    "tagline": "Gallery of Modern Art",
     "head-tag": {
       "title": "Gallery Template",
       "canonical-path": "templates/gallery.amp",

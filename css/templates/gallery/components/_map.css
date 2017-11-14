@@ -14,6 +14,12 @@
  * limitations under the License.
  */
 
+.gallery-component-map .gallery-component-map-details {
+  margin-bottom: -11.5rem;
+  position: relative;
+  z-index: 1;
+}
+
 .gallery-component-map .gallery-component-map-heading {
   width: calc((240 / 16) * 1rem);
   margin-bottom: 3rem;
@@ -32,4 +38,6 @@
 .gallery-component-map-frame {
   margin-top: calc((120 / 16) * 1rem);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,0) 10%, rgba(0,0,0,1) calc((140 / 16) * 1rem));
+  position: relative;
+  z-index: 0;
 }

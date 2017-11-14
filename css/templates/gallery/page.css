@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
+
 @import './page-vars';
 
 body {
@@ -29,7 +29,7 @@ body {
 
 .gallery-base-container {
   position: relative;
-  width: calc((23 / 50) * 100vw + (150 / 16) * 1rem);
+  width: calc((23 / 50) * 100vw + (150 / 16) * 1.025rem);
   max-width: calc((800 / 16) * 1rem);
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 .gallery-base-section:not(:last-child) {
-  margin-bottom: 22rem;
+  margin-bottom: 8rem;
 }
 
 .gallery-base-rich-text h2 {
@@ -97,6 +97,7 @@ body {
   width: calc(20vmin + (200 / 16) * 1rem);
   left: calc(20vw - (160 / 16) * 1rem);
   top: 140vh;
+  overflow: hidden;
 }
 
 .gallery-inner-background-2 {
@@ -104,6 +105,7 @@ body {
   width: calc(100vmin + (400 / 16) * 1rem);
   left: 40vw;
   top: 10vh;
+  overflow: hidden;
 }
 
 .gallery-inner-perspective {
@@ -112,12 +114,14 @@ body {
 }
 
 .gallery-inner-3d-row {
+  margin-bottom: 24rem;
   padding-bottom: 120%;
   position: relative;
 }
 
 @media (--breakpoint-md) {
   .gallery-inner-3d-row {
+    margin-bottom: 0;
     padding-bottom: 40%;
   }
 }
