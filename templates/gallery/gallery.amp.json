@@ -31,7 +31,7 @@
         {
           "link": {
             "nav-item-classes": ["gallery-sidebar-nav-item"],
-            "url": "./gallery-inner.amp.html",
+            "url": "./gallery.amp.html",
             "text": "<div class='gallery-sidebar-nav-item-text'>Home</div><div class='gallery-sidebar-nav-item-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><polyline fill='none' stroke='currentColor' points='27 5 72.167 50.167 27.335 95'/></svg></div>"
           }
         },
