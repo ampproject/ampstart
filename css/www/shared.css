@@ -36,15 +36,21 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .ampstart-headerbar-nav .ampstart-nav-item a {
-  text-transform: uppercase;
   font-size: var(--h5);
 }
 
-.ampstart-headerbar-nav .ampstart-nav-item.www-current-page {
-  color: #066573;
+
+.www-templates-page .www-nav-templates,
+.www-components-page .www-nav-components,
+.www-howitworks-page .www-nav-howitworks,
+.www-getstarted-page .www-nav-getstarted {
+  color: var(--color-theme-gradient-end);
 }
 
-.ampstart-headerbar-nav .ampstart-nav-item.www-current-page::after,
+.www-templates-page .www-nav-templates::after,
+.www-components-page .www-nav-components::after,
+.www-howitworks-page .www-nav-howitworks::after,
+.www-getstarted-page .www-nav-getstarted::after,
 .www-secondary-nav-anchor[selected]::after {
   content: '';
   display: block;
@@ -133,9 +139,9 @@ body .www-secondary-nav-anchors .www-secondary-nav-anchor[option][selected] {
 
 /* SVG Gradient */
 #svg-gradient .start {
-  stop-color: var(--color-secondary);
+  stop-color: var(--color-theme-gradient-start);
 }
 
 #svg-gradient .stop {
-  stop-color: #066573;
+  stop-color: var(--color-theme-gradient-end);
 }

@@ -35,7 +35,10 @@
 
   --color-highlight-background: #f9f7f7;
 
-  --header-gradient: linear-gradient(to right, #280e75 0%, #066573 100%);
+  --color-theme-gradient-start: var(--color-secondary);
+  --color-theme-gradient-end: #066573;
+
+  --header-gradient: linear-gradient(to right, var(--color-theme-gradient-start) 0%, var(--color-theme-gradient-end) 100%);
 
   --font-family: Montserrat, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
 }
