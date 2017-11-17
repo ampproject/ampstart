@@ -48,6 +48,8 @@
     }
   },
   "footer": {
+    "spacing-classes": "p2",
+    "layout-classes": "flex flex-wrap justify-between",
     "social-follow": {
       "links": [
         {"twitter": "https://twitter.com/AMPhtml"},
@@ -56,14 +58,25 @@
         {"wordpress": "https://amphtml.wordpress.com"}
       ]
     },
-    "faq-links": {
-      "links": [
-        {"text": "Privacy", "url": "https://www.google.com/policies/privacy/"},
-        {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE"}
-      ]
-    },
+    "faq-links": [
+      {
+        "heading": "Links",
+        "links": [
+          {"text": "Privacy", "url": "https://www.google.com/policies/privacy/"},
+          {"text": "License", "url": "https://github.com/ampproject/ampstart/blob/master/LICENSE"}
+        ]
+      },
+      {
+        "heading": "Other Resources",
+        "links": [
+          {"text": "AMP Project", "url": "https://www.ampproject.org/", "target": "_blank"},
+          {"text": "AMP by Example", "url": "https://ampbyexample.com/", "target": "_blank"},
+          {"text": "AMP Docs", "url": "https://www.ampproject.org/docs/", "target": "_blank"}
+        ]
+      }
+    ],
     "copyright": {
-      "text": "AMP Start is part of the Accelerated Mobile Pages Project"
+      "text": "<a href=\"https://www.ampproject.org\" target=\"_blank\" title=\"AMP Project\"></a><p>The AMP Project is an open-source initiative aiming to make the web better for all.The project enables the creation of websites and ads that are consistently fast, beautiful and high-performing across devices and distribution platforms.</p>"
     }
   }
 }
