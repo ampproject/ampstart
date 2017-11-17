@@ -109,7 +109,8 @@ h1,h2,h3,h4,h5,h6,
 .ampstart-footer > small {
   flex-basis: 33.33%;
   flex-grow: 0.5;
-  font-size: 1rem;
+  font-size: var(--h5);
+  line-height: var(--line-height-2);
   padding: 0 var(--space-1);
 }
 
@@ -126,6 +127,11 @@ h1,h2,h3,h4,h5,h6,
 
 .ampstart-footer-nav {
   padding: 0 var(--space-1);
+}
+
+.ampstart-footer-nav .ampstart-label {
+  font-size: var(--h5);
+  letter-spacing: normal;
 }
 
 .ampstart-footer-nav > div {

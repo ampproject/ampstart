@@ -10,7 +10,7 @@
         "amp-selector",
         "amp-analytics"
       ],
-      "css-path": "www/index/1.0/page.css",
+      "css-path": "www/index/page.css",
       "font-stylesheets": [
         "https://fonts.googleapis.com/css?family=Inconsolata|Montserrat"
       ],
