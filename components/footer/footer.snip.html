@@ -1,6 +1,6 @@
 {{!
 <!---
-Copyright 2016 The AMP Start Authors. All Rights Reserved.
+Copyright 2017 The AMP Start Authors. All Rights Reserved.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -18,24 +18,27 @@ limitations under the License.
 
 {{#footer}}
   <!-- Start Footer -->
-  <footer class="ampstart-footer flex flex-column items-center {{#spacing-classes}}{{.}}{{/spacing-classes}}{{^spacing-classes}}px3{{/spacing-classes}}">
+  <footer class="ampstart-footer {{#layout-classes}}{{.}}{{/layout-classes}}{{^layout-classes}}flex flex-column items-center{{/layout-classes}} {{#spacing-classes}}{{.}}{{/spacing-classes}}{{^spacing-classes}}px3{{/spacing-classes}}">
     {{> ../social-follow/social-follow.snip.html}}
     {{#faq-links}}
-      <nav class="ampstart-footer-nav">
-        <ul class="list-reset flex flex-wrap mb3">
-          {{#links}}
-            <li class="px1"><a class="text-decoration-none ampstart-label" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
-          {{/links}}
-        </ul>
-      </nav>
+    <nav class="ampstart-footer-nav">
+      {{#heading}}
+      <div class="ampstart-label px1 mb3">{{.}}</div>
+      {{/heading}}
+      <ul class="list-reset flex flex-wrap mb3">
+        {{#links}}
+        <li class="px1"><a class="text-decoration-none ampstart-label" {{#target}}target="{{.}}"{{/target}} href="{{{url}}}">{{text}}</a></li>
+        {{/links}}
+      </ul>
+    </nav>
     {{/faq-links}}
     {{#copyright}}
-      <small>
-        {{text}}
-        {{#tos}}
-          <a class="{{classes}}" {{#link.target}}target="{{.}}"{{/link.target}} href="{{{link.url}}}">{{link.text}}</a>
-        {{/tos}}
-      </small>
+    <small>
+      {{{text}}}
+      {{#tos}}
+      <a class="{{classes}}" {{#link.target}}target="{{.}}"{{/link.target}} href="{{{link.url}}}">{{link.text}}</a>
+      {{/tos}}
+    </small>
     {{/copyright}}
   </footer>
   <!-- End Footer -->
