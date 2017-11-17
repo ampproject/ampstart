@@ -14,8 +14,8 @@
  * limitations under the License.
  */
 
-@import '../../../../components/lightbox/template-preview';
-@import '../../shared';
+@import '../../../components/lightbox/template-preview';
+@import '../shared';
 
 .www-header {
   min-height: 440px;
