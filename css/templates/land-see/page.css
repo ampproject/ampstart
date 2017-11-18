@@ -501,7 +501,7 @@ h4,
 }
 
 .land-see-post-title {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .land-see a.land-see-post-category {
@@ -599,8 +599,8 @@ h4,
 }
 
 .land-see .amp-carousel-button {
-  height: 32px;
-  width: 16px;
+  height: 40px;
+  width: 40px;
   outline: none;
   cursor: pointer;
   background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='32' viewBox='0 0 16 32' overflow='visible'%3E%3Cpath fill='none' stroke='%23DFDFDF' stroke-miterlimit='10' d='M.354 31.201l15.423-15.424L.354.354'/%3E%3C/svg%3E") no-repeat center center;
@@ -608,7 +608,7 @@ h4,
 
 .land-see-popular-content .amp-carousel-button {
   top: 97px;
-  background-size: 85%;
+  background-size: 35%;
 }
 
 .land-see .amp-carousel-button-prev {
@@ -822,6 +822,7 @@ h4,
 .land-see-selected-category,
 .land-see-categories-nav-page-load button:target {
   border-bottom: solid 1px var(--color-story-navigation-accent);
+  border-radius: 0;
 }
 
 .land-see-paging {
