@@ -1,6 +1,7 @@
 {
   "gallery": {
     "tagline": "Gallery of Modern Art",
+    "hide-mobile": true,
     "head-tag": {
       "title": "Gallery Template",
       "canonical-path": "templates/gallery-inner.amp",
@@ -156,8 +157,8 @@
         "text": "Buy Tickets"
       },
       "marker": {
-        "lat": 37.422,
-        "lng": -122.084
+        "lat": 40.7794406,
+        "lng": -73.9654327
       }
     }
   }

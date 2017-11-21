@@ -22,6 +22,7 @@ limitations under the License.
     <amp-list
       class="travel-inline-list travel-results-list"
       layout="flex-item"
+      noloading
       {{> ../util/amp-list-props.snip.html}}
     >
       <template type="amp-mustache">
@@ -37,6 +38,7 @@ limitations under the License.
                       class="rounded bg-silver mb1"
                       width="2"
                       height="1"
+                      noloading
                       layout="responsive"
                       src="/img/travel/activity/{{img}}.jpg"
                       srcset="/img/travel/activity/{{img}}@2x.jpg 2x, /img/travel/activity/{{img}}.jpg 1x"
