@@ -1,7 +1,7 @@
 {
   "gallery": {
     "tagline": "Gallery of Modern Art",
-    "hide-mobile": true,
+    "hide-mobile": false,
     "head-tag": {
       "title": "Gallery Template",
       "canonical-path": "templates/gallery-inner.amp",
