@@ -291,16 +291,6 @@ body {
   .v-lg-hide { display: none }
 }
 
-.gallery-hide-mobile {
-  display: none;
-}
-
-@media (--breakpoint-md) {
-  .gallery-hide-mobile {
-    display: initial;
-  }
-}
-
  /* Hack media query to target IE, which does not support mix-blend-mode. */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .gallery-base-invert {
