@@ -99,9 +99,9 @@
         }, {
           "width": 316,
           "height": 316,
-          "src": "../../img/gallery/plant.jpg",
-          "2x": "../../img/gallery/plant@2x.jpg",
-          "alt": "house plant on chair on yellow background"
+          "src": "../../img/gallery/spectrum.jpg",
+          "2x": "../../img/gallery/spectrum@2x.jpg",
+          "alt": "circles full of colour"
         }, {
           "width": 517,
           "height": 316,
@@ -127,17 +127,17 @@
     "otherExhibits": [{
       "width": 233,
       "height": 202,
-      "src": "../../img/gallery/plant.jpg",
-      "2x": "../../img/gallery/plant@2x.jpg",
-      "alt" : "house plant on a chair on a yellow background",
+      "src": "../../img/gallery/jellyfish.jpg",
+      "2x": "../../img/gallery/jellyfish@2x.jpg",
+      "alt" : "swimming jellyfish",
       "title": "Untitled",
       "artist": "Evan Ondre"
     }, {
       "width": 233,
       "height": 202,
-      "src": "../../img/gallery/smoke.jpg",
-      "2x": "../../img/gallery/smoke@2x.jpg",
-      "alt" : "pink smoke",
+      "src": "../../img/gallery/balloon.jpg",
+      "2x": "../../img/gallery/balloon@2x.jpg",
+      "alt" : "colourful hot air balloon",
       "title": "Cage",
       "artist": "Ellen Doe"
     }, {
