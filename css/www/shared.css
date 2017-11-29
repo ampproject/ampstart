@@ -104,14 +104,17 @@ h1,h2,h3,h4,h5,h6,
 .ampstart-footer .ampstart-social-follow {
   justify-content: flex-start;
   width: 100%;
+  margin-bottom: var(--space-1);
 }
 
 .ampstart-footer > small {
+  color: inherit;
   flex-basis: 33.33%;
   flex-grow: 0.5;
   font-size: var(--h5);
-  line-height: var(--line-height-2);
+  line-height: var(--line-height-3);
   padding: 0 var(--space-1);
+  letter-spacing: normal;
 }
 
 .ampstart-footer > small > a {
@@ -119,14 +122,14 @@ h1,h2,h3,h4,h5,h6,
   color: #0379c4;
   display: inline-block;
   margin: 0;
-  padding: 40px 40px 40px 60px;
+  padding: 20px 40px 20px 40px;
   text-transform: none;
   white-space: nowrap;
   width: auto;
 }
 
 .ampstart-footer-nav {
-  padding: 0 var(--space-1);
+  padding: 0 var(--space-1) var(--space-1);
 }
 
 .ampstart-footer-nav .ampstart-label {
@@ -135,7 +138,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .ampstart-footer-nav > div {
-  margin-top: var(--space-3);
+  margin-bottom: var(--space-1);
   padding: 0;
 }
 
@@ -146,7 +149,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .ampstart-footer-nav > ul > li {
-  margin-bottom: var(--space-2);
+  margin-bottom: calc(var(--space-1)/2);
   padding: 0;
 }
 .ampstart-footer-nav > ul > li > a {
@@ -155,14 +158,13 @@ h1,h2,h3,h4,h5,h6,
 }
 
 @media (--breakpoint-xs) {
+
   .ampstart-footer > small {
     flex-basis: 100%;
-    order: 1;
   }
 
   .ampstart-footer-nav {
     width: 100%;
-    order: 2;
   }
 }
 
@@ -172,10 +174,8 @@ h1,h2,h3,h4,h5,h6,
   }
   .ampstart-footer > small {
     flex-basis: 100%;
-    order: 1;
   }
   .ampstart-footer-nav {
-    order: 2;
     min-width: 41.66%;
   }
 }
