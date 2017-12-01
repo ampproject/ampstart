@@ -55,7 +55,8 @@
         {"twitter": "https://twitter.com/AMPhtml"},
         {"github": "https://github.com/ampproject/ampstart"},
         {"slack": "https://docs.google.com/forms/d/1wAE8w3K5preZnBkRk-MD1QkX8FmlRDxd_vs4bFSeJlQ/viewform?fbzx=4406980310789882877"},
-        {"wordpress": "https://amphtml.wordpress.com"}
+        {"wordpress": "https://amphtml.wordpress.com"},
+        {"youtube": "https://www.youtube.com/TheAMPProject"}
       ]
     },
     "faq-links": [
@@ -71,7 +72,8 @@
         "links": [
           {"text": "AMP Project", "url": "https://www.ampproject.org/", "target": "_blank"},
           {"text": "AMP by Example", "url": "https://ampbyexample.com/", "target": "_blank"},
-          {"text": "AMP Docs", "url": "https://www.ampproject.org/docs/", "target": "_blank"}
+          {"text": "AMP Docs", "url": "https://www.ampproject.org/docs/", "target": "_blank"},
+          {"text": "YouTube Channel", "url": "https://www.youtube.com/TheAMPProject", "target": "_blank"}
         ]
       }
     ],
