@@ -72,4 +72,5 @@
   @custom-media --breakpoint-within-xxxs (max-width: 25rem);
   @custom-media --breakpoint-within-xxs (max-width: 30rem);
   @custom-media --breakpoint-greater-than-xxs (min-width: 30.06rem);
+  @custom-media --breakpoint-within-xxl (max-width: 100rem);
 }
