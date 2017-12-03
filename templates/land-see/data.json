@@ -98,7 +98,7 @@
     "form": {
       "title": "Subscribe to Land + See",
       "method": "GET",
-      "action": "/",
+      "action": "land-see.amp.html",
       "heading": {
         "level": 2,
         "classes": "land-see-subs-heading-text",
