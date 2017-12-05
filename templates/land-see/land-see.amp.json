@@ -3,11 +3,10 @@
     "hero-carousel": [
       {
         "layout-classes": "land-see-hero-left absolute",
-        "responsive-display-classes": "xs-hide sm-hide md-hide",
         "id": "land-see-hero-left",
         "classes": "land-see-hero-carousel",
-        "width": "800",
-        "height": "435",
+        "width": "1290",
+        "height": "680",
         "layout": "responsive",
         "on-action": "slideChange:AMP.setState({selectedSlide: event.index})",
         "hero-slide": [
@@ -16,7 +15,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-top",
                 "alt-text": "Bold Coast Cottage",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/maine.jpg"
               }
             ],
@@ -33,7 +32,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-bottom",
                 "alt-text": "Designer Kim Myeong",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/shoe-designer.jpg"
               }
             ],
@@ -50,7 +49,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-top",
                 "alt-text": "Skykomish River Valley ",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/paul-summers.jpg"
               }
             ],
@@ -69,8 +68,8 @@
         "id": "land-see-hero-main",
         "classes": "land-see-hero-carousel",
         "media-query": "(min-width: 40.06rem)",
-        "width": "800",
-        "height": "435",
+        "width": "1290",
+        "height": "680",
         "layout": "responsive",
         "on-action": "slideChange:AMP.setState({selectedSlide: event.index})",
         "hero-slide": [
@@ -79,7 +78,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-bottom",
                 "alt-text": "Designer Kim Myeong",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/shoe-designer.jpg"
               }
             ],
@@ -96,7 +95,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-top",
                 "alt-text": "Skykomish River Valley ",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/paul-summers.jpg"
               }
             ],
@@ -113,7 +112,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-top",
                 "alt-text": "Bold Coast Cottage",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/maine.jpg"
               }
             ],
@@ -232,11 +231,10 @@
       },
       {
         "layout-classes": "land-see-hero-right absolute",
-        "responsive-display-classes": "xs-hide sm-hide md-hide",
         "id": "land-see-hero-right",
         "classes": "land-see-hero-carousel",
-        "width": "800",
-        "height": "435",
+        "width": "1290",
+        "height": "680",
         "layout": "responsive",
         "on-action": "slideChange:AMP.setState({selectedSlide: event.index})",
         "hero-slide": [
@@ -245,7 +243,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-top",
                 "alt-text": "Skykomish River Valley ",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/paul-summers.jpg"
               }
             ],
@@ -262,7 +260,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-top",
                 "alt-text": "Bold Coast Cottage",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/maine.jpg"
               }
             ],
@@ -279,7 +277,7 @@
               {
                 "classes": "cover land-see-hero-image land-see-cover-position-bottom",
                 "alt-text": "Designer Kim Myeong",
-                "width": 800, "height": 435, "layout": "responsive",
+                "width": 1290, "height": 680, "layout": "responsive",
                 "src": "../../img/land-see/content/shoe-designer.jpg"
               }
             ],
