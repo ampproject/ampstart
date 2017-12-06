@@ -84,13 +84,11 @@ h1,h2,h3,h4,h5,h6,
 
 /* Footer */
 
-.ampstart-footer {
-  position: relative;
+.www-footer-container {
   padding-top: calc(var(--space-2) + 35px);
-  flex-direction: row-reverse;
 }
 
-.ampstart-footer::before {
+.www-footer-container::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -101,10 +99,21 @@ h1,h2,h3,h4,h5,h6,
   right: 0;
 }
 
+.ampstart-footer {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  flex-direction: row-reverse;
+  padding-top: var(--space-4);
+  padding-left: calc(var(--space-6) - var(--space-1));
+  padding-right: calc(var(--space-6) - var(--space-1));
+}
+
 .ampstart-footer .ampstart-social-follow {
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: var(--space-1);
+  margin-bottom: calc(var(--space-6) - var(--space-1));;
 }
 
 .ampstart-footer > small {
@@ -121,7 +130,7 @@ h1,h2,h3,h4,h5,h6,
   background: url(/img/www/amp-logo-blue.svg) no-repeat center left/100%;
   color: #0379c4;
   display: inline-block;
-  margin: 0;
+  margin: 0 0 var(--space-1);
   padding: 20px 40px 20px 40px;
   text-transform: none;
   white-space: nowrap;
@@ -129,7 +138,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 .ampstart-footer-nav {
-  padding: 0 var(--space-1) var(--space-1);
+  padding: 0 var(--space-1) var(--space-5);
 }
 
 .ampstart-footer-nav .ampstart-label {
@@ -158,6 +167,10 @@ h1,h2,h3,h4,h5,h6,
 }
 
 @media (--breakpoint-xs) {
+  .ampstart-footer {
+    padding-left: var(--space-3);
+    padding-right: var(--space-3);
+  }
 
   .ampstart-footer > small {
     flex-basis: 100%;

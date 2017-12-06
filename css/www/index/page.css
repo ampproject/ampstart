@@ -26,10 +26,9 @@
   max-width: 35rem;
 }
 
-.www-index-showcase,
-.www-index-help,
-.ampstart-footer {
+.www-index-showcase {
     transform: translateY(-250px);
+    margin-bottom: -250px;
 }
 
 .www-index-showcase-header-img [placeholder] {
@@ -177,10 +176,9 @@
     min-height: 300px;
   }
 
-  .www-index-showcase,
-  .www-index-help,
-  .ampstart-footer {
+  .www-index-showcase {
       transform: translateY(-200px);
+      margin-bottom: -200px;
   }
 
   .www-index-showcase-template {
