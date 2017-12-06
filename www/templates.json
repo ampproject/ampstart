@@ -23,8 +23,26 @@
         "template-group": {
           "title": "E-commerce",
           "id": "commerce",
-          "template-count": "2",
+          "template-count": "3",
           "templates": [
+            {
+              "template-preview": {
+                "title": "Travel Site",
+                "page-count": "2",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/templates/travel.png",
+                  "2x_url": "/img/www/templates/travel_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the Travel site template"
+                },
+                "desc": "A full Travel website designed to support many travel booking scenarios with a modern look and feel.",
+                "lightbox-id": "travel-template",
+                "src": "templates/travel/travel.amp.html",
+                "download": "archive/travel.zip"
+              }
+            },
             {
               "template-preview": {
                 "title": "Bike Shop",
@@ -122,6 +140,33 @@
                 "lightbox-id": "the-scenic-template",
                 "src": "templates/themes_1/template_1_article.amp.html",
                 "download": "archive/themes_1.zip"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "template-group": {
+          "title": "Art & Design",
+          "id": "art-and-design",
+          "template-count": "1",
+          "templates": [
+            {
+              "template-preview": {
+                "title": "Museum",
+                "page-count": "2",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/templates/gallery.png",
+                  "2x_url": "/img/www/templates/gallery_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the the Museum template"
+                },
+                "desc": "A fancy museum template.",
+                "lightbox-id": "museum-template",
+                "src": "templates/gallery/gallery.amp.html",
+                "download": "archive/gallery.zip"
               }
             }
           ]
