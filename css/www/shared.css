@@ -84,13 +84,11 @@ h1,h2,h3,h4,h5,h6,
 
 /* Footer */
 
-.ampstart-footer {
-  position: relative;
+.www-footer-container {
   padding-top: calc(var(--space-2) + 35px);
-  flex-direction: row-reverse;
 }
 
-.ampstart-footer::before {
+.www-footer-container::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -101,10 +99,18 @@ h1,h2,h3,h4,h5,h6,
   right: 0;
 }
 
+.ampstart-footer {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  flex-direction: row-reverse;
+  padding-top: 0;
+}
+
 .ampstart-footer .ampstart-social-follow {
   justify-content: flex-start;
   width: 100%;
-  margin-bottom: var(--space-1);
 }
 
 .ampstart-footer > small {
