@@ -48,7 +48,7 @@
     }
   },
   "footer": {
-    "spacing-classes": "p2",
+    "spacing-classes": "px4",
     "layout-classes": "flex flex-wrap justify-between",
     "social-follow": {
       "links": [

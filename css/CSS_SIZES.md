@@ -13,9 +13,9 @@
 | templates/themes_2/page.css   | 24826                | 24.83 KB |
 | templates/thescenic/page.css  | 24345                | 24.34 KB |
 | templates/travel/page.css     | 17340                | 17.34 KB |
-| www/components/page.css       | 24795                | 24.80 KB |
-| www/getstarted/page.css       | 20465                | 20.46 KB |
-| www/howitworks/page.css       | 20465                | 20.46 KB |
-| www/index/page.css            | 26851                | 26.85 KB |
+| www/components/page.css       | 25051                | 25.05 KB |
+| www/getstarted/page.css       | 20721                | 20.72 KB |
+| www/howitworks/page.css       | 20721                | 20.72 KB |
+| www/index/page.css            | 27083                | 27.08 KB |
 | www/render/page.css           | 24284                | 24.28 KB |
-| www/templates/page.css        | 25483                | 25.48 KB |
+| www/templates/page.css        | 25739                | 25.74 KB |

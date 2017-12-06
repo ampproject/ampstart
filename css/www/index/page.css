@@ -176,10 +176,9 @@
     min-height: 300px;
   }
 
-  .www-index-showcase,
-  .www-index-help,
-  .www-footer-container {
+  .www-index-showcase {
       transform: translateY(-200px);
+      margin-bottom: -200px;
   }
 
   .www-index-showcase-template {
