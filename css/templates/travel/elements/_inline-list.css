@@ -22,6 +22,7 @@
  */
 .travel-inline-list {
   position: static;
+  min-height: 10px;
 }
 
 .travel-inline-list,
