@@ -37,7 +37,7 @@
                   "layout": "responsive",
                   "alt": "Screenshot of the Travel site template"
                 },
-                "desc": "A full Travel website designed to support many travel booking scenarios with a modern look and feel.",
+                "desc": "A travel and experience focused site with extensive animations and e-commerce functionality.",
                 "lightbox-id": "travel-template",
                 "src": "templates/travel/travel.amp.html",
                 "download": "archive/travel.zip"
@@ -163,7 +163,7 @@
                   "layout": "responsive",
                   "alt": "Screenshot of the the Museum template"
                 },
-                "desc": "A fancy museum template.",
+                "desc": "A contemporary and highly stylized showcase for creative content, images and event information.",
                 "lightbox-id": "museum-template",
                 "src": "templates/gallery/gallery.amp.html",
                 "download": "archive/gallery.zip"
