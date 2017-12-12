@@ -23,12 +23,14 @@ limitations under the License.
 <amp-lightbox id="{{lightbox-id}}" layout="nodisplay" class="ampstart-device-preview relative">
   <div class="ampstart-device-preview-mask absolute top-0 right-0 left-0 bottom-0 {{classes}}" role="button" on="tap:{{lightbox-id}}.close" tabindex="0"></div>
   <amp-selector>
-    <div class="ampstart-device-preview-select flex justify-between items-center center absolute top-0 left-0 right-0 pl2">
-      <h3 class="pr1 h4">PREVIEW</h3>
-      <div class="nowrap">
+    <div class="ampstart-device-preview-select flex justify-between items-center center absolute top-0 left-0 right-0">
+      <h3 class="pr1 h4 hide">PREVIEW</h3>
+      <div class="nowrap flex items-center mx-auto">
         <span class="inline-block px1 mr2 xs-hide" option="mobile" selected>
-          <h4 class="inline-block align-middle mr1 h5">Mobile</h4>
-          <amp-img src="img/www/mobile_small.svg" width="16" height="33" layout="fixed" alt="mobile icon" class="align-middle"></amp-img>
+          <h4 class="inline-block align-middle mr1 h5 hide">Mobile</h4>
+          <div class="align-middle">
+          {{> ../../img/www/templates/mobile.svg}}
+          </div>
         </span>
 
         <div class="ampstart-mobile-frame absolute xs-hide">
@@ -46,8 +48,10 @@ limitations under the License.
         </div>
 
         <span class="inline-block  px1 mr2 xs-hide sm-hide" option="tablet">
-          <h4 class="inline-block align-middle mr1 h5">Tablet</h4>
-          <amp-img src="img/www/tablet_small.svg" width="27" height="38" layout="fixed" alt="tablet icon" layout="responsive" class="align-middle"></amp-img>
+          <h4 class="inline-block align-middle mr1 h5 hide">Tablet</h4>
+          <div class="align-middle">
+          {{> ../../img/www/templates/tablet.svg}}
+          </div>
         </span>
 
         <div class="ampstart-tablet-frame absolute xs-hide sm-hide">
@@ -65,8 +69,10 @@ limitations under the License.
         </div>
 
         <span class="inline-block px1" option="desktop">
-          <h4 class="inline-block align-middle mr1 h5">Fullscreen</h4>
-          <amp-img src="img/www/fullscreen.svg" width="25" height="25" layout="fixed" alt="fullscreen icon" class="align-middle"></amp-img>
+          <h4 class="inline-block align-middle mr1 h5 hide">Fullscreen</h4>
+          <div class="align-middle">
+          {{> ../../img/www/templates/desktop.svg}}
+          </div>
         </span>
         <div class="ampstart-desktop-frame absolute top-0 left-0 right-0 bottom-0">
         <amp-iframe width="324"
@@ -80,7 +86,7 @@ limitations under the License.
         </amp-iframe>
       </div>
     </div>
-    <div class="nowrap">
+    <div class="nowrap absolute top-0 right-0 bottom-0 flex items-center">
       <button class="ampstart-btn"><a href="{{{download}}}" class="h5 text-decoration-none caps block" target="_blank">Download</a></button>
       <a role="button" aria-label="Close template preview" tabindex="0" on="tap:{{lightbox-id}}.close" class="ampstart-device-preview-close p2">✕</a>
     </div>
