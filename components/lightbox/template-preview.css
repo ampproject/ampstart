@@ -51,10 +51,6 @@
   opacity: 0;
 }
 
-.ampstart-device-preview-select > h3 {
-  visibility: hidden;
-}
-
 .ampstart-device-preview-select [option] {
   cursor: pointer;
 }
@@ -68,7 +64,7 @@
 }
 
 .ampstart-device-preview-select [option][selected] svg path {
-  stroke: purple;
+  stroke: var(--color-secondary);
 }
 
 .ampstart-device-preview-select [option]:hover amp-img,

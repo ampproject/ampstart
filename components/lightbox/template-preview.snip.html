@@ -24,8 +24,8 @@ limitations under the License.
   <div class="ampstart-device-preview-mask absolute top-0 right-0 left-0 bottom-0 {{classes}}" role="button" on="tap:{{lightbox-id}}.close" tabindex="0"></div>
   <amp-selector>
     <div class="ampstart-device-preview-select flex justify-between items-center center absolute top-0 left-0 right-0 pl2">
-      <h3 class="pr1 h4">PREVIEW</h3>
-      <div class="nowrap flex items-center">
+      <h3 class="pr1 h4 hide">PREVIEW</h3>
+      <div class="nowrap flex items-center mx-auto">
         <span class="inline-block px1 mr2 xs-hide" option="mobile" selected>
           <h4 class="inline-block align-middle mr1 h5 hide">Mobile</h4>
           <div class="align-middle">
@@ -71,7 +71,7 @@ limitations under the License.
         <span class="inline-block px1" option="desktop">
           <h4 class="inline-block align-middle mr1 h5 hide">Fullscreen</h4>
           <div class="align-middle">
-          {{> ../../img/www/fullscreen.svg}}
+          {{> ../../img/www/templates/desktop.svg}}
           </div>
         </span>
         <div class="ampstart-desktop-frame absolute top-0 left-0 right-0 bottom-0">
@@ -86,7 +86,7 @@ limitations under the License.
         </amp-iframe>
       </div>
     </div>
-    <div class="nowrap">
+    <div class="nowrap absolute top-0 right-0 bottom-0 flex items-center">
       <button class="ampstart-btn"><a href="{{{download}}}" class="h5 text-decoration-none caps block" target="_blank">Download</a></button>
       <a role="button" aria-label="Close template preview" tabindex="0" on="tap:{{lightbox-id}}.close" class="ampstart-device-preview-close p2">✕</a>
     </div>
