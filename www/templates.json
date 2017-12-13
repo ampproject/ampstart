@@ -27,7 +27,7 @@
           "templates": [
             {
               "template-preview": {
-                "title": "Travel Site",
+                "title": "Travel",
                 "page-count": "2",
                 "img": {
                   "width": "360",
@@ -35,7 +35,7 @@
                   "url": "/img/www/templates/travel.png",
                   "2x_url": "/img/www/templates/travel_2x.png",
                   "layout": "responsive",
-                  "alt": "Screenshot of the Travel site template"
+                  "alt": "Screenshot of the Travel template"
                 },
                 "desc": "A travel and experience focused site with extensive animations and e-commerce functionality.",
                 "lightbox-id": "travel-template",
@@ -153,7 +153,7 @@
           "templates": [
             {
               "template-preview": {
-                "title": "Museum",
+                "title": "Gallery",
                 "page-count": "2",
                 "img": {
                   "width": "360",
@@ -161,7 +161,7 @@
                   "url": "/img/www/templates/gallery.png",
                   "2x_url": "/img/www/templates/gallery_2x.png",
                   "layout": "responsive",
-                  "alt": "Screenshot of the the Museum template"
+                  "alt": "Screenshot of the the Gallery template"
                 },
                 "desc": "A contemporary and highly stylized showcase for creative content, images and event information.",
                 "lightbox-id": "museum-template",
