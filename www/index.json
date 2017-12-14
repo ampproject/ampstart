@@ -29,14 +29,14 @@
             }
           ],
           "template-preview": {
-            "title": "The Scenic Template",
+            "title": "Gallery Template",
             "img": {
               "width": "1280",
               "height": "952",
               "url": "/img/www/index/gallery_both.png",
               "2x_url": "/img/www/index/gallery_both_2x.png",
               "layout": "responsive",
-              "alt": "Screenshot of the scenic template"
+              "alt": "Screenshot of the gallery template"
             },
             "lightbox-id": "the-gallery-template",
             "src": "templates/gallery/gallery.amp.html",
@@ -79,14 +79,14 @@
             }
           ],
           "template-preview": {
-            "title": "Bike Shop Template",
+            "title": "Travel Template",
             "img": {
               "width": "1280",
               "height": "952",
               "url": "/img/www/index/travel_both.png",
               "2x_url": "/img/www/index/travel_both_2x.png",
               "layout": "responsive",
-              "alt": "Screenshot of the Bike Shop template"
+              "alt": "Screenshot of the travel template"
             },
             "lightbox-id": "travel-template",
             "src": "templates/travel/travel.amp.html",
