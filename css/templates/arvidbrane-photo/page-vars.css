@@ -19,4 +19,12 @@
   --content-max-width: auto;
   --color-footer-background: var(--color-primary);
   --color-font-footer: var(--color-font-primary);
+
+
+  --color-input-default: #d0d0d0;
+  --color-input-primary: #d0d0d0;
+  --color-input-font-primary: #d0d0d0;
+  --color-input-secondary: var(--color-secondary);
+  --color-input-font-secondary: var(--color-font-secondary);
+  --input-checkbox-radio-size: 20px;
 }
