@@ -64,35 +64,6 @@ a,a:active,a:visited {
   margin-bottom: 4rem;
 }
 
-@media (min-width:52.06rem) {
-  .ampstart-image-fullpage-hero>amp-img {
-    height: 60vh
-  }
-}
-
-.ampstart-image-heading {
-  color: #fff;
-  background: -webkit-linear-gradient(bottom,rgba(0,0,0,.65),transparent);
-  background: linear-gradient(0deg,rgba(0,0,0,.65) 0,transparent)
-}
-
-.ampstart-image-heading>* {
-  margin: 0
-}
-
-amp-carousel .ampstart-image-with-heading {
-  margin-bottom: 0
-}
-
-.ampstart-image-with-caption figcaption {
-  color: #4f4f4f;
-  line-height: 1.125rem
-}
-
-amp-carousel .ampstart-image-with-caption {
-  margin-bottom: 0
-}
-
 .ampstart-input {
   max-width: 100%;
   width: 300px;
