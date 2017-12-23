@@ -27,4 +27,8 @@
   --color-input-secondary: var(--color-secondary);
   --color-input-font-secondary: var(--color-font-secondary);
   --input-checkbox-radio-size: 20px;
+
+
+  --color-navbar-primary: #07111d;
+  --color-navbar-font-primary: #fff;
 }
