@@ -17,7 +17,7 @@ limitations under the License.
 }}
 
 <!-- Start Sidebar -->
-<amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar px3 {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} {{sidebarclasses}}" layout="nodisplay">
+<amp-sidebar id="{{sidebar-id}}" class="ampstart-sidebar px3 {{^sidebaronly}} {{sidebar-hide-classes}}{{^sidebar-hide-classes}}md-hide lg-hide{{/sidebar-hide-classes}}{{/sidebaronly}} {{sidebarclasses}}" layout="nodisplay" {{#sidebar-side}}side="{{.}}"{{/sidebar-side}}>
   <div class="flex justify-start items-center ampstart-sidebar-header">
     <div role="button" aria-label="close sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
   </div>

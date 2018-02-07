@@ -17,8 +17,15 @@
 :root {
   --font-family: Playfair Display, serif;
   --content-max-width: auto;
+
+  --color-primary: #07111d;
+  --color-font-primary: #c4aa92;
+  --color-secondary: #07111d;
+  --color-font-secondary: #fff;
+
+
   --color-footer-background: var(--color-primary);
-  --color-font-footer: var(--color-font-primary);
+  --color-font-footer: var(--color-font-secondary);
 
 
   --color-input-default: #d0d0d0;
@@ -29,6 +36,7 @@
   --input-checkbox-radio-size: 20px;
 
 
-  --color-navbar-primary: #07111d;
-  --color-navbar-font-primary: #fff;
+  --color-navbar-primary: var(--color-primary);
+  --color-navbar-font-primary: var(--color-font-primary);
+  --color-navbar-font-secondary: var(--color-font-secondary);
 }

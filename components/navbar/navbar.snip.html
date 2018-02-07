@@ -19,7 +19,7 @@ limitations under the License.
 {{#navbar}}
   <!-- Start Navbar -->
   <header class="ampstart-headerbar fixed flex justify-start items-center top-0 left-0 right-0 pl2 pr4 {{responsive-layout-classes}}">
-    <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}md-hide lg-hide{{/sidebaronly}} pr2 {{trigger-layout-classes}} {{trigger-spacing-classes}}">{{#svg-trigger}}{{{.}}}{{/svg-trigger}}{{^svg-trigger}}☰{{/svg-trigger}}
+    <div role="button" aria-label="open sidebar" on="tap:{{sidebar-id}}.toggle" tabindex="0" class="ampstart-navbar-trigger {{^sidebaronly}}{{sidebar-hide-classes}}{{^sidebar-hide-classes}}md-hide lg-hide{{/sidebar-hide-classes}}{{/sidebaronly}} pr2 {{trigger-layout-classes}} {{trigger-spacing-classes}}">{{#svg-trigger}}{{{.}}}{{/svg-trigger}}{{^svg-trigger}}☰{{/svg-trigger}}
     </div>
     {{#logo}}
       {{#href}}
@@ -36,7 +36,7 @@ limitations under the License.
       {{/href}}
     {{/logo}}
     {{^sidebaronly}}
-    <nav class="ampstart-headerbar-nav ampstart-nav xs-hide sm-hide">
+    <nav class="ampstart-headerbar-nav ampstart-nav {{nav-hide-classes}} {{^nav-hide-classes}}xs-hide sm-hide{{/nav-hide-classes}}">
       <ul class="list-reset center m0 p0 flex justify-center nowrap">
         {{#nav}}
           {{#link}}

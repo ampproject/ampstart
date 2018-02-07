@@ -35,7 +35,7 @@ a,a:active,a:visited {
 
 .ampstart-image-fullpage-hero {
   background-color: #07111d;
-}
+  }
 
 .ampstart-fullpage-hero-heading-text,
 .ampstart-image-fullpage-hero .ampstart-image-credit {
@@ -68,24 +68,7 @@ a,a:active,a:visited {
 
 .ampstart-headerbar {
   min-height: 56px;
-}
-
-.menu-close-button {
-  right: 1rem;
-}
-
-.menu-close-button:hover {
-  cursor: pointer;
-}
-
-.menu-link a {
-  cursor: pointer;
-  text-decoration: none
-}
-
-.ampstart-navbar-trigger {
-  color: #c4aa92;
-  right: 0;
+  padding-right: var(--space-2);
 }
 
 .previous-work {
@@ -127,7 +110,7 @@ a,a:active,a:visited {
   padding-left: 1rem
 }
 
-@media (min-width:40.06rem) {
+@media (--breakpoint-sm) {
   .ampstart-related-section-items>li {
     border: none
   }
@@ -136,7 +119,8 @@ a,a:active,a:visited {
     padding: 1rem 0
   }
 
-  .ampstart-related-section-items .ampstart-image-with-caption>amp-img,.ampstart-related-section-items .ampstart-image-with-caption>figcaption {
+.ampstart-related-section-items .ampstart-image-with-caption > amp-img,
+.ampstart-related-section-items .ampstart-image-with-caption > figcaption {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%
   }
@@ -277,15 +261,20 @@ blockquote, figure {
   background-image: url("../../img/arvidbrane-photo/article/forward.png")
 }
 
-.header-title {
+.ampstart-headerbar-nav > ul {
+  justify-content: flex-end;
+}
+
+
+.ampstart-headerbar-home-link {
   font-weight: 900;
-  font-size: 18px;
-  letter-spacing: 0px;
+  font-size: var(--h4);
+  letter-spacing: 0;
   line-height: 14px;
 }
 
-.header-title a{
-  color: #fff;
+a.ampstart-headerbar-home-link {
+  color: var(--color-navbar-font-secondary);
 }
 
 .greetings-header {
@@ -341,21 +330,43 @@ blockquote, figure {
 .desktop-logo {
   top: 1rem;
 }
+/*HERE*/
 
-.menu-link {
-  margin-bottom: 50px;
-  font-size: 14px;
+.ampstart-navbar-trigger {
+  font-size: var(--h4);
+  color: var(--color-navbar-font-secondary);
+  order: 3;
+  padding-right: 0;
 }
 
-.menu-links {
+.ampstart-sidebar-nav-title {
+  font-size: var(--h5);
+  color: var(--color-navbar-font-secondary);
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  text-transform: none;
+}
+
+.ampstart-sidebar-nav > ul {
   margin-top: 90px;
+  text-align: center;
 }
 
-.menu-link a:hover, .header-link:hover {
-  color: #fff;
+.ampstart-sidebar-nav > ul > .ampstart-nav-item {
+  margin-bottom: 50px;
 }
 
-@keyframes menu-link-slide-out {
+.ampstart-sidebar-nav .ampstart-nav-item > .ampstart-nav-link {
+  font-size: var(--h5);
+}
+
+
+.ampstart-nav-item > a:hover {
+  color: var(--color-font-secondary);
+}
+
+@keyframes link-underline {
   0% {
     transform: scaleX(0) scaleY(0);
   }
@@ -364,21 +375,19 @@ blockquote, figure {
   }
 }
 
-.menu-link a:hover:before, a.header-link:hover:before, a.footer-link:hover:before {
+.ampstart-nav-item > a:hover:before,
+a.footer-link:hover:before {
   content: "";
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--color-font-secondary);
   position: absolute;
   margin: 35px 0 0 -20px;
   width: 40px;
   height: 2px;
   left: 50%;
-  animation-name: menu-link-slide-out;
-  animation-duration: 0.1s;
-  animation-fill-mode: both;
-  animation-timing-function: ease-in-out;
+  animation: 0.1s ease-in-out both link-underline;
 }
 
-a.header-link:hover:before {
+.ampstart-nav-item > a:hover:before {
   margin: 25px 0 0 -20px;
 }
 
@@ -398,14 +407,21 @@ a.footer-link:hover:before {
   display: inherit;
 }
 
-.header-link {
-  font-size: 12px;
+.ampstart-nav-item > a {
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--h6);
   font-weight: bold;
   position: relative;
 }
 
-.request-quote, .be-contacted, .section-header, .sub-headline, .quoted, .header-link, .footer-link {
-  font-size: 12px;
+.request-quote,
+.be-contacted,
+.section-header,
+.sub-headline,
+.quoted,
+.ampstart-nav-item > a,
+.footer-link {
+  font-size: var(--h6);
   letter-spacing: 3px;
   line-height: 15px;
 }
@@ -529,11 +545,7 @@ main, .contact-section {
     display: inherit;
   }
 
-  .ampstart-navbar-trigger {
-    display: none;
-  }
-
-  .header-title {
+  .ampstart-headerbar-home-link {
     position: absolute;
     left: 3rem;
   }

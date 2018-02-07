@@ -19,54 +19,7 @@ limitations under the License.
 <html ⚡="">
 {{> ../../utils/amp-page-head.snip.html}}
   <body>
-    <!-- Start Navbar -->
-    <header class="ampstart-headerbar fixed flex justify-center items-center top-0 left-0 right-0 pl2 pr1">
-      <h1 class="h4 bold header-title"><a href="home.amp.html" class="text-decoration-none">Arvid Brane Photography</a></h1>
-      <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger absolute h6 pr2">☰</div>
-      <ul class="full-menu absolute list-reset">
-        <li>
-          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Blog</a>
-        </li>
-        <li>
-          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Portfolio</a>
-        </li>
-        <li>
-          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Contact</a>
-        </li>
-        <li>
-          <a href="#" class="header-link montserrat caps text-decoration-none mr1">About</a>
-        </li>
-        <li>
-          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Services</a>
-        </li>
-        <li>
-          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Store</a>
-        </li>
-        <li>
-          <a href="#" class="header-link montserrat caps text-decoration-none mr1">Clients</a>
-        </li>
-      </ul>
-    </header>
-
-    <!-- Start Sidebar -->
-    <amp-sidebar id="header-sidebar" side="right" class="ampstart-sidebar px3 " layout="nodisplay">
-      <div class="flex justify-center items-center ampstart-sidebar-header">
-        <h2 class="h5">Arvid Brane Photography</h2>
-        <div role="button" on="tap:header-sidebar.toggle" tabindex="1" class="menu-close-button absolute">✕</div>
-      </div>
-
-      <ul class="menu-links list-reset m0 center">
-        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Blog</a></li>
-        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Portfolio</a></li>
-        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Contact</a></li>
-        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">About</a></li>
-        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Services</a></li>
-        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Store</a></li>
-        <li class="menu-link relative montserrat bold"><a href="#" class="text-decoration-none caps">Clients</a></li>
-      </ul>
-    </amp-sidebar>
-    <!-- End Sidebar -->
-    <!-- End Navbar -->
+    {{> ../../components/navbar/navbar.snip.html}}
 
     <!-- Start Fullpage Hero -->
     <figure class="ampstart-image-fullpage-hero m0 relative mb4">
