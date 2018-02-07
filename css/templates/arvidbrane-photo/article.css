@@ -53,7 +53,39 @@ a,a:active,a:visited {
     color: #fff;
 }
 
-.request-quote, .be-contacted {
+
+/* Buttons */
+.ampstart-btn {
+  background-color: var(--color-primary-button-background);
+  border: var(--border-width) solid var(--color-primary-button-background);
+  font-family: Montserrat,sans-serif;
+  text-transform: uppercase;
+  font-size: var(--h6);
+  letter-spacing: 3px;
+  font-weight: var(--bold-font-weight);
+  min-width: 280px;
+  min-height: 57px;
+}
+
+.ampstart-btn-secondary {
+  color: var(--color-font-secondary-button);
+  border: var(--border-width) solid var(--color-secondary);
+}
+
+.ampstart-btn-secondary:visited {
+  color: var(--color-font-secondary-button);
+}
+
+a.ampstart-btn {
+  display: block;
+}
+/* End Buttons */
+
+
+
+
+.request-quote,
+.be-contacted {
   background: #3f3b49;
   color: #c4aa92;
   border: none;

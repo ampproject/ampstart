@@ -23,6 +23,7 @@
   --color-secondary: #07111d;
   --color-font-secondary: #fff;
 
+  --bold-font-weight: 700;
 
   --color-footer-background: var(--color-primary);
   --color-font-footer: var(--color-font-secondary);
@@ -39,4 +40,8 @@
   --color-navbar-primary: var(--color-primary);
   --color-navbar-font-primary: var(--color-font-primary);
   --color-navbar-font-secondary: var(--color-font-secondary);
+
+
+  --color-primary-button-background: #3f3b49;
+  --color-font-secondary-button: #3f3b49;
 }
