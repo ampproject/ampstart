@@ -86,12 +86,12 @@
         "template-group": {
           "title": "News + Blog",
           "id": "news-blog",
-          "template-count": "3",
+          "template-count": "4",
           "templates": [
             {
               "template-preview": {
                 "title": "Simple Blog",
-                "page-count": "4",
+                "page-count": "1",
                 "img": {
                   "width": "360",
                   "height": "640",
@@ -109,7 +109,7 @@
             {
               "template-preview": {
                 "title": "Simple Article",
-                "page-count": "2",
+                "page-count": "1",
                 "img": {
                   "width": "360",
                   "height": "640",
@@ -126,8 +126,26 @@
             },
             {
               "template-preview": {
+                "title": "Land & See",
+                "page-count": "3",
+                "img": {
+                  "width": "360",
+                  "height": "640",
+                  "url": "/img/www/index/landsee.png",
+                  "2x_url": "/img/www/index/landsee_2x.png",
+                  "layout": "responsive",
+                  "alt": "Screenshot of the land+see blog template"
+                },
+                "desc": "An expressive magazine-style site, complete with stylistic animations, social elements, and page categories.",
+                "lightbox-id": "land-see-template",
+                "src": "templates/land-see/land-see.amp.html",
+                "download": "archive/land-see.zip"
+              }
+            },
+            {
+              "template-preview": {
                 "title": "The Scenic",
-                "page-count": "4",
+                "page-count": "1",
                 "img": {
                   "width": "360",
                   "height": "640",
