@@ -18,7 +18,7 @@ limitations under the License.
 {{#article}}
 <html ⚡="">
 {{> ../../utils/amp-page-head.snip.html}}
-  <body>
+  <body class="ab-photo-article">
     {{> ../../components/navbar/navbar.snip.html}}
 
     <!-- Start Fullpage Hero -->
@@ -26,7 +26,7 @@ limitations under the License.
       <amp-img height="490" media="(max-width: 767px)" class="tint" layout="fixed-height" src="../../img/arvidbrane-photo/article/hero_opt_tablet.jpg"><span placeholder></span></amp-img>
       <amp-img height="620" media="(min-width: 768px)" class="tint" layout="fixed-height" src="../../img/arvidbrane-photo/article/hero_opt_desktop.jpg"><span placeholder></span></amp-img>
       <figcaption class="absolute top-0 right-0 bottom-0 left-0">
-          <header class="p3 hero-header center pt4 mt4 mx-auto">
+          <header class="p3 center pt4 mt4 mx-auto">
             <h1 class="ampstart-fullpage-hero-heading mb3 bold">
               <span class="ampstart-fullpage-hero-heading-text inline-block">
                 Wedding Package
@@ -42,11 +42,9 @@ limitations under the License.
             </span>
           </header>
         <footer class="absolute left-0 right-0 bottom-0 flex justify-center">
-          <a href="#contact" class="text-decoration-none">
-            <button class="ampstart-btn mb4 mx-auto block">
-              Request quote
-            </button>
-          </a>
+          <button class="ampstart-btn mb4 mx-auto block" on="tap:contact.scrollTo(duration=300)">
+            Request quote
+          </button>
         </footer>
       </figcaption>
     </figure>
@@ -296,7 +294,7 @@ limitations under the License.
       </figcaption>
     </figure>
 
-    <section class="text-section contact-section mx-auto" id="contact">
+    <section class="text-section ab-photo-contact-section mx-auto" id="contact">
       <span class="ampstart-accent block mb2 caps section-header montserrat bold h5">Sounds like something for you?</span>
       <p class="mb4">Vivamus viverra augue libero, vitae dapibus lectus accumsan eget. Pellentesque eget ipsum purus.</p>
 
@@ -316,10 +314,13 @@ limitations under the License.
 
       <p class="mb4">Or you could <a href="#">call</a> or <a href="#">email</a> me directly!</p>
 
-      <button class="be-contacted caps bold montserrat bold line-height-2 text-decoration-none mx-auto block h5">
+      <button class="ampstart-btn mx-auto block">
         Request a quote
       </button>
     </section>
+
+
+    {{> ../../components/footer/footer.snip.html}}
 
     <!-- Start Footer -->
     <footer class="ampstart-footer flex flex-column items-center px3">

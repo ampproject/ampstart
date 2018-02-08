@@ -22,6 +22,7 @@
 @import '../../../components/images/fullpage-hero';
 @import '../../../components/inputs/inputs';
 @import '../../../components/navbar/navbar';
+@import '../../../components/social-follow/social-follow';
 @import 'page-vars';
 
 a,a:active,a:visited {
@@ -34,12 +35,12 @@ a,a:active,a:visited {
 }
 
 .ampstart-image-fullpage-hero {
-  background-color: #07111d;
-  }
+  background-color: var(--color-primary);
+}
 
 .ampstart-fullpage-hero-heading-text,
 .ampstart-image-fullpage-hero .ampstart-image-credit {
-  color: #c4aa92;
+  color: var(--color-font-primary);
   line-height: 0.9;
   background-color: transparent;
 }
@@ -50,7 +51,7 @@ a,a:active,a:visited {
 }
 
 .ampstart-image-fullpage-hero .ampstart-image-credit {
-    color: #fff;
+    color: var(--color-font-secondary);
 }
 
 
@@ -75,26 +76,10 @@ a,a:active,a:visited {
 .ampstart-btn-secondary:visited {
   color: var(--color-font-secondary-button);
 }
-
-a.ampstart-btn {
-  display: block;
-}
 /* End Buttons */
 
 
-
-
-.request-quote,
-.be-contacted {
-  background: #3f3b49;
-  color: #c4aa92;
-  border: none;
-  width: 304px;
-  height: 57px;
-}
-
-.be-contacted {
-  width: 280px;
+.ab-photo-contact-section > button {
   margin-bottom: 4rem;
 }
 
@@ -331,7 +316,7 @@ a.ampstart-headerbar-home-link {
   font-family: "Playfair Display", serif;
 }
 
-.hero-header {
+.ab-photo-article .ampstart-image-fullpage-hero > figcaption > header {
   max-width: 300px
 }
 
@@ -446,8 +431,6 @@ a.footer-link:hover:before {
   position: relative;
 }
 
-.request-quote,
-.be-contacted,
 .section-header,
 .sub-headline,
 .quoted,
@@ -470,7 +453,7 @@ a.footer-link:hover:before {
   display: none;
 }
 
-.contact-section:before {
+.ab-photo-contact-section:before {
   content: '';
   display: block;
   position: relative;
@@ -479,20 +462,20 @@ a.footer-link:hover:before {
   margin-top: -5em
 }
 
-main, .contact-section {
+main, .ab-photo-contact-section {
   max-width: 500px;
 }
 
 @media (min-width: 768px) {
-  .hero-header {
+  ..ab-photo-article .ampstart-image-fullpage-hero > figcaption > header {
     margin-top: 140px;
   }
 
-  main, .contact-section {
+  main, .ab-photo-contact-section {
     max-width: 600px;
   }
 
-  main p,.section-header, .services, .contact-section p {
+  main p,.section-header, .services, .ab-photo-contact-section p {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -532,21 +515,21 @@ main, .contact-section {
 
 @media (min-width: 1024px) {
 
-  main, .contact-section {
+  main, .ab-photo-contact-section {
     max-width: 720px;
   }
 
-  main p, .section-header, .services, .contact-section p {
+  main p, .section-header, .services, .ab-photo-contact-section p {
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  .contact-section p:last-of-type {
+  .ab-photo-contact-section p:last-of-type {
     float: left;
     margin-top: 16px;
   }
 
-  .be-contacted {
+  .ab-photo-contact-section > button {
     margin: 0 0 50px 0;
   }
 
@@ -555,21 +538,21 @@ main, .contact-section {
     margin-right: 50px;
   }
 
-  .contact-section div {
+  .ab-photo-contact-section div {
     width: 45%;
     float:left;
   }
 
-  .contact-section div:nth-of-type(1) {
+  .ab-photo-contact-section div:nth-of-type(1) {
     margin-right: 45px;
   }
 
-  .contact-section div:nth-of-type(2) input, .contact-section div:nth-of-type(2) .section-header {
+  .ab-photo-contact-section div:nth-of-type(2) input, .ab-photo-contact-section div:nth-of-type(2) .section-header {
     margin-left: 0;
     padding-left: 0;
   }
 
-  .contact-section div input {
+  .ab-photo-contact-section div input {
     width: 280px;
   }
 

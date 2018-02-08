@@ -50,6 +50,32 @@
           "link": {"url": "#", "text": "Clients", "classes": "caps"}
         }
       ]
+    },
+    "footer": {
+      "social-follow": {
+        "links": [
+          {"twitter": "#"},
+          {"facebook": "#"},
+          {"pinterest": "#"},
+          {"instagram": "#"},
+          {"gplus": "#"},
+          {"email": "#"}
+        ]
+      },
+      "faq-links": {
+        "links": [
+          {"text": "Blog", "url": "#"},
+          {"text": "Portfolio", "url": "#"},
+          {"text": "Contact", "url": "#"},
+          {"text": "About", "url": "#"},
+          {"text": "Services", "url": "#"},
+          {"text": "Store", "url": "#"},
+          {"text": "Clients", "url": "#"}
+        ]
+      },
+      "copyright": {
+        "text": "© Your Company, 2016"
+      }
     }
   }
 }
