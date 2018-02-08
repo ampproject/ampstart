@@ -961,8 +961,6 @@ h4,
 }
 
 .land-see-story-detail .land-see-hero-caption {
-  font-size: var(--h6);
-  line-height: var(--line-height-2);
   width: auto;
 }
 
