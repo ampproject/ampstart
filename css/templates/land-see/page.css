@@ -686,9 +686,9 @@ h4,
 }
 
 .land-see-hero-caption {
-  width: 28rem;
-  font-size: var(--h7);
-  line-height: var(--line-height-1);
+  min-width: 28rem;
+  font-size: var(--h3);
+  line-height: var(--line-height-2);
   opacity: .85;
 }
 
