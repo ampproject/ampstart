@@ -21,6 +21,31 @@
     "features-showcase": [
       {
         "feature": {
+          "title": "Responsive",
+          "desc": "Templates designed to work with all devices - mobile, tablet and desktop.",
+          "actions": [
+            {
+              "link": {"url": "templates.html", "text": "View templates"}
+            }
+          ],
+          "template-preview": {
+            "title": "Land+See Template",
+            "img": {
+              "width": "1480",
+              "height": "1100",
+              "url": "/img/www/index/landseee_both.png",
+              "2x_url": "/img/www/index/landsee_both_2x.png",
+              "layout": "responsive",
+              "alt": "Screenshot of the Land+See template"
+            },
+            "lightbox-id": "land-see",
+            "src": "templates/land-see/land-see.amp.html",
+            "download": "archive/land-see.zip"
+          }
+        }
+      },
+      {
+        "feature": {
           "title": "Flexible",
           "desc": "Modern designs that you can customize to suit your needs.",
           "actions": [
@@ -41,31 +66,6 @@
             "lightbox-id": "travel-template",
             "src": "templates/travel/travel.amp.html",
             "download": "archive/travel.zip"
-          }
-        }
-      },
-      {
-        "feature": {
-          "title": "Responsive",
-          "desc": "Templates designed to work with all devices - mobile, tablet and desktop.",
-          "actions": [
-            {
-              "link": {"url": "templates.html", "text": "View templates"}
-            }
-          ],
-          "template-preview": {
-            "title": "Lune Template",
-            "img": {
-              "width": "1480",
-              "height": "1100",
-              "url": "/img/www/index/lune_both.png",
-              "2x_url": "/img/www/index/lune_both_2x.png",
-              "layout": "responsive",
-              "alt": "Screenshot of the Lune template"
-            },
-            "lightbox-id": "lune",
-            "src": "templates/lune/lune.amp.html",
-            "download": "archive/lune.zip"
           }
         }
       },
