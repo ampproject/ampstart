@@ -693,9 +693,9 @@ h4,
 }
 
 .land-see-hero-button {
-  font: 400 var(--h9)/var(--line-height-1) var(--font-navigation);
+  font: 400 var(--h5)/var(--line-height-1) var(--font-navigation);
   text-transform: uppercase;
-  padding: 9px 14px;
+  padding: 13px 20px;
   border: solid 1px var(--color-primary);
   opacity: .85;
   cursor: pointer;
