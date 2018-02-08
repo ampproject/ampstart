@@ -686,16 +686,16 @@ h4,
 }
 
 .land-see-hero-caption {
-  width: 28rem;
-  font-size: var(--h7);
-  line-height: var(--line-height-1);
+  min-width: 28rem;
+  font-size: var(--h3);
+  line-height: var(--line-height-2);
   opacity: .85;
 }
 
 .land-see-hero-button {
-  font: 400 var(--h9)/var(--line-height-1) var(--font-navigation);
+  font: 400 var(--h5)/var(--line-height-1) var(--font-navigation);
   text-transform: uppercase;
-  padding: 9px 14px;
+  padding: 13px 20px;
   border: solid 1px var(--color-primary);
   opacity: .85;
   cursor: pointer;
@@ -961,8 +961,6 @@ h4,
 }
 
 .land-see-story-detail .land-see-hero-caption {
-  font-size: var(--h6);
-  line-height: var(--line-height-2);
   width: auto;
 }
 

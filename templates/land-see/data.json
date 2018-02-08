@@ -109,7 +109,7 @@
           "input": {
             "type": "email",
             "value": "",
-            "placeholder": "SUBSCRIBE",
+            "placeholder": "Enter email address to subscribe",
             "id": "email",
             "name": "email"
           }
