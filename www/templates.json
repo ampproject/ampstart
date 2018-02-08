@@ -131,8 +131,8 @@
                 "img": {
                   "width": "360",
                   "height": "640",
-                  "url": "/img/www/index/landsee.png",
-                  "2x_url": "/img/www/index/landsee_2x.png",
+                  "url": "/img/www/templates/landsee.png",
+                  "2x_url": "/img/www/templates/landsee_2x.png",
                   "layout": "responsive",
                   "alt": "Screenshot of the land+see blog template"
                 },
