@@ -15,12 +15,12 @@
  */
 
 :root {
-  --h1: 3rem;
-  --h2: 2rem;
-  --h3: 1.5rem;
+  --h1: 3rem; /* 48px */
+  --h2: 2rem; /* 32px */
+  --h3: 1.5rem; /* 24px */
   --h4: 1.125rem; /*18px*/
-  --h5: .875rem;
-  --h6: .75rem;
+  --h5: .875rem; /*14px*/
+  --h6: .75rem; /*12px*/
 
   --space-1: .5rem; /* 8px */
   --space-2: 1rem; /* 16px */

@@ -10,7 +10,7 @@
         "amp-sidebar",
         "amp-social-share"
       ],
-      "css-path": "templates/themes_2/page.css"
+      "css-path": "templates/arvidbrane-photo/article.css"
     },
     "form": {
       "title": "Leave a reply",

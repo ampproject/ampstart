@@ -198,9 +198,6 @@
 .ampstart-input input[type="checkbox"]:checked::after {
   background-color: var(--color-input-primary);
   color: var(--color-input-font-primary);
-}
-
-.ampstart-input input[type="checkbox"]:checked::after {
   content: "✓";
 }
 

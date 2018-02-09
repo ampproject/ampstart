@@ -18,12 +18,12 @@ limitations under the License.
 
 {{#footer}}
   <!-- Start Footer -->
-  <footer class="ampstart-footer {{#layout-classes}}{{.}}{{/layout-classes}}{{^layout-classes}}flex flex-column items-center{{/layout-classes}} {{#spacing-classes}}{{.}}{{/spacing-classes}}{{^spacing-classes}}px3{{/spacing-classes}}">
+  <footer class="ampstart-footer {{#layout-classes}}{{.}}{{/layout-classes}}{{^layout-classes}}flex flex-column items-center{{/layout-classes}} {{#spacing-classes}}{{.}}{{/spacing-classes}}{{^spacing-classes}}px3{{/spacing-classes}} {{classes}}">
     {{> ../social-follow/social-follow.snip.html}}
     {{#faq-links}}
     <nav class="ampstart-footer-nav">
       {{#heading}}
-      <div class="ampstart-label px1 mb3">{{.}}</div>
+      <div class="ampstart-footer-nav-heading ampstart-label px1 mb3">{{.}}</div>
       {{/heading}}
       <ul class="list-reset flex flex-wrap mb3">
         {{#links}}
