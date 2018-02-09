@@ -23,6 +23,8 @@
   --color-secondary: #07111d;
   --color-font-secondary: #fff;
 
+  --color-font-accent: var(--color-font-primary);
+
   --bold-font-weight: 700;
 
   --color-footer-background: var(--color-primary);
@@ -44,4 +46,13 @@
 
   --color-primary-button-background: #3f3b49;
   --color-font-secondary-button: #3f3b49;
+
+
+
+
+  --color-input-default: var(--color-dark-grey);
+  --color-input-primary: var(--color-primary);
+  --color-input-font-primary: var(--color-font-primary);
+  --color-input-secondary: var(--color-font-secondary);
+  --color-input-font-secondary: var(--color-secondary);
 }

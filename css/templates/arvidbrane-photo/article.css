@@ -35,7 +35,8 @@ a,a:active,a:visited {
 
 .ampstart-footer {
   padding-top: 40px;
-  padding-bottom: 70px
+  padding-bottom: 70px;
+  width: 100%;
 }
 
 .ampstart-image-fullpage-hero {
@@ -58,7 +59,6 @@ a,a:active,a:visited {
     color: var(--color-font-secondary);
 }
 
-
 /* Buttons */
 .ampstart-btn {
   background-color: var(--color-primary-button-background);
@@ -72,16 +72,12 @@ a,a:active,a:visited {
   min-height: 57px;
 }
 
-.ampstart-btn-secondary {
-  color: var(--color-font-secondary-button);
-  border: var(--border-width) solid var(--color-secondary);
+a.ampstart-btn {
+  text-align: center;
+  line-height: 40px;
 }
 
-.ampstart-btn-secondary:visited {
-  color: var(--color-font-secondary-button);
-}
 /* End Buttons */
-
 
 .ab-photo-contact-section > button {
   margin-bottom: 4rem;
@@ -99,7 +95,6 @@ a,a:active,a:visited {
 .ampstart-icon {
   fill: var(--color-font-primary);
 }
-
 
 .montserrat {
   font-family: "Montserrat", sans-serif;
@@ -143,8 +138,10 @@ a,a:active,a:visited {
   margin-bottom: var(--space-4);
 }
 
-.ampstart-footer-nav > ul a, .ampstart-footer-nav > ul a:hover, .ampstart-footer-nav > ul a:visited {
-  color: #fff;
+.ampstart-footer-nav > ul a,
+.ampstart-footer-nav > ul a:hover,
+.ampstart-footer-nav > ul a:visited {
+  color: var(--color-font-secondary);
 }
 
 .text-section {
@@ -212,7 +209,9 @@ blockquote, figure {
   border-color: rgba(255,255,255,1);
 }
 
-.amp-carousel-button:hover, .greetings-carousel-nav .gallery-button:hover, button:hover {
+.amp-carousel-button:hover,
+.greetings-carousel-nav .gallery-button:hover,
+button:hover {
   cursor: pointer;
 }
 
@@ -227,7 +226,6 @@ blockquote, figure {
 .ampstart-headerbar-nav > ul {
   justify-content: flex-end;
 }
-
 
 .ampstart-headerbar-home-link {
   font-weight: 900;
@@ -263,7 +261,7 @@ a.ampstart-headerbar-home-link {
 }
 
 .ab-photo-article .ampstart-image-fullpage-hero > figcaption > header {
-  max-width: 300px
+  max-width: 300px;
 }
 
 .service-header {
@@ -293,7 +291,6 @@ a.ampstart-headerbar-home-link {
 .desktop-logo {
   top: 1rem;
 }
-/*HERE*/
 
 .ampstart-navbar-trigger {
   font-size: var(--h4);
@@ -390,7 +387,6 @@ a.ampstart-headerbar-home-link {
   text-transform: uppercase;
 }
 
-
 .ampstart-footer > small {
   font-size: 80%;
 }
@@ -422,15 +418,19 @@ main,
 }
 
 @media (min-width: 768px) {
-  .ab-photo-article .ampstart-image-fullpage-hero > figcaption > header {
+  .ampstart-image-fullpage-hero > figcaption > header {
     margin-top: 140px;
   }
 
-  main, .ab-photo-contact-section {
+  main,
+  .ab-photo-contact-section {
     max-width: 600px;
   }
 
-  main p,.section-header, .services, .ab-photo-contact-section p {
+  main p,
+  .section-header,
+  .services,
+  .ab-photo-contact-section p {
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -452,9 +452,7 @@ main,
 
   .services {
     column-count: 2;
-    -webkit-column-count: 2;
     column-gap: 0.5rem;
-    -webkit-column-gap: 0.5rem;
     padding-top: 0;
     -webkit-perspective:1;
     height: 200px;
@@ -470,11 +468,14 @@ main,
 
 @media (min-width: 1024px) {
 
-  main, .ab-photo-contact-section {
+  main,
+  .ab-photo-contact-section {
     max-width: 720px;
   }
 
-  main p, .section-header, .services,
+  main p,
+  .section-header,
+  .services,
   .ab-photo-contact-section p {
     padding-left: 50px;
     padding-right: 50px;
