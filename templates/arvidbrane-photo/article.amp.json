@@ -52,6 +52,8 @@
       ]
     },
     "footer": {
+      "spacing-classes": "center px3",
+      "classes": "caps",
       "social-follow": {
         "links": [
           {"twitter": "#"},
@@ -63,6 +65,7 @@
         ]
       },
       "faq-links": {
+        "heading": "Arvid Brane",
         "links": [
           {"text": "Blog", "url": "#"},
           {"text": "Portfolio", "url": "#"},
@@ -74,7 +77,7 @@
         ]
       },
       "copyright": {
-        "text": "© Your Company, 2016"
+        "text": "© 2009-2018 Wedding photography"
       }
     }
   }

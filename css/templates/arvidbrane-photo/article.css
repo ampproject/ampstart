@@ -97,11 +97,11 @@ a,a:active,a:visited {
   letter-spacing: 0
 }
 
-.ampstart-related-section-items>li {
+.ampstart-related-section-items > li {
   border-bottom: 1px solid #4a4a4a
 }
 
-.ampstart-related-section-items>li:last-child {
+.ampstart-related-section-items > li:last-child {
   border: none
 }
 
@@ -117,7 +117,8 @@ a,a:active,a:visited {
   margin-bottom: 0
 }
 
-.ampstart-related-section-items .ampstart-image-with-caption>amp-img,.ampstart-related-section-items .ampstart-image-with-caption>figcaption {
+.ampstart-related-section-items .ampstart-image-with-caption > amp-img,
+.ampstart-related-section-items .ampstart-image-with-caption > figcaption {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1
@@ -193,11 +194,14 @@ a,a:active,a:visited {
  margin-top: 50px;
 }
 
-.footer-links {
+.ampstart-footer-nav > ul {
   line-height: 38px;
+  display: block;
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 
-.footer-links a, .footer-links a:hover, .footer-links a:visited {
+.ampstart-footer-nav > ul a, .ampstart-footer-nav > ul a:hover, .ampstart-footer-nav > ul a:visited {
   color: #fff;
 }
 
@@ -378,7 +382,7 @@ a.ampstart-headerbar-home-link {
   font-size: var(--h5);
 }
 
-
+.ampstart-footer-nav > ul a:hover,
 .ampstart-nav-item > a:hover {
   color: var(--color-font-secondary);
 }
@@ -393,7 +397,7 @@ a.ampstart-headerbar-home-link {
 }
 
 .ampstart-nav-item > a:hover:before,
-a.footer-link:hover:before {
+.ampstart-footer-nav > ul a:hover:before {
   content: "";
   border-bottom: 2px solid var(--color-font-secondary);
   position: absolute;
@@ -404,11 +408,12 @@ a.footer-link:hover:before {
   animation: 0.1s ease-in-out both link-underline;
 }
 
+
 .ampstart-nav-item > a:hover:before {
   margin: 25px 0 0 -20px;
 }
 
-a.footer-link:hover:before {
+.ampstart-footer-nav > ul a:hover:before {
   margin: 30px 0 0 -20px;
 }
 
@@ -416,14 +421,9 @@ a.footer-link:hover:before {
   margin-bottom: 80px;
 }
 
-.copyright-desktop {
-  display: none;
-}
-
-.copyright-tablet {
-  display: inherit;
-}
-
+.ampstart-footer-nav-heading,
+.ampstart-footer > small,
+.ampstart-footer-nav > ul a,
 .ampstart-nav-item > a {
   font-family: "Montserrat", sans-serif;
   font-size: var(--h6);
@@ -435,13 +435,25 @@ a.footer-link:hover:before {
 .sub-headline,
 .quoted,
 .ampstart-nav-item > a,
-.footer-link {
+.ampstart-footer-nav > ul a,
+.ampstart-footer-nav-heading {
   font-size: var(--h6);
   letter-spacing: 3px;
   line-height: 15px;
 }
 
-.footer-link {
+.ampstart-footer > small,
+.ampstart-footer-nav-heading {
+  color: var(--color-grey);
+  text-transform: uppercase;
+}
+
+
+.ampstart-footer > small {
+  font-size: 80%;
+}
+
+.ampstart-footer-nav > ul a {
   position: relative;
 }
 
@@ -462,12 +474,13 @@ a.footer-link:hover:before {
   margin-top: -5em
 }
 
-main, .ab-photo-contact-section {
+main,
+.ab-photo-contact-section {
   max-width: 500px;
 }
 
 @media (min-width: 768px) {
-  ..ab-photo-article .ampstart-image-fullpage-hero > figcaption > header {
+  .ab-photo-article .ampstart-image-fullpage-hero > figcaption > header {
     margin-top: 140px;
   }
 
@@ -519,7 +532,8 @@ main, .ab-photo-contact-section {
     max-width: 720px;
   }
 
-  main p, .section-header, .services, .ab-photo-contact-section p {
+  main p, .section-header, .services,
+  .ab-photo-contact-section p {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -547,7 +561,8 @@ main, .ab-photo-contact-section {
     margin-right: 45px;
   }
 
-  .ab-photo-contact-section div:nth-of-type(2) input, .ab-photo-contact-section div:nth-of-type(2) .section-header {
+  .ab-photo-contact-section div:nth-of-type(2) input,
+  .ab-photo-contact-section div:nth-of-type(2) .section-header {
     margin-left: 0;
     padding-left: 0;
   }
@@ -571,14 +586,6 @@ main, .ab-photo-contact-section {
     margin-left: 0.15rem;
   }
 
-  .copyright-tablet {
-    display: none;
-  }
-
-  .copyright-desktop {
-    display: inherit;
-  }
-
   footer small {
     font-size: 10px;
     letter-spacing: 3px;
@@ -589,7 +596,7 @@ main, .ab-photo-contact-section {
     padding-top: 70px
   }
 
-  .footer-links {
+  .ampstart-footer-nav > ul {
     margin-top: 10px;
   }
 }
