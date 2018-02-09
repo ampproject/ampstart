@@ -20,13 +20,17 @@
 @import '../../../components/dropdown/dropdown';
 @import '../../../components/footer/footer';
 @import '../../../components/images/fullpage-hero';
+@import '../../../components/images/images';
 @import '../../../components/inputs/inputs';
 @import '../../../components/navbar/navbar';
+@import '../../../components/related-article/related-article';
+@import '../../../components/related-section/related-section';
+@import '../../../components/socialbox/socialbox';
 @import '../../../components/social-follow/social-follow';
 @import 'page-vars';
 
 a,a:active,a:visited {
-  color: #c4aa92;
+  color: var(--color-font-primary);
 }
 
 .ampstart-footer {
@@ -89,73 +93,11 @@ a,a:active,a:visited {
 }
 
 .previous-work {
-  background: #07111d;
-}
-
-.ampstart-related-article-readmore {
-  color: #000;
-  letter-spacing: 0
-}
-
-.ampstart-related-section-items > li {
-  border-bottom: 1px solid #4a4a4a
-}
-
-.ampstart-related-section-items > li:last-child {
-  border: none
-}
-
-.ampstart-related-section-items .ampstart-image-with-caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-bottom: 0
-}
-
-.ampstart-related-section-items .ampstart-image-with-caption > amp-img,
-.ampstart-related-section-items .ampstart-image-with-caption > figcaption {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1
-}
-
-.ampstart-related-section-items .ampstart-image-with-caption>figcaption {
-  padding-left: 1rem
-}
-
-@media (--breakpoint-sm) {
-  .ampstart-related-section-items>li {
-    border: none
-  }
-
-  .ampstart-related-section-items .ampstart-image-with-caption>figcaption {
-    padding: 1rem 0
-  }
-
-.ampstart-related-section-items .ampstart-image-with-caption > amp-img,
-.ampstart-related-section-items .ampstart-image-with-caption > figcaption {
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%
-  }
-}
-
-.ampstart-social-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex
-}
-
-.ampstart-social-box>amp-social-share {
-  background-color: #000
+  background: var(--color-primary);
 }
 
 .ampstart-icon {
-  fill: #003f93
+  fill: var(--color-font-primary);
 }
 
 
