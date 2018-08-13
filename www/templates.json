@@ -8,7 +8,9 @@
         "amp-lightbox",
         "amp-iframe",
         "amp-selector",
-        "amp-analytics"
+        "amp-analytics",
+        "amp-geo",
+        "amp-consent"
       ],
       "css-path": "www/templates/page.css",
       "font-stylesheets": [
