@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/ampproject/ampstart/tree/master/tools/replace-important#readme",
   "dependencies": {
-    "css-tree": "1.0.0-alpha19",
+    "css-tree": "1.0.0-alpha9",
     "minimist": "^1.2.0",
     "specificity": "^0.3.1"
   },
