@@ -24,7 +24,7 @@
   "homepage": "https://github.com/ampproject/ampstart#readme",
   "dependencies": {
     "gulp-util": "^3.0.8",
-    "replace-important": "1.0.0-alpha",
+    "replace-important": "1.0.0",
     "through2": "^2.0.3"
   },
   "devDependencies": {
