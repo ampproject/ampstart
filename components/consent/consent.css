@@ -31,7 +31,7 @@ amp-consent .ampstart-btn {
     right: 13px;
   }
   
-  .ampstart-consent-popup div {
+  .ampstart-consent-content {
     flex-flow: column wrap;
     align-items: center;
     margin: 12px 25px 15px 12px;
@@ -50,22 +50,22 @@ amp-consent .ampstart-btn {
     left: 30px;
   }
 
-  .ampstart-consent-popup div {
+  .ampstart-consent-content {
     flex-flow: row;
     height: 100px;
-    margin: 0 40px;
+    margin: 0 var(--space-4);
   }
 
   .ampstart-consent-popup p {
     max-width: 41.25em;
-    padding: 0 25px 0 40px;
+    padding: 0 var(--space-2) 0 var(--space-4);
     margin: 0;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 20rem) {
   .ampstart-consent-popup p {
-    line-height: 1em;
-    font-size: .75em;
+    line-height: var(--line-height-1);
+    font-size: var(--h6);
   }
 }
