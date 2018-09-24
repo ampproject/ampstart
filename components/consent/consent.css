@@ -16,7 +16,7 @@ amp-consent {
 }
 
 amp-consent .ampstart-btn {
-  width: 9.5em;
+  width: 9.5rem;
 }
 
 .ampstart-consent-popup p a {
@@ -34,30 +34,30 @@ amp-consent .ampstart-btn {
   .ampstart-consent-content {
     flex-flow: column wrap;
     align-items: center;
-    margin: 12px 25px 15px 12px;
+    margin: .75rem var(--space-2) var(--space-1) .75rem;
   }
 
   .ampstart-consent-popup p {
-    padding: 5px 20px 5px 10px;
-    margin: 0 0 10px 0;
+    padding: .25rem 1.25rem .25rem .625rem;
+    margin: 0 0 .625rem 0;
   }
 }
 
 /* tablets and desktop */
 @media (--breakpoint-sm) {
  .ampstart-consent-popup a.ampstart-consent-close-btn {
-    font-size: 25px;
-    left: 30px;
+    font-size: var(--h3);
+    left: 2.5rem;
   }
 
   .ampstart-consent-content {
     flex-flow: row;
-    height: 100px;
+    height: 6.25rem;
     margin: 0 var(--space-4);
   }
 
   .ampstart-consent-popup p {
-    max-width: 41.25em;
+    max-width: 41.25rem;
     padding: 0 var(--space-2) 0 var(--space-4);
     margin: 0;
   }
