@@ -11,7 +11,6 @@
 
 amp-consent {
   background: var(--color-white);
-  box-shadow: rgba(0, 0, 0, 0.26) 0 0 19px 0;
   animation: .5s ease-out 0s 1 slideUp;
 }
 
@@ -26,7 +25,7 @@ amp-consent .ampstart-btn {
 /* phones */
 @media (--breakpoint-xs) {
   amp-consent a.ampstart-consent-close-btn {
-    font-size: 22px;
+    font-size: var(--h3);
     top: 15px;
     right: 13px;
   }
@@ -34,12 +33,12 @@ amp-consent .ampstart-btn {
   .ampstart-consent-content {
     flex-flow: column wrap;
     align-items: center;
-    margin: .75rem var(--space-2) var(--space-1) .75rem;
+    margin: var(--space-1) var(--space-2) var(--space-1) var(--space-1);
   }
 
   .ampstart-consent-popup p {
-    padding: .25rem 1.25rem .25rem .625rem;
-    margin: 0 0 .625rem 0;
+    padding: 0 var(--space-1);
+    margin: 0 0 var(--space-1);
   }
 }
 
@@ -60,12 +59,5 @@ amp-consent .ampstart-btn {
     max-width: 41.25rem;
     padding: 0 var(--space-2) 0 var(--space-4);
     margin: 0;
-  }
-}
-
-@media (max-width: 20rem) {
-  .ampstart-consent-popup p {
-    line-height: var(--line-height-1);
-    font-size: var(--h6);
   }
 }
