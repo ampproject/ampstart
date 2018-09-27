@@ -1,0 +1,32 @@
+<amp-geo layout="nodisplay">
+  <script type="application/json">
+    {
+      "ISOCountryGroups": {
+        "eu": ["at", "be", "bg", "ch", "cy", "cz", "dk", "de", "ee", "el", "es", "fi", "fr", "hr", "ie", "is", "it", "li", "lv", "lt", "lu", "hu", "mt", "nl", "no", "pl", "pt", "ro", "si", "sk", "se", "uk"]
+      }
+    }
+  </script>
+</amp-geo>
+
+<amp-consent id="consent" class="ampstart-card" layout="nodisplay">
+  <script type="application/json">
+    {
+      "consents": {
+        "eu": {
+          "promptIfUnknownForGeoGroup": "eu",
+          "promptUI": "consent-popup"
+        }
+      }
+    }
+  </script>
+
+  <div id="consent-popup" class="ampstart-consent-popup">
+    <div class="ampstart-consent-content flex items-center justify-center">
+      <a href="#" on="tap:consent.dismiss" class="ampstart-consent-close-btn absolute text-decoration-none" role="button" tabindex="0">✕</a>
+      <p class="h5 line-height-2">
+        We use cookies to understand how you use our site and to improve your experience. By continuing to use our site, you accept our <a href="https://policies.google.com/technologies/cookies" class="text-decoration-none">use of cookies</a> and <a href="https://policies.google.com/privacy" class="text-decoration-none">privacy policy</a>.
+      </p>
+      <a class="ampstart-btn ampstart-btn-secondary caps text-decoration-none inline-block center" on="tap:consent.accept" class="button text-label" role="button" tabindex="1">OK</a>
+    </div>
+  </div>
+</amp-consent>

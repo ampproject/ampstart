@@ -6,7 +6,9 @@
       "extensions": [
         "amp-carousel",
         "amp-sidebar",
-        "amp-analytics"
+        "amp-analytics",
+        "amp-geo",
+        "amp-consent"
       ],
       "css-path": "www/howitworks/page.css",
       "font-stylesheets": [

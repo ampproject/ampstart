@@ -19,6 +19,7 @@
 @import '../../components/social-follow/social-follow';
 @import '../../components/footer/footer';
 @import '../../components/user-notification/user-notification';
+@import '../../components/consent/consent';
 @import 'page-vars';
 
 h1,h2,h3,h4,h5,h6,
