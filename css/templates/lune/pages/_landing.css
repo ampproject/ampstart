@@ -30,10 +30,7 @@
  * Layout & typography
  ******************************************************************************/
 .lune-page-landing {
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  height: calc(var(--lune-landing-page-height) * 2);
 }
 
 .lune-landing-page-wrapper {
@@ -207,4 +204,11 @@
   .lune-landing-title-bottom {
     font-size: var(--h00);
   }
+}
+
+.lune-scrolling-marker {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 100vh;
 }
