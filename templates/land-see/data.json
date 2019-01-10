@@ -4,21 +4,60 @@
       "title": "Land + See",
       "canonical-path": "templates/land-see/land-see.amp",
       "extensions": [
-        "amp-carousel",
-        "amp-sidebar",
-        "amp-accordion",
-        "amp-instagram",
-        "amp-list",
-        "amp-form",
-        "amp-anim",
-        "amp-animation",
-        "amp-position-observer",
-        "amp-bind",
-        "amp-youtube",
-        "amp-fx-flying-carpet"
+        {
+          "component": "amp-carousel",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-sidebar",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-accordion",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-instagram",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-list",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-form",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-anim",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-animation",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-position-observer",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-bind",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-youtube",
+          "version": "0.1"
+        },
+        {
+          "component": "amp-fx-flying-carpet",
+          "version": "0.1"
+        }
       ],
       "templates": [
-        "amp-mustache"
+        {
+          "component": "amp-mustache",
+          "version": "0.2"
+        }
       ],
       "css-path": "templates/land-see/page.css",
       "font-stylesheets": [
