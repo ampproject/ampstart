@@ -76,7 +76,7 @@
     "posthtml-inline-assets": "^2.0.0",
     "run-sequence": "^1.1.5",
     "style-loader": "^0.13.1",
-    "through2": "2.0.3",
+    "through2": "3.0.1",
     "webpack": "^2.2.1",
     "webpack-closure-compiler": "^2.1.5",
     "webpack-dev-middleware": "^1.10.1",
