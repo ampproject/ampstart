@@ -8,12 +8,12 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "https://amp.dev/documentation/templates.html",
+        "destination": "https://amp.dev/documentation/templates/?referrer=ampstart.com",
         "type": 301
       },
       {
         "source": "/templates",
-        "destination": "https://amp.dev/documentation/templates.html",
+        "destination": "https://amp.dev/documentation/templates/?referrer=ampstart.com",
         "type": 301
       }
     ],
