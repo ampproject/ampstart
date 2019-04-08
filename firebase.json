@@ -5,11 +5,22 @@
   "hosting": {
     "public": "dist",
     "cleanUrls": true,
-    "redirects": [],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "https://amp.dev/documentation/templates.html",
+        "type": 301
+      },
+      {
+        "source": "/templates",
+        "destination": "https://amp.dev/documentation/templates.html",
+        "type": 301
+      }
+    ],
     "rewrites": [{
       "source": "/api/places", "function": "places"
     }, {
-      "source": "/api/search", "function": "search"
+    "source": "/api/search", "function": "search"
     }]
   }
 }
