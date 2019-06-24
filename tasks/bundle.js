@@ -64,12 +64,13 @@ function collectResources(filepath, html, templateName, done) {
     imgs.push.apply(imgs, srcsetimgs);
     imgs.forEach(function(imgpath) {
       if (imgpath) {
-        let imgFile = imgpath.split('img/')[1];
+        let imgFile = imgpath.split('img' + path.sep)[1];
         const dest = `.archive/${templateName}/img/${imgFile}`;
         fs.copySync(imgpath, dest);
       }
     });
-    let pathToTmpl = filepath.replace(/.*templates\/(.*)/, '\$1');
+    const pathToTmplRegex = new RegExp('.*templates\\' + path.sep + '(.*)');
+    let pathToTmpl = filepath.replace(pathToTmplRegex, '\$1');
     pathToTmpl = pathToTmpl.replace(templateName + '/', 'templates/');
     fs.copySync(filepath,
         `.archive/${templateName}/${pathToTmpl}`);
