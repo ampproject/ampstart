@@ -16,6 +16,10 @@
       "name": "Scenic Times",
       "sidebar-id": "header-sidebar",
       "sidebaronly": true,
+      "logo": {
+        "name": "The Scenic",
+        "classes": "h3"
+      },
       "nav": [
         {
           "dropdown": {
