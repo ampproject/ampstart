@@ -28,6 +28,12 @@ class AmpMustache extends React.Component<
     context?: any;
   }
 > {
+  static universal(element: JSX.Element, context: any) {
+    return {
+      clientSideTemplate: element,
+      serverSideTemplate: React.cloneElement(element, context),
+    };
+  }
   static Section: React.FunctionComponent<SectionProps> = ({children, id, inverted}) => (
     <>
       {`{{${inverted ? '^' : '#'}${id}}}`}
