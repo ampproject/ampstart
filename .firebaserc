@@ -1,7 +1,0 @@
-{
-  "projects": {
-    "default": "ampstart-8dc53",
-    "staging": "ampstart-staging",
-    "iframes": "ampstart-iframes"
-  }
-}
