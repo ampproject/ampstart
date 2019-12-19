@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="3" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-list"
+      src="https://cdn.ampproject.org/v0/amp-list-0.1.js"
+    ></script>
+    <script
+      async
+      custom-template="amp-mustache"
+      src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
+    ></script>
+    <style amp-custom></style>
+    <link rel="canonical" href="/components/AmpList" />
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ --><amp-list
+      class="my-list i-amphtml-layout-fixed-height i-amphtml-layout-size-defined"
+      src="https://amp.dev/static/samples/json/examples.json"
+      layout="fixed-height"
+      height="200"
+      style="height:200px;"
+      i-amphtml-layout="fixed-height"
+      ><template type="amp-mustache"
+        ><div><a href="{{url}}">{{ title }}</a></div></template
+      ></amp-list
+    >
+  </body>
+</html>

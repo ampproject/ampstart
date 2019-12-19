@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "rootDirs": ["src", "src-gen", "build"],
+    "lib": ["dom", "es7"]
+  },
+  "exclude": ["dist"]
+}

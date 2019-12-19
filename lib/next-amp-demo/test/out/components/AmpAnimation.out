@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="2" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-animation"
+      src="https://cdn.ampproject.org/v0/amp-animation-0.1.js"
+    ></script>
+    <style amp-custom></style>
+    <link rel="canonical" href="/components/AmpAnimation" />
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ --><amp-animation
+      layout="nodisplay"
+      id="anim1"
+      class="i-amphtml-layout-nodisplay"
+      hidden="hidden"
+      i-amphtml-layout="nodisplay"
+      ><script type="application/json">
+        [
+          {
+            "selector": ".target-class",
+            "duration": "4s",
+            "delay": "var(--delay, 100ms)"
+          }
+        ]
+      </script></amp-animation
+    ><amp-animation
+      layout="nodisplay"
+      id="anim2"
+      trigger="visibility"
+      class="i-amphtml-layout-nodisplay"
+      hidden="hidden"
+      i-amphtml-layout="nodisplay"
+      ><script type="application/json">
+        [
+          {
+            "selector": ".target-class",
+            "duration": "4s",
+            "delay": "var(--delay, 100ms)"
+          }
+        ]
+      </script></amp-animation
+    >
+  </body>
+</html>

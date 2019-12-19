@@ -1,0 +1,4 @@
+# build output
+dist
+.next
+src-gen

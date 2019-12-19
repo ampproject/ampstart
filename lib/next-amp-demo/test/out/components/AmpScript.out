@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="1" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <style amp-custom></style>
+    <link rel="canonical" href="/components/AmpScript" />
+    <meta
+      name="amp-script-src"
+      content="sha384-e4fb0lMXVyIYn1gf2Sq9Rxaja2KpnMNzzMe2bMzI4dpDLmtjOmzi1q8XgRW6qyRB"
+    />
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ -->
+    <h2>External script</h2>
+    <amp-script
+      class="my-list i-amphtml-layout-container"
+      layout="container"
+      src="http://localhost:3001/static/amp-script/hello.js"
+      i-amphtml-layout="container"
+      ><button>Hello amp-script!</button></amp-script
+    >
+    <h2>Inline script</h2>
+    <amp-script
+      script="hello-world"
+      layout="fixed-height"
+      height="64"
+      class="i-amphtml-layout-fixed-height i-amphtml-layout-size-defined"
+      style="height:64px;"
+      i-amphtml-layout="fixed-height"
+      ><button>Hello amp-script!</button></amp-script
+    >
+    <script id="hello-world" type="text/plain" target="amp-script">
+      const btn = document.querySelector('button'); btn.addEventListener('click', () => { document.body.textContent = 'Hello World!' })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "description": "An example of a next.js monorepo with typescript",
+  "main": " ",
+  "repository": "git@github.com:josephluck/next-typescript-monorepo.git",
+  "author": "AMPHTML Authors",
+  "license": "Apache 2.0",
+  "private": true,
+  "scripts": {
+    "build": "run-s build:*",
+    "build:next-amp": "yarn workspace @ampproject/toolbox-next-amp run build",
+    "build:next-amp-demo": "yarn workspace @ampproject/toolbox-next-amp-demo run build",
+    "tsc": "tsc",
+    "lint": "eslint . --ext json,html,js,jsx,ts,tsx --quiet --fix",
+    "postinstall": "rexreplace \"followSymlinks: false\" \"followSymlinks: true\" ./node_modules/watchpack/lib/DirectoryWatcher.js -V",
+    "test": "run-s build test:all",
+    "test:snapshot": "SNAPSHOT=true run-s test",
+    "test:all": "yarn workspaces run test"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.11.0",
+    "@typescript-eslint/parser": "2.11.0",
+    "eslint": "6.7.2",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-react": "7.17.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^10.0.0-beta.9",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.19.1",
+    "rexreplace": "^4.1.1",
+    "rimraf": "3.0.0",
+    "tap-parser": "10.0.1",
+    "ts-node": "8.5.4",
+    "typescript": "3.7.2",
+    "typescript-map": "0.0.7"
+  },
+  "workspaces": ["lib/*", "templates/*"],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["yarn lint"],
+    "*.{md}": ["prettier --write"]
+  },
+  "dependencies": {
+    "eslint-plugin-html": "^6.0.0"
+  }
+}
