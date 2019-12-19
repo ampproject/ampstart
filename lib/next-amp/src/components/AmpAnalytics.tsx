@@ -23,8 +23,6 @@ type AmpAnalyticsProps = {
 
 /**
  * Renders an amp-analytics element.
- *
- * @param {AmpAnalyticsProps} props
  */
 const AmpAnalytics: React.FunctionComponent<AmpAnalyticsProps> = ({type, children, ...rest}) => (
   <>

@@ -19,7 +19,7 @@ import {AmpAnalytics} from '@ampproject/toolbox-next-amp';
 
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <AmpAnalytics type='gtag'>
     {{
       vars: {
@@ -32,5 +32,3 @@ const Page = () => (
     }}
   </AmpAnalytics>
 );
-
-export default Page;

@@ -19,12 +19,10 @@ import {AmpState} from '@ampproject/toolbox-next-amp';
 
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <AmpState id='myState'>
     {{
       message: 'hello world',
     }}
   </AmpState>
 );
-
-export default Page;

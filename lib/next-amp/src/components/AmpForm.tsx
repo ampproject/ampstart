@@ -20,11 +20,6 @@ import {AmpIncludeCustomElement} from '../../src-gen/';
 
 /**
  * Renders an amp-form element.
- *
- * @param {
-  FormHTMLAttributes<HTMLFormElement>,
-  HTMLFormElement
-} props
  */
 const AmpForm: FunctionComponent<FormHTMLAttributes<HTMLFormElement>> = ({children, ...rest}) => (
   <>

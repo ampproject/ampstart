@@ -18,11 +18,9 @@ import React from 'react';
 import {AmpForm} from '@ampproject/toolbox-next-amp';
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <AmpForm method='post' action-xhr='/submit' target='_top' className='my-form'>
     <input type='text' name='email' />
     <input type='submit' value='Subscribe' />
   </AmpForm>
 );
-
-export default Page;

@@ -19,7 +19,7 @@ import {AmpDynamicCssClasses} from '@ampproject/toolbox-next-amp';
 
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <>
     <AmpDynamicCssClasses />
     <div className='referrer-pinterest-com'>
@@ -40,5 +40,3 @@ const Page = () => (
     `}</style>
   </>
 );
-
-export default Page;

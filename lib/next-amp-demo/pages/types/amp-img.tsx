@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import React, {FunctionComponent} from 'react';
+import React from 'react';
 
 export const config = {amp: true};
 
-const AmpImageTest: FunctionComponent<{}> = () => (
+export default () => (
   <amp-img
     src='https://picsum.photos/id/169/800/600'
     layout='responsive'
@@ -26,7 +26,3 @@ const AmpImageTest: FunctionComponent<{}> = () => (
     height='600'
   ></amp-img>
 );
-
-export default AmpImageTest;
-
-export const expected = '<amp-img src="asfsfd" layout="responsive" data-reactroot=""></amp-img>';

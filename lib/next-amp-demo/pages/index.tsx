@@ -20,22 +20,24 @@ import * as React from 'react';
 export const config = {amp: true};
 
 type Sample = {
-  name: string;
   path: string;
+  name: string;
 };
 
-const Home: NextPage<{samples: Sample[]}> = ({samples}) => (
-  <>
-    <h1>Hello Next.js!</h1>
-    <ul>
-      {samples.map(s => (
-        <li>
-          <a href={s.path}>{s.name}</a>
-        </li>
-      ))}
-    </ul>
-  </>
-);
+const Home: NextPage<{samples: Sample[]}> = ({samples}) => {
+  return (
+    <>
+      <h1>Hello Next.js!</h1>
+      <ul>
+        {samples.map(s => (
+          <li>
+            <a href={s.path}>{s.name}</a>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
+};
 
 Home.getInitialProps = async ({req}) => {
   return {samples: []};

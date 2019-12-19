@@ -15,29 +15,79 @@
  */
 
 import * as React from 'react';
-import {FunctionComponent, DetailedHTMLProps, TemplateHTMLAttributes} from 'react';
+import {DetailedHTMLProps, TemplateHTMLAttributes} from 'react';
 import {AmpIncludeCustomTemplate} from '../../src-gen/';
+import * as ReactDOMServer from 'react-dom/server';
+import * as Mustache from 'mustache';
 
 /**
  * Renders an amp-mustache template element.
- *
- * @param {
-DetailedHTMLProps<
-  FormHTMLAttributes<HTMLFormElement>,
-  HTMLFormElement
->
-} props
  */
-const AmpMustache: FunctionComponent<DetailedHTMLProps<
-  TemplateHTMLAttributes<HTMLTemplateElement>,
-  HTMLTemplateElement
->> = ({children, ...rest}) => (
-  <>
-    <AmpIncludeCustomTemplate name='amp-mustache' />
-    <template type='amp-mustache' {...rest}>
+class AmpMustache extends React.Component<
+  DetailedHTMLProps<TemplateHTMLAttributes<HTMLTemplateElement>, HTMLTemplateElement> & {
+    context?: any;
+  }
+> {
+  static Section: React.FunctionComponent<SectionProps> = ({children, id, inverted}) => (
+    <>
+      {`{{${inverted ? '^' : '#'}${id}}}`}
       {children}
-    </template>
-  </>
-);
+      {`{{/${id}}}`}
+    </>
+  );
+  static Variable: React.FunctionComponent<VariableProps> = ({id, unescape}) => (
+    <>{`{{${unescape ? '{' : ''}${id}${unescape ? '}' : ''}}}`}</>
+  );
+
+  static Comment: React.FunctionComponent<CommentProps> = ({text}) => <>{`{{!${text}}`}</>;
+
+  render() {
+    const {children, context, ...rest} = this.props;
+    if (context !== undefined) {
+      return this.serverSideRender(children, context);
+    } else {
+      return this.clientSideRender(rest, children);
+    }
+  }
+
+  private clientSideRender(rest, children) {
+    return (
+      <>
+        <AmpIncludeCustomTemplate name='amp-mustache' />
+        <template type='amp-mustache' {...rest}>
+          {children}
+        </template>
+      </>
+    );
+  }
+
+  private serverSideRender(children, context) {
+    const templateString = renderToString(<>{children}</>);
+    const html = Mustache.render(templateString, context);
+    return (
+      <div
+        dangerouslySetInnerHTML={{
+          __html: html,
+        }}
+      />
+    );
+  }
+}
+
+function renderToString(element: JSX.Element) {
+  return ReactDOMServer.renderToStaticMarkup(element);
+}
+
+type SectionProps = {
+  id: string;
+  inverted?: boolean;
+};
+type VariableProps = {
+  id: string;
+  unescape?: boolean;
+};
+type CommentProps = {
+  text: string;
+};
 
 export default AmpMustache;

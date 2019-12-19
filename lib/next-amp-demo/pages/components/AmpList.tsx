@@ -19,7 +19,7 @@ import {AmpList, AmpMustache} from '@ampproject/toolbox-next-amp';
 
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <AmpList
     src='https://amp.dev/static/samples/json/examples.json'
     layout='fixed-height'
@@ -33,5 +33,3 @@ const Page = () => (
     </AmpMustache>
   </AmpList>
 );
-
-export default Page;

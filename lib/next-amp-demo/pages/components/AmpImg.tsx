@@ -19,7 +19,7 @@ import {AmpImg} from '@ampproject/toolbox-next-amp';
 
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <AmpImg
     src='https://picsum.photos/id/169/800/600'
     layout='responsive'
@@ -28,5 +28,3 @@ const Page = () => (
     className='my-image'
   ></AmpImg>
 );
-
-export default Page;

@@ -1,6 +1,6 @@
 # AMP Next.js Library
 
-**TLDR; **build AMP pages in Next.js without worrying about AMPHTML syntax.
+Simplify building AMP pages in Next.js.
 
 # High-level APIs
 

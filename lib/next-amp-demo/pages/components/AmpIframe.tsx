@@ -15,11 +15,11 @@
  */
 
 import * as React from 'react';
-import {AmpIframe} from '@ampproject/toolbox-next-amp';
+import {AmpIframe, AmpImg} from '@ampproject/toolbox-next-amp';
 
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <AmpIframe
     title='Netflix House of Cards branding: The Stack'
     layout='responsive'
@@ -31,12 +31,10 @@ const Page = () => (
     src='https://player.vimeo.com/video/140261016'
     className='my-iframe'
   >
-    <amp-img
+    <AmpImg
       layout='fill'
       src='https://i.vimeocdn.com/video/536538454_640.webp'
       placeholder=''
-    ></amp-img>
+    ></AmpImg>
   </AmpIframe>
 );
-
-export default Page;

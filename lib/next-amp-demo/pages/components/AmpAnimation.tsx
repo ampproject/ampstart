@@ -19,7 +19,7 @@ import {AmpAnimation} from '@ampproject/toolbox-next-amp';
 
 export const config = {amp: true};
 
-const Page = () => (
+export default () => (
   <>
     <AmpAnimation id='anim1'>
       {[
@@ -41,5 +41,3 @@ const Page = () => (
     </AmpAnimation>
   </>
 );
-
-export default Page;

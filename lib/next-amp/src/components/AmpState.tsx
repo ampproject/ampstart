@@ -25,8 +25,6 @@ type AmpStateProps = {
 /**
  * Renders an amp-state element, by either adding local state via `value`
  * or remote state via the `src` property.
- *
- * @param {Props} props
  */
 const AmpState: React.FunctionComponent<AmpStateProps> = ({children, ...rest}) => (
   <>
