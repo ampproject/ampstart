@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="2" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-fx-collection"
+      src="https://cdn.ampproject.org/v0/amp-fx-collection-0.1.js"
+    ></script>
+    <style amp-custom>
+      .header {
+        position: relative;
+        overflow: hidden;
+      }
+      .header amp-layout {
+        bottom: 10%;
+        left: 10px;
+        position: absolute;
+        z-index: 1;
+      }
+      .title {
+        background-color: black;
+        color: white;
+        font-size: 2rem;
+      }
+      main {
+        max-width: 480px;
+        margin: 1rem auto;
+      }
+    </style>
+    <link rel="canonical" href="/components/AmpFxCollection" />
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ -->
+    <main class="jsx-936354743">
+      <h1 class="jsx-936354743">amp-fx-collection</h1>
+      <h2 class="jsx-936354743">amp-fx on AMP attributes</h2>
+      <p class="jsx-936354743">&#x25BC; Scroll down.</p>
+      <p class="jsx-936354743">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis
+        odio vitae sem ornare laoreet. Mauris sodales convallis eros, non
+        imperdiet mauris ullamcorper eget. Aenean tempus augue eu nisl
+        consectetur sagittis. Morbi vel nunc eu leo tristique vehicula. Sed
+        finibus velit luctus, scelerisque mauris luctus, tristique justo.
+        Pellentesque non mauris aliquam, mattis dui in, gravida lorem.
+        Suspendisse consectetur dui quis quam fringilla pulvinar. Nunc sit amet
+        leo porta, tincidunt dui quis, tempus nisl. Suspendisse aliquet, velit
+        ac tincidunt finibus, massa mauris scelerisque dolor, sit amet varius mi
+        felis non ante. Ut imperdiet auctor diam id ultricies. Phasellus
+        fermentum ligula at luctus sodales. Nulla semper felis at tempus
+        sagittis. Curabitur ac risus non turpis sagittis lobortis ut non tortor.
+        Nunc id tempus nisi.
+      </p>
+      <p class="jsx-936354743">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis
+        odio vitae sem ornare laoreet. Mauris sodales convallis eros, non
+        imperdiet mauris ullamcorper eget. Aenean tempus augue eu nisl
+        consectetur sagittis. Morbi vel nunc eu leo tristique vehicula. Sed
+        finibus velit luctus, scelerisque mauris luctus, tristique justo.
+        Pellentesque non mauris aliquam, mattis dui in, gravida lorem.
+        Suspendisse consectetur dui quis quam fringilla pulvinar. Nunc sit amet
+        leo porta, tincidunt dui quis, tempus nisl. Suspendisse aliquet, velit
+        ac tincidunt finibus, massa mauris scelerisque dolor, sit amet varius mi
+        felis non ante. Ut imperdiet auctor diam id ultricies. Phasellus
+        fermentum ligula at luctus sodales. Nulla semper felis at tempus
+        sagittis. Curabitur ac risus non turpis sagittis lobortis ut non tortor.
+        Nunc id tempus nisi.
+      </p>
+      <amp-img
+        amp-fx="fade-in"
+        width="1600"
+        height="900"
+        layout="responsive"
+        src="https://images.unsplash.com/photo-1524495195760-3266feca5b15?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=7a508f55ae88c8eac7bab9380acded01&amp;auto=format&amp;fit=crop&amp;w=1567&amp;q=80"
+        class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+        i-amphtml-layout="responsive"
+        ><i-amphtml-sizer
+          style="display:block;padding-top:56.2500%;"
+        ></i-amphtml-sizer
+      ></amp-img>
+      <h2 class="jsx-936354743">amp-fx on non-AMP attributes</h2>
+      <p class="jsx-936354743">
+        The <code class="jsx-936354743">amp-fx</code> attribute is not supported
+        on non AMP elemnts (e.g. <code class="jsx-936354743">div</code>). As a
+        workaround, wrap the element in<!-- -->
+        <code class="jsx-936354743"
+          >&lt;AmpLayout amp-fx=&apos;fade-in&apos;
+          layout=&apos;container&apos;&gt; ... &lt;/AmpLayout&gt;</code
+        >.
+      </p>
+      <div class="jsx-936354743 header">
+        <amp-layout
+          layout="container"
+          amp-fx="parallax"
+          data-parallax-factor="1.3"
+          class="i-amphtml-layout-container"
+          i-amphtml-layout="container"
+          ><h1 class="jsx-936354743">
+            <span class="jsx-936354743 title">Lorem Ipsum</span>
+          </h1></amp-layout
+        ><amp-img
+          width="1600"
+          height="900"
+          layout="responsive"
+          src="https://images.unsplash.com/photo-1484961361402-1ee9b1c7accb?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=9b58d12098d2e6d4a1199ed426772eb9&amp;auto=format&amp;fit=crop&amp;w=1001&amp;q=80"
+          class="jsx-936354743 i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+          i-amphtml-layout="responsive"
+          ><i-amphtml-sizer
+            style="display:block;padding-top:56.2500%;"
+          ></i-amphtml-sizer
+        ></amp-img>
+      </div>
+      <p class="jsx-936354743">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis
+        odio vitae sem ornare laoreet. Mauris sodales convallis eros, non
+        imperdiet mauris ullamcorper eget. Aenean tempus augue eu nisl
+        consectetur sagittis. Morbi vel nunc eu leo tristique vehicula. Sed
+        finibus velit luctus, scelerisque mauris luctus, tristique justo.
+        Pellentesque non mauris aliquam, mattis dui in, gravida lorem.
+        Suspendisse consectetur dui quis quam fringilla pulvinar. Nunc sit amet
+        leo porta, tincidunt dui quis, tempus nisl. Suspendisse aliquet, velit
+        ac tincidunt finibus, massa mauris scelerisque dolor, sit amet varius mi
+        felis non ante. Ut imperdiet auctor diam id ultricies. Phasellus
+        fermentum ligula at luctus sodales. Nulla semper felis at tempus
+        sagittis. Curabitur ac risus non turpis sagittis lobortis ut non tortor.
+        Nunc id tempus nisi.
+      </p>
+      <p class="jsx-936354743">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis
+        odio vitae sem ornare laoreet. Mauris sodales convallis eros, non
+        imperdiet mauris ullamcorper eget. Aenean tempus augue eu nisl
+        consectetur sagittis. Morbi vel nunc eu leo tristique vehicula. Sed
+        finibus velit luctus, scelerisque mauris luctus, tristique justo.
+        Pellentesque non mauris aliquam, mattis dui in, gravida lorem.
+        Suspendisse consectetur dui quis quam fringilla pulvinar. Nunc sit amet
+        leo porta, tincidunt dui quis, tempus nisl. Suspendisse aliquet, velit
+        ac tincidunt finibus, massa mauris scelerisque dolor, sit amet varius mi
+        felis non ante. Ut imperdiet auctor diam id ultricies. Phasellus
+        fermentum ligula at luctus sodales. Nulla semper felis at tempus
+        sagittis. Curabitur ac risus non turpis sagittis lobortis ut non tortor.
+        Nunc id tempus nisi.
+      </p>
+    </main>
+  </body>
+</html>
