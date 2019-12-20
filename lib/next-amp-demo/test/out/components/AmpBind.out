@@ -25,21 +25,14 @@
   <body>
     <!-- __NEXT_DATA__ -->
     <h1>amp-bind</h1>
-    <button
-      on="tap:AMP.setState({ slide: slide != undefined ? (slide + 1) % 3 : 0 })"
-    >
-      Next slide</button
-    ><amp-carousel
-      data-amp-bind-slide="slide"
-      layout="responsive"
+    <amp-carousel
       width="400"
       height="300"
       type="slides"
-      class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
-      i-amphtml-layout="responsive"
-      ><i-amphtml-sizer
-        style="display:block;padding-top:75.0000%;"
-      ></i-amphtml-sizer
+      data-amp-bind-slide="slide"
+      class="i-amphtml-layout-fixed i-amphtml-layout-size-defined"
+      style="width:400px;height:300px;"
+      i-amphtml-layout="fixed"
       ><amp-img
         src="https://picsum.photos/id/231/400/300"
         layout="fill"
@@ -57,7 +50,11 @@
         layout="fill"
         class="i-amphtml-layout-fill i-amphtml-layout-size-defined"
         i-amphtml-layout="fill"
-      ></amp-img
-    ></amp-carousel>
+      ></amp-img></amp-carousel
+    ><button
+      on="tap:AMP.setState({ slide: slide != undefined ? (slide + 1) % 3 : 0 })"
+    >
+      Next slide
+    </button>
   </body>
 </html>

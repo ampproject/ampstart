@@ -3,12 +3,17 @@
   <head>
     <meta charset="utf-8" />
     <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
-    <meta name="next-head-count" content="2" />
+    <meta name="next-head-count" content="3" />
     <meta
       name="viewport"
       content="width=device-width,minimum-scale=1,initial-scale=1"
     />
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-video"
+      src="https://cdn.ampproject.org/v0/amp-video-0.1.js"
+    ></script>
     <script
       async
       custom-element="amp-video-docking"
