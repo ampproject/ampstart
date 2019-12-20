@@ -1,0 +1,44 @@
+{
+  "name": "@ampproject/toolbox-next-amp-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "test": "NODE_ENV=production jest",
+    "test:snapshot": "SNAPSHOT=true test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ampproject/toolbox-next-amp": "1.0.0",
+    "@babel/preset-typescript": "7.7.7",
+    "next": "9.1.6",
+    "next-compose-plugins": "2.2.0",
+    "next-plugin-custom-babel-config": "1.0.2",
+    "next-plugin-transpile-modules": "2.0.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.7.7",
+    "@babel/preset-env": "7.7.7",
+    "@types/enzyme": "g3.1.15",
+    "@types/express": "4.17.2",
+    "@types/jest": "g23.3.13",
+    "@types/node": "12.12.21",
+    "@types/node-fetch": "2.5.4",
+    "@types/react": "16.9.16",
+    "@types/react-dom": "16.9.4",
+    "babel-jest": "24.9.0",
+    "cheerio": "1.0.0-rc.3",
+    "enzyme": "g3.8.0",
+    "enzyme-adapter-react-16": "g1.7.1",
+    "express": "g4.17.1",
+    "glob": "7.1.6",
+    "jest": "g23.6.0",
+    "typescript": "3.7.3"
+  }
+}

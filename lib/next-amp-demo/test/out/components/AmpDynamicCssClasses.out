@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="2" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-dynamic-css-classes"
+      src="https://cdn.ampproject.org/v0/amp-dynamic-css-classes-0.1.js"
+    ></script>
+    <style amp-custom>
+      body:not(.amp-referrer-pinterest-com) .referrer-pinterest-com,
+      body:not(.amp-referrer-google-com) .referrer-google-com,
+      body:not(.amp-referrer-twitter-com) .referrer-twitter-com {
+        display: none;
+      }
+    </style>
+    <link rel="canonical" href="/components/AmpDynamicCssClasses" />
+    <noscript
+      ><style amp-boilerplate="">
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ -->
+    <div class="jsx-244502823 referrer-pinterest-com">
+      Referrer: <code class="jsx-244502823">pinterest-com</code>
+    </div>
+    <div class="jsx-244502823 referrer-google-com">
+      Referrer: <code class="jsx-244502823">google.com</code>
+    </div>
+    <div class="jsx-244502823 referrer-twitter-com">
+      Referrer: <code class="jsx-244502823">twitter.com</code>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../",
+    "rootDir": ".",
+    "lib": ["dom", "es7"],
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "target": "esnext",
+    "module": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "exclude": ["node_modules", "test"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "test/Component.test.js"],
+  "references": [
+    {
+      "path": "../next-amp"
+    }
+  ]
+}

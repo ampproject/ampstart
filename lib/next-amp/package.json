@@ -1,0 +1,42 @@
+{
+  "name": "@ampproject/toolbox-next-amp",
+  "version": "1.0.0",
+  "description": "An AMP client library.",
+  "repository": "https://github.com/ampproject/amp-toolbox/tree/@ampproject/toolbox-next-amp",
+  "license": "Apache-2.0",
+  "author": "AMPHTML Team",
+  "bugs": {
+    "url": "https://github.com/ampproject/amp-toolbox/issues"
+  },
+  "engines": {
+    "node": ">=8.x.x"
+  },
+  "files": ["dist/src-gen/", "dist/src/"],
+  "main": "./dist/src-gen/index.js",
+  "types": "./dist/src-gen/index.d.js",
+  "scripts": {
+    "build": "run-s build:*",
+    "build:clean": "rimraf dist src-gen",
+    "build:generate": "node build/generate.js",
+    "build:ts": "tsc",
+    "generate:interfaces": "ts-node build/intrinsicElements.ts",
+    "test": "echo 'tests are defined in ../next-amp-demo'",
+    "lint": "run-s lint:eslint",
+    "lint:eslint": "eslint 'build/**/*.ts' 'test/**/*.{ts,tsx}' 'src-gen/**/*.{ts,tsx}' 'src/**/*.{ts,tsx}' --quiet --fix"
+  },
+  "devDependencies": {
+    "@ampproject/toolbox-validator-rules": "1.1.1",
+    "@types/mustache": "^0.8.32",
+    "npm-run-all": "4.1.5",
+    "ts-node": "8.5.4",
+    "typescript": "3.7.3"
+  },
+  "dependencies": {
+    "mustache": "3.2.0"
+  },
+  "peerDependencies": {
+    "next": "9.x",
+    "react": "16.x",
+    "react-dom": "16.x"
+  }
+}

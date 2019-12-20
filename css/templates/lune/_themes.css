@@ -1,9 +1,0 @@
-.lune-theme-dark {
-  background-color: var(--color-background-dark);
-  color: var(--color-light-1);
-}
-
-.lune-theme-light {
-  background-color: var(--color-background-light);
-  color: var(--color-font-primary);
-}

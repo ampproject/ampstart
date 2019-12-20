@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="4" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-bind"
+      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-list"
+      src="https://cdn.ampproject.org/v0/amp-list-0.1.js"
+    ></script>
+    <script
+      async
+      custom-template="amp-mustache"
+      src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
+    ></script>
+    <style amp-custom></style>
+    <link rel="canonical" href="/components/AmpMustache" />
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ --><amp-list
+      layout="fixed-height"
+      data-amp-bind-is-layout-container="context"
+      height="0"
+      single-item
+      items="."
+      data-amp-bind-src="context"
+      class="i-amphtml-layout-fixed-height i-amphtml-layout-size-defined"
+      style="height:0px;"
+      i-amphtml-layout="fixed-height"
+      ><template type="amp-mustache"
+        >{{#items}}
+        <div><a href="{{url}}">{{name}}</a></div>
+        {{/items}}</template
+      ></amp-list
+    >
+    <div data-amp-bind-hidden="context != undefined">
+      <div>
+        <div><a href="https://amp.dev">amp.dev</a></div>
+        <div><a href="https://nextjs.org">Next.js</a></div>
+      </div>
+    </div>
+    <button
+      on="tap:AMP.setState({ context: { items: [ { name: 'Google', url: 'https://google.com', }, { name: 'Bing', url: 'https://bing.com', }, ] } })"
+    >
+      Click to re-render
+    </button>
+  </body>
+</html>
