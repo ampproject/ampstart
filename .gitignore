@@ -1,11 +1,26 @@
-.DS_Store
-.g4ignore
-build
-dist
+# dependencies
 node_modules
-npm-debug.log
-.tm_properties
-.vscode
-.archive
-.idea
-**/.tmp
+package-lock.json
+yarn.lock
+!/yarn.lock
+test/node_modules
+
+# logs & pids
+*.log
+pids
+
+# coverage
+.nyc_output
+coverage
+
+# test output
+test/**/out*
+test/**/next-env.d.ts
+.DS_Store
+
+# Editors
+**/.idea
+
+# example output
+examples/**/out
+

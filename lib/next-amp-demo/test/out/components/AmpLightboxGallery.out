@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="3" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-carousel"
+      src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-lightbox-gallery"
+      src="https://cdn.ampproject.org/v0/amp-lightbox-gallery-0.1.js"
+    ></script>
+    <style amp-custom></style>
+    <link rel="canonical" href="/components/AmpLightboxGallery" />
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ -->
+    <main>
+      <h1>amp-image-lightbox</h1>
+      <h2>With AmpImg</h2>
+      <amp-img
+        lightbox
+        src="https://picsum.photos/id/237/300/200"
+        width="300"
+        height="200"
+        layout="responsive"
+        class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+        i-amphtml-layout="responsive"
+        ><i-amphtml-sizer
+          style="display:block;padding-top:66.6667%;"
+        ></i-amphtml-sizer
+      ></amp-img>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <amp-img
+        lightbox
+        src="https://picsum.photos/id/236/300/200"
+        width="300"
+        height="200"
+        layout="responsive"
+        class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+        i-amphtml-layout="responsive"
+        ><i-amphtml-sizer
+          style="display:block;padding-top:66.6667%;"
+        ></i-amphtml-sizer
+      ></amp-img>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <amp-img
+        lightbox
+        src="https://picsum.photos/id/235/300/200"
+        width="300"
+        height="200"
+        layout="responsive"
+        class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+        i-amphtml-layout="responsive"
+        ><i-amphtml-sizer
+          style="display:block;padding-top:66.6667%;"
+        ></i-amphtml-sizer
+      ></amp-img>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+      <h2>With AmpCarousel</h2>
+      <amp-carousel
+        lightbox
+        width="400"
+        height="300"
+        layout="responsive"
+        type="slides"
+        class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+        i-amphtml-layout="responsive"
+        ><i-amphtml-sizer
+          style="display:block;padding-top:75.0000%;"
+        ></i-amphtml-sizer
+        ><amp-img
+          src="https://picsum.photos/id/234/300/200"
+          width="400"
+          height="300"
+          layout="responsive"
+          class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+          i-amphtml-layout="responsive"
+          ><i-amphtml-sizer
+            style="display:block;padding-top:75.0000%;"
+          ></i-amphtml-sizer></amp-img
+        ><amp-img
+          src="https://picsum.photos/id/233/300/200"
+          width="400"
+          height="300"
+          layout="responsive"
+          class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+          i-amphtml-layout="responsive"
+          ><i-amphtml-sizer
+            style="display:block;padding-top:75.0000%;"
+          ></i-amphtml-sizer></amp-img
+        ><amp-img
+          src="https://picsum.photos/id/232/300/200"
+          width="400"
+          height="300"
+          layout="responsive"
+          class="i-amphtml-layout-responsive i-amphtml-layout-size-defined"
+          i-amphtml-layout="responsive"
+          ><i-amphtml-sizer
+            style="display:block;padding-top:75.0000%;"
+          ></i-amphtml-sizer></amp-img
+      ></amp-carousel>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html amp i-amphtml-layout i-amphtml-no-boilerplate transformed="self;v=1">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js" />
+    <meta name="next-head-count" content="3" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script
+      async
+      custom-element="amp-bind"
+      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-carousel"
+      src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"
+    ></script>
+    <style amp-custom></style>
+    <link rel="canonical" href="/components/AmpBind" />
+  </head>
+  <body>
+    <!-- __NEXT_DATA__ -->
+    <h1>amp-bind</h1>
+    <amp-carousel
+      width="400"
+      height="300"
+      type="slides"
+      data-amp-bind-slide="slide"
+      class="i-amphtml-layout-fixed i-amphtml-layout-size-defined"
+      style="width:400px;height:300px;"
+      i-amphtml-layout="fixed"
+      ><amp-img
+        src="https://picsum.photos/id/231/400/300"
+        layout="fill"
+        class="i-amphtml-layout-fill i-amphtml-layout-size-defined"
+        i-amphtml-layout="fill"
+      ></amp-img
+      ><amp-img
+        src="https://picsum.photos/id/232/400/300"
+        layout="fill"
+        class="i-amphtml-layout-fill i-amphtml-layout-size-defined"
+        i-amphtml-layout="fill"
+      ></amp-img
+      ><amp-img
+        src="https://picsum.photos/id/233/400/300"
+        layout="fill"
+        class="i-amphtml-layout-fill i-amphtml-layout-size-defined"
+        i-amphtml-layout="fill"
+      ></amp-img></amp-carousel
+    ><button
+      on="tap:AMP.setState({ slide: slide != undefined ? (slide + 1) % 3 : 0 })"
+    >
+      Next slide
+    </button>
+  </body>
+</html>

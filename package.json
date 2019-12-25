@@ -11,7 +11,10 @@
     "build:next-amp": "yarn workspace @ampproject/toolbox-next-amp run build",
     "build:next-amp-demo": "yarn workspace @ampproject/toolbox-next-amp-demo run build",
     "tsc": "tsc",
-    "lint": "eslint . --ext json,html,js,jsx,ts,tsx --quiet --fix",
+    "lint": "run-p lint:*",
+    "lint:js": "eslint . --ext js,jsx --quiet --fix",
+    "lint:ts": "eslint . --ext ts,tsx --quiet --fix",
+    "lint:json": "eslint . --ext json --quiet --fix",
     "postinstall": "rexreplace \"followSymlinks: false\" \"followSymlinks: true\" ./node_modules/watchpack/lib/DirectoryWatcher.js -V",
     "test": "run-s build test:all",
     "test:snapshot": "SNAPSHOT=true run-s test",
@@ -43,7 +46,9 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["yarn lint"],
+    "*.{js,jsx}": ["yarn lint:js"],
+    "*.{ts,tsx}": ["yarn lint:ts"],
+    "*.json": ["yarn lint:json"],
     "*.{md}": ["prettier --write"]
   },
   "dependencies": {
