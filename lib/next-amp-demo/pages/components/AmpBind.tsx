@@ -22,9 +22,9 @@ export default () => (
   <>
     <h1>amp-bind</h1>
     <AmpCarousel bindSlide='slide' width='400' height='300' type='slides'>
-      <AmpImg src='https://picsum.photos/id/231/400/300' layout='fill'></AmpImg>
-      <AmpImg src='https://picsum.photos/id/232/400/300' layout='fill'></AmpImg>
-      <AmpImg src='https://picsum.photos/id/233/400/300' layout='fill'></AmpImg>
+      <AmpImg src='https://picsum.photos/id/231/400/300' layout='fill' />
+      <AmpImg src='https://picsum.photos/id/232/400/300' layout='fill' />
+      <AmpImg src='https://picsum.photos/id/233/400/300' layout='fill' />
     </AmpCarousel>
     <button
       on='tap:AMP.setState({

@@ -31,10 +31,6 @@ export default () => (
     src='https://player.vimeo.com/video/140261016'
     className='my-iframe'
   >
-    <AmpImg
-      layout='fill'
-      src='https://i.vimeocdn.com/video/536538454_640.webp'
-      placeholder=''
-    ></AmpImg>
+    <AmpImg layout='fill' src='https://i.vimeocdn.com/video/536538454_640.webp' placeholder='' />
   </AmpIframe>
 );

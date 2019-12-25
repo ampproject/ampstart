@@ -35,7 +35,7 @@ export default () => (
       layout='responsive'
       controls=''
       dock='#dock-slot'
-    ></AmpVideo>
+    />
     <h2>Dummy content</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis odio vitae sem ornare

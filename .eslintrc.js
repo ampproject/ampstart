@@ -38,7 +38,8 @@ module.exports = {
     "@typescript-eslint/no-use-before-define": "off",
     "react/jsx-key": "off",
     "react/react-in-jsx-scope": "off",
-    "react/display-name": "off"
+    "react/display-name": "off",
+    "react/self-closing-comp": "error"
   },
   settings: {
     react: {
