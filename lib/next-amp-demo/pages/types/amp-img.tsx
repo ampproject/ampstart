@@ -24,5 +24,5 @@ export default () => (
     layout='responsive'
     width='800'
     height='600'
-  ></amp-img>
+  />
 );

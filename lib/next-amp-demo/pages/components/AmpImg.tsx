@@ -26,5 +26,5 @@ export default () => (
     width='800'
     height='600'
     className='my-image'
-  ></AmpImg>
+  />
 );

@@ -29,7 +29,7 @@ export default () => (
       width='300'
       height='200'
       layout='responsive'
-    ></AmpImg>
+    />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -43,7 +43,7 @@ export default () => (
       width='300'
       height='200'
       layout='responsive'
-    ></AmpImg>
+    />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -57,7 +57,7 @@ export default () => (
       width='300'
       height='200'
       layout='responsive'
-    ></AmpImg>
+    />
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -73,19 +73,19 @@ export default () => (
         width='400'
         height='300'
         layout='responsive'
-      ></AmpImg>
+      />
       <AmpImg
         src='https://picsum.photos/id/233/300/200'
         width='400'
         height='300'
         layout='responsive'
-      ></AmpImg>
+      />
       <AmpImg
         src='https://picsum.photos/id/232/300/200'
         width='400'
         height='300'
         layout='responsive'
-      ></AmpImg>
+      />
     </AmpCarousel>
   </main>
 );

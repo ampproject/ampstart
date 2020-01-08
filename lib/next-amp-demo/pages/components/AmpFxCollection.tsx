@@ -54,7 +54,7 @@ export default () => (
       height='900'
       layout='responsive'
       src='https://images.unsplash.com/photo-1524495195760-3266feca5b15?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7a508f55ae88c8eac7bab9380acded01&auto=format&fit=crop&w=1567&q=80'
-    ></AmpImg>
+    />
     <h2>amp-fx on non-AMP attributes</h2>
     <p>
       The <code>amp-fx</code> attribute is not supported on non AMP elemnts (e.g. <code>div</code>).
@@ -76,7 +76,7 @@ export default () => (
         height='900'
         layout='responsive'
         src='https://images.unsplash.com/photo-1484961361402-1ee9b1c7accb?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9b58d12098d2e6d4a1199ed426772eb9&auto=format&fit=crop&w=1001&q=80'
-      ></amp-img>
+      />
     </div>
 
     <p>
