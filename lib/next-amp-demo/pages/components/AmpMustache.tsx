@@ -36,15 +36,14 @@ const initialItems = {
 };
 
 const AmpMustacheSample: NextPage<{}> = () => {
-  const {clientSideTemplate, serverSideTemplate} = AmpMustache.universal(
+  const template = (
     <AmpMustache>
       {`{{#items}}`}
       <div>
         <a href='{{url}}'>{`{{name}}`}</a>
       </div>
       {`{{/items}}`}
-    </AmpMustache>,
-    initialItems
+    </AmpMustache>
   );
 
   return (
@@ -58,9 +57,11 @@ const AmpMustacheSample: NextPage<{}> = () => {
         items='.'
         data-amp-bind-src='context'
       >
-        {clientSideTemplate}
+        {template}
       </AmpList>
-      <div data-amp-bind-hidden='context != undefined'>{serverSideTemplate}</div>
+      <div data-amp-bind-hidden='context != undefined'>
+        {AmpMustache.render(template, initialItems)}
+      </div>
       <button
         on="tap:AMP.setState({
           context: {
