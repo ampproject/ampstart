@@ -28,24 +28,11 @@ class AmpMustache extends React.Component<
     context?: any;
   }
 > {
-  static universal(element: JSX.Element, context: any) {
-    return {
-      clientSideTemplate: element,
-      serverSideTemplate: React.cloneElement(element, context),
-    };
+  static render(element: JSX.Element, context: any) {
+    return React.cloneElement(element, {
+      context,
+    });
   }
-  static Section: React.FunctionComponent<SectionProps> = ({children, id, inverted}) => (
-    <>
-      {`{{${inverted ? '^' : '#'}${id}}}`}
-      {children}
-      {`{{/${id}}}`}
-    </>
-  );
-  static Variable: React.FunctionComponent<VariableProps> = ({id, unescape}) => (
-    <>{`{{${unescape ? '{' : ''}${id}${unescape ? '}' : ''}}}`}</>
-  );
-
-  static Comment: React.FunctionComponent<CommentProps> = ({text}) => <>{`{{!${text}}`}</>;
 
   render() {
     const {children, context, ...rest} = this.props;
@@ -83,17 +70,5 @@ class AmpMustache extends React.Component<
 function renderToString(element: JSX.Element) {
   return ReactDOMServer.renderToStaticMarkup(element);
 }
-
-type SectionProps = {
-  id: string;
-  inverted?: boolean;
-};
-type VariableProps = {
-  id: string;
-  unescape?: boolean;
-};
-type CommentProps = {
-  text: string;
-};
 
 export default AmpMustache;

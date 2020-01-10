@@ -125,22 +125,46 @@ The `AmpMustache` component simplifies AMP’s template syntax from `<template t
 </AmpMustache>
 ```
 
-**Alternative approach:** wrap mustache directives in components. This has the positive side-effect of making it possible to render the same template server-side and client-side:
+Nice: AmpMustache templates can be rendered client-side _and server-side_. For example, for generating `amp-list` placeholders:
 
 ```
-<AmpMustache>
-  <h1>Seats</h1>
-  <Loop id="seats">
-    <p><Token id="name"/>
-    <If id="disabled">
-      Disabled Seat
-    </If>
-    <IfNot id="disabled">
-      Normal Seat
-    </IfNot>
-    </p>
-  </Loop>
-</AmpMustache>
+const template = (
+  <AmpMustache>
+    {`{{#items}}`}
+    <div>
+      <a href='{{url}}'>{`{{name}}`}</a>
+    </div>
+    {`{{/items}}`}
+  </AmpMustache>
+);
+
+return (
+  <AmpList
+    layout='fixed-height'
+    data-amp-bind-is-layout-container='context'
+    height='0'
+    single-item=''
+    items='.'
+    data-amp-bind-src='context'
+  >
+    {template}
+    <div placeholder>
+      {AmpMustache.render(template, {
+        items: [
+          {
+            name: 'amp.dev',
+            url: 'https://amp.dev',
+          },
+          {
+            name: 'Next.js',
+            url: 'https://nextjs.org',
+          },
+        ]
+      }
+    )}
+    </div>
+  </AmpList>
+)
 ```
 
 ### amp-access
