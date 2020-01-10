@@ -21,18 +21,16 @@ import {AmpMustache, AmpList, AmpIncludeCustomElement} from '@ampproject/toolbox
 export const config = {amp: true};
 
 const initialItems = {
-  context: {
-    items: [
-      {
-        name: 'amp.dev',
-        url: 'https://amp.dev',
-      },
-      {
-        name: 'Next.js',
-        url: 'https://nextjs.org',
-      },
-    ],
-  },
+  items: [
+    {
+      name: 'amp.dev',
+      url: 'https://amp.dev',
+    },
+    {
+      name: 'Next.js',
+      url: 'https://nextjs.org',
+    },
+  ],
 };
 
 const AmpMustacheSample: NextPage<{}> = () => {

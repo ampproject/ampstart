@@ -29,7 +29,9 @@ class AmpMustache extends React.Component<
   }
 > {
   static render(element: JSX.Element, context: any) {
-    return React.cloneElement(element, context);
+    return React.cloneElement(element, {
+      context,
+    });
   }
 
   render() {
