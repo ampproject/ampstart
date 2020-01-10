@@ -11,13 +11,13 @@
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script
       async
-      custom-element="amp-bind"
-      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
+      custom-element="amp-carousel"
+      src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"
     ></script>
     <script
       async
-      custom-element="amp-carousel"
-      src="https://cdn.ampproject.org/v0/amp-carousel-0.2.js"
+      custom-element="amp-bind"
+      src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"
     ></script>
     <style amp-custom></style>
     <link rel="canonical" href="/components/AmpBind" />
@@ -25,6 +25,7 @@
   <body>
     <!-- __NEXT_DATA__ -->
     <h1>amp-bind</h1>
+    <h2>Binding AMP Elements</h2>
     <amp-carousel
       width="400"
       height="300"
@@ -55,6 +56,11 @@
       on="tap:AMP.setState({ slide: slide != undefined ? (slide + 1) % 3 : 0 })"
     >
       Next slide
+    </button>
+    <h2>Binding non-AMP Elements</h2>
+    <div data-amp-bind-text="greeting || '' "></div>
+    <button on="tap:AMP.setState({ greeting: 'hello world' })">
+      Say hello
     </button>
   </body>
 </html>

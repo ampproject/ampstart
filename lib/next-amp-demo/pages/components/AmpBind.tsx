@@ -15,12 +15,14 @@
  */
 
 import React from 'react';
-import {AmpImg, AmpCarousel} from '@ampproject/toolbox-next-amp/src-gen';
+import {AmpBind, AmpImg, AmpCarousel} from '@ampproject/toolbox-next-amp';
 export const config = {amp: true};
 
 export default () => (
   <>
     <h1>amp-bind</h1>
+
+    <h2>Binding AMP Elements</h2>
     <AmpCarousel bindSlide='slide' width='400' height='300' type='slides'>
       <AmpImg src='https://picsum.photos/id/231/400/300' layout='fill' />
       <AmpImg src='https://picsum.photos/id/232/400/300' layout='fill' />
@@ -28,10 +30,16 @@ export default () => (
     </AmpCarousel>
     <button
       on='tap:AMP.setState({
-    slide: slide != undefined ? (slide + 1) % 3 : 0
-  })'
+        slide: slide != undefined ? (slide + 1) % 3 : 0
+      })'
     >
       Next slide
     </button>
+
+    <h2>Binding non-AMP Elements</h2>
+    <AmpBind bindText="greeting || '' ">
+      <div />
+    </AmpBind>
+    <button on="tap:AMP.setState({ greeting: 'hello world' })">Say hello</button>
   </>
 );
