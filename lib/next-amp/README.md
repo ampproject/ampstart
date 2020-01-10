@@ -215,14 +215,28 @@ Better than Option 1, but makes things more complicated.
 
 ### amp-bind
 
-For `amp-bind` expressions, the `amp-bind` extension is automatically imported using the same approach as for `amp-fx-collection`. The following will work out-of-the-box:
+AMP bindings can be expressed using the the `bindX` short-form instead of `data-amp-bind-x`. A nice
+side-effect is that most JS IDEs will offer component specific code-completion once you've
+typed `bind`.
+
+Here is an example binding an `AmpImg`'s `src` attribute via `bindSrc`:
 
 ```
-<div data-amp-bind-text="hello"/>
-<button on="tap:AMP.setState({ "hello": "world" })">
+<AmpImg width="300" height="200" src="image.png" bindSrc="imageUrl"/>
+<button on="tap:AMP.setState({ imageUrl: 'anotherImage.png' })">Change image</button>
 ```
 
-State can be initialized via:
+Unfortunately, this doesn't work for non-AMP tags such as `div` or `input`. In this case you need to
+wrap the element inside the `AmpBind` component:
+
+```
+<AmpBind bindText="greeting">
+  <div />
+</AmpBind>
+<button on="tap:AMP.setState({ greeting: 'hello world' })">Say hello</button>
+```
+
+`amp-state` can be initialized via:
 
 ```
 <AmpState id="myState">{{
