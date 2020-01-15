@@ -1,4 +1,4 @@
-export default function DiscoverSection(props) {
+export default function Discover(props) {
   return (
     <section className='travel-discover py4 mb3 relative xs-hide sm-hide'>
       <div className='max-width-3 mx-auto px1 md-px2'>
