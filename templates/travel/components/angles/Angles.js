@@ -1,4 +1,4 @@
-export default function AnglesArtwork() {
+export default function Angles() {
   return (
     <div className='travel-angles max-width-3 mx-auto'>
       <div className='travel-angle-left'>

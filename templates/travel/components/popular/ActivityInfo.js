@@ -1,4 +1,4 @@
-import PinSvg from './svg/PinSvg';
+import PinSvg from '../svg/PinSvg';
 
 export default function ActivityInfo({title, price, stars, reviews, location}) {
   return (
