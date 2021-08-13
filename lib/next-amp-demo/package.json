@@ -15,7 +15,7 @@
   "dependencies": {
     "@ampproject/toolbox-next-amp": "1.0.0",
     "@babel/preset-typescript": "7.7.7",
-    "next": "9.1.6",
+    "next": "11.1.0",
     "next-compose-plugins": "2.2.0",
     "next-plugin-custom-babel-config": "1.0.2",
     "next-plugin-transpile-modules": "2.0.0",
